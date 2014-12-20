@@ -1,0 +1,36 @@
+Index: mlpack-1.0.1/src/mlpack/methods/kernel_pca/kernel_pca.hpp
+===================================================================
+--- mlpack-1.0.1/src/mlpack/methods/kernel_pca/kernel_pca.hpp	(revision 13174)
++++ mlpack-1.0.1/src/mlpack/methods/kernel_pca/kernel_pca.hpp.new	(working copy)
+@@ -88,6 +88,9 @@
+ 
+ }; // class KernelPCA
+ 
++template <typename KernelType>
++arma::mat GetKernelMatrix(KernelType kernel, arma::mat transData);
++
+ }; // namespace kpca
+ }; // namespace mlpack
+ 
+Index: mlpack-1.0.1/src/mlpack/methods/kernel_pca/kernel_pca_impl.hpp
+===================================================================
+--- mlpack-1.0.1/src/mlpack/methods/kernel_pca/kernel_pca_impl.hpp	(revision 13174)
++++ mlpack-1.0.1/src/mlpack/methods/kernel_pca/kernel_pca_impl.hpp.new	(working copy)
+@@ -109,9 +109,6 @@
+     data.shed_rows(newDimension, data.n_rows - 1);
+ }
+ 
+-}; // namespace mlpack
+-}; // namespace kpca
+-
+ template <typename KernelType>
+ arma::mat GetKernelMatrix(KernelType kernel, arma::mat transData)
+ {
+@@ -130,4 +127,7 @@
+   return kernelMat;
+ }
+ 
++}; // namespace mlpack
++}; // namespace kpca
++
+ #endif

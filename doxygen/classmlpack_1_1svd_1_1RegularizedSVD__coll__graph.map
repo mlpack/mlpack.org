@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classmlpack_1_1svd_1_1RegularizedSVDFunction.html" title="mlpack::svd::RegularizedSVDFunction" alt="" coords="76,7,335,35"/>
+<area shape="rect" id="node4" href="$classmlpack_1_1optimization_1_1SGD.html" title="mlpack::optimization::SGD\&lt; RegularizedSVDFunction \&gt;" alt="" coords="640,53,1016,81"/>
+<area shape="rect" id="node7" href="$classmlpack_1_1optimization_1_1SGD.html" title="Stochastic Gradient Descent is a technique for minimizing a function which can be expressed as a sum ..." alt="" coords="7,74,404,102"/>
+</map>

@@ -1,0 +1,7 @@
+--- mlpack-1.0.1/src/mlpack/methods/range_search/CMakeLists.txt 	2012-03-07 23:56:53.000000000 -0500
++++ mlpack-1.0.1/src/mlpack/methods/range_search/CMakeLists.txt.new	2012-03-07 23:56:31.000000000 -0500
+@@ -22,3 +22,4 @@
+ target_link_libraries(range_search
+   mlpack
+ )
++install(TARGETS range_search RUNTIME DESTINATION bin)

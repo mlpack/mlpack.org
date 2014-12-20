@@ -1,0 +1,118 @@
+\form#0:\[ f(x|\theta) = \frac{1}{2 \theta}\exp\left(-\frac{\|x - \mu\|}{\theta}\right) \]
+\form#1:$\theta$
+\form#2:$\mu$
+\form#3:\[ d(a, b) = \frac{a^T b}{|| a || || b ||} \]
+\form#4:\[ K(x, y) = \max \{0, 1 - || x - y ||^2_2 / b^2 \} \]
+\form#5:$ b $
+\form#6:$ K(x, y) $
+\form#7:$ x $
+\form#8:$ y $
+\form#9:\[ \int \int K(x, y) g(x) g(y) dx dy \ge 0 \]
+\form#10:$ g(x) $
+\form#11:$ \mu $
+\form#12:\[ K(x, y) = \exp(-\frac{|| x - y ||^2}{2 \mu^2}). \]
+\form#13:$ \gamma = -\frac{1}{2 \mu^2} $
+\form#14:$ s $
+\form#15:$ t $
+\form#16:\[ K(x, y) = \tanh(s <x, y> + t) \]
+\form#17:\[ K(x, y) = \exp(-\frac{|| x - y ||}{\mu}). \]
+\form#18:\[ K(x, y) = x^T y \]
+\form#19:$ degree $
+\form#20:$ offset $
+\form#21:\[ K(x, y) = (x^T * y + offset) ^ {degree}. \]
+\form#22:\[ K(x, y) = \max \{ 0, 1 - \frac{|| x - y ||_2}{b} \} \]
+\form#23:$ W = x (x^T x)^{-0.5} $
+\form#24:$ n $
+\form#25:\[ d(x, y) = \left( \sum_{i = 1}^{n} | x_i - y_i |^p \right)^{\frac{1}{p}}. \]
+\form#26:$ d(x, y) $
+\form#27:\[ d(x, y) = \sum_{i = 1}^{n} | x_i - y_i |^p \]
+\form#28:$ Q $
+\form#29:$ d $
+\form#30:\[ d(x, y) = \sqrt{(x - y)^T Q (x - y)} \]
+\form#31:\[ d(x, y) = (x - y)^T Q (x - y) \]
+\form#32:\[ T_{n+1} = (1-\lambda) T_{n} \]
+\form#33:$ 0<\lambda<1 $
+\form#34:$ \lambda $
+\form#35:$ \alpha = (-1 \lambda) $
+\form#36:$ \alpha $
+\form#37:\[ f(A) = \sum_{i = 0}^{n} f_i(A) \]
+\form#38:$ A $
+\form#39:$ f_i(A) $
+\form#40:\[ A_{j + 1} = A_j + \alpha \nabla f_i(A) \]
+\form#41:$ i $
+\form#42:$ j $
+\form#43:$ \epsilon $
+\form#44:\[ | f(A_{j + n}) - f(A_j) | < \epsilon. \]
+\form#45:$\epsilon$
+\form#46:$n$
+\form#47:$ V \approx WH $
+\form#48:$ \sqrt{\sum_i \sum_j(V-WH)^2} $
+\form#49:\[ W^T = \frac{HV^T}{HH^T} \]
+\form#50:\[ H = \frac{W^TV}{W^TW} \]
+\form#51:\[ W_{ia} \leftarrow W_{ia} \frac{(VH^T)_{ia}}{(WHH^T)_{ia}} \]
+\form#52:\[ H_{a\mu} \leftarrow H_{a\mu} \frac{(W^T V)_{a\mu}}{(W^T WH)_{a\mu}} \]
+\form#53:$ \sum_i \sum_j (V_{ij} log\frac{V_{ij}}{(WH)_{ij}}-V_{ij}+(WH)_{ij}) $
+\form#54:\[ W_{ia} \leftarrow W_{ia} \frac{\sum_{\mu} H_{a\mu} V_{i\mu}/(WH)_{i\mu}} {\sum_{\nu} H_{a\nu}} \]
+\form#55:\[ H_{a\mu} \leftarrow H_{a\mu} \frac{\sum_{i} W_{ia} V_{i\mu}/(WH)_{i\mu}} {\sum_{k} H_{ka}} \]
+\form#56:\[ \min_{\beta} 0.5 || X \beta - y ||_2^2 + 0.5 \lambda_2 || \beta ||_2^2 \]
+\form#57:$ ||\beta||_1 <= \tau $
+\form#58:$ X $
+\form#59:\[ \min_{\beta} 0.5 || X \beta - y ||_2^2 + \lambda_1 || \beta ||_1 + 0.5 \lambda_2 || \beta ||_2^2 \]
+\form#60:$ \beta $
+\form#61:$ \lambda_1 > 0 $
+\form#62:$ \lambda_2 = 0 $
+\form#63:$ \lambda_2 > 0 $
+\form#64:$ \lambda_1 = 0 $
+\form#65:$ \lambda_1 $
+\form#66:\[ (1 / n) * \| y - X B \|^2_2 \]
+\form#67:$ B $
+\form#68:\[ \min_{D,Z} 0.5 ||X - D Z||_{F}^2\ + \lambda_1 \sum_{i=1}^m ||Z_i||_1 + 0.5 \lambda_2 \sum_{i=1}^m ||Z_i||_2^2 \]
+\form#69:$ ||D_j||_2 <= 1 $
+\form#70:$ 1 <= j <= k $
+\form#71:$ lambda_1 > 0 $
+\form#72:$ lambda_2 = 0 $
+\form#73:$ C = X^T X $
+\form#74:$ C = X X^T $
+\form#75:$\alpha$
+\form#76:$S$
+\form#77:$\mathbf{R}^d$
+\form#78:$kd$
+\form#79:$n-1 \times 3 $
+\form#80:$\log N$
+\form#81:$N$
+\form#82:$O(N^2)$
+\form#83:$Q$
+\form#84:$R$
+\form#85:\[ \arg\max_{p_r \in R} K(p_q, p_r) \]
+\form#86:$p_q \in Q$
+\form#87:$K(\cdot, \cdot)$
+\form#88:$ x_i $
+\form#89:$ c_j $
+\form#90:$ j \le k $
+\form#91:$ k $
+\form#92:\[ \sum_{j = 1}^{k} \sum_{x_i \in c_j} \| x_i - \mu_j \|^2 \]
+\form#93:$\mu_j$
+\form#94:$c_j$
+\form#95:$x_i$
+\form#96:$X$
+\form#97:$\mathbf{x_i}, 0 \le i < n$
+\form#98:$d$
+\form#99:$y_i, 0 \le i < n$
+\form#100:$\beta_i, 0 \le i \le d$
+\form#101:\[ y_i = \beta_0 + \displaystyle\sum_{j = 1}^{d} \beta_j x_{ij} \]
+\form#102:$\mathbf{x_i}$
+\form#103:$y_i$
+\form#104:$\mathbf{X}$
+\form#105:$\mathbf{y}$
+\form#106:\[ \mathbf{y} = \mathbf{X} \mathbf{\beta} + \beta_0 \]
+\form#107:$\mathbf{\beta}$
+\form#108:$\beta_0$
+\form#109:$\beta_1$
+\form#110:$\beta_2$
+\form#111:$y$
+\form#112:$f(y)=0+1x_1$
+\form#113:\[ \mathbf{X}' \mathbf{X} \]
+\form#114:\[ \mathbf{X}' \mathbf{X} + \lambda \mathbf{I} \]
+\form#115:$\mathbf{I}$
+\form#116:$\lambda$
+\form#117:$k$

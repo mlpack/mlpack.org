@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Maven Pro Medium'), local('MavenProMedium'), url(http://fonts.gstatic.com/s/mavenpro/v7/SQVfzoJBbj9t3aVcmbspRonF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}

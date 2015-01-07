@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>MLPACK: mlpack::tree::TreeTraits&lt; TreeType &gt; Class Template Reference</title>
+<title>mlpack: mlpack::tree::TreeTraits&lt; TreeType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -95,7 +95,7 @@ Static Public Attributes</h2></td></tr>
 <p>Each trait must be a static const value and not a function; only const values can be used as template parameters (with the exception of constexprs, which are a C++11 feature; but MLPACK is not using C++11). By default (the unspecialized implementation of <a class="el" href="classmlpack_1_1tree_1_1TreeTraits.html" title="The TreeTraits class provides compile-time information on the characteristics of a given tree type...">TreeTraits</a>), each parameter is set to make as few assumptions about the tree as possible; so, even if <a class="el" href="classmlpack_1_1tree_1_1TreeTraits.html" title="The TreeTraits class provides compile-time information on the characteristics of a given tree type...">TreeTraits</a> is not specialized for a particular tree type, tree-based algorithms should still work.</p>
 <p>When you write your own tree, you must specialize the <a class="el" href="classmlpack_1_1tree_1_1TreeTraits.html" title="The TreeTraits class provides compile-time information on the characteristics of a given tree type...">TreeTraits</a> class to your tree type and set the corresponding values appropriately. See <a class="el" href="binary__space__tree_2traits_8hpp.html">mlpack/core/tree/binary_space_tree/traits.hpp</a> for an example. </p>
 
-<p>Definition at line <a class="el" href="tree__traits_8hpp_source.html#l00088">88</a> of file <a class="el" href="tree__traits_8hpp_source.html">tree_traits.hpp</a>.</p>
+<p>Definition at line <a class="el" href="tree__traits_8hpp_source.html#l00080">80</a> of file <a class="el" href="tree__traits_8hpp_source.html">tree_traits.hpp</a>.</p>
 <hr/><h2>Member Data Documentation</h2>
 <a class="anchor" id="a4751f17406c9202f3c0228e6307dd22f"></a><!-- doxytag: member="mlpack::tree::TreeTraits::FirstPointIsCentroid" ref="a4751f17406c9202f3c0228e6307dd22f" args="" -->
 <div class="memitem">
@@ -112,7 +112,7 @@ template&lt;typename TreeType &gt; </div>
 
 <p>This is true if Point(0) is the centroid of the node. </p>
 
-<p>Definition at line <a class="el" href="tree__traits_8hpp_source.html#l00100">100</a> of file <a class="el" href="tree__traits_8hpp_source.html">tree_traits.hpp</a>.</p>
+<p>Definition at line <a class="el" href="tree__traits_8hpp_source.html#l00092">92</a> of file <a class="el" href="tree__traits_8hpp_source.html">tree_traits.hpp</a>.</p>
 
 </div>
 </div>
@@ -131,7 +131,7 @@ template&lt;typename TreeType &gt; </div>
 
 <p>This is true if the subspaces represented by the children of a node can overlap. </p>
 
-<p>Definition at line <a class="el" href="tree__traits_8hpp_source.html#l00095">95</a> of file <a class="el" href="tree__traits_8hpp_source.html">tree_traits.hpp</a>.</p>
+<p>Definition at line <a class="el" href="tree__traits_8hpp_source.html#l00087">87</a> of file <a class="el" href="tree__traits_8hpp_source.html">tree_traits.hpp</a>.</p>
 
 </div>
 </div>
@@ -150,7 +150,7 @@ template&lt;typename TreeType &gt; </div>
 
 <p>This is true if the points contained in the first child of a node (Child(0)) are also contained in that node. </p>
 
-<p>Definition at line <a class="el" href="tree__traits_8hpp_source.html#l00106">106</a> of file <a class="el" href="tree__traits_8hpp_source.html">tree_traits.hpp</a>.</p>
+<p>Definition at line <a class="el" href="tree__traits_8hpp_source.html#l00098">98</a> of file <a class="el" href="tree__traits_8hpp_source.html">tree_traits.hpp</a>.</p>
 
 </div>
 </div>
@@ -169,7 +169,7 @@ template&lt;typename TreeType &gt; </div>
 
 <p>This is true if the tree rearranges points in the dataset when it is built. </p>
 
-<p>Definition at line <a class="el" href="tree__traits_8hpp_source.html#l00111">111</a> of file <a class="el" href="tree__traits_8hpp_source.html">tree_traits.hpp</a>.</p>
+<p>Definition at line <a class="el" href="tree__traits_8hpp_source.html#l00103">103</a> of file <a class="el" href="tree__traits_8hpp_source.html">tree_traits.hpp</a>.</p>
 
 </div>
 </div>
@@ -177,7 +177,7 @@ template&lt;typename TreeType &gt; </div>
 <li>src/mlpack/core/tree/<a class="el" href="tree__traits_8hpp_source.html">tree_traits.hpp</a></li>
 </ul>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Thu Dec 11 2014 11:58:17 for MLPACK by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Jan 7 2015 13:07:11 for mlpack by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>MLPACK: mlpack::distribution::DiscreteDistribution Class Reference</title>
+<title>mlpack: mlpack::distribution::DiscreteDistribution Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -82,7 +82,7 @@ Private Attributes</h2></td></tr>
 <p>This distribution only supports one-dimensional observations, so when passing an arma::vec as an observation, it should only have one dimension (vec.n_rows == 1). Any additional dimensions will simply be ignored.</p>
 <dl class="note"><dt><b>Note:</b></dt><dd>This class, like every other class in MLPACK, uses arma::vec to represent observations. While a discrete distribution only has positive integers (size_t) as observations, these can be converted to doubles (which is what arma::vec holds). This distribution internally converts those doubles back into size_t before comparisons.  </dd></dl>
 
-<p>Definition at line <a class="el" href="discrete__distribution_8hpp_source.html#l00053">53</a> of file <a class="el" href="discrete__distribution_8hpp_source.html">discrete_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="discrete__distribution_8hpp_source.html#l00045">45</a> of file <a class="el" href="discrete__distribution_8hpp_source.html">discrete_distribution.hpp</a>.</p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ae92fa20680434c043dbd3cbc1825bf7b"></a><!-- doxytag: member="mlpack::distribution::DiscreteDistribution::DiscreteDistribution" ref="ae92fa20680434c043dbd3cbc1825bf7b" args="()" -->
 <div class="memitem">
@@ -101,7 +101,7 @@ Private Attributes</h2></td></tr>
 
 <p>Default constructor, which creates a distribution that has no observations. </p>
 
-<p>Definition at line <a class="el" href="discrete__distribution_8hpp_source.html#l00059">59</a> of file <a class="el" href="discrete__distribution_8hpp_source.html">discrete_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="discrete__distribution_8hpp_source.html#l00051">51</a> of file <a class="el" href="discrete__distribution_8hpp_source.html">discrete_distribution.hpp</a>.</p>
 
 </div>
 </div>
@@ -130,7 +130,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="discrete__distribution_8hpp_source.html#l00069">69</a> of file <a class="el" href="discrete__distribution_8hpp_source.html">discrete_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="discrete__distribution_8hpp_source.html#l00061">61</a> of file <a class="el" href="discrete__distribution_8hpp_source.html">discrete_distribution.hpp</a>.</p>
 
 </div>
 </div>
@@ -158,7 +158,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="discrete__distribution_8hpp_source.html#l00079">79</a> of file <a class="el" href="discrete__distribution_8hpp_source.html">discrete_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="discrete__distribution_8hpp_source.html#l00071">71</a> of file <a class="el" href="discrete__distribution_8hpp_source.html">discrete_distribution.hpp</a>.</p>
 
 </div>
 </div>
@@ -180,7 +180,7 @@ Private Attributes</h2></td></tr>
 
 <p>Get the dimensionality of the distribution. </p>
 
-<p>Definition at line <a class="el" href="discrete__distribution_8hpp_source.html#l00095">95</a> of file <a class="el" href="discrete__distribution_8hpp_source.html">discrete_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="discrete__distribution_8hpp_source.html#l00087">87</a> of file <a class="el" href="discrete__distribution_8hpp_source.html">discrete_distribution.hpp</a>.</p>
 
 </div>
 </div>
@@ -264,9 +264,9 @@ Private Attributes</h2></td></tr>
 
 <p>Modify the vector of probabilities. </p>
 
-<p>Definition at line <a class="el" href="discrete__distribution_8hpp_source.html#l00155">155</a> of file <a class="el" href="discrete__distribution_8hpp_source.html">discrete_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="discrete__distribution_8hpp_source.html#l00147">147</a> of file <a class="el" href="discrete__distribution_8hpp_source.html">discrete_distribution.hpp</a>.</p>
 
-<p>References <a class="el" href="discrete__distribution_8hpp_source.html#l00163">probabilities</a>.</p>
+<p>References <a class="el" href="discrete__distribution_8hpp_source.html#l00155">probabilities</a>.</p>
 
 </div>
 </div>
@@ -287,9 +287,9 @@ Private Attributes</h2></td></tr>
 
 <p>Return the vector of probabilities. </p>
 
-<p>Definition at line <a class="el" href="discrete__distribution_8hpp_source.html#l00153">153</a> of file <a class="el" href="discrete__distribution_8hpp_source.html">discrete_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="discrete__distribution_8hpp_source.html#l00145">145</a> of file <a class="el" href="discrete__distribution_8hpp_source.html">discrete_distribution.hpp</a>.</p>
 
-<p>References <a class="el" href="discrete__distribution_8hpp_source.html#l00163">probabilities</a>.</p>
+<p>References <a class="el" href="discrete__distribution_8hpp_source.html#l00155">probabilities</a>.</p>
 
 </div>
 </div>
@@ -319,9 +319,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Probability of the given observation. </dd></dl>
 
-<p>Definition at line <a class="el" href="discrete__distribution_8hpp_source.html#l00105">105</a> of file <a class="el" href="discrete__distribution_8hpp_source.html">discrete_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="discrete__distribution_8hpp_source.html#l00097">97</a> of file <a class="el" href="discrete__distribution_8hpp_source.html">discrete_distribution.hpp</a>.</p>
 
-<p>References <a class="el" href="log_8hpp_source.html#l00047">mlpack::Log::Debug</a>, and <a class="el" href="discrete__distribution_8hpp_source.html#l00163">probabilities</a>.</p>
+<p>References <a class="el" href="log_8hpp_source.html#l00039">mlpack::Log::Debug</a>, and <a class="el" href="discrete__distribution_8hpp_source.html#l00155">probabilities</a>.</p>
 
 </div>
 </div>
@@ -374,9 +374,9 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="discrete__distribution_8hpp_source.html#l00163">163</a> of file <a class="el" href="discrete__distribution_8hpp_source.html">discrete_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="discrete__distribution_8hpp_source.html#l00155">155</a> of file <a class="el" href="discrete__distribution_8hpp_source.html">discrete_distribution.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="discrete__distribution_8hpp_source.html#l00153">Probabilities()</a>, and <a class="el" href="discrete__distribution_8hpp_source.html#l00105">Probability()</a>.</p>
+<p>Referenced by <a class="el" href="discrete__distribution_8hpp_source.html#l00145">Probabilities()</a>, and <a class="el" href="discrete__distribution_8hpp_source.html#l00097">Probability()</a>.</p>
 
 </div>
 </div>
@@ -384,7 +384,7 @@ Private Attributes</h2></td></tr>
 <li>src/mlpack/core/dists/<a class="el" href="discrete__distribution_8hpp_source.html">discrete_distribution.hpp</a></li>
 </ul>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Thu Dec 11 2014 11:58:15 for MLPACK by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Jan 7 2015 13:07:09 for mlpack by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

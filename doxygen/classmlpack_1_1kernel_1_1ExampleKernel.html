@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>MLPACK: mlpack::kernel::ExampleKernel Class Reference</title>
+<title>mlpack: mlpack::kernel::ExampleKernel Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -76,7 +76,7 @@ Static Public Member Functions</h2></td></tr>
 </pre></div><p>will create the kernel with the default constructor. It is important (but not strictly mandatory) that your default constructor still gives a working kernel.</p>
 <dl class="note"><dt><b>Note:</b></dt><dd>Not all kernels require state. For instance, the regular dot product needs no parameters. In that case, no local variables are necessary and `Evaluate()` can (and should) be declared static. However, for greater generalization, MLPACK methods expect all kernels to require state and hence must store instantiated kernel functions; this is why a default constructor is necessary.  </dd></dl>
 
-<p>Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00094">94</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
+<p>Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00086">86</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aa2ccb2c56b15cdd07f952464e2eeb784"></a><!-- doxytag: member="mlpack::kernel::ExampleKernel::ExampleKernel" ref="aa2ccb2c56b15cdd07f952464e2eeb784" args="()" -->
 <div class="memitem">
@@ -96,7 +96,7 @@ Static Public Member Functions</h2></td></tr>
 <p>The default constructor, which takes no parameters. </p>
 <p>Because our simple example kernel has no internal parameters that need to be stored, the constructor does not need to do anything. For a more complex example, see the <a class="el" href="classmlpack_1_1kernel_1_1GaussianKernel.html" title="The standard Gaussian kernel.">GaussianKernel</a>, which stores an internal parameter. </p>
 
-<p>Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00103">103</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
+<p>Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00095">95</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
 
 </div>
 </div>
@@ -145,7 +145,7 @@ template&lt;typename VecType &gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>the convolution integral value. </dd></dl>
 
-<p>Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00144">144</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
+<p>Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00136">136</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
 
 </div>
 </div>
@@ -193,7 +193,7 @@ template&lt;typename VecType &gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>K(a, b). </dd></dl>
 
-<p>Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00117">117</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
+<p>Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00109">109</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
 
 </div>
 </div>
@@ -222,7 +222,7 @@ template&lt;typename VecType &gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>the normalization constant. </dd></dl>
 
-<p>Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00157">157</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
+<p>Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00149">149</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
 
 </div>
 </div>
@@ -244,7 +244,7 @@ template&lt;typename VecType &gt; </div>
 <p>Returns a string for the kernel object; in this case, with only the memory address for the kernel. </p>
 <p>If your kernel has any members, your <a class="el" href="classmlpack_1_1kernel_1_1ExampleKernel.html#a4226a10bb0b9e97c9b6c8014b7ceb4ba" title="Returns a string for the kernel object; in this case, with only the memory address for the kernel...">ToString()</a> method should include those as neccessary as well. </p>
 
-<p>Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00124">124</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
+<p>Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00116">116</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
 
 </div>
 </div>
@@ -252,7 +252,7 @@ template&lt;typename VecType &gt; </div>
 <li>src/mlpack/core/kernels/<a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a></li>
 </ul>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Thu Dec 11 2014 11:58:15 for MLPACK by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Jan 7 2015 13:07:09 for mlpack by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

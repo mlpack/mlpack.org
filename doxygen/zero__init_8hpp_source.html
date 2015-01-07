@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>MLPACK: src/mlpack/methods/perceptron/initialization_methods/zero_init.hpp Source File</title>
+<title>mlpack: src/mlpack/methods/perceptron/initialization_methods/zero_init.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -27,11 +27,11 @@
   </div>
   <div class="navpath">
     <ul>
-      <li><a class="el" href="dir_b2882640fb086b78868b6b301530d5f7.html">src</a>      </li>
-      <li><a class="el" href="dir_6a996d0c1ea6093f358c2a4e16663c26.html">mlpack</a>      </li>
-      <li><a class="el" href="dir_41da2282a8e24c4f2c665c6af5d83473.html">methods</a>      </li>
-      <li><a class="el" href="dir_143326795e99d6bc2440677f28f3caa4.html">perceptron</a>      </li>
-      <li><a class="el" href="dir_6e8d385d9f2501820dbbdcdd46a892e5.html">initialization_methods</a>      </li>
+      <li><a class="el" href="dir_8643ae0b91354c4ed75fc37925b48b5f.html">src</a>      </li>
+      <li><a class="el" href="dir_7bafb4101e77828b09700d4aaccdb316.html">mlpack</a>      </li>
+      <li><a class="el" href="dir_04a30df2d8bed1a15b192056d1b2b7ae.html">methods</a>      </li>
+      <li><a class="el" href="dir_f372b9b0c047d3c5caf09dd66a2b9466.html">perceptron</a>      </li>
+      <li><a class="el" href="dir_e1bc126a0441b06c570c5a68d22a8d4f.html">initialization_methods</a>      </li>
     </ul>
   </div>
 </div>
@@ -41,37 +41,37 @@
 </div>
 <div class="contents">
 <a href="zero__init_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
-<a name="l00022"></a>00022 <span class="preprocessor">#ifndef _MLPACK_METHOS_PERCEPTRON_INITIALIZATION_METHODS_ZERO_INIT_HPP</span>
-<a name="l00023"></a>00023 <span class="preprocessor"></span><span class="preprocessor">#define _MLPACK_METHOS_PERCEPTRON_INITIALIZATION_METHODS_ZERO_INIT_HPP</span>
-<a name="l00024"></a>00024 <span class="preprocessor"></span>
-<a name="l00025"></a>00025 <span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span>
-<a name="l00026"></a>00026 
-<a name="l00027"></a>00027 <span class="keyword">namespace </span>mlpack {
-<a name="l00028"></a>00028 <span class="keyword">namespace </span>perceptron {
+<a name="l00014"></a>00014 <span class="preprocessor">#ifndef _MLPACK_METHOS_PERCEPTRON_INITIALIZATION_METHODS_ZERO_INIT_HPP</span>
+<a name="l00015"></a>00015 <span class="preprocessor"></span><span class="preprocessor">#define _MLPACK_METHOS_PERCEPTRON_INITIALIZATION_METHODS_ZERO_INIT_HPP</span>
+<a name="l00016"></a>00016 <span class="preprocessor"></span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span>
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 <span class="keyword">namespace </span>mlpack {
+<a name="l00020"></a>00020 <span class="keyword">namespace </span>perceptron {
+<a name="l00021"></a>00021 
+<a name="l00025"></a><a class="code" href="classmlpack_1_1perceptron_1_1ZeroInitialization.html">00025</a> <span class="keyword">class </span><a class="code" href="classmlpack_1_1perceptron_1_1ZeroInitialization.html" title="This class is used to initialize the matrix weightVectors to zero.">ZeroInitialization</a>
+<a name="l00026"></a>00026 {
+<a name="l00027"></a>00027  <span class="keyword">public</span>:
+<a name="l00028"></a><a class="code" href="classmlpack_1_1perceptron_1_1ZeroInitialization.html#ae615f37081c5ac139cdd25c9f071b6b8">00028</a>   <a class="code" href="classmlpack_1_1perceptron_1_1ZeroInitialization.html#ae615f37081c5ac139cdd25c9f071b6b8">ZeroInitialization</a>() { }
 <a name="l00029"></a>00029 
-<a name="l00033"></a><a class="code" href="classmlpack_1_1perceptron_1_1ZeroInitialization.html">00033</a> <span class="keyword">class </span><a class="code" href="classmlpack_1_1perceptron_1_1ZeroInitialization.html" title="This class is used to initialize the matrix weightVectors to zero.">ZeroInitialization</a>
-<a name="l00034"></a>00034 {
-<a name="l00035"></a>00035  <span class="keyword">public</span>:
-<a name="l00036"></a><a class="code" href="classmlpack_1_1perceptron_1_1ZeroInitialization.html#ae615f37081c5ac139cdd25c9f071b6b8">00036</a>   <a class="code" href="classmlpack_1_1perceptron_1_1ZeroInitialization.html#ae615f37081c5ac139cdd25c9f071b6b8">ZeroInitialization</a>() { }
-<a name="l00037"></a>00037 
-<a name="l00038"></a><a class="code" href="classmlpack_1_1perceptron_1_1ZeroInitialization.html#a61a32cd38fd25bd2b07521e9e98c21e7">00038</a>   <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1perceptron_1_1ZeroInitialization.html#a61a32cd38fd25bd2b07521e9e98c21e7">Initialize</a>(arma::mat&amp; W,
-<a name="l00039"></a>00039                                 <span class="keyword">const</span> <span class="keywordtype">size_t</span> row,
-<a name="l00040"></a>00040                                 <span class="keyword">const</span> <span class="keywordtype">size_t</span> col)
-<a name="l00041"></a>00041   {
-<a name="l00042"></a>00042     arma::mat tempWeights(row, col);
-<a name="l00043"></a>00043     tempWeights.fill(0.0);
-<a name="l00044"></a>00044 
-<a name="l00045"></a>00045     W = tempWeights;
-<a name="l00046"></a>00046   }
-<a name="l00047"></a>00047 }; <span class="comment">// class ZeroInitialization</span>
-<a name="l00048"></a>00048 
-<a name="l00049"></a>00049 }; <span class="comment">// namespace perceptron</span>
-<a name="l00050"></a>00050 }; <span class="comment">// namespace mlpack</span>
-<a name="l00051"></a>00051 
-<a name="l00052"></a>00052 <span class="preprocessor">#endif</span>
+<a name="l00030"></a><a class="code" href="classmlpack_1_1perceptron_1_1ZeroInitialization.html#a61a32cd38fd25bd2b07521e9e98c21e7">00030</a>   <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1perceptron_1_1ZeroInitialization.html#a61a32cd38fd25bd2b07521e9e98c21e7">Initialize</a>(arma::mat&amp; W,
+<a name="l00031"></a>00031                                 <span class="keyword">const</span> <span class="keywordtype">size_t</span> row,
+<a name="l00032"></a>00032                                 <span class="keyword">const</span> <span class="keywordtype">size_t</span> col)
+<a name="l00033"></a>00033   {
+<a name="l00034"></a>00034     arma::mat tempWeights(row, col);
+<a name="l00035"></a>00035     tempWeights.fill(0.0);
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037     W = tempWeights;
+<a name="l00038"></a>00038   }
+<a name="l00039"></a>00039 }; <span class="comment">// class ZeroInitialization</span>
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041 }; <span class="comment">// namespace perceptron</span>
+<a name="l00042"></a>00042 }; <span class="comment">// namespace mlpack</span>
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044 <span class="preprocessor">#endif</span>
 </pre></div></div>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Thu Dec 11 2014 11:58:13 for MLPACK by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Jan 7 2015 13:07:07 for mlpack by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

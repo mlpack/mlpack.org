@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>MLPACK: src/mlpack/core/kernels/hyperbolic_tangent_kernel.hpp Source File</title>
+<title>mlpack: src/mlpack/core/kernels/hyperbolic_tangent_kernel.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -27,10 +27,10 @@
   </div>
   <div class="navpath">
     <ul>
-      <li><a class="el" href="dir_b2882640fb086b78868b6b301530d5f7.html">src</a>      </li>
-      <li><a class="el" href="dir_6a996d0c1ea6093f358c2a4e16663c26.html">mlpack</a>      </li>
-      <li><a class="el" href="dir_e63db7f24a01e7602d62b556dab603f6.html">core</a>      </li>
-      <li><a class="el" href="dir_6a303cfb630207233dcf19428f128b54.html">kernels</a>      </li>
+      <li><a class="el" href="dir_8643ae0b91354c4ed75fc37925b48b5f.html">src</a>      </li>
+      <li><a class="el" href="dir_7bafb4101e77828b09700d4aaccdb316.html">mlpack</a>      </li>
+      <li><a class="el" href="dir_a24db58f334daf1661a68d63dd442609.html">core</a>      </li>
+      <li><a class="el" href="dir_6328196dcf8eca2a838a9c4aa0fc2937.html">kernels</a>      </li>
     </ul>
   </div>
 </div>
@@ -40,57 +40,57 @@
 </div>
 <div class="contents">
 <a href="hyperbolic__tangent__kernel_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
-<a name="l00022"></a>00022 <span class="preprocessor">#ifndef __MLPACK_CORE_KERNELS_HYPERBOLIC_TANGENT_KERNEL_HPP</span>
-<a name="l00023"></a>00023 <span class="preprocessor"></span><span class="preprocessor">#define __MLPACK_CORE_KERNELS_HYPERBOLIC_TANGENT_KERNEL_HPP</span>
-<a name="l00024"></a>00024 <span class="preprocessor"></span>
-<a name="l00025"></a>00025 <span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span>
-<a name="l00026"></a>00026 
-<a name="l00027"></a>00027 <span class="keyword">namespace </span>mlpack {
-<a name="l00028"></a>00028 <span class="keyword">namespace </span>kernel {
-<a name="l00029"></a>00029 
-<a name="l00038"></a><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html">00038</a> <span class="keyword">class </span><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html" title="Hyperbolic tangent kernel.">HyperbolicTangentKernel</a>
-<a name="l00039"></a>00039 {
-<a name="l00040"></a>00040  <span class="keyword">public</span>:
-<a name="l00044"></a><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#afa9f40ba3290589444163d6f0a45247f">00044</a>   <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#afa9f40ba3290589444163d6f0a45247f" title="This constructor sets the default scale to 1.0 and offset to 0.0.">HyperbolicTangentKernel</a>() : <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#ac7fc2bb9399ec5ebbbf1b45f5eb14f44">scale</a>(1.0), <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a7fa7810cbab749d93de8f4994f55919d">offset</a>(0.0)
-<a name="l00045"></a>00045   { }
-<a name="l00046"></a>00046 
-<a name="l00054"></a><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#ae1a31f6d0b15b156451712aa0741f26b">00054</a>   <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#afa9f40ba3290589444163d6f0a45247f" title="This constructor sets the default scale to 1.0 and offset to 0.0.">HyperbolicTangentKernel</a>(<span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#ac7fc2bb9399ec5ebbbf1b45f5eb14f44">scale</a>, <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a7fa7810cbab749d93de8f4994f55919d">offset</a>) :
-<a name="l00055"></a>00055       scale(scale), offset(offset)
-<a name="l00056"></a>00056   { }
-<a name="l00057"></a>00057 
-<a name="l00067"></a>00067   <span class="keyword">template</span>&lt;<span class="keyword">typename</span> VecType&gt;
-<a name="l00068"></a><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a5feba2b57848fa86f4f7eef0d875e5c1">00068</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a5feba2b57848fa86f4f7eef0d875e5c1" title="Evaluate the hyperbolic tangent kernel.">Evaluate</a>(<span class="keyword">const</span> VecType&amp; a, <span class="keyword">const</span> VecType&amp; b)
-<a name="l00069"></a>00069   {
-<a name="l00070"></a>00070     <span class="keywordflow">return</span> tanh(<a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#ac7fc2bb9399ec5ebbbf1b45f5eb14f44">scale</a> * arma::dot(a, b) + <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a7fa7810cbab749d93de8f4994f55919d">offset</a>);
-<a name="l00071"></a>00071   }
-<a name="l00072"></a>00072 
-<a name="l00074"></a><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a6b583368f635e94f92e7ad9625ff5a1a">00074</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a6b583368f635e94f92e7ad9625ff5a1a" title="Get scale factor.">Scale</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#ac7fc2bb9399ec5ebbbf1b45f5eb14f44">scale</a>; }
-<a name="l00076"></a><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a1a3a6b933bbe7f71bd905784f9360d8d">00076</a>   <span class="keywordtype">double</span>&amp; <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a1a3a6b933bbe7f71bd905784f9360d8d" title="Modify scale factor.">Scale</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#ac7fc2bb9399ec5ebbbf1b45f5eb14f44">scale</a>; }
-<a name="l00077"></a>00077 
-<a name="l00079"></a><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a6bf4a131db46bab6c2f7730a38030e3a">00079</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a6bf4a131db46bab6c2f7730a38030e3a" title="Get offset for the kernel.">Offset</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a7fa7810cbab749d93de8f4994f55919d">offset</a>; }
-<a name="l00081"></a><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a7cbaf664ca2c4e0b79f5e236cab8af2d">00081</a>   <span class="keywordtype">double</span>&amp; <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a7cbaf664ca2c4e0b79f5e236cab8af2d" title="Modify offset for the kernel.">Offset</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a7fa7810cbab749d93de8f4994f55919d">offset</a>; }
-<a name="l00082"></a>00082 
-<a name="l00084"></a><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a2fe29946d3dfa6259fd9b720b18636ee">00084</a>   std::string <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a2fe29946d3dfa6259fd9b720b18636ee" title="Convert object to string.">ToString</a>()<span class="keyword"> const</span>
-<a name="l00085"></a>00085 <span class="keyword">  </span>{
-<a name="l00086"></a>00086     std::ostringstream convert;
-<a name="l00087"></a>00087     convert &lt;&lt; <span class="stringliteral">&quot;HyperbolicTangentKernel [&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot;]&quot;</span> &lt;&lt; std::endl;
-<a name="l00088"></a>00088     convert &lt;&lt; <span class="stringliteral">&quot;  Scale: &quot;</span> &lt;&lt; <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#ac7fc2bb9399ec5ebbbf1b45f5eb14f44">scale</a> &lt;&lt; std::endl;
-<a name="l00089"></a>00089     convert &lt;&lt; <span class="stringliteral">&quot;  Offset: &quot;</span> &lt;&lt; <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a7fa7810cbab749d93de8f4994f55919d">offset</a> &lt;&lt; std::endl;
-<a name="l00090"></a>00090     <span class="keywordflow">return</span> convert.str();
-<a name="l00091"></a>00091   }
+<a name="l00014"></a>00014 <span class="preprocessor">#ifndef __MLPACK_CORE_KERNELS_HYPERBOLIC_TANGENT_KERNEL_HPP</span>
+<a name="l00015"></a>00015 <span class="preprocessor"></span><span class="preprocessor">#define __MLPACK_CORE_KERNELS_HYPERBOLIC_TANGENT_KERNEL_HPP</span>
+<a name="l00016"></a>00016 <span class="preprocessor"></span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span>
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 <span class="keyword">namespace </span>mlpack {
+<a name="l00020"></a>00020 <span class="keyword">namespace </span>kernel {
+<a name="l00021"></a>00021 
+<a name="l00030"></a><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html">00030</a> <span class="keyword">class </span><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html" title="Hyperbolic tangent kernel.">HyperbolicTangentKernel</a>
+<a name="l00031"></a>00031 {
+<a name="l00032"></a>00032  <span class="keyword">public</span>:
+<a name="l00036"></a><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#afa9f40ba3290589444163d6f0a45247f">00036</a>   <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#afa9f40ba3290589444163d6f0a45247f" title="This constructor sets the default scale to 1.0 and offset to 0.0.">HyperbolicTangentKernel</a>() : <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#ac7fc2bb9399ec5ebbbf1b45f5eb14f44">scale</a>(1.0), <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a7fa7810cbab749d93de8f4994f55919d">offset</a>(0.0)
+<a name="l00037"></a>00037   { }
+<a name="l00038"></a>00038 
+<a name="l00046"></a><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#ae1a31f6d0b15b156451712aa0741f26b">00046</a>   <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#afa9f40ba3290589444163d6f0a45247f" title="This constructor sets the default scale to 1.0 and offset to 0.0.">HyperbolicTangentKernel</a>(<span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#ac7fc2bb9399ec5ebbbf1b45f5eb14f44">scale</a>, <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a7fa7810cbab749d93de8f4994f55919d">offset</a>) :
+<a name="l00047"></a>00047       scale(scale), offset(offset)
+<a name="l00048"></a>00048   { }
+<a name="l00049"></a>00049 
+<a name="l00059"></a>00059   <span class="keyword">template</span>&lt;<span class="keyword">typename</span> VecType&gt;
+<a name="l00060"></a><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a5feba2b57848fa86f4f7eef0d875e5c1">00060</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a5feba2b57848fa86f4f7eef0d875e5c1" title="Evaluate the hyperbolic tangent kernel.">Evaluate</a>(<span class="keyword">const</span> VecType&amp; a, <span class="keyword">const</span> VecType&amp; b)
+<a name="l00061"></a>00061   {
+<a name="l00062"></a>00062     <span class="keywordflow">return</span> tanh(<a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#ac7fc2bb9399ec5ebbbf1b45f5eb14f44">scale</a> * arma::dot(a, b) + <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a7fa7810cbab749d93de8f4994f55919d">offset</a>);
+<a name="l00063"></a>00063   }
+<a name="l00064"></a>00064 
+<a name="l00066"></a><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a6b583368f635e94f92e7ad9625ff5a1a">00066</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a6b583368f635e94f92e7ad9625ff5a1a" title="Get scale factor.">Scale</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#ac7fc2bb9399ec5ebbbf1b45f5eb14f44">scale</a>; }
+<a name="l00068"></a><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a1a3a6b933bbe7f71bd905784f9360d8d">00068</a>   <span class="keywordtype">double</span>&amp; <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a1a3a6b933bbe7f71bd905784f9360d8d" title="Modify scale factor.">Scale</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#ac7fc2bb9399ec5ebbbf1b45f5eb14f44">scale</a>; }
+<a name="l00069"></a>00069 
+<a name="l00071"></a><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a6bf4a131db46bab6c2f7730a38030e3a">00071</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a6bf4a131db46bab6c2f7730a38030e3a" title="Get offset for the kernel.">Offset</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a7fa7810cbab749d93de8f4994f55919d">offset</a>; }
+<a name="l00073"></a><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a7cbaf664ca2c4e0b79f5e236cab8af2d">00073</a>   <span class="keywordtype">double</span>&amp; <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a7cbaf664ca2c4e0b79f5e236cab8af2d" title="Modify offset for the kernel.">Offset</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a7fa7810cbab749d93de8f4994f55919d">offset</a>; }
+<a name="l00074"></a>00074 
+<a name="l00076"></a><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a2fe29946d3dfa6259fd9b720b18636ee">00076</a>   std::string <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a2fe29946d3dfa6259fd9b720b18636ee" title="Convert object to string.">ToString</a>()<span class="keyword"> const</span>
+<a name="l00077"></a>00077 <span class="keyword">  </span>{
+<a name="l00078"></a>00078     std::ostringstream convert;
+<a name="l00079"></a>00079     convert &lt;&lt; <span class="stringliteral">&quot;HyperbolicTangentKernel [&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot;]&quot;</span> &lt;&lt; std::endl;
+<a name="l00080"></a>00080     convert &lt;&lt; <span class="stringliteral">&quot;  Scale: &quot;</span> &lt;&lt; <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#ac7fc2bb9399ec5ebbbf1b45f5eb14f44">scale</a> &lt;&lt; std::endl;
+<a name="l00081"></a>00081     convert &lt;&lt; <span class="stringliteral">&quot;  Offset: &quot;</span> &lt;&lt; <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a7fa7810cbab749d93de8f4994f55919d">offset</a> &lt;&lt; std::endl;
+<a name="l00082"></a>00082     <span class="keywordflow">return</span> convert.str();
+<a name="l00083"></a>00083   }
+<a name="l00084"></a>00084 
+<a name="l00085"></a>00085  <span class="keyword">private</span>:
+<a name="l00086"></a><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#ac7fc2bb9399ec5ebbbf1b45f5eb14f44">00086</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#ac7fc2bb9399ec5ebbbf1b45f5eb14f44">scale</a>;
+<a name="l00087"></a><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a7fa7810cbab749d93de8f4994f55919d">00087</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a7fa7810cbab749d93de8f4994f55919d">offset</a>;
+<a name="l00088"></a>00088 };
+<a name="l00089"></a>00089 
+<a name="l00090"></a>00090 }; <span class="comment">// namespace kernel</span>
+<a name="l00091"></a>00091 }; <span class="comment">// namespace mlpack</span>
 <a name="l00092"></a>00092 
-<a name="l00093"></a>00093  <span class="keyword">private</span>:
-<a name="l00094"></a><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#ac7fc2bb9399ec5ebbbf1b45f5eb14f44">00094</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#ac7fc2bb9399ec5ebbbf1b45f5eb14f44">scale</a>;
-<a name="l00095"></a><a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a7fa7810cbab749d93de8f4994f55919d">00095</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1HyperbolicTangentKernel.html#a7fa7810cbab749d93de8f4994f55919d">offset</a>;
-<a name="l00096"></a>00096 };
-<a name="l00097"></a>00097 
-<a name="l00098"></a>00098 }; <span class="comment">// namespace kernel</span>
-<a name="l00099"></a>00099 }; <span class="comment">// namespace mlpack</span>
-<a name="l00100"></a>00100 
-<a name="l00101"></a>00101 <span class="preprocessor">#endif</span>
+<a name="l00093"></a>00093 <span class="preprocessor">#endif</span>
 </pre></div></div>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Thu Dec 11 2014 11:58:12 for MLPACK by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Jan 7 2015 13:07:07 for mlpack by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

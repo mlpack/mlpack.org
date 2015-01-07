@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>MLPACK: src/mlpack/core/kernels/laplacian_kernel.hpp Source File</title>
+<title>mlpack: src/mlpack/core/kernels/laplacian_kernel.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -27,10 +27,10 @@
   </div>
   <div class="navpath">
     <ul>
-      <li><a class="el" href="dir_b2882640fb086b78868b6b301530d5f7.html">src</a>      </li>
-      <li><a class="el" href="dir_6a996d0c1ea6093f358c2a4e16663c26.html">mlpack</a>      </li>
-      <li><a class="el" href="dir_e63db7f24a01e7602d62b556dab603f6.html">core</a>      </li>
-      <li><a class="el" href="dir_6a303cfb630207233dcf19428f128b54.html">kernels</a>      </li>
+      <li><a class="el" href="dir_8643ae0b91354c4ed75fc37925b48b5f.html">src</a>      </li>
+      <li><a class="el" href="dir_7bafb4101e77828b09700d4aaccdb316.html">mlpack</a>      </li>
+      <li><a class="el" href="dir_a24db58f334daf1661a68d63dd442609.html">core</a>      </li>
+      <li><a class="el" href="dir_6328196dcf8eca2a838a9c4aa0fc2937.html">kernels</a>      </li>
     </ul>
   </div>
 </div>
@@ -40,66 +40,66 @@
 </div>
 <div class="contents">
 <a href="laplacian__kernel_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
-<a name="l00022"></a>00022 <span class="preprocessor">#ifndef __MLPACK_CORE_KERNELS_LAPLACIAN_KERNEL_HPP</span>
-<a name="l00023"></a>00023 <span class="preprocessor"></span><span class="preprocessor">#define __MLPACK_CORE_KERNELS_LAPLACIAN_KERNEL_HPP</span>
-<a name="l00024"></a>00024 <span class="preprocessor"></span>
-<a name="l00025"></a>00025 <span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span>
-<a name="l00026"></a>00026 
-<a name="l00027"></a>00027 <span class="keyword">namespace </span>mlpack {
-<a name="l00028"></a>00028 <span class="keyword">namespace </span>kernel {
-<a name="l00029"></a>00029 
-<a name="l00040"></a><a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html">00040</a> <span class="keyword">class </span><a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html" title="The standard Laplacian kernel.">LaplacianKernel</a>
-<a name="l00041"></a>00041 {
-<a name="l00042"></a>00042  <span class="keyword">public</span>:
-<a name="l00046"></a><a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a6968fb3d4d461196394037e79401fd76">00046</a>   <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a6968fb3d4d461196394037e79401fd76" title="Default constructor; sets bandwidth to 1.0.">LaplacianKernel</a>() : <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0" title="Kernel bandwidth.">bandwidth</a>(1.0)
-<a name="l00047"></a>00047   { }
-<a name="l00048"></a>00048 
-<a name="l00054"></a><a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#af2d60fd48c94f74db932a0f5adf35982">00054</a>   <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a6968fb3d4d461196394037e79401fd76" title="Default constructor; sets bandwidth to 1.0.">LaplacianKernel</a>(<span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0" title="Kernel bandwidth.">bandwidth</a>) :
-<a name="l00055"></a>00055       bandwidth(bandwidth)
-<a name="l00056"></a>00056   { }
-<a name="l00057"></a>00057 
-<a name="l00069"></a>00069   <span class="keyword">template</span>&lt;<span class="keyword">typename</span> VecType&gt;
-<a name="l00070"></a><a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a4e9fee0a6291e3d2bf168cf792ec17f6">00070</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a4e9fee0a6291e3d2bf168cf792ec17f6" title="Evaluation of the Laplacian kernel.">Evaluate</a>(<span class="keyword">const</span> VecType&amp; a, <span class="keyword">const</span> VecType&amp; b)<span class="keyword"> const</span>
-<a name="l00071"></a>00071 <span class="keyword">  </span>{
-<a name="l00072"></a>00072     <span class="comment">// The precalculation of gamma saves us a little computation time.</span>
-<a name="l00073"></a>00073     <span class="keywordflow">return</span> exp(-<a class="code" href="classmlpack_1_1metric_1_1LMetric.html#ab6a043d8d42d4ce1c6012171097a9e85" title="Computes the distance between two points.">metric::EuclideanDistance::Evaluate</a>(a, b) / <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0" title="Kernel bandwidth.">bandwidth</a>);
-<a name="l00074"></a>00074   }
-<a name="l00075"></a>00075 
-<a name="l00084"></a><a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#ac84bc5a72ef2c3ee2071e4e79368a4f6">00084</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a4e9fee0a6291e3d2bf168cf792ec17f6" title="Evaluation of the Laplacian kernel.">Evaluate</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> t)<span class="keyword"> const</span>
-<a name="l00085"></a>00085 <span class="keyword">  </span>{
-<a name="l00086"></a>00086     <span class="comment">// The precalculation of gamma saves us a little computation time.</span>
-<a name="l00087"></a>00087     <span class="keywordflow">return</span> exp(-t / <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0" title="Kernel bandwidth.">bandwidth</a>);
-<a name="l00088"></a>00088   }
-<a name="l00089"></a>00089 
-<a name="l00091"></a><a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a4c7d30c97b0859d0dc12d4be243ec745">00091</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a4c7d30c97b0859d0dc12d4be243ec745" title="Get the bandwidth.">Bandwidth</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0" title="Kernel bandwidth.">bandwidth</a>; }
-<a name="l00093"></a><a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#af33423c6278fdf7c116ca5580eb10eca">00093</a>   <span class="keywordtype">double</span>&amp; <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#af33423c6278fdf7c116ca5580eb10eca" title="Modify the bandwidth.">Bandwidth</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0" title="Kernel bandwidth.">bandwidth</a>; }
-<a name="l00094"></a>00094 
-<a name="l00096"></a><a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#ad866ca14a1ffcf4482769da54a72f707">00096</a>   std::string <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#ad866ca14a1ffcf4482769da54a72f707" title="Return a string representation of the kernel.">ToString</a>()<span class="keyword"> const</span>
-<a name="l00097"></a>00097 <span class="keyword">  </span>{
-<a name="l00098"></a>00098     std::ostringstream convert;
-<a name="l00099"></a>00099     convert &lt;&lt; <span class="stringliteral">&quot;LaplacianKernel [&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot;]&quot;</span> &lt;&lt; std::endl;
-<a name="l00100"></a>00100     convert &lt;&lt; <span class="stringliteral">&quot;  Bandwidth: &quot;</span> &lt;&lt; <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0" title="Kernel bandwidth.">bandwidth</a> &lt;&lt; std::endl;
-<a name="l00101"></a>00101     <span class="keywordflow">return</span> convert.str();
-<a name="l00102"></a>00102   }
-<a name="l00103"></a>00103 
-<a name="l00104"></a>00104  <span class="keyword">private</span>:
-<a name="l00106"></a><a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">00106</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0" title="Kernel bandwidth.">bandwidth</a>;
-<a name="l00107"></a>00107 };
-<a name="l00108"></a>00108 
-<a name="l00110"></a>00110 <span class="keyword">template</span>&lt;&gt;
-<a name="l00111"></a><a class="code" href="classmlpack_1_1kernel_1_1KernelTraits_3_01LaplacianKernel_01_4.html">00111</a> <span class="keyword">class </span><a class="code" href="classmlpack_1_1kernel_1_1KernelTraits.html" title="This is a template class that can provide information about various kernels.">KernelTraits</a>&lt;<a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html" title="The standard Laplacian kernel.">LaplacianKernel</a>&gt;
-<a name="l00112"></a>00112 {
-<a name="l00113"></a>00113  <span class="keyword">public</span>:
-<a name="l00115"></a><a class="code" href="classmlpack_1_1kernel_1_1KernelTraits_3_01LaplacianKernel_01_4.html#a3057882456025fdf59e196dc1eeeff93">00115</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1kernel_1_1KernelTraits.html#a57dad77da8e7a9b8c8c91fd06c091ecf" title="If true, then the kernel is normalized: K(x, x) = K(y, y) = 1 for all x.">IsNormalized</a> = <span class="keyword">true</span>;
-<a name="l00116"></a>00116 };
-<a name="l00117"></a>00117 
-<a name="l00118"></a>00118 }; <span class="comment">// namespace kernel</span>
-<a name="l00119"></a>00119 }; <span class="comment">// namespace mlpack</span>
-<a name="l00120"></a>00120 
-<a name="l00121"></a>00121 <span class="preprocessor">#endif</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#ifndef __MLPACK_CORE_KERNELS_LAPLACIAN_KERNEL_HPP</span>
+<a name="l00015"></a>00015 <span class="preprocessor"></span><span class="preprocessor">#define __MLPACK_CORE_KERNELS_LAPLACIAN_KERNEL_HPP</span>
+<a name="l00016"></a>00016 <span class="preprocessor"></span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span>
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 <span class="keyword">namespace </span>mlpack {
+<a name="l00020"></a>00020 <span class="keyword">namespace </span>kernel {
+<a name="l00021"></a>00021 
+<a name="l00032"></a><a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html">00032</a> <span class="keyword">class </span><a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html" title="The standard Laplacian kernel.">LaplacianKernel</a>
+<a name="l00033"></a>00033 {
+<a name="l00034"></a>00034  <span class="keyword">public</span>:
+<a name="l00038"></a><a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a6968fb3d4d461196394037e79401fd76">00038</a>   <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a6968fb3d4d461196394037e79401fd76" title="Default constructor; sets bandwidth to 1.0.">LaplacianKernel</a>() : <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0" title="Kernel bandwidth.">bandwidth</a>(1.0)
+<a name="l00039"></a>00039   { }
+<a name="l00040"></a>00040 
+<a name="l00046"></a><a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#af2d60fd48c94f74db932a0f5adf35982">00046</a>   <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a6968fb3d4d461196394037e79401fd76" title="Default constructor; sets bandwidth to 1.0.">LaplacianKernel</a>(<span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0" title="Kernel bandwidth.">bandwidth</a>) :
+<a name="l00047"></a>00047       bandwidth(bandwidth)
+<a name="l00048"></a>00048   { }
+<a name="l00049"></a>00049 
+<a name="l00061"></a>00061   <span class="keyword">template</span>&lt;<span class="keyword">typename</span> VecType&gt;
+<a name="l00062"></a><a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a4e9fee0a6291e3d2bf168cf792ec17f6">00062</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a4e9fee0a6291e3d2bf168cf792ec17f6" title="Evaluation of the Laplacian kernel.">Evaluate</a>(<span class="keyword">const</span> VecType&amp; a, <span class="keyword">const</span> VecType&amp; b)<span class="keyword"> const</span>
+<a name="l00063"></a>00063 <span class="keyword">  </span>{
+<a name="l00064"></a>00064     <span class="comment">// The precalculation of gamma saves us a little computation time.</span>
+<a name="l00065"></a>00065     <span class="keywordflow">return</span> exp(-<a class="code" href="classmlpack_1_1metric_1_1LMetric.html#ab6a043d8d42d4ce1c6012171097a9e85" title="Computes the distance between two points.">metric::EuclideanDistance::Evaluate</a>(a, b) / <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0" title="Kernel bandwidth.">bandwidth</a>);
+<a name="l00066"></a>00066   }
+<a name="l00067"></a>00067 
+<a name="l00076"></a><a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#ac84bc5a72ef2c3ee2071e4e79368a4f6">00076</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a4e9fee0a6291e3d2bf168cf792ec17f6" title="Evaluation of the Laplacian kernel.">Evaluate</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> t)<span class="keyword"> const</span>
+<a name="l00077"></a>00077 <span class="keyword">  </span>{
+<a name="l00078"></a>00078     <span class="comment">// The precalculation of gamma saves us a little computation time.</span>
+<a name="l00079"></a>00079     <span class="keywordflow">return</span> exp(-t / <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0" title="Kernel bandwidth.">bandwidth</a>);
+<a name="l00080"></a>00080   }
+<a name="l00081"></a>00081 
+<a name="l00083"></a><a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a4c7d30c97b0859d0dc12d4be243ec745">00083</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a4c7d30c97b0859d0dc12d4be243ec745" title="Get the bandwidth.">Bandwidth</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0" title="Kernel bandwidth.">bandwidth</a>; }
+<a name="l00085"></a><a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#af33423c6278fdf7c116ca5580eb10eca">00085</a>   <span class="keywordtype">double</span>&amp; <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#af33423c6278fdf7c116ca5580eb10eca" title="Modify the bandwidth.">Bandwidth</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0" title="Kernel bandwidth.">bandwidth</a>; }
+<a name="l00086"></a>00086 
+<a name="l00088"></a><a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#ad866ca14a1ffcf4482769da54a72f707">00088</a>   std::string <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#ad866ca14a1ffcf4482769da54a72f707" title="Return a string representation of the kernel.">ToString</a>()<span class="keyword"> const</span>
+<a name="l00089"></a>00089 <span class="keyword">  </span>{
+<a name="l00090"></a>00090     std::ostringstream convert;
+<a name="l00091"></a>00091     convert &lt;&lt; <span class="stringliteral">&quot;LaplacianKernel [&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot;]&quot;</span> &lt;&lt; std::endl;
+<a name="l00092"></a>00092     convert &lt;&lt; <span class="stringliteral">&quot;  Bandwidth: &quot;</span> &lt;&lt; <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0" title="Kernel bandwidth.">bandwidth</a> &lt;&lt; std::endl;
+<a name="l00093"></a>00093     <span class="keywordflow">return</span> convert.str();
+<a name="l00094"></a>00094   }
+<a name="l00095"></a>00095 
+<a name="l00096"></a>00096  <span class="keyword">private</span>:
+<a name="l00098"></a><a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">00098</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0" title="Kernel bandwidth.">bandwidth</a>;
+<a name="l00099"></a>00099 };
+<a name="l00100"></a>00100 
+<a name="l00102"></a>00102 <span class="keyword">template</span>&lt;&gt;
+<a name="l00103"></a><a class="code" href="classmlpack_1_1kernel_1_1KernelTraits_3_01LaplacianKernel_01_4.html">00103</a> <span class="keyword">class </span><a class="code" href="classmlpack_1_1kernel_1_1KernelTraits.html" title="This is a template class that can provide information about various kernels.">KernelTraits</a>&lt;<a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html" title="The standard Laplacian kernel.">LaplacianKernel</a>&gt;
+<a name="l00104"></a>00104 {
+<a name="l00105"></a>00105  <span class="keyword">public</span>:
+<a name="l00107"></a><a class="code" href="classmlpack_1_1kernel_1_1KernelTraits_3_01LaplacianKernel_01_4.html#a3057882456025fdf59e196dc1eeeff93">00107</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1kernel_1_1KernelTraits.html#a57dad77da8e7a9b8c8c91fd06c091ecf" title="If true, then the kernel is normalized: K(x, x) = K(y, y) = 1 for all x.">IsNormalized</a> = <span class="keyword">true</span>;
+<a name="l00108"></a>00108 };
+<a name="l00109"></a>00109 
+<a name="l00110"></a>00110 }; <span class="comment">// namespace kernel</span>
+<a name="l00111"></a>00111 }; <span class="comment">// namespace mlpack</span>
+<a name="l00112"></a>00112 
+<a name="l00113"></a>00113 <span class="preprocessor">#endif</span>
 </pre></div></div>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Thu Dec 11 2014 11:58:12 for MLPACK by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Jan 7 2015 13:07:07 for mlpack by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

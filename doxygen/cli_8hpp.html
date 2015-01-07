@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>MLPACK: src/mlpack/core/util/cli.hpp File Reference</title>
+<title>mlpack: src/mlpack/core/util/cli.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -27,10 +27,10 @@
   </div>
   <div class="navpath">
     <ul>
-      <li><a class="el" href="dir_b2882640fb086b78868b6b301530d5f7.html">src</a>      </li>
-      <li><a class="el" href="dir_6a996d0c1ea6093f358c2a4e16663c26.html">mlpack</a>      </li>
-      <li><a class="el" href="dir_e63db7f24a01e7602d62b556dab603f6.html">core</a>      </li>
-      <li><a class="el" href="dir_c34ef605466b2e087c6f806b9f47e333.html">util</a>      </li>
+      <li><a class="el" href="dir_8643ae0b91354c4ed75fc37925b48b5f.html">src</a>      </li>
+      <li><a class="el" href="dir_7bafb4101e77828b09700d4aaccdb316.html">mlpack</a>      </li>
+      <li><a class="el" href="dir_a24db58f334daf1661a68d63dd442609.html">core</a>      </li>
+      <li><a class="el" href="dir_a48d35126ff19c8f2dd9b3b38699bd65.html">util</a>      </li>
     </ul>
   </div>
 </div>
@@ -108,10 +108,8 @@ Defines</h2></td></tr>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <dl class="author"><dt><b>Author:</b></dt><dd>Matthew Amidon</dd></dl>
 <p>This file implements the CLI subsystem which is intended to replace FX. This can be used more or less regardless of context. In the future, it might be expanded to include file I/O.</p>
-<p>This file is part of MLPACK 1.0.11.</p>
-<p>MLPACK is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
-<p>MLPACK is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details (LICENSE.txt).</p>
-<p>You should have received a copy of the GNU General Public License along with MLPACK. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;. </p>
+<p>This file is part of mlpack 1.0.12.</p>
+<p>mlpack is free software; you may redstribute it and/or modify it under the terms of the 3-clause BSD license. You should have received a copy of the 3-clause BSD license along with mlpack. If not, see <a href="http://www.opensource.org/licenses/BSD-3-Clause">http://www.opensource.org/licenses/BSD-3-Clause</a> for more information. </p>
 
 <p>Definition in file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 <hr/><h2>Define Documentation</h2>
@@ -181,7 +179,7 @@ Defines</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00357">357</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00349">349</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -236,7 +234,7 @@ Defines</h2></td></tr>
 <dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classmlpack_1_1CLI.html" title="Parses the command line for parameters and holds user-specified parameters.">mlpack::CLI</a>, <a class="el" href="cli_8hpp.html#ad781e52fa8bee6ec70cabb646fa16e00" title="Document an executable.">PROGRAM_INFO()</a></dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000004">Bug:</a></b></dt><dd>The __COUNTER__ variable is used in most cases to guarantee a unique global identifier for options declared using the PARAM_*() macros. However, not all compilers have this support--most notably, gcc &lt; 4.3. In that case, the __LINE__ macro is used as an attempt to get a unique global identifier, but collisions are still possible, and they produce bizarre error messages. See <a href="http://mlpack.org/trac/ticket/74">http://mlpack.org/trac/ticket/74</a> for more information. </dd></dl>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00146">146</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00138">138</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -286,7 +284,7 @@ Defines</h2></td></tr>
 <dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classmlpack_1_1CLI.html" title="Parses the command line for parameters and holds user-specified parameters.">mlpack::CLI</a>, <a class="el" href="cli_8hpp.html#ad781e52fa8bee6ec70cabb646fa16e00" title="Document an executable.">PROGRAM_INFO()</a></dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000009">Bug:</a></b></dt><dd>The __COUNTER__ variable is used in most cases to guarantee a unique global identifier for options declared using the PARAM_*() macros. However, not all compilers have this support--most notably, gcc &lt; 4.3. In that case, the __LINE__ macro is used as an attempt to get a unique global identifier, but collisions are still possible, and they produce bizarre error messages. See <a href="http://mlpack.org/trac/ticket/74">http://mlpack.org/trac/ticket/74</a> for more information. </dd></dl>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00267">267</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00259">259</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -333,7 +331,7 @@ Defines</h2></td></tr>
 <dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classmlpack_1_1CLI.html" title="Parses the command line for parameters and holds user-specified parameters.">mlpack::CLI</a>, <a class="el" href="cli_8hpp.html#ad781e52fa8bee6ec70cabb646fa16e00" title="Document an executable.">PROGRAM_INFO()</a></dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug:</a></b></dt><dd>The __COUNTER__ variable is used in most cases to guarantee a unique global identifier for options declared using the PARAM_*() macros. However, not all compilers have this support--most notably, gcc &lt; 4.3. In that case, the __LINE__ macro is used as an attempt to get a unique global identifier, but collisions are still possible, and they produce bizarre error messages. See <a href="http://mlpack.org/trac/ticket/74">http://mlpack.org/trac/ticket/74</a> for more information. </dd></dl>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00074">74</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00066">66</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -389,7 +387,7 @@ Defines</h2></td></tr>
 <dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classmlpack_1_1CLI.html" title="Parses the command line for parameters and holds user-specified parameters.">mlpack::CLI</a>, <a class="el" href="cli_8hpp.html#ad781e52fa8bee6ec70cabb646fa16e00" title="Document an executable.">PROGRAM_INFO()</a></dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000003">Bug:</a></b></dt><dd>The __COUNTER__ variable is used in most cases to guarantee a unique global identifier for options declared using the PARAM_*() macros. However, not all compilers have this support--most notably, gcc &lt; 4.3. In that case, the __LINE__ macro is used as an attempt to get a unique global identifier, but collisions are still possible, and they produce bizarre error messages. See <a href="http://mlpack.org/trac/ticket/74">http://mlpack.org/trac/ticket/74</a> for more information. </dd></dl>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00122">122</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00114">114</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -440,7 +438,7 @@ Defines</h2></td></tr>
 <dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classmlpack_1_1CLI.html" title="Parses the command line for parameters and holds user-specified parameters.">mlpack::CLI</a>, <a class="el" href="cli_8hpp.html#ad781e52fa8bee6ec70cabb646fa16e00" title="Document an executable.">PROGRAM_INFO()</a></dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000008">Bug:</a></b></dt><dd>The __COUNTER__ variable is used in most cases to guarantee a unique global identifier for options declared using the PARAM_*() macros. However, not all compilers have this support--most notably, gcc &lt; 4.3. In that case, the __LINE__ macro is used as an attempt to get a unique global identifier, but collisions are still possible, and they produce bizarre error messages. See <a href="http://mlpack.org/trac/ticket/74">http://mlpack.org/trac/ticket/74</a> for more information. </dd></dl>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00244">244</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00236">236</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -495,7 +493,7 @@ Defines</h2></td></tr>
 <dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classmlpack_1_1CLI.html" title="Parses the command line for parameters and holds user-specified parameters.">mlpack::CLI</a>, <a class="el" href="cli_8hpp.html#ad781e52fa8bee6ec70cabb646fa16e00" title="Document an executable.">PROGRAM_INFO()</a></dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000002">Bug:</a></b></dt><dd>The __COUNTER__ variable is used in most cases to guarantee a unique global identifier for options declared using the PARAM_*() macros. However, not all compilers have this support--most notably, gcc &lt; 4.3. In that case, the __LINE__ macro is used as an attempt to get a unique global identifier, but collisions are still possible, and they produce bizarre error messages. See <a href="http://mlpack.org/trac/ticket/74">http://mlpack.org/trac/ticket/74</a> for more information. </dd></dl>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00098">98</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00090">90</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -543,7 +541,7 @@ Defines</h2></td></tr>
 <dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classmlpack_1_1CLI.html" title="Parses the command line for parameters and holds user-specified parameters.">mlpack::CLI</a>, <a class="el" href="cli_8hpp.html#ad781e52fa8bee6ec70cabb646fa16e00" title="Document an executable.">PROGRAM_INFO()</a></dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000007">Bug:</a></b></dt><dd>The __COUNTER__ variable is used in most cases to guarantee a unique global identifier for options declared using the PARAM_*() macros. However, not all compilers have this support--most notably, gcc &lt; 4.3. In that case, the __LINE__ macro is used as an attempt to get a unique global identifier, but collisions are still possible, and they produce bizarre error messages. See <a href="http://mlpack.org/trac/ticket/74">http://mlpack.org/trac/ticket/74</a> for more information. </dd></dl>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00220">220</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00212">212</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -598,7 +596,7 @@ Defines</h2></td></tr>
 <dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classmlpack_1_1CLI.html" title="Parses the command line for parameters and holds user-specified parameters.">mlpack::CLI</a>, <a class="el" href="cli_8hpp.html#ad781e52fa8bee6ec70cabb646fa16e00" title="Document an executable.">PROGRAM_INFO()</a></dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000005">Bug:</a></b></dt><dd>The __COUNTER__ variable is used in most cases to guarantee a unique global identifier for options declared using the PARAM_*() macros. However, not all compilers have this support--most notably, gcc &lt; 4.3. In that case, the __LINE__ macro is used as an attempt to get a unique global identifier, but collisions are still possible, and they produce bizarre error messages. See <a href="http://mlpack.org/trac/ticket/74">http://mlpack.org/trac/ticket/74</a> for more information. </dd></dl>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00171">171</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00163">163</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -648,7 +646,7 @@ Defines</h2></td></tr>
 <dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classmlpack_1_1CLI.html" title="Parses the command line for parameters and holds user-specified parameters.">mlpack::CLI</a>, <a class="el" href="cli_8hpp.html#ad781e52fa8bee6ec70cabb646fa16e00" title="Document an executable.">PROGRAM_INFO()</a></dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000010">Bug:</a></b></dt><dd>The __COUNTER__ variable is used in most cases to guarantee a unique global identifier for options declared using the PARAM_*() macros. However, not all compilers have this support--most notably, gcc &lt; 4.3. In that case, the __LINE__ macro is used as an attempt to get a unique global identifier, but collisions are still possible, and they produce bizarre error messages. See <a href="http://mlpack.org/trac/ticket/74">http://mlpack.org/trac/ticket/74</a> for more information. </dd></dl>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00290">290</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00282">282</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -703,7 +701,7 @@ Defines</h2></td></tr>
 <dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classmlpack_1_1CLI.html" title="Parses the command line for parameters and holds user-specified parameters.">mlpack::CLI</a>, <a class="el" href="cli_8hpp.html#ad781e52fa8bee6ec70cabb646fa16e00" title="Document an executable.">PROGRAM_INFO()</a></dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000006">Bug:</a></b></dt><dd>The __COUNTER__ variable is used in most cases to guarantee a unique global identifier for options declared using the PARAM_*() macros. However, not all compilers have this support--most notably, gcc &lt; 4.3. In that case, the __LINE__ macro is used as an attempt to get a unique global identifier, but collisions are still possible, and they produce bizarre error messages. See <a href="http://mlpack.org/trac/ticket/74">http://mlpack.org/trac/ticket/74</a> for more information. </dd></dl>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00195">195</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00187">187</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -759,7 +757,7 @@ Defines</h2></td></tr>
 <dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classmlpack_1_1CLI.html" title="Parses the command line for parameters and holds user-specified parameters.">mlpack::CLI</a>, <a class="el" href="cli_8hpp.html#ad781e52fa8bee6ec70cabb646fa16e00" title="Document an executable.">PROGRAM_INFO()</a></dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000011">Bug:</a></b></dt><dd>The __COUNTER__ variable is used in most cases to guarantee a unique global identifier for options declared using the PARAM_*() macros. However, not all compilers have this support--most notably, gcc &lt; 4.3. In that case, the __LINE__ macro is used as an attempt to get a unique global identifier, but collisions are still possible, and they produce bizarre error messages. See <a href="http://mlpack.org/trac/ticket/74">http://mlpack.org/trac/ticket/74</a> for more information. </dd></dl>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00313">313</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00305">305</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -801,7 +799,7 @@ Defines</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00054">54</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00046">46</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -823,12 +821,12 @@ Defines</h2></td></tr>
 
 <p>The TYPENAME macro is used internally to convert a type into a string. </p>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00372">372</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00364">364</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Thu Dec 11 2014 11:58:13 for MLPACK by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Jan 7 2015 13:07:08 for mlpack by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

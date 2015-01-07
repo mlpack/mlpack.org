@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>MLPACK: src/mlpack/methods/amf/update_rules/svd_incomplete_incremental_learning.hpp Source File</title>
+<title>mlpack: src/mlpack/methods/amf/update_rules/svd_incomplete_incremental_learning.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -27,11 +27,11 @@
   </div>
   <div class="navpath">
     <ul>
-      <li><a class="el" href="dir_b2882640fb086b78868b6b301530d5f7.html">src</a>      </li>
-      <li><a class="el" href="dir_6a996d0c1ea6093f358c2a4e16663c26.html">mlpack</a>      </li>
-      <li><a class="el" href="dir_41da2282a8e24c4f2c665c6af5d83473.html">methods</a>      </li>
-      <li><a class="el" href="dir_0b329e8cdf5db5888138b70ce65ee5c8.html">amf</a>      </li>
-      <li><a class="el" href="dir_96aa4cec0ebbd0bc197273b73eb74e7e.html">update_rules</a>      </li>
+      <li><a class="el" href="dir_8643ae0b91354c4ed75fc37925b48b5f.html">src</a>      </li>
+      <li><a class="el" href="dir_7bafb4101e77828b09700d4aaccdb316.html">mlpack</a>      </li>
+      <li><a class="el" href="dir_04a30df2d8bed1a15b192056d1b2b7ae.html">methods</a>      </li>
+      <li><a class="el" href="dir_98fd0fbbc1f49ddcaa417ba7e7d05745.html">amf</a>      </li>
+      <li><a class="el" href="dir_9782752b282b488f4d52d422bf0e832d.html">update_rules</a>      </li>
     </ul>
   </div>
 </div>
@@ -67,111 +67,111 @@
 <a name="l00025"></a>00025     <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">currentUserIndex</a> = 0;
 <a name="l00026"></a>00026   }
 <a name="l00027"></a>00027 
-<a name="l00052"></a>00052   <span class="keyword">template</span>&lt;<span class="keyword">typename</span> MatType&gt;
-<a name="l00053"></a><a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a6f2349a3adb7d55ecea3d2e75a147097">00053</a>   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a6f2349a3adb7d55ecea3d2e75a147097" title="The update rule for the basis matrix W.">WUpdate</a>(<span class="keyword">const</span> MatType&amp; V,
-<a name="l00054"></a>00054                       arma::mat&amp; W,
-<a name="l00055"></a>00055                       <span class="keyword">const</span> arma::mat&amp; H)
-<a name="l00056"></a>00056   {
-<a name="l00057"></a>00057     arma::mat deltaW(<a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a253bf56378da5cde9d5bd9938a20f664">n</a>, W.n_cols);
-<a name="l00058"></a>00058     deltaW.zeros();
-<a name="l00059"></a>00059     <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0;i &lt; <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a253bf56378da5cde9d5bd9938a20f664">n</a>;i++)
-<a name="l00060"></a>00060     {
-<a name="l00061"></a>00061       <span class="keywordtype">double</span> val;
-<a name="l00062"></a>00062       <span class="keywordflow">if</span>((val = V(i, <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">currentUserIndex</a>)) != 0)
-<a name="l00063"></a>00063         deltaW.row(i) += (val - arma::dot(W.row(i), H.col(<a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">currentUserIndex</a>))) *
-<a name="l00064"></a>00064                                          arma::trans(H.col(<a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">currentUserIndex</a>));
-<a name="l00065"></a>00065       <span class="keywordflow">if</span>(<a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a78d9b969ba33ebe917282ca0984fcf96">kw</a> != 0) deltaW.row(i) -= <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a78d9b969ba33ebe917282ca0984fcf96">kw</a> * W.row(i);
-<a name="l00066"></a>00066     }
-<a name="l00067"></a>00067 
-<a name="l00068"></a>00068     W += <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#ae86a953f3f95fc58ad25ef1618d53f58">u</a>*deltaW;
-<a name="l00069"></a>00069   }
-<a name="l00070"></a>00070 
-<a name="l00080"></a>00080   <span class="keyword">template</span>&lt;<span class="keyword">typename</span> MatType&gt;
-<a name="l00081"></a><a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a9c15080ca35b1d8752eabd56a5c345c8">00081</a>   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a9c15080ca35b1d8752eabd56a5c345c8" title="The update rule for the encoding matrix H.">HUpdate</a>(<span class="keyword">const</span> MatType&amp; V,
-<a name="l00082"></a>00082                       <span class="keyword">const</span> arma::mat&amp; W,
-<a name="l00083"></a>00083                       arma::mat&amp; H)
-<a name="l00084"></a>00084   {
-<a name="l00085"></a>00085     arma::mat deltaH(H.n_rows, 1);
-<a name="l00086"></a>00086     deltaH.zeros();
-<a name="l00087"></a>00087 
-<a name="l00088"></a>00088     <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0;i &lt; <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a253bf56378da5cde9d5bd9938a20f664">n</a>;i++)
-<a name="l00089"></a>00089     {
-<a name="l00090"></a>00090       <span class="keywordtype">double</span> val;
-<a name="l00091"></a>00091       <span class="keywordflow">if</span>((val = V(i, <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">currentUserIndex</a>)) != 0)
-<a name="l00092"></a>00092         deltaH += (val - arma::dot(W.row(i), H.col(<a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">currentUserIndex</a>))) *
-<a name="l00093"></a>00093                                                     arma::trans(W.row(i));
-<a name="l00094"></a>00094     }
-<a name="l00095"></a>00095     <span class="keywordflow">if</span>(<a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a266431544e21ae146fe840d218c811a9">kh</a> != 0) deltaH -= <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a266431544e21ae146fe840d218c811a9">kh</a> * H.col(<a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">currentUserIndex</a>);
-<a name="l00096"></a>00096 
-<a name="l00097"></a>00097     H.col(<a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">currentUserIndex</a>++) += <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#ae86a953f3f95fc58ad25ef1618d53f58">u</a> * deltaH;
-<a name="l00098"></a>00098     <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">currentUserIndex</a> = <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">currentUserIndex</a> % <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#ac302b1783ab31072f9cd7b4f5e726741">m</a>;
-<a name="l00099"></a>00099   }
+<a name="l00044"></a>00044   <span class="keyword">template</span>&lt;<span class="keyword">typename</span> MatType&gt;
+<a name="l00045"></a><a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a6f2349a3adb7d55ecea3d2e75a147097">00045</a>   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a6f2349a3adb7d55ecea3d2e75a147097" title="The update rule for the basis matrix W.">WUpdate</a>(<span class="keyword">const</span> MatType&amp; V,
+<a name="l00046"></a>00046                       arma::mat&amp; W,
+<a name="l00047"></a>00047                       <span class="keyword">const</span> arma::mat&amp; H)
+<a name="l00048"></a>00048   {
+<a name="l00049"></a>00049     arma::mat deltaW(<a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a253bf56378da5cde9d5bd9938a20f664">n</a>, W.n_cols);
+<a name="l00050"></a>00050     deltaW.zeros();
+<a name="l00051"></a>00051     <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0;i &lt; <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a253bf56378da5cde9d5bd9938a20f664">n</a>;i++)
+<a name="l00052"></a>00052     {
+<a name="l00053"></a>00053       <span class="keywordtype">double</span> val;
+<a name="l00054"></a>00054       <span class="keywordflow">if</span>((val = V(i, <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">currentUserIndex</a>)) != 0)
+<a name="l00055"></a>00055         deltaW.row(i) += (val - arma::dot(W.row(i), H.col(<a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">currentUserIndex</a>))) *
+<a name="l00056"></a>00056                                          arma::trans(H.col(<a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">currentUserIndex</a>));
+<a name="l00057"></a>00057       <span class="keywordflow">if</span>(<a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a78d9b969ba33ebe917282ca0984fcf96">kw</a> != 0) deltaW.row(i) -= <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a78d9b969ba33ebe917282ca0984fcf96">kw</a> * W.row(i);
+<a name="l00058"></a>00058     }
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060     W += <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#ae86a953f3f95fc58ad25ef1618d53f58">u</a>*deltaW;
+<a name="l00061"></a>00061   }
+<a name="l00062"></a>00062 
+<a name="l00072"></a>00072   <span class="keyword">template</span>&lt;<span class="keyword">typename</span> MatType&gt;
+<a name="l00073"></a><a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a9c15080ca35b1d8752eabd56a5c345c8">00073</a>   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a9c15080ca35b1d8752eabd56a5c345c8" title="The update rule for the encoding matrix H.">HUpdate</a>(<span class="keyword">const</span> MatType&amp; V,
+<a name="l00074"></a>00074                       <span class="keyword">const</span> arma::mat&amp; W,
+<a name="l00075"></a>00075                       arma::mat&amp; H)
+<a name="l00076"></a>00076   {
+<a name="l00077"></a>00077     arma::mat deltaH(H.n_rows, 1);
+<a name="l00078"></a>00078     deltaH.zeros();
+<a name="l00079"></a>00079 
+<a name="l00080"></a>00080     <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0;i &lt; <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a253bf56378da5cde9d5bd9938a20f664">n</a>;i++)
+<a name="l00081"></a>00081     {
+<a name="l00082"></a>00082       <span class="keywordtype">double</span> val;
+<a name="l00083"></a>00083       <span class="keywordflow">if</span>((val = V(i, <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">currentUserIndex</a>)) != 0)
+<a name="l00084"></a>00084         deltaH += (val - arma::dot(W.row(i), H.col(<a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">currentUserIndex</a>))) *
+<a name="l00085"></a>00085                                                     arma::trans(W.row(i));
+<a name="l00086"></a>00086     }
+<a name="l00087"></a>00087     <span class="keywordflow">if</span>(<a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a266431544e21ae146fe840d218c811a9">kh</a> != 0) deltaH -= <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a266431544e21ae146fe840d218c811a9">kh</a> * H.col(<a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">currentUserIndex</a>);
+<a name="l00088"></a>00088 
+<a name="l00089"></a>00089     H.col(<a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">currentUserIndex</a>++) += <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#ae86a953f3f95fc58ad25ef1618d53f58">u</a> * deltaH;
+<a name="l00090"></a>00090     <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">currentUserIndex</a> = <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">currentUserIndex</a> % <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#ac302b1783ab31072f9cd7b4f5e726741">m</a>;
+<a name="l00091"></a>00091   }
+<a name="l00092"></a>00092 
+<a name="l00093"></a>00093  <span class="keyword">private</span>:
+<a name="l00094"></a><a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#ae86a953f3f95fc58ad25ef1618d53f58">00094</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#ae86a953f3f95fc58ad25ef1618d53f58">u</a>;
+<a name="l00095"></a><a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a78d9b969ba33ebe917282ca0984fcf96">00095</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a78d9b969ba33ebe917282ca0984fcf96">kw</a>;
+<a name="l00096"></a><a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a266431544e21ae146fe840d218c811a9">00096</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a266431544e21ae146fe840d218c811a9">kh</a>;
+<a name="l00097"></a>00097 
+<a name="l00098"></a><a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a253bf56378da5cde9d5bd9938a20f664">00098</a>   <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a253bf56378da5cde9d5bd9938a20f664">n</a>;
+<a name="l00099"></a><a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#ac302b1783ab31072f9cd7b4f5e726741">00099</a>   <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#ac302b1783ab31072f9cd7b4f5e726741">m</a>;
 <a name="l00100"></a>00100 
-<a name="l00101"></a>00101  <span class="keyword">private</span>:
-<a name="l00102"></a><a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#ae86a953f3f95fc58ad25ef1618d53f58">00102</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#ae86a953f3f95fc58ad25ef1618d53f58">u</a>;
-<a name="l00103"></a><a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a78d9b969ba33ebe917282ca0984fcf96">00103</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a78d9b969ba33ebe917282ca0984fcf96">kw</a>;
-<a name="l00104"></a><a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a266431544e21ae146fe840d218c811a9">00104</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a266431544e21ae146fe840d218c811a9">kh</a>;
-<a name="l00105"></a>00105 
-<a name="l00106"></a><a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a253bf56378da5cde9d5bd9938a20f664">00106</a>   <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a253bf56378da5cde9d5bd9938a20f664">n</a>;
-<a name="l00107"></a><a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#ac302b1783ab31072f9cd7b4f5e726741">00107</a>   <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#ac302b1783ab31072f9cd7b4f5e726741">m</a>;
-<a name="l00108"></a>00108 
-<a name="l00109"></a><a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">00109</a>   <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">currentUserIndex</a>;
-<a name="l00110"></a>00110 };
-<a name="l00111"></a>00111 
-<a name="l00112"></a>00112 <span class="keyword">template</span>&lt;&gt;
-<a name="l00113"></a>00113 <span class="keyword">inline</span> <span class="keywordtype">void</span> SVDIncompleteIncrementalLearning::
-<a name="l00114"></a>00114                                     WUpdate&lt;arma::sp_mat&gt;(<span class="keyword">const</span> arma::sp_mat&amp; V,
-<a name="l00115"></a>00115                                                           arma::mat&amp; W,
-<a name="l00116"></a>00116                                                           <span class="keyword">const</span> arma::mat&amp; H)
-<a name="l00117"></a>00117 {
-<a name="l00118"></a>00118   arma::mat deltaW(n, W.n_cols);
-<a name="l00119"></a>00119   deltaW.zeros();
-<a name="l00120"></a>00120   <span class="keywordflow">for</span>(arma::sp_mat::const_iterator it = V.begin_col(currentUserIndex);
-<a name="l00121"></a>00121                                       it != V.end_col(currentUserIndex);it++)
-<a name="l00122"></a>00122   {
-<a name="l00123"></a>00123     <span class="keywordtype">double</span> val = *it;
-<a name="l00124"></a>00124     <span class="keywordtype">size_t</span> i = it.row();
-<a name="l00125"></a>00125     deltaW.row(i) += (val - arma::dot(W.row(i), H.col(currentUserIndex))) *
-<a name="l00126"></a>00126                                          arma::trans(H.col(currentUserIndex));
-<a name="l00127"></a>00127     <span class="keywordflow">if</span>(kw != 0) deltaW.row(i) -= kw * W.row(i);
-<a name="l00128"></a>00128   }
-<a name="l00129"></a>00129 
-<a name="l00130"></a>00130   W += u*deltaW;
-<a name="l00131"></a>00131 }
-<a name="l00132"></a>00132 
-<a name="l00133"></a>00133 <span class="keyword">template</span>&lt;&gt;
-<a name="l00134"></a>00134 <span class="keyword">inline</span> <span class="keywordtype">void</span> SVDIncompleteIncrementalLearning::
-<a name="l00135"></a>00135                               HUpdate&lt;arma::sp_mat&gt;(<span class="keyword">const</span> arma::sp_mat&amp; V,
-<a name="l00136"></a>00136                                                     <span class="keyword">const</span> arma::mat&amp; W,
-<a name="l00137"></a>00137                                                     arma::mat&amp; H)
-<a name="l00138"></a>00138 {
-<a name="l00139"></a>00139   arma::mat deltaH(H.n_rows, 1);
-<a name="l00140"></a>00140   deltaH.zeros();
-<a name="l00141"></a>00141 
-<a name="l00142"></a>00142   <span class="keywordflow">for</span>(arma::sp_mat::const_iterator it = V.begin_col(currentUserIndex);
-<a name="l00143"></a>00143                                         it != V.end_col(currentUserIndex);it++)
-<a name="l00144"></a>00144   {
-<a name="l00145"></a>00145     <span class="keywordtype">double</span> val = *it;
-<a name="l00146"></a>00146     <span class="keywordtype">size_t</span> i = it.row();
-<a name="l00147"></a>00147     <span class="keywordflow">if</span>((val = V(i, currentUserIndex)) != 0)
-<a name="l00148"></a>00148       deltaH += (val - arma::dot(W.row(i), H.col(currentUserIndex))) *
-<a name="l00149"></a>00149                                                     arma::trans(W.row(i));
-<a name="l00150"></a>00150   }
-<a name="l00151"></a>00151   <span class="keywordflow">if</span>(kh != 0) deltaH -= kh * H.col(currentUserIndex);
+<a name="l00101"></a><a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">00101</a>   <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html#a7122b39b6451f9c4cd1d1f083c675a1b">currentUserIndex</a>;
+<a name="l00102"></a>00102 };
+<a name="l00103"></a>00103 
+<a name="l00104"></a>00104 <span class="keyword">template</span>&lt;&gt;
+<a name="l00105"></a>00105 <span class="keyword">inline</span> <span class="keywordtype">void</span> SVDIncompleteIncrementalLearning::
+<a name="l00106"></a>00106                                     WUpdate&lt;arma::sp_mat&gt;(<span class="keyword">const</span> arma::sp_mat&amp; V,
+<a name="l00107"></a>00107                                                           arma::mat&amp; W,
+<a name="l00108"></a>00108                                                           <span class="keyword">const</span> arma::mat&amp; H)
+<a name="l00109"></a>00109 {
+<a name="l00110"></a>00110   arma::mat deltaW(n, W.n_cols);
+<a name="l00111"></a>00111   deltaW.zeros();
+<a name="l00112"></a>00112   <span class="keywordflow">for</span>(arma::sp_mat::const_iterator it = V.begin_col(currentUserIndex);
+<a name="l00113"></a>00113                                       it != V.end_col(currentUserIndex);it++)
+<a name="l00114"></a>00114   {
+<a name="l00115"></a>00115     <span class="keywordtype">double</span> val = *it;
+<a name="l00116"></a>00116     <span class="keywordtype">size_t</span> i = it.row();
+<a name="l00117"></a>00117     deltaW.row(i) += (val - arma::dot(W.row(i), H.col(currentUserIndex))) *
+<a name="l00118"></a>00118                                          arma::trans(H.col(currentUserIndex));
+<a name="l00119"></a>00119     <span class="keywordflow">if</span>(kw != 0) deltaW.row(i) -= kw * W.row(i);
+<a name="l00120"></a>00120   }
+<a name="l00121"></a>00121 
+<a name="l00122"></a>00122   W += u*deltaW;
+<a name="l00123"></a>00123 }
+<a name="l00124"></a>00124 
+<a name="l00125"></a>00125 <span class="keyword">template</span>&lt;&gt;
+<a name="l00126"></a>00126 <span class="keyword">inline</span> <span class="keywordtype">void</span> SVDIncompleteIncrementalLearning::
+<a name="l00127"></a>00127                               HUpdate&lt;arma::sp_mat&gt;(<span class="keyword">const</span> arma::sp_mat&amp; V,
+<a name="l00128"></a>00128                                                     <span class="keyword">const</span> arma::mat&amp; W,
+<a name="l00129"></a>00129                                                     arma::mat&amp; H)
+<a name="l00130"></a>00130 {
+<a name="l00131"></a>00131   arma::mat deltaH(H.n_rows, 1);
+<a name="l00132"></a>00132   deltaH.zeros();
+<a name="l00133"></a>00133 
+<a name="l00134"></a>00134   <span class="keywordflow">for</span>(arma::sp_mat::const_iterator it = V.begin_col(currentUserIndex);
+<a name="l00135"></a>00135                                         it != V.end_col(currentUserIndex);it++)
+<a name="l00136"></a>00136   {
+<a name="l00137"></a>00137     <span class="keywordtype">double</span> val = *it;
+<a name="l00138"></a>00138     <span class="keywordtype">size_t</span> i = it.row();
+<a name="l00139"></a>00139     <span class="keywordflow">if</span>((val = V(i, currentUserIndex)) != 0)
+<a name="l00140"></a>00140       deltaH += (val - arma::dot(W.row(i), H.col(currentUserIndex))) *
+<a name="l00141"></a>00141                                                     arma::trans(W.row(i));
+<a name="l00142"></a>00142   }
+<a name="l00143"></a>00143   <span class="keywordflow">if</span>(kh != 0) deltaH -= kh * H.col(currentUserIndex);
+<a name="l00144"></a>00144 
+<a name="l00145"></a>00145   H.col(currentUserIndex++) += u * deltaH;
+<a name="l00146"></a>00146   currentUserIndex = currentUserIndex % m;
+<a name="l00147"></a>00147 }
+<a name="l00148"></a>00148 
+<a name="l00149"></a>00149 }; <span class="comment">// namepsace amf</span>
+<a name="l00150"></a>00150 }; <span class="comment">// namespace mlpack</span>
+<a name="l00151"></a>00151 
 <a name="l00152"></a>00152 
-<a name="l00153"></a>00153   H.col(currentUserIndex++) += u * deltaH;
-<a name="l00154"></a>00154   currentUserIndex = currentUserIndex % m;
-<a name="l00155"></a>00155 }
-<a name="l00156"></a>00156 
-<a name="l00157"></a>00157 }; <span class="comment">// namepsace amf</span>
-<a name="l00158"></a>00158 }; <span class="comment">// namespace mlpack</span>
-<a name="l00159"></a>00159 
-<a name="l00160"></a>00160 
-<a name="l00161"></a>00161 <span class="preprocessor">#endif // SVD_INCREMENTAL_LEARNING_HPP_INCLUDED</span>
-<a name="l00162"></a>00162 <span class="preprocessor"></span>
+<a name="l00153"></a>00153 <span class="preprocessor">#endif // SVD_INCREMENTAL_LEARNING_HPP_INCLUDED</span>
+<a name="l00154"></a>00154 <span class="preprocessor"></span>
 </pre></div></div>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Thu Dec 11 2014 11:58:13 for MLPACK by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Jan 7 2015 13:07:07 for mlpack by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

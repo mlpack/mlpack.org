@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>MLPACK: src/mlpack/core/optimizers/sgd/test_function.hpp Source File</title>
+<title>mlpack: src/mlpack/core/optimizers/sgd/test_function.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -27,11 +27,11 @@
   </div>
   <div class="navpath">
     <ul>
-      <li><a class="el" href="dir_b2882640fb086b78868b6b301530d5f7.html">src</a>      </li>
-      <li><a class="el" href="dir_6a996d0c1ea6093f358c2a4e16663c26.html">mlpack</a>      </li>
-      <li><a class="el" href="dir_e63db7f24a01e7602d62b556dab603f6.html">core</a>      </li>
-      <li><a class="el" href="dir_c76ae1f431de96a1ca6a0edf88a103c8.html">optimizers</a>      </li>
-      <li><a class="el" href="dir_b6702d393824f9a1e9eb53cbd95a0261.html">sgd</a>      </li>
+      <li><a class="el" href="dir_8643ae0b91354c4ed75fc37925b48b5f.html">src</a>      </li>
+      <li><a class="el" href="dir_7bafb4101e77828b09700d4aaccdb316.html">mlpack</a>      </li>
+      <li><a class="el" href="dir_a24db58f334daf1661a68d63dd442609.html">core</a>      </li>
+      <li><a class="el" href="dir_923de60260033817596bcc61b139bb83.html">optimizers</a>      </li>
+      <li><a class="el" href="dir_ec0586d71deeda1b67a2bae62da17130.html">sgd</a>      </li>
     </ul>
   </div>
 </div>
@@ -41,39 +41,39 @@
 </div>
 <div class="contents">
 <a href="test__function_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
-<a name="l00022"></a>00022 <span class="preprocessor">#ifndef __MLPACK_CORE_OPTIMIZERS_SGD_TEST_FUNCTION_HPP</span>
-<a name="l00023"></a>00023 <span class="preprocessor"></span><span class="preprocessor">#define __MLPACK_CORE_OPTIMIZERS_SGD_TEST_FUNCTION_HPP</span>
-<a name="l00024"></a>00024 <span class="preprocessor"></span>
-<a name="l00025"></a>00025 <span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span>
-<a name="l00026"></a>00026 
-<a name="l00027"></a>00027 <span class="keyword">namespace </span>mlpack {
-<a name="l00028"></a>00028 <span class="keyword">namespace </span>optimization {
-<a name="l00029"></a>00029 <span class="keyword">namespace </span>test {
-<a name="l00030"></a>00030 
-<a name="l00035"></a><a class="code" href="classmlpack_1_1optimization_1_1test_1_1SGDTestFunction.html">00035</a> <span class="keyword">class </span><a class="code" href="classmlpack_1_1optimization_1_1test_1_1SGDTestFunction.html" title="Very, very simple test function which is the composite of three other functions.">SGDTestFunction</a>
-<a name="l00036"></a>00036 {
-<a name="l00037"></a>00037  <span class="keyword">public</span>:
-<a name="l00039"></a><a class="code" href="classmlpack_1_1optimization_1_1test_1_1SGDTestFunction.html#ab68797afd59b10f82421b0b810d644a7">00039</a>   <a class="code" href="classmlpack_1_1optimization_1_1test_1_1SGDTestFunction.html#ab68797afd59b10f82421b0b810d644a7" title="Nothing to do for the constructor.">SGDTestFunction</a>() { }
-<a name="l00040"></a>00040 
-<a name="l00042"></a><a class="code" href="classmlpack_1_1optimization_1_1test_1_1SGDTestFunction.html#ac0183fde7e61cdde22884b75be6494fb">00042</a>   <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1optimization_1_1test_1_1SGDTestFunction.html#ac0183fde7e61cdde22884b75be6494fb" title="Return 3 (the number of functions).">NumFunctions</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> 3; }
-<a name="l00043"></a>00043 
-<a name="l00045"></a><a class="code" href="classmlpack_1_1optimization_1_1test_1_1SGDTestFunction.html#a7b3556383a28d12564366b6637160d79">00045</a>   arma::mat <a class="code" href="classmlpack_1_1optimization_1_1test_1_1SGDTestFunction.html#a7b3556383a28d12564366b6637160d79" title="Get the starting point.">GetInitialPoint</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> arma::mat(<span class="stringliteral">&quot;6; -45.6; 6.2&quot;</span>); }
-<a name="l00046"></a>00046 
-<a name="l00048"></a>00048   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1optimization_1_1test_1_1SGDTestFunction.html#a26daf70f3d4a965a6f473bd679fc202d" title="Evaluate a function.">Evaluate</a>(<span class="keyword">const</span> arma::mat&amp; coordinates, <span class="keyword">const</span> <span class="keywordtype">size_t</span> i) <span class="keyword">const</span>;
-<a name="l00049"></a>00049 
-<a name="l00051"></a>00051   <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1optimization_1_1test_1_1SGDTestFunction.html#abae9896bfccbaa9ddf18776176edbb89" title="Evaluate the gradient of a function.">Gradient</a>(<span class="keyword">const</span> arma::mat&amp; coordinates,
-<a name="l00052"></a>00052                 <span class="keyword">const</span> <span class="keywordtype">size_t</span> i,
-<a name="l00053"></a>00053                 arma::mat&amp; gradient) <span class="keyword">const</span>;
-<a name="l00054"></a>00054 };
-<a name="l00055"></a>00055 
-<a name="l00056"></a>00056 }; <span class="comment">// namespace test</span>
-<a name="l00057"></a>00057 }; <span class="comment">// namespace optimization</span>
-<a name="l00058"></a>00058 }; <span class="comment">// namespace mlpack</span>
-<a name="l00059"></a>00059 
-<a name="l00060"></a>00060 <span class="preprocessor">#endif</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#ifndef __MLPACK_CORE_OPTIMIZERS_SGD_TEST_FUNCTION_HPP</span>
+<a name="l00015"></a>00015 <span class="preprocessor"></span><span class="preprocessor">#define __MLPACK_CORE_OPTIMIZERS_SGD_TEST_FUNCTION_HPP</span>
+<a name="l00016"></a>00016 <span class="preprocessor"></span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span>
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 <span class="keyword">namespace </span>mlpack {
+<a name="l00020"></a>00020 <span class="keyword">namespace </span>optimization {
+<a name="l00021"></a>00021 <span class="keyword">namespace </span>test {
+<a name="l00022"></a>00022 
+<a name="l00027"></a><a class="code" href="classmlpack_1_1optimization_1_1test_1_1SGDTestFunction.html">00027</a> <span class="keyword">class </span><a class="code" href="classmlpack_1_1optimization_1_1test_1_1SGDTestFunction.html" title="Very, very simple test function which is the composite of three other functions.">SGDTestFunction</a>
+<a name="l00028"></a>00028 {
+<a name="l00029"></a>00029  <span class="keyword">public</span>:
+<a name="l00031"></a><a class="code" href="classmlpack_1_1optimization_1_1test_1_1SGDTestFunction.html#ab68797afd59b10f82421b0b810d644a7">00031</a>   <a class="code" href="classmlpack_1_1optimization_1_1test_1_1SGDTestFunction.html#ab68797afd59b10f82421b0b810d644a7" title="Nothing to do for the constructor.">SGDTestFunction</a>() { }
+<a name="l00032"></a>00032 
+<a name="l00034"></a><a class="code" href="classmlpack_1_1optimization_1_1test_1_1SGDTestFunction.html#ac0183fde7e61cdde22884b75be6494fb">00034</a>   <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1optimization_1_1test_1_1SGDTestFunction.html#ac0183fde7e61cdde22884b75be6494fb" title="Return 3 (the number of functions).">NumFunctions</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> 3; }
+<a name="l00035"></a>00035 
+<a name="l00037"></a><a class="code" href="classmlpack_1_1optimization_1_1test_1_1SGDTestFunction.html#a7b3556383a28d12564366b6637160d79">00037</a>   arma::mat <a class="code" href="classmlpack_1_1optimization_1_1test_1_1SGDTestFunction.html#a7b3556383a28d12564366b6637160d79" title="Get the starting point.">GetInitialPoint</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> arma::mat(<span class="stringliteral">&quot;6; -45.6; 6.2&quot;</span>); }
+<a name="l00038"></a>00038 
+<a name="l00040"></a>00040   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1optimization_1_1test_1_1SGDTestFunction.html#a26daf70f3d4a965a6f473bd679fc202d" title="Evaluate a function.">Evaluate</a>(<span class="keyword">const</span> arma::mat&amp; coordinates, <span class="keyword">const</span> <span class="keywordtype">size_t</span> i) <span class="keyword">const</span>;
+<a name="l00041"></a>00041 
+<a name="l00043"></a>00043   <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1optimization_1_1test_1_1SGDTestFunction.html#abae9896bfccbaa9ddf18776176edbb89" title="Evaluate the gradient of a function.">Gradient</a>(<span class="keyword">const</span> arma::mat&amp; coordinates,
+<a name="l00044"></a>00044                 <span class="keyword">const</span> <span class="keywordtype">size_t</span> i,
+<a name="l00045"></a>00045                 arma::mat&amp; gradient) <span class="keyword">const</span>;
+<a name="l00046"></a>00046 };
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048 }; <span class="comment">// namespace test</span>
+<a name="l00049"></a>00049 }; <span class="comment">// namespace optimization</span>
+<a name="l00050"></a>00050 }; <span class="comment">// namespace mlpack</span>
+<a name="l00051"></a>00051 
+<a name="l00052"></a>00052 <span class="preprocessor">#endif</span>
 </pre></div></div>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Thu Dec 11 2014 11:58:12 for MLPACK by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Jan 7 2015 13:07:07 for mlpack by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

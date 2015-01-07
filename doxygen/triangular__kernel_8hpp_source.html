@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>MLPACK: src/mlpack/core/kernels/triangular_kernel.hpp Source File</title>
+<title>mlpack: src/mlpack/core/kernels/triangular_kernel.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -27,10 +27,10 @@
   </div>
   <div class="navpath">
     <ul>
-      <li><a class="el" href="dir_b2882640fb086b78868b6b301530d5f7.html">src</a>      </li>
-      <li><a class="el" href="dir_6a996d0c1ea6093f358c2a4e16663c26.html">mlpack</a>      </li>
-      <li><a class="el" href="dir_e63db7f24a01e7602d62b556dab603f6.html">core</a>      </li>
-      <li><a class="el" href="dir_6a303cfb630207233dcf19428f128b54.html">kernels</a>      </li>
+      <li><a class="el" href="dir_8643ae0b91354c4ed75fc37925b48b5f.html">src</a>      </li>
+      <li><a class="el" href="dir_7bafb4101e77828b09700d4aaccdb316.html">mlpack</a>      </li>
+      <li><a class="el" href="dir_a24db58f334daf1661a68d63dd442609.html">core</a>      </li>
+      <li><a class="el" href="dir_6328196dcf8eca2a838a9c4aa0fc2937.html">kernels</a>      </li>
     </ul>
   </div>
 </div>
@@ -40,61 +40,61 @@
 </div>
 <div class="contents">
 <a href="triangular__kernel_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
-<a name="l00022"></a>00022 <span class="preprocessor">#ifndef __MLPACK_CORE_KERNELS_TRIANGULAR_KERNEL_HPP</span>
-<a name="l00023"></a>00023 <span class="preprocessor"></span><span class="preprocessor">#define __MLPACK_CORE_KERNELS_TRIANGULAR_KERNEL_HPP</span>
-<a name="l00024"></a>00024 <span class="preprocessor"></span>
-<a name="l00025"></a>00025 <span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span>
-<a name="l00026"></a>00026 <span class="preprocessor">#include &lt;<a class="code" href="lmetric_8hpp.html">mlpack/core/metrics/lmetric.hpp</a>&gt;</span>
-<a name="l00027"></a>00027 
-<a name="l00028"></a>00028 <span class="keyword">namespace </span>mlpack {
-<a name="l00029"></a>00029 <span class="keyword">namespace </span>kernel {
-<a name="l00030"></a>00030 
-<a name="l00040"></a><a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html">00040</a> <span class="keyword">class </span><a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html" title="The trivially simple triangular kernel, defined by.">TriangularKernel</a>
-<a name="l00041"></a>00041 {
-<a name="l00042"></a>00042  <span class="keyword">public</span>:
-<a name="l00048"></a><a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#a71b77a810c6e82b37a621c4b64166ff6">00048</a>   <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#a71b77a810c6e82b37a621c4b64166ff6" title="Initialize the triangular kernel with the given bandwidth (default 1.0).">TriangularKernel</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#ad05db54dd3d43d48f6be76611e99cbbe" title="The bandwidth of the kernel.">bandwidth</a> = 1.0) : <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#ad05db54dd3d43d48f6be76611e99cbbe" title="The bandwidth of the kernel.">bandwidth</a>(<a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#ad05db54dd3d43d48f6be76611e99cbbe" title="The bandwidth of the kernel.">bandwidth</a>) { }
-<a name="l00049"></a>00049 
-<a name="l00056"></a>00056   <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Vec1Type, <span class="keyword">typename</span> Vec2Type&gt;
-<a name="l00057"></a><a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#aa224a1e48cb61ef5be3ed10f783a0e18">00057</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#aa224a1e48cb61ef5be3ed10f783a0e18" title="Evaluate the triangular kernel for the two given vectors.">Evaluate</a>(<span class="keyword">const</span> Vec1Type&amp; a, <span class="keyword">const</span> Vec2Type&amp; b)<span class="keyword"> const</span>
-<a name="l00058"></a>00058 <span class="keyword">  </span>{
-<a name="l00059"></a>00059     <span class="keywordflow">return</span> std::max(0.0, (1 - <a class="code" href="classmlpack_1_1metric_1_1LMetric.html#ab6a043d8d42d4ce1c6012171097a9e85" title="Computes the distance between two points.">metric::EuclideanDistance::Evaluate</a>(a, b) /
-<a name="l00060"></a>00060         <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#ad05db54dd3d43d48f6be76611e99cbbe" title="The bandwidth of the kernel.">bandwidth</a>));
-<a name="l00061"></a>00061   }
-<a name="l00062"></a>00062 
-<a name="l00069"></a><a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#a7819d40b5ceeca3a960a08ce8b48f375">00069</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#aa224a1e48cb61ef5be3ed10f783a0e18" title="Evaluate the triangular kernel for the two given vectors.">Evaluate</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> distance)<span class="keyword"> const</span>
-<a name="l00070"></a>00070 <span class="keyword">  </span>{
-<a name="l00071"></a>00071     <span class="keywordflow">return</span> std::max(0.0, (1 - distance) / <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#ad05db54dd3d43d48f6be76611e99cbbe" title="The bandwidth of the kernel.">bandwidth</a>);
-<a name="l00072"></a>00072   }
-<a name="l00073"></a>00073 
-<a name="l00075"></a><a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#a4b2c7cb8ee064de83c0fdd0cf9e60c5c">00075</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#a4b2c7cb8ee064de83c0fdd0cf9e60c5c" title="Get the bandwidth of the kernel.">Bandwidth</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#ad05db54dd3d43d48f6be76611e99cbbe" title="The bandwidth of the kernel.">bandwidth</a>; }
-<a name="l00077"></a><a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#a61014458600135098f2e52812ff9d8fb">00077</a>   <span class="keywordtype">double</span>&amp; <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#a61014458600135098f2e52812ff9d8fb" title="Modify the bandwidth of the kernel.">Bandwidth</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#ad05db54dd3d43d48f6be76611e99cbbe" title="The bandwidth of the kernel.">bandwidth</a>; }
-<a name="l00078"></a>00078 
-<a name="l00080"></a><a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#aef6d7f054551d44cf18fdaf14fbd1a18">00080</a>   std::string <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#aef6d7f054551d44cf18fdaf14fbd1a18" title="Return a string representation of the kernel.">ToString</a>()<span class="keyword"> const</span>
-<a name="l00081"></a>00081 <span class="keyword">  </span>{
-<a name="l00082"></a>00082     std::ostringstream convert;
-<a name="l00083"></a>00083     convert &lt;&lt; <span class="stringliteral">&quot;TriangularKernel [&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot;]&quot;</span> &lt;&lt; std::endl;
-<a name="l00084"></a>00084     convert &lt;&lt; <span class="stringliteral">&quot;  Bandwidth: &quot;</span> &lt;&lt; <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#ad05db54dd3d43d48f6be76611e99cbbe" title="The bandwidth of the kernel.">bandwidth</a> &lt;&lt; std::endl;
-<a name="l00085"></a>00085     <span class="keywordflow">return</span> convert.str();
-<a name="l00086"></a>00086   }
-<a name="l00087"></a>00087 
-<a name="l00088"></a>00088  <span class="keyword">private</span>:
-<a name="l00090"></a><a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#ad05db54dd3d43d48f6be76611e99cbbe">00090</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#ad05db54dd3d43d48f6be76611e99cbbe" title="The bandwidth of the kernel.">bandwidth</a>;
-<a name="l00091"></a>00091 };
-<a name="l00092"></a>00092 
-<a name="l00094"></a>00094 <span class="keyword">template</span>&lt;&gt;
-<a name="l00095"></a><a class="code" href="classmlpack_1_1kernel_1_1KernelTraits_3_01TriangularKernel_01_4.html">00095</a> <span class="keyword">class </span><a class="code" href="classmlpack_1_1kernel_1_1KernelTraits.html" title="This is a template class that can provide information about various kernels.">KernelTraits</a>&lt;<a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html" title="The trivially simple triangular kernel, defined by.">TriangularKernel</a>&gt;
-<a name="l00096"></a>00096 {
-<a name="l00097"></a>00097  <span class="keyword">public</span>:
-<a name="l00099"></a><a class="code" href="classmlpack_1_1kernel_1_1KernelTraits_3_01TriangularKernel_01_4.html#a443782152a0f1637fef710d41b84414f">00099</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1kernel_1_1KernelTraits.html#a57dad77da8e7a9b8c8c91fd06c091ecf" title="If true, then the kernel is normalized: K(x, x) = K(y, y) = 1 for all x.">IsNormalized</a> = <span class="keyword">true</span>;
-<a name="l00100"></a>00100 };
-<a name="l00101"></a>00101 
-<a name="l00102"></a>00102 }; <span class="comment">// namespace kernel</span>
-<a name="l00103"></a>00103 }; <span class="comment">// namespace mlpack</span>
-<a name="l00104"></a>00104 
-<a name="l00105"></a>00105 <span class="preprocessor">#endif</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#ifndef __MLPACK_CORE_KERNELS_TRIANGULAR_KERNEL_HPP</span>
+<a name="l00015"></a>00015 <span class="preprocessor"></span><span class="preprocessor">#define __MLPACK_CORE_KERNELS_TRIANGULAR_KERNEL_HPP</span>
+<a name="l00016"></a>00016 <span class="preprocessor"></span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &lt;<a class="code" href="lmetric_8hpp.html">mlpack/core/metrics/lmetric.hpp</a>&gt;</span>
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020 <span class="keyword">namespace </span>mlpack {
+<a name="l00021"></a>00021 <span class="keyword">namespace </span>kernel {
+<a name="l00022"></a>00022 
+<a name="l00032"></a><a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html">00032</a> <span class="keyword">class </span><a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html" title="The trivially simple triangular kernel, defined by.">TriangularKernel</a>
+<a name="l00033"></a>00033 {
+<a name="l00034"></a>00034  <span class="keyword">public</span>:
+<a name="l00040"></a><a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#a71b77a810c6e82b37a621c4b64166ff6">00040</a>   <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#a71b77a810c6e82b37a621c4b64166ff6" title="Initialize the triangular kernel with the given bandwidth (default 1.0).">TriangularKernel</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#ad05db54dd3d43d48f6be76611e99cbbe" title="The bandwidth of the kernel.">bandwidth</a> = 1.0) : <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#ad05db54dd3d43d48f6be76611e99cbbe" title="The bandwidth of the kernel.">bandwidth</a>(<a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#ad05db54dd3d43d48f6be76611e99cbbe" title="The bandwidth of the kernel.">bandwidth</a>) { }
+<a name="l00041"></a>00041 
+<a name="l00048"></a>00048   <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Vec1Type, <span class="keyword">typename</span> Vec2Type&gt;
+<a name="l00049"></a><a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#aa224a1e48cb61ef5be3ed10f783a0e18">00049</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#aa224a1e48cb61ef5be3ed10f783a0e18" title="Evaluate the triangular kernel for the two given vectors.">Evaluate</a>(<span class="keyword">const</span> Vec1Type&amp; a, <span class="keyword">const</span> Vec2Type&amp; b)<span class="keyword"> const</span>
+<a name="l00050"></a>00050 <span class="keyword">  </span>{
+<a name="l00051"></a>00051     <span class="keywordflow">return</span> std::max(0.0, (1 - <a class="code" href="classmlpack_1_1metric_1_1LMetric.html#ab6a043d8d42d4ce1c6012171097a9e85" title="Computes the distance between two points.">metric::EuclideanDistance::Evaluate</a>(a, b) /
+<a name="l00052"></a>00052         <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#ad05db54dd3d43d48f6be76611e99cbbe" title="The bandwidth of the kernel.">bandwidth</a>));
+<a name="l00053"></a>00053   }
+<a name="l00054"></a>00054 
+<a name="l00061"></a><a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#a7819d40b5ceeca3a960a08ce8b48f375">00061</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#aa224a1e48cb61ef5be3ed10f783a0e18" title="Evaluate the triangular kernel for the two given vectors.">Evaluate</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> distance)<span class="keyword"> const</span>
+<a name="l00062"></a>00062 <span class="keyword">  </span>{
+<a name="l00063"></a>00063     <span class="keywordflow">return</span> std::max(0.0, (1 - distance) / <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#ad05db54dd3d43d48f6be76611e99cbbe" title="The bandwidth of the kernel.">bandwidth</a>);
+<a name="l00064"></a>00064   }
+<a name="l00065"></a>00065 
+<a name="l00067"></a><a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#a4b2c7cb8ee064de83c0fdd0cf9e60c5c">00067</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#a4b2c7cb8ee064de83c0fdd0cf9e60c5c" title="Get the bandwidth of the kernel.">Bandwidth</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#ad05db54dd3d43d48f6be76611e99cbbe" title="The bandwidth of the kernel.">bandwidth</a>; }
+<a name="l00069"></a><a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#a61014458600135098f2e52812ff9d8fb">00069</a>   <span class="keywordtype">double</span>&amp; <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#a61014458600135098f2e52812ff9d8fb" title="Modify the bandwidth of the kernel.">Bandwidth</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#ad05db54dd3d43d48f6be76611e99cbbe" title="The bandwidth of the kernel.">bandwidth</a>; }
+<a name="l00070"></a>00070 
+<a name="l00072"></a><a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#aef6d7f054551d44cf18fdaf14fbd1a18">00072</a>   std::string <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#aef6d7f054551d44cf18fdaf14fbd1a18" title="Return a string representation of the kernel.">ToString</a>()<span class="keyword"> const</span>
+<a name="l00073"></a>00073 <span class="keyword">  </span>{
+<a name="l00074"></a>00074     std::ostringstream convert;
+<a name="l00075"></a>00075     convert &lt;&lt; <span class="stringliteral">&quot;TriangularKernel [&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot;]&quot;</span> &lt;&lt; std::endl;
+<a name="l00076"></a>00076     convert &lt;&lt; <span class="stringliteral">&quot;  Bandwidth: &quot;</span> &lt;&lt; <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#ad05db54dd3d43d48f6be76611e99cbbe" title="The bandwidth of the kernel.">bandwidth</a> &lt;&lt; std::endl;
+<a name="l00077"></a>00077     <span class="keywordflow">return</span> convert.str();
+<a name="l00078"></a>00078   }
+<a name="l00079"></a>00079 
+<a name="l00080"></a>00080  <span class="keyword">private</span>:
+<a name="l00082"></a><a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#ad05db54dd3d43d48f6be76611e99cbbe">00082</a>   <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html#ad05db54dd3d43d48f6be76611e99cbbe" title="The bandwidth of the kernel.">bandwidth</a>;
+<a name="l00083"></a>00083 };
+<a name="l00084"></a>00084 
+<a name="l00086"></a>00086 <span class="keyword">template</span>&lt;&gt;
+<a name="l00087"></a><a class="code" href="classmlpack_1_1kernel_1_1KernelTraits_3_01TriangularKernel_01_4.html">00087</a> <span class="keyword">class </span><a class="code" href="classmlpack_1_1kernel_1_1KernelTraits.html" title="This is a template class that can provide information about various kernels.">KernelTraits</a>&lt;<a class="code" href="classmlpack_1_1kernel_1_1TriangularKernel.html" title="The trivially simple triangular kernel, defined by.">TriangularKernel</a>&gt;
+<a name="l00088"></a>00088 {
+<a name="l00089"></a>00089  <span class="keyword">public</span>:
+<a name="l00091"></a><a class="code" href="classmlpack_1_1kernel_1_1KernelTraits_3_01TriangularKernel_01_4.html#a443782152a0f1637fef710d41b84414f">00091</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1kernel_1_1KernelTraits.html#a57dad77da8e7a9b8c8c91fd06c091ecf" title="If true, then the kernel is normalized: K(x, x) = K(y, y) = 1 for all x.">IsNormalized</a> = <span class="keyword">true</span>;
+<a name="l00092"></a>00092 };
+<a name="l00093"></a>00093 
+<a name="l00094"></a>00094 }; <span class="comment">// namespace kernel</span>
+<a name="l00095"></a>00095 }; <span class="comment">// namespace mlpack</span>
+<a name="l00096"></a>00096 
+<a name="l00097"></a>00097 <span class="preprocessor">#endif</span>
 </pre></div></div>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Thu Dec 11 2014 11:58:12 for MLPACK by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Jan 7 2015 13:07:07 for mlpack by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

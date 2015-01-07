@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>MLPACK: mlpack::Log Class Reference</title>
+<title>mlpack: mlpack::Log Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -93,7 +93,7 @@ Static Public Attributes</h2></td></tr>
 </pre></div><p>Any messages sent to <a class="el" href="classmlpack_1_1Log.html#a771c6107b594176ffae1a036c253ca93" title="Dumps debug output into the bit nether regions.">Log::Debug</a> will not be shown when compiling in non-debug mode. Messages to <a class="el" href="classmlpack_1_1Log.html#afe0e60740fe56dadaa23e4b15b157245" title="Prints informational messages if --verbose is specified, prefixed with [INFO ].">Log::Info</a> will only be shown when the --verbose flag is given to the program (or rather, the <a class="el" href="classmlpack_1_1CLI.html" title="Parses the command line for parameters and holds user-specified parameters.">CLI</a> class).</p>
 <dl class="see"><dt><b>See also:</b></dt><dd>PrefixedOutStream, NullOutStream, <a class="el" href="classmlpack_1_1CLI.html" title="Parses the command line for parameters and holds user-specified parameters.">CLI</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="log_8hpp_source.html#l00064">64</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p>Definition at line <a class="el" href="log_8hpp_source.html#l00056">56</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a894b6a6ce578301d1d4404416e8496d3"></a><!-- doxytag: member="mlpack::Log::Assert" ref="a894b6a6ce578301d1d4404416e8496d3" args="(bool condition, const std::string &amp;message=&quot;Assert Failed.&quot;)" -->
 <div class="memitem">
@@ -123,7 +123,7 @@ Static Public Attributes</h2></td></tr>
 <p>Checks if the specified condition is true. </p>
 <p>If not, halts program execution and prints a custom error message. Does nothing in non-debug mode. </p>
 
-<p>Referenced by <a class="el" href="edge__pair_8hpp_source.html#l00055">mlpack::emst::EdgePair::EdgePair()</a>.</p>
+<p>Referenced by <a class="el" href="edge__pair_8hpp_source.html#l00047">mlpack::emst::EdgePair::EdgePair()</a>.</p>
 
 </div>
 </div>
@@ -141,7 +141,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Reference to cout, if necessary. </p>
 
-<p>Definition at line <a class="el" href="log_8hpp_source.html#l00061">61</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p>Definition at line <a class="el" href="log_8hpp_source.html#l00053">53</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -158,9 +158,9 @@ Static Public Attributes</h2></td></tr>
 
 <p>Dumps debug output into the bit nether regions. </p>
 
-<p>Definition at line <a class="el" href="log_8hpp_source.html#l00047">47</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p>Definition at line <a class="el" href="log_8hpp_source.html#l00039">39</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="positive__definite__constraint_8hpp_source.html#l00041">mlpack::gmm::PositiveDefiniteConstraint::ApplyConstraint()</a>, <a class="el" href="gmm_8hpp_source.html#l00110">mlpack::gmm::GMM&lt; FittingType &gt;::GMM()</a>, and <a class="el" href="discrete__distribution_8hpp_source.html#l00105">mlpack::distribution::DiscreteDistribution::Probability()</a>.</p>
+<p>Referenced by <a class="el" href="positive__definite__constraint_8hpp_source.html#l00033">mlpack::gmm::PositiveDefiniteConstraint::ApplyConstraint()</a>, <a class="el" href="gmm_8hpp_source.html#l00102">mlpack::gmm::GMM&lt; FittingType &gt;::GMM()</a>, and <a class="el" href="discrete__distribution_8hpp_source.html#l00097">mlpack::distribution::DiscreteDistribution::Probability()</a>.</p>
 
 </div>
 </div>
@@ -177,9 +177,9 @@ Static Public Attributes</h2></td></tr>
 
 <p>Prints fatal messages prefixed with [FATAL], then terminates the program. </p>
 
-<p>Definition at line <a class="el" href="log_8hpp_source.html#l00058">58</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p>Definition at line <a class="el" href="log_8hpp_source.html#l00050">50</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="spherical__kernel_8hpp_source.html#l00062">mlpack::kernel::SphericalKernel::ConvolutionIntegral()</a>, and <a class="el" href="eigenvalue__ratio__constraint_8hpp_source.html#l00045">mlpack::gmm::EigenvalueRatioConstraint::EigenvalueRatioConstraint()</a>.</p>
+<p>Referenced by <a class="el" href="spherical__kernel_8hpp_source.html#l00054">mlpack::kernel::SphericalKernel::ConvolutionIntegral()</a>, and <a class="el" href="eigenvalue__ratio__constraint_8hpp_source.html#l00037">mlpack::gmm::EigenvalueRatioConstraint::EigenvalueRatioConstraint()</a>.</p>
 
 </div>
 </div>
@@ -196,7 +196,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Prints informational messages if --verbose is specified, prefixed with [INFO ]. </p>
 
-<p>Definition at line <a class="el" href="log_8hpp_source.html#l00052">52</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p>Definition at line <a class="el" href="log_8hpp_source.html#l00044">44</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -213,9 +213,9 @@ Static Public Attributes</h2></td></tr>
 
 <p>Prints warning messages prefixed with [WARN ]. </p>
 
-<p>Definition at line <a class="el" href="log_8hpp_source.html#l00055">55</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p>Definition at line <a class="el" href="log_8hpp_source.html#l00047">47</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="eigenvalue__ratio__constraint_8hpp_source.html#l00045">mlpack::gmm::EigenvalueRatioConstraint::EigenvalueRatioConstraint()</a>, <a class="el" href="random__acol__init_8hpp_source.html#l00048">mlpack::amf::RandomAcolInitialization&lt; p &gt;::Initialize()</a>, and <a class="el" href="cf_8hpp_source.html#l00094">mlpack::cf::CF&lt; FactorizerType &gt;::NumUsersForSimilarity()</a>.</p>
+<p>Referenced by <a class="el" href="eigenvalue__ratio__constraint_8hpp_source.html#l00037">mlpack::gmm::EigenvalueRatioConstraint::EigenvalueRatioConstraint()</a>, <a class="el" href="random__acol__init_8hpp_source.html#l00040">mlpack::amf::RandomAcolInitialization&lt; p &gt;::Initialize()</a>, and <a class="el" href="cf_8hpp_source.html#l00086">mlpack::cf::CF&lt; FactorizerType &gt;::NumUsersForSimilarity()</a>.</p>
 
 </div>
 </div>
@@ -223,7 +223,7 @@ Static Public Attributes</h2></td></tr>
 <li>src/mlpack/core/util/<a class="el" href="log_8hpp_source.html">log.hpp</a></li>
 </ul>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Thu Dec 11 2014 11:58:15 for MLPACK by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Jan 7 2015 13:07:09 for mlpack by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

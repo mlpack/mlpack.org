@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>MLPACK: mlpack::CLI Class Reference</title>
+<title>mlpack: mlpack::CLI Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -225,7 +225,7 @@ Getting parameters with CLI</h2>
 </pre></div><dl class="note"><dt><b>Note:</b></dt><dd>Options should only be defined in files which define `main()` (that is, main executables). If options are defined elsewhere, they may be spuriously included into other executables and confuse users. Similarly, if your executable has options which you did not define, it is probably because the option is defined somewhere else and included in your executable.</dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000012">Bug:</a></b></dt><dd>The __COUNTER__ variable is used in most cases to guarantee a unique global identifier for options declared using the PARAM_*() macros. However, not all compilers have this support--most notably, gcc &lt; 4.3. In that case, the __LINE__ macro is used as an attempt to get a unique global identifier, but collisions are still possible, and they produce bizarre error messages. See <a href="http://mlpack.org/trac/ticket/74">http://mlpack.org/trac/ticket/74</a> for more information. </dd></dl>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00531">531</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00523">523</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 <hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="aa2282209bc26ae2beb1d9d7d75d48150"></a><!-- doxytag: member="mlpack::CLI::amap_t" ref="aa2282209bc26ae2beb1d9d7d75d48150" args="" -->
 <div class="memitem">
@@ -240,7 +240,7 @@ Getting parameters with CLI</h2>
 
 <p>Map for aliases, from alias to actual name. </p>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00699">699</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00691">691</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -257,7 +257,7 @@ Getting parameters with CLI</h2>
 
 <p>Map of global values. </p>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00695">695</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00687">687</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -972,7 +972,7 @@ template&lt;typename T &gt; </div>
 
 <p>So that <a class="el" href="classmlpack_1_1Timer.html#a59c1ed2cfff241e2664d8da9e5256c4b" title="Start the given timer.">Timer::Start()</a> and <a class="el" href="classmlpack_1_1Timer.html#acf365e0cf2ffb5094b912212e7a2e6fc" title="Stop the given timer.">Timer::Stop()</a> can access the timer variable. </p>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00715">715</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00707">707</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -988,7 +988,7 @@ template&lt;typename T &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00700">700</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00692">692</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -1005,7 +1005,7 @@ template&lt;typename T &gt; </div>
 
 <p>The documentation and names of options. </p>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00686">686</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00678">678</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -1022,7 +1022,7 @@ template&lt;typename T &gt; </div>
 
 <p>True, if <a class="el" href="classmlpack_1_1CLI.html" title="Parses the command line for parameters and holds user-specified parameters.">CLI</a> was used to parse command line options. </p>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00706">706</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00698">698</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -1039,7 +1039,7 @@ template&lt;typename T &gt; </div>
 
 <p>Pointer to the ProgramDoc object. </p>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00719">719</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00711">711</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -1054,7 +1054,7 @@ template&lt;typename T &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00696">696</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00688">688</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -1071,7 +1071,7 @@ template&lt;typename T &gt; </div>
 
 <p>Hold the name of the program for --version. </p>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00709">709</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00701">701</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -1088,7 +1088,7 @@ template&lt;typename T &gt; </div>
 
 <p>Pathnames of required options. </p>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00692">692</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00684">684</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -1105,7 +1105,7 @@ template&lt;typename T &gt; </div>
 
 <p>The singleton itself. </p>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00703">703</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00695">695</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -1122,7 +1122,7 @@ template&lt;typename T &gt; </div>
 
 <p>Holds the timer objects. </p>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00712">712</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00704">704</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -1139,7 +1139,7 @@ template&lt;typename T &gt; </div>
 
 <p>Values of the options given by user. </p>
 
-<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00689">689</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cli_8hpp_source.html#l00681">681</a> of file <a class="el" href="cli_8hpp_source.html">cli.hpp</a>.</p>
 
 </div>
 </div>
@@ -1147,7 +1147,7 @@ template&lt;typename T &gt; </div>
 <li>src/mlpack/core/util/<a class="el" href="cli_8hpp_source.html">cli.hpp</a></li>
 </ul>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Thu Dec 11 2014 11:58:15 for MLPACK by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Jan 7 2015 13:07:09 for mlpack by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

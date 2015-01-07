@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>MLPACK: src/mlpack/core/math/lin_alg.hpp Source File</title>
+<title>mlpack: src/mlpack/core/math/lin_alg.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -27,10 +27,10 @@
   </div>
   <div class="navpath">
     <ul>
-      <li><a class="el" href="dir_b2882640fb086b78868b6b301530d5f7.html">src</a>      </li>
-      <li><a class="el" href="dir_6a996d0c1ea6093f358c2a4e16663c26.html">mlpack</a>      </li>
-      <li><a class="el" href="dir_e63db7f24a01e7602d62b556dab603f6.html">core</a>      </li>
-      <li><a class="el" href="dir_f86d59d0b919d95a56706f8f1a7d7ced.html">math</a>      </li>
+      <li><a class="el" href="dir_8643ae0b91354c4ed75fc37925b48b5f.html">src</a>      </li>
+      <li><a class="el" href="dir_7bafb4101e77828b09700d4aaccdb316.html">mlpack</a>      </li>
+      <li><a class="el" href="dir_a24db58f334daf1661a68d63dd442609.html">core</a>      </li>
+      <li><a class="el" href="dir_862449678fc3105170f9a74092fc3ec5.html">math</a>      </li>
     </ul>
   </div>
 </div>
@@ -40,43 +40,43 @@
 </div>
 <div class="contents">
 <a href="lin__alg_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
-<a name="l00022"></a>00022 <span class="preprocessor">#ifndef __MLPACK_CORE_MATH_LIN_ALG_HPP</span>
-<a name="l00023"></a>00023 <span class="preprocessor"></span><span class="preprocessor">#define __MLPACK_CORE_MATH_LIN_ALG_HPP</span>
-<a name="l00024"></a>00024 <span class="preprocessor"></span>
-<a name="l00025"></a>00025 <span class="preprocessor">#include &lt;<a class="code" href="prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo.">mlpack/prereqs.hpp</a>&gt;</span>
-<a name="l00026"></a>00026 
-<a name="l00030"></a>00030 <span class="keyword">namespace </span>mlpack {
-<a name="l00031"></a>00031 <span class="keyword">namespace </span>math {
-<a name="l00032"></a>00032 
-<a name="l00038"></a>00038 <span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1math.html#a1afb9b62743ad2c961a4f240d8694e1e" title="Auxiliary function to raise vector elements to a specific power.">VectorPower</a>(arma::vec&amp; vec, <span class="keyword">const</span> <span class="keywordtype">double</span> power);
-<a name="l00039"></a>00039 
-<a name="l00047"></a>00047 <span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1math.html#af20ca29adeac02601e8f4386bda3588e" title="Creates a centered matrix, where centering is done by subtracting the sum over the columns (a column ...">Center</a>(<span class="keyword">const</span> arma::mat&amp; x, arma::mat&amp; xCentered);
-<a name="l00048"></a>00048 
-<a name="l00054"></a>00054 <span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1math.html#a9498ec73c0c6b0f151a10b2357a11468" title="Whitens a matrix using the singular value decomposition of the covariance matrix.">WhitenUsingSVD</a>(<span class="keyword">const</span> arma::mat&amp; x,
+<a name="l00014"></a>00014 <span class="preprocessor">#ifndef __MLPACK_CORE_MATH_LIN_ALG_HPP</span>
+<a name="l00015"></a>00015 <span class="preprocessor"></span><span class="preprocessor">#define __MLPACK_CORE_MATH_LIN_ALG_HPP</span>
+<a name="l00016"></a>00016 <span class="preprocessor"></span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &lt;<a class="code" href="prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo.">mlpack/prereqs.hpp</a>&gt;</span>
+<a name="l00018"></a>00018 
+<a name="l00022"></a>00022 <span class="keyword">namespace </span>mlpack {
+<a name="l00023"></a>00023 <span class="keyword">namespace </span>math {
+<a name="l00024"></a>00024 
+<a name="l00030"></a>00030 <span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1math.html#a1afb9b62743ad2c961a4f240d8694e1e" title="Auxiliary function to raise vector elements to a specific power.">VectorPower</a>(arma::vec&amp; vec, <span class="keyword">const</span> <span class="keywordtype">double</span> power);
+<a name="l00031"></a>00031 
+<a name="l00039"></a>00039 <span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1math.html#af20ca29adeac02601e8f4386bda3588e" title="Creates a centered matrix, where centering is done by subtracting the sum over the columns (a column ...">Center</a>(<span class="keyword">const</span> arma::mat&amp; x, arma::mat&amp; xCentered);
+<a name="l00040"></a>00040 
+<a name="l00046"></a>00046 <span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1math.html#a9498ec73c0c6b0f151a10b2357a11468" title="Whitens a matrix using the singular value decomposition of the covariance matrix.">WhitenUsingSVD</a>(<span class="keyword">const</span> arma::mat&amp; x,
+<a name="l00047"></a>00047                     arma::mat&amp; xWhitened,
+<a name="l00048"></a>00048                     arma::mat&amp; whiteningMatrix);
+<a name="l00049"></a>00049 
+<a name="l00054"></a>00054 <span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1math.html#af598b11d41b94720546a10a2ac7adb66" title="Whitens a matrix using the eigendecomposition of the covariance matrix.">WhitenUsingEig</a>(<span class="keyword">const</span> arma::mat&amp; x,
 <a name="l00055"></a>00055                     arma::mat&amp; xWhitened,
 <a name="l00056"></a>00056                     arma::mat&amp; whiteningMatrix);
 <a name="l00057"></a>00057 
-<a name="l00062"></a>00062 <span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1math.html#af598b11d41b94720546a10a2ac7adb66" title="Whitens a matrix using the eigendecomposition of the covariance matrix.">WhitenUsingEig</a>(<span class="keyword">const</span> arma::mat&amp; x,
-<a name="l00063"></a>00063                     arma::mat&amp; xWhitened,
-<a name="l00064"></a>00064                     arma::mat&amp; whiteningMatrix);
-<a name="l00065"></a>00065 
-<a name="l00069"></a>00069 <span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1math.html#a27732f0088e81d179a8e6c92c4f9c4b8" title="Overwrites a dimension-N vector to a random vector on the unit sphere in R^N.">RandVector</a>(arma::vec&amp; v);
-<a name="l00070"></a>00070 
-<a name="l00075"></a>00075 <span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1math.html#a33495d8fdb79a9b5783d683cf11b0d6b" title="Orthogonalize x and return the result in W, using eigendecomposition.">Orthogonalize</a>(<span class="keyword">const</span> arma::mat&amp; x, arma::mat&amp; W);
-<a name="l00076"></a>00076 
-<a name="l00081"></a>00081 <span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1math.html#a33495d8fdb79a9b5783d683cf11b0d6b" title="Orthogonalize x and return the result in W, using eigendecomposition.">Orthogonalize</a>(arma::mat&amp; x);
-<a name="l00082"></a>00082 
-<a name="l00090"></a>00090 <span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1math.html#ac03fe146911a97bef099efc9e99296ff" title="Remove a certain set of rows in a matrix while copying to a second matrix.">RemoveRows</a>(<span class="keyword">const</span> arma::mat&amp; input,
-<a name="l00091"></a>00091                 <span class="keyword">const</span> std::vector&lt;size_t&gt;&amp; rowsToRemove,
-<a name="l00092"></a>00092                 arma::mat&amp; output);
-<a name="l00093"></a>00093 
-<a name="l00094"></a>00094 }; <span class="comment">// namespace math</span>
-<a name="l00095"></a>00095 }; <span class="comment">// namespace mlpack</span>
-<a name="l00096"></a>00096 
-<a name="l00097"></a>00097 <span class="preprocessor">#endif // __MLPACK_CORE_MATH_LIN_ALG_HPP</span>
+<a name="l00061"></a>00061 <span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1math.html#a27732f0088e81d179a8e6c92c4f9c4b8" title="Overwrites a dimension-N vector to a random vector on the unit sphere in R^N.">RandVector</a>(arma::vec&amp; v);
+<a name="l00062"></a>00062 
+<a name="l00067"></a>00067 <span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1math.html#a33495d8fdb79a9b5783d683cf11b0d6b" title="Orthogonalize x and return the result in W, using eigendecomposition.">Orthogonalize</a>(<span class="keyword">const</span> arma::mat&amp; x, arma::mat&amp; W);
+<a name="l00068"></a>00068 
+<a name="l00073"></a>00073 <span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1math.html#a33495d8fdb79a9b5783d683cf11b0d6b" title="Orthogonalize x and return the result in W, using eigendecomposition.">Orthogonalize</a>(arma::mat&amp; x);
+<a name="l00074"></a>00074 
+<a name="l00082"></a>00082 <span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1math.html#ac03fe146911a97bef099efc9e99296ff" title="Remove a certain set of rows in a matrix while copying to a second matrix.">RemoveRows</a>(<span class="keyword">const</span> arma::mat&amp; input,
+<a name="l00083"></a>00083                 <span class="keyword">const</span> std::vector&lt;size_t&gt;&amp; rowsToRemove,
+<a name="l00084"></a>00084                 arma::mat&amp; output);
+<a name="l00085"></a>00085 
+<a name="l00086"></a>00086 }; <span class="comment">// namespace math</span>
+<a name="l00087"></a>00087 }; <span class="comment">// namespace mlpack</span>
+<a name="l00088"></a>00088 
+<a name="l00089"></a>00089 <span class="preprocessor">#endif // __MLPACK_CORE_MATH_LIN_ALG_HPP</span>
 </pre></div></div>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Thu Dec 11 2014 11:58:12 for MLPACK by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Jan 7 2015 13:07:07 for mlpack by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

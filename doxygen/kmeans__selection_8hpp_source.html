@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>MLPACK: src/mlpack/methods/nystroem_method/kmeans_selection.hpp Source File</title>
+<title>mlpack: src/mlpack/methods/nystroem_method/kmeans_selection.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -27,10 +27,10 @@
   </div>
   <div class="navpath">
     <ul>
-      <li><a class="el" href="dir_b2882640fb086b78868b6b301530d5f7.html">src</a>      </li>
-      <li><a class="el" href="dir_6a996d0c1ea6093f358c2a4e16663c26.html">mlpack</a>      </li>
-      <li><a class="el" href="dir_41da2282a8e24c4f2c665c6af5d83473.html">methods</a>      </li>
-      <li><a class="el" href="dir_18efaf410a9fb0cb9b61ed845035eca3.html">nystroem_method</a>      </li>
+      <li><a class="el" href="dir_8643ae0b91354c4ed75fc37925b48b5f.html">src</a>      </li>
+      <li><a class="el" href="dir_7bafb4101e77828b09700d4aaccdb316.html">mlpack</a>      </li>
+      <li><a class="el" href="dir_04a30df2d8bed1a15b192056d1b2b7ae.html">methods</a>      </li>
+      <li><a class="el" href="dir_4305d791f8ee4e0e8c940be4be0e9677.html">nystroem_method</a>      </li>
     </ul>
   </div>
 </div>
@@ -40,41 +40,41 @@
 </div>
 <div class="contents">
 <a href="kmeans__selection_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
-<a name="l00023"></a>00023 <span class="preprocessor">#ifndef __MLPACK_METHODS_NYSTROEM_METHOD_KMEANS_SELECTION_HPP</span>
-<a name="l00024"></a>00024 <span class="preprocessor"></span><span class="preprocessor">#define __MLPACK_METHODS_NYSTROEM_METHOD_KMEANS_SELECTION_HPP</span>
-<a name="l00025"></a>00025 <span class="preprocessor"></span>
-<a name="l00026"></a>00026 <span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span>
-<a name="l00027"></a>00027 <span class="preprocessor">#include &lt;<a class="code" href="kmeans_8hpp.html">mlpack/methods/kmeans/kmeans.hpp</a>&gt;</span>
-<a name="l00028"></a>00028 
-<a name="l00029"></a>00029 <span class="keyword">namespace </span>mlpack {
-<a name="l00030"></a>00030 <span class="keyword">namespace </span>kernel {
-<a name="l00031"></a>00031 
-<a name="l00032"></a>00032 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ClusteringType = kmeans::KMeans&lt;&gt; &gt;
-<a name="l00033"></a><a class="code" href="classmlpack_1_1kernel_1_1KMeansSelection.html">00033</a> <span class="keyword">class </span><a class="code" href="classmlpack_1_1kernel_1_1KMeansSelection.html">KMeansSelection</a>
-<a name="l00034"></a>00034 {
-<a name="l00035"></a>00035  <span class="keyword">public</span>:
-<a name="l00044"></a><a class="code" href="classmlpack_1_1kernel_1_1KMeansSelection.html#adbc02be612c3d657acfc919c93a6e5f0">00044</a>   <span class="keyword">const</span> <span class="keyword">static</span> arma::mat* <a class="code" href="classmlpack_1_1kernel_1_1KMeansSelection.html#adbc02be612c3d657acfc919c93a6e5f0" title="Use the K-Means clustering method to select the specified number of points in the dataset...">Select</a>(<span class="keyword">const</span> arma::mat&amp; data,
-<a name="l00045"></a>00045                                  <span class="keyword">const</span> <span class="keywordtype">size_t</span> m,
-<a name="l00046"></a>00046                                  <span class="keyword">const</span> <span class="keywordtype">size_t</span> maxIterations = 5)
-<a name="l00047"></a>00047   {
-<a name="l00048"></a>00048     arma::Col&lt;size_t&gt; assignments;
-<a name="l00049"></a>00049     arma::mat* centroids = <span class="keyword">new</span> arma::mat;
+<a name="l00015"></a>00015 <span class="preprocessor">#ifndef __MLPACK_METHODS_NYSTROEM_METHOD_KMEANS_SELECTION_HPP</span>
+<a name="l00016"></a>00016 <span class="preprocessor"></span><span class="preprocessor">#define __MLPACK_METHODS_NYSTROEM_METHOD_KMEANS_SELECTION_HPP</span>
+<a name="l00017"></a>00017 <span class="preprocessor"></span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span>
+<a name="l00019"></a>00019 <span class="preprocessor">#include &lt;<a class="code" href="kmeans_8hpp.html">mlpack/methods/kmeans/kmeans.hpp</a>&gt;</span>
+<a name="l00020"></a>00020 
+<a name="l00021"></a>00021 <span class="keyword">namespace </span>mlpack {
+<a name="l00022"></a>00022 <span class="keyword">namespace </span>kernel {
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ClusteringType = kmeans::KMeans&lt;&gt; &gt;
+<a name="l00025"></a><a class="code" href="classmlpack_1_1kernel_1_1KMeansSelection.html">00025</a> <span class="keyword">class </span><a class="code" href="classmlpack_1_1kernel_1_1KMeansSelection.html">KMeansSelection</a>
+<a name="l00026"></a>00026 {
+<a name="l00027"></a>00027  <span class="keyword">public</span>:
+<a name="l00036"></a><a class="code" href="classmlpack_1_1kernel_1_1KMeansSelection.html#adbc02be612c3d657acfc919c93a6e5f0">00036</a>   <span class="keyword">const</span> <span class="keyword">static</span> arma::mat* <a class="code" href="classmlpack_1_1kernel_1_1KMeansSelection.html#adbc02be612c3d657acfc919c93a6e5f0" title="Use the K-Means clustering method to select the specified number of points in the dataset...">Select</a>(<span class="keyword">const</span> arma::mat&amp; data,
+<a name="l00037"></a>00037                                  <span class="keyword">const</span> <span class="keywordtype">size_t</span> m,
+<a name="l00038"></a>00038                                  <span class="keyword">const</span> <span class="keywordtype">size_t</span> maxIterations = 5)
+<a name="l00039"></a>00039   {
+<a name="l00040"></a>00040     arma::Col&lt;size_t&gt; assignments;
+<a name="l00041"></a>00041     arma::mat* centroids = <span class="keyword">new</span> arma::mat;
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043     <span class="comment">// Perform the K-Means clustering method.</span>
+<a name="l00044"></a>00044     ClusteringType kmeans(maxIterations);
+<a name="l00045"></a>00045     kmeans.Cluster(data, m, assignments, *centroids);
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047     <span class="keywordflow">return</span> centroids;
+<a name="l00048"></a>00048   }
+<a name="l00049"></a>00049 };
 <a name="l00050"></a>00050 
-<a name="l00051"></a>00051     <span class="comment">// Perform the K-Means clustering method.</span>
-<a name="l00052"></a>00052     ClusteringType kmeans(maxIterations);
-<a name="l00053"></a>00053     kmeans.Cluster(data, m, assignments, *centroids);
-<a name="l00054"></a>00054 
-<a name="l00055"></a>00055     <span class="keywordflow">return</span> centroids;
-<a name="l00056"></a>00056   }
-<a name="l00057"></a>00057 };
-<a name="l00058"></a>00058 
-<a name="l00059"></a>00059 }; <span class="comment">// namespace kernel</span>
-<a name="l00060"></a>00060 }; <span class="comment">// namespace mlpack</span>
-<a name="l00061"></a>00061 
-<a name="l00062"></a>00062 <span class="preprocessor">#endif</span>
+<a name="l00051"></a>00051 }; <span class="comment">// namespace kernel</span>
+<a name="l00052"></a>00052 }; <span class="comment">// namespace mlpack</span>
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054 <span class="preprocessor">#endif</span>
 </pre></div></div>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Thu Dec 11 2014 11:58:13 for MLPACK by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Jan 7 2015 13:07:07 for mlpack by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

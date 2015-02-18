@@ -32,7 +32,8 @@
    <div class="mlnavitem" name="mlnavtut"><a href="tutorial.html">tutorials</a></div>
    <div class="mlnavsel" name="mlnavdoc">docs</div>
    <div class="mlnavitem" name="mlnavhelp"><a href="help.html">contact</a></div>
-   <div class="mlnavitem" name="mlnavbugs"><a href="trac/">bugs</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a
+href="https://github.com/mlpack/mlpack/">bugs</a></div>
 </div>
 </center>
 <div class="separator"></div>

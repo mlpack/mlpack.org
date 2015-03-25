@@ -47,21 +47,17 @@ API, while simultaneously exploiting C++ language features to provide maximum
 performance and maximum flexibility for expert users.  <font
 class="whitebold">mlpack</font> outperforms competing machine learning libraries
 by large margins; see <a href="mlpack_biglearn.pdf">the BigLearning workshop
-paper</a> for details.</font>
+paper</a> and <a href="benchmark.html">the benchmarks</a> for details.</font>
 <br><br>
-&nbsp;&nbsp;<font class="whitebold">mlpack</font> is developed by the
-<font class="whitebold">f</font>undamental <font
-class="whitebold">a</font>lgorithmic and <font
-class="whitebold">s</font>tatistical <font class="whitebold">t</font>ools <font
-class="whitebold">lab</font>oratory (<font
-class="whitebold"><a href="http://www.fast-lab.org">FASTLab</a></font>) at <a href="http://www.gatech.edu">Georgia
-Tech</a>.  It is released free of charge, under the 3-clause BSD License (<a
-href="http://opensource.org/licenses/BSD-3-Clause">more information</a>).
-(Versions older than 1.0.12 were released under the GNU Lesser General Public
-License: <a href="http://www.gnu.org/licenses/lgpl.html">LGPL</a>, version 3.)
+&nbsp;&nbsp;<font class="whitebold">mlpack</font> is developed by contributors
+from around the world.  It is released free of charge, under the 3-clause BSD
+License (<a href="http://opensource.org/licenses/BSD-3-Clause">more
+information</a>).  (Versions older than 1.0.12 were released under the GNU
+Lesser General Public License: <a
+href="http://www.gnu.org/licenses/lgpl.html">LGPL</a>, version 3.)
 <br><br>
-&nbsp;&nbsp;<font class="whitebold">mlpack</font> was presented at the <a
-href="http://biglearn.org">BigLearning workshop</a> of <a
+&nbsp;&nbsp;<font class="whitebold">mlpack</font> was originally presented at
+the <a href="http://biglearn.org">BigLearning workshop</a> of <a
 href="http://nips.cc">NIPS 2011</a> [<a href="mlpack_biglearn.pdf">pdf</a>] and
 later published in the <a href="http://jmlr.org">Journal of Machine Learning
 Research</a> [<a href="mlpack_jmlr.pdf">pdf</a>].  Please cite <font
@@ -71,6 +67,76 @@ citation</a>.
 &nbsp;&nbsp;<font class="whitebold">mlpack</font> bindings for R are provided by
 the <a href="https://github.com/thirdwing/RcppMLPACK">RcppMLPACK</a> project.
 <br><br>
+&nbsp;&nbsp;Below is a high-level list of the available functionality contained
+within <font class="whitebold">mlpack</font>, along with relevant links to
+papers, API documentation, tutorials, or other references.
+<br><br>
+<ul>
+<li>Density estimation trees (<a
+href="doxygen.php?doc=namespacemlpack_1_1det.html">api</a>, <a
+href="doxygen.php?doc=dettutorial.html">tutorial</a>, <a
+href="papers/det.pdf">paper</a>)</li>
+<li>Euclidean minimum spanning tree calculation (<a
+href="doxygen.php?doc=namespacemlpack_1_1emst.html">api</a>, <a
+href="doxygen.php?doc=emsttutorial.html">tutorial</a>, <a
+href="papers/emst.pdf">paper</a>)</li>
+<li>Gaussian mixture models (<a
+href="doxygen.php?doc=namespacemlpack_1_1gmm.html">api</a>, <a
+href="http://en.wikipedia.org/wiki/Gaussian_Mixture_Model">wiki</a>)</li>
+<li>Hidden Markov models (<a
+href="doxygen.php?doc=namespacemlpack_1_1hmm">api</a>, <a
+href="http://en.wikipedia.org/wiki/Hidden_Markov_Model">wiki</a>)</li>
+<li>Kernel Principal Components Analysis (optionally with Nystroem sampling) (<a
+href="doxygen.php?doc=namespacemlpack_1_1kpca">api</a>, <a
+href="papers/kpca.pdf">paper</a>, <a
+href="http://en.wikipedia.org/wiki/Kernel_Principal_Components_Analysis">wiki</a>)</li>
+<li>k-Means clustering (with several accelerated algorithms) (<a
+href="doxygen.php?doc=namespacemlpack_1_1kmeans.html">api</a>, <a
+href="doxygen.php?doc=kmeanstutorial.html">tutorial</a>, <a
+href="http://en.wikipedia.org/wiki/k-Means_Clustering">wiki</a>)</li>
+<li>Least-angle regression (LARS/LASSO) (<a
+href="doxygen.php?doc=namespacemlpack_1_1regression.html">api</a>, <a
+href="papers/lars.pdf">paper</a>, <a
+href="http://en.wikipedia.org/wiki/Least-angle_regression">wiki</a>)</li>
+<li>Linear regression (simple least-squares) (<a
+href="doxygen.php?doc=namespacemlpack_1_1regression.html">api</a>, <a
+href="http://en.wikipedia.org/wiki/Linear_regression">wiki</a>)</li>
+<li>Local coordinate coding (<a
+href="doxygen.php?doc=namespacemlpack_1_1lcc.html">api</a>, <a
+href="papers/lcc.pdf">paper</a>)</li>
+<li>Locality-sensitive hashing for approximate nearest neighbor search (<a
+href="doxygen.php?doc=namespacemlpack_1_1neighbor.html">api</a>, <a
+href="papers/lsh.pdf">paper</a>, <a
+href="http://en.wikipedia.org/wiki/Locality-sensitive_hashing">wiki</a>)</li>
+<li>Naive Bayes classifier (<a
+href="doxygen.php?doc=namespacemlpack_1_1naive_bayes.html">api</a>, <a
+href="http://en.wikipedia.org/wiki/Naive_Bayes_classifier">wiki</a>)</li>
+<li>Nearest neighbor search with dual-tree algorithms (<a
+href="doxygen.php?doc=namespacemlpack_1_1neighbor.html">api</a>, <a
+href="doxygen.php?doc=nstutorial.html">tutorial</a>, <a
+href="papers/ns.pdf">paper</a>, <a
+href="http://en.wikipedia.org/wiki/Nearest_neighbor_search">wiki</a>)</li>
+<li>Neighborhood components analysis (<a
+href="doxygen.php?doc=namespacemlpack_1_1nca.html">api</a>, <a
+href="papers/nca.pdf">paper</a>, <a
+href="http://en.wikipedia.org/wiki/Neighborhood_components_analysis">wiki</a>)</li>
+<li>Principal components analysis (PCA) (<a
+href="doxygen.php?doc=namespacemlpack_1_1pca.html">api</a>, <a
+href="http://en.wikipedia.org/wiki/Principal_components_analysis">wiki</a>)</li>
+<li>RADICAL (independent components analysis) (<a
+href="doxygen.php?doc=namespacemlpack_1_1radical.html">api</a>, <a
+href="papers/radical.pdf">paper</a>)</li>
+<li>Range search with dual-tree algorithms (<a
+href="doxygen.php?doc=namespacemlpack_1_1range.html">api</a>, <a
+href="doxygen.php?doc=rstutorial.html">tutorial</a>, <a
+href="papers/rs.pdf">paper</a>, <a
+href="http://en.wikipedia.org/wiki/Range_search">wiki</a>)</li>
+<li>Sparse coding with dictionary learning (<a
+href="doxygen.php?doc=namespacemlpack_1_1sparse_coding.html">api</a>, <a
+href="papers/sparse_coding.pdf">paper</a>, <a
+href="http://en.wikipedia.org/wiki/Sparse_coding">wiki</a>)</li>
+</ul>
+<br>
 &nbsp;&nbsp;Contributors include:
 <br>
 <ul>

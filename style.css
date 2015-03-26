@@ -36,6 +36,20 @@ li a.listlink
    color: #ffffff !important;
 }
 
+a.lilink,
+a.lilink:visited
+{
+  color: #bb2222;
+  font-weight: bold;
+}
+
+a.lilink:hover,
+a.lilink:visited:hover
+{
+  color: #ffffff;
+  font-weight: bold;
+}
+
 .left-image
 {
    float: left;

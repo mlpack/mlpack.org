@@ -253,18 +253,18 @@ ul.mainpage li
 {
   margin-left: 1em;
   font-size: 85%;
-  color: #eab72c;
+  color: #bb2222;
 }
 
 li a
 {
-  color: #bb2222 !important;
+  color: #eab72c !important;
   font-weight: normal;
 }
 
 li a:hover
 {
-  color: #eab72c !important;
+  color: #ffffff !important;
   font-weight: normal;
 }
 
@@ -276,12 +276,8 @@ font.released
 
 .mlnavbar
 {
-  background-color: #202020;
-  border: 30px solid #101010;
   width: 620px;
-  padding: 15px;
-  padding-left: 35px;
-  height: 1em;
+  padding-left: 100px;
 }
 
 .mlnavbar .mlnavitem
@@ -290,6 +286,11 @@ font.released
   text-align: center;
   padding-left: 16px;
   padding-right: 16px;
+}
+.mlnavbar .mlnavitem a,
+.mlnavbar .mlnavitem a:visited
+{
+  color: #eab72c;
 }
 
 .mlnavbar .mlnavsel

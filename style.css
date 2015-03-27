@@ -293,6 +293,11 @@ font.released
 {
   color: #eab72c;
 }
+.mlnavbar .mlnavitem a:hover,
+.mlnavbar .mlnavitem a:visited:hover
+{
+  color: #bb2222;
+}
 
 .mlnavbar .mlnavsel
 {

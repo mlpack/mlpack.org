@@ -1,3 +1,6 @@
+Please cite mlpack in your work if you use it.  Citations are beneficial for the
+continued growth and development of mlpack.
+
 @article{mlpack2013,
   title     = {{MLPACK}: A Scalable {C++} Machine Learning Library},
   author    = {Curtin, Ryan R. and Cline, James R. and Slagle, Neil P. and

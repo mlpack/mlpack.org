@@ -22,8 +22,7 @@ rel='stylesheet' type='text/css'>
 <div class="mlnavbar">
   <div class="navcontainer">
    <div class="mlnavitem" name="mlnavmain"><a href="index.html">main</a></div>
-   <div class="mlnavitem" name="mlnavabout"><a
-href="about-main.html">about</a></div>
+   <div class="mlnavsel" name="mlnavabout"><font class="whitebold">about</font></div>
    <div class="mlnavitem" name="mlnavdoc"><a href="doxygen.php">docs</a></div>
    <div class="mlnavitem" name="mlnavhelp"><a href="help.html">get
 help</a></div>
@@ -35,40 +34,49 @@ href="https://github.com/mlpack/mlpack">github</a></div>
 <div class="separator"></div>
 <center>
 <div class="mainsection smallertext">
-<center><h2><font class="whitebold">about mlpack</font></h2></center><br>
-&nbsp;&nbsp;<font class="whitebold">mlpack</font> is a C++ machine learning
+<center><h2><font class="whitebold">what is mlpack?</font></h2></center>
+<p><font class="whitebold">mlpack</font> is a C++ machine learning
 library with emphasis on scalability, speed, and ease-of-use.  Its aim is to
 make machine learning possible for novice users by means of a simple, consistent
 API, while simultaneously exploiting C++ language features to provide maximum
-performance and maximum flexibility for expert users.  <font
+performance and maximum flexibility for expert users.  This is done by providing
+a set of <i>command-line executables</i> which can be used as black boxes, and a
+<i>modular C++ API</i> for expert users and researchers to easily make changes
+to the internals of the algorithms.</p>
+
+<p>As a result of this approach, <font
 class="whitebold">mlpack</font> outperforms competing machine learning libraries
 by large margins; see <a href="mlpack_biglearn.pdf">the BigLearning workshop
-paper</a> and <a href="benchmark.html">the benchmarks</a> for details.</font>
-<br><br>
-&nbsp;&nbsp;<font class="whitebold">mlpack</font> is developed by contributors
+paper</a> and <a href="benchmark.html">the benchmarks</a> for
+details.</font></p>
+
+<p><font class="whitebold">mlpack</font> is developed by contributors
 from around the world.  It is released free of charge, under the 3-clause BSD
 License (<a href="http://opensource.org/licenses/BSD-3-Clause">more
 information</a>).  (Versions older than 1.0.12 were released under the GNU
 Lesser General Public License: <a
-href="http://www.gnu.org/licenses/lgpl.html">LGPL</a>, version 3.)
-<br><br>
-&nbsp;&nbsp;<font class="whitebold">mlpack</font> was originally presented at
+href="http://www.gnu.org/licenses/lgpl.html">LGPL</a>, version 3.)</p>
+
+<p><font class="whitebold">mlpack</font> was originally presented at
 the <a href="http://biglearn.org">BigLearning workshop</a> of <a
 href="http://nips.cc">NIPS 2011</a> [<a href="mlpack_biglearn.pdf">pdf</a>] and
 later published in the <a href="http://jmlr.org">Journal of Machine Learning
 Research</a> [<a href="mlpack_jmlr.pdf">pdf</a>].  Please cite <font
 class="whitebold">mlpack</font> in your work using <a href="citation.txt">this
-citation</a>.
-<br><br>
-&nbsp;&nbsp;<font class="whitebold">mlpack</font> bindings for R are provided by
-the <a href="https://github.com/thirdwing/RcppMLPACK">RcppMLPACK</a> project.
-<br><br>
-&nbsp;&nbsp;Below is a high-level list of the available functionality contained
+citation</a>.</p>
+
+<p><font class="whitebold">mlpack</font> bindings for R are provided by
+the <a href="https://github.com/thirdwing/RcppMLPACK">RcppMLPACK</a>
+project.</p>
+
+<center><h2 class="withtop"><font class="whitebold">what does mlpack
+implement?</font></h2></center>
+
+<p>Below is a high-level list of the available functionality contained
 within <font class="whitebold">mlpack</font>, along with relevant links to
-papers, API documentation, tutorials, or other references.
-<br><br>
+papers, API documentation, tutorials, or other references.</p>
 <ul>
-<li>Collaborative filtering (with numerous matrix decomposition techniques) (<a
+<li>Collaborative filtering (with many decomposition techniques) (<a
 href="doxygen.php?doc=namespacemlpack_1_1cf.html" class="lilink">api</a>, <a
 href="doxygen.php?doc=cftutorial.html" class="lilink">tutorial</a>, <a
 href="http://en.wikipedia.org/wiki/Collaborative_filtering"
@@ -90,7 +98,7 @@ href="http://en.wikipedia.org/wiki/Gaussian_Mixture_Model" class="lilink">wiki</
 <li>Hidden Markov models (<a
 href="doxygen.php?doc=namespacemlpack_1_1hmm" class="lilink">api</a>, <a
 href="http://en.wikipedia.org/wiki/Hidden_Markov_Model" class="lilink">wiki</a>)</li>
-<li>Kernel Principal Components Analysis (optionally with Nystroem sampling) (<a
+<li>Kernel Principal Components Analysis (optionally with sampling) (<a
 href="doxygen.php?doc=namespacemlpack_1_1kpca" class="lilink">api</a>, <a
 href="papers/kpca.pdf" class="lilink">paper</a>, <a
 href="http://en.wikipedia.org/wiki/Kernel_Principal_Components_Analysis"
@@ -136,7 +144,8 @@ class="lilink">wiki</a>)</li>
 <li>Non-negative matrix factorization (<a
 href="doxygen.php?doc=namespacemlpack_1_1amf.html" class="lilink">api</a>, <a
 href="papers/nmf.pdf" class="lilink">paper</a>, <a
-href="http://en.wikipedia.org/wiki/Nonnegative_matrix_factorization">wiki</a>)</li>
+href="http://en.wikipedia.org/wiki/Nonnegative_matrix_factorization"
+class="lilink">wiki</a>)</li>
 <li>Perceptrons (<a
 href="doxygen.php?doc=namespacemlpack_1_1perceptron.html" class="lilink">api</a>, <a
 href="http://en.wikipedia.org/wiki/Perceptron" class="lilink">wiki</a>)</li>
@@ -160,9 +169,14 @@ href="doxygen.php?doc=namespacemlpack_1_1sparse_coding.html" class="lilink">api<
 href="papers/sparse_coding.pdf" class="lilink">paper</a>, <a
 href="http://en.wikipedia.org/wiki/Sparse_coding" class="lilink">wiki</a>)</li>
 </ul>
-<br>
-&nbsp;&nbsp;Contributors include:
-<br>
+<center><h2 class="withtop"><font class="whitebold">who wrote mlpack?</font></h2></center>
+<p><font class="whitebold">mlpack</font> is developed by a team of machine
+learning researchers around the world.  Originally, it was produced by the <a
+href="http://www.fast-lab.org">FASTLab</a> at <a
+href="http://gatech.edu">Georgia Tech</a>, but it has since grown into a much
+larger effort.  Below is a list of contributors (see also the list <a
+href="https://github.com/mlpack/mlpack/graphs/contributors">generated by
+Github</a>).</p>
 <ul>
 <li><a href="http://www.ratml.org">Ryan Curtin</a></li>
 <li>James Cline</li>
@@ -207,6 +221,8 @@ href="http://en.wikipedia.org/wiki/Sparse_coding" class="lilink">wiki</a>)</li>
 <li>Vladimir Glazachev</li>
 <li><a href="http://apir8181.github.io/">QiaoAn Chen</a></li>
 </ul>
+<p>Interested in contributing?  See <a href="involved.html">this page</a> for
+information on how to get involved.</p>
 </div>
 </body>
 </html>

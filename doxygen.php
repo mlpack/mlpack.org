@@ -21,9 +21,9 @@ rel='stylesheet' type='text/css'>
 <center>
 <div class="mlnavbar">
   <div class="navcontainer">
-   <div class="mlnavsel" name="mlnavmain"><a href="index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavmain"><a href="index.html">main</a></div>
    <div class="mlnavitem" name="mlnavabout"><a href="about.html">about</a></div>
-   <div class="mlnavsel" name="mlnavdoc"><font class="whitebold">docs</font></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="docs.html">docs</a></div>
    <div class="mlnavitem" name="mlnavhelp"><a href="help.html">get
 help</a></div>
    <div class="mlnavitem" name="mlnavbugs"><a

@@ -18,7 +18,7 @@ body
 a,
 a:visited
 {
-   color: #bb2222;
+   color: #eab72c;
    text-decoration: none;
    font-weight: bold;
 }
@@ -26,7 +26,7 @@ a:visited
 a:hover,
 a:visited:hover
 {
-   color: #eab72c;
+   color: #bb2222;
    text-decoration: none;
    font-weight: bold;
 }

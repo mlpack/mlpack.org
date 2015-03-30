@@ -10,6 +10,7 @@ library">
 <title>mlpack: a scalable c++ machine learning library</title>
 </head>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="doxygen.css">
 <link href='http://fonts.googleapis.com/css?family=Maven+Pro:500'
 rel='stylesheet' type='text/css'>
 <body>
@@ -33,7 +34,7 @@ href="https://github.com/mlpack/mlpack">github</a></div>
 </center>
 <div class="separator"></div>
 <center>
-<div class="mainsection">
+<div class="mainsection smallertext">
 <?php
   $page = $_GET['doc'];
   if ($page == '') { $page = 'index.html'; }

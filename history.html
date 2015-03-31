@@ -39,238 +39,238 @@ href="https://github.com/mlpack/mlpack">github</a></div>
 news</font></h2></center><br>
 <font class="whitebold">january 7th, 2015</font> -- <a
 href="http://www.mlpack.org/files/mlpack-1.0.12.tar.gz">mlpack 1.0.12</a><br>
-<ul class="mainpage">
-<li><font class="gray">Switch to 3-clause BSD license.</font></li>
+<ul>
+<li>Switch to 3-clause BSD license.</li>
 </ul>
 <font class="whitebold">december 11th, 2014</font> -- <a
 href="http://www.mlpack.org/files/mlpack-1.0.11.tar.gz">mlpack 1.0.11</a><br>
-<ul class="mainpage">
-<li><font class="gray">Proper handling of dimension calculation in PCA.</font></li>
-<li><font class="gray">Load parameter vectors properly for LinearRegression
-models.</font></li>
-<li><font class="gray">Linker fixes for AugLagrangian specializations under
-Visual Studio.</font></li>
-<li><font class="gray">Add support for observation weights to
-LinearRegression.</font></li>
-<li><font class="gray">MahalanobisDistance&lt;&gt; now takes root of the distance by default and
+<ul>
+<li>Proper handling of dimension calculation in PCA.</li>
+<li>Load parameter vectors properly for LinearRegression
+models.</li>
+<li>Linker fixes for AugLagrangian specializations under
+Visual Studio.</li>
+<li>Add support for observation weights to
+LinearRegression.</li>
+<li>MahalanobisDistance&lt;&gt; now takes root of the distance by default and
 therefore satisfies the triangle inequality (TakeRoot now defaults to
-true).</font></li>
-<li><font class="gray">Better handling of optional Armadillo HDF5
-dependency.</font></li>
-<li><font class="gray">Fixes for numerous intermittent test failures.</font></li>
-<li><font class="gray">math::RandomSeed() now sets the seed for recent (&gt;= 3.930) Armadillo
-versions.</font></li>
-<li><font class="gray">Handle Newton method convergence better for
+true).</li>
+<li>Better handling of optional Armadillo HDF5
+dependency.</li>
+<li>Fixes for numerous intermittent test failures.</li>
+<li>math::RandomSeed() now sets the seed for recent (&gt;= 3.930) Armadillo
+versions.</li>
+<li>Handle Newton method convergence better for
 SparseCoding::OptimizeDictionary() and make maximum iterations a
-parameter.</font></li>
-<li><font class="gray">Known bug: CosineTree construction may fail in some cases on i386 systems
-(<a href="https://github.com/mlpack/mlpack/issues/358">358</a>).</font></li>
+parameter.</li>
+<li>Known bug: CosineTree construction may fail in some cases on i386 systems
+(<a href="https://github.com/mlpack/mlpack/issues/358">358</a>).</li>
 </ul>
 <font class="whitebold">august 29th, 2014</font> -- <a
 href="http://www.mlpack.org/files/mlpack-1.0.10.tar.gz">mlpack 1.0.10</a><br>
-<ul class="mainpage">
-<li><font class="gray">Bugfix for NeighborSearch regression which caused very slow allknn/allkfn.
+<ul>
+<li>Bugfix for NeighborSearch regression which caused very slow allknn/allkfn.
 Speeds are now restored to approximately 1.0.8 speeds, with significant
 improvement for the cover tree (<a
-href="https://github.com/mlpack/mlpack/issues/347">#347</a>).</font></li>
-<li><font class="gray">Detect dependencies correctly when ARMA_USE_WRAPPER is not defined
-(i.e., libarmadillo.so does not exist).</font></li>
-<li><font class="gray">Bugfix for compilation under Visual Studio (<a
-href="https://github.com/mlpack/mlpack/issues/348">#348</a>).</font></li>
+href="https://github.com/mlpack/mlpack/issues/347">#347</a>).</li>
+<li>Detect dependencies correctly when ARMA_USE_WRAPPER is not defined
+(i.e., libarmadillo.so does not exist).</li>
+<li>Bugfix for compilation under Visual Studio (<a
+href="https://github.com/mlpack/mlpack/issues/348">#348</a>).</li>
 </ul>
 <font class="whitebold">july 28th, 2014</font> -- <a
 href="http://www.mlpack.org/files/mlpack-1.0.9.tar.gz">mlpack 1.0.9</a><br>
-<ul class="mainpage">
-<li><font class="gray">GMM initialization is now safer and provides a working GMM when constructed
+<ul>
+<li>GMM initialization is now safer and provides a working GMM when constructed
 with only the dimensionality and number of Gaussians (<a
-href="https://github.com/mlpack/mlpack/issues/301">#301</a>).</font></li>
-<li><font class="gray">Check for division by 0 in Forward-Backward algorithm in HMMs (<a
-href="https://github.com/mlpack/mlpack/issues/301">#301</a>).</font></li>
-<li><font class="gray">Fix MaxVarianceNewCluster (used when re-initializing
+href="https://github.com/mlpack/mlpack/issues/301">#301</a>).</li>
+<li>Check for division by 0 in Forward-Backward algorithm in HMMs (<a
+href="https://github.com/mlpack/mlpack/issues/301">#301</a>).</li>
+<li>Fix MaxVarianceNewCluster (used when re-initializing
 clusters for k-means) (<a
-href="https://github.com/mlpack/mlpack/issues/301">#301</a>).</font></li>
-<li><font class="gray">Fixed implementation of Viterbi algorithm in HMM::Predict() (<a
-href="https://github.com/mlpack/mlpack/issues/303">#303</a>).</font></li>
-<li><font class="gray">Significant speedups for dual-tree algorithms using the cover tree (<a
+href="https://github.com/mlpack/mlpack/issues/301">#301</a>).</li>
+<li>Fixed implementation of Viterbi algorithm in HMM::Predict() (<a
+href="https://github.com/mlpack/mlpack/issues/303">#303</a>).</li>
+<li>Significant speedups for dual-tree algorithms using the cover tree (<a
 href="https://github.com/mlpack/mlpack/issues/235">#235</a>, <a
 href="https://github.com/mlpack/mlpack/issues/314">#314</a>) including a faster
-implementation of FastMKS.</font></li>
-<li><font class="gray">Fix for LRSDP optimizer so that it compiles and can be
+implementation of FastMKS.</li>
+<li>Fix for LRSDP optimizer so that it compiles and can be
 used (<a
-href="https://github.com/mlpack/mlpack/issues/312">#312</a>).</font></li>
-<li><font class="gray">CF (collaborative filtering) now expects users and items to be zero-indexed,
+href="https://github.com/mlpack/mlpack/issues/312">#312</a>).</li>
+<li>CF (collaborative filtering) now expects users and items to be zero-indexed,
 not one-indexed (<a
-href="https://github.com/mlpack/mlpack/issues/311">#311</a>).</font></li>
-<li><font class="gray">CF::GetRecommendations() API change: now requires the number of
+href="https://github.com/mlpack/mlpack/issues/311">#311</a>).</li>
+<li>CF::GetRecommendations() API change: now requires the number of
 recommendations as the first parameter.  The number of users in the local
-neighborhood should be specified with CF::NumUsersForSimilarity().</font></li>
-<li><font class="gray">Removed incorrect PeriodicHRectBound (<a
-href="https://github.com/mlpack/mlpack/issues/58">#58</a>).</font></li>
-<li><font class="gray">Refactor LRSDP into LRSDP class and standalone function to be optimized (<a
-href="https://github.com/mlpack/mlpack/issues/305">#305</a>).</font></li>
-<li><font class="gray">Fix for centering in kernel PCA (<a
-href="https://github.com/mlpack/mlpack/issues/337">#337</a>).</font></li>
-<li><font class="gray">Added simulated annealing (SA) optimizer, contributed by
-Zhihao Lou.</font></li>
-<li><font class="gray">HMMs now support initial state probabilities; these can be set in the
+neighborhood should be specified with CF::NumUsersForSimilarity().</li>
+<li>Removed incorrect PeriodicHRectBound (<a
+href="https://github.com/mlpack/mlpack/issues/58">#58</a>).</li>
+<li>Refactor LRSDP into LRSDP class and standalone function to be optimized (<a
+href="https://github.com/mlpack/mlpack/issues/305">#305</a>).</li>
+<li>Fix for centering in kernel PCA (<a
+href="https://github.com/mlpack/mlpack/issues/337">#337</a>).</li>
+<li>Added simulated annealing (SA) optimizer, contributed by
+Zhihao Lou.</li>
+<li>HMMs now support initial state probabilities; these can be set in the
 constructor, trained, or set manually with HMM::Initial() (<a
-href="https://github.com/mlpack/mlpack/issues/302">#302</a>).</font></li>
-<li><font class="gray">Added Nyström method for kernel matrix approximation by
-Marcus Edel.</font></li>
-<li><font class="gray">Kernel PCA now supports using the Nyström method for
-approximation.</font></li>
-<li><font class="gray">Ball trees now work with dual-tree algorithms, via the BallBound&lt;&gt; bound
+href="https://github.com/mlpack/mlpack/issues/302">#302</a>).</li>
+<li>Added Nyström method for kernel matrix approximation by
+Marcus Edel.</li>
+<li>Kernel PCA now supports using the Nyström method for
+approximation.</li>
+<li>Ball trees now work with dual-tree algorithms, via the BallBound&lt;&gt; bound
 structure (<a href="https://github.com/mlpack/mlpack/issues/307">#307</a>); fixed by
-Yash Vadalia.</font></li>
-<li><font class="gray">The NMF class is now AMF&lt;&gt;, and supports far more types of
-factorizations, by Sumedh Ghaisas.</font></li>
-<li><font class="gray">A QUIC-SVD implementation has returned, written by Siddharth Agrawal and
-based on older code from Mudit Gupta.</font></li>
-<li><font class="gray">Added perceptron and decision stump by Udit Saxena (these are weak learners
-for an eventual AdaBoost class).</font></li>
-<li><font class="gray">Sparse autoencoder added by Siddharth Agrawal.</font></li>
+Yash Vadalia.</li>
+<li>The NMF class is now AMF&lt;&gt;, and supports far more types of
+factorizations, by Sumedh Ghaisas.</li>
+<li>A QUIC-SVD implementation has returned, written by Siddharth Agrawal and
+based on older code from Mudit Gupta.</li>
+<li>Added perceptron and decision stump by Udit Saxena (these are weak learners
+for an eventual AdaBoost class).</li>
+<li>Sparse autoencoder added by Siddharth Agrawal.</li>
 </ul>
 <font class="whitebold">january 6, 2014</font> -- <a
 href="http://www.mlpack.org/files/mlpack-1.0.8.tar.gz">mlpack 1.0.8</a><br>
-<ul class="mainpage">
-<li><font class="gray">Memory leak in NeighborSearch index-mapping code
-fixed (<a href="https://github.com/mlpack/mlpack/issues/298">#298</a>).</font></li>
-<li><font class="gray">GMMs can be trained using the existing model as a starting point by
+<ul>
+<li>Memory leak in NeighborSearch index-mapping code
+fixed (<a href="https://github.com/mlpack/mlpack/issues/298">#298</a>).</li>
+<li>GMMs can be trained using the existing model as a starting point by
 specifying an additional boolean parameter to GMM::Estimate() (<a
-href="https://github.com/mlpack/mlpack/issues/296">#296</a>).</font></li>
-<li><font class="gray">Logistic regression implementation added in
+href="https://github.com/mlpack/mlpack/issues/296">#296</a>).</li>
+<li>Logistic regression implementation added in
 methods/logistic_regression (see also <a
-href="https://github.com/mlpack/mlpack/issues/293">#293</a>).</font></li>
-<li><font class="gray">Version information is now obtainable via mlpack::util::GetVersion() or the
+href="https://github.com/mlpack/mlpack/issues/293">#293</a>).</li>
+<li>Version information is now obtainable via mlpack::util::GetVersion() or the
 __MLPACK_VERSION_MAJOR, __MLPACK_VERSION_MINOR, and __MLPACK_VERSION_PATCH
-macros (<a href="https://github.com/mlpack/mlpack/issues/297">#297</a>).</font></li>
-<li><font class="gray">Fix typos in allkfn and allkrann output.</font></li>
+macros (<a href="https://github.com/mlpack/mlpack/issues/297">#297</a>).</li>
+<li>Fix typos in allkfn and allkrann output.</li>
 </ul>
 <font class="whitebold">october 4, 2013</font> -- <a
 href="http://www.mlpack.org/files/mlpack-1.0.7.tar.gz">mlpack 1.0.7</a><br>
-<ul class="mainpage">
-<li><font class="gray">Cover tree support for range search (range_search), rank-approximate nearest
+<ul>
+<li>Cover tree support for range search (range_search), rank-approximate nearest
 neighbors (allkrann), minimum spanning tree calculation (emst), and FastMKS
-(fastmks).</font></li>
-<li><font class="gray">Dual-tree FastMKS implementation added and tested.</font></li>
-<li><font class="gray">Added collaborative filtering package (cf) that can provide recommendations
-when given users and items.</font></li>
-<li><font class="gray">Fix for correctness of Kernel PCA (kernel_pca) (<a
-href="https://github.com/mlpack/mlpack/issues/270">#270</a>).</font></li>
-<li><font class="gray">Speedups for PCA and Kernel PCA (<a
-href="https://github.com/mlpack/mlpack/issues/198">#198</a>).</font></li>
-<li><font class="gray">Fix for correctness of Neighborhood Components Analysis
-(NCA) (<a href="https://github.com/mlpack/mlpack/issues/279">#279</a>).</font></li>
-<li><font class="gray">Minor speedups for dual-tree algorithms.</font></li>
-<li><font class="gray">Fix for Naive Bayes Classifier (nbc) (<a
-href="https://github.com/mlpack/mlpack/issues/269">#269</a>).</font></li>
-<li><font class="gray">Added a ridge regression option to LinearRegression (linear_regression)
-(<a href="https://github.com/mlpack/mlpack/issues/286">#286</a>).</font></li>
-<li><font class="gray">Gaussian Mixture Models (gmm::GMM&lt;&gt;) now support arbitrary covariance
+(fastmks).</li>
+<li>Dual-tree FastMKS implementation added and tested.</li>
+<li>Added collaborative filtering package (cf) that can provide recommendations
+when given users and items.</li>
+<li>Fix for correctness of Kernel PCA (kernel_pca) (<a
+href="https://github.com/mlpack/mlpack/issues/270">#270</a>).</li>
+<li>Speedups for PCA and Kernel PCA (<a
+href="https://github.com/mlpack/mlpack/issues/198">#198</a>).</li>
+<li>Fix for correctness of Neighborhood Components Analysis
+(NCA) (<a href="https://github.com/mlpack/mlpack/issues/279">#279</a>).</li>
+<li>Minor speedups for dual-tree algorithms.</li>
+<li>Fix for Naive Bayes Classifier (nbc) (<a
+href="https://github.com/mlpack/mlpack/issues/269">#269</a>).</li>
+<li>Added a ridge regression option to LinearRegression (linear_regression)
+(<a href="https://github.com/mlpack/mlpack/issues/286">#286</a>).</li>
+<li>Gaussian Mixture Models (gmm::GMM&lt;&gt;) now support arbitrary covariance
 matrix constraints (<a
-href="https://github.com/mlpack/mlpack/issues/283">#283</a>).</font></li>
-<li><font class="gray">MVU (mvu) removed because it is known to not work
-(<a href="https://github.com/mlpack/mlpack/issues/183">#183</a>).</font></li>
-<li><font class="gray">Minor updates and fixes for kernels (in
-mlpack::kernel).</font></li>
+href="https://github.com/mlpack/mlpack/issues/283">#283</a>).</li>
+<li>MVU (mvu) removed because it is known to not work
+(<a href="https://github.com/mlpack/mlpack/issues/183">#183</a>).</li>
+<li>Minor updates and fixes for kernels (in
+mlpack::kernel).</li>
 </ul>
 <font class="whitebold">june 13, 2013</font> -- <a
 href="http://www.mlpack.org/files/mlpack-1.0.6.tar.gz">mlpack 1.0.6</a><br>
-<ul class="mainpage">
-<li><font class="gray">Minor bugfix so that FastMKS gets built.</font></li>
+<ul>
+<li>Minor bugfix so that FastMKS gets built.</li>
 </ul>
 <font class="whitebold">may 1, 2013</font> -- <a
 href="http://www.mlpack.org/files/mlpack-1.0.5.tar.gz">mlpack 1.0.5</a><br>
-<ul class="mainpage">
-<li><font class="gray">Speedups of cover tree traversers (<a
-href="https://github.com/mlpack/mlpack/issues/235">#235</a>).</font></li>
-<li><font class="gray">Addition of rank-approximate nearest neighbors (RANN), found in
-src/mlpack/methods/rann/.</font></li>
-<li><font class="gray">Addition of fast exact max-kernel search (FastMKS), found in
-src/mlpack/methods/fastmks/.</font></li>
-<li><font class="gray">Fix for EM covariance estimation; this should improve GMM training
-time.</font></li>
-<li><font class="gray">More parameters for GMM estimation.</font></li>
-<li><font class="gray">Force GMM and GaussianDistribution covariance matrices to be positive
-definite, so that training converges much more often.</font></li>
-<li><font class="gray">Add parameter for the tolerance of the Baum-Welch algorithm for HMM
-training.</font></li>
-<li><font class="gray">Fix for compilation with clang compiler.</font></li>
-<li><font class="gray">Fix for k-furthest-neighbor search.</font></li>
+<ul>
+<li>Speedups of cover tree traversers (<a
+href="https://github.com/mlpack/mlpack/issues/235">#235</a>).</li>
+<li>Addition of rank-approximate nearest neighbors (RANN), found in
+src/mlpack/methods/rann/.</li>
+<li>Addition of fast exact max-kernel search (FastMKS), found in
+src/mlpack/methods/fastmks/.</li>
+<li>Fix for EM covariance estimation; this should improve GMM training
+time.</li>
+<li>More parameters for GMM estimation.</li>
+<li>Force GMM and GaussianDistribution covariance matrices to be positive
+definite, so that training converges much more often.</li>
+<li>Add parameter for the tolerance of the Baum-Welch algorithm for HMM
+training.</li>
+<li>Fix for compilation with clang compiler.</li>
+<li>Fix for k-furthest-neighbor search.</li>
 </ul>
 <font class="whitebold">feb. 8, 2013</font> -- <a
 href="http://www.mlpack.org/files/mlpack-1.0.4.tar.gz">mlpack 1.0.4</a><br>
-<ul class="mainpage">
-<li><font class="gray">Force minimum Armadillo version to 2.4.2.</font></li>
-<li><font class="gray">Better output of class types to streams; a class with a ToString() method
-implemented can be sent to a stream with operator&lt;&lt;.</font></li>
-<li><font class="gray">Change return type of GMM::Estimate() to double
-(<a href="https://github.com/mlpack/mlpack/issues/257">#257</a>).</font></li>
-<li><font class="gray">Style fixes for k-means and RADICAL.</font></li>
-<li><font class="gray">Handle size_t support correctly with Armadillo 3.6.2 (<a
-href="https://github.com/mlpack/mlpack/issues/258">#258</a>).</font></li>
-<li><font class="gray">Add locality-sensitive hashing (LSH), found in
-src/mlpack/methods/lsh/.</font></li>
-<li><font class="gray">Better tests for SGD (stochastic gradient descent) and NCA (neighborhood
-components analysis).</font></li>
+<ul>
+<li>Force minimum Armadillo version to 2.4.2.</li>
+<li>Better output of class types to streams; a class with a ToString() method
+implemented can be sent to a stream with operator&lt;&lt;.</li>
+<li>Change return type of GMM::Estimate() to double
+(<a href="https://github.com/mlpack/mlpack/issues/257">#257</a>).</li>
+<li>Style fixes for k-means and RADICAL.</li>
+<li>Handle size_t support correctly with Armadillo 3.6.2 (<a
+href="https://github.com/mlpack/mlpack/issues/258">#258</a>).</li>
+<li>Add locality-sensitive hashing (LSH), found in
+src/mlpack/methods/lsh/.</li>
+<li>Better tests for SGD (stochastic gradient descent) and NCA (neighborhood
+components analysis).</li>
 </ul>
 <font class="whitebold">sep. 16, 2012</font> -- <a
 href="http://www.mlpack.org/files/mlpack-1.0.3.tar.gz">mlpack 1.0.3</a><br>
-<ul class="mainpage">
-<li><font class="gray">Remove internal sparse matrix support because Armadillo 3.4.0 now includes
+<ul>
+<li>Remove internal sparse matrix support because Armadillo 3.4.0 now includes
 it.  When using Armadillo versions older than 3.4.0, sparse matrix support is
-not available.</font></li>
-<li><font class="gray">NCA (neighborhood components analysis) now support an arbitrary optimizer
+not available.</li>
+<li>NCA (neighborhood components analysis) now support an arbitrary optimizer
 (<a href="https://github.com/mlpack/mlpack/issues/245">#245</a>), including stochastic gradient descent (<a
-href="https://github.com/mlpack/mlpack/issues/249">#249</a>).</font></li>
+href="https://github.com/mlpack/mlpack/issues/249">#249</a>).</li>
 </ul>
 <font class="whitebold">aug. 15, 2012</font> -- <a
 href="http://www.mlpack.org/files/mlpack-1.0.2.tar.gz">mlpack 1.0.2</a><br>
-<ul class="mainpage">
-<li><font class="gray">Added density estimation trees, found in
-src/mlpack/methods/det/.</font></li>
-<li><font class="gray">Added non-negative matrix factorization, found in
-src/mlpack/methods/nmf/.</font></li>
-<li><font class="gray">Added experimental cover tree implementation, found in
+<ul>
+<li>Added density estimation trees, found in
+src/mlpack/methods/det/.</li>
+<li>Added non-negative matrix factorization, found in
+src/mlpack/methods/nmf/.</li>
+<li>Added experimental cover tree implementation, found in
 src/mlpack/core/tree/cover_tree/ (<a
-href="https://github.com/mlpack/mlpack/issues/157">#157</a>).</font></li>
-<li><font class="gray">Better reporting of boost::program_options errors (<a
-href="https://github.com/mlpack/mlpack/issues/225">#225</a>).</font></li>
-<li><font class="gray">Fix for timers on Windows (<a
+href="https://github.com/mlpack/mlpack/issues/157">#157</a>).</li>
+<li>Better reporting of boost::program_options errors (<a
+href="https://github.com/mlpack/mlpack/issues/225">#225</a>).</li>
+<li>Fix for timers on Windows (<a
 href="https://github.com/mlpack/mlpack/issues/212">#212</a>, <a
-href="https://github.com/mlpack/mlpack/issues/211">#211</a>).</font></li>
-<li><font class="gray">Fix for allknn and allkfn output (<a
-href="https://github.com/mlpack/mlpack/issues/204">#204</a>).</font></li>
-<li><font class="gray">Sparse coding dictionary initialization is now a template parameter
-(<a href="https://github.com/mlpack/mlpack/issues/220">#220</a>).</font></li>
+href="https://github.com/mlpack/mlpack/issues/211">#211</a>).</li>
+<li>Fix for allknn and allkfn output (<a
+href="https://github.com/mlpack/mlpack/issues/204">#204</a>).</li>
+<li>Sparse coding dictionary initialization is now a template parameter
+(<a href="https://github.com/mlpack/mlpack/issues/220">#220</a>).</li>
 </ul>
 <font class="whitebold">mar. 3, 2012</font> -- <a
 href="http://www.mlpack.org/files/mlpack-1.0.1.tar.gz">mlpack 1.0.1</a><br>
-<ul class="mainpage">
-<li><font class="gray">Added kernel principal components analysis (kernel PCA), found in
+<ul>
+<li>Added kernel principal components analysis (kernel PCA), found in
 src/mlpack/methods/kernel_pca/ (<a
-href="https://github.com/mlpack/mlpack/issues/74">#74</a>).</font></li>
-<li><font class="gray">Fix for Lovasz-Theta AugLagrangian tests (<a
-href="https://github.com/mlpack/mlpack/issues/182">#182</a>).</font></li>
-<li><font class="gray">Fixes for allknn output (<a
+href="https://github.com/mlpack/mlpack/issues/74">#74</a>).</li>
+<li>Fix for Lovasz-Theta AugLagrangian tests (<a
+href="https://github.com/mlpack/mlpack/issues/182">#182</a>).</li>
+<li>Fixes for allknn output (<a
 href="https://github.com/mlpack/mlpack/issues/185">#185</a>, <a
-href="https://github.com/mlpack/mlpack/issues/186">#186</a>).</font></li>
-<li><font class="gray">Added range search executable (<a
-href="https://github.com/mlpack/mlpack/issues/192">#192</a>).</font></li>
-<li><font class="gray">Adapted citations in documentation to BiBTeX; no citations in -h output
-(<a href="https://github.com/mlpack/mlpack/issues/195">#195</a>).</font></li>
-<li><font class="gray">Stop use of 'const char*' and prefer 'std::string' (<a
-href="https://github.com/mlpack/mlpack/issues/177">#177</a>).</font></li>
-<li><font class="gray">Support seeds for random numbers (<a
-href="https://github.com/mlpack/mlpack/issues/176">#176</a>).</font></li>
+href="https://github.com/mlpack/mlpack/issues/186">#186</a>).</li>
+<li>Added range search executable (<a
+href="https://github.com/mlpack/mlpack/issues/192">#192</a>).</li>
+<li>Adapted citations in documentation to BiBTeX; no citations in -h output
+(<a href="https://github.com/mlpack/mlpack/issues/195">#195</a>).</li>
+<li>Stop use of 'const char*' and prefer 'std::string' (<a
+href="https://github.com/mlpack/mlpack/issues/177">#177</a>).</li>
+<li>Support seeds for random numbers (<a
+href="https://github.com/mlpack/mlpack/issues/176">#176</a>).</li>
 </ul>
 <font class="whitebold">dec. 17, 2011</font> -- <a
 href="http://www.mlpack.org/files/mlpack-1.0.0.tar.gz">mlpack 1.0.0</a><br>
-<ul class="mainpage">
-<li><font class="gray">Initial release.  See any resolved tickets numbered less than #196 or
+<ul>
+<li>Initial release.  See any resolved tickets numbered less than #196 or
     execute <a
 href="http://www.mlpack.org/trac/query?status=closed&milestone=mlpack+1.0.0">this
-query</a>.</font></li>
+query</a>.</li>
 </ul>
 <br>
 </div>

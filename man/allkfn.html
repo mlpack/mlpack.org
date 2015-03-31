@@ -1,0 +1,178 @@
+<html>
+<head>
+<!-- probably could use more keywords -->
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>mlpack: a scalable c++ machine learning library</title>
+</head>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Maven+Pro:500'
+rel='stylesheet' type='text/css'>
+<body>
+<!-- very simple table with as few words as possible -->
+<br>
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../mlpack.png"></a>
+</div>
+<center>
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a
+href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center>
+<div class="mainsection smallertext manpage">
+
+
+<h1 align="center">allkfn</h1>
+
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">allkfn</font> -
+all k-furthest-neighbors</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">allkfn</font>
+[<font class="code">-h</font>] [<font class="code">-v</font>] <font class="code">-d</font> <font class="code2">string</font> <font class="code">-k</font>
+<font class="code2">int</font> <font class="code">-n</font> <font class="code2">string</font> <font class="code">-r</font> <font class="code2">string</font>
+[<font class="code">-l</font> <font class="code2">int</font>] [<font class="code">-N</font>] [<font class="code">-q</font> <font class="code2">string</font>]
+[<font class="code">-s</font>] <font class="code">-V</font></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p class="closemargin first">This program
+will calculate the all k-furthest-neighbors of a set of
+points. You may specify a separate set of reference points
+and query points, or just a reference set which will be used
+as both the reference and query set.</p>
+
+<p class="closemargin first">For example,
+the following will calculate the 5 furthest neighbors of
+eachpoint in &rsquo;input.csv&rsquo; and store the distances
+in &rsquo;distances.csv&rsquo; and the neighbors in the file
+&rsquo;neighbors.csv&rsquo;:</p>
+
+<p class="closemargin first">$ <font class="code">allkfn
+--k</font><font class="code2">=5 </font><font class="code">--reference_file</font><font class="code2">=input.csv</font>
+<font class="code">--distances_file</font><font class="code2">=distances.csv</font>
+<font class="code">--neighbors_file</font><font class="code2">=neighbors.csv</font></p>
+
+<p class="closemargin first">The output
+files are organized such that row i and column j in the
+neighbors output file corresponds to the index of the point
+in the reference set which is the i&rsquo;th furthest
+neighbor from the point in the query set with index j. Row i
+and column j in the distances output file corresponds to the
+distance between those two points.</p>
+
+<h2>REQUIRED OPTIONS
+<a name="REQUIRED OPTIONS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">--distances_file
+(-d) [</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">File to output distances
+into.</p>
+
+<p class="closemargin"><font class="code">--k (-k)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Number of furthest neighbors to
+find.</p>
+
+<p class="closemargin"><font class="code">--neighbors_file (-n)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">File to output neighbors
+into.</p>
+
+<p class="closemargin"><font class="code">--reference_file (-r)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">File containing the reference
+dataset.</p>
+
+<h2>OPTIONS
+<a name="OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--help
+(-h)</font></p>
+
+<p class="farmargin">Default help info.</p>
+
+<p class="closemargin"><font class="code">--info
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Get help on a specific module
+or option. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--leaf_size (-l)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Leaf size for tree building.
+Default value 20.</p>
+
+<p class="closemargin"><font class="code">--naive (-N)</font></p>
+
+<p class="farmargin">If true, <font class="code">O</font>(n^2) naive
+mode is used for computation.</p>
+
+<p class="closemargin"><font class="code">--query_file (-q)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">File containing query points
+(optional). Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--single_mode (-s)</font></p>
+
+<p class="farmargin">If true, single-tree search is
+used (as opposed to dual-tree search).</p>
+
+<p class="closemargin"><font class="code">--verbose (-v)</font></p>
+
+<p class="farmargin">Display informational messages
+and the full list of parameters and timers at the end of
+execution.</p>
+
+<p class="closemargin"><font class="code">--version (-V)</font></p>
+
+<p class="farmargin">Display the version of
+mlpack.</p>
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<p class="closemargin first">For further
+information, including relevant papers, citations, and
+theory, consult the documentation found at
+http://www.mlpack.org or included with your distribution of
+MLPACK.</p>
+</div></body></html>

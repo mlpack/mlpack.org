@@ -1,0 +1,225 @@
+<html>
+<head>
+<!-- probably could use more keywords -->
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>mlpack: a scalable c++ machine learning library</title>
+</head>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Maven+Pro:500'
+rel='stylesheet' type='text/css'>
+<body>
+<!-- very simple table with as few words as possible -->
+<br>
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../mlpack.png"></a>
+</div>
+<center>
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a
+href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center>
+<div class="mainsection smallertext manpage">
+
+
+<h1 align="center">fastmks</h1>
+
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">fastmks</font>
+- fastmks (fast max-kernel search)</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">fastmks</font>
+[<font class="code">-h</font>] [<font class="code">-v</font>] <font class="code">-k</font> <font class="code2">int</font> <font class="code">-r</font>
+<font class="code2">string</font> [<font class="code">-w</font> <font class="code2">double</font>] [<font class="code">-b</font>
+<font class="code2">double</font>] [<font class="code">-d</font> <font class="code2">double</font>] [<font class="code">-i</font>
+<font class="code2">string</font>] [<font class="code">-K</font> <font class="code2">string</font>] [<font class="code">-N</font>]
+[<font class="code">-o</font> <font class="code2">double</font>] [<font class="code">-p</font> <font class="code2">string</font>]
+[<font class="code">-q</font> <font class="code2">string</font>] [<font class="code">-s</font> <font class="code2">double</font>]
+[<font class="code">-S</font>] <font class="code">-V</font></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p class="closemargin first">This program
+will find the k maximum kernel of a set of points, using a
+query set and a reference set (which can optionally be the
+same set). More specifically, for each point in the query
+set, the k points in the reference set with maximum kernel
+evaluations are found. The kernel function used is specified
+by <font class="code">--kernel</font>.</p>
+
+<p class="closemargin first">For example,
+the following command will calculate, for each point in
+'query.csv&rsquo;, the five points in
+&rsquo;reference.csv&rsquo; with maximum kernel evaluation
+using the linear kernel. The kernel evaluations are stored
+in &rsquo;kernels.csv&rsquo; and the indices are stored in
+&rsquo;indices.csv&rsquo;.</p>
+
+<p class="closemargin first">$ <font class="code">fastmks
+--k</font> 5 <font class="code">--reference_file</font> reference.csv
+<font class="code">--query_file</font> query.csv <font class="code">--indices_file</font>
+indices.csv <font class="code">--products_file</font> kernels.csv
+<font class="code">--kernel</font> linear</p>
+
+<p class="closemargin first">The output
+files are organized such that row i and column j in the
+indices output file corresponds to the index of the point in
+the reference set that has i&rsquo;th largest kernel
+evaluation with the point in the query set with index j. Row
+i and column j in the products output file corresponds to
+the kernel evaluation between those two points.</p>
+
+<p class="closemargin first">This executable
+performs FastMKS using a cover tree. The base used to build
+the cover tree can be specified with the <font class="code">--base</font>
+option.</p>
+
+<h2>REQUIRED OPTIONS
+<a name="REQUIRED OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--k (-k)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Number of maximum inner
+products to find.</p>
+
+<p class="closemargin"><font class="code">--reference_file (-r)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">File containing the reference
+dataset.</p>
+
+<h2>OPTIONS
+<a name="OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--bandwidth
+(-w) [</font><font class="code2">double</font><font class="code">]</font></p>
+
+<p class="farmargin">Bandwidth (for Gaussian,
+Epanechnikov, and triangular kernels). Default value 1.</p>
+
+<p class="closemargin"><font class="code">--base (-b)
+[</font><font class="code2">double</font><font class="code">]</font></p>
+
+<p class="farmargin">Base to use during cover tree
+construction. Default value 2.</p>
+
+<p class="closemargin"><font class="code">--degree (-d)
+[</font><font class="code2">double</font><font class="code">]</font></p>
+
+<p class="farmargin">Degree of polynomial kernel.
+Default value 2.</p>
+
+<p class="closemargin"><font class="code">--help (-h)</font></p>
+
+<p class="farmargin">Default help info.</p>
+
+<p class="closemargin"><font class="code">--indices_file (-i)
+[</font><font class="code2">string</font><font class="code">] File to save indices of inner
+products <br>
+into.</font></p>
+
+<p class="farmargin">Default value
+&rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--info
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Get help on a specific module
+or option. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--kernel (-K)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Kernel type to use:
+&rsquo;linear&rsquo;, &rsquo;polynomial&rsquo;,
+&rsquo;cosine&rsquo;, &rsquo;gaussian&rsquo;,
+&rsquo;epanechnikov&rsquo;, &rsquo;triangular&rsquo;,
+&rsquo;hyptan&rsquo;. Default value
+&rsquo;linear&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--naive (-N)</font></p>
+
+<p class="farmargin">If true, <font class="code">O</font>(n^2) naive
+mode is used for computation.</p>
+
+<p class="closemargin"><font class="code">--offset (-o)
+[</font><font class="code2">double</font><font class="code">]</font></p>
+
+<p class="farmargin">Offset of kernel (for
+polynomial and hyptan kernels). Default value 0.</p>
+
+<p class="closemargin"><font class="code">--products_file (-p)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">File to save inner products
+into. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--query_file (-q)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">File containing the query
+dataset. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--scale (-s)
+[</font><font class="code2">double</font><font class="code">]</font></p>
+
+<p class="farmargin">Scale of kernel (for hyptan
+kernel). Default value 1.</p>
+
+<p class="closemargin"><font class="code">--single (-S)</font></p>
+
+<p class="farmargin">If true, single-tree search is
+used (as opposed to dual-tree search.</p>
+
+<p class="closemargin"><font class="code">--verbose (-v)</font></p>
+
+<p class="farmargin">Display informational messages
+and the full list of parameters and timers at the end of
+execution.</p>
+
+<p class="closemargin"><font class="code">--version (-V)</font></p>
+
+<p class="farmargin">Display the version of
+mlpack.</p>
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<p class="closemargin first">For further
+information, including relevant papers, citations, and
+theory, consult the documentation found at
+http://www.mlpack.org or included with your distribution of
+MLPACK.</p>
+</div></body></html>

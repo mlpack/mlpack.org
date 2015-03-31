@@ -31,28 +31,32 @@ a:visited:hover
    font-weight: bold;
 }
 
-li a.listlink
+/* lists */
+ul li
 {
-   color: #ffffff !important;
+  color: #aaaaaa;
+  list-style: none;
+  font-size: 75%;
+  font-weight: normal;
 }
 
-a.lilink,
-a.lilink:visited
+li a
+{
+  color: #eab72c;
+  font-weight: normal;
+}
+
+li a:hover
+{
+  color: #ffffff !important;
+  font-weight: normal;
+}
+
+li:before
 {
   color: #bb2222;
-  font-weight: bold;
-}
-
-a.lilink:hover,
-a.lilink:visited:hover
-{
-  color: #ffffff;
-  font-weight: bold;
-}
-
-.left-image
-{
-   float: left;
+  content: "\2022";
+  padding-right: .25em;
 }
 
 .title
@@ -62,11 +66,6 @@ a.lilink:visited:hover
    padding-right: 100px;
    height: 100px;
    vertical-align: center;
-}
-
-.right-image
-{
-   float: right;
 }
 
 .titlebar
@@ -101,56 +100,9 @@ a.lilink:visited:hover
   height: 0;
 }
 
-.download
-{
-
-}
-
 div.version
 {
   padding-top: 1em;
-  color: #ffffff;
-}
-
-.released
-{
-  font-size: 75%;
-  font-style: italic;
-}
-
-.oldver
-{
-  font-size: 75%;
-  text-decoration: none;
-  text-align: center;
-}
-
-.oldver a,
-.oldver a:visited
-{
-  color: #eab72c;
-}
-
-.oldver a:hover,
-.oldver a:visited:hover
-{
-  color: #bb2222;
-}
-
-.and
-{
-  padding-top: 0.4em;
-  font-size: 75%;
-  padding-bottom: 0.4em;
-  font-style: italic;
-}
-
-.bugs
-{
-  padding-top: 0.2em;
-  font-size: 75%;
-  padding-bottom: 0.4em;
-/*  font-style: italic;*/
   color: #ffffff;
 }
 
@@ -240,38 +192,6 @@ font.gray
 {
    padding-top: 75px;
    height: 175px;
-}
-
-li 
-{
-  margin-left: 2em;
-  font-size: 75%;
-  color: #eab72c;
-}
-
-ul.mainpage li
-{
-  margin-left: 1em;
-  font-size: 85%;
-  color: #bb2222;
-}
-
-li a
-{
-  color: #eab72c !important;
-  font-weight: normal;
-}
-
-li a:hover
-{
-  color: #ffffff !important;
-  font-weight: normal;
-}
-
-font.released
-{
-  color: #aaaaaa;
-  font-style: italic;
 }
 
 .mlnavbar

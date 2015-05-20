@@ -27,13 +27,13 @@
 <div class="contents">
 <h2><a class="anchor" id="intro_kmtut"></a>
 Introduction</h2>
-<p>The popular k-means algorithm for clustering has been around since the late 1950s, and the standard algorithm was proposed by Stuart Lloyd in 1957. Given a set of points <img class="formulaInl" alt="$ X $" src="form_58.png"/>, k-means clustering aims to partition each point <img class="formulaInl" alt="$ x_i $" src="form_88.png"/> into a cluster <img class="formulaInl" alt="$ c_j $" src="form_89.png"/> (where <img class="formulaInl" alt="$ j \le k $" src="form_90.png"/> and <img class="formulaInl" alt="$ k $" src="form_91.png"/>, the number of clusters, is a parameter). The partitioning is done to minimize the objective function</p>
+<p>The popular k-means algorithm for clustering has been around since the late 1950s, and the standard algorithm was proposed by Stuart Lloyd in 1957. Given a set of points <img class="formulaInl" alt="$ X $" src="form_58.png"/>, k-means clustering aims to partition each point <img class="formulaInl" alt="$ x_i $" src="form_97.png"/> into a cluster <img class="formulaInl" alt="$ c_j $" src="form_98.png"/> (where <img class="formulaInl" alt="$ j \le k $" src="form_99.png"/> and <img class="formulaInl" alt="$ k $" src="form_100.png"/>, the number of clusters, is a parameter). The partitioning is done to minimize the objective function</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \sum_{j = 1}^{k} \sum_{x_i \in c_j} \| x_i - \mu_j \|^2 \]" src="form_92.png"/>
+<img class="formulaDsp" alt="\[ \sum_{j = 1}^{k} \sum_{x_i \in c_j} \| x_i - \mu_j \|^2 \]" src="form_101.png"/>
 </p>
-<p>where <img class="formulaInl" alt="$\mu_j$" src="form_93.png"/> is the centroid of cluster <img class="formulaInl" alt="$c_j$" src="form_94.png"/>. The standard algorithm is a two-step algorithm:</p>
+<p>where <img class="formulaInl" alt="$\mu_j$" src="form_102.png"/> is the centroid of cluster <img class="formulaInl" alt="$c_j$" src="form_103.png"/>. The standard algorithm is a two-step algorithm:</p>
 <ul>
-<li><b>Assignment</b> <b>step</b>. Each point <img class="formulaInl" alt="$x_i$" src="form_95.png"/> in <img class="formulaInl" alt="$X$" src="form_96.png"/> is assigned to the cluster whose centroid it is closest to.</li>
+<li><b>Assignment</b> <b>step</b>. Each point <img class="formulaInl" alt="$x_i$" src="form_104.png"/> in <img class="formulaInl" alt="$X$" src="form_105.png"/> is assigned to the cluster whose centroid it is closest to.</li>
 </ul>
 <ul>
 <li><b>Update</b> <b>step</b>. Using the new cluster assignments, the centroids of each cluster are recalculated.</li>
@@ -342,7 +342,7 @@ EmptyClusterPolicy();
 Further documentation</h2>
 <p>For further documentation on the KMeans class, consult the <a class="el" href="classmlpack_1_1kmeans_1_1KMeans.html">complete API documentation</a>. </p>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Wed Jan 7 2015 13:07:08 for mlpack by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Mon Apr 27 2015 16:48:27 for mlpack by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

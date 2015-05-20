@@ -144,7 +144,7 @@ distribution of MLPACK.
 Plain-vanilla density estimation</h3>
 <p>We can just train a DET on the provided data set <em>S</em>. Like all datasets <b>mlpack</b> uses, the data should be row-major (<b>mlpack</b> transposes data when it is loaded; internally, the data is column-major -- see <a class="el" href="matrices.html">this page</a> for more information).</p>
 <div class="fragment"><pre class="fragment">$ det -t dataset.csv -v
-</pre></div><p>By default, det performs 10-fold cross-validation (using the <img class="formulaInl" alt="$\alpha$" src="form_75.png"/>-pruning regularization for decision trees). To perform LOOCV (leave-one-out cross-validation), which can provide better results but will take longer, use the following command:</p>
+</pre></div><p>By default, det performs 10-fold cross-validation (using the <img class="formulaInl" alt="$\alpha$" src="form_84.png"/>-pruning regularization for decision trees). To perform LOOCV (leave-one-out cross-validation), which can provide better results but will take longer, use the following command:</p>
 <div class="fragment"><pre class="fragment">$ det -t dataset.csv -f 0 -v
 </pre></div><p>To perform k-fold crossvalidation, use <code>-f</code> <code>k</code> (or <code>--folds</code> <code>k</code>). There are certain other options available for training. For example, in the construction of the initial tree, you can specify the maximum and minimum leaf sizes. By default, they are 10 and 5 respectively; you can set them using the <code>-M</code> (<code>--max_leaf_size</code>) and the <code>-N</code> (<code>--min_leaf_size</code>) options.</p>
 <div class="fragment"><pre class="fragment">$ det -t dataset.csv -M 20 -N 10
@@ -256,7 +256,7 @@ DTree&lt;&gt;* dtree_opt = <a class="code" href="namespacemlpack_1_1det.html#ac0
 Further Documentation</h2>
 <p>For further documentation on the DTree class, consult the <a class="el" href="classmlpack_1_1det_1_1DTree.html">complete API documentation</a>. </p>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Wed Jan 7 2015 13:07:08 for mlpack by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Mon Apr 27 2015 16:48:27 for mlpack by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

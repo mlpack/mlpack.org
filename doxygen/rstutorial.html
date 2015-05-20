@@ -157,7 +157,7 @@ Query and reference dataset, range [1.0, 1.5]</h3>
 [INFO ]   tree_building: 0.004769s
 </pre></div><h3><a class="anchor" id="cli_ex3_rstut"></a>
 One dataset, range [4.1 4.2], leaf size of 15 points</h3>
-<p>The <b>mlpack</b> implementation of range search is a dual-tree algorithm; when <img class="formulaInl" alt="$kd$" src="form_78.png"/>-trees are used, the leaf size of the tree can be changed. Depending on the characteristics of the dataset, a larger or smaller leaf size can provide faster computation. The leaf size is modifiable through the command-line interface, as shown below.</p>
+<p>The <b>mlpack</b> implementation of range search is a dual-tree algorithm; when <img class="formulaInl" alt="$kd$" src="form_87.png"/>-trees are used, the leaf size of the tree can be changed. Depending on the characteristics of the dataset, a larger or smaller leaf size can provide faster computation. The leaf size is modifiable through the command-line interface, as shown below.</p>
 <div class="fragment"><pre class="fragment">$ range_search -r dataset.csv -n neighbors_out.csv -d distances_out.csv -m 4.1 \
 &gt; -M 4.2 -l 15 -v
 [INFO ] Loading <span class="stringliteral">&#39;dataset.csv&#39;</span> as CSV data.
@@ -293,7 +293,7 @@ RangeSearch&lt;tree::CoverTree&lt;&gt; &gt; rangeSearch(dataset);
 Further documentation</h2>
 <p>For further documentation on the RangeSearch class, consult the <a class="el" href="classmlpack_1_1range_1_1RangeSearch.html">complete API documentation</a>. </p>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Wed Jan 7 2015 13:07:09 for mlpack by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Mon Apr 27 2015 16:48:27 for mlpack by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

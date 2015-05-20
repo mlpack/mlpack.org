@@ -36,12 +36,12 @@ Introduction</h2>
 <span class="stringliteral">  year={2013},</span>
 <span class="stringliteral">  pages={1--9}</span>
 <span class="stringliteral">}</span>
-</pre></div><p>Given a set of query points <img class="formulaInl" alt="$Q$" src="form_83.png"/> and a set of reference points <img class="formulaInl" alt="$R$" src="form_84.png"/>, the FastMKS algorithm is a fast dual-tree (or single-tree) algorithm which finds</p>
+</pre></div><p>Given a set of query points <img class="formulaInl" alt="$Q$" src="form_92.png"/> and a set of reference points <img class="formulaInl" alt="$R$" src="form_93.png"/>, the FastMKS algorithm is a fast dual-tree (or single-tree) algorithm which finds</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \arg\max_{p_r \in R} K(p_q, p_r) \]" src="form_85.png"/>
+<img class="formulaDsp" alt="\[ \arg\max_{p_r \in R} K(p_q, p_r) \]" src="form_94.png"/>
 </p>
-<p>for all points <img class="formulaInl" alt="$p_q \in Q$" src="form_86.png"/> and for some Mercer kernel <img class="formulaInl" alt="$K(\cdot, \cdot)$" src="form_87.png"/>. A Mercer kernel is a kernel that is positive semidefinite; these are the classes of kernels that can be used with the kernel trick. In short, the positive semidefiniteness of a Mercer kernel means that any kernel matrix (or Gram matrix) created on a dataset must be positive semidefinite.</p>
-<p>The FastMKS algorithm builds trees on the datasets <img class="formulaInl" alt="$Q$" src="form_83.png"/> and <img class="formulaInl" alt="$R$" src="form_84.png"/> in such a way that explicit representation of the points in the kernel space is unnecessary, by using cover trees (<a class="el" href="classmlpack_1_1tree_1_1CoverTree.html">mlpack::tree::CoverTree</a>). This allows the algorithm to be run, for instance, on string kernels, where there is no sensible explicit representation. The <b>mlpack</b> implementation allows any type of tree that does not require an explicit representation to be used. For more details, see the paper.</p>
+<p>for all points <img class="formulaInl" alt="$p_q \in Q$" src="form_95.png"/> and for some Mercer kernel <img class="formulaInl" alt="$K(\cdot, \cdot)$" src="form_96.png"/>. A Mercer kernel is a kernel that is positive semidefinite; these are the classes of kernels that can be used with the kernel trick. In short, the positive semidefiniteness of a Mercer kernel means that any kernel matrix (or Gram matrix) created on a dataset must be positive semidefinite.</p>
+<p>The FastMKS algorithm builds trees on the datasets <img class="formulaInl" alt="$Q$" src="form_92.png"/> and <img class="formulaInl" alt="$R$" src="form_93.png"/> in such a way that explicit representation of the points in the kernel space is unnecessary, by using cover trees (<a class="el" href="classmlpack_1_1tree_1_1CoverTree.html">mlpack::tree::CoverTree</a>). This allows the algorithm to be run, for instance, on string kernels, where there is no sensible explicit representation. The <b>mlpack</b> implementation allows any type of tree that does not require an explicit representation to be used. For more details, see the paper.</p>
 <p>At the time of this writing there is no other fast algorithm for exact max-kernel search. Also, <b>mlpack</b> implements dual-tree FastMKS, while the paper referenced above only explains single-tree search.</p>
 <p><b>mlpack</b> provides:</p>
 <ul>
@@ -348,7 +348,7 @@ from 'Taki Inoue'?" simply doesn't make sense. We can't have a centroid of the t
 Further documentation</h2>
 <p>For further documentation on the FastMKS class, consult the <a class="el" href="classmlpack_1_1fastmks_1_1FastMKS.html">complete API documentation</a>. </p>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Wed Jan 7 2015 13:07:08 for mlpack by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Mon Apr 27 2015 16:48:27 for mlpack by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

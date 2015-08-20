@@ -1,0 +1,214 @@
+<html>
+<head>
+<!-- probably could use more keywords -->
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>mlpack: a scalable c++ machine learning library</title>
+</head>
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="../../style-man.css">
+<link href='http://fonts.googleapis.com/css?family=Maven+Pro:500'
+rel='stylesheet' type='text/css'>
+<body>
+<!-- very simple table with as few words as possible -->
+<br>
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center>
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a
+href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center>
+<div class="mainsection smallertext manpage">
+
+
+<h1 align="center">det</h1>
+
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">det</font> -
+density estimation with density estimation trees</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">det</font>
+[<font class="code">-h</font>] [<font class="code">-v</font>] <font class="code">-t</font> <font class="code2">string</font> [<font class="code">-f</font>
+<font class="code2">int</font>] [<font class="code">-l</font> <font class="code2">string</font>] [<font class="code">-L</font>
+<font class="code2">string</font>] [<font class="code">-M</font> <font class="code2">int</font>] [<font class="code">-N</font> <font class="code2">int</font>]
+[<font class="code">-p</font>] <font class="code">-I</font> [<font class="code">-T</font> <font class="code2">string</font>] [<font class="code">-E</font>
+<font class="code2">string</font>] [<font class="code">-e</font> <font class="code2">string</font>] [<font class="code">-r</font>
+<font class="code2">string</font>] [<font class="code">-u</font> <font class="code2">string</font>] [<font class="code">-i</font>
+<font class="code2">string</font>]</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p class="closemargin first">This program
+performs a number of functions related to Density Estimation
+Trees. The optimal Density Estimation Tree (DET) can be
+trained on a set of data (specified by <font class="code">--train_file</font>)
+using cross-validation (with number of folds specified by
+<font class="code">--folds</font>). In addition, the density of a set of test
+points (specified by <font class="code">--test_file</font>) can be estimated,
+and the importance of each dimension can be computed. If
+class labels are given for the training points (with
+<font class="code">--labels_file</font>), the class memberships of each leaf in
+the DET can be calculated.</p>
+
+<p class="closemargin first">The created DET
+can be saved to a file, along with the density estimates for
+the test set and the variable importances.</p>
+
+<h2>REQUIRED OPTIONS
+<a name="REQUIRED OPTIONS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">--train_file
+(-t) [</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">The data set on which to build
+a density estimation tree.</p>
+
+<h2>OPTIONS
+<a name="OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--folds (-f)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">The number of folds of
+cross-validation to perform for the estimation (0 is LOOCV)
+Default value 10.</p>
+
+<p class="closemargin"><font class="code">--help (-h)</font></p>
+
+<p class="farmargin">Default help info.</p>
+
+<p class="closemargin"><font class="code">--info
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Get help on a specific module
+or option. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--labels_file (-l)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">The labels for the given
+training data to generate the class membership of each leaf
+(as an extra statistic) Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--leaf_class_table_file (-L)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">The file in which to output the
+leaf class membership table. Default value
+&rsquo;leaf_class_membership.txt&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--max_leaf_size (-M)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">The maximum size of a leaf in
+the unpruned, fully grown DET. Default value 10.</p>
+
+<p class="closemargin"><font class="code">--min_leaf_size (-N)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">The minimum size of a leaf in
+the unpruned, fully grown DET. Default value 5.</p>
+
+<p class="closemargin"><font class="code">--print_tree (-p)</font></p>
+
+<p class="farmargin">Print the tree out on the
+command line (or in the file specified with
+<font class="code">--tree_file</font>).</p>
+
+<p class="closemargin"><font class="code">--print_vi (-I)</font></p>
+
+<p class="farmargin">Print the variable importance
+of each feature out on the command line (or in the file
+specified with <font class="code">--vi_file</font>).</p>
+
+<p class="closemargin"><font class="code">--test_file (-T)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">A set of test points to
+estimate the density of. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--test_set_estimates_file
+(-E) [</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">The file in which to output the
+estimates on the test set from the final optimally pruned
+tree. Default value &rsquo;&rsquo;.</p>
+
+
+<p class="closemargin"><font class="code">--training_set_estimates_file
+(-e) [</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">The file in which to output the
+density estimates on the training set from the final
+optimally pruned tree. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--tree_file (-r)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">The file in which to print the
+final optimally pruned tree. Default value
+&rsquo;&rsquo;.</p>
+
+
+<p class="closemargin"><font class="code">--unpruned_tree_estimates_file
+(-u) [</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">The file in which to output the
+density estimates on the training set from the large
+unpruned tree. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--verbose (-v)</font></p>
+
+<p class="farmargin">Display informational messages
+and the full list of parameters and timers at the end of
+execution.</p>
+
+<p class="closemargin"><font class="code">--vi_file (-i)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">The file to output the variable
+importance values for each feature. Default value
+&rsquo;&rsquo;.</p>
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<p class="closemargin first">For further
+information, including relevant papers, citations, and
+theory, consult the documentation found at
+http://www.mlpack.org or included with your distribution of
+MLPACK.</p>
+</div></body></html>

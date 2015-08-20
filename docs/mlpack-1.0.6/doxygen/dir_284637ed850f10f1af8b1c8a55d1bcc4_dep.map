@@ -1,0 +1,22 @@
+<map id="G" name="G">
+<area shape="rect" id="node4" href="dir_324545887e26c868842d25a2acbbd35d.html" title="data" alt="" coords="437,112,509,160"/>
+<area shape="rect" id="node11" href="dir_3e703fe2c4bf72da9037d50b002c87a8.html" title="util" alt="" coords="437,208,509,256"/>
+<area shape="rect" id="edge4" href="dir_000005_000018.html" title="2" alt="" coords="477,181,486,197"/>
+<area shape="rect" id="node5" href="dir_add0b75abe2a191fb086bfa10ace1401.html" title="dists" alt="" coords="37,112,109,160"/>
+<area shape="rect" id="node12" href="dir_c656e5dc41e0b9810f767fafd3248ba7.html" title="methods" alt="" coords="235,5,312,53"/>
+<area shape="rect" id="edge10" href="dir_000006_000019.html" title="1" alt="" coords="211,21,220,37"/>
+<area shape="rect" id="node6" href="dir_11f3ac09ae2a479f02d5552151ae8a75.html" title="kernels" alt="" coords="341,112,413,160"/>
+<area shape="rect" id="node8" href="dir_07f5aad0367178461655d602a3f92233.html" title="metrics" alt="" coords="341,208,413,256"/>
+<area shape="rect" id="edge12" href="dir_000007_000009.html" title="2" alt="" coords="381,181,390,197"/>
+<area shape="rect" id="node7" href="dir_023a4f2a0626b71631950c08e81dca6d.html" title="math" alt="" coords="133,208,205,256"/>
+<area shape="rect" id="node9" href="dir_b9f161c5ddc26ba19f3b724e565b22ee.html" title="optimizers" alt="" coords="229,112,317,160"/>
+<area shape="rect" id="node10" href="dir_cefe07ee97474d4487bbf2271e55ebbb.html" title="tree" alt="" coords="133,112,205,160"/>
+<area shape="rect" id="edge8" href="dir_000015_000008.html" title="2" alt="" coords="173,181,182,197"/>
+<area shape="rect" id="edge6" href="dir_000015_000009.html" title="4" alt="" coords="323,193,332,209"/>
+<area shape="rect" id="edge18" href="dir_000019_000007.html" title="1" alt="" coords="358,84,367,100"/>
+<area shape="rect" id="edge20" href="dir_000019_000009.html" title="9" alt="" coords="429,207,438,223"/>
+<area shape="rect" id="edge16" href="dir_000019_000010.html" title="1" alt="" coords="277,86,286,102"/>
+<area shape="rect" id="edge14" href="dir_000019_000015.html" title="8" alt="" coords="194,93,203,109"/>
+<area shape="rect" id="graph3" href="dir_284637ed850f10f1af8b1c8a55d1bcc4.html" alt="" coords="27,101,616,267"/>
+<area shape="rect" id="graph2" href="dir_3a5ce3a2c7e797b15c2c9e26803bc6d1.html" title="mlpack" alt="" coords="16,64,627,277"/>
+</map>

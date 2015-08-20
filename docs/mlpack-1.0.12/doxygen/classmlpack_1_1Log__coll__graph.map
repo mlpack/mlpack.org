@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classmlpack_1_1util_1_1PrefixedOutStream.html" title="Allows us to output to an ostream with a prefix at the beginning of each line, in the same way we wou..." alt="" coords="5,6,229,34"/>
+<area shape="rect" id="node4" href="$classmlpack_1_1util_1_1NullOutStream.html" title="Used for Log::Debug when not compiled with debugging symbols." alt="" coords="253,6,451,34"/>
+</map>

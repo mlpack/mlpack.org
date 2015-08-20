@@ -1,0 +1,100 @@
+\form#0:\[ d(a, b) = \frac{a^T b}{|| a || || b ||} \]
+\form#1:\[ K(x, y) = \max \{0, 1 - || x - y ||^2_2 / b^2 \} \]
+\form#2:$ b $
+\form#3:$ K(x, y) $
+\form#4:$ x $
+\form#5:$ y $
+\form#6:\[ \int \int K(x, y) g(x) g(y) dx dy \ge 0 \]
+\form#7:$ g(x) $
+\form#8:$ \mu $
+\form#9:\[ K(x, y) = \exp(-\frac{|| x - y ||^2}{2 \mu^2}). \]
+\form#10:$\mu$
+\form#11:$ \gamma = -\frac{1}{2 \mu^2} $
+\form#12:$ s $
+\form#13:$ t $
+\form#14:\[ K(x, y) = \tanh(s <x, y> + t) \]
+\form#15:\[ K(x, y) = \exp(-\frac{|| x - y ||}{\mu}). \]
+\form#16:\[ K(x, y) = x^T y \]
+\form#17:$ degree $
+\form#18:$ offset $
+\form#19:\[ K(x, y) = (x^T * y + offset) ^ {degree} \]
+\form#20:\[ K(x, y) = \max \{ 0, 1 - \frac{|| x - y ||_2}{b} \} \]
+\form#21:$ W = x (x^T x)^{-0.5} $
+\form#22:$ n $
+\form#23:\[ d(x, y) = \left( \sum_{i = 1}^{n} | x_i - y_i |^p \right)^{\frac{1}{p}}. \]
+\form#24:$ d(x, y) $
+\form#25:\[ d(x, y) = \sum_{i = 1}^{n} | x_i - y_i |^p \]
+\form#26:$ Q $
+\form#27:$ d $
+\form#28:\[ d(x, y) = \sqrt{(x - y)^T Q (x - y)} \]
+\form#29:\[ d(x, y) = (x - y)^T Q (x - y) \]
+\form#30:\[ f(A) = \sum_{i = 0}^{n} f_i(A) \]
+\form#31:$ A $
+\form#32:$ f_i(A) $
+\form#33:\[ A_{j + 1} = A_j + \alpha \nabla f_i(A) \]
+\form#34:$ \alpha $
+\form#35:$ i $
+\form#36:$ j $
+\form#37:$ \epsilon $
+\form#38:\[ | f(A_{j + n}) - f(A_j) | < \epsilon. \]
+\form#39:$\epsilon$
+\form#40:$n$
+\form#41:\[ \min_{\beta} 0.5 || X \beta - y ||_2^2 + 0.5 \lambda_2 || \beta ||_2^2 \]
+\form#42:$ ||\beta||_1 <= \tau $
+\form#43:$ X $
+\form#44:\[ \min_{\beta} 0.5 || X \beta - y ||_2^2 + \lambda_1 || \beta ||_1 + 0.5 \lambda_2 || \beta ||_2^2 \]
+\form#45:$ \beta $
+\form#46:$ \lambda_1 > 0 $
+\form#47:$ \lambda_2 = 0 $
+\form#48:$ \lambda_2 > 0 $
+\form#49:$ \lambda_1 = 0 $
+\form#50:$ \lambda_1 $
+\form#51:$ \sqrt{\sum_i \sum_j(V-WH)^2} $
+\form#52:\[ W^T = \frac{HV^T}{HH^T} \]
+\form#53:\[ H = \frac{W^TV}{W^TW} \]
+\form#54:\[ W_{ia} \leftarrow W_{ia} \frac{(VH^T)_{ia}}{(WHH^T)_{ia}} \]
+\form#55:\[ H_{a\mu} \leftarrow H_{a\mu} \frac{(W^T V)_{a\mu}}{(W^T WH)_{a\mu}} \]
+\form#56:$ \sum_i \sum_j (V_{ij} log\frac{V_{ij}}{(WH)_{ij}}-V_{ij}+(WH)_{ij}) $
+\form#57:\[ W_{ia} \leftarrow W_{ia} \frac{\sum_{\mu} H_{a\mu} V_{i\mu}/(WH)_{i\mu}} {\sum_{\nu} H_{a\nu}} \]
+\form#58:\[ H_{a\mu} \leftarrow H_{a\mu} \frac{\sum_{i} W_{ia} V_{i\mu}/(WH)_{i\mu}} {\sum_{k} H_{ka}} \]
+\form#59:$ V \approx WH $
+\form#60:\[ \min_{D,Z} 0.5 ||X - D Z||_{F}^2\ + \lambda_1 \sum_{i=1}^m ||Z_i||_1 + 0.5 \lambda_2 \sum_{i=1}^m ||Z_i||_2^2 \]
+\form#61:$ ||D_j||_2 <= 1 $
+\form#62:$ 1 <= j <= k $
+\form#63:$ lambda_1 > 0 $
+\form#64:$ lambda_2 = 0 $
+\form#65:$ C = X^T X $
+\form#66:$ C = X X^T $
+\form#67:$\alpha$
+\form#68:$R_\alpha(t)$
+\form#69:$t$
+\form#70:$R_\alpha(t) = R(t) + \alpha |\tilde{t}|$
+\form#71:$R(t) = -\frac{|t|^2}{N^2 V(t)}$
+\form#72:$V(t)$
+\form#73:$\tilde{t}$
+\form#74:$R_\alpha'(t) = R(t) + \alpha I_v(\tilde{t})$
+\form#75:$I_v(\tilde{t}) = \sum_{l \in \tilde{t}} \frac{1}{V(l)}.$
+\form#76:$S$
+\form#77:$\mathbf{R}^d$
+\form#78:$kd$
+\form#79:$n-1 \times 3 $
+\form#80:$\log N$
+\form#81:$N$
+\form#82:$O(N^2)$
+\form#83:$\mathbf{x_i}, 0 \le i < n$
+\form#84:$d$
+\form#85:$y_i, 0 \le i < n$
+\form#86:$\beta_i, 0 \le i \le d$
+\form#87:\[ y_i = \beta_0 + \displaystyle\sum_{j = 1}^{d} \beta_j x_{ij} \]
+\form#88:$\mathbf{x_i}$
+\form#89:$y_i$
+\form#90:$\mathbf{X}$
+\form#91:$\mathbf{y}$
+\form#92:\[ \mathbf{y} = \mathbf{X} \mathbf{\beta} + \beta_0 \]
+\form#93:$\mathbf{\beta}$
+\form#94:$\beta_0$
+\form#95:$\beta_1$
+\form#96:$\beta_2$
+\form#97:$y$
+\form#98:$f(y)=0+1x_1$
+\form#99:$k$

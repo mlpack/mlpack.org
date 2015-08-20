@@ -1,0 +1,46 @@
+<map id="G" name="G">
+<area shape="rect" id="node4" href="dir_cd538d8c219935d46633d9ef2e20853e.html" title="cf" alt="" coords="648,64,720,112"/>
+<area shape="rect" id="node19" href="dir_82d5b2ee95c91ba283a0cb0187db9f84.html" title="neighbor_search" alt="" coords="807,160,935,208"/>
+<area shape="rect" id="edge6" href="dir_000021_000036.html" title="1" alt="" coords="807,136,816,152"/>
+<area shape="rect" id="node5" href="dir_afd4b1687d6a2dbc814bce1daf34920e.html" title="det" alt="" coords="1752,64,1824,112"/>
+<area shape="rect" id="node6" href="dir_4530c34fa3ade549a88da54803f4d34b.html" title="emst" alt="" coords="840,64,912,112"/>
+<area shape="rect" id="node26" href="dir_167b33a4b3d7db529d06ce6691d24dd8.html" title="core" alt="" coords="2091,256,2163,304"/>
+<area shape="rect" id="edge16" href="dir_000023_000004.html" title="2" alt="" coords="2071,239,2081,255"/>
+<area shape="rect" id="node7" href="dir_04d3dafc5eecb05541ba6b36c3f457a0.html" title="fastmks" alt="" coords="936,64,1008,112"/>
+<area shape="rect" id="edge22" href="dir_000024_000004.html" title="4" alt="" coords="2071,239,2081,255"/>
+<area shape="rect" id="node8" href="dir_b2c479210f1fea1db0bc6baa5357b5f6.html" title="gmm" alt="" coords="268,160,340,208"/>
+<area shape="rect" id="node11" href="dir_9f4015de9efec8f543a30c859087dba8.html" title="kmeans" alt="" coords="268,256,340,304"/>
+<area shape="rect" id="edge14" href="dir_000025_000028.html" title="1" alt="" coords="308,229,317,245"/>
+<area shape="rect" id="node9" href="dir_c49102c4c84dcba181660b61ddc68127.html" title="hmm" alt="" coords="1397,64,1469,112"/>
+<area shape="rect" id="node10" href="dir_1b0495253d6b880b5c8ba5f0ceb369f0.html" title="kernel_pca" alt="" coords="1032,64,1123,112"/>
+<area shape="rect" id="edge24" href="dir_000027_000004.html" title="1" alt="" coords="2071,239,2081,255"/>
+<area shape="rect" id="edge40" href="dir_000028_000004.html" title="2" alt="" coords="2068,264,2077,280"/>
+<area shape="rect" id="node12" href="dir_613df32fc81ad04f383d4a4d035cef2e.html" title="lars" alt="" coords="79,256,151,304"/>
+<area shape="rect" id="node13" href="dir_505cda439befafe5e58ce5e4e443d1ef.html" title="linear_regression" alt="" coords="1147,64,1277,112"/>
+<area shape="rect" id="node14" href="dir_86505f9e4d0ec1df22197948f7eaa8bf.html" title="local_coordinate_coding" alt="" coords="37,64,211,112"/>
+<area shape="rect" id="edge10" href="dir_000031_000029.html" title="1" alt="" coords="99,227,108,243"/>
+<area shape="rect" id="node25" href="dir_6cb075cf8f7706850bd3fdea638dee05.html" title="sparse_coding" alt="" coords="99,160,213,208"/>
+<area shape="rect" id="edge12" href="dir_000031_000043.html" title="3" alt="" coords="145,132,155,148"/>
+<area shape="rect" id="node15" href="dir_33ffd6ed3e50c890f010905ad104be0c.html" title="logistic_regression" alt="" coords="1493,64,1632,112"/>
+<area shape="rect" id="edge38" href="dir_000032_000004.html" title="1" alt="" coords="2072,239,2081,255"/>
+<area shape="rect" id="node16" href="dir_1f5c9cec3984213f24ed21b1d2b7524d.html" title="lsh" alt="" coords="744,64,816,112"/>
+<area shape="rect" id="edge28" href="dir_000033_000036.html" title="1" alt="" coords="837,132,846,148"/>
+<area shape="rect" id="edge26" href="dir_000033_000004.html" title="1" alt="" coords="2071,239,2081,255"/>
+<area shape="rect" id="node17" href="dir_970496c595280087655ac5f80320c6a0.html" title="naive_bayes" alt="" coords="235,64,336,112"/>
+<area shape="rect" id="edge20" href="dir_000034_000025.html" title="1" alt="" coords="299,132,309,148"/>
+<area shape="rect" id="node18" href="dir_9877804716cafeb5a6f8fdec708503e3.html" title="nca" alt="" coords="1656,64,1728,112"/>
+<area shape="rect" id="edge34" href="dir_000035_000004.html" title="2" alt="" coords="2073,240,2082,256"/>
+<area shape="rect" id="edge36" href="dir_000036_000004.html" title="3" alt="" coords="2071,239,2081,255"/>
+<area shape="rect" id="node20" href="dir_151ae5817a95212ce81b058f01ab3bb2.html" title="nmf" alt="" coords="552,64,624,112"/>
+<area shape="rect" id="node21" href="dir_1983b8efcb22704bd6b34ce9c85f7892.html" title="pca" alt="" coords="456,64,528,112"/>
+<area shape="rect" id="node22" href="dir_38351fa6ffb4ba4197d29621b3875aec.html" title="radical" alt="" coords="360,64,432,112"/>
+<area shape="rect" id="node23" href="dir_f1c88c612f811a2747a1d62f076b9b75.html" title="range_search" alt="" coords="1848,64,1957,112"/>
+<area shape="rect" id="edge18" href="dir_000041_000004.html" title="2" alt="" coords="2086,230,2095,246"/>
+<area shape="rect" id="node24" href="dir_fcb25d2e6e0eb17b968c29acaeff47d7.html" title="rann" alt="" coords="1301,64,1373,112"/>
+<area shape="rect" id="edge32" href="dir_000042_000036.html" title="3" alt="" coords="950,157,959,173"/>
+<area shape="rect" id="edge30" href="dir_000042_000004.html" title="3" alt="" coords="2071,239,2081,255"/>
+<area shape="rect" id="edge8" href="dir_000043_000029.html" title="1" alt="" coords="136,234,145,250"/>
+<area shape="rect" id="edge4" href="dir_000004_000025.html" title="1" alt="" coords="353,187,363,203"/>
+<area shape="rect" id="graph3" href="dir_20254064973dc0191d82155722f9adea.html" alt="" coords="27,53,2069,315"/>
+<area shape="rect" id="graph2" href="dir_8ab893400b57031b19c64f046798efab.html" title="mlpack" alt="" coords="16,16,2080,325"/>
+</map>

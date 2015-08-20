@@ -1,0 +1,174 @@
+<html>
+<head>
+<!-- probably could use more keywords -->
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>mlpack: a scalable c++ machine learning library</title>
+</head>
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="../../style-man.css">
+<link href='http://fonts.googleapis.com/css?family=Maven+Pro:500'
+rel='stylesheet' type='text/css'>
+<body>
+<!-- very simple table with as few words as possible -->
+<br>
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center>
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a
+href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center>
+<div class="mainsection smallertext manpage">
+
+
+<h1 align="center">lars</h1>
+
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">lars</font> -
+lars</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">lars</font>
+[<font class="code">-h</font>] [<font class="code">-v</font>] <font class="code">-i</font> <font class="code2">string</font> <font class="code">-r</font>
+<font class="code2">string</font> [<font class="code">-l</font> <font class="code2">double</font>] [<font class="code">-L</font>
+<font class="code2">double</font>] [<font class="code">-o</font> <font class="code2">string</font>] [<font class="code">-c</font>]
+<font class="code">-V</font></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p class="closemargin first">An
+implementation of LARS: Least Angle Regression
+(Stagewise/laSso). This is a stage-wise homotopy-based
+algorithm for L1-regularized linear regression (LASSO) and
+L1+L2-regularized linear regression (Elastic Net).</p>
+
+<p class="closemargin first">Let X be a
+matrix where each row is a point and each column is a
+dimension, and let y be a vector of targets.</p>
+
+<p class="closemargin first">The Elastic Net
+problem is to solve</p>
+
+<p class="closemargin first">min_beta 0.5 ||
+X * beta - y ||_2^2 + lambda_1 ||beta||_1 + <br>
+0.5 lambda_2 ||beta||_2^2</p>
+
+<p class="closemargin first">If lambda_1
+&gt; 0 and lambda_2 = 0, the problem is the LASSO. If
+lambda_1 &gt; 0 and lambda_2 &gt; 0, the problem is the
+Elastic Net. If lambda_1 = 0 and lambda_2 &gt; 0, the
+problem is ridge regression. If lambda_1 = 0 and lambda_2 =
+0, the problem is unregularized linear regression.</p>
+
+<p class="closemargin first">For efficiency
+reasons, it is not recommended to use this algorithm with
+lambda_1 = 0. In that case, use the
+&rsquo;linear_regression&rsquo; program, which implements
+both unregularized linear regression and ridge
+regression.</p>
+
+<h2>REQUIRED OPTIONS
+<a name="REQUIRED OPTIONS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">--input_file
+(-i) [</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">File containing covariates
+(X).</p>
+
+<p class="closemargin"><font class="code">--responses_file (-r)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">File containing y
+(responses/observations).</p>
+
+<h2>OPTIONS
+<a name="OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--help
+(-h)</font></p>
+
+<p class="farmargin">Default help info.</p>
+
+<p class="closemargin"><font class="code">--info
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Get help on a specific module
+or option. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--lambda1 (-l)
+[</font><font class="code2">double</font><font class="code">]</font></p>
+
+<p class="farmargin">Regularization parameter for
+l1-norm penalty. Default value 0.</p>
+
+<p class="closemargin"><font class="code">--lambda2 (-L)
+[</font><font class="code2">double</font><font class="code">]</font></p>
+
+<p class="farmargin">Regularization parameter for
+l2-norm penalty. Default value 0.</p>
+
+<p class="closemargin"><font class="code">--output_file (-o)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">File to save beta (linear
+estimator) to. Default value &rsquo;output.csv&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--use_cholesky (-c)</font></p>
+
+<p class="farmargin">Use Cholesky decomposition
+during computation rather than explicitly computing the full
+Gram matrix.</p>
+
+<p class="closemargin"><font class="code">--verbose (-v)</font></p>
+
+<p class="farmargin">Display informational messages
+and the full list of parameters and timers at the end of
+execution.</p>
+
+<p class="closemargin"><font class="code">--version (-V)</font></p>
+
+<p class="farmargin">Display the version of
+mlpack.</p>
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<p class="closemargin first">For further
+information, including relevant papers, citations, and
+theory, consult the documentation found at
+http://www.mlpack.org or included with your distribution of
+MLPACK.</p>
+</div></body></html>

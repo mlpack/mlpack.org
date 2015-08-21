@@ -10,7 +10,7 @@ library">
 <title>mlpack: a scalable c++ machine learning library</title>
 </head>
 <link rel="stylesheet" href="../../style.css">
-<link rel="stylesheet" href="../doxygen.css">
+<link rel="stylesheet" href="../doxygen18.css">
 <link href='http://fonts.googleapis.com/css?family=Maven+Pro:500'
 rel='stylesheet' type='text/css'>
 <body>

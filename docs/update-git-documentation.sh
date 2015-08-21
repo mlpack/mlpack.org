@@ -14,7 +14,7 @@ cd build
 # This probably precipitates cleaning the environment.
 make clean
 rm -rf doc/html/*
-make -j2
+make -j2 # Will probably use Doxygen 1.8 (well, I hope).
 
 # Rebuild the man pages and the documentation.
 make man doc

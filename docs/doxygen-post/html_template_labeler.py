@@ -10,6 +10,9 @@ class HTMLTemplateLabeler(HTMLParser):
     if tag == "br":
       print("<br />")
       return
+    elif tag == "link":
+      print("<link " + ' '.join([a[0] + '="' + a[1] + '"' for a in attrs]) + " />")
+      return
 
     # Process the current data we have.
     if self.current_data != '':

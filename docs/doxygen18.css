@@ -365,3 +365,26 @@ dl.return dd {
 dl.author dt {
   font-size: 85%;
 }
+
+td.memTemplParams {
+  padding-left: 20%;
+}
+
+td.memTemplParams div {
+  display: inline;
+  font-size: 0;
+}
+
+td.memTemplParams div.template_decl, td.memTemplParams div.type_decl {
+  color: #cc3333;
+  font-size: 9pt;
+}
+
+td.memTemplParams div.open_bracket, td.memTemplParams div.close_bracket,
+td.memTemplParams div.identifier {
+  font-size: 9pt;
+}
+
+td.memTemplParams div.identifier {
+  padding-left: 6px;
+}

@@ -370,21 +370,82 @@ td.memTemplParams {
   padding-left: 20%;
 }
 
-td.memTemplParams div {
-  display: inline;
-  font-size: 0;
-}
-
-td.memTemplParams div.template_decl, td.memTemplParams div.type_decl {
+div.template_decl, div.type_decl, div.template {
   color: #cc3333;
-  font-size: 9pt;
 }
 
-td.memTemplParams div.open_bracket, td.memTemplParams div.close_bracket,
-td.memTemplParams div.identifier {
-  font-size: 9pt;
+div.equals, div.open_bracket, div.close_bracket, div.comma {
+  color: #ffffff;
 }
 
-td.memTemplParams div.identifier {
-  padding-left: 6px;
+div.default_argument div.identifier {
+  color: #a0a0a0;
+}
+
+div.template_param div.type_decl,
+div.template_param div.comma {
+  display: inline;
+  padding-right: 0.5em;
+}
+
+div.template_param div.equals {
+  display: inline;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+div.template_param div.default_argument,
+div.template_param div.identifier {
+  display: inline;
+  padding-right: 0;
+}
+
+div.template_decl, div.open_bracket, div.template_param_list {
+  display: table-cell;
+  text-align: left;
+}
+
+div.template_template_param div.template, div.template_template_param
+div.open_bracket {
+  display: inline;
+}
+
+div.template_template_param {
+  display: table;
+}
+
+div.template_param div.close_bracket {
+  display: inline;
+}
+
+div.template_template_param div.type_decl,
+div.template_template_param div.comma, div.template_template_param
+div.identifier, div.template_template_param div.default_argument div.equals {
+  display: inline;
+  padding-right: 0.5em;
+}
+
+div.template_template_param div.default_argument div.identifier,
+div.template_template_param div.default_argument,
+div.template_template_param div.identifier,
+div.template_template_param div.close_bracket {
+  display: inline;
+  padding: 0;
+}
+
+div.template_template_param div.equals {
+  display: inline;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+div.template_template_param_name {
+  display: table-caption;
+  caption-side: bottom;
+  padding-left: 3em;
+}
+
+div.template_template_param div.template_param_list {
+  display: table-cell;
+  text-align: left;
 }

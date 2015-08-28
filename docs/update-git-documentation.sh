@@ -31,6 +31,11 @@ for i in *.html; do
 done
 cd ../../
 
+# Now move the HTML to the right place.
+mv $docdir/doxygen $docdir/doxygen-old;
+mv $gitdir/build/doc/html $docdir/doxygen;
+rm -rf $docdir/doxygen-old;
+
 # Copy the man page results to the right directory.
 rm -rf $docdir/man/*
 cp share/man/*.gz $docdir/man/

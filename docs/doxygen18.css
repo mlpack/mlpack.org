@@ -407,7 +407,8 @@ div.template_decl, div.open_bracket, div.template_param_list {
 
 div.template_template_param div.template, div.template_template_param
 div.open_bracket {
-  display: inline;
+  display: table-cell;
+  width: 1px; /* this appears to be a hack, but works on Chrome and Firefox... */
 }
 
 div.template_template_param {

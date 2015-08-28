@@ -4,6 +4,7 @@
 
 gitdir=/var/www/www.mlpack.org/mlpack-git/
 docdir=/var/www/www.mlpack.org/docs/mlpack-git/
+postdir=/var/www/www.mlpack.org/docs/doxygen-post/
 
 cd $gitdir
 
@@ -22,6 +23,12 @@ make man doc
 # We need to invert all the images.
 cd doc/html/
 mogrify -negate *.png
+
+# Now postprocess all of the HTML.
+for i in *.html; do
+  $postdir/label_html_templates.py $i > tmp.html;
+  mv tmp.html $i;
+done
 cd ../../
 
 # Copy the man page results to the right directory.

@@ -1,5 +1,7 @@
+from __future__ import print_function
 from HTMLParser import HTMLParser
 from template_annotator import TemplateAnnotator
+
 import sys
 
 class HTMLTemplateLabeler(HTMLParser):
@@ -8,17 +10,17 @@ class HTMLTemplateLabeler(HTMLParser):
   def handle_starttag(self, tag, attrs):
     # Print the tag.  Is it a br?  Then we can ignore it.
     if tag == "br":
-      print("<br />")
+      print("<br />", end='')
       return
     elif tag == "link":
-      print("<link " + ' '.join([a[0] + '="' + a[1] + '"' for a in attrs]) + " />")
+      print("<link " + ' '.join([a[0] + '="' + a[1] + '"' for a in attrs]) + " />", end='')
       return
 
     # Process the current data we have.
     if self.current_data != '':
       self.process_data()
 
-    print("<" + tag + " " + ' '.join([a[0] + '="' + a[1] + '"' for a in attrs]) + ">")
+    print("<" + tag + " " + ' '.join([a[0] + '="' + a[1] + '"' for a in attrs]) + ">", end='')
     self.current_data = ''
 
   def handle_endtag(self, tag):
@@ -26,7 +28,7 @@ class HTMLTemplateLabeler(HTMLParser):
     self.process_data()
 
     # Print the closing tag.
-    print ("</" + tag + ">")
+    print ("</" + tag + ">", end='')
     self.current_data = ''
 
   # HTMLParser splits up the escaped HTML characters, so we have to reassemble
@@ -50,5 +52,5 @@ class HTMLTemplateLabeler(HTMLParser):
     processed = t.process(self.current_data) # Will modify, if it matches.
 
     # Print the data.
-    print(processed)
+    print(processed, end='')
 

@@ -37,6 +37,43 @@ href="https://github.com/mlpack/mlpack">github</a></div>
 <div class="mainsection smallertext">
 <center><h2><font class="whitebold">history and
 news</font></h2></center><br>
+<font class="whitebold">december 23rd, 2015</font> -- <a
+href="http://www.mlpack.org/files/mlpack-2.0.0.tar.gz">mlpack 2.0.0</a><br>
+<ul>
+<li>Removed overclustering support from k-means because it is not well-tested,
+may be buggy, and is (I think) unused. If this was support you were using, open
+a bug or get in touch with us; it would not be hard for us to reimplement
+it.</li>
+<li>Refactored KMeans to allow different types of Lloyd iterations.</li>
+<li>Added implementations of k-means: Elkan's algorithm, Hamerly's algorithm,
+Pelleg-Moore's algorithm, and the DTNN (dual-tree nearest neighbor)
+algorithm.</li>
+<li>Significant acceleration of LRSDP via the use of accu(a % b) instead of
+trace(a * b).</li>
+<li>Added MatrixCompletion class (matrix_completion), which performs nuclear
+norm minimization to fill unknown values of an input matrix.</li>
+<li>No more dependence on Boost.Random; now we use C++11 STL random
+support.</li>
+<li>Add softmax regression, contributed by Siddharth Agrawal and QiaoAn
+Chen.</li>
+<li>Changed NeighborSearch, RangeSearch, FastMKS, LSH, and RASearch API; these
+classes now take the query sets in the Search() method, instead of in the
+constructor.</li>
+<li>Use OpenMP, if available. For now OpenMP support is only available in the
+DET training code.</li>
+<li>Add support for predicting new test point values to LARS and the
+command-line 'lars' program.</li>
+<li>Add serialization support for Perceptron and LogisticRegression.</li>
+<li>Refactor SoftmaxRegression to predict into an arma::Row object, and add a
+softmax_regression program.</li>
+<li>Refactor LSH to allow loading and saving of models.</li>
+<li>ToString() is removed entirely (<a
+href="https://github.com/mlpack/mlpack/pull/487/">#487</a>).</li>
+<li>Add --input_model_file and --output_model_file options to appropriate
+machine learning algorithms.</li>
+<li>Rename all executables to start with an "mlpack" prefix (<a
+href="https://github.com/mlpack/mlpack/issues/229">#229</a>).</li>
+</ul>
 <font class="whitebold">january 7th, 2015</font> -- <a
 href="http://www.mlpack.org/files/mlpack-1.0.12.tar.gz">mlpack 1.0.12</a><br>
 <ul>

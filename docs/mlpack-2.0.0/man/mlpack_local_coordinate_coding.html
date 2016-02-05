@@ -1,0 +1,213 @@
+<html>
+<head>
+<!-- probably could use more keywords -->
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>mlpack: a scalable c++ machine learning library</title>
+</head>
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="../../style-man.css">
+<link href='http://fonts.googleapis.com/css?family=Maven+Pro:500'
+rel='stylesheet' type='text/css'>
+<body>
+<!-- very simple table with as few words as possible -->
+<br>
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center>
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a
+href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center>
+<div class="mainsection smallertext manpage">
+
+
+<h1 align="center">mlpack_local_coordinate_coding</h1>
+
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_local_coordinate_coding</font>
+- local coordinate coding</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_local_coordinate_coding</font>
+[<font class="code">-h</font>] [<font class="code">-v</font>] [<font class="code">-k</font> <font class="code2">int</font>] [<font class="code">-c</font>
+<font class="code2">string</font>] [<font class="code">-d</font> <font class="code2">string</font>] [<font class="code">-i</font>
+<font class="code2">string</font>] [<font class="code">-m</font> <font class="code2">string</font>] [<font class="code">-l</font>
+<font class="code2">double</font>] [<font class="code">-n</font> <font class="code2">int</font>] [<font class="code">-N</font>] [<font class="code">-M</font>
+<font class="code2">string</font>] [<font class="code">-s</font> <font class="code2">int</font>] [<font class="code">-T</font>
+<font class="code2">string</font>] [<font class="code">-o</font> <font class="code2">double</font>] [<font class="code">-t</font>
+<font class="code2">string</font>] <font class="code">-V</font></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p class="closemargin first">An
+implementation of Local Coordinate Coding (LCC), which codes
+data that approximately lives on a manifold using a
+variation of l1-norm regularized sparse coding. Given a
+dense data matrix X with n points and d dimensions, LCC
+seeks to find a dense dictionary matrix D with k atoms in d
+dimensions, and a coding matrix Z with n points in k
+dimensions. Because of the regularization method used, the
+atoms in D should lie close to the manifold on which the
+data points lie.</p>
+
+<p class="closemargin first">The original
+data matrix X can then be reconstructed as D * Z. Therefore,
+this program finds a representation of each point in X as a
+sparse linear combination of atoms in the dictionary D.</p>
+
+<p class="closemargin first">The coding is
+found with an algorithm which alternates between a
+dictionary step, which updates the dictionary D, and a
+coding step, which updates the coding matrix Z.</p>
+
+<p class="closemargin first">To run this
+program, the input matrix X must be specified (with
+<font class="code">-i</font>), along with the number of atoms in the dictionary
+(<font class="code">-k</font>). An initial dictionary may also be specified
+with the <font class="code">--initial_dictionary</font> option. The l1-norm
+regularization parameter is specified with <font class="code">-l</font>. For
+example, to run LCC on the dataset in data.csv using 200
+atoms and an l1-regularization parameter of 0.1, saving the
+dictionary into dict.csv and the codes into codes.csv,
+use</p>
+
+<p class="closemargin first">$
+local_coordinate_coding <font class="code">-i</font> data.csv <font class="code">-k</font> 200
+<font class="code">-l</font> 0.1 <font class="code">-d</font> dict.csv <font class="code">-c</font> codes.csv</p>
+
+<p class="closemargin first">The maximum
+number of iterations may be specified with the <font class="code">-n</font>
+option. Optionally, the input data matrix X can be
+normalized before coding with the <font class="code">-N</font> option.</p>
+
+<h2>OPTIONS
+<a name="OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--atoms (-k)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Number of atoms in the
+dictionary. Default value 0.</p>
+
+<p class="closemargin"><font class="code">--codes_file (-c)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Filename to save the output
+codes to. Default value &rsquo;&rsquo;.
+<font class="code">--dictionary_file</font> (<font class="code">-d</font>) [<font class="code2">string</font>]
+Filename to save the output dictionary to. Default value
+&rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--help (-h)</font></p>
+
+<p class="farmargin">Default help info.</p>
+
+<p class="closemargin"><font class="code">--info
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Get help on a specific module
+or option. Default value &rsquo;&rsquo;.
+<font class="code">--initial_dictionary</font> (<font class="code">-i</font>) [<font class="code2">string</font>]
+Filename for optional initial dictionary. Default value
+&rsquo;&rsquo;. <font class="code">--input_model_file</font> (<font class="code">-m</font>)
+[<font class="code2">string</font>] File containing input LCC model. Default
+value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--lambda (-l)
+[</font><font class="code2">double</font><font class="code">]</font></p>
+
+<p class="farmargin">Weighted l1-norm regularization
+parameter. Default value 0.</p>
+
+<p class="closemargin"><font class="code">--max_iterations (-n)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Maximum number of iterations
+for LCC (0 indicates no limit). Default value 0.</p>
+
+<p class="closemargin"><font class="code">--normalize (-N)</font></p>
+
+<p class="farmargin">If set, the input data matrix
+will be normalized before coding. <font class="code">--output_model_file</font>
+(<font class="code">-M</font>) [<font class="code2">string</font>] File to save trained LCC model
+to. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--seed (-s)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Random seed. If 0,
+&rsquo;std::time(NULL)&rsquo; is used. Default value 0.</p>
+
+<p class="closemargin"><font class="code">--test_file (-T)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">File of test points to encode.
+Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--tolerance (-o)
+[</font><font class="code2">double</font><font class="code">]</font></p>
+
+<p class="farmargin">Tolerance for objective
+function. Default value 0.01. <font class="code">--training_file</font>
+(<font class="code">-t</font>) [<font class="code2">string</font>] Filename of the training data
+(X). Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--verbose (-v)</font></p>
+
+<p class="farmargin">Display informational messages
+and the full list of parameters and timers at the end of
+execution.</p>
+
+<p class="closemargin"><font class="code">--version (-V)</font></p>
+
+<p class="farmargin">Display the version of
+mlpack.</p>
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<p class="closemargin first">For further
+information, including relevant papers, citations, and
+theory, For further information, including relevant papers,
+citations, and theory, consult the documentation found at
+http://www.mlpack.org or included with your consult the
+documentation found at http://www.mlpack.org or included
+with your DISTRIBUTION OF MLPACK. DISTRIBUTION OF
+MLPACK.</p>
+</div></body></html>

@@ -1,0 +1,173 @@
+<html>
+<head>
+<!-- probably could use more keywords -->
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>mlpack: a scalable c++ machine learning library</title>
+</head>
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="../../style-man.css">
+<link href='http://fonts.googleapis.com/css?family=Maven+Pro:500'
+rel='stylesheet' type='text/css'>
+<body>
+<!-- very simple table with as few words as possible -->
+<br>
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center>
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a
+href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center>
+<div class="mainsection smallertext manpage">
+
+
+<h1 align="center">mlpack_radical</h1>
+
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_radical</font>
+- radical</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_radical</font>
+[<font class="code">-h</font>] [<font class="code">-v</font>] <font class="code">-i</font> <font class="code2">string</font> [<font class="code">-a</font>
+<font class="code2">int</font>] [<font class="code">-n</font> <font class="code2">double</font>] [<font class="code">-O</font>] [<font class="code">-o</font>
+<font class="code2">string</font>] [<font class="code">-u</font> <font class="code2">string</font>] [<font class="code">-r</font>
+<font class="code2">int</font>] [<font class="code">-s</font> <font class="code2">int</font>] [<font class="code">-S</font> <font class="code2">int</font>]
+<font class="code">-V</font></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p class="closemargin first">An
+implementation of RADICAL, a method for independentcomponent
+analysis (ICA). Assuming that we have an input matrix X,
+thegoal is to find a square unmixing matrix W such that Y =
+W * X and the dimensions of Y are independent components. If
+the algorithm is runningparticularly slowly, try reducing
+the number of replicates.</p>
+
+<h2>REQUIRED OPTIONS
+<a name="REQUIRED OPTIONS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">--input_file
+(-i) [</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Input dataset filename for
+ICA.</p>
+
+<h2>OPTIONS
+<a name="OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--angles
+(-a) [</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Number of angles to consider in
+brute-force search during Radical2D. Default value 150.</p>
+
+<p class="closemargin"><font class="code">--help (-h)</font></p>
+
+<p class="farmargin">Default help info.</p>
+
+<p class="closemargin"><font class="code">--info
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Get help on a specific module
+or option. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--noise_std_dev (-n)
+[</font><font class="code2">double</font><font class="code">]</font></p>
+
+<p class="farmargin">Standard deviation of Gaussian
+noise. Default value 0.175.</p>
+
+<p class="closemargin"><font class="code">--objective (-O)</font></p>
+
+<p class="farmargin">If set, an estimate of the
+final objective function is printed.</p>
+
+<p class="closemargin"><font class="code">--output_ic (-o)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">File to save independent
+components to. Default value
+&rsquo;output_ic.csv&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--output_unmixing (-u)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">File to save unmixing matrix
+to. Default value &rsquo;output_unmixing.csv&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--replicates (-r)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Number of Gaussian-perturbed
+replicates to use (per point) in Radical2D. Default value
+30.</p>
+
+<p class="closemargin"><font class="code">--seed (-s)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Random seed. If 0,
+&rsquo;std::time(NULL)&rsquo; is used. Default value 0.</p>
+
+<p class="closemargin"><font class="code">--sweeps (-S)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Number of sweeps; each sweep
+calls Radical2D once for each pair of dimensions. Default
+value 0.</p>
+
+<p class="closemargin"><font class="code">--verbose (-v)</font></p>
+
+<p class="farmargin">Display informational messages
+and the full list of parameters and timers at the end of
+execution.</p>
+
+<p class="closemargin"><font class="code">--version (-V)</font></p>
+
+<p class="farmargin">Display the version of
+mlpack.</p>
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<p class="closemargin first">For further
+information, including relevant papers, citations, and
+theory, consult the documentation found at
+http://www.mlpack.org or included with your DISTRIBUTION OF
+MLPACK.</p>
+</div></body></html>

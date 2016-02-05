@@ -1,0 +1,202 @@
+<html>
+<head>
+<!-- probably could use more keywords -->
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>mlpack: a scalable c++ machine learning library</title>
+</head>
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="../../style-man.css">
+<link href='http://fonts.googleapis.com/css?family=Maven+Pro:500'
+rel='stylesheet' type='text/css'>
+<body>
+<!-- very simple table with as few words as possible -->
+<br>
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center>
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a
+href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center>
+<div class="mainsection smallertext manpage">
+
+
+<h1 align="center">mlpack_lsh</h1>
+
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_lsh</font>
+- all k-approximate-nearest-neighbor search with lsh</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_lsh</font>
+[<font class="code">-h</font>] [<font class="code">-v</font>] [<font class="code">-B</font> <font class="code2">int</font>] [<font class="code">-d</font>
+<font class="code2">string</font>] [<font class="code">-H</font> <font class="code2">double</font>] [<font class="code">-m</font>
+<font class="code2">string</font>] [<font class="code">-k</font> <font class="code2">int</font>] [<font class="code">-n</font>
+<font class="code2">string</font>] [<font class="code">-M</font> <font class="code2">string</font>] [<font class="code">-K</font>
+<font class="code2">int</font>] [<font class="code">-q</font> <font class="code2">string</font>] [<font class="code">-r</font>
+<font class="code2">string</font>] [<font class="code">-S</font> <font class="code2">int</font>] [<font class="code">-s</font> <font class="code2">int</font>]
+[<font class="code">-L</font> <font class="code2">int</font>] <font class="code">-V</font></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p class="closemargin first">This program
+will calculate the k approximate-nearest-neighbors of a set
+of points using locality-sensitive hashing. You may specify
+a separate set of reference points and query points, or just
+a reference set which will be used as both the reference and
+query set.</p>
+
+<p class="closemargin first">For example,
+the following will return 5 neighbors from the data for each
+point in &rsquo;input.csv&rsquo; and store the distances in
+&rsquo;distances.csv&rsquo; and the neighbors in the file
+&rsquo;neighbors.csv&rsquo;:</p>
+
+<p class="closemargin first">$ lsh <font class="code">-k</font>
+5 <font class="code">-r</font> input.csv <font class="code">-d</font> distances.csv <font class="code">-n</font>
+neighbors.csv</p>
+
+<p class="closemargin first">The output
+files are organized such that row i and column j in the
+neighbors output file corresponds to the index of the point
+in the reference set which is the i&rsquo;th nearest
+neighbor from the point in the query set with index j. Row i
+and column j in the distances output file corresponds to the
+distance between those two points.</p>
+
+<p class="closemargin first">Because this is
+approximate-nearest-neighbors search, results may be
+different from run to run. Thus, the <font class="code">--seed</font> option
+can be specified to set the random seed.</p>
+
+<h2>OPTIONS
+<a name="OPTIONS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">--bucket_size
+(-B) [</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">The size of a bucket in the
+second level hash. Default value 500.
+<font class="code">--distances_file</font> (<font class="code">-d</font>) [<font class="code2">string</font>] File to
+output distances into. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--hash_width (-H)
+[</font><font class="code2">double</font><font class="code">]</font></p>
+
+<p class="farmargin">The hash width for the
+first-level hashing in the LSH preprocessing. By default,
+the LSH class automatically estimates a hash width for its
+use. Default value 0.</p>
+
+<p class="closemargin"><font class="code">--help (-h)</font></p>
+
+<p class="farmargin">Default help info.</p>
+
+<p class="closemargin"><font class="code">--info
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Get help on a specific module
+or option. Default value &rsquo;&rsquo;.
+<font class="code">--input_model_file</font> (<font class="code">-m</font>) [<font class="code2">string</font>] File
+to load LSH model from. (Cannot be specified with
+<font class="code">--reference_file</font>.) Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--k (-k)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Number of nearest neighbors to
+find. Default value 0. <font class="code">--neighbors_file</font> (<font class="code">-n</font>)
+[<font class="code2">string</font>] File to output neighbors into. Default value
+&rsquo;&rsquo;. <font class="code">--output_model_file</font> (<font class="code">-M</font>)
+[<font class="code2">string</font>] File to save LSH model to. Default value
+&rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--projections (-K)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">The number of hash functions
+for each table Default value 10.</p>
+
+<p class="closemargin"><font class="code">--query_file (-q)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">File containing query points
+(optional). Default value &rsquo;&rsquo;.
+<font class="code">--reference_file</font> (<font class="code">-r</font>) [<font class="code2">string</font>] File
+containing the reference dataset. Default value
+&rsquo;&rsquo;. <font class="code">--second_hash_size</font> (<font class="code">-S</font>)
+[<font class="code2">int</font>] The size of the second level hash table.
+Default value 99901.</p>
+
+<p class="closemargin"><font class="code">--seed (-s)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Random seed. If 0,
+&rsquo;std::time(NULL)&rsquo; is used. Default value 0.</p>
+
+<p class="closemargin"><font class="code">--tables (-L)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">The number of hash tables to be
+used. Default value 30.</p>
+
+<p class="closemargin"><font class="code">--verbose (-v)</font></p>
+
+<p class="farmargin">Display informational messages
+and the full list of parameters and timers at the end of
+execution.</p>
+
+<p class="closemargin"><font class="code">--version (-V)</font></p>
+
+<p class="farmargin">Display the version of
+mlpack.</p>
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<p class="closemargin first">For further
+information, including relevant papers, citations, and
+theory, For further information, including relevant papers,
+citations, and theory, consult the documentation found at
+http://www.mlpack.org or included with your consult the
+documentation found at http://www.mlpack.org or included
+with your DISTRIBUTION OF MLPACK. DISTRIBUTION OF
+MLPACK.</p>
+</div></body></html>

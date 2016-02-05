@@ -1,0 +1,107 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: src/mlpack/methods/kmeans/max_variance_new_cluster.hpp File Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li ><a href="annotated.html"><span >Classes</span></a></li>
+      <li class="current"><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="files.html"><span >File&#160;List</span></a></li>
+      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_19fd2ebec21bf6d8aaa7fdf30f286d47.html">methods</a></li><li class="navelem"><a class="el" href="dir_f56d97ae3ab1ece142339914e38f08b0.html">kmeans</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
+  <div class="headertitle">
+<div class="title">max_variance_new_cluster.hpp File Reference</div>  </div>
+</div>
+<div class="contents">
+<div class="textblock"><div class="dynheader">
+Include dependency graph for max_variance_new_cluster.hpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="max__variance__new__cluster_8hpp__incl.png" border="0" usemap="#src_2mlpack_2methods_2kmeans_2max__variance__new__cluster_8hpp" alt=""></img></div>
+<map name="src_2mlpack_2methods_2kmeans_2max__variance__new__cluster_8hpp" id="src_2mlpack_2methods_2kmeans_2max__variance__new__cluster_8hpp">
+<area shape="rect" id="node2" href="core_8hpp.html" title="Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu..." alt="" coords="3559,117,3678,143"></area><area shape="rect" id="node3" href="prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo. " alt="" coords="1044,303,1180,329"></area><area shape="rect" id="node22" href="arma__traits_8hpp.html" title="mlpack/core/util/arma\l_traits.hpp" alt="" coords="2736,206,2883,247"></area><area shape="rect" id="node23" href="log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="2123,303,2283,329"></area><area shape="rect" id="node26" href="cli_8hpp.html" title="mlpack/core/util/cli.hpp" alt="" coords="2071,385,2227,411"></area><area shape="rect" id="node27" href="load_8hpp.html" title="mlpack/core/data/load.hpp" alt="" coords="2115,213,2290,240"></area><area shape="rect" id="node28" href="save_8hpp.html" title="mlpack/core/data/save.hpp" alt="" coords="2315,213,2493,240"></area><area shape="rect" id="node29" href="normalize__labels_8hpp.html" title="mlpack/core/data/normalize\l_labels.hpp" alt="" coords="1414,206,1597,247"></area><area shape="rect" id="node30" href="clamp_8hpp.html" title="Miscellaneous math clamping routines. " alt="" coords="70,303,261,329"></area><area shape="rect" id="node31" href="random_8hpp.html" title="Miscellaneous math random-related routines. " alt="" coords="1621,213,1819,240"></area><area shape="rect" id="node32" href="random__basis_8hpp.html" title="mlpack/core/math/random\l_basis.hpp" alt="" coords="997,206,1171,247"></area><area shape="rect" id="node33" href="lin__alg_8hpp.html" title="mlpack/core/math/lin\l_alg.hpp" alt="" coords="1195,206,1338,247"></area><area shape="rect" id="node34" href="range_8hpp.html" title="Definition of the Range class, which represents a simple range with a lower and upper bound..." alt="" coords="2907,213,3093,240"></area><area shape="rect" id="node35" href="round_8hpp.html" title="mlpack/core/math/round.hpp" alt="" coords="3117,213,3304,240"></area><area shape="rect" id="node36" href="discrete__distribution_8hpp.html" title="mlpack/core/dists/discrete\l_distribution.hpp" alt="" coords="3329,206,3503,247"></area><area shape="rect" id="node37" href="gaussian__distribution_8hpp.html" title="mlpack/core/dists/gaussian\l_distribution.hpp" alt="" coords="3528,206,3709,247"></area><area shape="rect" id="node38" href="laplace__distribution_8hpp.html" title="mlpack/core/dists/laplace\l_distribution.hpp" alt="" coords="3733,206,3904,247"></area><area shape="rect" id="node39" href="kernel__traits_8hpp.html" title="mlpack/core/kernels\l/kernel_traits.hpp" alt="" coords="3928,206,4067,247"></area><area shape="rect" id="node40" href="linear__kernel_8hpp.html" title="mlpack/core/kernels\l/linear_kernel.hpp" alt="" coords="4091,206,4229,247"></area><area shape="rect" id="node41" href="polynomial__kernel_8hpp.html" title="mlpack/core/kernels\l/polynomial_kernel.hpp" alt="" coords="4253,206,4408,247"></area><area shape="rect" id="node42" href="cosine__distance_8hpp.html" title="mlpack/core/kernels\l/cosine_distance.hpp" alt="" coords="4433,206,4578,247"></area><area shape="rect" id="node43" href="gaussian__kernel_8hpp.html" title="mlpack/core/kernels\l/gaussian_kernel.hpp" alt="" coords="4602,206,4747,247"></area><area shape="rect" id="node44" href="epanechnikov__kernel_8hpp.html" title="mlpack/core/kernels\l/epanechnikov_kernel.hpp" alt="" coords="4772,206,4945,247"></area><area shape="rect" id="node45" href="hyperbolic__tangent__kernel_8hpp.html" title="mlpack/core/kernels\l/hyperbolic_tangent\l_kernel.hpp" alt="" coords="4969,199,5108,255"></area><area shape="rect" id="node46" href="laplacian__kernel_8hpp.html" title="mlpack/core/kernels\l/laplacian_kernel.hpp" alt="" coords="5132,206,5276,247"></area><area shape="rect" id="node47" href="pspectrum__string__kernel_8hpp.html" title="mlpack/core/kernels\l/pspectrum_string_kernel.hpp" alt="" coords="2518,206,2711,247"></area><area shape="rect" id="node48" href="spherical__kernel_8hpp.html" title="mlpack/core/kernels\l/spherical_kernel.hpp" alt="" coords="1843,206,1989,247"></area><area shape="rect" id="node49" href="triangular__kernel_8hpp.html" title="mlpack/core/kernels\l/triangular_kernel.hpp" alt="" coords="5300,206,5447,247"></area><area shape="rect" id="node18" href="unordered__map_8hpp.html" title="core/boost_backport\l/unordered_map.hpp" alt="" coords="1553,377,1693,419"></area><area shape="rect" id="node19" href="serialization__shim_8hpp.html" title="mlpack/core/data/serialization\l_shim.hpp" alt="" coords="611,377,805,419"></area><area shape="rect" id="node21" href="arma__config__check_8hpp.html" title="mlpack/core/util/arma\l_config_check.hpp" alt="" coords="264,377,411,419"></area><area shape="rect" id="node25" href="prefixedoutstream_8hpp.html" title="prefixedoutstream.hpp" alt="" coords="1897,385,2047,411"></area></map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="max__variance__new__cluster_8hpp__dep__incl.png" border="0" usemap="#src_2mlpack_2methods_2kmeans_2max__variance__new__cluster_8hppdep" alt=""></img></div>
+<map name="src_2mlpack_2methods_2kmeans_2max__variance__new__cluster_8hppdep" id="src_2mlpack_2methods_2kmeans_2max__variance__new__cluster_8hppdep">
+<area shape="rect" id="node2" href="kmeans_8hpp.html" title="src/mlpack/methods\l/kmeans/kmeans.hpp" alt="" coords="94,109,241,151"></area><area shape="rect" id="node3" href="em__fit_8hpp.html" title="src/mlpack/methods\l/gmm/em_fit.hpp" alt="" coords="5,206,145,247"></area><area shape="rect" id="node5" href="kmeans__selection_8hpp.html" title="src/mlpack/methods\l/nystroem_method/kmeans\l_selection.hpp" alt="" coords="169,199,349,255"></area><area shape="rect" id="node4" href="gmm_8hpp.html" title="src/mlpack/methods\l/gmm/gmm.hpp" alt="" coords="5,310,145,351"></area><area shape="rect" id="node6" href="kernel__pca_2kernel__rules_2nystroem__method_8hpp.html" title="src/mlpack/methods\l/kernel_pca/kernel_rules\l/nystroem_method.hpp" alt="" coords="205,407,367,463"></area><area shape="rect" id="node7" href="nystroem__method_2nystroem__method_8hpp.html" title="src/mlpack/methods\l/nystroem_method/nystroem\l_method.hpp" alt="" coords="259,303,447,359"></area></map>
+</div>
+</div>
+<p ><a href="max__variance__new__cluster_8hpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1MaxVarianceNewCluster.html">mlpack::kmeans::MaxVarianceNewCluster</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">When an empty cluster is detected, this class takes the point furthest from the centroid of the cluster with maximum variance as a new cluster.  <a href="classmlpack_1_1kmeans_1_1MaxVarianceNewCluster.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacemlpack"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack.html">mlpack</a></td></tr>
+<tr class="memdesc:namespacemlpack"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br />Linear algebra utility functions, generally performed on matrices or vectors. </br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacemlpack_1_1kmeans"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1kmeans.html">mlpack::kmeans</a></td></tr>
+<tr class="memdesc:namespacemlpack_1_1kmeans"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br />K-Means clustering. </br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="section author"><dt >Author</dt><dd >Ryan Curtin</dd></dl>
+<p >An implementation of the EmptyClusterPolicy policy class for K-Means. When an empty cluster is detected, the point furthest from the centroid of the cluster with maximum variance is taken to be a new cluster.</p>
+<p >This file is part of mlpack 2.0.0.</p>
+<p >mlpack is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
+<p >mlpack is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details (LICENSE.txt).</p>
+<p >You should have received a copy of the GNU General Public License along with mlpack. If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>. </p>
+
+<p >Definition in file <a class="el" href="max__variance__new__cluster_8hpp_source.html">max_variance_new_cluster.hpp</a>.</p>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

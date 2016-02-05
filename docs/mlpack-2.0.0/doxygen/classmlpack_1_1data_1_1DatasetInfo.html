@@ -1,0 +1,344 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: mlpack::data::DatasetInfo Class Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span >Classes</span></a></li>
+      <li ><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="annotated.html"><span >Class&#160;List</span></a></li>
+      <li ><a href="classes.html"><span >Class&#160;Index</span></a></li>
+      <li ><a href="inherits.html"><span >Class&#160;Hierarchy</span></a></li>
+      <li ><a href="functions.html"><span >Class&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1data.html">data</a></li><li class="navelem"><a class="el" href="classmlpack_1_1data_1_1DatasetInfo.html">DatasetInfo</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classmlpack_1_1data_1_1DatasetInfo-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mlpack::data::DatasetInfo Class Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >Auxiliary information for a dataset, including mappings to/from strings and the datatype of each dimension.  
+ <a href="classmlpack_1_1data_1_1DatasetInfo.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a816d0e7bd9cf9079b4d3d94b9e6b0572"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1data_1_1DatasetInfo.html#a816d0e7bd9cf9079b4d3d94b9e6b0572">DatasetInfo</a> (const size_t dimensionality=0)</td></tr>
+<tr class="memdesc:a816d0e7bd9cf9079b4d3d94b9e6b0572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the <a class="el" href="classmlpack_1_1data_1_1DatasetInfo.html" title="Auxiliary information for a dataset, including mappings to/from strings and the datatype of each dime...">DatasetInfo</a> object with the given dimensionality.  <a href="#a816d0e7bd9cf9079b4d3d94b9e6b0572">More...</a><br /></br></td></tr>
+<tr class="separator:a816d0e7bd9cf9079b4d3d94b9e6b0572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c089e071b72bcbcba310699305f7511"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1data_1_1DatasetInfo.html#a5c089e071b72bcbcba310699305f7511">Dimensionality</a> () const </td></tr>
+<tr class="separator:a5c089e071b72bcbcba310699305f7511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6501daeabb39202cd6ea327083eceeb4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1data_1_1DatasetInfo.html#a6501daeabb39202cd6ea327083eceeb4">MapString</a> (const std::string &amp;string, const size_t dimension)</td></tr>
+<tr class="memdesc:a6501daeabb39202cd6ea327083eceeb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the string and the dimension to which it belongs, return its numeric mapping.  <a href="#a6501daeabb39202cd6ea327083eceeb4">More...</a><br /></br></td></tr>
+<tr class="separator:a6501daeabb39202cd6ea327083eceeb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32be13d61d2aa0bb6f194d7bc465fc14"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1data_1_1DatasetInfo.html#a32be13d61d2aa0bb6f194d7bc465fc14">NumMappings</a> (const size_t dimension) const </td></tr>
+<tr class="separator:a32be13d61d2aa0bb6f194d7bc465fc14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac43649d9100670e36aad1e6738c23d69"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:ac43649d9100670e36aad1e6738c23d69"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1data_1_1DatasetInfo.html#ac43649d9100670e36aad1e6738c23d69">Serialize</a> (Archive &amp;ar, const unsigned int)</td></tr>
+<tr class="separator:ac43649d9100670e36aad1e6738c23d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc8a74b51952a0b8c5866932f19a3992"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemlpack_1_1data.html#a32e8cde4498e5ed79dae4f9d1a845058">Datatype</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1data_1_1DatasetInfo.html#abc8a74b51952a0b8c5866932f19a3992">Type</a> (const size_t dimension) const </td></tr>
+<tr class="separator:abc8a74b51952a0b8c5866932f19a3992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe9f16639cdd7f11c5f6166e9e607b60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemlpack_1_1data.html#a32e8cde4498e5ed79dae4f9d1a845058">Datatype</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1data_1_1DatasetInfo.html#abe9f16639cdd7f11c5f6166e9e607b60">Type</a> (const size_t dimension)</td></tr>
+<tr class="separator:abe9f16639cdd7f11c5f6166e9e607b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc0ed1265d5db83170d346d479199d90"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1data_1_1DatasetInfo.html#abc0ed1265d5db83170d346d479199d90">UnmapString</a> (const size_t value, const size_t dimension)</td></tr>
+<tr class="separator:abc0ed1265d5db83170d346d479199d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a2a82679c7a18c403b4682653d4fe5d45"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; size_t, std::pair&lt; boost::bimap&lt; std::string, size_t &gt;, size_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1data_1_1DatasetInfo.html#a2a82679c7a18c403b4682653d4fe5d45">maps</a></td></tr>
+<tr class="separator:a2a82679c7a18c403b4682653d4fe5d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0ed446a0c2ede4460da914ad02d25ed"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacemlpack_1_1data.html#a32e8cde4498e5ed79dae4f9d1a845058">Datatype</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1data_1_1DatasetInfo.html#ae0ed446a0c2ede4460da914ad02d25ed">types</a></td></tr>
+<tr class="separator:ae0ed446a0c2ede4460da914ad02d25ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Auxiliary information for a dataset, including mappings to/from strings and the datatype of each dimension. </p>
+<p ><a class="el" href="classmlpack_1_1data_1_1DatasetInfo.html" title="Auxiliary information for a dataset, including mappings to/from strings and the datatype of each dime...">DatasetInfo</a> objects are optionally produced by <a class="el" href="namespacemlpack_1_1data.html#a19805d6585ac8b0be7c4e4b7f081977c" title="Loads a matrix from file, guessing the filetype from the extension. ">data::Load()</a>, and store the type of each dimension (Datatype::NUMERIC or Datatype::CATEGORICAL) as well as mappings from strings to unsigned integers and vice versa. </p>
+
+<p >Definition at line <a class="el" href="dataset__info_8hpp_source.html#l00053">53</a> of file <a class="el" href="dataset__info_8hpp_source.html">dataset_info.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a816d0e7bd9cf9079b4d3d94b9e6b0572"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">mlpack::data::DatasetInfo::DatasetInfo </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >dimensionality</em> = <code >0</code></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Create the <a class="el" href="classmlpack_1_1data_1_1DatasetInfo.html" title="Auxiliary information for a dataset, including mappings to/from strings and the datatype of each dime...">DatasetInfo</a> object with the given dimensionality. </p>
+<p >Note that the dimensionality cannot be changed later; you will have to create a new <a class="el" href="classmlpack_1_1data_1_1DatasetInfo.html" title="Auxiliary information for a dataset, including mappings to/from strings and the datatype of each dime...">DatasetInfo</a> object. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a5c089e071b72bcbcba310699305f7511"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t mlpack::data::DatasetInfo::Dimensionality </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6501daeabb39202cd6ea327083eceeb4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t mlpack::data::DatasetInfo::MapString </td>
+          <td >(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em >string</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >dimension</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Given the string and the dimension to which it belongs, return its numeric mapping. </p>
+<p >If no mapping yet exists, the string is added to the list of mappings for the given dimension. The dimension parameter refers to the index of the dimension of the string (i.e. the row in the dataset).</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">string</td><td >String to find/create mapping for. </td></tr>
+    <tr ><td class="paramname">dimension</td><td >Index of the dimension of the string. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a32be13d61d2aa0bb6f194d7bc465fc14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t mlpack::data::DatasetInfo::NumMappings </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >dimension</em></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac43649d9100670e36aad1e6738c23d69"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void mlpack::data::DatasetInfo::Serialize </td>
+          <td >(</td>
+          <td class="paramtype">Archive &amp;&#160;</td>
+          <td class="paramname"><em >ar</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em >int</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Definition at line <a class="el" href="dataset__info_8hpp_source.html#l00084">84</a> of file <a class="el" href="dataset__info_8hpp_source.html">dataset_info.hpp</a>.</p>
+
+<p >References <a class="el" href="serialization__shim_8hpp_source.html#l00103">mlpack::data::CreateNVP()</a>, <a class="el" href="dataset__info_8hpp_source.html#l00095">maps</a>, and <a class="el" href="dataset__info_8hpp_source.html#l00091">types</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abc8a74b51952a0b8c5866932f19a3992"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="namespacemlpack_1_1data.html#a32e8cde4498e5ed79dae4f9d1a845058">Datatype</a> mlpack::data::DatasetInfo::Type </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >dimension</em></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abe9f16639cdd7f11c5f6166e9e607b60"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="namespacemlpack_1_1data.html#a32e8cde4498e5ed79dae4f9d1a845058">Datatype</a>&amp; mlpack::data::DatasetInfo::Type </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >dimension</em></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abc0ed1265d5db83170d346d479199d90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">const std::string&amp; mlpack::data::DatasetInfo::UnmapString </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >value</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >dimension</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a2a82679c7a18c403b4682653d4fe5d45"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">std::unordered_map&lt;size_t, std::pair&lt;boost::bimap&lt;std::string, size_t&gt;, size_t&gt; &gt; mlpack::data::DatasetInfo::maps</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Definition at line <a class="el" href="dataset__info_8hpp_source.html#l00095">95</a> of file <a class="el" href="dataset__info_8hpp_source.html">dataset_info.hpp</a>.</p>
+
+<p >Referenced by <a class="el" href="dataset__info_8hpp_source.html#l00084">Serialize()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae0ed446a0c2ede4460da914ad02d25ed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">std::vector&lt;<a class="el" href="namespacemlpack_1_1data.html#a32e8cde4498e5ed79dae4f9d1a845058">Datatype</a>&gt; mlpack::data::DatasetInfo::types</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Definition at line <a class="el" href="dataset__info_8hpp_source.html#l00091">91</a> of file <a class="el" href="dataset__info_8hpp_source.html">dataset_info.hpp</a>.</p>
+
+<p >Referenced by <a class="el" href="dataset__info_8hpp_source.html#l00084">Serialize()</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/core/data/<a class="el" href="dataset__info_8hpp_source.html">dataset_info.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

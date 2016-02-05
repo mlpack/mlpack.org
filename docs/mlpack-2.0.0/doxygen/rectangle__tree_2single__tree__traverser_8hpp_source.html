@@ -1,0 +1,131 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: src/mlpack/core/tree/rectangle_tree/single_tree_traverser.hpp Source File</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li ><a href="annotated.html"><span >Classes</span></a></li>
+      <li class="current"><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="files.html"><span >File&#160;List</span></a></li>
+      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_88282adca4d2b894221008e7ea77ce6c.html">core</a></li><li class="navelem"><a class="el" href="dir_4b5a3653ee1f129925d3425d2f2631c9.html">tree</a></li><li class="navelem"><a class="el" href="dir_e5f38ecd718d0b6d23b153381884cf6d.html">rectangle_tree</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">single_tree_traverser.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="rectangle__tree_2single__tree__traverser_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifndef __MLPACK_CORE_TREE_RECTANGLE_TREE_SINGLE_TREE_TRAVERSER_HPP</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define __MLPACK_CORE_TREE_RECTANGLE_TREE_SINGLE_TREE_TRAVERSER_HPP</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rectangle__tree_2rectangle__tree_8hpp.html">rectangle_tree.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>tree {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> MetricType,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;         <span class="keyword">typename</span> StatisticType,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;         <span class="keyword">typename</span> MatType,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;         <span class="keyword">typename</span> SplitType,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;         <span class="keyword">typename</span> DescentType&gt;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> RuleType&gt;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">class </span>RectangleTree&lt;MetricType, StatisticType, MatType, SplitType,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    DescentType&gt;::SingleTreeTraverser</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  SingleTreeTraverser(RuleType&amp; rule);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> Traverse(<span class="keyword">const</span> <span class="keywordtype">size_t</span> queryIndex, <span class="keyword">const</span> <a class="code" href="classmlpack_1_1tree_1_1RectangleTree.html#a5c7bb9eca4d6c885b3fc366562814e0c">RectangleTree</a>&amp; referenceNode);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser.html#aef12b008217482dcda649a0a37d9e90b">   59</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser.html#aef12b008217482dcda649a0a37d9e90b">NumPrunes</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> numPrunes; }</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser.html#a6903e72c875bb4b00ab632a65f41d612">   61</a></span>&#160;  <span class="keywordtype">size_t</span>&amp; <a class="code" href="classmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser.html#a6903e72c875bb4b00ab632a65f41d612">NumPrunes</a>() { <span class="keywordflow">return</span> numPrunes; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="comment">// We use this class and this function to make the sorting and scoring easy</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="comment">// and efficient:</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="structmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser_1_1NodeAndScore.html">   67</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser_1_1NodeAndScore.html">NodeAndScore</a></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  {</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="structmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser_1_1NodeAndScore.html#a09289510d2a61e2baf660b114d7a300a">   69</a></span>&#160;    <a class="code" href="classmlpack_1_1tree_1_1RectangleTree.html">RectangleTree</a>* <a class="code" href="structmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser_1_1NodeAndScore.html#a09289510d2a61e2baf660b114d7a300a">node</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="structmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser_1_1NodeAndScore.html#a6e6e41d8f0afa052d481ff899995b2cb">   70</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser_1_1NodeAndScore.html#a6e6e41d8f0afa052d481ff899995b2cb">score</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  };</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser.html#afd73a1b41be17c58c54f0be0ae575cf3">   73</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser.html#afd73a1b41be17c58c54f0be0ae575cf3">NodeComparator</a>(<span class="keyword">const</span> <a class="code" href="structmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser_1_1NodeAndScore.html">NodeAndScore</a>&amp; obj1, <span class="keyword">const</span> <a class="code" href="structmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser_1_1NodeAndScore.html">NodeAndScore</a>&amp; obj2)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> obj1.<a class="code" href="structmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser_1_1NodeAndScore.html#a6e6e41d8f0afa052d481ff899995b2cb">score</a> &lt; obj2.<a class="code" href="structmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser_1_1NodeAndScore.html#a6e6e41d8f0afa052d481ff899995b2cb">score</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser.html#a06682392191fafeb51e5e8e4fe240b92">   79</a></span>&#160;  RuleType&amp; <a class="code" href="classmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser.html#a06682392191fafeb51e5e8e4fe240b92">rule</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser.html#a315403eebf9af2c6ea3e282983f15322">   82</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser.html#a315403eebf9af2c6ea3e282983f15322">numPrunes</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;} <span class="comment">// namespace tree</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;} <span class="comment">// namespace mlpack</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">// Include implementation.</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#include &quot;single_tree_traverser_impl.hpp&quot;</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser_html_a315403eebf9af2c6ea3e282983f15322"><div class="ttname"><a href="classmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser.html#a315403eebf9af2c6ea3e282983f15322">mlpack::tree::RectangleTree::SingleTreeTraverser::numPrunes</a></div><div class="ttdeci">size_t numPrunes</div><div class="ttdoc">The number of nodes which have been prenud during traversal. </div><div class="ttdef"><b >Definition:</b> <a href="rectangle__tree_2single__tree__traverser_8hpp_source.html#l00082">single_tree_traverser.hpp:82</a></div></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1RectangleTree_html_a5c7bb9eca4d6c885b3fc366562814e0c"><div class="ttname"><a href="classmlpack_1_1tree_1_1RectangleTree.html#a5c7bb9eca4d6c885b3fc366562814e0c">mlpack::tree::RectangleTree::RectangleTree</a></div><div class="ttdeci">RectangleTree()</div><div class="ttdoc">A default constructor. </div></div>
+<div class="ttc" id="structmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser_1_1NodeAndScore_html"><div class="ttname"><a href="structmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser_1_1NodeAndScore.html">mlpack::tree::RectangleTree::SingleTreeTraverser::NodeAndScore</a></div><div class="ttdef"><b >Definition:</b> <a href="rectangle__tree_2single__tree__traverser_8hpp_source.html#l00067">single_tree_traverser.hpp:67</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser_html_aef12b008217482dcda649a0a37d9e90b"><div class="ttname"><a href="classmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser.html#aef12b008217482dcda649a0a37d9e90b">mlpack::tree::RectangleTree::SingleTreeTraverser::NumPrunes</a></div><div class="ttdeci">size_t NumPrunes() const </div><div class="ttdoc">Get the number of prunes. </div><div class="ttdef"><b >Definition:</b> <a href="rectangle__tree_2single__tree__traverser_8hpp_source.html#l00059">single_tree_traverser.hpp:59</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser_html_afd73a1b41be17c58c54f0be0ae575cf3"><div class="ttname"><a href="classmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser.html#afd73a1b41be17c58c54f0be0ae575cf3">mlpack::tree::RectangleTree::SingleTreeTraverser::NodeComparator</a></div><div class="ttdeci">static bool NodeComparator(const NodeAndScore &amp;obj1, const NodeAndScore &amp;obj2)</div><div class="ttdef"><b >Definition:</b> <a href="rectangle__tree_2single__tree__traverser_8hpp_source.html#l00073">single_tree_traverser.hpp:73</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser_html_a06682392191fafeb51e5e8e4fe240b92"><div class="ttname"><a href="classmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser.html#a06682392191fafeb51e5e8e4fe240b92">mlpack::tree::RectangleTree::SingleTreeTraverser::rule</a></div><div class="ttdeci">RuleType &amp; rule</div><div class="ttdoc">Reference to the rules with which the tree will be traversed. </div><div class="ttdef"><b >Definition:</b> <a href="rectangle__tree_2single__tree__traverser_8hpp_source.html#l00079">single_tree_traverser.hpp:79</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser_html_a6903e72c875bb4b00ab632a65f41d612"><div class="ttname"><a href="classmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser.html#a6903e72c875bb4b00ab632a65f41d612">mlpack::tree::RectangleTree::SingleTreeTraverser::NumPrunes</a></div><div class="ttdeci">size_t &amp; NumPrunes()</div><div class="ttdoc">Modify the number of prunes. </div><div class="ttdef"><b >Definition:</b> <a href="rectangle__tree_2single__tree__traverser_8hpp_source.html#l00061">single_tree_traverser.hpp:61</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1RectangleTree_html"><div class="ttname"><a href="classmlpack_1_1tree_1_1RectangleTree.html">mlpack::tree::RectangleTree</a></div><div class="ttdoc">A rectangle type tree tree, such as an R-tree or X-tree. </div><div class="ttdef"><b >Definition:</b> <a href="rectangle__tree_2rectangle__tree_8hpp_source.html#l00058">rectangle_tree.hpp:58</a></div></div>
+<div class="ttc" id="rectangle__tree_2rectangle__tree_8hpp_html"><div class="ttname"><a href="rectangle__tree_2rectangle__tree_8hpp.html">rectangle_tree.hpp</a></div></div>
+<div class="ttc" id="core_8hpp_html"><div class="ttname"><a href="core_8hpp.html">core.hpp</a></div><div class="ttdoc">Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu...</div></div>
+<div class="ttc" id="structmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser_1_1NodeAndScore_html_a09289510d2a61e2baf660b114d7a300a"><div class="ttname"><a href="structmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser_1_1NodeAndScore.html#a09289510d2a61e2baf660b114d7a300a">mlpack::tree::RectangleTree::SingleTreeTraverser::NodeAndScore::node</a></div><div class="ttdeci">RectangleTree * node</div><div class="ttdef"><b >Definition:</b> <a href="rectangle__tree_2single__tree__traverser_8hpp_source.html#l00069">single_tree_traverser.hpp:69</a></div></div>
+<div class="ttc" id="structmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser_1_1NodeAndScore_html_a6e6e41d8f0afa052d481ff899995b2cb"><div class="ttname"><a href="structmlpack_1_1tree_1_1RectangleTree_1_1SingleTreeTraverser_1_1NodeAndScore.html#a6e6e41d8f0afa052d481ff899995b2cb">mlpack::tree::RectangleTree::SingleTreeTraverser::NodeAndScore::score</a></div><div class="ttdeci">double score</div><div class="ttdef"><b >Definition:</b> <a href="rectangle__tree_2single__tree__traverser_8hpp_source.html#l00070">single_tree_traverser.hpp:70</a></div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

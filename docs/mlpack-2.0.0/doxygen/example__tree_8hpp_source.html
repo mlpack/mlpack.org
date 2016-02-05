@@ -1,0 +1,149 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: src/mlpack/core/tree/example_tree.hpp Source File</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li ><a href="annotated.html"><span >Classes</span></a></li>
+      <li class="current"><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="files.html"><span >File&#160;List</span></a></li>
+      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_88282adca4d2b894221008e7ea77ce6c.html">core</a></li><li class="navelem"><a class="el" href="dir_4b5a3653ee1f129925d3425d2f2631c9.html">tree</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">example_tree.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="example__tree_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifndef __MLPACK_CORE_TREE_EXAMPLE_TREE_HPP</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define __MLPACK_CORE_TREE_EXAMPLE_TREE_HPP</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>tree {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> MetricType = metric::LMetric&lt;2, true&gt;,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;         <span class="keyword">typename</span> StatisticType = EmptyStatistic,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;         <span class="keyword">typename</span> MatType = arma::mat&gt;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1ExampleTree.html">   66</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html">ExampleTree</a></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#abaaf19b1a2b919d4e2d28bb90525ae91">ExampleTree</a>(<span class="keyword">const</span> MatType&amp; dataset,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;              MetricType&amp; <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#a4b4eb828f7492ebafa97a7991c04c315">metric</a>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#af6a98cb805e6d08ffc088e21a69f706a">NumChildren</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keyword">const</span> <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html">ExampleTree</a>&amp; <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#ad1a4181cc3e07c758d3294e84037aafd">Child</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> i) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html">ExampleTree</a>&amp; <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#ad1a4181cc3e07c758d3294e84037aafd">Child</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> i);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html">ExampleTree</a>* <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#ac2e6342ed4556f5130e4e9b369af6aa2">Parent</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#ac436acbced3cd0b99ff5f4223e1554c4">NumPoints</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#a20d1e0a047f46caabff14ccaec2ac1a8">Point</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> i) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#a4bea7680d3005d77f4db5cf80cae3a3c">NumDescendants</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#ac73da82b85245cf1dc044decebb204e6">Descendant</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> i) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keyword">const</span> StatisticType&amp; <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#a6f834a749cdf32773e8fd2ce8a49364b">Stat</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  StatisticType&amp; <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#a6f834a749cdf32773e8fd2ce8a49364b">Stat</a>();</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keyword">const</span> MetricType&amp; <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#acae2d391cfc2e6a1ab0e3db6a0219bb0">Metric</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  MetricType&amp; <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#acae2d391cfc2e6a1ab0e3db6a0219bb0">Metric</a>();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#a6d09b7624a33c4476892aaee57c21a24">MinDistance</a>(<span class="keyword">const</span> MatType&amp; point) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#a6d09b7624a33c4476892aaee57c21a24">MinDistance</a>(<span class="keyword">const</span> <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html">ExampleTree</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#a6f7b0f22d5b042fefa548afe59ba4656">MaxDistance</a>(<span class="keyword">const</span> MatType&amp; point) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#a6f7b0f22d5b042fefa548afe59ba4656">MaxDistance</a>(<span class="keyword">const</span> <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html">ExampleTree</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <a class="code" href="classmlpack_1_1math_1_1Range.html">math::Range</a> <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#afbe951155756bc116fde10fcc9506959">RangeDistance</a>(<span class="keyword">const</span> MatType&amp; point) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <a class="code" href="classmlpack_1_1math_1_1Range.html">math::Range</a> <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#afbe951155756bc116fde10fcc9506959">RangeDistance</a>(<span class="keyword">const</span> <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html">ExampleTree</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#a89587cb6e4700f219ee2d157e89d9044">Centroid</a>(arma::vec&amp; centroid) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#ae470d95ccb6058f848cd8e6f94c21974">FurthestDescendantDistance</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#a88dca3b346bc48c177d515674db42029">ParentDistance</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1ExampleTree.html#a32eea6c74781112a993ed0ca8693e47b">  235</a></span>&#160;  StatisticType <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#a32eea6c74781112a993ed0ca8693e47b">stat</a>;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1ExampleTree.html#a4b4eb828f7492ebafa97a7991c04c315">  244</a></span>&#160;  MetricType&amp; <a class="code" href="classmlpack_1_1tree_1_1ExampleTree.html#a4b4eb828f7492ebafa97a7991c04c315">metric</a>;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;};</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;} <span class="comment">// namespace tree</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;} <span class="comment">// namespace mlpack</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1ExampleTree_html_af6a98cb805e6d08ffc088e21a69f706a"><div class="ttname"><a href="classmlpack_1_1tree_1_1ExampleTree.html#af6a98cb805e6d08ffc088e21a69f706a">mlpack::tree::ExampleTree::NumChildren</a></div><div class="ttdeci">size_t NumChildren() const </div><div class="ttdoc">Return the number of children of this node. </div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1ExampleTree_html_a89587cb6e4700f219ee2d157e89d9044"><div class="ttname"><a href="classmlpack_1_1tree_1_1ExampleTree.html#a89587cb6e4700f219ee2d157e89d9044">mlpack::tree::ExampleTree::Centroid</a></div><div class="ttdeci">void Centroid(arma::vec &amp;centroid) const </div><div class="ttdoc">Fill the given vector with the center of the node. </div></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1ExampleTree_html"><div class="ttname"><a href="classmlpack_1_1tree_1_1ExampleTree.html">mlpack::tree::ExampleTree</a></div><div class="ttdoc">This is not an actual space tree but instead an example tree that exists to show and document all the...</div><div class="ttdef"><b >Definition:</b> <a href="example__tree_8hpp_source.html#l00066">example_tree.hpp:66</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1ExampleTree_html_a4bea7680d3005d77f4db5cf80cae3a3c"><div class="ttname"><a href="classmlpack_1_1tree_1_1ExampleTree.html#a4bea7680d3005d77f4db5cf80cae3a3c">mlpack::tree::ExampleTree::NumDescendants</a></div><div class="ttdeci">size_t NumDescendants() const </div><div class="ttdoc">Get the number of descendant points. </div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1ExampleTree_html_a88dca3b346bc48c177d515674db42029"><div class="ttname"><a href="classmlpack_1_1tree_1_1ExampleTree.html#a88dca3b346bc48c177d515674db42029">mlpack::tree::ExampleTree::ParentDistance</a></div><div class="ttdeci">double ParentDistance() const </div><div class="ttdoc">Get the distance from the center of this node to the center of the parent node. </div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1ExampleTree_html_ae470d95ccb6058f848cd8e6f94c21974"><div class="ttname"><a href="classmlpack_1_1tree_1_1ExampleTree.html#ae470d95ccb6058f848cd8e6f94c21974">mlpack::tree::ExampleTree::FurthestDescendantDistance</a></div><div class="ttdeci">double FurthestDescendantDistance() const </div><div class="ttdoc">Get the distance from the center of the node to the furthest descendant point of this node...</div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1ExampleTree_html_ac2e6342ed4556f5130e4e9b369af6aa2"><div class="ttname"><a href="classmlpack_1_1tree_1_1ExampleTree.html#ac2e6342ed4556f5130e4e9b369af6aa2">mlpack::tree::ExampleTree::Parent</a></div><div class="ttdeci">ExampleTree * Parent() const </div><div class="ttdoc">Return the parent node (NULL if this is the root of the tree). </div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1ExampleTree_html_a4b4eb828f7492ebafa97a7991c04c315"><div class="ttname"><a href="classmlpack_1_1tree_1_1ExampleTree.html#a4b4eb828f7492ebafa97a7991c04c315">mlpack::tree::ExampleTree::metric</a></div><div class="ttdeci">MetricType &amp; metric</div><div class="ttdoc">This member is just here so the ExampleTree compiles without warnings. </div><div class="ttdef"><b >Definition:</b> <a href="example__tree_8hpp_source.html#l00244">example_tree.hpp:244</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1ExampleTree_html_a6d09b7624a33c4476892aaee57c21a24"><div class="ttname"><a href="classmlpack_1_1tree_1_1ExampleTree.html#a6d09b7624a33c4476892aaee57c21a24">mlpack::tree::ExampleTree::MinDistance</a></div><div class="ttdeci">double MinDistance(const MatType &amp;point) const </div><div class="ttdoc">Return the minimum distance between this node and a point. </div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1ExampleTree_html_acae2d391cfc2e6a1ab0e3db6a0219bb0"><div class="ttname"><a href="classmlpack_1_1tree_1_1ExampleTree.html#acae2d391cfc2e6a1ab0e3db6a0219bb0">mlpack::tree::ExampleTree::Metric</a></div><div class="ttdeci">const MetricType &amp; Metric() const </div><div class="ttdoc">Get the instantiated metric for this node. </div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1ExampleTree_html_a6f7b0f22d5b042fefa548afe59ba4656"><div class="ttname"><a href="classmlpack_1_1tree_1_1ExampleTree.html#a6f7b0f22d5b042fefa548afe59ba4656">mlpack::tree::ExampleTree::MaxDistance</a></div><div class="ttdeci">double MaxDistance(const MatType &amp;point) const </div><div class="ttdoc">Return the maximum distance between this node and a point. </div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1ExampleTree_html_abaaf19b1a2b919d4e2d28bb90525ae91"><div class="ttname"><a href="classmlpack_1_1tree_1_1ExampleTree.html#abaaf19b1a2b919d4e2d28bb90525ae91">mlpack::tree::ExampleTree::ExampleTree</a></div><div class="ttdeci">ExampleTree(const MatType &amp;dataset, MetricType &amp;metric)</div><div class="ttdoc">This constructor will build the tree given a dataset and an instantiated metric. </div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1ExampleTree_html_afbe951155756bc116fde10fcc9506959"><div class="ttname"><a href="classmlpack_1_1tree_1_1ExampleTree.html#afbe951155756bc116fde10fcc9506959">mlpack::tree::ExampleTree::RangeDistance</a></div><div class="ttdeci">math::Range RangeDistance(const MatType &amp;point) const </div><div class="ttdoc">Return both the minimum and maximum distances between this node and a point as a math::Range object...</div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1ExampleTree_html_ac436acbced3cd0b99ff5f4223e1554c4"><div class="ttname"><a href="classmlpack_1_1tree_1_1ExampleTree.html#ac436acbced3cd0b99ff5f4223e1554c4">mlpack::tree::ExampleTree::NumPoints</a></div><div class="ttdeci">size_t NumPoints() const </div><div class="ttdoc">Return the number of points held in this node. </div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1ExampleTree_html_a32eea6c74781112a993ed0ca8693e47b"><div class="ttname"><a href="classmlpack_1_1tree_1_1ExampleTree.html#a32eea6c74781112a993ed0ca8693e47b">mlpack::tree::ExampleTree::stat</a></div><div class="ttdeci">StatisticType stat</div><div class="ttdoc">This member is just here so the ExampleTree compiles without warnings. </div><div class="ttdef"><b >Definition:</b> <a href="example__tree_8hpp_source.html#l00235">example_tree.hpp:235</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1ExampleTree_html_ad1a4181cc3e07c758d3294e84037aafd"><div class="ttname"><a href="classmlpack_1_1tree_1_1ExampleTree.html#ad1a4181cc3e07c758d3294e84037aafd">mlpack::tree::ExampleTree::Child</a></div><div class="ttdeci">const ExampleTree &amp; Child(const size_t i) const </div><div class="ttdoc">Return a particular child of this node. </div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1ExampleTree_html_a20d1e0a047f46caabff14ccaec2ac1a8"><div class="ttname"><a href="classmlpack_1_1tree_1_1ExampleTree.html#a20d1e0a047f46caabff14ccaec2ac1a8">mlpack::tree::ExampleTree::Point</a></div><div class="ttdeci">size_t Point(const size_t i) const </div><div class="ttdoc">Return the index of a particular point of this node. </div></div>
+<div class="ttc" id="classmlpack_1_1math_1_1Range_html"><div class="ttname"><a href="classmlpack_1_1math_1_1Range.html">mlpack::math::Range</a></div><div class="ttdoc">Simple real-valued range. </div><div class="ttdef"><b >Definition:</b> <a href="range_8hpp_source.html#l00031">range.hpp:31</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1ExampleTree_html_a6f834a749cdf32773e8fd2ce8a49364b"><div class="ttname"><a href="classmlpack_1_1tree_1_1ExampleTree.html#a6f834a749cdf32773e8fd2ce8a49364b">mlpack::tree::ExampleTree::Stat</a></div><div class="ttdeci">const StatisticType &amp; Stat() const </div><div class="ttdoc">Get the statistic for this node. </div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1ExampleTree_html_ac73da82b85245cf1dc044decebb204e6"><div class="ttname"><a href="classmlpack_1_1tree_1_1ExampleTree.html#ac73da82b85245cf1dc044decebb204e6">mlpack::tree::ExampleTree::Descendant</a></div><div class="ttdeci">size_t Descendant(const size_t i) const </div><div class="ttdoc">Get the index of a particular descendant point. </div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

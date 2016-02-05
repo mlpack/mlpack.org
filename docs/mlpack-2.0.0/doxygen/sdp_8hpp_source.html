@@ -1,0 +1,156 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: src/mlpack/core/optimizers/sdp/sdp.hpp Source File</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li ><a href="annotated.html"><span >Classes</span></a></li>
+      <li class="current"><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="files.html"><span >File&#160;List</span></a></li>
+      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_88282adca4d2b894221008e7ea77ce6c.html">core</a></li><li class="navelem"><a class="el" href="dir_39ca30c91c6ea9766d4908a704ea4d8b.html">optimizers</a></li><li class="navelem"><a class="el" href="dir_5326b5b873afe66553ab24fcbd83a626.html">sdp</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">sdp.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="sdp_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef __MLPACK_CORE_OPTIMIZERS_SDP_SDP_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define __MLPACK_CORE_OPTIMIZERS_SDP_SDP_HPP</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span>optimization {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ObjectiveMatrixType&gt;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1SDP.html">   48</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1optimization_1_1SDP.html">SDP</a></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1SDP.html#afedef8b99076db8240884d8be9605b66">   52</a></span>&#160;  <span class="keyword">typedef</span> ObjectiveMatrixType <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#afedef8b99076db8240884d8be9605b66">objective_matrix_type</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a58046df85fc2c92f3b18b38a3d40213d">SDP</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a58046df85fc2c92f3b18b38a3d40213d">SDP</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> n,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">size_t</span> numSparseConstraints,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">size_t</span> numDenseConstraints);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1SDP.html#adb149772a9f62edb3ed4220b11a5c160">   80</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#adb149772a9f62edb3ed4220b11a5c160">N</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a8ab02a0000a3935c8952a87704c30b7b">c</a>.n_rows; }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1SDP.html#add6c379001115877907dd168acbe6da2">   82</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#add6c379001115877907dd168acbe6da2">N2bar</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#adb149772a9f62edb3ed4220b11a5c160">N</a>() * (<a class="code" href="classmlpack_1_1optimization_1_1SDP.html#adb149772a9f62edb3ed4220b11a5c160">N</a>() + 1) / 2; }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1SDP.html#af24d325c055a2ec0db85c36ac548cb7b">   86</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#af24d325c055a2ec0db85c36ac548cb7b">NumSparseConstraints</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a4b97741f37c2a135b5e780e632fc09e2">sparseB</a>.n_elem; }</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1SDP.html#a1f3cef93dc236710bb7c849cefd4cf5e">   89</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a1f3cef93dc236710bb7c849cefd4cf5e">NumDenseConstraints</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a92e6995cf92b8d1357e31d3c033515b8">denseB</a>.n_elem; }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1SDP.html#aa65bcfb49739633d9ff1a6308ded87f0">   92</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#aa65bcfb49739633d9ff1a6308ded87f0">NumConstraints</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a4b97741f37c2a135b5e780e632fc09e2">sparseB</a>.n_elem + <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a92e6995cf92b8d1357e31d3c033515b8">denseB</a>.n_elem; }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1SDP.html#a653492564a85132350e1ed191c538d63">   95</a></span>&#160;  ObjectiveMatrixType&amp; <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a653492564a85132350e1ed191c538d63">C</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a8ab02a0000a3935c8952a87704c30b7b">c</a>; }</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1SDP.html#aac73639e094ed438feaf3bd2a66cf3d4">   97</a></span>&#160;  <span class="keyword">const</span> ObjectiveMatrixType&amp; <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#aac73639e094ed438feaf3bd2a66cf3d4">C</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a8ab02a0000a3935c8952a87704c30b7b">c</a>; }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1SDP.html#a9a4a7d777c08809cc9162cceeff857c6">  101</a></span>&#160;  <span class="keyword">const</span> std::vector&lt;arma::sp_mat&gt;&amp; <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a9a4a7d777c08809cc9162cceeff857c6">SparseA</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a95eb98e99531d4f85ca190a2c4217718">sparseA</a>; }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1SDP.html#a2b42227ad729fed16eccebe49e4c6989">  105</a></span>&#160;  std::vector&lt;arma::sp_mat&gt;&amp; <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a2b42227ad729fed16eccebe49e4c6989">SparseA</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a95eb98e99531d4f85ca190a2c4217718">sparseA</a>; }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1SDP.html#ab27f12df40e6e09722f87531303b0a9a">  109</a></span>&#160;  <span class="keyword">const</span> std::vector&lt;arma::mat&gt;&amp; <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#ab27f12df40e6e09722f87531303b0a9a">DenseA</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#aefdef5b03568defbefecb657c6c3d2f2">denseA</a>; }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1SDP.html#afc6ae45f91c66b0b0b207a1e9d353a6a">  113</a></span>&#160;  std::vector&lt;arma::mat&gt;&amp; <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#afc6ae45f91c66b0b0b207a1e9d353a6a">DenseA</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#aefdef5b03568defbefecb657c6c3d2f2">denseA</a>; }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1SDP.html#ad59471f920ee277ad529a9b3d899844f">  116</a></span>&#160;  <span class="keyword">const</span> arma::vec&amp; <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#ad59471f920ee277ad529a9b3d899844f">SparseB</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a4b97741f37c2a135b5e780e632fc09e2">sparseB</a>; }</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1SDP.html#afe4b4594c9dfb4039c4bb9dd624a1ee4">  118</a></span>&#160;  arma::vec&amp; <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#afe4b4594c9dfb4039c4bb9dd624a1ee4">SparseB</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a4b97741f37c2a135b5e780e632fc09e2">sparseB</a>; }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1SDP.html#a65cb8211dcad090569efe0cadb9815e9">  121</a></span>&#160;  <span class="keyword">const</span> arma::vec&amp; <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a65cb8211dcad090569efe0cadb9815e9">DenseB</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a92e6995cf92b8d1357e31d3c033515b8">denseB</a>; }</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1SDP.html#ad68c29a6177197849a7e9a06f6d7081f">  123</a></span>&#160;  arma::vec&amp; <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#ad68c29a6177197849a7e9a06f6d7081f">DenseB</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a92e6995cf92b8d1357e31d3c033515b8">denseB</a>; }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#ac25c754f9e3057e88102517d3842cd72">HasLinearlyIndependentConstraints</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1SDP.html#a8ab02a0000a3935c8952a87704c30b7b">  134</a></span>&#160;  ObjectiveMatrixType <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a8ab02a0000a3935c8952a87704c30b7b">c</a>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1SDP.html#a95eb98e99531d4f85ca190a2c4217718">  137</a></span>&#160;  std::vector&lt;arma::sp_mat&gt; <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a95eb98e99531d4f85ca190a2c4217718">sparseA</a>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1SDP.html#a4b97741f37c2a135b5e780e632fc09e2">  139</a></span>&#160;  arma::vec <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a4b97741f37c2a135b5e780e632fc09e2">sparseB</a>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1SDP.html#aefdef5b03568defbefecb657c6c3d2f2">  142</a></span>&#160;  std::vector&lt;arma::mat&gt; <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#aefdef5b03568defbefecb657c6c3d2f2">denseA</a>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1SDP.html#a92e6995cf92b8d1357e31d3c033515b8">  144</a></span>&#160;  arma::vec <a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a92e6995cf92b8d1357e31d3c033515b8">denseB</a>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;};</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;} <span class="comment">// namespace optimization</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;} <span class="comment">// namespace mlpack</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">// Include implementation.</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#include &quot;sdp_impl.hpp&quot;</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_ab27f12df40e6e09722f87531303b0a9a"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#ab27f12df40e6e09722f87531303b0a9a">mlpack::optimization::SDP::DenseA</a></div><div class="ttdeci">const std::vector&lt; arma::mat &gt; &amp; DenseA() const </div><div class="ttdoc">Return the vector of dense A matrices (which correspond to the dense constraints). </div><div class="ttdef"><b >Definition:</b> <a href="sdp_8hpp_source.html#l00109">sdp.hpp:109</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_a653492564a85132350e1ed191c538d63"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#a653492564a85132350e1ed191c538d63">mlpack::optimization::SDP::C</a></div><div class="ttdeci">ObjectiveMatrixType &amp; C()</div><div class="ttdoc">Modify the sparse objective function matrix (sparseC). </div><div class="ttdef"><b >Definition:</b> <a href="sdp_8hpp_source.html#l00095">sdp.hpp:95</a></div></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_a65cb8211dcad090569efe0cadb9815e9"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#a65cb8211dcad090569efe0cadb9815e9">mlpack::optimization::SDP::DenseB</a></div><div class="ttdeci">const arma::vec &amp; DenseB() const </div><div class="ttdoc">Return the vector of dense B values. </div><div class="ttdef"><b >Definition:</b> <a href="sdp_8hpp_source.html#l00121">sdp.hpp:121</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_ad59471f920ee277ad529a9b3d899844f"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#ad59471f920ee277ad529a9b3d899844f">mlpack::optimization::SDP::SparseB</a></div><div class="ttdeci">const arma::vec &amp; SparseB() const </div><div class="ttdoc">Return the vector of sparse B values. </div><div class="ttdef"><b >Definition:</b> <a href="sdp_8hpp_source.html#l00116">sdp.hpp:116</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_a95eb98e99531d4f85ca190a2c4217718"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#a95eb98e99531d4f85ca190a2c4217718">mlpack::optimization::SDP::sparseA</a></div><div class="ttdeci">std::vector&lt; arma::sp_mat &gt; sparseA</div><div class="ttdoc">A_i for each sparse constraint. </div><div class="ttdef"><b >Definition:</b> <a href="sdp_8hpp_source.html#l00137">sdp.hpp:137</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_a92e6995cf92b8d1357e31d3c033515b8"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#a92e6995cf92b8d1357e31d3c033515b8">mlpack::optimization::SDP::denseB</a></div><div class="ttdeci">arma::vec denseB</div><div class="ttdoc">b_i for each dense constraint. </div><div class="ttdef"><b >Definition:</b> <a href="sdp_8hpp_source.html#l00144">sdp.hpp:144</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_adb149772a9f62edb3ed4220b11a5c160"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#adb149772a9f62edb3ed4220b11a5c160">mlpack::optimization::SDP::N</a></div><div class="ttdeci">size_t N() const </div><div class="ttdoc">Return number of rows and columns in the objective matrix C. </div><div class="ttdef"><b >Definition:</b> <a href="sdp_8hpp_source.html#l00080">sdp.hpp:80</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_ac25c754f9e3057e88102517d3842cd72"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#ac25c754f9e3057e88102517d3842cd72">mlpack::optimization::SDP::HasLinearlyIndependentConstraints</a></div><div class="ttdeci">bool HasLinearlyIndependentConstraints() const </div><div class="ttdoc">Check whether or not the constraint matrices are linearly independent. </div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_a1f3cef93dc236710bb7c849cefd4cf5e"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#a1f3cef93dc236710bb7c849cefd4cf5e">mlpack::optimization::SDP::NumDenseConstraints</a></div><div class="ttdeci">size_t NumDenseConstraints() const </div><div class="ttdoc">Return the number of dense constraints (constraints with dense Ai) in the SDP. </div><div class="ttdef"><b >Definition:</b> <a href="sdp_8hpp_source.html#l00089">sdp.hpp:89</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_a58046df85fc2c92f3b18b38a3d40213d"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#a58046df85fc2c92f3b18b38a3d40213d">mlpack::optimization::SDP::SDP</a></div><div class="ttdeci">SDP()</div><div class="ttdoc">Initialize this SDP to an empty state. </div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_a4b97741f37c2a135b5e780e632fc09e2"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#a4b97741f37c2a135b5e780e632fc09e2">mlpack::optimization::SDP::sparseB</a></div><div class="ttdeci">arma::vec sparseB</div><div class="ttdoc">b_i for each sparse constraint. </div><div class="ttdef"><b >Definition:</b> <a href="sdp_8hpp_source.html#l00139">sdp.hpp:139</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_af24d325c055a2ec0db85c36ac548cb7b"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#af24d325c055a2ec0db85c36ac548cb7b">mlpack::optimization::SDP::NumSparseConstraints</a></div><div class="ttdeci">size_t NumSparseConstraints() const </div><div class="ttdoc">Return the number of sparse constraints (constraints with sparse Ai) in the SDP. </div><div class="ttdef"><b >Definition:</b> <a href="sdp_8hpp_source.html#l00086">sdp.hpp:86</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_aa65bcfb49739633d9ff1a6308ded87f0"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#aa65bcfb49739633d9ff1a6308ded87f0">mlpack::optimization::SDP::NumConstraints</a></div><div class="ttdeci">size_t NumConstraints() const </div><div class="ttdoc">Return the total number of constraints in the SDP. </div><div class="ttdef"><b >Definition:</b> <a href="sdp_8hpp_source.html#l00092">sdp.hpp:92</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_a8ab02a0000a3935c8952a87704c30b7b"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#a8ab02a0000a3935c8952a87704c30b7b">mlpack::optimization::SDP::c</a></div><div class="ttdeci">ObjectiveMatrixType c</div><div class="ttdoc">Objective function matrix c. </div><div class="ttdef"><b >Definition:</b> <a href="sdp_8hpp_source.html#l00134">sdp.hpp:134</a></div></div>
+<div class="ttc" id="core_8hpp_html"><div class="ttname"><a href="core_8hpp.html">core.hpp</a></div><div class="ttdoc">Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu...</div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_afc6ae45f91c66b0b0b207a1e9d353a6a"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#afc6ae45f91c66b0b0b207a1e9d353a6a">mlpack::optimization::SDP::DenseA</a></div><div class="ttdeci">std::vector&lt; arma::mat &gt; &amp; DenseA()</div><div class="ttdoc">Modify the veector of dense A matrices (which correspond to the dense constraints). </div><div class="ttdef"><b >Definition:</b> <a href="sdp_8hpp_source.html#l00113">sdp.hpp:113</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_a2b42227ad729fed16eccebe49e4c6989"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#a2b42227ad729fed16eccebe49e4c6989">mlpack::optimization::SDP::SparseA</a></div><div class="ttdeci">std::vector&lt; arma::sp_mat &gt; &amp; SparseA()</div><div class="ttdoc">Modify the veector of sparse A matrices (which correspond to the sparse constraints). </div><div class="ttdef"><b >Definition:</b> <a href="sdp_8hpp_source.html#l00105">sdp.hpp:105</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_aefdef5b03568defbefecb657c6c3d2f2"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#aefdef5b03568defbefecb657c6c3d2f2">mlpack::optimization::SDP::denseA</a></div><div class="ttdeci">std::vector&lt; arma::mat &gt; denseA</div><div class="ttdoc">A_i for each dense constraint. </div><div class="ttdef"><b >Definition:</b> <a href="sdp_8hpp_source.html#l00142">sdp.hpp:142</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_a9a4a7d777c08809cc9162cceeff857c6"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#a9a4a7d777c08809cc9162cceeff857c6">mlpack::optimization::SDP::SparseA</a></div><div class="ttdeci">const std::vector&lt; arma::sp_mat &gt; &amp; SparseA() const </div><div class="ttdoc">Return the vector of sparse A matrices (which correspond to the sparse constraints). </div><div class="ttdef"><b >Definition:</b> <a href="sdp_8hpp_source.html#l00101">sdp.hpp:101</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_add6c379001115877907dd168acbe6da2"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#add6c379001115877907dd168acbe6da2">mlpack::optimization::SDP::N2bar</a></div><div class="ttdeci">size_t N2bar() const </div><div class="ttdef"><b >Definition:</b> <a href="sdp_8hpp_source.html#l00082">sdp.hpp:82</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html">mlpack::optimization::SDP</a></div><div class="ttdoc">Specify an SDP in primal form. </div><div class="ttdef"><b >Definition:</b> <a href="sdp_8hpp_source.html#l00048">sdp.hpp:48</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_afedef8b99076db8240884d8be9605b66"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#afedef8b99076db8240884d8be9605b66">mlpack::optimization::SDP::objective_matrix_type</a></div><div class="ttdeci">ObjectiveMatrixType objective_matrix_type</div><div class="ttdef"><b >Definition:</b> <a href="sdp_8hpp_source.html#l00052">sdp.hpp:52</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_ad68c29a6177197849a7e9a06f6d7081f"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#ad68c29a6177197849a7e9a06f6d7081f">mlpack::optimization::SDP::DenseB</a></div><div class="ttdeci">arma::vec &amp; DenseB()</div><div class="ttdoc">Modify the vector of dense B values. </div><div class="ttdef"><b >Definition:</b> <a href="sdp_8hpp_source.html#l00123">sdp.hpp:123</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_afe4b4594c9dfb4039c4bb9dd624a1ee4"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#afe4b4594c9dfb4039c4bb9dd624a1ee4">mlpack::optimization::SDP::SparseB</a></div><div class="ttdeci">arma::vec &amp; SparseB()</div><div class="ttdoc">Modify the vector of sparse B values. </div><div class="ttdef"><b >Definition:</b> <a href="sdp_8hpp_source.html#l00118">sdp.hpp:118</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_aac73639e094ed438feaf3bd2a66cf3d4"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#aac73639e094ed438feaf3bd2a66cf3d4">mlpack::optimization::SDP::C</a></div><div class="ttdeci">const ObjectiveMatrixType &amp; C() const </div><div class="ttdoc">Return the sparse objective function matrix (sparseC). </div><div class="ttdef"><b >Definition:</b> <a href="sdp_8hpp_source.html#l00097">sdp.hpp:97</a></div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

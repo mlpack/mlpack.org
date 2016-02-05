@@ -1,0 +1,155 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: src/mlpack/methods/amf/termination_policies/simple_residue_termination.hpp Source File</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li ><a href="annotated.html"><span >Classes</span></a></li>
+      <li class="current"><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="files.html"><span >File&#160;List</span></a></li>
+      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_19fd2ebec21bf6d8aaa7fdf30f286d47.html">methods</a></li><li class="navelem"><a class="el" href="dir_f05c255301f5a9425ff2de1dd813d21a.html">amf</a></li><li class="navelem"><a class="el" href="dir_89bbb79cd3b553aafee9560ff86432f0.html">termination_policies</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">simple_residue_termination.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="simple__residue__termination_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef _MLPACK_METHODS_AMF_SIMPLERESIDUETERMINATION_HPP_INCLUDED</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define _MLPACK_METHODS_AMF_SIMPLERESIDUETERMINATION_HPP_INCLUDED</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>amf {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html">SimpleResidueTermination</a></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#adf313959477f9bddffa31ed2775969d7">   52</a></span>&#160;  <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#adf313959477f9bddffa31ed2775969d7">SimpleResidueTermination</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a64bc2acd0f30cb82cecaee69a0ce55df">minResidue</a> = 1e-5,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#aa96d175ee3cdbb09e2d98e09ad9fd0e2">maxIterations</a> = 10000)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      : <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a64bc2acd0f30cb82cecaee69a0ce55df">minResidue</a>(<a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a64bc2acd0f30cb82cecaee69a0ce55df">minResidue</a>), <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#aa96d175ee3cdbb09e2d98e09ad9fd0e2">maxIterations</a>(<a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#aa96d175ee3cdbb09e2d98e09ad9fd0e2">maxIterations</a>) { }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> MatType&gt;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#af6ba7924ef25b771475e547efdac0bd4">   62</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#af6ba7924ef25b771475e547efdac0bd4">Initialize</a>(<span class="keyword">const</span> MatType&amp; V)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// Initialize the things we keep track of.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#add8f627cfbece1a9b2a1385b66485aa8">residue</a> = DBL_MAX;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#ab7447c81c39016a8e29308464ec501ed">iteration</a> = 1;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#acc24600c309128b8bb24ed957cd05333">nm</a> = V.n_rows * V.n_cols;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// Remove history.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#ab994f2ab8bb40682f35d479b919792bd">normOld</a> = 0;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a17e3f9b9a6c7496f2008b077c2ac8ce9">   78</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a17e3f9b9a6c7496f2008b077c2ac8ce9">IsConverged</a>(arma::mat&amp; W, arma::mat&amp; H)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// Calculate the norm and compute the residue, but do it by hand, so as to</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// avoid calculating (W*H), which may be very large.</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">double</span> norm = 0.0;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; H.n_cols; ++j)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      norm += arma::norm(W * H.col(j), <span class="stringliteral">&quot;fro&quot;</span>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#add8f627cfbece1a9b2a1385b66485aa8">residue</a> = fabs(<a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#ab994f2ab8bb40682f35d479b919792bd">normOld</a> - norm) / <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#ab994f2ab8bb40682f35d479b919792bd">normOld</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">// Store the norm.</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#ab994f2ab8bb40682f35d479b919792bd">normOld</a> = norm;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// Increment iteration count</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#ab7447c81c39016a8e29308464ec501ed">iteration</a>++;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="classmlpack_1_1Log.html#afe0e60740fe56dadaa23e4b15b157245">Log::Info</a> &lt;&lt; <span class="stringliteral">&quot;Iteration &quot;</span> &lt;&lt; <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#ab7447c81c39016a8e29308464ec501ed">iteration</a> &lt;&lt; <span class="stringliteral">&quot;; residue &quot;</span> &lt;&lt; <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#add8f627cfbece1a9b2a1385b66485aa8">residue</a> &lt;&lt; <span class="stringliteral">&quot;.\n&quot;</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// Check if termination criterion is met.</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> (residue &lt; minResidue || iteration &gt; <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#aa96d175ee3cdbb09e2d98e09ad9fd0e2">maxIterations</a>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a0d9bd7ca3bc2a599b09db7e3af9d1290">   99</a></span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a0d9bd7ca3bc2a599b09db7e3af9d1290">Index</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#add8f627cfbece1a9b2a1385b66485aa8">residue</a>; }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a38967b86f2921a6f5f52e24c32148b72">  102</a></span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span>&amp; <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a38967b86f2921a6f5f52e24c32148b72">Iteration</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#ab7447c81c39016a8e29308464ec501ed">iteration</a>; }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a205aaaf19f9cea01f231f7b860814f64">  105</a></span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span>&amp; <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a205aaaf19f9cea01f231f7b860814f64">MaxIterations</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#aa96d175ee3cdbb09e2d98e09ad9fd0e2">maxIterations</a>; }</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a4226170780b4468cfe91cea92538c704">  106</a></span>&#160;  <span class="keywordtype">size_t</span>&amp; <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a4226170780b4468cfe91cea92538c704">MaxIterations</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#aa96d175ee3cdbb09e2d98e09ad9fd0e2">maxIterations</a>; }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a1dc85995d9bc31e010f4f4b8fa25ed71">  109</a></span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a1dc85995d9bc31e010f4f4b8fa25ed71">MinResidue</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a64bc2acd0f30cb82cecaee69a0ce55df">minResidue</a>; }</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a10a0047c574597980ec6d14a72c359c0">  110</a></span>&#160;  <span class="keywordtype">double</span>&amp; <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a10a0047c574597980ec6d14a72c359c0">MinResidue</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a64bc2acd0f30cb82cecaee69a0ce55df">minResidue</a>; }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a64bc2acd0f30cb82cecaee69a0ce55df">  114</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a64bc2acd0f30cb82cecaee69a0ce55df">minResidue</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#aa96d175ee3cdbb09e2d98e09ad9fd0e2">  116</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#aa96d175ee3cdbb09e2d98e09ad9fd0e2">maxIterations</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#add8f627cfbece1a9b2a1385b66485aa8">  119</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#add8f627cfbece1a9b2a1385b66485aa8">residue</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#ab7447c81c39016a8e29308464ec501ed">  121</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#ab7447c81c39016a8e29308464ec501ed">iteration</a>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#ab994f2ab8bb40682f35d479b919792bd">  123</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#ab994f2ab8bb40682f35d479b919792bd">normOld</a>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#acc24600c309128b8bb24ed957cd05333">  125</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#acc24600c309128b8bb24ed957cd05333">nm</a>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}; <span class="comment">// class SimpleResidueTermination</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;} <span class="comment">// namespace amf</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;} <span class="comment">// namespace mlpack</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif // _MLPACK_METHODS_AMF_SIMPLERESIDUETERMINATION_HPP_INCLUDED</span></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1SimpleResidueTermination_html_a10a0047c574597980ec6d14a72c359c0"><div class="ttname"><a href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a10a0047c574597980ec6d14a72c359c0">mlpack::amf::SimpleResidueTermination::MinResidue</a></div><div class="ttdeci">double &amp; MinResidue()</div><div class="ttdef"><b >Definition:</b> <a href="simple__residue__termination_8hpp_source.html#l00110">simple_residue_termination.hpp:110</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1SimpleResidueTermination_html_a4226170780b4468cfe91cea92538c704"><div class="ttname"><a href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a4226170780b4468cfe91cea92538c704">mlpack::amf::SimpleResidueTermination::MaxIterations</a></div><div class="ttdeci">size_t &amp; MaxIterations()</div><div class="ttdef"><b >Definition:</b> <a href="simple__residue__termination_8hpp_source.html#l00106">simple_residue_termination.hpp:106</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1SimpleResidueTermination_html_a0d9bd7ca3bc2a599b09db7e3af9d1290"><div class="ttname"><a href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a0d9bd7ca3bc2a599b09db7e3af9d1290">mlpack::amf::SimpleResidueTermination::Index</a></div><div class="ttdeci">const double &amp; Index() const </div><div class="ttdoc">Get current value of residue. </div><div class="ttdef"><b >Definition:</b> <a href="simple__residue__termination_8hpp_source.html#l00099">simple_residue_termination.hpp:99</a></div></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1SimpleResidueTermination_html_add8f627cfbece1a9b2a1385b66485aa8"><div class="ttname"><a href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#add8f627cfbece1a9b2a1385b66485aa8">mlpack::amf::SimpleResidueTermination::residue</a></div><div class="ttdeci">double residue</div><div class="ttdoc">current value of residue </div><div class="ttdef"><b >Definition:</b> <a href="simple__residue__termination_8hpp_source.html#l00119">simple_residue_termination.hpp:119</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1SimpleResidueTermination_html_a1dc85995d9bc31e010f4f4b8fa25ed71"><div class="ttname"><a href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a1dc85995d9bc31e010f4f4b8fa25ed71">mlpack::amf::SimpleResidueTermination::MinResidue</a></div><div class="ttdeci">const double &amp; MinResidue() const </div><div class="ttdoc">Access minimum residue value. </div><div class="ttdef"><b >Definition:</b> <a href="simple__residue__termination_8hpp_source.html#l00109">simple_residue_termination.hpp:109</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1SimpleResidueTermination_html_adf313959477f9bddffa31ed2775969d7"><div class="ttname"><a href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#adf313959477f9bddffa31ed2775969d7">mlpack::amf::SimpleResidueTermination::SimpleResidueTermination</a></div><div class="ttdeci">SimpleResidueTermination(const double minResidue=1e-5, const size_t maxIterations=10000)</div><div class="ttdoc">Construct the SimpleResidueTermination object with the given minimum residue (or the default) and the...</div><div class="ttdef"><b >Definition:</b> <a href="simple__residue__termination_8hpp_source.html#l00052">simple_residue_termination.hpp:52</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1SimpleResidueTermination_html"><div class="ttname"><a href="classmlpack_1_1amf_1_1SimpleResidueTermination.html">mlpack::amf::SimpleResidueTermination</a></div><div class="ttdoc">This class implements a simple residue-based termination policy. </div><div class="ttdef"><b >Definition:</b> <a href="simple__residue__termination_8hpp_source.html#l00041">simple_residue_termination.hpp:41</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1SimpleResidueTermination_html_a38967b86f2921a6f5f52e24c32148b72"><div class="ttname"><a href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a38967b86f2921a6f5f52e24c32148b72">mlpack::amf::SimpleResidueTermination::Iteration</a></div><div class="ttdeci">const size_t &amp; Iteration() const </div><div class="ttdoc">Get current iteration count. </div><div class="ttdef"><b >Definition:</b> <a href="simple__residue__termination_8hpp_source.html#l00102">simple_residue_termination.hpp:102</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1SimpleResidueTermination_html_ab994f2ab8bb40682f35d479b919792bd"><div class="ttname"><a href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#ab994f2ab8bb40682f35d479b919792bd">mlpack::amf::SimpleResidueTermination::normOld</a></div><div class="ttdeci">double normOld</div><div class="ttdoc">norm of previous iteration </div><div class="ttdef"><b >Definition:</b> <a href="simple__residue__termination_8hpp_source.html#l00123">simple_residue_termination.hpp:123</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1SimpleResidueTermination_html_aa96d175ee3cdbb09e2d98e09ad9fd0e2"><div class="ttname"><a href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#aa96d175ee3cdbb09e2d98e09ad9fd0e2">mlpack::amf::SimpleResidueTermination::maxIterations</a></div><div class="ttdeci">size_t maxIterations</div><div class="ttdoc">iteration threshold </div><div class="ttdef"><b >Definition:</b> <a href="simple__residue__termination_8hpp_source.html#l00116">simple_residue_termination.hpp:116</a></div></div>
+<div class="ttc" id="classmlpack_1_1Log_html_afe0e60740fe56dadaa23e4b15b157245"><div class="ttname"><a href="classmlpack_1_1Log.html#afe0e60740fe56dadaa23e4b15b157245">mlpack::Log::Info</a></div><div class="ttdeci">static util::PrefixedOutStream Info</div><div class="ttdoc">Prints informational messages if –verbose is specified, prefixed with [INFO ]. </div><div class="ttdef"><b >Definition:</b> <a href="log_8hpp_source.html#l00089">log.hpp:89</a></div></div>
+<div class="ttc" id="core_8hpp_html"><div class="ttname"><a href="core_8hpp.html">core.hpp</a></div><div class="ttdoc">Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu...</div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1SimpleResidueTermination_html_a17e3f9b9a6c7496f2008b077c2ac8ce9"><div class="ttname"><a href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a17e3f9b9a6c7496f2008b077c2ac8ce9">mlpack::amf::SimpleResidueTermination::IsConverged</a></div><div class="ttdeci">bool IsConverged(arma::mat &amp;W, arma::mat &amp;H)</div><div class="ttdoc">Check if termination criterion is met. </div><div class="ttdef"><b >Definition:</b> <a href="simple__residue__termination_8hpp_source.html#l00078">simple_residue_termination.hpp:78</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1SimpleResidueTermination_html_a205aaaf19f9cea01f231f7b860814f64"><div class="ttname"><a href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a205aaaf19f9cea01f231f7b860814f64">mlpack::amf::SimpleResidueTermination::MaxIterations</a></div><div class="ttdeci">const size_t &amp; MaxIterations() const </div><div class="ttdoc">Access max iteration count. </div><div class="ttdef"><b >Definition:</b> <a href="simple__residue__termination_8hpp_source.html#l00105">simple_residue_termination.hpp:105</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1SimpleResidueTermination_html_acc24600c309128b8bb24ed957cd05333"><div class="ttname"><a href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#acc24600c309128b8bb24ed957cd05333">mlpack::amf::SimpleResidueTermination::nm</a></div><div class="ttdeci">size_t nm</div><div class="ttdef"><b >Definition:</b> <a href="simple__residue__termination_8hpp_source.html#l00125">simple_residue_termination.hpp:125</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1SimpleResidueTermination_html_af6ba7924ef25b771475e547efdac0bd4"><div class="ttname"><a href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#af6ba7924ef25b771475e547efdac0bd4">mlpack::amf::SimpleResidueTermination::Initialize</a></div><div class="ttdeci">void Initialize(const MatType &amp;V)</div><div class="ttdoc">Initializes the termination policy before stating the factorization. </div><div class="ttdef"><b >Definition:</b> <a href="simple__residue__termination_8hpp_source.html#l00062">simple_residue_termination.hpp:62</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1SimpleResidueTermination_html_a64bc2acd0f30cb82cecaee69a0ce55df"><div class="ttname"><a href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#a64bc2acd0f30cb82cecaee69a0ce55df">mlpack::amf::SimpleResidueTermination::minResidue</a></div><div class="ttdeci">double minResidue</div><div class="ttdoc">residue threshold </div><div class="ttdef"><b >Definition:</b> <a href="simple__residue__termination_8hpp_source.html#l00114">simple_residue_termination.hpp:114</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1SimpleResidueTermination_html_ab7447c81c39016a8e29308464ec501ed"><div class="ttname"><a href="classmlpack_1_1amf_1_1SimpleResidueTermination.html#ab7447c81c39016a8e29308464ec501ed">mlpack::amf::SimpleResidueTermination::iteration</a></div><div class="ttdeci">size_t iteration</div><div class="ttdoc">current iteration count </div><div class="ttdef"><b >Definition:</b> <a href="simple__residue__termination_8hpp_source.html#l00121">simple_residue_termination.hpp:121</a></div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

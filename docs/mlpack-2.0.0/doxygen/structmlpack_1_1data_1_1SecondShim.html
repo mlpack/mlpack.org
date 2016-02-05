@@ -1,0 +1,189 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: mlpack::data::SecondShim&lt; T &gt; Struct Template Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span >Classes</span></a></li>
+      <li ><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="annotated.html"><span >Class&#160;List</span></a></li>
+      <li ><a href="classes.html"><span >Class&#160;Index</span></a></li>
+      <li ><a href="inherits.html"><span >Class&#160;Hierarchy</span></a></li>
+      <li ><a href="functions.html"><span >Class&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1data.html">data</a></li><li class="navelem"><a class="el" href="structmlpack_1_1data_1_1SecondShim.html">SecondShim</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="structmlpack_1_1data_1_1SecondShim-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mlpack::data::SecondShim&lt; T &gt; Struct Template Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >The second shim: wrap the call to Serialize() inside of a <a class="el" href="structmlpack_1_1data_1_1SecondShim.html#af876ca6368e66bbfebbfa8ca25ad3b45" title="A wrapper for t.Serialize(). ">serialize()</a> function, so that an archive type can call <a class="el" href="structmlpack_1_1data_1_1SecondShim.html#af876ca6368e66bbfebbfa8ca25ad3b45" title="A wrapper for t.Serialize(). ">serialize()</a> on a <a class="el" href="structmlpack_1_1data_1_1SecondShim.html" title="The second shim: wrap the call to Serialize() inside of a serialize() function, so that an archive ty...">SecondShim</a> object and this gets forwarded correctly to our object's Serialize() function.  
+ <a href="structmlpack_1_1data_1_1SecondShim.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a28b59057a739256d3a3d76dae9e55593"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlpack_1_1data_1_1SecondShim.html#a28b59057a739256d3a3d76dae9e55593">SecondShim</a> (T &amp;<a class="el" href="structmlpack_1_1data_1_1SecondShim.html#ac22f3c2713a99424e941ca10ab645d94">t</a>)</td></tr>
+<tr class="memdesc:a28b59057a739256d3a3d76dae9e55593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the second shim. The name isn't necessary for this shim.  <a href="#a28b59057a739256d3a3d76dae9e55593">More...</a><br /></br></td></tr>
+<tr class="separator:a28b59057a739256d3a3d76dae9e55593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af876ca6368e66bbfebbfa8ca25ad3b45"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:af876ca6368e66bbfebbfa8ca25ad3b45"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structmlpack_1_1data_1_1SecondShim.html#af876ca6368e66bbfebbfa8ca25ad3b45">serialize</a> (Archive &amp;ar, const unsigned int version)</td></tr>
+<tr class="memdesc:af876ca6368e66bbfebbfa8ca25ad3b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wrapper for t.Serialize().  <a href="#af876ca6368e66bbfebbfa8ca25ad3b45">More...</a><br /></br></td></tr>
+<tr class="separator:af876ca6368e66bbfebbfa8ca25ad3b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ac22f3c2713a99424e941ca10ab645d94"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlpack_1_1data_1_1SecondShim.html#ac22f3c2713a99424e941ca10ab645d94">t</a></td></tr>
+<tr class="separator:ac22f3c2713a99424e941ca10ab645d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3 ><br /><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">T</div><div class="close_bracket">&gt;</div></div></div></div></br>
+struct mlpack::data::SecondShim&lt; T &gt;</h3>
+
+<p >The second shim: wrap the call to Serialize() inside of a <a class="el" href="structmlpack_1_1data_1_1SecondShim.html#af876ca6368e66bbfebbfa8ca25ad3b45" title="A wrapper for t.Serialize(). ">serialize()</a> function, so that an archive type can call <a class="el" href="structmlpack_1_1data_1_1SecondShim.html#af876ca6368e66bbfebbfa8ca25ad3b45" title="A wrapper for t.Serialize(). ">serialize()</a> on a <a class="el" href="structmlpack_1_1data_1_1SecondShim.html" title="The second shim: wrap the call to Serialize() inside of a serialize() function, so that an archive ty...">SecondShim</a> object and this gets forwarded correctly to our object's Serialize() function. </p>
+
+<p >Definition at line <a class="el" href="serialization__shim_8hpp_source.html#l00074">74</a> of file <a class="el" href="serialization__shim_8hpp_source.html">serialization_shim.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a28b59057a739256d3a3d76dae9e55593"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">T</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="structmlpack_1_1data_1_1SecondShim.html">mlpack::data::SecondShim</a>&lt; T &gt;::<a class="el" href="structmlpack_1_1data_1_1SecondShim.html">SecondShim</a> </td>
+          <td >(</td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em >t</em></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Construct the second shim. The name isn't necessary for this shim. </p>
+
+<p >Definition at line <a class="el" href="serialization__shim_8hpp_source.html#l00307">307</a> of file <a class="el" href="serialization__shim_8hpp_source.html">serialization_shim.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="af876ca6368e66bbfebbfa8ca25ad3b45"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">T</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void <a class="el" href="structmlpack_1_1data_1_1SecondShim.html">mlpack::data::SecondShim</a>&lt; T &gt;::serialize </td>
+          <td >(</td>
+          <td class="paramtype">Archive &amp;&#160;</td>
+          <td class="paramname"><em >ar</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em >version</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >A wrapper for t.Serialize(). </p>
+
+<p >Definition at line <a class="el" href="serialization__shim_8hpp_source.html#l00311">311</a> of file <a class="el" href="serialization__shim_8hpp_source.html">serialization_shim.hpp</a>.</p>
+
+<p >References <a class="el" href="serialization__shim_8hpp_source.html#l00316">mlpack::data::SecondShim&lt; T &gt;::t</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ac22f3c2713a99424e941ca10ab645d94"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">T</div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname">T&amp; <a class="el" href="structmlpack_1_1data_1_1SecondShim.html">mlpack::data::SecondShim</a>&lt; T &gt;::t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Definition at line <a class="el" href="serialization__shim_8hpp_source.html#l00316">316</a> of file <a class="el" href="serialization__shim_8hpp_source.html">serialization_shim.hpp</a>.</p>
+
+<p >Referenced by <a class="el" href="serialization__shim_8hpp_source.html#l00311">mlpack::data::SecondShim&lt; T &gt;::serialize()</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this struct was generated from the following file:<ul >
+<li >src/mlpack/core/data/<a class="el" href="serialization__shim_8hpp_source.html">serialization_shim.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

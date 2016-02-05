@@ -1,0 +1,116 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: src/mlpack/core/tree/binary_space_tree/midpoint_split.hpp Source File</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li ><a href="annotated.html"><span >Classes</span></a></li>
+      <li class="current"><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="files.html"><span >File&#160;List</span></a></li>
+      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_88282adca4d2b894221008e7ea77ce6c.html">core</a></li><li class="navelem"><a class="el" href="dir_4b5a3653ee1f129925d3425d2f2631c9.html">tree</a></li><li class="navelem"><a class="el" href="dir_fa04266f1156fe046fe482522b0edd44.html">binary_space_tree</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">midpoint_split.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="midpoint__split_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifndef __MLPACK_CORE_TREE_BINARY_SPACE_TREE_MIDPOINT_SPLIT_HPP</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define __MLPACK_CORE_TREE_BINARY_SPACE_TREE_MIDPOINT_SPLIT_HPP</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>tree  {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> BoundType, <span class="keyword">typename</span> MatType = arma::mat&gt;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1MidpointSplit.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1tree_1_1MidpointSplit.html">MidpointSplit</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1tree_1_1MidpointSplit.html#a5db3148803f49b2e8825c42378c0c8a7">SplitNode</a>(<span class="keyword">const</span> BoundType&amp; bound,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        MatType&amp; data,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">size_t</span> begin,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">size_t</span> count,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                        <span class="keywordtype">size_t</span>&amp; splitCol);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1tree_1_1MidpointSplit.html#a5db3148803f49b2e8825c42378c0c8a7">SplitNode</a>(<span class="keyword">const</span> BoundType&amp; bound,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                        MatType&amp; data,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">size_t</span> begin,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">size_t</span> count,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                        <span class="keywordtype">size_t</span>&amp; splitCol,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                        std::vector&lt;size_t&gt;&amp; oldFromNew);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1tree_1_1MidpointSplit.html#add798957cb80e7dc4ff9d03b50365302">PerformSplit</a>(MatType&amp; data,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">size_t</span> begin,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">size_t</span> count,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">size_t</span> splitDimension,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">double</span> splitVal);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1tree_1_1MidpointSplit.html#add798957cb80e7dc4ff9d03b50365302">PerformSplit</a>(MatType&amp; data,</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">size_t</span> begin,</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">size_t</span> count,</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">size_t</span> splitDimension,</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">double</span> splitVal,</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                             std::vector&lt;size_t&gt;&amp; oldFromNew);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;};</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;} <span class="comment">// namespace tree</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;} <span class="comment">// namespace mlpack</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">// Include implementation.</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#include &quot;midpoint_split_impl.hpp&quot;</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1MidpointSplit_html"><div class="ttname"><a href="classmlpack_1_1tree_1_1MidpointSplit.html">mlpack::tree::MidpointSplit</a></div><div class="ttdoc">A binary space partitioning tree node is split into its left and right child. </div><div class="ttdef"><b >Definition:</b> <a href="midpoint__split_8hpp_source.html#l00039">midpoint_split.hpp:39</a></div></div>
+<div class="ttc" id="core_8hpp_html"><div class="ttname"><a href="core_8hpp.html">core.hpp</a></div><div class="ttdoc">Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu...</div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1MidpointSplit_html_a5db3148803f49b2e8825c42378c0c8a7"><div class="ttname"><a href="classmlpack_1_1tree_1_1MidpointSplit.html#a5db3148803f49b2e8825c42378c0c8a7">mlpack::tree::MidpointSplit::SplitNode</a></div><div class="ttdeci">static bool SplitNode(const BoundType &amp;bound, MatType &amp;data, const size_t begin, const size_t count, size_t &amp;splitCol)</div><div class="ttdoc">Split the node according to the mean value in the dimension with maximum width. </div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1MidpointSplit_html_add798957cb80e7dc4ff9d03b50365302"><div class="ttname"><a href="classmlpack_1_1tree_1_1MidpointSplit.html#add798957cb80e7dc4ff9d03b50365302">mlpack::tree::MidpointSplit::PerformSplit</a></div><div class="ttdeci">static size_t PerformSplit(MatType &amp;data, const size_t begin, const size_t count, const size_t splitDimension, const double splitVal)</div><div class="ttdoc">Reorder the dataset into two parts such that they lie on either side of splitCol. ...</div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

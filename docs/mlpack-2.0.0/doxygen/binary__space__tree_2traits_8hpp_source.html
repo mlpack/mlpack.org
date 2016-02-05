@@ -1,0 +1,106 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: src/mlpack/core/tree/binary_space_tree/traits.hpp Source File</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li ><a href="annotated.html"><span >Classes</span></a></li>
+      <li class="current"><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="files.html"><span >File&#160;List</span></a></li>
+      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_88282adca4d2b894221008e7ea77ce6c.html">core</a></li><li class="navelem"><a class="el" href="dir_4b5a3653ee1f129925d3425d2f2631c9.html">tree</a></li><li class="navelem"><a class="el" href="dir_fa04266f1156fe046fe482522b0edd44.html">binary_space_tree</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">traits.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="binary__space__tree_2traits_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef __MLPACK_CORE_TREE_BINARY_SPACE_TREE_TRAITS_HPP</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define __MLPACK_CORE_TREE_BINARY_SPACE_TREE_TRAITS_HPP</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="tree__traits_8hpp.html">mlpack/core/tree/tree_traits.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>tree {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> MetricType,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;         <span class="keyword">typename</span> StatisticType,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;         <span class="keyword">typename</span> MatType,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;         <span class="keyword">template</span>&lt;<span class="keyword">typename</span> BoundMetricType&gt; <span class="keyword">class </span>BoundType,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;         <span class="keyword">template</span>&lt;<span class="keyword">typename</span> SplitBoundType, <span class="keyword">typename</span> SplitMatType&gt;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;             <span class="keyword">class </span>SplitType&gt;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1TreeTraits_3_01BinarySpaceTree_3_01MetricType_00_01StatisticType_00_01Matc82955fcc5e17376c7ac825c22d34930.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1tree_1_1TreeTraits.html">TreeTraits</a>&lt;<a class="code" href="classmlpack_1_1tree_1_1BinarySpaceTree.html">BinarySpaceTree</a>&lt;MetricType, StatisticType, MatType, BoundType,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                 SplitType&gt;&gt;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1TreeTraits_3_01BinarySpaceTree_3_01MetricType_00_01StatisticType_00_01Matc82955fcc5e17376c7ac825c22d34930.html#a1efe1153d5a25b08b533067abf94dda0">   51</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1tree_1_1TreeTraits.html#af1498fa2514423f81fc30a3c67c694fb">HasOverlappingChildren</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1TreeTraits_3_01BinarySpaceTree_3_01MetricType_00_01StatisticType_00_01Matc82955fcc5e17376c7ac825c22d34930.html#a5bc6a876b48cd63b0ffceea31ae2e082">   56</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1tree_1_1TreeTraits.html#a4751f17406c9202f3c0228e6307dd22f">FirstPointIsCentroid</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1TreeTraits_3_01BinarySpaceTree_3_01MetricType_00_01StatisticType_00_01Matc82955fcc5e17376c7ac825c22d34930.html#a9f8af5b9ed0c5e0ee4b49a6639d435ad">   61</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1tree_1_1TreeTraits.html#a4f47cb87cdee54e84617d9ac49d6c6cd">HasSelfChildren</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1TreeTraits_3_01BinarySpaceTree_3_01MetricType_00_01StatisticType_00_01Matc82955fcc5e17376c7ac825c22d34930.html#a445bac610de20bd271fe6419263b0bb7">   66</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1tree_1_1TreeTraits.html#ae6207c6ccffcc6ff51e60f5edbe40d05">RearrangesDataset</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1TreeTraits_3_01BinarySpaceTree_3_01MetricType_00_01StatisticType_00_01Matc82955fcc5e17376c7ac825c22d34930.html#a3f173e814f73e11bae7976a5d14f884a">   71</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1tree_1_1TreeTraits.html#af012af0a98e4dd36c2754cf1dbb202f0">BinaryTree</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;} <span class="comment">// namespace tree</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;} <span class="comment">// namespace mlpack</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1TreeTraits_html_ae6207c6ccffcc6ff51e60f5edbe40d05"><div class="ttname"><a href="classmlpack_1_1tree_1_1TreeTraits.html#ae6207c6ccffcc6ff51e60f5edbe40d05">mlpack::tree::TreeTraits::RearrangesDataset</a></div><div class="ttdeci">static const bool RearrangesDataset</div><div class="ttdoc">This is true if the tree rearranges points in the dataset when it is built. </div><div class="ttdef"><b >Definition:</b> <a href="tree__traits_8hpp_source.html#l00110">tree_traits.hpp:110</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1BinarySpaceTree_html"><div class="ttname"><a href="classmlpack_1_1tree_1_1BinarySpaceTree.html">mlpack::tree::BinarySpaceTree</a></div><div class="ttdoc">A binary space partitioning tree, such as a KD-tree or a ball tree. </div><div class="ttdef"><b >Definition:</b> <a href="binary__space__tree_2binary__space__tree_8hpp_source.html#l00063">binary_space_tree.hpp:63</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1TreeTraits_html_af1498fa2514423f81fc30a3c67c694fb"><div class="ttname"><a href="classmlpack_1_1tree_1_1TreeTraits.html#af1498fa2514423f81fc30a3c67c694fb">mlpack::tree::TreeTraits::HasOverlappingChildren</a></div><div class="ttdeci">static const bool HasOverlappingChildren</div><div class="ttdoc">This is true if the subspaces represented by the children of a node can overlap. </div><div class="ttdef"><b >Definition:</b> <a href="tree__traits_8hpp_source.html#l00094">tree_traits.hpp:94</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1TreeTraits_html_a4751f17406c9202f3c0228e6307dd22f"><div class="ttname"><a href="classmlpack_1_1tree_1_1TreeTraits.html#a4751f17406c9202f3c0228e6307dd22f">mlpack::tree::TreeTraits::FirstPointIsCentroid</a></div><div class="ttdeci">static const bool FirstPointIsCentroid</div><div class="ttdoc">This is true if Point(0) is the centroid of the node. </div><div class="ttdef"><b >Definition:</b> <a href="tree__traits_8hpp_source.html#l00099">tree_traits.hpp:99</a></div></div>
+<div class="ttc" id="tree__traits_8hpp_html"><div class="ttname"><a href="tree__traits_8hpp.html">tree_traits.hpp</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1TreeTraits_html"><div class="ttname"><a href="classmlpack_1_1tree_1_1TreeTraits.html">mlpack::tree::TreeTraits</a></div><div class="ttdoc">The TreeTraits class provides compile-time information on the characteristics of a given tree type...</div><div class="ttdef"><b >Definition:</b> <a href="tree__traits_8hpp_source.html#l00087">tree_traits.hpp:87</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1TreeTraits_html_af012af0a98e4dd36c2754cf1dbb202f0"><div class="ttname"><a href="classmlpack_1_1tree_1_1TreeTraits.html#af012af0a98e4dd36c2754cf1dbb202f0">mlpack::tree::TreeTraits::BinaryTree</a></div><div class="ttdeci">static const bool BinaryTree</div><div class="ttdoc">This is true if the tree always has only two children. </div><div class="ttdef"><b >Definition:</b> <a href="tree__traits_8hpp_source.html#l00115">tree_traits.hpp:115</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1TreeTraits_html_a4f47cb87cdee54e84617d9ac49d6c6cd"><div class="ttname"><a href="classmlpack_1_1tree_1_1TreeTraits.html#a4f47cb87cdee54e84617d9ac49d6c6cd">mlpack::tree::TreeTraits::HasSelfChildren</a></div><div class="ttdeci">static const bool HasSelfChildren</div><div class="ttdoc">This is true if the points contained in the first child of a node (Child(0)) are also contained in th...</div><div class="ttdef"><b >Definition:</b> <a href="tree__traits_8hpp_source.html#l00105">tree_traits.hpp:105</a></div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

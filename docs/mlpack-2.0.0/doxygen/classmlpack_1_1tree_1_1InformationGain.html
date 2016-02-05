@@ -1,0 +1,149 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: mlpack::tree::InformationGain Class Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span >Classes</span></a></li>
+      <li ><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="annotated.html"><span >Class&#160;List</span></a></li>
+      <li ><a href="classes.html"><span >Class&#160;Index</span></a></li>
+      <li ><a href="inherits.html"><span >Class&#160;Hierarchy</span></a></li>
+      <li ><a href="functions.html"><span >Class&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1tree.html">tree</a></li><li class="navelem"><a class="el" href="classmlpack_1_1tree_1_1InformationGain.html">InformationGain</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="classmlpack_1_1tree_1_1InformationGain-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mlpack::tree::InformationGain Class Reference</div>  </div>
+</div>
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a20845d9c6613e2653f2cff024916bc82"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1InformationGain.html#a20845d9c6613e2653f2cff024916bc82">Evaluate</a> (const arma::Mat&lt; size_t &gt; &amp;counts)</td></tr>
+<tr class="memdesc:a20845d9c6613e2653f2cff024916bc82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the sufficient statistics of a proposed split, calculate the information gain if that split was to be used.  <a href="#a20845d9c6613e2653f2cff024916bc82">More...</a><br /></br></td></tr>
+<tr class="separator:a20845d9c6613e2653f2cff024916bc82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af18b0bba60c637ccbd5f4b60eb4b46b0"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1InformationGain.html#af18b0bba60c637ccbd5f4b60eb4b46b0">Range</a> (const size_t numClasses)</td></tr>
+<tr class="memdesc:af18b0bba60c637ccbd5f4b60eb4b46b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the range of the information gain for the given number of classes.  <a href="#af18b0bba60c637ccbd5f4b60eb4b46b0">More...</a><br /></br></td></tr>
+<tr class="separator:af18b0bba60c637ccbd5f4b60eb4b46b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p >Definition at line <a class="el" href="information__gain_8hpp_source.html#l00029">29</a> of file <a class="el" href="information__gain_8hpp_source.html">information_gain.hpp</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a20845d9c6613e2653f2cff024916bc82"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">static double mlpack::tree::InformationGain::Evaluate </td>
+          <td >(</td>
+          <td class="paramtype">const arma::Mat&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >counts</em></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Given the sufficient statistics of a proposed split, calculate the information gain if that split was to be used. </p>
+<p >The 'counts' matrix should contain the number of points in each class in each column, so the size of 'counts' is children x classes, where 'children' is the number of child nodes in the proposed split.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">counts</td><td >Matrix of sufficient statistics. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p >Definition at line <a class="el" href="information__gain_8hpp_source.html#l00041">41</a> of file <a class="el" href="information__gain_8hpp_source.html">information_gain.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af18b0bba60c637ccbd5f4b60eb4b46b0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">static double mlpack::tree::InformationGain::Range </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >numClasses</em></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the range of the information gain for the given number of classes. </p>
+<p >(That is, the difference between the maximum possible value and the minimum possible value.) </p>
+
+<p >Definition at line <a class="el" href="information__gain_8hpp_source.html#l00094">94</a> of file <a class="el" href="information__gain_8hpp_source.html">information_gain.hpp</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/methods/hoeffding_trees/<a class="el" href="information__gain_8hpp_source.html">information_gain.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

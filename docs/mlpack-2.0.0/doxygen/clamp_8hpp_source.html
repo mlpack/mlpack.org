@@ -1,0 +1,103 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: src/mlpack/core/math/clamp.hpp Source File</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li ><a href="annotated.html"><span >Classes</span></a></li>
+      <li class="current"><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="files.html"><span >File&#160;List</span></a></li>
+      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_88282adca4d2b894221008e7ea77ce6c.html">core</a></li><li class="navelem"><a class="el" href="dir_189776a1ce412fd92645f48f8a6eb5cf.html">math</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">clamp.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="clamp_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef __MLPACK_CORE_MATH_CLAMP_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define __MLPACK_CORE_MATH_CLAMP_HPP</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;float.h&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="namespacemlpack_1_1math.html">   29</a></span>&#160;<span class="keyword">namespace </span>math  {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespacemlpack_1_1math.html#a6d16c12e401f859c53595d709892b2a2">   38</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code" href="namespacemlpack_1_1math.html#a6d16c12e401f859c53595d709892b2a2">ClampNonNegative</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> d)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">return</span> (d + fabs(d)) / 2;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="namespacemlpack_1_1math.html#a10bd2254595feb073cdfd55e31c1231b">   50</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code" href="namespacemlpack_1_1math.html#a10bd2254595feb073cdfd55e31c1231b">ClampNonPositive</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> d)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">return</span> (d - fabs(d)) / 2;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="namespacemlpack_1_1math.html#a0fa7f378ef122a2fc2b82009b436cdeb">   63</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code" href="namespacemlpack_1_1math.html#a0fa7f378ef122a2fc2b82009b436cdeb">ClampRange</a>(<span class="keywordtype">double</span> value,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                         <span class="keyword">const</span> <span class="keywordtype">double</span> rangeMin,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                         <span class="keyword">const</span> <span class="keywordtype">double</span> rangeMax)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  value -= rangeMax;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  value = <a class="code" href="namespacemlpack_1_1math.html#a10bd2254595feb073cdfd55e31c1231b">ClampNonPositive</a>(value) + rangeMax;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  value -= rangeMin;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  value = <a class="code" href="namespacemlpack_1_1math.html#a6d16c12e401f859c53595d709892b2a2">ClampNonNegative</a>(value) + rangeMin;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">return</span> value;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;} <span class="comment">// namespace math</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;} <span class="comment">// namespace mlpack</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif // __MLPACK_CORE_MATH_CLAMP_HPP</span></div>
+<div class="ttc" id="namespacemlpack_1_1math_html_a6d16c12e401f859c53595d709892b2a2"><div class="ttname"><a href="namespacemlpack_1_1math.html#a6d16c12e401f859c53595d709892b2a2">mlpack::math::ClampNonNegative</a></div><div class="ttdeci">double ClampNonNegative(const double d)</div><div class="ttdoc">Forces a number to be non-negative, turning negative numbers into zero. </div><div class="ttdef"><b >Definition:</b> <a href="clamp_8hpp_source.html#l00038">clamp.hpp:38</a></div></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
+<div class="ttc" id="namespacemlpack_1_1math_html_a10bd2254595feb073cdfd55e31c1231b"><div class="ttname"><a href="namespacemlpack_1_1math.html#a10bd2254595feb073cdfd55e31c1231b">mlpack::math::ClampNonPositive</a></div><div class="ttdeci">double ClampNonPositive(const double d)</div><div class="ttdoc">Forces a number to be non-positive, turning positive numbers into zero. </div><div class="ttdef"><b >Definition:</b> <a href="clamp_8hpp_source.html#l00050">clamp.hpp:50</a></div></div>
+<div class="ttc" id="namespacemlpack_1_1math_html_a0fa7f378ef122a2fc2b82009b436cdeb"><div class="ttname"><a href="namespacemlpack_1_1math.html#a0fa7f378ef122a2fc2b82009b436cdeb">mlpack::math::ClampRange</a></div><div class="ttdeci">double ClampRange(double value, const double rangeMin, const double rangeMax)</div><div class="ttdoc">Clamp a number between a particular range. </div><div class="ttdef"><b >Definition:</b> <a href="clamp_8hpp_source.html#l00063">clamp.hpp:63</a></div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

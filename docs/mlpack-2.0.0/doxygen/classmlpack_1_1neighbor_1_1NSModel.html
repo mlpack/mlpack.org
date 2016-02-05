@@ -1,0 +1,904 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: mlpack::neighbor::NSModel&lt; SortPolicy &gt; Class Template Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span >Classes</span></a></li>
+      <li ><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="annotated.html"><span >Class&#160;List</span></a></li>
+      <li ><a href="classes.html"><span >Class&#160;Index</span></a></li>
+      <li ><a href="inherits.html"><span >Class&#160;Hierarchy</span></a></li>
+      <li ><a href="functions.html"><span >Class&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1neighbor.html">neighbor</a></li><li class="navelem"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">NSModel</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classmlpack_1_1neighbor_1_1NSModel-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mlpack::neighbor::NSModel&lt; SortPolicy &gt; Class Template Reference</div>  </div>
+</div>
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:afa58ed518b8c588662c3dd3f89436b9a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#afa58ed518b8c588662c3dd3f89436b9a">TreeTypes</a><br /> { </br>
+&#160;&#160;<a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#afa58ed518b8c588662c3dd3f89436b9aa47a15bbb8afebf6c36339049280b89bd">KD_TREE</a><br />, 
+</br>
+&#160;&#160;<a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#afa58ed518b8c588662c3dd3f89436b9aa4aa907f94c0c74baf9cee99e4b7efa1c">COVER_TREE</a><br />, 
+</br>
+&#160;&#160;<a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#afa58ed518b8c588662c3dd3f89436b9aa0f18f493c078d087b0c278ae43f83dc8">R_TREE</a><br />, 
+</br>
+&#160;&#160;<a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#afa58ed518b8c588662c3dd3f89436b9aa47e54debcbde030eeecca14e1461d615">R_STAR_TREE</a><br />, 
+</br>
+&#160;&#160;<a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#afa58ed518b8c588662c3dd3f89436b9aaca1cb56d95cc33965349b5f2cd156e4e">BALL_TREE</a><br />
+</br>
+ }</td></tr>
+<tr class="separator:afa58ed518b8c588662c3dd3f89436b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a8fd59df37867ee8dbeb61fefa61a02cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a8fd59df37867ee8dbeb61fefa61a02cb">NSModel</a> (int <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a9b1a8bb29f0788da673fbb5314fe341b">treeType</a>=TreeTypes::KD_TREE, bool <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a7fe9814fb515d4be2d73e4b2d45d43e3">randomBasis</a>=false)</td></tr>
+<tr class="memdesc:a8fd59df37867ee8dbeb61fefa61a02cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">NSModel</a> with the given type and whether or not a random basis should be used.  <a href="#a8fd59df37867ee8dbeb61fefa61a02cb">More...</a><br /></br></td></tr>
+<tr class="separator:a8fd59df37867ee8dbeb61fefa61a02cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ce9ca551ea0dfe9a0e40ed081e999c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a0ce9ca551ea0dfe9a0e40ed081e999c2">~NSModel</a> ()</td></tr>
+<tr class="memdesc:a0ce9ca551ea0dfe9a0e40ed081e999c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean memory, if necessary.  <a href="#a0ce9ca551ea0dfe9a0e40ed081e999c2">More...</a><br /></br></td></tr>
+<tr class="separator:a0ce9ca551ea0dfe9a0e40ed081e999c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae4565af0806ac7bc48d6314fd463ac4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#aae4565af0806ac7bc48d6314fd463ac4">BuildModel</a> (arma::mat &amp;&amp;referenceSet, const size_t <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a10010b8c35fa397d56f0011e65c26228">leafSize</a>, const bool naive, const bool singleMode)</td></tr>
+<tr class="memdesc:aae4565af0806ac7bc48d6314fd463ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build the reference tree.  <a href="#aae4565af0806ac7bc48d6314fd463ac4">More...</a><br /></br></td></tr>
+<tr class="separator:aae4565af0806ac7bc48d6314fd463ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd1c8bde23447a09be75f529ca2fdce"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#afcd1c8bde23447a09be75f529ca2fdce">Dataset</a> () const </td></tr>
+<tr class="memdesc:afcd1c8bde23447a09be75f529ca2fdce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expose the dataset.  <a href="#afcd1c8bde23447a09be75f529ca2fdce">More...</a><br /></br></td></tr>
+<tr class="separator:afcd1c8bde23447a09be75f529ca2fdce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cd509fe6e8f4cfb6640675b8667efee"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a5cd509fe6e8f4cfb6640675b8667efee">LeafSize</a> () const </td></tr>
+<tr class="separator:a5cd509fe6e8f4cfb6640675b8667efee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa425cb8c939664f14e6fcefca4cf64c7"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#aa425cb8c939664f14e6fcefca4cf64c7">LeafSize</a> ()</td></tr>
+<tr class="separator:aa425cb8c939664f14e6fcefca4cf64c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd8fe2aa33d478ec3fd58616d095fd50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#abd8fe2aa33d478ec3fd58616d095fd50">Naive</a> () const </td></tr>
+<tr class="separator:abd8fe2aa33d478ec3fd58616d095fd50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ffeea683779bed93aa094fdf2971492"><td class="memItemLeft" align="right" valign="top">bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a3ffeea683779bed93aa094fdf2971492">Naive</a> ()</td></tr>
+<tr class="separator:a3ffeea683779bed93aa094fdf2971492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a519c8e4f29d6e7a9313da2eea6a16d2f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a519c8e4f29d6e7a9313da2eea6a16d2f">RandomBasis</a> () const </td></tr>
+<tr class="separator:a519c8e4f29d6e7a9313da2eea6a16d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6deacc6afc84e947c86da283fa27aa1d"><td class="memItemLeft" align="right" valign="top">bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a6deacc6afc84e947c86da283fa27aa1d">RandomBasis</a> ()</td></tr>
+<tr class="separator:a6deacc6afc84e947c86da283fa27aa1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade837f88ee60ceb4154c979ab00312f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#ade837f88ee60ceb4154c979ab00312f4">Search</a> (arma::mat &amp;&amp;querySet, const size_t k, arma::Mat&lt; size_t &gt; &amp;neighbors, arma::mat &amp;distances)</td></tr>
+<tr class="memdesc:ade837f88ee60ceb4154c979ab00312f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform neighbor search. The query set will be reordered.  <a href="#ade837f88ee60ceb4154c979ab00312f4">More...</a><br /></br></td></tr>
+<tr class="separator:ade837f88ee60ceb4154c979ab00312f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac71cf240f5ca6132214949f05b0b41e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#ac71cf240f5ca6132214949f05b0b41e9">Search</a> (const size_t k, arma::Mat&lt; size_t &gt; &amp;neighbors, arma::mat &amp;distances)</td></tr>
+<tr class="memdesc:ac71cf240f5ca6132214949f05b0b41e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform neighbor search.  <a href="#ac71cf240f5ca6132214949f05b0b41e9">More...</a><br /></br></td></tr>
+<tr class="separator:ac71cf240f5ca6132214949f05b0b41e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba8f315b5ac949b7ec8907e7d91e8fe"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a6ba8f315b5ac949b7ec8907e7d91e8fe"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a6ba8f315b5ac949b7ec8907e7d91e8fe">Serialize</a> (Archive &amp;ar, const unsigned int)</td></tr>
+<tr class="memdesc:a6ba8f315b5ac949b7ec8907e7d91e8fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the neighbor search model.  <a href="#a6ba8f315b5ac949b7ec8907e7d91e8fe">More...</a><br /></br></td></tr>
+<tr class="separator:a6ba8f315b5ac949b7ec8907e7d91e8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a904254a6f3da40bf5c07d4d566eaa0cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a904254a6f3da40bf5c07d4d566eaa0cd">SingleMode</a> () const </td></tr>
+<tr class="memdesc:a904254a6f3da40bf5c07d4d566eaa0cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expose singleMode.  <a href="#a904254a6f3da40bf5c07d4d566eaa0cd">More...</a><br /></br></td></tr>
+<tr class="separator:a904254a6f3da40bf5c07d4d566eaa0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5323c3d2cb563f1a2f0d21c088f81bda"><td class="memItemLeft" align="right" valign="top">bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a5323c3d2cb563f1a2f0d21c088f81bda">SingleMode</a> ()</td></tr>
+<tr class="separator:a5323c3d2cb563f1a2f0d21c088f81bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc0d787327b70f9bb760dcff3e5d825"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a1dc0d787327b70f9bb760dcff3e5d825">TreeName</a> () const </td></tr>
+<tr class="separator:a1dc0d787327b70f9bb760dcff3e5d825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc1232976feb9c049ea21e631e2f951"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a0dc1232976feb9c049ea21e631e2f951">TreeType</a> () const </td></tr>
+<tr class="separator:a0dc1232976feb9c049ea21e631e2f951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ec8e473a46963e9c1a0348da4bc0a0"><td class="memItemLeft" align="right" valign="top">int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a07ec8e473a46963e9c1a0348da4bc0a0">TreeType</a> ()</td></tr>
+<tr class="separator:a07ec8e473a46963e9c1a0348da4bc0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:ac58b4244e2dfedf3d0933092c6a4678c"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeMetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeStatType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeMatType</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div></td></tr>
+<tr class="memitem:ac58b4244e2dfedf3d0933092c6a4678c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#ac58b4244e2dfedf3d0933092c6a4678c">NSType</a> = <a class="el" href="classmlpack_1_1neighbor_1_1NeighborSearch.html">NeighborSearch</a>&lt; SortPolicy, <a class="el" href="namespacemlpack_1_1metric.html#a012695bde5dbf7ded7f7a180b5f3f512">metric::EuclideanDistance</a>, arma::mat, <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a0dc1232976feb9c049ea21e631e2f951">TreeType</a>, <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a0dc1232976feb9c049ea21e631e2f951">TreeType</a>&lt; <a class="el" href="namespacemlpack_1_1metric.html#a012695bde5dbf7ded7f7a180b5f3f512">metric::EuclideanDistance</a>, <a class="el" href="classmlpack_1_1neighbor_1_1NeighborSearchStat.html">NeighborSearchStat</a>&lt; SortPolicy &gt;, arma::mat &gt;::template DualTreeTraverser &gt;</td></tr>
+<tr class="separator:ac58b4244e2dfedf3d0933092c6a4678c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a314c81227d40dea5dd5389dd5816966c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#ac58b4244e2dfedf3d0933092c6a4678c">NSType</a>&lt; <a class="el" href="namespacemlpack_1_1tree.html#a918273941d2d1d3999bf232280530d50">tree::BallTree</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a314c81227d40dea5dd5389dd5816966c">ballTreeNS</a></td></tr>
+<tr class="separator:a314c81227d40dea5dd5389dd5816966c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e1c085744d6527df9a9b65601070b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#ac58b4244e2dfedf3d0933092c6a4678c">NSType</a>&lt; <a class="el" href="namespacemlpack_1_1tree.html#a97bb6c0e6c1be359a95c89d21b1afd42">tree::StandardCoverTree</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a84e1c085744d6527df9a9b65601070b8">coverTreeNS</a></td></tr>
+<tr class="separator:a84e1c085744d6527df9a9b65601070b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6809afe16ae4d1ecce55c1954325e424"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#ac58b4244e2dfedf3d0933092c6a4678c">NSType</a>&lt; <a class="el" href="namespacemlpack_1_1tree.html#a562474c3dca60a6ac3c5168ae88bc028">tree::KDTree</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a6809afe16ae4d1ecce55c1954325e424">kdTreeNS</a></td></tr>
+<tr class="separator:a6809afe16ae4d1ecce55c1954325e424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10010b8c35fa397d56f0011e65c26228"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a10010b8c35fa397d56f0011e65c26228">leafSize</a></td></tr>
+<tr class="separator:a10010b8c35fa397d56f0011e65c26228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94200369ea9d788059e0f438547240eb"><td class="memItemLeft" align="right" valign="top">arma::mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a94200369ea9d788059e0f438547240eb">q</a></td></tr>
+<tr class="separator:a94200369ea9d788059e0f438547240eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fe9814fb515d4be2d73e4b2d45d43e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a7fe9814fb515d4be2d73e4b2d45d43e3">randomBasis</a></td></tr>
+<tr class="separator:a7fe9814fb515d4be2d73e4b2d45d43e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62aa4083f2504be23d4468564e0d6aab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#ac58b4244e2dfedf3d0933092c6a4678c">NSType</a>&lt; <a class="el" href="namespacemlpack_1_1tree.html#adbf07e6ff61d2d7840b2c7ea88d25fb7">tree::RStarTree</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a62aa4083f2504be23d4468564e0d6aab">rStarTreeNS</a></td></tr>
+<tr class="separator:a62aa4083f2504be23d4468564e0d6aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3392c0856faceabe549c5035d8f11723"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#ac58b4244e2dfedf3d0933092c6a4678c">NSType</a>&lt; <a class="el" href="namespacemlpack_1_1tree.html#ae9e12acec37727ae9a4dbca379ba4317">tree::RTree</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a3392c0856faceabe549c5035d8f11723">rTreeNS</a></td></tr>
+<tr class="separator:a3392c0856faceabe549c5035d8f11723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b1a8bb29f0788da673fbb5314fe341b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a9b1a8bb29f0788da673fbb5314fe341b">treeType</a></td></tr>
+<tr class="separator:a9b1a8bb29f0788da673fbb5314fe341b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3 ><br /><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></br>
+class mlpack::neighbor::NSModel&lt; SortPolicy &gt;</h3>
+
+
+<p >Definition at line <a class="el" href="neighbor__search_8hpp_source.html#l00046">46</a> of file <a class="el" href="neighbor__search_8hpp_source.html">neighbor_search.hpp</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="ac58b4244e2dfedf3d0933092c6a4678c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeMetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeStatType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeMatType</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::<a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#ac58b4244e2dfedf3d0933092c6a4678c">NSType</a> =  <a class="el" href="classmlpack_1_1neighbor_1_1NeighborSearch.html">NeighborSearch</a>&lt;SortPolicy, <a class="el" href="namespacemlpack_1_1metric.html#a012695bde5dbf7ded7f7a180b5f3f512">metric::EuclideanDistance</a>, arma::mat, <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a0dc1232976feb9c049ea21e631e2f951">TreeType</a>, <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#a0dc1232976feb9c049ea21e631e2f951">TreeType</a>&lt;<a class="el" href="namespacemlpack_1_1metric.html#a012695bde5dbf7ded7f7a180b5f3f512">metric::EuclideanDistance</a>, <a class="el" href="classmlpack_1_1neighbor_1_1NeighborSearchStat.html">NeighborSearchStat</a>&lt;SortPolicy&gt;, arma::mat&gt;::template DualTreeTraverser&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Definition at line <a class="el" href="ns__model_8hpp_source.html#l00085">85</a> of file <a class="el" href="ns__model_8hpp_source.html">ns_model.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="afa58ed518b8c588662c3dd3f89436b9a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname">enum <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#afa58ed518b8c588662c3dd3f89436b9a">mlpack::neighbor::NSModel::TreeTypes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr ><th colspan="2">Enumerator</th></tr><tr ><td class="fieldname"><a class="anchor" id="afa58ed518b8c588662c3dd3f89436b9aa47a15bbb8afebf6c36339049280b89bd"></a>KD_TREE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr ><td class="fieldname"><a class="anchor" id="afa58ed518b8c588662c3dd3f89436b9aa4aa907f94c0c74baf9cee99e4b7efa1c"></a>COVER_TREE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr ><td class="fieldname"><a class="anchor" id="afa58ed518b8c588662c3dd3f89436b9aa0f18f493c078d087b0c278ae43f83dc8"></a>R_TREE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr ><td class="fieldname"><a class="anchor" id="afa58ed518b8c588662c3dd3f89436b9aa47e54debcbde030eeecca14e1461d615"></a>R_STAR_TREE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr ><td class="fieldname"><a class="anchor" id="afa58ed518b8c588662c3dd3f89436b9aaca1cb56d95cc33965349b5f2cd156e4e"></a>BALL_TREE&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p >Definition at line <a class="el" href="ns__model_8hpp_source.html#l00059">59</a> of file <a class="el" href="ns__model_8hpp_source.html">ns_model.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a8fd59df37867ee8dbeb61fefa61a02cb"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::<a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">NSModel</a> </td>
+          <td >(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em >treeType</em> = <code >TreeTypes::KD_TREE</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em >randomBasis</em> = <code >false</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Initialize the <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">NSModel</a> with the given type and whether or not a random basis should be used. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0ce9ca551ea0dfe9a0e40ed081e999c2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::~<a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">NSModel</a> </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Clean memory, if necessary. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aae4565af0806ac7bc48d6314fd463ac4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname">void <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::BuildModel </td>
+          <td >(</td>
+          <td class="paramtype">arma::mat &amp;&amp;&#160;</td>
+          <td class="paramname"><em >referenceSet</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >leafSize</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em >naive</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em >singleMode</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Build the reference tree. </p>
+
+</div>
+</div>
+<a class="anchor" id="afcd1c8bde23447a09be75f529ca2fdce"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::mat&amp; <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::Dataset </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Expose the dataset. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5cd509fe6e8f4cfb6640675b8667efee"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::LeafSize </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Definition at line <a class="el" href="ns__model_8hpp_source.html#l00118">118</a> of file <a class="el" href="ns__model_8hpp_source.html">ns_model.hpp</a>.</p>
+
+<p >References <a class="el" href="ns__model_8hpp_source.html#l00070">mlpack::neighbor::NSModel&lt; SortPolicy &gt;::leafSize</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa425cb8c939664f14e6fcefca4cf64c7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::LeafSize </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Definition at line <a class="el" href="ns__model_8hpp_source.html#l00119">119</a> of file <a class="el" href="ns__model_8hpp_source.html">ns_model.hpp</a>.</p>
+
+<p >References <a class="el" href="ns__model_8hpp_source.html#l00070">mlpack::neighbor::NSModel&lt; SortPolicy &gt;::leafSize</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abd8fe2aa33d478ec3fd58616d095fd50"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname">bool <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::Naive </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3ffeea683779bed93aa094fdf2971492"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname">bool&amp; <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::Naive </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a519c8e4f29d6e7a9313da2eea6a16d2f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">bool <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::RandomBasis </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Definition at line <a class="el" href="ns__model_8hpp_source.html#l00124">124</a> of file <a class="el" href="ns__model_8hpp_source.html">ns_model.hpp</a>.</p>
+
+<p >References <a class="el" href="ns__model_8hpp_source.html#l00073">mlpack::neighbor::NSModel&lt; SortPolicy &gt;::randomBasis</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6deacc6afc84e947c86da283fa27aa1d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">bool&amp; <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::RandomBasis </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Definition at line <a class="el" href="ns__model_8hpp_source.html#l00125">125</a> of file <a class="el" href="ns__model_8hpp_source.html">ns_model.hpp</a>.</p>
+
+<p >References <a class="el" href="ns__model_8hpp_source.html#l00073">mlpack::neighbor::NSModel&lt; SortPolicy &gt;::randomBasis</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ade837f88ee60ceb4154c979ab00312f4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname">void <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::Search </td>
+          <td >(</td>
+          <td class="paramtype">arma::mat &amp;&amp;&#160;</td>
+          <td class="paramname"><em >querySet</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >k</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::Mat&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >neighbors</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >distances</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Perform neighbor search. The query set will be reordered. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac71cf240f5ca6132214949f05b0b41e9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname">void <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::Search </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >k</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::Mat&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >neighbors</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >distances</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Perform neighbor search. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6ba8f315b5ac949b7ec8907e7d91e8fe"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname">void <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::Serialize </td>
+          <td >(</td>
+          <td class="paramtype">Archive &amp;&#160;</td>
+          <td class="paramname"><em >ar</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em >int</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Serialize the neighbor search model. </p>
+
+</div>
+</div>
+<a class="anchor" id="a904254a6f3da40bf5c07d4d566eaa0cd"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname">bool <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::SingleMode </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Expose singleMode. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5323c3d2cb563f1a2f0d21c088f81bda"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname">bool&amp; <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::SingleMode </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1dc0d787327b70f9bb760dcff3e5d825"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname">std::string <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::TreeName </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0dc1232976feb9c049ea21e631e2f951"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">int <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::TreeType </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Definition at line <a class="el" href="ns__model_8hpp_source.html#l00121">121</a> of file <a class="el" href="ns__model_8hpp_source.html">ns_model.hpp</a>.</p>
+
+<p >References <a class="el" href="ns__model_8hpp_source.html#l00069">mlpack::neighbor::NSModel&lt; SortPolicy &gt;::treeType</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a07ec8e473a46963e9c1a0348da4bc0a0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">int&amp; <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::TreeType </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Definition at line <a class="el" href="ns__model_8hpp_source.html#l00122">122</a> of file <a class="el" href="ns__model_8hpp_source.html">ns_model.hpp</a>.</p>
+
+<p >References <a class="el" href="ns__model_8hpp_source.html#l00069">mlpack::neighbor::NSModel&lt; SortPolicy &gt;::treeType</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a314c81227d40dea5dd5389dd5816966c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#ac58b4244e2dfedf3d0933092c6a4678c">NSType</a>&lt;<a class="el" href="namespacemlpack_1_1tree.html#a918273941d2d1d3999bf232280530d50">tree::BallTree</a>&gt;* <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::ballTreeNS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Definition at line <a class="el" href="ns__model_8hpp_source.html#l00092">92</a> of file <a class="el" href="ns__model_8hpp_source.html">ns_model.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a84e1c085744d6527df9a9b65601070b8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#ac58b4244e2dfedf3d0933092c6a4678c">NSType</a>&lt;<a class="el" href="namespacemlpack_1_1tree.html#a97bb6c0e6c1be359a95c89d21b1afd42">tree::StandardCoverTree</a>&gt;* <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::coverTreeNS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Definition at line <a class="el" href="ns__model_8hpp_source.html#l00089">89</a> of file <a class="el" href="ns__model_8hpp_source.html">ns_model.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6809afe16ae4d1ecce55c1954325e424"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#ac58b4244e2dfedf3d0933092c6a4678c">NSType</a>&lt;<a class="el" href="namespacemlpack_1_1tree.html#a562474c3dca60a6ac3c5168ae88bc028">tree::KDTree</a>&gt;* <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::kdTreeNS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Definition at line <a class="el" href="ns__model_8hpp_source.html#l00088">88</a> of file <a class="el" href="ns__model_8hpp_source.html">ns_model.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a10010b8c35fa397d56f0011e65c26228"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::leafSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Definition at line <a class="el" href="ns__model_8hpp_source.html#l00070">70</a> of file <a class="el" href="ns__model_8hpp_source.html">ns_model.hpp</a>.</p>
+
+<p >Referenced by <a class="el" href="ns__model_8hpp_source.html#l00118">mlpack::neighbor::NSModel&lt; SortPolicy &gt;::LeafSize()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a94200369ea9d788059e0f438547240eb"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">arma::mat <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::q</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Definition at line <a class="el" href="ns__model_8hpp_source.html#l00074">74</a> of file <a class="el" href="ns__model_8hpp_source.html">ns_model.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7fe9814fb515d4be2d73e4b2d45d43e3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">bool <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::randomBasis</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Definition at line <a class="el" href="ns__model_8hpp_source.html#l00073">73</a> of file <a class="el" href="ns__model_8hpp_source.html">ns_model.hpp</a>.</p>
+
+<p >Referenced by <a class="el" href="ns__model_8hpp_source.html#l00124">mlpack::neighbor::NSModel&lt; SortPolicy &gt;::RandomBasis()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a62aa4083f2504be23d4468564e0d6aab"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#ac58b4244e2dfedf3d0933092c6a4678c">NSType</a>&lt;<a class="el" href="namespacemlpack_1_1tree.html#adbf07e6ff61d2d7840b2c7ea88d25fb7">tree::RStarTree</a>&gt;* <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::rStarTreeNS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Definition at line <a class="el" href="ns__model_8hpp_source.html#l00091">91</a> of file <a class="el" href="ns__model_8hpp_source.html">ns_model.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3392c0856faceabe549c5035d8f11723"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html#ac58b4244e2dfedf3d0933092c6a4678c">NSType</a>&lt;<a class="el" href="namespacemlpack_1_1tree.html#ae9e12acec37727ae9a4dbca379ba4317">tree::RTree</a>&gt;* <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::rTreeNS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Definition at line <a class="el" href="ns__model_8hpp_source.html#l00090">90</a> of file <a class="el" href="ns__model_8hpp_source.html">ns_model.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9b1a8bb29f0788da673fbb5314fe341b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">int <a class="el" href="classmlpack_1_1neighbor_1_1NSModel.html">mlpack::neighbor::NSModel</a>&lt; SortPolicy &gt;::treeType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Definition at line <a class="el" href="ns__model_8hpp_source.html#l00069">69</a> of file <a class="el" href="ns__model_8hpp_source.html">ns_model.hpp</a>.</p>
+
+<p >Referenced by <a class="el" href="ns__model_8hpp_source.html#l00121">mlpack::neighbor::NSModel&lt; SortPolicy &gt;::TreeType()</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following files:<ul >
+<li >src/mlpack/methods/neighbor_search/<a class="el" href="neighbor__search_8hpp_source.html">neighbor_search.hpp</a></li>
+<li >src/mlpack/methods/neighbor_search/<a class="el" href="ns__model_8hpp_source.html">ns_model.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

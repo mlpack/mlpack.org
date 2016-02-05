@@ -1,0 +1,116 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: src/mlpack/methods/amf/update_rules/nmf_mult_dist.hpp Source File</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li ><a href="annotated.html"><span >Classes</span></a></li>
+      <li class="current"><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="files.html"><span >File&#160;List</span></a></li>
+      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_19fd2ebec21bf6d8aaa7fdf30f286d47.html">methods</a></li><li class="navelem"><a class="el" href="dir_f05c255301f5a9425ff2de1dd813d21a.html">amf</a></li><li class="navelem"><a class="el" href="dir_d7e5a80022404555044a4252b2c3f2c8.html">update_rules</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">nmf_mult_dist.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="nmf__mult__dist_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef __MLPACK_METHODS_LMF_UPDATE_RULES_NMF_MULT_DIST_UPDATE_RULES_HPP</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define __MLPACK_METHODS_LMF_UPDATE_RULES_NMF_MULT_DIST_UPDATE_RULES_HPP</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>amf {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate.html">   49</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate.html">NMFMultiplicativeDistanceUpdate</a></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="comment">// Empty constructor required for the UpdateRule template.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate.html#a8c702dd8bd0b59187f2ad57c90e774ad">   53</a></span>&#160;  <a class="code" href="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate.html#a8c702dd8bd0b59187f2ad57c90e774ad">NMFMultiplicativeDistanceUpdate</a>() { }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> MatType&gt;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate.html#a2d7b189f18209952d4005442d4e3e14d">   60</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate.html#a2d7b189f18209952d4005442d4e3e14d">Initialize</a>(<span class="keyword">const</span> MatType&amp; <span class="comment">/* dataset */</span>, <span class="keyword">const</span> <span class="keywordtype">size_t</span> <span class="comment">/* rank */</span>)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// Nothing to do.</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> MatType&gt;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate.html#a51f2ef4143c9cb8e2faed2009f2b5fce">   80</a></span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate.html#a51f2ef4143c9cb8e2faed2009f2b5fce">WUpdate</a>(<span class="keyword">const</span> MatType&amp; V,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                             arma::mat&amp; W,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                             <span class="keyword">const</span> arma::mat&amp; H)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    W = (W % (V * H.t())) / (W * H * H.t());</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> MatType&gt;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate.html#a32469c2f51f5b0859aff74db2fe136ab">  102</a></span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate.html#a32469c2f51f5b0859aff74db2fe136ab">HUpdate</a>(<span class="keyword">const</span> MatType&amp; V,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                             <span class="keyword">const</span> arma::mat&amp; W,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                             arma::mat&amp; H)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    H = (H % (W.t() * V)) / (W.t() * W * H);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Archive&gt;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate.html#ab5740a2e871f98b8dc40ec4b88cf2361">  111</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate.html#ab5740a2e871f98b8dc40ec4b88cf2361">Serialize</a>(Archive&amp; <span class="comment">/* ar */</span>, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="comment">/* version */</span>) { }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;};</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;} <span class="comment">// namespace amf</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;} <span class="comment">// namespace mlpack</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate_html_a32469c2f51f5b0859aff74db2fe136ab"><div class="ttname"><a href="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate.html#a32469c2f51f5b0859aff74db2fe136ab">mlpack::amf::NMFMultiplicativeDistanceUpdate::HUpdate</a></div><div class="ttdeci">static void HUpdate(const MatType &amp;V, const arma::mat &amp;W, arma::mat &amp;H)</div><div class="ttdoc">The update rule for the encoding matrix H. </div><div class="ttdef"><b >Definition:</b> <a href="nmf__mult__dist_8hpp_source.html#l00102">nmf_mult_dist.hpp:102</a></div></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate_html_a51f2ef4143c9cb8e2faed2009f2b5fce"><div class="ttname"><a href="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate.html#a51f2ef4143c9cb8e2faed2009f2b5fce">mlpack::amf::NMFMultiplicativeDistanceUpdate::WUpdate</a></div><div class="ttdeci">static void WUpdate(const MatType &amp;V, arma::mat &amp;W, const arma::mat &amp;H)</div><div class="ttdoc">The update rule for the basis matrix W. </div><div class="ttdef"><b >Definition:</b> <a href="nmf__mult__dist_8hpp_source.html#l00080">nmf_mult_dist.hpp:80</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate_html_ab5740a2e871f98b8dc40ec4b88cf2361"><div class="ttname"><a href="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate.html#ab5740a2e871f98b8dc40ec4b88cf2361">mlpack::amf::NMFMultiplicativeDistanceUpdate::Serialize</a></div><div class="ttdeci">void Serialize(Archive &amp;, const unsigned int)</div><div class="ttdoc">Serialize the object (in this case, there is nothing to serialize). </div><div class="ttdef"><b >Definition:</b> <a href="nmf__mult__dist_8hpp_source.html#l00111">nmf_mult_dist.hpp:111</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate_html_a2d7b189f18209952d4005442d4e3e14d"><div class="ttname"><a href="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate.html#a2d7b189f18209952d4005442d4e3e14d">mlpack::amf::NMFMultiplicativeDistanceUpdate::Initialize</a></div><div class="ttdeci">void Initialize(const MatType &amp;, const size_t)</div><div class="ttdoc">Initialize the factorization. </div><div class="ttdef"><b >Definition:</b> <a href="nmf__mult__dist_8hpp_source.html#l00060">nmf_mult_dist.hpp:60</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate_html_a8c702dd8bd0b59187f2ad57c90e774ad"><div class="ttname"><a href="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate.html#a8c702dd8bd0b59187f2ad57c90e774ad">mlpack::amf::NMFMultiplicativeDistanceUpdate::NMFMultiplicativeDistanceUpdate</a></div><div class="ttdeci">NMFMultiplicativeDistanceUpdate()</div><div class="ttdef"><b >Definition:</b> <a href="nmf__mult__dist_8hpp_source.html#l00053">nmf_mult_dist.hpp:53</a></div></div>
+<div class="ttc" id="core_8hpp_html"><div class="ttname"><a href="core_8hpp.html">core.hpp</a></div><div class="ttdoc">Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu...</div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate_html"><div class="ttname"><a href="classmlpack_1_1amf_1_1NMFMultiplicativeDistanceUpdate.html">mlpack::amf::NMFMultiplicativeDistanceUpdate</a></div><div class="ttdoc">The multiplicative distance update rules for matrices W and H. </div><div class="ttdef"><b >Definition:</b> <a href="nmf__mult__dist_8hpp_source.html#l00049">nmf_mult_dist.hpp:49</a></div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

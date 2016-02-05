@@ -1,0 +1,6 @@
+<map id="mlpack::neighbor::RASearch&lt; SortPolicy, MetricType, MatType, TreeType &gt;" name="mlpack::neighbor::RASearch&lt; SortPolicy, MetricType, MatType, TreeType &gt;">
+<area shape="rect" id="node2" href="$classmlpack_1_1neighbor_1_1RASearch.html" title="mlpack::neighbor::RASearch\l\&lt; tree::KDTree \&gt;" alt="" coords="415,5,604,47"/>
+<area shape="rect" id="node3" href="$classmlpack_1_1neighbor_1_1RASearch.html" title="mlpack::neighbor::RASearch\l\&lt; tree::RTree \&gt;" alt="" coords="415,71,604,112"/>
+<area shape="rect" id="node4" href="$classmlpack_1_1neighbor_1_1RASearch.html" title="mlpack::neighbor::RASearch\l\&lt; tree::StandardCoverTree \&gt;" alt="" coords="415,136,604,177"/>
+<area shape="rect" id="node5" href="$classmlpack_1_1neighbor_1_1RASearch.html" title="mlpack::neighbor::RASearch\l\&lt; tree::RStarTree \&gt;" alt="" coords="415,201,604,243"/>
+</map>

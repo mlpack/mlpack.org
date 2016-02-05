@@ -1,0 +1,105 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: src/mlpack/core/optimizers/sa/exponential_schedule.hpp Source File</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li ><a href="annotated.html"><span >Classes</span></a></li>
+      <li class="current"><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="files.html"><span >File&#160;List</span></a></li>
+      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_88282adca4d2b894221008e7ea77ce6c.html">core</a></li><li class="navelem"><a class="el" href="dir_39ca30c91c6ea9766d4908a704ea4d8b.html">optimizers</a></li><li class="navelem"><a class="el" href="dir_f461fb2af79762b07f9c98395ea2edef.html">sa</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">exponential_schedule.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="exponential__schedule_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef __MLPACK_CORE_OPTIMIZERS_SA_EXPONENTIAL_SCHEDULE_HPP</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define __MLPACK_CORE_OPTIMIZERS_SA_EXPONENTIAL_SCHEDULE_HPP</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>optimization {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1ExponentialSchedule.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1optimization_1_1ExponentialSchedule.html">ExponentialSchedule</a></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="comment">/*</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">   * Construct the ExponentialSchedule with the given parameter.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">   * @param lambda Cooling speed.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1ExponentialSchedule.html#a45a0f4195092bb5bbabbe475de4df083">   50</a></span>&#160;  <a class="code" href="classmlpack_1_1optimization_1_1ExponentialSchedule.html#a45a0f4195092bb5bbabbe475de4df083">ExponentialSchedule</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1optimization_1_1ExponentialSchedule.html#adc7beb2e3179c579f16c5eddcaf80291">lambda</a> = 0.001) : <a class="code" href="classmlpack_1_1optimization_1_1ExponentialSchedule.html#adc7beb2e3179c579f16c5eddcaf80291">lambda</a>(<a class="code" href="classmlpack_1_1optimization_1_1ExponentialSchedule.html#adc7beb2e3179c579f16c5eddcaf80291">lambda</a>) { }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1ExponentialSchedule.html#af066502a3f7746ba857203114daa6a89">   59</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1optimization_1_1ExponentialSchedule.html#af066502a3f7746ba857203114daa6a89">NextTemperature</a>(</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">double</span> currentTemperature,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">double</span> <span class="comment">/* currentEnergy */</span>)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> (1 - <a class="code" href="classmlpack_1_1optimization_1_1ExponentialSchedule.html#adc7beb2e3179c579f16c5eddcaf80291">lambda</a>) * currentTemperature;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1ExponentialSchedule.html#a15154641a7772538bd5e9f8e05c7aeb8">   67</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1optimization_1_1ExponentialSchedule.html#a15154641a7772538bd5e9f8e05c7aeb8">Lambda</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1optimization_1_1ExponentialSchedule.html#adc7beb2e3179c579f16c5eddcaf80291">lambda</a>; }</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1ExponentialSchedule.html#a556ae22c3d48f25416239bcbe0c45505">   69</a></span>&#160;  <span class="keywordtype">double</span>&amp; <a class="code" href="classmlpack_1_1optimization_1_1ExponentialSchedule.html#a556ae22c3d48f25416239bcbe0c45505">Lambda</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1optimization_1_1ExponentialSchedule.html#adc7beb2e3179c579f16c5eddcaf80291">lambda</a>; }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1ExponentialSchedule.html#adc7beb2e3179c579f16c5eddcaf80291">   73</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1optimization_1_1ExponentialSchedule.html#adc7beb2e3179c579f16c5eddcaf80291">lambda</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;} <span class="comment">// namespace optimization</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;} <span class="comment">// namespace mlpack</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1ExponentialSchedule_html_af066502a3f7746ba857203114daa6a89"><div class="ttname"><a href="classmlpack_1_1optimization_1_1ExponentialSchedule.html#af066502a3f7746ba857203114daa6a89">mlpack::optimization::ExponentialSchedule::NextTemperature</a></div><div class="ttdeci">double NextTemperature(const double currentTemperature, const double)</div><div class="ttdoc">Returns the next temperature given current status. </div><div class="ttdef"><b >Definition:</b> <a href="exponential__schedule_8hpp_source.html#l00059">exponential_schedule.hpp:59</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1ExponentialSchedule_html_a15154641a7772538bd5e9f8e05c7aeb8"><div class="ttname"><a href="classmlpack_1_1optimization_1_1ExponentialSchedule.html#a15154641a7772538bd5e9f8e05c7aeb8">mlpack::optimization::ExponentialSchedule::Lambda</a></div><div class="ttdeci">double Lambda() const </div><div class="ttdoc">Get the cooling speed, lambda. </div><div class="ttdef"><b >Definition:</b> <a href="exponential__schedule_8hpp_source.html#l00067">exponential_schedule.hpp:67</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1ExponentialSchedule_html_adc7beb2e3179c579f16c5eddcaf80291"><div class="ttname"><a href="classmlpack_1_1optimization_1_1ExponentialSchedule.html#adc7beb2e3179c579f16c5eddcaf80291">mlpack::optimization::ExponentialSchedule::lambda</a></div><div class="ttdeci">double lambda</div><div class="ttdoc">The cooling speed. </div><div class="ttdef"><b >Definition:</b> <a href="exponential__schedule_8hpp_source.html#l00073">exponential_schedule.hpp:73</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1ExponentialSchedule_html"><div class="ttname"><a href="classmlpack_1_1optimization_1_1ExponentialSchedule.html">mlpack::optimization::ExponentialSchedule</a></div><div class="ttdoc">The exponential cooling schedule cools the temperature T at every step according to the equation...</div><div class="ttdef"><b >Definition:</b> <a href="exponential__schedule_8hpp_source.html#l00042">exponential_schedule.hpp:42</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1ExponentialSchedule_html_a45a0f4195092bb5bbabbe475de4df083"><div class="ttname"><a href="classmlpack_1_1optimization_1_1ExponentialSchedule.html#a45a0f4195092bb5bbabbe475de4df083">mlpack::optimization::ExponentialSchedule::ExponentialSchedule</a></div><div class="ttdeci">ExponentialSchedule(const double lambda=0.001)</div><div class="ttdef"><b >Definition:</b> <a href="exponential__schedule_8hpp_source.html#l00050">exponential_schedule.hpp:50</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1ExponentialSchedule_html_a556ae22c3d48f25416239bcbe0c45505"><div class="ttname"><a href="classmlpack_1_1optimization_1_1ExponentialSchedule.html#a556ae22c3d48f25416239bcbe0c45505">mlpack::optimization::ExponentialSchedule::Lambda</a></div><div class="ttdeci">double &amp; Lambda()</div><div class="ttdoc">Modify the cooling speed, lambda. </div><div class="ttdef"><b >Definition:</b> <a href="exponential__schedule_8hpp_source.html#l00069">exponential_schedule.hpp:69</a></div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,435 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: mlpack::pca::PCA Class Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span >Classes</span></a></li>
+      <li ><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="annotated.html"><span >Class&#160;List</span></a></li>
+      <li ><a href="classes.html"><span >Class&#160;Index</span></a></li>
+      <li ><a href="inherits.html"><span >Class&#160;Hierarchy</span></a></li>
+      <li ><a href="functions.html"><span >Class&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1pca.html">pca</a></li><li class="navelem"><a class="el" href="classmlpack_1_1pca_1_1PCA.html">PCA</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classmlpack_1_1pca_1_1PCA-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mlpack::pca::PCA Class Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >This class implements principal components analysis (<a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a>).  
+ <a href="classmlpack_1_1pca_1_1PCA.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ac113cb144eef816ceb973f689ab62428"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1pca_1_1PCA.html#ac113cb144eef816ceb973f689ab62428">PCA</a> (const bool <a class="el" href="classmlpack_1_1pca_1_1PCA.html#ae5ad5257b9ef72487adfb48d15c0cde4">scaleData</a>=false)</td></tr>
+<tr class="memdesc:ac113cb144eef816ceb973f689ab62428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the <a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a> object, specifying if the data should be scaled in each dimension by standard deviation when <a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a> is performed.  <a href="#ac113cb144eef816ceb973f689ab62428">More...</a><br /></br></td></tr>
+<tr class="separator:ac113cb144eef816ceb973f689ab62428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adace529d2ef0c4f6af66fca9d237bc03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1pca_1_1PCA.html#adace529d2ef0c4f6af66fca9d237bc03">Apply</a> (const arma::mat &amp;data, arma::mat &amp;transformedData, arma::vec &amp;eigval, arma::mat &amp;eigvec) const </td></tr>
+<tr class="memdesc:adace529d2ef0c4f6af66fca9d237bc03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply Principal Component Analysis to the provided data set.  <a href="#adace529d2ef0c4f6af66fca9d237bc03">More...</a><br /></br></td></tr>
+<tr class="separator:adace529d2ef0c4f6af66fca9d237bc03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbc28c696fdfd77d6864e0d4f2ca433a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1pca_1_1PCA.html#acbc28c696fdfd77d6864e0d4f2ca433a">Apply</a> (const arma::mat &amp;data, arma::mat &amp;transformedData, arma::vec &amp;eigVal) const </td></tr>
+<tr class="memdesc:acbc28c696fdfd77d6864e0d4f2ca433a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply Principal Component Analysis to the provided data set.  <a href="#acbc28c696fdfd77d6864e0d4f2ca433a">More...</a><br /></br></td></tr>
+<tr class="separator:acbc28c696fdfd77d6864e0d4f2ca433a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56ec709aa78c7f760a675808916a7793"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1pca_1_1PCA.html#a56ec709aa78c7f760a675808916a7793">Apply</a> (arma::mat &amp;data, const size_t newDimension) const </td></tr>
+<tr class="memdesc:a56ec709aa78c7f760a675808916a7793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a> for dimensionality reduction on the given dataset.  <a href="#a56ec709aa78c7f760a675808916a7793">More...</a><br /></br></td></tr>
+<tr class="separator:a56ec709aa78c7f760a675808916a7793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91560515f98cd0414ebe2b62188f614e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1pca_1_1PCA.html#a91560515f98cd0414ebe2b62188f614e">Apply</a> (arma::mat &amp;data, const int newDimension) const </td></tr>
+<tr class="memdesc:a91560515f98cd0414ebe2b62188f614e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This overload is here to make sure int gets casted right to size_t.  <a href="#a91560515f98cd0414ebe2b62188f614e">More...</a><br /></br></td></tr>
+<tr class="separator:a91560515f98cd0414ebe2b62188f614e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b23b7e5e147d65c707b318bfc4f2a2a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1pca_1_1PCA.html#a5b23b7e5e147d65c707b318bfc4f2a2a">Apply</a> (arma::mat &amp;data, const double varRetained) const </td></tr>
+<tr class="memdesc:a5b23b7e5e147d65c707b318bfc4f2a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a> for dimensionality reduction on the given dataset.  <a href="#a5b23b7e5e147d65c707b318bfc4f2a2a">More...</a><br /></br></td></tr>
+<tr class="separator:a5b23b7e5e147d65c707b318bfc4f2a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2d6faab68d1c2cfeb82935f15c2addc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1pca_1_1PCA.html#aa2d6faab68d1c2cfeb82935f15c2addc">ScaleData</a> () const </td></tr>
+<tr class="memdesc:aa2d6faab68d1c2cfeb82935f15c2addc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether or not this <a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a> object will scale (by standard deviation) the data when <a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a> is performed.  <a href="#aa2d6faab68d1c2cfeb82935f15c2addc">More...</a><br /></br></td></tr>
+<tr class="separator:aa2d6faab68d1c2cfeb82935f15c2addc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c82a9f1047107f860294da2b6012a78"><td class="memItemLeft" align="right" valign="top">bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1pca_1_1PCA.html#a9c82a9f1047107f860294da2b6012a78">ScaleData</a> ()</td></tr>
+<tr class="memdesc:a9c82a9f1047107f860294da2b6012a78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify whether or not this <a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a> object will scale (by standard deviation) the data when <a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a> is performed.  <a href="#a9c82a9f1047107f860294da2b6012a78">More...</a><br /></br></td></tr>
+<tr class="separator:a9c82a9f1047107f860294da2b6012a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae5ad5257b9ef72487adfb48d15c0cde4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1pca_1_1PCA.html#ae5ad5257b9ef72487adfb48d15c0cde4">scaleData</a></td></tr>
+<tr class="memdesc:ae5ad5257b9ef72487adfb48d15c0cde4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the data will be scaled by standard deviation when <a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a> is performed.  <a href="#ae5ad5257b9ef72487adfb48d15c0cde4">More...</a><br /></br></td></tr>
+<tr class="separator:ae5ad5257b9ef72487adfb48d15c0cde4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This class implements principal components analysis (<a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a>). </p>
+<p >This is a common, widely-used technique that is often used for either dimensionality reduction or transforming data into a better basis. Further information on <a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a> can be found in almost any statistics or machine learning textbook, and all over the internet. </p>
+
+<p >Definition at line <a class="el" href="pca_8hpp_source.html#l00038">38</a> of file <a class="el" href="pca_8hpp_source.html">pca.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ac113cb144eef816ceb973f689ab62428"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">mlpack::pca::PCA::PCA </td>
+          <td >(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em >scaleData</em> = <code >false</code></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Create the <a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a> object, specifying if the data should be scaled in each dimension by standard deviation when <a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a> is performed. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">scaleData</td><td >Whether or not to scale the data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="adace529d2ef0c4f6af66fca9d237bc03"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void mlpack::pca::PCA::Apply </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >data</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >transformedData</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::vec &amp;&#160;</td>
+          <td class="paramname"><em >eigval</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >eigvec</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Apply Principal Component Analysis to the provided data set. </p>
+<p >It is safe to pass the same matrix reference for both data and transformedData.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">data</td><td >Data matrix. </td></tr>
+    <tr ><td class="paramname">transformedData</td><td >Matrix to put results of <a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a> into. </td></tr>
+    <tr ><td class="paramname">eigval</td><td >Vector to put eigenvalues into. </td></tr>
+    <tr ><td class="paramname">eigvec</td><td >Matrix to put eigenvectors (loadings) into. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p >Referenced by <a class="el" href="pca_8hpp_source.html#l00089">Apply()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acbc28c696fdfd77d6864e0d4f2ca433a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void mlpack::pca::PCA::Apply </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >data</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >transformedData</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::vec &amp;&#160;</td>
+          <td class="paramname"><em >eigVal</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Apply Principal Component Analysis to the provided data set. </p>
+<p >It is safe to pass the same matrix reference for both data and transformedData.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">data</td><td >Data matrix. </td></tr>
+    <tr ><td class="paramname">transformedData</td><td >Matrix to store results of <a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a> in. </td></tr>
+    <tr ><td class="paramname">eigVal</td><td >Vector to put eigenvalues into. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a56ec709aa78c7f760a675808916a7793"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">double mlpack::pca::PCA::Apply </td>
+          <td >(</td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >data</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >newDimension</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Use <a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a> for dimensionality reduction on the given dataset. </p>
+<p >This will save the newDimension largest principal components of the data and remove the rest. The parameter returned is the amount of variance of the data that is retained; this is a value between 0 and 1. For instance, a value of 0.9 indicates that 90% of the variance present in the data was retained.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">data</td><td >Data matrix. </td></tr>
+    <tr ><td class="paramname">newDimension</td><td >New dimension of the data. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt >Returns</dt><dd >Amount of the variance of the data retained (between 0 and 1). </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a91560515f98cd0414ebe2b62188f614e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double mlpack::pca::PCA::Apply </td>
+          <td >(</td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >data</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em >newDimension</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >This overload is here to make sure int gets casted right to size_t. </p>
+
+<p >Definition at line <a class="el" href="pca_8hpp_source.html#l00089">89</a> of file <a class="el" href="pca_8hpp_source.html">pca.hpp</a>.</p>
+
+<p >References <a class="el" href="classmlpack_1_1pca_1_1PCA.html#adace529d2ef0c4f6af66fca9d237bc03">Apply()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5b23b7e5e147d65c707b318bfc4f2a2a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">double mlpack::pca::PCA::Apply </td>
+          <td >(</td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >data</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >varRetained</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Use <a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a> for dimensionality reduction on the given dataset. </p>
+<p >This will save as many dimensions as necessary to retain at least the given amount of variance (specified by parameter varRetained). The amount should be between 0 and 1; if the amount is 0, then only 1 dimension will be retained. If the amount is 1, then all dimensions will be retained.</p>
+<p >The method returns the actual amount of variance retained, which will always be greater than or equal to the varRetained parameter.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">data</td><td >Data matrix. </td></tr>
+    <tr ><td class="paramname">varRetained</td><td >Lower bound on amount of variance to retain; should be between 0 and 1. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt >Returns</dt><dd >Actual amount of variance retained (between 0 and 1). </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa2d6faab68d1c2cfeb82935f15c2addc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">bool mlpack::pca::PCA::ScaleData </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get whether or not this <a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a> object will scale (by standard deviation) the data when <a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a> is performed. </p>
+
+<p >Definition at line <a class="el" href="pca_8hpp_source.html#l00113">113</a> of file <a class="el" href="pca_8hpp_source.html">pca.hpp</a>.</p>
+
+<p >References <a class="el" href="pca_8hpp_source.html#l00121">scaleData</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9c82a9f1047107f860294da2b6012a78"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">bool&amp; mlpack::pca::PCA::ScaleData </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify whether or not this <a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a> object will scale (by standard deviation) the data when <a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a> is performed. </p>
+
+<p >Definition at line <a class="el" href="pca_8hpp_source.html#l00116">116</a> of file <a class="el" href="pca_8hpp_source.html">pca.hpp</a>.</p>
+
+<p >References <a class="el" href="pca_8hpp_source.html#l00121">scaleData</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ae5ad5257b9ef72487adfb48d15c0cde4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">bool mlpack::pca::PCA::scaleData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Whether or not the data will be scaled by standard deviation when <a class="el" href="classmlpack_1_1pca_1_1PCA.html" title="This class implements principal components analysis (PCA). ">PCA</a> is performed. </p>
+
+<p >Definition at line <a class="el" href="pca_8hpp_source.html#l00121">121</a> of file <a class="el" href="pca_8hpp_source.html">pca.hpp</a>.</p>
+
+<p >Referenced by <a class="el" href="pca_8hpp_source.html#l00113">ScaleData()</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/methods/pca/<a class="el" href="pca_8hpp_source.html">pca.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

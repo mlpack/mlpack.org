@@ -1,0 +1,122 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: src/mlpack/methods/kmeans/pelleg_moore_kmeans.hpp Source File</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li ><a href="annotated.html"><span >Classes</span></a></li>
+      <li class="current"><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="files.html"><span >File&#160;List</span></a></li>
+      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_19fd2ebec21bf6d8aaa7fdf30f286d47.html">methods</a></li><li class="navelem"><a class="el" href="dir_f56d97ae3ab1ece142339914e38f08b0.html">kmeans</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">pelleg_moore_kmeans.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="pelleg__moore__kmeans_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifndef __MLPACK_METHODS_KMEANS_PELLEG_MOORE_KMEANS_HPP</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define __MLPACK_METHODS_KMEANS_PELLEG_MOORE_KMEANS_HPP</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="binary__space__tree_8hpp.html">mlpack/core/tree/binary_space_tree.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pelleg__moore__kmeans__statistic_8hpp.html">pelleg_moore_kmeans_statistic.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>kmeans {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> MetricType, <span class="keyword">typename</span> MatType&gt;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html">   52</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html">PellegMooreKMeans</a></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a30c827eb9caee16997e4a330ff8c224a">PellegMooreKMeans</a>(<span class="keyword">const</span> MatType&amp; <a class="code" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a537074853854f2f65b1ecdba5cc3da52">dataset</a>, MetricType&amp; <a class="code" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a5d7bb81684c5baf941a373463dabcdf7">metric</a>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#ae4cddb2c70f9e94e5a262f4cf90be2cc">~PellegMooreKMeans</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a1b08977bcccd29c85ea078a7b15c813c">Iterate</a>(<span class="keyword">const</span> arma::mat&amp; centroids,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                 arma::mat&amp; newCentroids,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                 arma::Col&lt;size_t&gt;&amp; counts);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#af033b397235931727c52e74535b44b3c">   78</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#af033b397235931727c52e74535b44b3c">DistanceCalculations</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#aba58f0a3adf22bce8580bdfb6b0722c1">distanceCalculations</a>; }</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a7d142dfdaac93129ba67d54845234735">   80</a></span>&#160;  <span class="keywordtype">size_t</span>&amp; <a class="code" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a7d142dfdaac93129ba67d54845234735">DistanceCalculations</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#aba58f0a3adf22bce8580bdfb6b0722c1">distanceCalculations</a>; }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classmlpack_1_1tree_1_1BinarySpaceTree.html">tree::KDTree&lt;MetricType, PellegMooreKMeansStatistic, MatType&gt;</a></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a30c4482f3546d9ffdb99f406a4e28168">   84</a></span>&#160;      <a class="code" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a30c4482f3546d9ffdb99f406a4e28168">TreeType</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a49ae6af14879550363cba8c0b8ad05fd">   88</a></span>&#160;  <span class="keyword">const</span> MatType&amp; <a class="code" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a49ae6af14879550363cba8c0b8ad05fd">datasetOrig</a>; <span class="comment">// Maybe not necessary.</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a5cf76f1fa0dcb38b2dce63d3fcecf326">   90</a></span>&#160;<span class="comment"></span>  <a class="code" href="classmlpack_1_1tree_1_1BinarySpaceTree.html">TreeType</a>* <a class="code" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a5cf76f1fa0dcb38b2dce63d3fcecf326">tree</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a537074853854f2f65b1ecdba5cc3da52">   92</a></span>&#160;  <span class="keyword">const</span> MatType&amp; <a class="code" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a537074853854f2f65b1ecdba5cc3da52">dataset</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a5d7bb81684c5baf941a373463dabcdf7">   94</a></span>&#160;  MetricType&amp; <a class="code" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a5d7bb81684c5baf941a373463dabcdf7">metric</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#aba58f0a3adf22bce8580bdfb6b0722c1">   97</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#aba58f0a3adf22bce8580bdfb6b0722c1">distanceCalculations</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;} <span class="comment">// namespace kmeans</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;} <span class="comment">// namespace mlpack</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#include &quot;pelleg_moore_kmeans_impl.hpp&quot;</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classmlpack_1_1kmeans_1_1PellegMooreKMeans_html_a1b08977bcccd29c85ea078a7b15c813c"><div class="ttname"><a href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a1b08977bcccd29c85ea078a7b15c813c">mlpack::kmeans::PellegMooreKMeans::Iterate</a></div><div class="ttdeci">double Iterate(const arma::mat &amp;centroids, arma::mat &amp;newCentroids, arma::Col&lt; size_t &gt; &amp;counts)</div><div class="ttdoc">Run a single iteration of the Pelleg-Moore blacklist algorithm, updating the given centroids into the...</div></div>
+<div class="ttc" id="classmlpack_1_1kmeans_1_1PellegMooreKMeans_html_a5d7bb81684c5baf941a373463dabcdf7"><div class="ttname"><a href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a5d7bb81684c5baf941a373463dabcdf7">mlpack::kmeans::PellegMooreKMeans::metric</a></div><div class="ttdeci">MetricType &amp; metric</div><div class="ttdoc">The metric. </div><div class="ttdef"><b >Definition:</b> <a href="pelleg__moore__kmeans_8hpp_source.html#l00094">pelleg_moore_kmeans.hpp:94</a></div></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
+<div class="ttc" id="binary__space__tree_8hpp_html"><div class="ttname"><a href="binary__space__tree_8hpp.html">binary_space_tree.hpp</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1BinarySpaceTree_html"><div class="ttname"><a href="classmlpack_1_1tree_1_1BinarySpaceTree.html">mlpack::tree::BinarySpaceTree</a></div><div class="ttdoc">A binary space partitioning tree, such as a KD-tree or a ball tree. </div><div class="ttdef"><b >Definition:</b> <a href="binary__space__tree_2binary__space__tree_8hpp_source.html#l00063">binary_space_tree.hpp:63</a></div></div>
+<div class="ttc" id="classmlpack_1_1kmeans_1_1PellegMooreKMeans_html_a5cf76f1fa0dcb38b2dce63d3fcecf326"><div class="ttname"><a href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a5cf76f1fa0dcb38b2dce63d3fcecf326">mlpack::kmeans::PellegMooreKMeans::tree</a></div><div class="ttdeci">TreeType * tree</div><div class="ttdoc">The tree built on the points. </div><div class="ttdef"><b >Definition:</b> <a href="pelleg__moore__kmeans_8hpp_source.html#l00090">pelleg_moore_kmeans.hpp:90</a></div></div>
+<div class="ttc" id="classmlpack_1_1kmeans_1_1PellegMooreKMeans_html"><div class="ttname"><a href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html">mlpack::kmeans::PellegMooreKMeans</a></div><div class="ttdoc">An implementation of Pelleg-Moore&#39;s &#39;blacklist&#39; algorithm for k-means clustering. ...</div><div class="ttdef"><b >Definition:</b> <a href="pelleg__moore__kmeans_8hpp_source.html#l00052">pelleg_moore_kmeans.hpp:52</a></div></div>
+<div class="ttc" id="pelleg__moore__kmeans__statistic_8hpp_html"><div class="ttname"><a href="pelleg__moore__kmeans__statistic_8hpp.html">pelleg_moore_kmeans_statistic.hpp</a></div></div>
+<div class="ttc" id="classmlpack_1_1kmeans_1_1PellegMooreKMeans_html_af033b397235931727c52e74535b44b3c"><div class="ttname"><a href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#af033b397235931727c52e74535b44b3c">mlpack::kmeans::PellegMooreKMeans::DistanceCalculations</a></div><div class="ttdeci">size_t DistanceCalculations() const </div><div class="ttdoc">Return the number of distance calculations. </div><div class="ttdef"><b >Definition:</b> <a href="pelleg__moore__kmeans_8hpp_source.html#l00078">pelleg_moore_kmeans.hpp:78</a></div></div>
+<div class="ttc" id="classmlpack_1_1kmeans_1_1PellegMooreKMeans_html_aba58f0a3adf22bce8580bdfb6b0722c1"><div class="ttname"><a href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#aba58f0a3adf22bce8580bdfb6b0722c1">mlpack::kmeans::PellegMooreKMeans::distanceCalculations</a></div><div class="ttdeci">size_t distanceCalculations</div><div class="ttdoc">Track distance calculations. </div><div class="ttdef"><b >Definition:</b> <a href="pelleg__moore__kmeans_8hpp_source.html#l00097">pelleg_moore_kmeans.hpp:97</a></div></div>
+<div class="ttc" id="classmlpack_1_1kmeans_1_1PellegMooreKMeans_html_ae4cddb2c70f9e94e5a262f4cf90be2cc"><div class="ttname"><a href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#ae4cddb2c70f9e94e5a262f4cf90be2cc">mlpack::kmeans::PellegMooreKMeans::~PellegMooreKMeans</a></div><div class="ttdeci">~PellegMooreKMeans()</div><div class="ttdoc">Delete the tree constructed by the PellegMooreKMeans object. </div></div>
+<div class="ttc" id="classmlpack_1_1kmeans_1_1PellegMooreKMeans_html_a30c4482f3546d9ffdb99f406a4e28168"><div class="ttname"><a href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a30c4482f3546d9ffdb99f406a4e28168">mlpack::kmeans::PellegMooreKMeans::TreeType</a></div><div class="ttdeci">tree::KDTree&lt; MetricType, PellegMooreKMeansStatistic, MatType &gt; TreeType</div><div class="ttdoc">Convenience typedef for the tree. </div><div class="ttdef"><b >Definition:</b> <a href="pelleg__moore__kmeans_8hpp_source.html#l00084">pelleg_moore_kmeans.hpp:84</a></div></div>
+<div class="ttc" id="classmlpack_1_1kmeans_1_1PellegMooreKMeans_html_a49ae6af14879550363cba8c0b8ad05fd"><div class="ttname"><a href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a49ae6af14879550363cba8c0b8ad05fd">mlpack::kmeans::PellegMooreKMeans::datasetOrig</a></div><div class="ttdeci">const MatType &amp; datasetOrig</div><div class="ttdoc">The original dataset reference. </div><div class="ttdef"><b >Definition:</b> <a href="pelleg__moore__kmeans_8hpp_source.html#l00088">pelleg_moore_kmeans.hpp:88</a></div></div>
+<div class="ttc" id="classmlpack_1_1kmeans_1_1PellegMooreKMeans_html_a537074853854f2f65b1ecdba5cc3da52"><div class="ttname"><a href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a537074853854f2f65b1ecdba5cc3da52">mlpack::kmeans::PellegMooreKMeans::dataset</a></div><div class="ttdeci">const MatType &amp; dataset</div><div class="ttdoc">The dataset we are using. </div><div class="ttdef"><b >Definition:</b> <a href="pelleg__moore__kmeans_8hpp_source.html#l00092">pelleg_moore_kmeans.hpp:92</a></div></div>
+<div class="ttc" id="classmlpack_1_1kmeans_1_1PellegMooreKMeans_html_a30c827eb9caee16997e4a330ff8c224a"><div class="ttname"><a href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a30c827eb9caee16997e4a330ff8c224a">mlpack::kmeans::PellegMooreKMeans::PellegMooreKMeans</a></div><div class="ttdeci">PellegMooreKMeans(const MatType &amp;dataset, MetricType &amp;metric)</div><div class="ttdoc">Construct the PellegMooreKMeans object, which must construct a tree. </div></div>
+<div class="ttc" id="classmlpack_1_1kmeans_1_1PellegMooreKMeans_html_a7d142dfdaac93129ba67d54845234735"><div class="ttname"><a href="classmlpack_1_1kmeans_1_1PellegMooreKMeans.html#a7d142dfdaac93129ba67d54845234735">mlpack::kmeans::PellegMooreKMeans::DistanceCalculations</a></div><div class="ttdeci">size_t &amp; DistanceCalculations()</div><div class="ttdoc">Modify the number of distance calculations. </div><div class="ttdef"><b >Definition:</b> <a href="pelleg__moore__kmeans_8hpp_source.html#l00080">pelleg_moore_kmeans.hpp:80</a></div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

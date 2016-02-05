@@ -1,0 +1,114 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: src/mlpack/methods/hoeffding_trees/numeric_split_info.hpp Source File</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li ><a href="annotated.html"><span >Classes</span></a></li>
+      <li class="current"><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="files.html"><span >File&#160;List</span></a></li>
+      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_19fd2ebec21bf6d8aaa7fdf30f286d47.html">methods</a></li><li class="navelem"><a class="el" href="dir_3b4e99abe36288eb3a93c8f09be5d52b.html">hoeffding_trees</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">numeric_split_info.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="numeric__split__info_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef __MLPACK_METHODS_HOEFFDING_TREES_NUMERIC_SPLIT_INFO_HPP</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define __MLPACK_METHODS_HOEFFDING_TREES_NUMERIC_SPLIT_INFO_HPP</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>tree {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> ObservationType = <span class="keywordtype">double</span>&gt;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1NumericSplitInfo.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1tree_1_1NumericSplitInfo.html">NumericSplitInfo</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1NumericSplitInfo.html#aa71381550ab3aa062e95f86f7e05a6bd">   34</a></span>&#160;  <a class="code" href="classmlpack_1_1tree_1_1NumericSplitInfo.html#aa71381550ab3aa062e95f86f7e05a6bd">NumericSplitInfo</a>() { <span class="comment">/* Nothing to do. */</span> }</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1NumericSplitInfo.html#a9b62cadd66cad1a4782ab640bc539e5e">   35</a></span>&#160;  <a class="code" href="classmlpack_1_1tree_1_1NumericSplitInfo.html#a9b62cadd66cad1a4782ab640bc539e5e">NumericSplitInfo</a>(<span class="keyword">const</span> arma::Col&lt;ObservationType&gt;&amp; <a class="code" href="classmlpack_1_1tree_1_1NumericSplitInfo.html#a412b1f69c08315c03b2b9de5422162a6">splitPoints</a>) :</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      splitPoints(splitPoints) { <span class="comment">/* Nothing to do. */</span> }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> eT&gt;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1NumericSplitInfo.html#a2de6ee7f0a05fe6658a6203aaf43c7f6">   39</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1tree_1_1NumericSplitInfo.html#a2de6ee7f0a05fe6658a6203aaf43c7f6">CalculateDirection</a>(<span class="keyword">const</span> eT&amp; value)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// What bin does the point fall into?</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">size_t</span> bin = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">while</span> (bin &lt; splitPoints.n_elem &amp;&amp; value &gt; <a class="code" href="classmlpack_1_1tree_1_1NumericSplitInfo.html#a412b1f69c08315c03b2b9de5422162a6">splitPoints</a>[bin])</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      ++bin;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> bin;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Archive&gt;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1NumericSplitInfo.html#a75d25f08047877de121375284e4f8495">   51</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1tree_1_1NumericSplitInfo.html#a75d25f08047877de121375284e4f8495">Serialize</a>(Archive&amp; ar, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="comment">/* version */</span>)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    ar &amp; <a class="code" href="namespacemlpack_1_1data.html#afeda624bdd47a8387cc8fb25772e7567">data::CreateNVP</a>(<a class="code" href="classmlpack_1_1tree_1_1NumericSplitInfo.html#a412b1f69c08315c03b2b9de5422162a6">splitPoints</a>, <span class="stringliteral">&quot;splitPoints&quot;</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1NumericSplitInfo.html#a412b1f69c08315c03b2b9de5422162a6">   57</a></span>&#160;  arma::Col&lt;ObservationType&gt; <a class="code" href="classmlpack_1_1tree_1_1NumericSplitInfo.html#a412b1f69c08315c03b2b9de5422162a6">splitPoints</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;} <span class="comment">// namespace tree</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;} <span class="comment">// namespace mlpack</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
+<div class="ttc" id="namespacemlpack_1_1data_html_afeda624bdd47a8387cc8fb25772e7567"><div class="ttname"><a href="namespacemlpack_1_1data.html#afeda624bdd47a8387cc8fb25772e7567">mlpack::data::CreateNVP</a></div><div class="ttdeci">FirstShim&lt; T &gt; CreateNVP(T &amp;t, const std::string &amp;name, typename boost::enable_if&lt; HasSerialize&lt; T &gt;&gt;::type *=0)</div><div class="ttdoc">Call this function to produce a name-value pair; this is similar to BOOST_SERIALIZATION_NVP(), but should be used for types that have a Serialize() function (or contain a type that has a Serialize() function) instead of a serialize() function. </div><div class="ttdef"><b >Definition:</b> <a href="serialization__shim_8hpp_source.html#l00103">serialization_shim.hpp:103</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1NumericSplitInfo_html_a2de6ee7f0a05fe6658a6203aaf43c7f6"><div class="ttname"><a href="classmlpack_1_1tree_1_1NumericSplitInfo.html#a2de6ee7f0a05fe6658a6203aaf43c7f6">mlpack::tree::NumericSplitInfo::CalculateDirection</a></div><div class="ttdeci">size_t CalculateDirection(const eT &amp;value) const </div><div class="ttdef"><b >Definition:</b> <a href="numeric__split__info_8hpp_source.html#l00039">numeric_split_info.hpp:39</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1NumericSplitInfo_html_a412b1f69c08315c03b2b9de5422162a6"><div class="ttname"><a href="classmlpack_1_1tree_1_1NumericSplitInfo.html#a412b1f69c08315c03b2b9de5422162a6">mlpack::tree::NumericSplitInfo::splitPoints</a></div><div class="ttdeci">arma::Col&lt; ObservationType &gt; splitPoints</div><div class="ttdef"><b >Definition:</b> <a href="numeric__split__info_8hpp_source.html#l00057">numeric_split_info.hpp:57</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1NumericSplitInfo_html_aa71381550ab3aa062e95f86f7e05a6bd"><div class="ttname"><a href="classmlpack_1_1tree_1_1NumericSplitInfo.html#aa71381550ab3aa062e95f86f7e05a6bd">mlpack::tree::NumericSplitInfo::NumericSplitInfo</a></div><div class="ttdeci">NumericSplitInfo()</div><div class="ttdef"><b >Definition:</b> <a href="numeric__split__info_8hpp_source.html#l00034">numeric_split_info.hpp:34</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1NumericSplitInfo_html"><div class="ttname"><a href="classmlpack_1_1tree_1_1NumericSplitInfo.html">mlpack::tree::NumericSplitInfo</a></div><div class="ttdef"><b >Definition:</b> <a href="numeric__split__info_8hpp_source.html#l00031">numeric_split_info.hpp:31</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1NumericSplitInfo_html_a75d25f08047877de121375284e4f8495"><div class="ttname"><a href="classmlpack_1_1tree_1_1NumericSplitInfo.html#a75d25f08047877de121375284e4f8495">mlpack::tree::NumericSplitInfo::Serialize</a></div><div class="ttdeci">void Serialize(Archive &amp;ar, const unsigned int)</div><div class="ttdoc">Serialize the split (save/load the split points). </div><div class="ttdef"><b >Definition:</b> <a href="numeric__split__info_8hpp_source.html#l00051">numeric_split_info.hpp:51</a></div></div>
+<div class="ttc" id="core_8hpp_html"><div class="ttname"><a href="core_8hpp.html">core.hpp</a></div><div class="ttdoc">Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu...</div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1NumericSplitInfo_html_a9b62cadd66cad1a4782ab640bc539e5e"><div class="ttname"><a href="classmlpack_1_1tree_1_1NumericSplitInfo.html#a9b62cadd66cad1a4782ab640bc539e5e">mlpack::tree::NumericSplitInfo::NumericSplitInfo</a></div><div class="ttdeci">NumericSplitInfo(const arma::Col&lt; ObservationType &gt; &amp;splitPoints)</div><div class="ttdef"><b >Definition:</b> <a href="numeric__split__info_8hpp_source.html#l00035">numeric_split_info.hpp:35</a></div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

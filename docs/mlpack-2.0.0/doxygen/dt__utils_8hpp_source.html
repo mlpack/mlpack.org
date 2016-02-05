@@ -1,0 +1,100 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: src/mlpack/methods/det/dt_utils.hpp Source File</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li ><a href="annotated.html"><span >Classes</span></a></li>
+      <li class="current"><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="files.html"><span >File&#160;List</span></a></li>
+      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_19fd2ebec21bf6d8aaa7fdf30f286d47.html">methods</a></li><li class="navelem"><a class="el" href="dir_c64ff149db45464615907e689a980f27.html">det</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">dt_utils.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="dt__utils_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifndef __MLPACK_METHODS_DET_DT_UTILS_HPP</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define __MLPACK_METHODS_DET_DT_UTILS_HPP</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dtree_8hpp.html">dtree.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="namespacemlpack_1_1det.html">   30</a></span>&#160;<span class="keyword">namespace </span>det {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1det.html#aa47b4eeebeb1cfaec56b97a9e0f46bf5">PrintLeafMembership</a>(<a class="code" href="classmlpack_1_1det_1_1DTree.html">DTree</a>* dtree,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                         <span class="keyword">const</span> arma::mat&amp; data,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                         <span class="keyword">const</span> arma::Mat&lt;size_t&gt;&amp; labels,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                         <span class="keyword">const</span> <span class="keywordtype">size_t</span> numClasses,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                         <span class="keyword">const</span> std::string leafClassMembershipFile = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1det.html#aeee50c5f4c8d0cec3b88313e84965773">PrintVariableImportance</a>(<span class="keyword">const</span> <a class="code" href="classmlpack_1_1det_1_1DTree.html">DTree</a>* dtree,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                             <span class="keyword">const</span> std::string viFile = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<a class="code" href="classmlpack_1_1det_1_1DTree.html">DTree</a>* <a class="code" href="namespacemlpack_1_1det.html#ac00c29df49a801a81ad64514a9eaa3ba">Trainer</a>(arma::mat&amp; dataset,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;               <span class="keyword">const</span> <span class="keywordtype">size_t</span> folds,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;               <span class="keyword">const</span> <span class="keywordtype">bool</span> useVolumeReg = <span class="keyword">false</span>,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;               <span class="keyword">const</span> <span class="keywordtype">size_t</span> maxLeafSize = 10,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;               <span class="keyword">const</span> <span class="keywordtype">size_t</span> minLeafSize = 5,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;               <span class="keyword">const</span> std::string unprunedTreeOutput = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;} <span class="comment">// namespace det</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;} <span class="comment">// namespace mlpack</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif // __MLPACK_METHODS_DET_DT_UTILS_HPP</span></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
+<div class="ttc" id="namespacemlpack_1_1det_html_aa47b4eeebeb1cfaec56b97a9e0f46bf5"><div class="ttname"><a href="namespacemlpack_1_1det.html#aa47b4eeebeb1cfaec56b97a9e0f46bf5">mlpack::det::PrintLeafMembership</a></div><div class="ttdeci">void PrintLeafMembership(DTree *dtree, const arma::mat &amp;data, const arma::Mat&lt; size_t &gt; &amp;labels, const size_t numClasses, const std::string leafClassMembershipFile=&quot;&quot;)</div><div class="ttdoc">Print the membership of leaves of a density estimation tree given the labels and number of classes...</div></div>
+<div class="ttc" id="dtree_8hpp_html"><div class="ttname"><a href="dtree_8hpp.html">dtree.hpp</a></div></div>
+<div class="ttc" id="core_8hpp_html"><div class="ttname"><a href="core_8hpp.html">core.hpp</a></div><div class="ttdoc">Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu...</div></div>
+<div class="ttc" id="namespacemlpack_1_1det_html_aeee50c5f4c8d0cec3b88313e84965773"><div class="ttname"><a href="namespacemlpack_1_1det.html#aeee50c5f4c8d0cec3b88313e84965773">mlpack::det::PrintVariableImportance</a></div><div class="ttdeci">void PrintVariableImportance(const DTree *dtree, const std::string viFile=&quot;&quot;)</div><div class="ttdoc">Print the variable importance of each dimension of a density estimation tree. </div></div>
+<div class="ttc" id="namespacemlpack_1_1det_html_ac00c29df49a801a81ad64514a9eaa3ba"><div class="ttname"><a href="namespacemlpack_1_1det.html#ac00c29df49a801a81ad64514a9eaa3ba">mlpack::det::Trainer</a></div><div class="ttdeci">DTree * Trainer(arma::mat &amp;dataset, const size_t folds, const bool useVolumeReg=false, const size_t maxLeafSize=10, const size_t minLeafSize=5, const std::string unprunedTreeOutput=&quot;&quot;)</div><div class="ttdoc">Train the optimal decision tree using cross-validation with the given number of folds. </div></div>
+<div class="ttc" id="classmlpack_1_1det_1_1DTree_html"><div class="ttname"><a href="classmlpack_1_1det_1_1DTree.html">mlpack::det::DTree</a></div><div class="ttdoc">A density estimation tree is similar to both a decision tree and a space partitioning tree (like a kd...</div><div class="ttdef"><b >Definition:</b> <a href="dtree_8hpp_source.html#l00054">dtree.hpp:54</a></div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

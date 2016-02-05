@@ -1,0 +1,142 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: src/mlpack/core/tree/binary_space_tree/dual_tree_traverser.hpp Source File</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li ><a href="annotated.html"><span >Classes</span></a></li>
+      <li class="current"><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="files.html"><span >File&#160;List</span></a></li>
+      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_88282adca4d2b894221008e7ea77ce6c.html">core</a></li><li class="navelem"><a class="el" href="dir_4b5a3653ee1f129925d3425d2f2631c9.html">tree</a></li><li class="navelem"><a class="el" href="dir_fa04266f1156fe046fe482522b0edd44.html">binary_space_tree</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">dual_tree_traverser.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="binary__space__tree_2dual__tree__traverser_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifndef __MLPACK_CORE_TREE_BINARY_SPACE_TREE_DUAL_TREE_TRAVERSER_HPP</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define __MLPACK_CORE_TREE_BINARY_SPACE_TREE_DUAL_TREE_TRAVERSER_HPP</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="binary__space__tree_2binary__space__tree_8hpp.html">binary_space_tree.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>tree {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> MetricType,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;         <span class="keyword">typename</span> StatisticType,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;         <span class="keyword">typename</span> MatType,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;         <span class="keyword">template</span>&lt;<span class="keyword">typename</span> BoundMetricType&gt; <span class="keyword">class </span>BoundType,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;         <span class="keyword">template</span>&lt;<span class="keyword">typename</span> SplitBoundType, <span class="keyword">typename</span> SplitMatType&gt;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;             <span class="keyword">class </span>SplitType&gt;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> RuleType&gt;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">class </span>BinarySpaceTree&lt;MetricType, StatisticType, MatType, BoundType,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                      SplitType&gt;::DualTreeTraverser</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  DualTreeTraverser(RuleType&amp; rule);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> Traverse(<a class="code" href="classmlpack_1_1tree_1_1BinarySpaceTree.html#afa70e3ce35ee7e4ee3e3e57d3a1b91ee">BinarySpaceTree</a>&amp; queryNode,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <a class="code" href="classmlpack_1_1tree_1_1BinarySpaceTree.html#afa70e3ce35ee7e4ee3e3e57d3a1b91ee">BinarySpaceTree</a>&amp; referenceNode);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a48d204e0d3fda5fa9badaa9e68c3e06b">   62</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a48d204e0d3fda5fa9badaa9e68c3e06b">NumPrunes</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> numPrunes; }</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a611d8bb789dafac32f1d4bd7ce6eb4b0">   64</a></span>&#160;  <span class="keywordtype">size_t</span>&amp; <a class="code" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a611d8bb789dafac32f1d4bd7ce6eb4b0">NumPrunes</a>() { <span class="keywordflow">return</span> numPrunes; }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a815190442e5c937d786dc260a0fe986e">   67</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a815190442e5c937d786dc260a0fe986e">NumVisited</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> numVisited; }</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a3135027381ec0008462c5dde60d1c773">   69</a></span>&#160;  <span class="keywordtype">size_t</span>&amp; <a class="code" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a3135027381ec0008462c5dde60d1c773">NumVisited</a>() { <span class="keywordflow">return</span> numVisited; }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a51ce69c27e55b13d9ddf67f3ea906172">   72</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a51ce69c27e55b13d9ddf67f3ea906172">NumScores</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> numScores; }</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#ab2f9cf92bdfc6676d65081719dc5ef0d">   74</a></span>&#160;  <span class="keywordtype">size_t</span>&amp; <a class="code" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#ab2f9cf92bdfc6676d65081719dc5ef0d">NumScores</a>() { <span class="keywordflow">return</span> numScores; }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a29d18e2a85f028d5b722e1c2ae5f6213">   77</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a29d18e2a85f028d5b722e1c2ae5f6213">NumBaseCases</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> numBaseCases; }</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a9b20c936a89534ee456b9cc0063d1c28">   79</a></span>&#160;  <span class="keywordtype">size_t</span>&amp; <a class="code" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a9b20c936a89534ee456b9cc0063d1c28">NumBaseCases</a>() { <span class="keywordflow">return</span> numBaseCases; }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a939da9268b4b27955c49aa59788a017f">   83</a></span>&#160;  RuleType&amp; <a class="code" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a939da9268b4b27955c49aa59788a017f">rule</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a1e685f75fdd7869bddebb26fe8950555">   86</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a1e685f75fdd7869bddebb26fe8950555">numPrunes</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a840ea99c90963e3dbda417525da21647">   89</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a840ea99c90963e3dbda417525da21647">numVisited</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#afef4eddce6f14acd743f239935f1c13b">   92</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#afef4eddce6f14acd743f239935f1c13b">numScores</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#af8d7940dffc9d3b0048e78ed33f08f51">   95</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#af8d7940dffc9d3b0048e78ed33f08f51">numBaseCases</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a3ec9715887f31380acc6c0645f766e1a">   99</a></span>&#160;  <span class="keyword">typename</span> RuleType::TraversalInfoType <a class="code" href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a3ec9715887f31380acc6c0645f766e1a">traversalInfo</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;} <span class="comment">// namespace tree</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;} <span class="comment">// namespace mlpack</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">// Include implementation.</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#include &quot;dual_tree_traverser_impl.hpp&quot;</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif // __MLPACK_CORE_TREE_BINARY_SPACE_TREE_DUAL_TREE_TRAVERSER_HPP</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="ttc" id="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser_html_a840ea99c90963e3dbda417525da21647"><div class="ttname"><a href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a840ea99c90963e3dbda417525da21647">mlpack::tree::BinarySpaceTree::DualTreeTraverser::numVisited</a></div><div class="ttdeci">size_t numVisited</div><div class="ttdoc">The number of node combinations that have been visited during traversal. </div><div class="ttdef"><b >Definition:</b> <a href="binary__space__tree_2dual__tree__traverser_8hpp_source.html#l00089">dual_tree_traverser.hpp:89</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser_html_afef4eddce6f14acd743f239935f1c13b"><div class="ttname"><a href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#afef4eddce6f14acd743f239935f1c13b">mlpack::tree::BinarySpaceTree::DualTreeTraverser::numScores</a></div><div class="ttdeci">size_t numScores</div><div class="ttdoc">The number of times a node combination was scored. </div><div class="ttdef"><b >Definition:</b> <a href="binary__space__tree_2dual__tree__traverser_8hpp_source.html#l00092">dual_tree_traverser.hpp:92</a></div></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser_html_a1e685f75fdd7869bddebb26fe8950555"><div class="ttname"><a href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a1e685f75fdd7869bddebb26fe8950555">mlpack::tree::BinarySpaceTree::DualTreeTraverser::numPrunes</a></div><div class="ttdeci">size_t numPrunes</div><div class="ttdoc">The number of prunes. </div><div class="ttdef"><b >Definition:</b> <a href="binary__space__tree_2dual__tree__traverser_8hpp_source.html#l00086">dual_tree_traverser.hpp:86</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser_html_a48d204e0d3fda5fa9badaa9e68c3e06b"><div class="ttname"><a href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a48d204e0d3fda5fa9badaa9e68c3e06b">mlpack::tree::BinarySpaceTree::DualTreeTraverser::NumPrunes</a></div><div class="ttdeci">size_t NumPrunes() const </div><div class="ttdoc">Get the number of prunes. </div><div class="ttdef"><b >Definition:</b> <a href="binary__space__tree_2dual__tree__traverser_8hpp_source.html#l00062">dual_tree_traverser.hpp:62</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser_html_a939da9268b4b27955c49aa59788a017f"><div class="ttname"><a href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a939da9268b4b27955c49aa59788a017f">mlpack::tree::BinarySpaceTree::DualTreeTraverser::rule</a></div><div class="ttdeci">RuleType &amp; rule</div><div class="ttdoc">Reference to the rules with which the trees will be traversed. </div><div class="ttdef"><b >Definition:</b> <a href="binary__space__tree_2dual__tree__traverser_8hpp_source.html#l00083">dual_tree_traverser.hpp:83</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser_html_a29d18e2a85f028d5b722e1c2ae5f6213"><div class="ttname"><a href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a29d18e2a85f028d5b722e1c2ae5f6213">mlpack::tree::BinarySpaceTree::DualTreeTraverser::NumBaseCases</a></div><div class="ttdeci">size_t NumBaseCases() const </div><div class="ttdoc">Get the number of times a base case was calculated. </div><div class="ttdef"><b >Definition:</b> <a href="binary__space__tree_2dual__tree__traverser_8hpp_source.html#l00077">dual_tree_traverser.hpp:77</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser_html_a815190442e5c937d786dc260a0fe986e"><div class="ttname"><a href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a815190442e5c937d786dc260a0fe986e">mlpack::tree::BinarySpaceTree::DualTreeTraverser::NumVisited</a></div><div class="ttdeci">size_t NumVisited() const </div><div class="ttdoc">Get the number of visited combinations. </div><div class="ttdef"><b >Definition:</b> <a href="binary__space__tree_2dual__tree__traverser_8hpp_source.html#l00067">dual_tree_traverser.hpp:67</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser_html_a3ec9715887f31380acc6c0645f766e1a"><div class="ttname"><a href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a3ec9715887f31380acc6c0645f766e1a">mlpack::tree::BinarySpaceTree::DualTreeTraverser::traversalInfo</a></div><div class="ttdeci">RuleType::TraversalInfoType traversalInfo</div><div class="ttdoc">Traversal information, held in the class so that it isn&#39;t continually being reallocated. </div><div class="ttdef"><b >Definition:</b> <a href="binary__space__tree_2dual__tree__traverser_8hpp_source.html#l00099">dual_tree_traverser.hpp:99</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser_html_a51ce69c27e55b13d9ddf67f3ea906172"><div class="ttname"><a href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a51ce69c27e55b13d9ddf67f3ea906172">mlpack::tree::BinarySpaceTree::DualTreeTraverser::NumScores</a></div><div class="ttdeci">size_t NumScores() const </div><div class="ttdoc">Get the number of times a node combination was scored. </div><div class="ttdef"><b >Definition:</b> <a href="binary__space__tree_2dual__tree__traverser_8hpp_source.html#l00072">dual_tree_traverser.hpp:72</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1BinarySpaceTree_html_afa70e3ce35ee7e4ee3e3e57d3a1b91ee"><div class="ttname"><a href="classmlpack_1_1tree_1_1BinarySpaceTree.html#afa70e3ce35ee7e4ee3e3e57d3a1b91ee">mlpack::tree::BinarySpaceTree::BinarySpaceTree</a></div><div class="ttdeci">BinarySpaceTree()</div><div class="ttdoc">A default constructor. </div></div>
+<div class="ttc" id="core_8hpp_html"><div class="ttname"><a href="core_8hpp.html">core.hpp</a></div><div class="ttdoc">Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu...</div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser_html_ab2f9cf92bdfc6676d65081719dc5ef0d"><div class="ttname"><a href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#ab2f9cf92bdfc6676d65081719dc5ef0d">mlpack::tree::BinarySpaceTree::DualTreeTraverser::NumScores</a></div><div class="ttdeci">size_t &amp; NumScores()</div><div class="ttdoc">Modify the number of times a node combination was scored. </div><div class="ttdef"><b >Definition:</b> <a href="binary__space__tree_2dual__tree__traverser_8hpp_source.html#l00074">dual_tree_traverser.hpp:74</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser_html_a3135027381ec0008462c5dde60d1c773"><div class="ttname"><a href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a3135027381ec0008462c5dde60d1c773">mlpack::tree::BinarySpaceTree::DualTreeTraverser::NumVisited</a></div><div class="ttdeci">size_t &amp; NumVisited()</div><div class="ttdoc">Modify the number of visited combinations. </div><div class="ttdef"><b >Definition:</b> <a href="binary__space__tree_2dual__tree__traverser_8hpp_source.html#l00069">dual_tree_traverser.hpp:69</a></div></div>
+<div class="ttc" id="binary__space__tree_2binary__space__tree_8hpp_html"><div class="ttname"><a href="binary__space__tree_2binary__space__tree_8hpp.html">binary_space_tree.hpp</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser_html_a611d8bb789dafac32f1d4bd7ce6eb4b0"><div class="ttname"><a href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a611d8bb789dafac32f1d4bd7ce6eb4b0">mlpack::tree::BinarySpaceTree::DualTreeTraverser::NumPrunes</a></div><div class="ttdeci">size_t &amp; NumPrunes()</div><div class="ttdoc">Modify the number of prunes. </div><div class="ttdef"><b >Definition:</b> <a href="binary__space__tree_2dual__tree__traverser_8hpp_source.html#l00064">dual_tree_traverser.hpp:64</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser_html_a9b20c936a89534ee456b9cc0063d1c28"><div class="ttname"><a href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#a9b20c936a89534ee456b9cc0063d1c28">mlpack::tree::BinarySpaceTree::DualTreeTraverser::NumBaseCases</a></div><div class="ttdeci">size_t &amp; NumBaseCases()</div><div class="ttdoc">Modify the number of times a base case was calculated. </div><div class="ttdef"><b >Definition:</b> <a href="binary__space__tree_2dual__tree__traverser_8hpp_source.html#l00079">dual_tree_traverser.hpp:79</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser_html_af8d7940dffc9d3b0048e78ed33f08f51"><div class="ttname"><a href="classmlpack_1_1tree_1_1BinarySpaceTree_1_1DualTreeTraverser.html#af8d7940dffc9d3b0048e78ed33f08f51">mlpack::tree::BinarySpaceTree::DualTreeTraverser::numBaseCases</a></div><div class="ttdeci">size_t numBaseCases</div><div class="ttdoc">The number of times a base case was calculated. </div><div class="ttdef"><b >Definition:</b> <a href="binary__space__tree_2dual__tree__traverser_8hpp_source.html#l00095">dual_tree_traverser.hpp:95</a></div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

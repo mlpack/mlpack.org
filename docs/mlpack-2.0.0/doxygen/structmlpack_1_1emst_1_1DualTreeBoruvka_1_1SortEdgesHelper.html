@@ -1,0 +1,127 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: mlpack::emst::DualTreeBoruvka&lt; MetricType, MatType, TreeType &gt;::SortEdgesHelper Struct Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span >Classes</span></a></li>
+      <li ><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="annotated.html"><span >Class&#160;List</span></a></li>
+      <li ><a href="classes.html"><span >Class&#160;Index</span></a></li>
+      <li ><a href="inherits.html"><span >Class&#160;Hierarchy</span></a></li>
+      <li ><a href="functions.html"><span >Class&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1emst.html">emst</a></li><li class="navelem"><a class="el" href="classmlpack_1_1emst_1_1DualTreeBoruvka.html">DualTreeBoruvka</a></li><li class="navelem"><a class="el" href="structmlpack_1_1emst_1_1DualTreeBoruvka_1_1SortEdgesHelper.html">SortEdgesHelper</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="structmlpack_1_1emst_1_1DualTreeBoruvka_1_1SortEdgesHelper-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mlpack::emst::DualTreeBoruvka&lt; MetricType, MatType, TreeType &gt;::SortEdgesHelper Struct Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >For sorting the edge list after the computation.  
+ <a href="structmlpack_1_1emst_1_1DualTreeBoruvka_1_1SortEdgesHelper.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a59726387b62b52ed6894008591f06ca4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlpack_1_1emst_1_1DualTreeBoruvka_1_1SortEdgesHelper.html#a59726387b62b52ed6894008591f06ca4">operator()</a> (const <a class="el" href="classmlpack_1_1emst_1_1EdgePair.html">EdgePair</a> &amp;pairA, const <a class="el" href="classmlpack_1_1emst_1_1EdgePair.html">EdgePair</a> &amp;pairB)</td></tr>
+<tr class="separator:a59726387b62b52ed6894008591f06ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3 ><br /><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">metric::EuclideanDistance</div></div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">arma::mat</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeMetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeStatType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeMatType</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">TreeType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">tree::KDTree</div></div><div class="close_bracket">&gt;</div></div></div></div></div></br>
+struct mlpack::emst::DualTreeBoruvka&lt; MetricType, MatType, TreeType &gt;::SortEdgesHelper</h3>
+
+<p >For sorting the edge list after the computation. </p>
+
+<p >Definition at line <a class="el" href="dtb_8hpp_source.html#l00132">132</a> of file <a class="el" href="dtb_8hpp_source.html">dtb.hpp</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a59726387b62b52ed6894008591f06ca4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">metric::EuclideanDistance</div></div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">arma::mat</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeMetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeStatType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeMatType</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">TreeType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">tree::KDTree</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">bool <a class="el" href="classmlpack_1_1emst_1_1DualTreeBoruvka.html">mlpack::emst::DualTreeBoruvka</a>&lt; MetricType, MatType, TreeType &gt;::SortEdgesHelper::operator() </td>
+          <td >(</td>
+          <td class="paramtype">const <a class="el" href="classmlpack_1_1emst_1_1EdgePair.html">EdgePair</a> &amp;&#160;</td>
+          <td class="paramname"><em >pairA</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const <a class="el" href="classmlpack_1_1emst_1_1EdgePair.html">EdgePair</a> &amp;&#160;</td>
+          <td class="paramname"><em >pairB</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Definition at line <a class="el" href="dtb_8hpp_source.html#l00134">134</a> of file <a class="el" href="dtb_8hpp_source.html">dtb.hpp</a>.</p>
+
+<p >References <a class="el" href="edge__pair_8hpp_source.html#l00073">mlpack::emst::EdgePair::Distance()</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this struct was generated from the following file:<ul >
+<li >src/mlpack/methods/emst/<a class="el" href="dtb_8hpp_source.html">dtb.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

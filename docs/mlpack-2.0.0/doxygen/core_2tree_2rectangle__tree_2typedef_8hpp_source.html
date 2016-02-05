@@ -1,0 +1,104 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: src/mlpack/core/tree/rectangle_tree/typedef.hpp Source File</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li ><a href="annotated.html"><span >Classes</span></a></li>
+      <li class="current"><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="files.html"><span >File&#160;List</span></a></li>
+      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_88282adca4d2b894221008e7ea77ce6c.html">core</a></li><li class="navelem"><a class="el" href="dir_4b5a3653ee1f129925d3425d2f2631c9.html">tree</a></li><li class="navelem"><a class="el" href="dir_e5f38ecd718d0b6d23b153381884cf6d.html">rectangle_tree</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">typedef.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="core_2tree_2rectangle__tree_2typedef_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifndef __MLPACK_CORE_TREE_RECTANGLE_TREE_TYPEDEF_HPP</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define __MLPACK_CORE_TREE_RECTANGLE_TREE_TYPEDEF_HPP</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rectangle__tree_2rectangle__tree_8hpp.html">rectangle_tree.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span>tree {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> MetricType, <span class="keyword">typename</span> StatisticType, <span class="keyword">typename</span> MatType&gt;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">using</span> <a class="code" href="namespacemlpack_1_1tree.html#ae9e12acec37727ae9a4dbca379ba4317">RTree</a> = RectangleTree&lt;MetricType,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                            StatisticType,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                            MatType,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                            RTreeSplit,</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="namespacemlpack_1_1tree.html#ae9e12acec37727ae9a4dbca379ba4317">   56</a></span>&#160;                            <a class="code" href="classmlpack_1_1tree_1_1RTreeDescentHeuristic.html">RTreeDescentHeuristic</a>&gt;;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> MetricType, <span class="keyword">typename</span> StatisticType, <span class="keyword">typename</span> MatType&gt;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">using</span> <a class="code" href="classmlpack_1_1tree_1_1RectangleTree.html">RStarTree</a> = <a class="code" href="classmlpack_1_1tree_1_1RectangleTree.html">RectangleTree</a>&lt;MetricType,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                StatisticType,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                MatType,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                <a class="code" href="classmlpack_1_1tree_1_1RStarTreeSplit.html">RStarTreeSplit</a>,</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="namespacemlpack_1_1tree.html#adbf07e6ff61d2d7840b2c7ea88d25fb7">   83</a></span>&#160;                                <a class="code" href="classmlpack_1_1tree_1_1RStarTreeDescentHeuristic.html">RStarTreeDescentHeuristic</a>&gt;;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">//template&lt;typename MetricType, typename StatisticType, typename MatType&gt;</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">//using XTree = RectangleTree&lt;MetricType,</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">//                            StatisticType,</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">//                            MatType,</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">//                            XTreeSplit,</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">//                            XTreeDescentHeuristic&gt;;</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;} <span class="comment">// namespace tree</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;} <span class="comment">// namespace mlpack</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
+<div class="ttc" id="namespacemlpack_1_1tree_html_ae9e12acec37727ae9a4dbca379ba4317"><div class="ttname"><a href="namespacemlpack_1_1tree.html#ae9e12acec37727ae9a4dbca379ba4317">mlpack::tree::RTree</a></div><div class="ttdeci">RectangleTree&lt; MetricType, StatisticType, MatType, RTreeSplit, RTreeDescentHeuristic &gt; RTree</div><div class="ttdoc">An implementation of the R tree that satisfies the TreeType policy API. </div><div class="ttdef"><b >Definition:</b> <a href="core_2tree_2rectangle__tree_2typedef_8hpp_source.html#l00056">typedef.hpp:56</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1RectangleTree_html"><div class="ttname"><a href="classmlpack_1_1tree_1_1RectangleTree.html">mlpack::tree::RectangleTree</a></div><div class="ttdoc">A rectangle type tree tree, such as an R-tree or X-tree. </div><div class="ttdef"><b >Definition:</b> <a href="rectangle__tree_2rectangle__tree_8hpp_source.html#l00058">rectangle_tree.hpp:58</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1RStarTreeSplit_html"><div class="ttname"><a href="classmlpack_1_1tree_1_1RStarTreeSplit.html">mlpack::tree::RStarTreeSplit</a></div><div class="ttdoc">A Rectangle Tree has new points inserted at the bottom. </div><div class="ttdef"><b >Definition:</b> <a href="r__star__tree__split_8hpp_source.html#l00036">r_star_tree_split.hpp:36</a></div></div>
+<div class="ttc" id="rectangle__tree_2rectangle__tree_8hpp_html"><div class="ttname"><a href="rectangle__tree_2rectangle__tree_8hpp.html">rectangle_tree.hpp</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1RStarTreeDescentHeuristic_html"><div class="ttname"><a href="classmlpack_1_1tree_1_1RStarTreeDescentHeuristic.html">mlpack::tree::RStarTreeDescentHeuristic</a></div><div class="ttdoc">When descending a Rectangle tree to insert a point, we need to have a way to choose a child node when...</div><div class="ttdef"><b >Definition:</b> <a href="r__star__tree__descent__heuristic_8hpp_source.html#l00036">r_star_tree_descent_heuristic.hpp:36</a></div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1RTreeDescentHeuristic_html"><div class="ttname"><a href="classmlpack_1_1tree_1_1RTreeDescentHeuristic.html">mlpack::tree::RTreeDescentHeuristic</a></div><div class="ttdoc">When descending a RectangleTree to insert a point, we need to have a way to choose a child node when ...</div><div class="ttdef"><b >Definition:</b> <a href="r__tree__descent__heuristic_8hpp_source.html#l00036">r_tree_descent_heuristic.hpp:36</a></div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

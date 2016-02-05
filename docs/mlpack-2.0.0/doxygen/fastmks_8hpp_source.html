@@ -1,0 +1,190 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: src/mlpack/methods/fastmks/fastmks.hpp Source File</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li ><a href="annotated.html"><span >Classes</span></a></li>
+      <li class="current"><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="files.html"><span >File&#160;List</span></a></li>
+      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_19fd2ebec21bf6d8aaa7fdf30f286d47.html">methods</a></li><li class="navelem"><a class="el" href="dir_e6c81ce8a6b3f8b641010869374f3f01.html">fastmks</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">fastmks.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="fastmks_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifndef __MLPACK_METHODS_FASTMKS_FASTMKS_HPP</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define __MLPACK_METHODS_FASTMKS_FASTMKS_HPP</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ip__metric_8hpp.html">mlpack/core/metrics/ip_metric.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="fastmks__stat_8hpp.html">fastmks_stat.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cover__tree_8hpp.html">mlpack/core/tree/cover_tree.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="namespacemlpack_1_1fastmks.html">   32</a></span>&#160;<span class="keyword">namespace </span>fastmks  {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">template</span>&lt;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">typename</span> KernelType,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">typename</span> MatType = arma::mat,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TreeMetricType,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;             <span class="keyword">typename</span> TreeStatType,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;             <span class="keyword">typename</span> TreeMatType&gt; <span class="keyword">class </span>TreeType = <a class="code" href="classmlpack_1_1tree_1_1CoverTree.html">tree::StandardCoverTree</a></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;&gt;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classmlpack_1_1fastmks_1_1FastMKS.html">   72</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html">FastMKS</a></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classmlpack_1_1fastmks_1_1FastMKS.html#a8356e084e0fc325bc78b488374d49cd3">   76</a></span>&#160;  <span class="keyword">typedef</span> TreeType&lt;metric::IPMetric&lt;KernelType&gt;, <a class="code" href="classmlpack_1_1fastmks_1_1FastMKSStat.html">FastMKSStat</a>, MatType&gt; <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a8356e084e0fc325bc78b488374d49cd3">Tree</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a97388ce6bfd2a64483f048cbaf0a0948">FastMKS</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#ae82f4acece0ba9666cbc02e83af44276">singleMode</a> = <span class="keyword">false</span>, <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a916790de36c206488d6fdf36901c7cbf">naive</a> = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a97388ce6bfd2a64483f048cbaf0a0948">FastMKS</a>(<span class="keyword">const</span> MatType&amp; <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a00d1bb48c7a4bda9c6df67d5e88e386d">referenceSet</a>,</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;          <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#ae82f4acece0ba9666cbc02e83af44276">singleMode</a> = <span class="keyword">false</span>,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;          <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a916790de36c206488d6fdf36901c7cbf">naive</a> = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a97388ce6bfd2a64483f048cbaf0a0948">FastMKS</a>(<span class="keyword">const</span> MatType&amp; <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a00d1bb48c7a4bda9c6df67d5e88e386d">referenceSet</a>,</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;          KernelType&amp; kernel,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;          <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#ae82f4acece0ba9666cbc02e83af44276">singleMode</a> = <span class="keyword">false</span>,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;          <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a916790de36c206488d6fdf36901c7cbf">naive</a> = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a97388ce6bfd2a64483f048cbaf0a0948">FastMKS</a>(Tree* <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#ad6682cd3139ea20c0a8c034093f23b00">referenceTree</a>,</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;          <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#ae82f4acece0ba9666cbc02e83af44276">singleMode</a> = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a1aadb1664b5174f963edef9a07f816e5">~FastMKS</a>();</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a1d0853f5bc2f2e9f37fe289e664d73bd">Train</a>(<span class="keyword">const</span> MatType&amp; <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a00d1bb48c7a4bda9c6df67d5e88e386d">referenceSet</a>);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a1d0853f5bc2f2e9f37fe289e664d73bd">Train</a>(<span class="keyword">const</span> MatType&amp; <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a00d1bb48c7a4bda9c6df67d5e88e386d">referenceSet</a>, KernelType&amp; kernel);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a1d0853f5bc2f2e9f37fe289e664d73bd">Train</a>(Tree* <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#ad6682cd3139ea20c0a8c034093f23b00">referenceTree</a>);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#ad2da7df9b8e8d7122e135ebe6882720b">Search</a>(<span class="keyword">const</span> MatType&amp; querySet,</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;              <span class="keyword">const</span> <span class="keywordtype">size_t</span> k,</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;              arma::Mat&lt;size_t&gt;&amp; indices,</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;              arma::mat&amp; kernels);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#ad2da7df9b8e8d7122e135ebe6882720b">Search</a>(Tree* querySet,</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;              <span class="keyword">const</span> <span class="keywordtype">size_t</span> k,</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;              arma::Mat&lt;size_t&gt;&amp; indices,</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;              arma::mat&amp; kernels);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#ad2da7df9b8e8d7122e135ebe6882720b">Search</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> k,</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;              arma::Mat&lt;size_t&gt;&amp; indices,</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;              arma::mat&amp; products);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="classmlpack_1_1fastmks_1_1FastMKS.html#aa2f358ec981cf2f58346bc5c1b500250">  231</a></span>&#160;  <span class="keyword">const</span> <a class="code" href="classmlpack_1_1metric_1_1IPMetric.html">metric::IPMetric&lt;KernelType&gt;</a>&amp; <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#aa2f358ec981cf2f58346bc5c1b500250">Metric</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a2abc93f02e1c890b98938903efee4d90">metric</a>; }</div>
+<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="classmlpack_1_1fastmks_1_1FastMKS.html#ab377ba4ad53c024d6133be54c1f76fc9">  233</a></span>&#160;  <a class="code" href="classmlpack_1_1metric_1_1IPMetric.html">metric::IPMetric&lt;KernelType&gt;</a>&amp; <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#ab377ba4ad53c024d6133be54c1f76fc9">Metric</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a2abc93f02e1c890b98938903efee4d90">metric</a>; }</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="classmlpack_1_1fastmks_1_1FastMKS.html#a79999fcc0325a7279c39ee84014ce952">  236</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a79999fcc0325a7279c39ee84014ce952">SingleMode</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#ae82f4acece0ba9666cbc02e83af44276">singleMode</a>; }</div>
+<div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="classmlpack_1_1fastmks_1_1FastMKS.html#a4788c6a86ac17402ee36ffe1cd5dee8c">  238</a></span>&#160;  <span class="keywordtype">bool</span>&amp; <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a4788c6a86ac17402ee36ffe1cd5dee8c">SingleMode</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#ae82f4acece0ba9666cbc02e83af44276">singleMode</a>; }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="classmlpack_1_1fastmks_1_1FastMKS.html#a9bfa73dd5be821b58670688bcc734527">  241</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a9bfa73dd5be821b58670688bcc734527">Naive</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a916790de36c206488d6fdf36901c7cbf">naive</a>; }</div>
+<div class="line"><a name="l00243"></a><span class="lineno"><a class="line" href="classmlpack_1_1fastmks_1_1FastMKS.html#a6e8dbda7545650617d0c395c8691fa36">  243</a></span>&#160;  <span class="keywordtype">bool</span>&amp; <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a6e8dbda7545650617d0c395c8691fa36">Naive</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a916790de36c206488d6fdf36901c7cbf">naive</a>; }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Archive&gt;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a75193dccbc442faf6cfc3badf7c3544a">Serialize</a>(Archive&amp; ar, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="comment">/* version */</span>);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="classmlpack_1_1fastmks_1_1FastMKS.html#a00d1bb48c7a4bda9c6df67d5e88e386d">  252</a></span>&#160;  <span class="keyword">const</span> MatType* <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a00d1bb48c7a4bda9c6df67d5e88e386d">referenceSet</a>;</div>
+<div class="line"><a name="l00254"></a><span class="lineno"><a class="line" href="classmlpack_1_1fastmks_1_1FastMKS.html#ad6682cd3139ea20c0a8c034093f23b00">  254</a></span>&#160;  Tree* <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#ad6682cd3139ea20c0a8c034093f23b00">referenceTree</a>;</div>
+<div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="classmlpack_1_1fastmks_1_1FastMKS.html#ac971d02510603dbe359a2f26a44d027c">  256</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#ac971d02510603dbe359a2f26a44d027c">treeOwner</a>;</div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="classmlpack_1_1fastmks_1_1FastMKS.html#a64814ca2e056052e17c250949b08f872">  258</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a64814ca2e056052e17c250949b08f872">setOwner</a>;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="classmlpack_1_1fastmks_1_1FastMKS.html#ae82f4acece0ba9666cbc02e83af44276">  261</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#ae82f4acece0ba9666cbc02e83af44276">singleMode</a>;</div>
+<div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="classmlpack_1_1fastmks_1_1FastMKS.html#a916790de36c206488d6fdf36901c7cbf">  263</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a916790de36c206488d6fdf36901c7cbf">naive</a>;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno"><a class="line" href="classmlpack_1_1fastmks_1_1FastMKS.html#a2abc93f02e1c890b98938903efee4d90">  266</a></span>&#160;  <a class="code" href="classmlpack_1_1metric_1_1IPMetric.html">metric::IPMetric&lt;KernelType&gt;</a> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a2abc93f02e1c890b98938903efee4d90">metric</a>;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1fastmks_1_1FastMKS.html#a993cc120f12d14d4b3536ab4ec112ea5">InsertNeighbor</a>(arma::Mat&lt;size_t&gt;&amp; indices,</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                      arma::mat&amp; products,</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                      <span class="keyword">const</span> <span class="keywordtype">size_t</span> queryIndex,</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                      <span class="keyword">const</span> <span class="keywordtype">size_t</span> pos,</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                      <span class="keyword">const</span> <span class="keywordtype">size_t</span> neighbor,</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                      <span class="keyword">const</span> <span class="keywordtype">double</span> distance);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;};</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;} <span class="comment">// namespace fastmks</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;} <span class="comment">// namespace mlpack</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="comment">// Include implementation.</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor">#include &quot;fastmks_impl.hpp&quot;</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classmlpack_1_1fastmks_1_1FastMKS_html_ac971d02510603dbe359a2f26a44d027c"><div class="ttname"><a href="classmlpack_1_1fastmks_1_1FastMKS.html#ac971d02510603dbe359a2f26a44d027c">mlpack::fastmks::FastMKS::treeOwner</a></div><div class="ttdeci">bool treeOwner</div><div class="ttdoc">If true, this object created the tree and is responsible for it. </div><div class="ttdef"><b >Definition:</b> <a href="fastmks_8hpp_source.html#l00256">fastmks.hpp:256</a></div></div>
+<div class="ttc" id="classmlpack_1_1fastmks_1_1FastMKS_html_a1d0853f5bc2f2e9f37fe289e664d73bd"><div class="ttname"><a href="classmlpack_1_1fastmks_1_1FastMKS.html#a1d0853f5bc2f2e9f37fe289e664d73bd">mlpack::fastmks::FastMKS::Train</a></div><div class="ttdeci">void Train(const MatType &amp;referenceSet)</div><div class="ttdoc">"Train" the FastMKS model on the given reference set (this will just build a tree, if the current search mode is not naive mode). </div></div>
+<div class="ttc" id="classmlpack_1_1fastmks_1_1FastMKS_html_a6e8dbda7545650617d0c395c8691fa36"><div class="ttname"><a href="classmlpack_1_1fastmks_1_1FastMKS.html#a6e8dbda7545650617d0c395c8691fa36">mlpack::fastmks::FastMKS::Naive</a></div><div class="ttdeci">bool &amp; Naive()</div><div class="ttdoc">Modify whether or not brute-force (naive) search is used. </div><div class="ttdef"><b >Definition:</b> <a href="fastmks_8hpp_source.html#l00243">fastmks.hpp:243</a></div></div>
+<div class="ttc" id="ip__metric_8hpp_html"><div class="ttname"><a href="ip__metric_8hpp.html">ip_metric.hpp</a></div></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
+<div class="ttc" id="classmlpack_1_1fastmks_1_1FastMKS_html_a64814ca2e056052e17c250949b08f872"><div class="ttname"><a href="classmlpack_1_1fastmks_1_1FastMKS.html#a64814ca2e056052e17c250949b08f872">mlpack::fastmks::FastMKS::setOwner</a></div><div class="ttdeci">bool setOwner</div><div class="ttdoc">If true, we own the dataset. This happens in only a few situations. </div><div class="ttdef"><b >Definition:</b> <a href="fastmks_8hpp_source.html#l00258">fastmks.hpp:258</a></div></div>
+<div class="ttc" id="classmlpack_1_1fastmks_1_1FastMKS_html_ae82f4acece0ba9666cbc02e83af44276"><div class="ttname"><a href="classmlpack_1_1fastmks_1_1FastMKS.html#ae82f4acece0ba9666cbc02e83af44276">mlpack::fastmks::FastMKS::singleMode</a></div><div class="ttdeci">bool singleMode</div><div class="ttdoc">If true, single-tree search is used. </div><div class="ttdef"><b >Definition:</b> <a href="fastmks_8hpp_source.html#l00261">fastmks.hpp:261</a></div></div>
+<div class="ttc" id="cover__tree_8hpp_html"><div class="ttname"><a href="cover__tree_8hpp.html">cover_tree.hpp</a></div></div>
+<div class="ttc" id="classmlpack_1_1fastmks_1_1FastMKS_html_a4788c6a86ac17402ee36ffe1cd5dee8c"><div class="ttname"><a href="classmlpack_1_1fastmks_1_1FastMKS.html#a4788c6a86ac17402ee36ffe1cd5dee8c">mlpack::fastmks::FastMKS::SingleMode</a></div><div class="ttdeci">bool &amp; SingleMode()</div><div class="ttdoc">Modify whether or not single-tree search is used. </div><div class="ttdef"><b >Definition:</b> <a href="fastmks_8hpp_source.html#l00238">fastmks.hpp:238</a></div></div>
+<div class="ttc" id="classmlpack_1_1fastmks_1_1FastMKS_html_a9bfa73dd5be821b58670688bcc734527"><div class="ttname"><a href="classmlpack_1_1fastmks_1_1FastMKS.html#a9bfa73dd5be821b58670688bcc734527">mlpack::fastmks::FastMKS::Naive</a></div><div class="ttdeci">bool Naive() const </div><div class="ttdoc">Get whether or not brute-force (naive) search is used. </div><div class="ttdef"><b >Definition:</b> <a href="fastmks_8hpp_source.html#l00241">fastmks.hpp:241</a></div></div>
+<div class="ttc" id="classmlpack_1_1metric_1_1IPMetric_html"><div class="ttname"><a href="classmlpack_1_1metric_1_1IPMetric.html">mlpack::metric::IPMetric</a></div><div class="ttdoc">The inner product metric, IPMetric, takes a given Mercer kernel (KernelType), and when Evaluate() is ...</div><div class="ttdef"><b >Definition:</b> <a href="ip__metric_8hpp_source.html#l00042">ip_metric.hpp:42</a></div></div>
+<div class="ttc" id="fastmks__stat_8hpp_html"><div class="ttname"><a href="fastmks__stat_8hpp.html">fastmks_stat.hpp</a></div></div>
+<div class="ttc" id="classmlpack_1_1fastmks_1_1FastMKS_html_ad6682cd3139ea20c0a8c034093f23b00"><div class="ttname"><a href="classmlpack_1_1fastmks_1_1FastMKS.html#ad6682cd3139ea20c0a8c034093f23b00">mlpack::fastmks::FastMKS::referenceTree</a></div><div class="ttdeci">Tree * referenceTree</div><div class="ttdoc">The tree built on the reference dataset. </div><div class="ttdef"><b >Definition:</b> <a href="fastmks_8hpp_source.html#l00254">fastmks.hpp:254</a></div></div>
+<div class="ttc" id="classmlpack_1_1fastmks_1_1FastMKS_html_a97388ce6bfd2a64483f048cbaf0a0948"><div class="ttname"><a href="classmlpack_1_1fastmks_1_1FastMKS.html#a97388ce6bfd2a64483f048cbaf0a0948">mlpack::fastmks::FastMKS::FastMKS</a></div><div class="ttdeci">FastMKS(const bool singleMode=false, const bool naive=false)</div><div class="ttdoc">Create the FastMKS object with an empty reference set and default kernel. </div></div>
+<div class="ttc" id="classmlpack_1_1fastmks_1_1FastMKS_html_a1aadb1664b5174f963edef9a07f816e5"><div class="ttname"><a href="classmlpack_1_1fastmks_1_1FastMKS.html#a1aadb1664b5174f963edef9a07f816e5">mlpack::fastmks::FastMKS::~FastMKS</a></div><div class="ttdeci">~FastMKS()</div><div class="ttdoc">Destructor for the FastMKS object. </div></div>
+<div class="ttc" id="classmlpack_1_1fastmks_1_1FastMKS_html_aa2f358ec981cf2f58346bc5c1b500250"><div class="ttname"><a href="classmlpack_1_1fastmks_1_1FastMKS.html#aa2f358ec981cf2f58346bc5c1b500250">mlpack::fastmks::FastMKS::Metric</a></div><div class="ttdeci">const metric::IPMetric&lt; KernelType &gt; &amp; Metric() const </div><div class="ttdoc">Get the inner-product metric induced by the given kernel. </div><div class="ttdef"><b >Definition:</b> <a href="fastmks_8hpp_source.html#l00231">fastmks.hpp:231</a></div></div>
+<div class="ttc" id="classmlpack_1_1fastmks_1_1FastMKS_html_ab377ba4ad53c024d6133be54c1f76fc9"><div class="ttname"><a href="classmlpack_1_1fastmks_1_1FastMKS.html#ab377ba4ad53c024d6133be54c1f76fc9">mlpack::fastmks::FastMKS::Metric</a></div><div class="ttdeci">metric::IPMetric&lt; KernelType &gt; &amp; Metric()</div><div class="ttdoc">Modify the inner-product metric induced by the given kernel. </div><div class="ttdef"><b >Definition:</b> <a href="fastmks_8hpp_source.html#l00233">fastmks.hpp:233</a></div></div>
+<div class="ttc" id="core_8hpp_html"><div class="ttname"><a href="core_8hpp.html">core.hpp</a></div><div class="ttdoc">Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu...</div></div>
+<div class="ttc" id="classmlpack_1_1fastmks_1_1FastMKS_html_a79999fcc0325a7279c39ee84014ce952"><div class="ttname"><a href="classmlpack_1_1fastmks_1_1FastMKS.html#a79999fcc0325a7279c39ee84014ce952">mlpack::fastmks::FastMKS::SingleMode</a></div><div class="ttdeci">bool SingleMode() const </div><div class="ttdoc">Get whether or not single-tree search is used. </div><div class="ttdef"><b >Definition:</b> <a href="fastmks_8hpp_source.html#l00236">fastmks.hpp:236</a></div></div>
+<div class="ttc" id="classmlpack_1_1fastmks_1_1FastMKS_html_a993cc120f12d14d4b3536ab4ec112ea5"><div class="ttname"><a href="classmlpack_1_1fastmks_1_1FastMKS.html#a993cc120f12d14d4b3536ab4ec112ea5">mlpack::fastmks::FastMKS::InsertNeighbor</a></div><div class="ttdeci">void InsertNeighbor(arma::Mat&lt; size_t &gt; &amp;indices, arma::mat &amp;products, const size_t queryIndex, const size_t pos, const size_t neighbor, const double distance)</div><div class="ttdoc">Utility function. Copied too many times from too many places. </div></div>
+<div class="ttc" id="classmlpack_1_1fastmks_1_1FastMKSStat_html"><div class="ttname"><a href="classmlpack_1_1fastmks_1_1FastMKSStat.html">mlpack::fastmks::FastMKSStat</a></div><div class="ttdoc">The statistic used in trees with FastMKS. </div><div class="ttdef"><b >Definition:</b> <a href="fastmks__stat_8hpp_source.html#l00035">fastmks_stat.hpp:35</a></div></div>
+<div class="ttc" id="classmlpack_1_1fastmks_1_1FastMKS_html_a8356e084e0fc325bc78b488374d49cd3"><div class="ttname"><a href="classmlpack_1_1fastmks_1_1FastMKS.html#a8356e084e0fc325bc78b488374d49cd3">mlpack::fastmks::FastMKS::Tree</a></div><div class="ttdeci">TreeType&lt; metric::IPMetric&lt; KernelType &gt;, FastMKSStat, MatType &gt; Tree</div><div class="ttdoc">Convenience typedef. </div><div class="ttdef"><b >Definition:</b> <a href="fastmks_8hpp_source.html#l00076">fastmks.hpp:76</a></div></div>
+<div class="ttc" id="classmlpack_1_1fastmks_1_1FastMKS_html_a2abc93f02e1c890b98938903efee4d90"><div class="ttname"><a href="classmlpack_1_1fastmks_1_1FastMKS.html#a2abc93f02e1c890b98938903efee4d90">mlpack::fastmks::FastMKS::metric</a></div><div class="ttdeci">metric::IPMetric&lt; KernelType &gt; metric</div><div class="ttdoc">The instantiated inner-product metric induced by the given kernel. </div><div class="ttdef"><b >Definition:</b> <a href="fastmks_8hpp_source.html#l00266">fastmks.hpp:266</a></div></div>
+<div class="ttc" id="classmlpack_1_1fastmks_1_1FastMKS_html_a00d1bb48c7a4bda9c6df67d5e88e386d"><div class="ttname"><a href="classmlpack_1_1fastmks_1_1FastMKS.html#a00d1bb48c7a4bda9c6df67d5e88e386d">mlpack::fastmks::FastMKS::referenceSet</a></div><div class="ttdeci">const MatType * referenceSet</div><div class="ttdoc">The reference dataset. </div><div class="ttdef"><b >Definition:</b> <a href="fastmks_8hpp_source.html#l00252">fastmks.hpp:252</a></div></div>
+<div class="ttc" id="classmlpack_1_1fastmks_1_1FastMKS_html_ad2da7df9b8e8d7122e135ebe6882720b"><div class="ttname"><a href="classmlpack_1_1fastmks_1_1FastMKS.html#ad2da7df9b8e8d7122e135ebe6882720b">mlpack::fastmks::FastMKS::Search</a></div><div class="ttdeci">void Search(const MatType &amp;querySet, const size_t k, arma::Mat&lt; size_t &gt; &amp;indices, arma::mat &amp;kernels)</div><div class="ttdoc">Search for the points in the reference set with maximum kernel evaluation to each point in the given ...</div></div>
+<div class="ttc" id="classmlpack_1_1fastmks_1_1FastMKS_html_a916790de36c206488d6fdf36901c7cbf"><div class="ttname"><a href="classmlpack_1_1fastmks_1_1FastMKS.html#a916790de36c206488d6fdf36901c7cbf">mlpack::fastmks::FastMKS::naive</a></div><div class="ttdeci">bool naive</div><div class="ttdoc">If true, naive (brute-force) search is used. </div><div class="ttdef"><b >Definition:</b> <a href="fastmks_8hpp_source.html#l00263">fastmks.hpp:263</a></div></div>
+<div class="ttc" id="classmlpack_1_1fastmks_1_1FastMKS_html"><div class="ttname"><a href="classmlpack_1_1fastmks_1_1FastMKS.html">mlpack::fastmks::FastMKS</a></div><div class="ttdoc">An implementation of fast exact max-kernel search. </div><div class="ttdef"><b >Definition:</b> <a href="fastmks_8hpp_source.html#l00072">fastmks.hpp:72</a></div></div>
+<div class="ttc" id="classmlpack_1_1fastmks_1_1FastMKS_html_a75193dccbc442faf6cfc3badf7c3544a"><div class="ttname"><a href="classmlpack_1_1fastmks_1_1FastMKS.html#a75193dccbc442faf6cfc3badf7c3544a">mlpack::fastmks::FastMKS::Serialize</a></div><div class="ttdeci">void Serialize(Archive &amp;ar, const unsigned int)</div><div class="ttdoc">Serialize the model. </div></div>
+<div class="ttc" id="classmlpack_1_1tree_1_1CoverTree_html"><div class="ttname"><a href="classmlpack_1_1tree_1_1CoverTree.html">mlpack::tree::CoverTree</a></div><div class="ttdoc">A cover tree is a tree specifically designed to speed up nearest-neighbor computation in high-dimensi...</div><div class="ttdef"><b >Definition:</b> <a href="cover__tree_2cover__tree_8hpp_source.html#l00106">cover_tree.hpp:106</a></div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

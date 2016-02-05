@@ -1,0 +1,100 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: src/mlpack/methods/hmm/hmm_util.hpp Source File</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li ><a href="annotated.html"><span >Classes</span></a></li>
+      <li class="current"><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="files.html"><span >File&#160;List</span></a></li>
+      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_19fd2ebec21bf6d8aaa7fdf30f286d47.html">methods</a></li><li class="navelem"><a class="el" href="dir_a8f4a9b5cfa77be69e7a00c036a35e06.html">hmm</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">hmm_util.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="hmm__util_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef __MLPACK_METHODS_HMM_HMM_UTIL_HPP</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define __MLPACK_METHODS_HMM_HMM_UTIL_HPP</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>hmm {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="namespacemlpack_1_1hmm.html#a8a727790f859edd88bd4b7f123798ea8">   32</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacemlpack_1_1hmm.html#a8a727790f859edd88bd4b7f123798ea8">HMMType</a> : <span class="keywordtype">char</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="namespacemlpack_1_1hmm.html#a8a727790f859edd88bd4b7f123798ea8a5ec849081750707747a76dac6f74bd65">   34</a></span>&#160;  <a class="code" href="namespacemlpack_1_1hmm.html#a8a727790f859edd88bd4b7f123798ea8a5ec849081750707747a76dac6f74bd65">DiscreteHMM</a> = 0,</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespacemlpack_1_1hmm.html#a8a727790f859edd88bd4b7f123798ea8a993234f7ce763bda29b3be277cd185b2">   35</a></span>&#160;  <a class="code" href="namespacemlpack_1_1hmm.html#a8a727790f859edd88bd4b7f123798ea8a993234f7ce763bda29b3be277cd185b2">GaussianHMM</a>,</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespacemlpack_1_1hmm.html#a8a727790f859edd88bd4b7f123798ea8a951fb2110cb1d5c83e1426ac3a89641e">   36</a></span>&#160;  <a class="code" href="namespacemlpack_1_1hmm.html#a8a727790f859edd88bd4b7f123798ea8a951fb2110cb1d5c83e1426ac3a89641e">GaussianMixtureModelHMM</a></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> ActionType, <span class="keyword">typename</span> ExtraInfoType = <span class="keywordtype">void</span>&gt;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1hmm.html#a096edad8f73173064a7dcc8bc5626298">LoadHMMAndPerformAction</a>(<span class="keyword">const</span> std::string&amp; modelFile,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                             ExtraInfoType* x = NULL);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> HMMType&gt;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1hmm.html#a35e2585a8da30e70484008c4e2a56972">SaveHMM</a>(<a class="code" href="namespacemlpack_1_1hmm.html#a8a727790f859edd88bd4b7f123798ea8">HMMType</a>&amp; hmm, <span class="keyword">const</span> std::string&amp; modelFile);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <span class="comment">// namespace hmm</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;} <span class="comment">// namespace mlpack</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#include &quot;hmm_util_impl.hpp&quot;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="namespacemlpack_1_1hmm_html_a8a727790f859edd88bd4b7f123798ea8a993234f7ce763bda29b3be277cd185b2"><div class="ttname"><a href="namespacemlpack_1_1hmm.html#a8a727790f859edd88bd4b7f123798ea8a993234f7ce763bda29b3be277cd185b2">mlpack::hmm::GaussianHMM</a></div><div class="ttdef"><b >Definition:</b> <a href="hmm__util_8hpp_source.html#l00035">hmm_util.hpp:35</a></div></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
+<div class="ttc" id="namespacemlpack_1_1hmm_html_a096edad8f73173064a7dcc8bc5626298"><div class="ttname"><a href="namespacemlpack_1_1hmm.html#a096edad8f73173064a7dcc8bc5626298">mlpack::hmm::LoadHMMAndPerformAction</a></div><div class="ttdeci">void LoadHMMAndPerformAction(const std::string &amp;modelFile, ExtraInfoType *x=NULL)</div><div class="ttdoc">ActionType should implement static void Apply(HMMType&). </div></div>
+<div class="ttc" id="namespacemlpack_1_1hmm_html_a8a727790f859edd88bd4b7f123798ea8"><div class="ttname"><a href="namespacemlpack_1_1hmm.html#a8a727790f859edd88bd4b7f123798ea8">mlpack::hmm::HMMType</a></div><div class="ttdeci">HMMType</div><div class="ttdoc">HMMType, to be stored on disk. </div><div class="ttdef"><b >Definition:</b> <a href="hmm__util_8hpp_source.html#l00032">hmm_util.hpp:32</a></div></div>
+<div class="ttc" id="namespacemlpack_1_1hmm_html_a8a727790f859edd88bd4b7f123798ea8a5ec849081750707747a76dac6f74bd65"><div class="ttname"><a href="namespacemlpack_1_1hmm.html#a8a727790f859edd88bd4b7f123798ea8a5ec849081750707747a76dac6f74bd65">mlpack::hmm::DiscreteHMM</a></div><div class="ttdef"><b >Definition:</b> <a href="hmm__util_8hpp_source.html#l00034">hmm_util.hpp:34</a></div></div>
+<div class="ttc" id="namespacemlpack_1_1hmm_html_a8a727790f859edd88bd4b7f123798ea8a951fb2110cb1d5c83e1426ac3a89641e"><div class="ttname"><a href="namespacemlpack_1_1hmm.html#a8a727790f859edd88bd4b7f123798ea8a951fb2110cb1d5c83e1426ac3a89641e">mlpack::hmm::GaussianMixtureModelHMM</a></div><div class="ttdef"><b >Definition:</b> <a href="hmm__util_8hpp_source.html#l00036">hmm_util.hpp:36</a></div></div>
+<div class="ttc" id="core_8hpp_html"><div class="ttname"><a href="core_8hpp.html">core.hpp</a></div><div class="ttdoc">Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu...</div></div>
+<div class="ttc" id="namespacemlpack_1_1hmm_html_a35e2585a8da30e70484008c4e2a56972"><div class="ttname"><a href="namespacemlpack_1_1hmm.html#a35e2585a8da30e70484008c4e2a56972">mlpack::hmm::SaveHMM</a></div><div class="ttdeci">void SaveHMM(HMMType &amp;hmm, const std::string &amp;modelFile)</div><div class="ttdoc">Save an HMM to a file. </div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

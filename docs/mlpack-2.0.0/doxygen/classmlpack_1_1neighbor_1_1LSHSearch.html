@@ -1,0 +1,1424 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: mlpack::neighbor::LSHSearch&lt; SortPolicy &gt; Class Template Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span >Classes</span></a></li>
+      <li ><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="annotated.html"><span >Class&#160;List</span></a></li>
+      <li ><a href="classes.html"><span >Class&#160;Index</span></a></li>
+      <li ><a href="inherits.html"><span >Class&#160;Hierarchy</span></a></li>
+      <li ><a href="functions.html"><span >Class&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1neighbor.html">neighbor</a></li><li class="navelem"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">LSHSearch</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classmlpack_1_1neighbor_1_1LSHSearch-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mlpack::neighbor::LSHSearch&lt; SortPolicy &gt; Class Template Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >The <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html" title="The LSHSearch class; this class builds a hash on the reference set and uses this hash to compute the ...">LSHSearch</a> class; this class builds a hash on the reference set and uses this hash to compute the distance-approximate nearest-neighbors of the given queries.  
+ <a href="classmlpack_1_1neighbor_1_1LSHSearch.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aa73976fa89f5358aa51e0640124d1947"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#aa73976fa89f5358aa51e0640124d1947">LSHSearch</a> (const arma::mat &amp;<a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#ab131bc24b9ad07ee9ff9eb7e4c600e62">referenceSet</a>, const size_t <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#ade500324c9dac3e002300b1ce94b31ee">numProj</a>, const size_t <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a3d7a6952a9fd15e58fc81878c741a2a2">numTables</a>, const double <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#ac765c095b3b77eb485f801bc3fbd7ca8">hashWidth</a>=0.0, const size_t <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a23a181b89e6a7a6024bc4c941acdc3a4">secondHashSize</a>=99901, const size_t <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a9cfd125d3b1abbe53c1d5fafec722814">bucketSize</a>=500)</td></tr>
+<tr class="memdesc:aa73976fa89f5358aa51e0640124d1947"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function initializes the LSH class.  <a href="#aa73976fa89f5358aa51e0640124d1947">More...</a><br /></br></td></tr>
+<tr class="separator:aa73976fa89f5358aa51e0640124d1947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a499b01e2439a996689ab924361358d18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a499b01e2439a996689ab924361358d18">LSHSearch</a> ()</td></tr>
+<tr class="memdesc:a499b01e2439a996689ab924361358d18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an untrained LSH model.  <a href="#a499b01e2439a996689ab924361358d18">More...</a><br /></br></td></tr>
+<tr class="separator:a499b01e2439a996689ab924361358d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3204354ed10d2e154e159ab05b0cce9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#af3204354ed10d2e154e159ab05b0cce9">~LSHSearch</a> ()</td></tr>
+<tr class="memdesc:af3204354ed10d2e154e159ab05b0cce9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean memory.  <a href="#af3204354ed10d2e154e159ab05b0cce9">More...</a><br /></br></td></tr>
+<tr class="separator:af3204354ed10d2e154e159ab05b0cce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09fcb9c8823a1232f0187c76109dfea6"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a09fcb9c8823a1232f0187c76109dfea6">BucketSize</a> () const </td></tr>
+<tr class="memdesc:a09fcb9c8823a1232f0187c76109dfea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the bucket size of the second hash.  <a href="#a09fcb9c8823a1232f0187c76109dfea6">More...</a><br /></br></td></tr>
+<tr class="separator:a09fcb9c8823a1232f0187c76109dfea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0667d5e5b01dfd9b2694b1291603e9f2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a0667d5e5b01dfd9b2694b1291603e9f2">DistanceEvaluations</a> () const </td></tr>
+<tr class="memdesc:a0667d5e5b01dfd9b2694b1291603e9f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of distance evaluations performed.  <a href="#a0667d5e5b01dfd9b2694b1291603e9f2">More...</a><br /></br></td></tr>
+<tr class="separator:a0667d5e5b01dfd9b2694b1291603e9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78b0fbb840d90d166297f747ea70953f"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a78b0fbb840d90d166297f747ea70953f">DistanceEvaluations</a> ()</td></tr>
+<tr class="memdesc:a78b0fbb840d90d166297f747ea70953f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the number of distance evaluations performed.  <a href="#a78b0fbb840d90d166297f747ea70953f">More...</a><br /></br></td></tr>
+<tr class="separator:a78b0fbb840d90d166297f747ea70953f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a812b124cef808b3dce508cad0148c456"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a812b124cef808b3dce508cad0148c456">NumProjections</a> () const </td></tr>
+<tr class="memdesc:a812b124cef808b3dce508cad0148c456"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of projections.  <a href="#a812b124cef808b3dce508cad0148c456">More...</a><br /></br></td></tr>
+<tr class="separator:a812b124cef808b3dce508cad0148c456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a451e52da1f5b157923dfa8bbf2cf4114"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a451e52da1f5b157923dfa8bbf2cf4114">Offsets</a> () const </td></tr>
+<tr class="memdesc:a451e52da1f5b157923dfa8bbf2cf4114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the offsets 'b' for each of the projections. (One 'b' per column.)  <a href="#a451e52da1f5b157923dfa8bbf2cf4114">More...</a><br /></br></td></tr>
+<tr class="separator:a451e52da1f5b157923dfa8bbf2cf4114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65da11f551d1ca613f09cd4590328d07"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a65da11f551d1ca613f09cd4590328d07">Projection</a> (const size_t i) const </td></tr>
+<tr class="memdesc:a65da11f551d1ca613f09cd4590328d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the projection matrix of the given table.  <a href="#a65da11f551d1ca613f09cd4590328d07">More...</a><br /></br></td></tr>
+<tr class="separator:a65da11f551d1ca613f09cd4590328d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3080a9c8940e0740b3bae3a287a6087"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#ab3080a9c8940e0740b3bae3a287a6087">ReferenceSet</a> () const </td></tr>
+<tr class="memdesc:ab3080a9c8940e0740b3bae3a287a6087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the reference dataset.  <a href="#ab3080a9c8940e0740b3bae3a287a6087">More...</a><br /></br></td></tr>
+<tr class="separator:ab3080a9c8940e0740b3bae3a287a6087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1855642a15a94330e0f7f61abf0cbac9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a1855642a15a94330e0f7f61abf0cbac9">Search</a> (const arma::mat &amp;querySet, const size_t k, arma::Mat&lt; size_t &gt; &amp;resultingNeighbors, arma::mat &amp;distances, const size_t numTablesToSearch=0)</td></tr>
+<tr class="memdesc:a1855642a15a94330e0f7f61abf0cbac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the nearest neighbors of the points in the given query set and store the output in the given matrices.  <a href="#a1855642a15a94330e0f7f61abf0cbac9">More...</a><br /></br></td></tr>
+<tr class="separator:a1855642a15a94330e0f7f61abf0cbac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afffe4f94e48025f4b832be8ad4a93ab9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#afffe4f94e48025f4b832be8ad4a93ab9">Search</a> (const size_t k, arma::Mat&lt; size_t &gt; &amp;resultingNeighbors, arma::mat &amp;distances, const size_t numTablesToSearch=0)</td></tr>
+<tr class="memdesc:afffe4f94e48025f4b832be8ad4a93ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the nearest neighbors and store the output in the given matrices.  <a href="#afffe4f94e48025f4b832be8ad4a93ab9">More...</a><br /></br></td></tr>
+<tr class="separator:afffe4f94e48025f4b832be8ad4a93ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc4e12c9c79142d18fe6e6faf96567d1"><td class="memItemLeft" align="right" valign="top">const arma::Mat&lt; size_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#adc4e12c9c79142d18fe6e6faf96567d1">SecondHashTable</a> () const </td></tr>
+<tr class="memdesc:adc4e12c9c79142d18fe6e6faf96567d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the second hash table.  <a href="#adc4e12c9c79142d18fe6e6faf96567d1">More...</a><br /></br></td></tr>
+<tr class="separator:adc4e12c9c79142d18fe6e6faf96567d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad10d1a5d5ed1eeb9fac80153f732d8"><td class="memItemLeft" align="right" valign="top">const arma::vec &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a2ad10d1a5d5ed1eeb9fac80153f732d8">SecondHashWeights</a> () const </td></tr>
+<tr class="memdesc:a2ad10d1a5d5ed1eeb9fac80153f732d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the weights of the second hash.  <a href="#a2ad10d1a5d5ed1eeb9fac80153f732d8">More...</a><br /></br></td></tr>
+<tr class="separator:a2ad10d1a5d5ed1eeb9fac80153f732d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac17f71cfd13acc87ec99db6484fb99f"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:aac17f71cfd13acc87ec99db6484fb99f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#aac17f71cfd13acc87ec99db6484fb99f">Serialize</a> (Archive &amp;ar, const unsigned int)</td></tr>
+<tr class="memdesc:aac17f71cfd13acc87ec99db6484fb99f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the LSH model.  <a href="#aac17f71cfd13acc87ec99db6484fb99f">More...</a><br /></br></td></tr>
+<tr class="separator:aac17f71cfd13acc87ec99db6484fb99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a506ffc4d5a1fc492fbb77aa40437256c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a506ffc4d5a1fc492fbb77aa40437256c">Train</a> (const arma::mat &amp;<a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#ab131bc24b9ad07ee9ff9eb7e4c600e62">referenceSet</a>, const size_t <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#ade500324c9dac3e002300b1ce94b31ee">numProj</a>, const size_t <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a3d7a6952a9fd15e58fc81878c741a2a2">numTables</a>, const double <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#ac765c095b3b77eb485f801bc3fbd7ca8">hashWidth</a>=0.0, const size_t <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a23a181b89e6a7a6024bc4c941acdc3a4">secondHashSize</a>=99901, const size_t <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a9cfd125d3b1abbe53c1d5fafec722814">bucketSize</a>=500)</td></tr>
+<tr class="memdesc:a506ffc4d5a1fc492fbb77aa40437256c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Train the LSH model on the given dataset.  <a href="#a506ffc4d5a1fc492fbb77aa40437256c">More...</a><br /></br></td></tr>
+<tr class="separator:a506ffc4d5a1fc492fbb77aa40437256c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a627be9d97eb985963eaeedd5578e540f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a627be9d97eb985963eaeedd5578e540f">BaseCase</a> (const size_t queryIndex, const size_t referenceIndex, arma::Mat&lt; size_t &gt; &amp;neighbors, arma::mat &amp;distances) const </td></tr>
+<tr class="memdesc:a627be9d97eb985963eaeedd5578e540f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a helper function that computes the distance of the query to the neighbor candidates and appropriately stores the best 'k' candidates.  <a href="#a627be9d97eb985963eaeedd5578e540f">More...</a><br /></br></td></tr>
+<tr class="separator:a627be9d97eb985963eaeedd5578e540f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dde40236ad84e33dc704c94ec4599c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a7dde40236ad84e33dc704c94ec4599c7">BaseCase</a> (const size_t queryIndex, const size_t referenceIndex, const arma::mat &amp;querySet, arma::Mat&lt; size_t &gt; &amp;neighbors, arma::mat &amp;distances) const </td></tr>
+<tr class="memdesc:a7dde40236ad84e33dc704c94ec4599c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a helper function that computes the distance of the query to the neighbor candidates and appropriately stores the best 'k' candidates.  <a href="#a7dde40236ad84e33dc704c94ec4599c7">More...</a><br /></br></td></tr>
+<tr class="separator:a7dde40236ad84e33dc704c94ec4599c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b43072b767998a55093d0ebbf52b2f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a9b43072b767998a55093d0ebbf52b2f4">BuildHash</a> ()</td></tr>
+<tr class="memdesc:a9b43072b767998a55093d0ebbf52b2f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function builds a hash table with two levels of hashing as presented in the paper.  <a href="#a9b43072b767998a55093d0ebbf52b2f4">More...</a><br /></br></td></tr>
+<tr class="separator:a9b43072b767998a55093d0ebbf52b2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63f56f62a46f1727bc56617205f02e55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a63f56f62a46f1727bc56617205f02e55">InsertNeighbor</a> (arma::mat &amp;distances, arma::Mat&lt; size_t &gt; &amp;neighbors, const size_t queryIndex, const size_t pos, const size_t neighbor, const double distance) const </td></tr>
+<tr class="memdesc:a63f56f62a46f1727bc56617205f02e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a helper function that efficiently inserts better neighbor candidates into an existing set of neighbor candidates.  <a href="#a63f56f62a46f1727bc56617205f02e55">More...</a><br /></br></td></tr>
+<tr class="separator:a63f56f62a46f1727bc56617205f02e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03735158df45f22ab6d3790c0b1998bd"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">VecType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a03735158df45f22ab6d3790c0b1998bd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a03735158df45f22ab6d3790c0b1998bd">ReturnIndicesFromTable</a> (const VecType &amp;queryPoint, arma::uvec &amp;referenceIndices, size_t numTablesToSearch) const </td></tr>
+<tr class="memdesc:a03735158df45f22ab6d3790c0b1998bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function takes a query and hashes it into each of the hash tables to get keys for the query and then the key is hashed to a bucket of the second hash table and all the points (if any) in those buckets are collected as the potential neighbor candidates.  <a href="#a03735158df45f22ab6d3790c0b1998bd">More...</a><br /></br></td></tr>
+<tr class="separator:a03735158df45f22ab6d3790c0b1998bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a4a19df9419a4d0c13840754dc32c133e"><td class="memItemLeft" align="right" valign="top">arma::Col&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a4a19df9419a4d0c13840754dc32c133e">bucketContentSize</a></td></tr>
+<tr class="memdesc:a4a19df9419a4d0c13840754dc32c133e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of elements present in each hash bucket; should be secondHashSize.  <a href="#a4a19df9419a4d0c13840754dc32c133e">More...</a><br /></br></td></tr>
+<tr class="separator:a4a19df9419a4d0c13840754dc32c133e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a3799ccf59d8b450c4695670a500835"><td class="memItemLeft" align="right" valign="top">arma::Col&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a0a3799ccf59d8b450c4695670a500835">bucketRowInHashTable</a></td></tr>
+<tr class="memdesc:a0a3799ccf59d8b450c4695670a500835"><td class="mdescLeft">&#160;</td><td class="mdescRight">For a particular hash value, points to the row in secondHashTable corresponding to this value.  <a href="#a0a3799ccf59d8b450c4695670a500835">More...</a><br /></br></td></tr>
+<tr class="separator:a0a3799ccf59d8b450c4695670a500835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cfd125d3b1abbe53c1d5fafec722814"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a9cfd125d3b1abbe53c1d5fafec722814">bucketSize</a></td></tr>
+<tr class="memdesc:a9cfd125d3b1abbe53c1d5fafec722814"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bucket size of the second hash.  <a href="#a9cfd125d3b1abbe53c1d5fafec722814">More...</a><br /></br></td></tr>
+<tr class="separator:a9cfd125d3b1abbe53c1d5fafec722814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af88898b3e73bef9e6b1ba37b0f458918"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#af88898b3e73bef9e6b1ba37b0f458918">distanceEvaluations</a></td></tr>
+<tr class="memdesc:af88898b3e73bef9e6b1ba37b0f458918"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of distance evaluations.  <a href="#af88898b3e73bef9e6b1ba37b0f458918">More...</a><br /></br></td></tr>
+<tr class="separator:af88898b3e73bef9e6b1ba37b0f458918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac765c095b3b77eb485f801bc3fbd7ca8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#ac765c095b3b77eb485f801bc3fbd7ca8">hashWidth</a></td></tr>
+<tr class="memdesc:ac765c095b3b77eb485f801bc3fbd7ca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The hash width.  <a href="#ac765c095b3b77eb485f801bc3fbd7ca8">More...</a><br /></br></td></tr>
+<tr class="separator:ac765c095b3b77eb485f801bc3fbd7ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade500324c9dac3e002300b1ce94b31ee"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#ade500324c9dac3e002300b1ce94b31ee">numProj</a></td></tr>
+<tr class="memdesc:ade500324c9dac3e002300b1ce94b31ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of projections.  <a href="#ade500324c9dac3e002300b1ce94b31ee">More...</a><br /></br></td></tr>
+<tr class="separator:ade500324c9dac3e002300b1ce94b31ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d7a6952a9fd15e58fc81878c741a2a2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a3d7a6952a9fd15e58fc81878c741a2a2">numTables</a></td></tr>
+<tr class="memdesc:a3d7a6952a9fd15e58fc81878c741a2a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of hash tables.  <a href="#a3d7a6952a9fd15e58fc81878c741a2a2">More...</a><br /></br></td></tr>
+<tr class="separator:a3d7a6952a9fd15e58fc81878c741a2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4596a8eab77eb80e1c549471211ed9a"><td class="memItemLeft" align="right" valign="top">arma::mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#af4596a8eab77eb80e1c549471211ed9a">offsets</a></td></tr>
+<tr class="memdesc:af4596a8eab77eb80e1c549471211ed9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The list of the offsets 'b' for each of the projection for each table.  <a href="#af4596a8eab77eb80e1c549471211ed9a">More...</a><br /></br></td></tr>
+<tr class="separator:af4596a8eab77eb80e1c549471211ed9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a366edfae78c37d16b86322a3bca42027"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a366edfae78c37d16b86322a3bca42027">ownsSet</a></td></tr>
+<tr class="memdesc:a366edfae78c37d16b86322a3bca42027"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, we own the reference set.  <a href="#a366edfae78c37d16b86322a3bca42027">More...</a><br /></br></td></tr>
+<tr class="separator:a366edfae78c37d16b86322a3bca42027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0721af49c63d320c3d5012f0326b8dd5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; arma::mat &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a0721af49c63d320c3d5012f0326b8dd5">projections</a></td></tr>
+<tr class="memdesc:a0721af49c63d320c3d5012f0326b8dd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The std::vector containing the projection matrix of each table.  <a href="#a0721af49c63d320c3d5012f0326b8dd5">More...</a><br /></br></td></tr>
+<tr class="separator:a0721af49c63d320c3d5012f0326b8dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab131bc24b9ad07ee9ff9eb7e4c600e62"><td class="memItemLeft" align="right" valign="top">const arma::mat *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#ab131bc24b9ad07ee9ff9eb7e4c600e62">referenceSet</a></td></tr>
+<tr class="memdesc:ab131bc24b9ad07ee9ff9eb7e4c600e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference dataset.  <a href="#ab131bc24b9ad07ee9ff9eb7e4c600e62">More...</a><br /></br></td></tr>
+<tr class="separator:ab131bc24b9ad07ee9ff9eb7e4c600e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23a181b89e6a7a6024bc4c941acdc3a4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a23a181b89e6a7a6024bc4c941acdc3a4">secondHashSize</a></td></tr>
+<tr class="memdesc:a23a181b89e6a7a6024bc4c941acdc3a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The big prime representing the size of the second hash.  <a href="#a23a181b89e6a7a6024bc4c941acdc3a4">More...</a><br /></br></td></tr>
+<tr class="separator:a23a181b89e6a7a6024bc4c941acdc3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5190808c97a7e52d3f5344c5f5f4b035"><td class="memItemLeft" align="right" valign="top">arma::Mat&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a5190808c97a7e52d3f5344c5f5f4b035">secondHashTable</a></td></tr>
+<tr class="memdesc:a5190808c97a7e52d3f5344c5f5f4b035"><td class="mdescLeft">&#160;</td><td class="mdescRight">The final hash table; should be (&lt; secondHashSize) x bucketSize.  <a href="#a5190808c97a7e52d3f5344c5f5f4b035">More...</a><br /></br></td></tr>
+<tr class="separator:a5190808c97a7e52d3f5344c5f5f4b035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabdc27407c4c6d722b6b39fd8988dea6"><td class="memItemLeft" align="right" valign="top">arma::vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#aabdc27407c4c6d722b6b39fd8988dea6">secondHashWeights</a></td></tr>
+<tr class="memdesc:aabdc27407c4c6d722b6b39fd8988dea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The weights of the second hash.  <a href="#aabdc27407c4c6d722b6b39fd8988dea6">More...</a><br /></br></td></tr>
+<tr class="separator:aabdc27407c4c6d722b6b39fd8988dea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3 ><br /><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></br>
+class mlpack::neighbor::LSHSearch&lt; SortPolicy &gt;</h3>
+
+<p >The <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html" title="The LSHSearch class; this class builds a hash on the reference set and uses this hash to compute the ...">LSHSearch</a> class; this class builds a hash on the reference set and uses this hash to compute the distance-approximate nearest-neighbors of the given queries. </p>
+<dl class="tparams"><dt >Template Parameters</dt><dd >
+  <table class="tparams">
+    <tr ><td class="paramname">SortPolicy</td><td >The sort policy for distances; see <a class="el" href="classmlpack_1_1neighbor_1_1NearestNeighborSort.html" title="This class implements the necessary methods for the SortPolicy template parameter of the NeighborSear...">NearestNeighborSort</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00059">59</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="aa73976fa89f5358aa51e0640124d1947"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::<a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">LSHSearch</a> </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >referenceSet</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >numProj</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >numTables</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >hashWidth</em> = <code >0.0</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >secondHashSize</em> = <code >99901</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >bucketSize</em> = <code >500</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This function initializes the LSH class. </p>
+<p >It builds the hash on the reference set with 2-stable distributions. See the individual functions performing the hashing for details on how the hashing is done.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">referenceSet</td><td >Set of reference points and the set of queries. </td></tr>
+    <tr ><td class="paramname">numProj</td><td >Number of projections in each hash table (anything between 10-50 might be a decent choice). </td></tr>
+    <tr ><td class="paramname">numTables</td><td >Total number of hash tables (anything between 10-20 should suffice). </td></tr>
+    <tr ><td class="paramname">hashWidth</td><td >The width of hash for every table. If 0 (the default) is provided, then the hash width is automatically obtained by computing the average pairwise distance of 25 pairs. This should be a reasonable upper bound on the nearest-neighbor distance in general. </td></tr>
+    <tr ><td class="paramname">secondHashSize</td><td >The size of the second hash table. This should be a large prime number. </td></tr>
+    <tr ><td class="paramname">bucketSize</td><td >The size of the bucket in the second hash table. This is the maximum number of points that can be hashed into single bucket. Default values are already provided here. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a499b01e2439a996689ab924361358d18"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::<a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">LSHSearch</a> </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Create an untrained LSH model. </p>
+<p >Be sure to call <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a506ffc4d5a1fc492fbb77aa40437256c" title="Train the LSH model on the given dataset. ">Train()</a> before calling <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a1855642a15a94330e0f7f61abf0cbac9" title="Compute the nearest neighbors of the points in the given query set and store the output in the given ...">Search()</a>; otherwise, an exception will be thrown when <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a1855642a15a94330e0f7f61abf0cbac9" title="Compute the nearest neighbors of the points in the given query set and store the output in the given ...">Search()</a> is called. </p>
+
+</div>
+</div>
+<a class="anchor" id="af3204354ed10d2e154e159ab05b0cce9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::~<a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">LSHSearch</a> </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Clean memory. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a627be9d97eb985963eaeedd5578e540f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::BaseCase </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >queryIndex</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >referenceIndex</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::Mat&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >neighbors</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >distances</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >This is a helper function that computes the distance of the query to the neighbor candidates and appropriately stores the best 'k' candidates. </p>
+<p >This is specific to the monochromatic search case, where the query set is the reference set.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">queryIndex</td><td >The index of the query in question </td></tr>
+    <tr ><td class="paramname">referenceIndex</td><td >The index of the neighbor candidate in question </td></tr>
+    <tr ><td class="paramname">neighbors</td><td >Matrix holding output neighbors. </td></tr>
+    <tr ><td class="paramname">distances</td><td >Matrix holding output distances. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7dde40236ad84e33dc704c94ec4599c7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::BaseCase </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >queryIndex</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >referenceIndex</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >querySet</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::Mat&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >neighbors</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >distances</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >This is a helper function that computes the distance of the query to the neighbor candidates and appropriately stores the best 'k' candidates. </p>
+<p >This is specific to bichromatic search, where the query set is not the same as the reference set.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">queryIndex</td><td >The index of the query in question </td></tr>
+    <tr ><td class="paramname">referenceIndex</td><td >The index of the neighbor candidate in question </td></tr>
+    <tr ><td class="paramname">querySet</td><td >Set of query points. </td></tr>
+    <tr ><td class="paramname">neighbors</td><td >Matrix holding output neighbors. </td></tr>
+    <tr ><td class="paramname">distances</td><td >Matrix holding output distances. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a09fcb9c8823a1232f0187c76109dfea6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::BucketSize </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the bucket size of the second hash. </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00187">187</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+<p >References <a class="el" href="lsh__search_8hpp_source.html#l00305">mlpack::neighbor::LSHSearch&lt; SortPolicy &gt;::bucketSize</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9b43072b767998a55093d0ebbf52b2f4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::BuildHash </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >This function builds a hash table with two levels of hashing as presented in the paper. </p>
+<p >This function first hashes the points with 'numProj' random projections to a single hash table creating (key, point ID) pairs where the key is a 'numProj'-dimensional integer vector.</p>
+<p >Then each key in this hash table is hashed into a second hash table using a standard hash.</p>
+<p >This function does not have any parameters and relies on parameters which are private members of this class, intialized during the class intialization. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0667d5e5b01dfd9b2694b1291603e9f2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::DistanceEvaluations </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the number of distance evaluations performed. </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00168">168</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+<p >References <a class="el" href="lsh__search_8hpp_source.html#l00319">mlpack::neighbor::LSHSearch&lt; SortPolicy &gt;::distanceEvaluations</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a78b0fbb840d90d166297f747ea70953f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::DistanceEvaluations </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the number of distance evaluations performed. </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00170">170</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+<p >References <a class="el" href="lsh__search_8hpp_source.html#l00319">mlpack::neighbor::LSHSearch&lt; SortPolicy &gt;::distanceEvaluations</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a63f56f62a46f1727bc56617205f02e55"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::InsertNeighbor </td>
+          <td >(</td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >distances</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::Mat&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >neighbors</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >queryIndex</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >pos</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >neighbor</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >distance</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >This is a helper function that efficiently inserts better neighbor candidates into an existing set of neighbor candidates. </p>
+<p >This function is only called by the 'BaseCase' function.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">distances</td><td >Matrix holding output distances. </td></tr>
+    <tr ><td class="paramname">neighbors</td><td >Matrix holding output neighbors. </td></tr>
+    <tr ><td class="paramname">queryIndex</td><td >This is the index of the query being processed currently </td></tr>
+    <tr ><td class="paramname">pos</td><td >The position of the neighbor candidate in the current list of neighbor candidates. </td></tr>
+    <tr ><td class="paramname">neighbor</td><td >The neighbor candidate that is being inserted into the list of the best 'k' candidates for the query in question. </td></tr>
+    <tr ><td class="paramname">distance</td><td >The distance of the query to the neighbor candidate. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a812b124cef808b3dce508cad0148c456"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::NumProjections </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the number of projections. </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00176">176</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+<p >References <a class="el" href="lsh__search_8hpp_source.html#l00290">mlpack::neighbor::LSHSearch&lt; SortPolicy &gt;::projections</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a451e52da1f5b157923dfa8bbf2cf4114"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::mat&amp; <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::Offsets </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the offsets 'b' for each of the projections. (One 'b' per column.) </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00181">181</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+<p >References <a class="el" href="lsh__search_8hpp_source.html#l00293">mlpack::neighbor::LSHSearch&lt; SortPolicy &gt;::offsets</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a65da11f551d1ca613f09cd4590328d07"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::mat&amp; <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::Projection </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >i</em></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the projection matrix of the given table. </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00178">178</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+<p >References <a class="el" href="lsh__search_8hpp_source.html#l00290">mlpack::neighbor::LSHSearch&lt; SortPolicy &gt;::projections</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab3080a9c8940e0740b3bae3a287a6087"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::mat&amp; <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::ReferenceSet </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the reference dataset. </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00173">173</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+<p >References <a class="el" href="lsh__search_8hpp_source.html#l00280">mlpack::neighbor::LSHSearch&lt; SortPolicy &gt;::referenceSet</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a03735158df45f22ab6d3790c0b1998bd"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">VecType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::ReturnIndicesFromTable </td>
+          <td >(</td>
+          <td class="paramtype">const VecType &amp;&#160;</td>
+          <td class="paramname"><em >queryPoint</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::uvec &amp;&#160;</td>
+          <td class="paramname"><em >referenceIndices</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em >numTablesToSearch</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >This function takes a query and hashes it into each of the hash tables to get keys for the query and then the key is hashed to a bucket of the second hash table and all the points (if any) in those buckets are collected as the potential neighbor candidates. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">queryPoint</td><td >The query point currently being processed. </td></tr>
+    <tr ><td class="paramname">referenceIndices</td><td >The list of neighbor candidates obtained from hashing the query into all the hash tables and eventually into multiple buckets of the second hash table. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1855642a15a94330e0f7f61abf0cbac9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname">void <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::Search </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >querySet</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >k</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::Mat&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >resultingNeighbors</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >distances</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >numTablesToSearch</em> = <code >0</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Compute the nearest neighbors of the points in the given query set and store the output in the given matrices. </p>
+<p >The matrices will be set to the size of n columns by k rows, where n is the number of points in the query dataset and k is the number of neighbors being searched for.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">querySet</td><td >Set of query points. </td></tr>
+    <tr ><td class="paramname">k</td><td >Number of neighbors to search for. </td></tr>
+    <tr ><td class="paramname">resultingNeighbors</td><td >Matrix storing lists of neighbors for each query point. </td></tr>
+    <tr ><td class="paramname">distances</td><td >Matrix storing distances of neighbors for each query point. </td></tr>
+    <tr ><td class="paramname">numTablesToSearch</td><td >This parameter allows the user to have control over the number of hash tables to be searched. This allows the user to pick the number of tables it can afford for the time available without having to build hashing for every table size. By default, this is set to zero in which case all tables are considered. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afffe4f94e48025f4b832be8ad4a93ab9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname">void <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::Search </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >k</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::Mat&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >resultingNeighbors</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >distances</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >numTablesToSearch</em> = <code >0</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Compute the nearest neighbors and store the output in the given matrices. </p>
+<p >The matrices will be set to the size of n columns by k rows, where n is the number of points in the query dataset and k is the number of neighbors being searched for.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">k</td><td >Number of neighbors to search for. </td></tr>
+    <tr ><td class="paramname">resultingNeighbors</td><td >Matrix storing lists of neighbors for each query point. </td></tr>
+    <tr ><td class="paramname">distances</td><td >Matrix storing distances of neighbors for each query point. </td></tr>
+    <tr ><td class="paramname">numTablesToSearch</td><td >This parameter allows the user to have control over the number of hash tables to be searched. This allows the user to pick the number of tables it can afford for the time available without having to build hashing for every table size. By default, this is set to zero in which case all tables are considered. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="adc4e12c9c79142d18fe6e6faf96567d1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::Mat&lt;size_t&gt;&amp; <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::SecondHashTable </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the second hash table. </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00190">190</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+<p >References <a class="el" href="lsh__search_8hpp_source.html#l00308">mlpack::neighbor::LSHSearch&lt; SortPolicy &gt;::secondHashTable</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2ad10d1a5d5ed1eeb9fac80153f732d8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::vec&amp; <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::SecondHashWeights </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the weights of the second hash. </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00184">184</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+<p >References <a class="el" href="lsh__search_8hpp_source.html#l00302">mlpack::neighbor::LSHSearch&lt; SortPolicy &gt;::secondHashWeights</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aac17f71cfd13acc87ec99db6484fb99f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname">void <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::Serialize </td>
+          <td >(</td>
+          <td class="paramtype">Archive &amp;&#160;</td>
+          <td class="paramname"><em >ar</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em >int</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Serialize the LSH model. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">ar</td><td >Archive to serialize to. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a506ffc4d5a1fc492fbb77aa40437256c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname">void <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::Train </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >referenceSet</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >numProj</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >numTables</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >hashWidth</em> = <code >0.0</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >secondHashSize</em> = <code >99901</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >bucketSize</em> = <code >500</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Train the LSH model on the given dataset. </p>
+<p >This means building new hash tables. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a4a19df9419a4d0c13840754dc32c133e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">arma::Col&lt;size_t&gt; <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::bucketContentSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >The number of elements present in each hash bucket; should be secondHashSize. </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00312">312</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a3799ccf59d8b450c4695670a500835"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">arma::Col&lt;size_t&gt; <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::bucketRowInHashTable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >For a particular hash value, points to the row in secondHashTable corresponding to this value. </p>
+<p >Should be secondHashSize. </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00316">316</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9cfd125d3b1abbe53c1d5fafec722814"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::bucketSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >The bucket size of the second hash. </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00305">305</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+<p >Referenced by <a class="el" href="lsh__search_8hpp_source.html#l00187">mlpack::neighbor::LSHSearch&lt; SortPolicy &gt;::BucketSize()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af88898b3e73bef9e6b1ba37b0f458918"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::distanceEvaluations</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >The number of distance evaluations. </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00319">319</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+<p >Referenced by <a class="el" href="lsh__search_8hpp_source.html#l00168">mlpack::neighbor::LSHSearch&lt; SortPolicy &gt;::DistanceEvaluations()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac765c095b3b77eb485f801bc3fbd7ca8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::hashWidth</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >The hash width. </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00296">296</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ade500324c9dac3e002300b1ce94b31ee"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::numProj</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >The number of projections. </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00285">285</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3d7a6952a9fd15e58fc81878c741a2a2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::numTables</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >The number of hash tables. </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00287">287</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af4596a8eab77eb80e1c549471211ed9a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">arma::mat <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::offsets</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >The list of the offsets 'b' for each of the projection for each table. </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00293">293</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+<p >Referenced by <a class="el" href="lsh__search_8hpp_source.html#l00181">mlpack::neighbor::LSHSearch&lt; SortPolicy &gt;::Offsets()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a366edfae78c37d16b86322a3bca42027"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">bool <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::ownsSet</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >If true, we own the reference set. </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00282">282</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0721af49c63d320c3d5012f0326b8dd5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">std::vector&lt;arma::mat&gt; <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::projections</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >The std::vector containing the projection matrix of each table. </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00290">290</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+<p >Referenced by <a class="el" href="lsh__search_8hpp_source.html#l00176">mlpack::neighbor::LSHSearch&lt; SortPolicy &gt;::NumProjections()</a>, and <a class="el" href="lsh__search_8hpp_source.html#l00178">mlpack::neighbor::LSHSearch&lt; SortPolicy &gt;::Projection()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab131bc24b9ad07ee9ff9eb7e4c600e62"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::mat* <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::referenceSet</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Reference dataset. </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00280">280</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+<p >Referenced by <a class="el" href="lsh__search_8hpp_source.html#l00173">mlpack::neighbor::LSHSearch&lt; SortPolicy &gt;::ReferenceSet()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a23a181b89e6a7a6024bc4c941acdc3a4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::secondHashSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >The big prime representing the size of the second hash. </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00299">299</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5190808c97a7e52d3f5344c5f5f4b035"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">arma::Mat&lt;size_t&gt; <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::secondHashTable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >The final hash table; should be (&lt; secondHashSize) x bucketSize. </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00308">308</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+<p >Referenced by <a class="el" href="lsh__search_8hpp_source.html#l00190">mlpack::neighbor::LSHSearch&lt; SortPolicy &gt;::SecondHashTable()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aabdc27407c4c6d722b6b39fd8988dea6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">arma::vec <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">mlpack::neighbor::LSHSearch</a>&lt; SortPolicy &gt;::secondHashWeights</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >The weights of the second hash. </p>
+
+<p >Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00302">302</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+<p >Referenced by <a class="el" href="lsh__search_8hpp_source.html#l00184">mlpack::neighbor::LSHSearch&lt; SortPolicy &gt;::SecondHashWeights()</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/methods/lsh/<a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

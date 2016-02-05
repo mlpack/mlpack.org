@@ -1,0 +1,141 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+<meta name="generator" content="Doxygen 1.8.9.1"></meta>
+<title >mlpack: src/mlpack/methods/neighbor_search/sort_policies/furthest_neighbor_sort.hpp Source File</title><link href="tabs.css" rel="stylesheet" type="text/css" />
+</link>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
+</link>
+</head>
+<body >
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
+      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
+      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
+      <li ><a href="annotated.html"><span >Classes</span></a></li>
+      <li class="current"><a href="files.html"><span >Files</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li ><a href="files.html"><span >File&#160;List</span></a></li>
+      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_19fd2ebec21bf6d8aaa7fdf30f286d47.html">methods</a></li><li class="navelem"><a class="el" href="dir_8fe1aeb55991dbcb5401ebce8a0baf86.html">neighbor_search</a></li><li class="navelem"><a class="el" href="dir_fcb2ef147b9b2bca63fe288022b0c497.html">sort_policies</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">furthest_neighbor_sort.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="furthest__neighbor__sort_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifndef __MLPACK_METHODS_NEIGHBOR_SEARCH_FURTHEST_NEIGHBOR_SORT_HPP</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define __MLPACK_METHODS_NEIGHBOR_SEARCH_FURTHEST_NEIGHBOR_SORT_HPP</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span>neighbor {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html">FurthestNeighborSort</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#a863969caa2a37d6abfe933e4d904a8b3">SortDistance</a>(<span class="keyword">const</span> arma::vec&amp; list,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                             <span class="keyword">const</span> arma::Col&lt;size_t&gt;&amp; indices,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                             <span class="keywordtype">double</span> newDistance);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#ad958c571e89184874ef8cd8675d563e7">   67</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#ad958c571e89184874ef8cd8675d563e7">IsBetter</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> value, <span class="keyword">const</span> <span class="keywordtype">double</span> ref)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> (value &gt; ref);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TreeType&gt;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#aae51f34ae4b6cc8e680e11419ecbefe2">BestNodeToNodeDistance</a>(<span class="keyword">const</span> TreeType* queryNode,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                       <span class="keyword">const</span> TreeType* referenceNode);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TreeType&gt;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#aae51f34ae4b6cc8e680e11419ecbefe2">BestNodeToNodeDistance</a>(<span class="keyword">const</span> TreeType* queryNode,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                       <span class="keyword">const</span> TreeType* referenceNode,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                       <span class="keyword">const</span> <span class="keywordtype">double</span> centerToCenterDistance);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TreeType&gt;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#aae51f34ae4b6cc8e680e11419ecbefe2">BestNodeToNodeDistance</a>(<span class="keyword">const</span> TreeType* queryNode,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                       <span class="keyword">const</span> TreeType* referenceNode,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                       <span class="keyword">const</span> TreeType* referenceChildNode,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                       <span class="keyword">const</span> <span class="keywordtype">double</span> centerToCenterDistance);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> VecType, <span class="keyword">typename</span> TreeType&gt;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#a34bb0125bd76ce88e8667beda05999ca">BestPointToNodeDistance</a>(<span class="keyword">const</span> VecType&amp; queryPoint,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                                        <span class="keyword">const</span> TreeType* referenceNode);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> VecType, <span class="keyword">typename</span> TreeType&gt;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#a34bb0125bd76ce88e8667beda05999ca">BestPointToNodeDistance</a>(<span class="keyword">const</span> VecType&amp; queryPoint,</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                        <span class="keyword">const</span> TreeType* referenceNode,</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                                        <span class="keyword">const</span> <span class="keywordtype">double</span> pointToCenterDistance);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#aba7d6c7a4077d3573e4e4b39c9f190d9">  137</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#aba7d6c7a4077d3573e4e4b39c9f190d9">WorstDistance</a>() { <span class="keywordflow">return</span> 0; }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#a24e85dec805cc1f264a138501ee24731">  146</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#a24e85dec805cc1f264a138501ee24731">BestDistance</a>() { <span class="keywordflow">return</span> DBL_MAX; }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#af18ff3e6418df212e4183053e16f0e53">  151</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#af18ff3e6418df212e4183053e16f0e53">CombineBest</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> a, <span class="keyword">const</span> <span class="keywordtype">double</span> b)</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">if</span> (a == DBL_MAX || b == DBL_MAX)</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      <span class="keywordflow">return</span> DBL_MAX;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">return</span> a + b;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#a047b9d3ccb95d1735442bffbfee0482d">  161</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#a047b9d3ccb95d1735442bffbfee0482d">CombineWorst</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> a, <span class="keyword">const</span> <span class="keywordtype">double</span> b)</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  { <span class="keywordflow">return</span> std::max(a - b, 0.0); }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;};</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;} <span class="comment">// namespace neighbor</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;} <span class="comment">// namespace mlpack</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">// Include implementation of templated functions.</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">#include &quot;furthest_neighbor_sort_impl.hpp&quot;</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
+<div class="ttc" id="classmlpack_1_1neighbor_1_1FurthestNeighborSort_html_a24e85dec805cc1f264a138501ee24731"><div class="ttname"><a href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#a24e85dec805cc1f264a138501ee24731">mlpack::neighbor::FurthestNeighborSort::BestDistance</a></div><div class="ttdeci">static double BestDistance()</div><div class="ttdoc">Return what should represent the best possible distance with this particular sort policy...</div><div class="ttdef"><b >Definition:</b> <a href="furthest__neighbor__sort_8hpp_source.html#l00146">furthest_neighbor_sort.hpp:146</a></div></div>
+<div class="ttc" id="classmlpack_1_1neighbor_1_1FurthestNeighborSort_html_a863969caa2a37d6abfe933e4d904a8b3"><div class="ttname"><a href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#a863969caa2a37d6abfe933e4d904a8b3">mlpack::neighbor::FurthestNeighborSort::SortDistance</a></div><div class="ttdeci">static size_t SortDistance(const arma::vec &amp;list, const arma::Col&lt; size_t &gt; &amp;indices, double newDistance)</div><div class="ttdoc">Return the index in the vector where the new distance should be inserted, or size_t() - 1 if it shoul...</div></div>
+<div class="ttc" id="classmlpack_1_1neighbor_1_1FurthestNeighborSort_html_aae51f34ae4b6cc8e680e11419ecbefe2"><div class="ttname"><a href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#aae51f34ae4b6cc8e680e11419ecbefe2">mlpack::neighbor::FurthestNeighborSort::BestNodeToNodeDistance</a></div><div class="ttdeci">static double BestNodeToNodeDistance(const TreeType *queryNode, const TreeType *referenceNode)</div><div class="ttdoc">Return the best possible distance between two nodes. </div></div>
+<div class="ttc" id="classmlpack_1_1neighbor_1_1FurthestNeighborSort_html_ad958c571e89184874ef8cd8675d563e7"><div class="ttname"><a href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#ad958c571e89184874ef8cd8675d563e7">mlpack::neighbor::FurthestNeighborSort::IsBetter</a></div><div class="ttdeci">static bool IsBetter(const double value, const double ref)</div><div class="ttdoc">Return whether or not value is "better" than ref. </div><div class="ttdef"><b >Definition:</b> <a href="furthest__neighbor__sort_8hpp_source.html#l00067">furthest_neighbor_sort.hpp:67</a></div></div>
+<div class="ttc" id="classmlpack_1_1neighbor_1_1FurthestNeighborSort_html_a34bb0125bd76ce88e8667beda05999ca"><div class="ttname"><a href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#a34bb0125bd76ce88e8667beda05999ca">mlpack::neighbor::FurthestNeighborSort::BestPointToNodeDistance</a></div><div class="ttdeci">static double BestPointToNodeDistance(const VecType &amp;queryPoint, const TreeType *referenceNode)</div><div class="ttdoc">Return the best possible distance between a node and a point. </div></div>
+<div class="ttc" id="classmlpack_1_1neighbor_1_1FurthestNeighborSort_html_af18ff3e6418df212e4183053e16f0e53"><div class="ttname"><a href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#af18ff3e6418df212e4183053e16f0e53">mlpack::neighbor::FurthestNeighborSort::CombineBest</a></div><div class="ttdeci">static double CombineBest(const double a, const double b)</div><div class="ttdoc">Return the best combination of the two distances. </div><div class="ttdef"><b >Definition:</b> <a href="furthest__neighbor__sort_8hpp_source.html#l00151">furthest_neighbor_sort.hpp:151</a></div></div>
+<div class="ttc" id="classmlpack_1_1neighbor_1_1FurthestNeighborSort_html"><div class="ttname"><a href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html">mlpack::neighbor::FurthestNeighborSort</a></div><div class="ttdoc">This class implements the necessary methods for the SortPolicy template parameter of the NeighborSear...</div><div class="ttdef"><b >Definition:</b> <a href="furthest__neighbor__sort_8hpp_source.html#l00037">furthest_neighbor_sort.hpp:37</a></div></div>
+<div class="ttc" id="classmlpack_1_1neighbor_1_1FurthestNeighborSort_html_a047b9d3ccb95d1735442bffbfee0482d"><div class="ttname"><a href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#a047b9d3ccb95d1735442bffbfee0482d">mlpack::neighbor::FurthestNeighborSort::CombineWorst</a></div><div class="ttdeci">static double CombineWorst(const double a, const double b)</div><div class="ttdoc">Return the worst combination of the two distances. </div><div class="ttdef"><b >Definition:</b> <a href="furthest__neighbor__sort_8hpp_source.html#l00161">furthest_neighbor_sort.hpp:161</a></div></div>
+<div class="ttc" id="core_8hpp_html"><div class="ttname"><a href="core_8hpp.html">core.hpp</a></div><div class="ttdoc">Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu...</div></div>
+<div class="ttc" id="classmlpack_1_1neighbor_1_1FurthestNeighborSort_html_aba7d6c7a4077d3573e4e4b39c9f190d9"><div class="ttname"><a href="classmlpack_1_1neighbor_1_1FurthestNeighborSort.html#aba7d6c7a4077d3573e4e4b39c9f190d9">mlpack::neighbor::FurthestNeighborSort::WorstDistance</a></div><div class="ttdeci">static double WorstDistance()</div><div class="ttdoc">Return what should represent the worst possible distance with this particular sort policy...</div><div class="ttdef"><b >Definition:</b> <a href="furthest__neighbor__sort_8hpp_source.html#l00137">furthest_neighbor_sort.hpp:137</a></div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

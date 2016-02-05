@@ -37,6 +37,28 @@ href="https://github.com/mlpack/mlpack">github</a></div>
 <div class="mainsection smallertext">
 <center><h2><font class="whitebold">history and
 news</font></h2></center><br>
+<font class="whitebold">february 4th, 2016</font> -- <a
+href="http://www.mlpack.org/files/mlpack-2.0.1.tar.gz">mlpack 2.0.1</a><br>
+<ul>
+<li>Fix CMake to properly detect when MKL is being used with Armadillo.</li>
+<li>Minor parameter handling fixes to mlpack_logistic_regression (<a
+href="https://github.com/mlpack/mlpack/pull/504">#504</a>, <a
+href="https://github.com/mlpack/mlpack/pull/505">#505</a>).</li>
+<li>Properly install arma_config.hpp.</li>
+<li>Memory handling fixes for Hoeffding tree code.</li>
+<li>Add functions that allow changing training-time parameters to HoeffdingTree
+class.</li>
+<li>Fix infinite loop in sparse coding test.</li>
+<li>Documentation spelling fixes (<a
+href="https://github.com/mlpack/mlpack/pull/501">#501</a>).</li>
+<li>Properly handle covariances for Gaussians with large condition number
+(<a href="https://github.com/mlpack/mlpack/issues/496">#496</a>), preventing
+GMMs from filling with NaNs during training (and also HMMs that use GMMs).</li>
+<li>CMake fixes for finding LAPACK and BLAS as Armadillo dependencies when ATLAS
+is used.</li>
+<li>CMake fix for projects using mlpack's CMake configuration from elsewhere
+(<a href="https://github.com/mlpack/mlpack/pull/512">#512</a>).</li>
+</ul>
 <font class="whitebold">december 23rd, 2015</font> -- <a
 href="http://www.mlpack.org/files/mlpack-2.0.0.tar.gz">mlpack 2.0.0</a><br>
 <ul>

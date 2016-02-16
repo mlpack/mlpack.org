@@ -234,6 +234,18 @@ font.gray
   font-size: 75%;
 }
 
+.smallwhitetext
+{
+  font-size: 75%;
+  color: #ffffff;
+}
+
+p.footnote
+{
+  border-top: 15px solid #101010;
+  padding-top: 1em;
+}
+
 h2
 {
   font-size: 200%;

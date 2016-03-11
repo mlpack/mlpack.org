@@ -1,4 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classmlpack_1_1optimization_1_1test_1_1WoodFunction.html" title="The Wood function, defined by f(x) = f1(x) + f2(x) + f3(x) + f4(x) + f5(x) + f6(x) f1(x) = 100 (x2 &#45; ..." alt="" coords="64,5,347,33"/>
-<area shape="rect" id="node4" href="$classmlpack_1_1optimization_1_1test_1_1GeneralizedRosenbrockFunction.html" title="The Generalized Rosenbrock function in n dimensions, defined by f(x) = sum_i^{n &#45; 1} (f(i)(x)) f_i(x)..." alt="" coords="7,55,404,83"/>
-</map>

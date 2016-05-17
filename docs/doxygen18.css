@@ -132,7 +132,7 @@ pre, .fragment {
   border: 15px solid #505050;
   background: #000000;
   padding-top: 15px;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 15px;
@@ -144,6 +144,10 @@ pre, .fragment {
   color: #ffffff;
   white-space: pre;
   line-height: 60%;
+}
+
+pre, .fragment .line {
+  line-height: 100%;
 }
 
 p code

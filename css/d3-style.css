@@ -1,5 +1,5 @@
 .chart rect {
-  fill: steelblue;
+fill: steelblue;
 };
 
 .chart text {
@@ -64,6 +64,9 @@ svg text {
   margin-right: auto;
 }   
 
+.mainbox div {
+  margin: 2px;
+}
 
 .library-select-div {
   min-width: 140px;
@@ -160,7 +163,8 @@ svg text {
   margin-right: 8px;
 }
 
-#method_select, #param_select, #main_dataset_select {
+#method_select, #param_select, #main_dataset_select,
+#metric_select, #option_select {
   float: left;
   margin-right: 20px;
 }
@@ -180,7 +184,7 @@ svg text {
   padding-top: 1em;
 }
 
-.dc-index-label {
+.dc-index-label, .mmpc-index-label {
   float: left;
   font-size: 60%;
   color: #ffffff;
@@ -188,7 +192,8 @@ svg text {
   margin-right: 3em;
 }
 
-.dc-method-select-label, .dc-param-select-label, .dc-library-select-label
+.dc-method-select-label, .dc-param-select-label, .dc-library-select-label,
+.mmpc-param-select-label, .mmpc-library-select-label
 {
   font-size: 75%;
   margin-left: 0.5em;
@@ -197,4 +202,42 @@ svg text {
 
 .methodcontrol {
   margin-bottom: 1em;
+}
+
+.runtime-table {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #888888;
+  border-collapse: collapse;
+}
+
+.runtime-table td {
+  border-top: 1px solid #888888;
+  border-right: 1px solid #888888;
+}
+.runtime-table td.dataset-name {
+  color: #ffffff;
+  font-weight: normal;
+  padding-left: 2px;
+  padding-right: 4px;
+}
+
+.runtime-table th {
+  color: #ffffff;
+}
+
+.runtime-table td.timing-cell {
+  font-family: 'Cousine', fixed;
+}
+
+.runtime-table td.timing-text-cell {
+  font-family: 'Cousine', fixed;
+  text-align: center;
+  color: #bb2222;
+}
+
+.runtime-table td.timing-not-run-cell {
+  font-family: 'Cousine', fixed;
+  text-align: center;
+  color: #606060;
 }

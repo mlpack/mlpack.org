@@ -1,0 +1,8 @@
+<map id="mlpack::neighbor::NeighborSearch&lt; SortPolicy, MetricType, MatType, TreeType, TraversalType &gt;" name="mlpack::neighbor::NeighborSearch&lt; SortPolicy, MetricType, MatType, TreeType, TraversalType &gt;">
+<area shape="rect" id="node2" href="$classmlpack_1_1neighbor_1_1NeighborSearch.html" title="mlpack::neighbor::Neighbor\lSearch\&lt; tree::BallTree \&gt;" alt="" coords="493,5,674,47"/>
+<area shape="rect" id="node3" href="$classmlpack_1_1neighbor_1_1NeighborSearch.html" title="mlpack::neighbor::Neighbor\lSearch\&lt; tree::KDTree \&gt;" alt="" coords="493,71,674,112"/>
+<area shape="rect" id="node4" href="$classmlpack_1_1neighbor_1_1NeighborSearch.html" title="mlpack::neighbor::Neighbor\lSearch\&lt; tree::RTree \&gt;" alt="" coords="493,136,674,177"/>
+<area shape="rect" id="node5" href="$classmlpack_1_1neighbor_1_1NeighborSearch.html" title="mlpack::neighbor::Neighbor\lSearch\&lt; tree::StandardCoverTree \&gt;" alt="" coords="468,201,699,243"/>
+<area shape="rect" id="node6" href="$classmlpack_1_1neighbor_1_1NeighborSearch.html" title="mlpack::neighbor::Neighbor\lSearch\&lt; tree::XTree \&gt;" alt="" coords="493,267,674,308"/>
+<area shape="rect" id="node7" href="$classmlpack_1_1neighbor_1_1NeighborSearch.html" title="mlpack::neighbor::Neighbor\lSearch\&lt; tree::RStarTree \&gt;" alt="" coords="493,332,674,373"/>
+</map>

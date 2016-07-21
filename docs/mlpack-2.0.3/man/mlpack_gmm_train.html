@@ -1,0 +1,221 @@
+<html>
+<head>
+<!-- probably could use more keywords -->
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>mlpack: a scalable c++ machine learning library</title>
+</head>
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="../../style-man.css">
+<link href='http://fonts.googleapis.com/css?family=Maven+Pro:500'
+rel='stylesheet' type='text/css'>
+<body>
+<!-- very simple table with as few words as possible -->
+<br>
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center>
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a
+href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center>
+<div class="mainsection smallertext manpage">
+
+
+<h1 align="center">mlpack_gmm_train</h1>
+
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_gmm_train</font>
+- gaussian mixture model (gmm) training</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_gmm_train</font>
+[<font class="code">-h</font>] [<font class="code">-v</font>] <font class="code">-g</font> <font class="code2">int</font> <font class="code">-i</font>
+<font class="code2">string</font> [<font class="code">-m</font> <font class="code2">string</font>] [<font class="code">-n</font>
+<font class="code2">int</font>] [<font class="code">-P</font>] [<font class="code">-N</font> <font class="code2">double</font>] [<font class="code">-M</font>
+<font class="code2">string</font>] [<font class="code">-p</font> <font class="code2">double</font>] [<font class="code">-r</font>]
+[<font class="code">-S</font> <font class="code2">int</font>] [<font class="code">-s</font> <font class="code2">int</font>] [<font class="code">-T</font>
+<font class="code2">double</font>] [<font class="code">-t</font> <font class="code2">int</font>] <font class="code">-V</font></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p class="closemargin first">This program
+takes a parametric estimate of a Gaussian mixture model
+(GMM) using the EM algorithm to find the maximum likelihood
+estimate. The model may be saved to file, which will contain
+information about each Gaussian.</p>
+
+<p class="closemargin first">If GMM training
+fails with an error indicating that a covariance matrix
+could not be inverted, make sure that the
+<font class="code">--no_force_positive</font> flag is not specified.
+Alternately, adding a small amount of Gaussian noise (using
+the <font class="code">--noise</font> parameter) to the entire dataset may help
+prevent Gaussians with zero variance in a particular
+dimension, which is usually the cause of non-invertible
+covariance matrices.</p>
+
+<p class="closemargin first">The
+&rsquo;no_force_positive&rsquo; flag, if set, will avoid the
+checks after each iteration of the EM algorithm which ensure
+that the covariance matrices are positive definite.
+Specifying the flag can cause faster runtime, but may also
+cause non-positive definite covariance matrices, which will
+cause the program to crash.</p>
+
+<p class="closemargin first">Optionally,
+multiple trials may be performed, by specifying the
+<font class="code">--trials</font> option. The model with greatest
+log-likelihood will be taken.</p>
+
+<h2>REQUIRED OPTIONS
+<a name="REQUIRED OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--gaussians
+(-g) [</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Number of Gaussians in the
+GMM.</p>
+
+<p class="closemargin"><font class="code">--input_file (-i)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">File containing the data on
+which the model will be fit.</p>
+
+<h2>OPTIONS
+<a name="OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--help
+(-h)</font></p>
+
+<p class="farmargin">Default help info.</p>
+
+<p class="closemargin"><font class="code">--info
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Get help on a specific module
+or option. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--input_model_file (-m)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">File containing initial input
+GMM model. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--max_iterations (-n)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Maximum number of iterations of
+EM algorithm (passing 0 will run until convergence). Default
+value 250.</p>
+
+<p class="closemargin"><font class="code">--no_force_positive
+(-P)</font></p>
+
+<p class="farmargin">Do not force the covariance
+matrices to be positive definite.</p>
+
+<p class="closemargin"><font class="code">--noise (-N)
+[</font><font class="code2">double</font><font class="code">]</font></p>
+
+<p class="farmargin">Variance of zero-mean Gaussian
+noise to add to data. Default value 0.</p>
+
+<p class="closemargin"><font class="code">--output_model_file (-M)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">File to save trained GMM model
+to. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--percentage (-p)
+[</font><font class="code2">double</font><font class="code">]</font></p>
+
+<p class="farmargin">If using
+<font class="code">--refined_start</font>, specify the percentage of the
+dataset used for each sampling (should be between 0.0 and
+1.0). Default value 0.02.</p>
+
+<p class="closemargin"><font class="code">--refined_start (-r)</font></p>
+
+<p class="farmargin">During the initialization, use
+refined initial positions for k-means clustering (Bradley
+and Fayyad, 1998).</p>
+
+<p class="closemargin"><font class="code">--samplings (-S)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">If using
+<font class="code">--refined_start</font>, specify the number of samplings used
+for initial points. Default value 100.</p>
+
+<p class="closemargin"><font class="code">--seed (-s)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Random seed. If 0,
+&rsquo;std::time(NULL)&rsquo; is used. Default value 0.</p>
+
+<p class="closemargin"><font class="code">--tolerance (-T)
+[</font><font class="code2">double</font><font class="code">]</font></p>
+
+<p class="farmargin">Tolerance for convergence of
+EM. Default value 1e-10.</p>
+
+<p class="closemargin"><font class="code">--trials (-t)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Number of trials to perform in
+training GMM. Default value 1.</p>
+
+<p class="closemargin"><font class="code">--verbose (-v)</font></p>
+
+<p class="farmargin">Display informational messages
+and the full list of parameters and timers at the end of
+execution.</p>
+
+<p class="closemargin"><font class="code">--version (-V)</font></p>
+
+<p class="farmargin">Display the version of
+mlpack.</p>
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<p class="closemargin first">For further
+information, including relevant papers, citations, and
+theory, consult the documentation found at
+http://www.mlpack.org or included with your DISTRIBUTION OF
+MLPACK.</p>
+</div></body></html>

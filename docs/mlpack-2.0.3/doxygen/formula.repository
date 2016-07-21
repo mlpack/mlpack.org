@@ -1,0 +1,148 @@
+\form#0:\[ f(x|\theta) = \frac{1}{2 \theta}\exp\left(-\frac{\|x - \mu\|}{\theta}\right) \]
+\form#1:$\theta$
+\form#2:$\mu$
+\form#3:\[ d(a, b) = \frac{a^T b}{|| a || || b ||} \]
+\form#4:\[ K(x, y) = \max \{0, 1 - || x - y ||^2_2 / b^2 \} \]
+\form#5:$ b $
+\form#6:$ K(x, y) $
+\form#7:$ x $
+\form#8:$ y $
+\form#9:\[ \int \int K(x, y) g(x) g(y) dx dy \ge 0 \]
+\form#10:$ g(x) $
+\form#11:$ \mu $
+\form#12:\[ K(x, y) = \exp(-\frac{|| x - y ||^2}{2 \mu^2}). \]
+\form#13:$ \gamma = -\frac{1}{2 \mu^2} $
+\form#14:$ s $
+\form#15:$ t $
+\form#16:\[ K(x, y) = \tanh(s <x, y> + t) \]
+\form#17:\[ K(x, y) = \exp(-\frac{|| x - y ||}{\mu}). \]
+\form#18:\[ K(x, y) = x^T y \]
+\form#19:$ degree $
+\form#20:$ offset $
+\form#21:\[ K(x, y) = (x^T * y + offset) ^ {degree}. \]
+\form#22:\[ K(x, y) = \max \{ 0, 1 - \frac{|| x - y ||_2}{b} \} \]
+\form#23:$ W = x (x^T x)^{-0.5} $
+\form#24:\[ d(x, y) = \sqrt{ K(x, x) + K(y, y) - 2K(x, y) }. \]
+\form#25:$ n $
+\form#26:\[ d(x, y) = \left( \sum_{i = 1}^{n} | x_i - y_i |^p \right)^{\frac{1}{p}}. \]
+\form#27:$ d(x, y) $
+\form#28:\[ d(x, y) = \sum_{i = 1}^{n} | x_i - y_i |^p \]
+\form#29:$ Q $
+\form#30:$ d $
+\form#31:\[ d(x, y) = \sqrt{(x - y)^T Q (x - y)} \]
+\form#32:\[ d(x, y) = (x - y)^T Q (x - y) \]
+\form#33:$n$
+\form#34:\[ f(A) = \sum_{i = 0}^{n} f_i(A) \]
+\form#35:$ A $
+\form#36:$ \{ f_{i0}(A), f_{i1}(A), \ldots, f_{i(m - 1)}(A) $
+\form#37:$ m $
+\form#38:\[ A_{j + 1} = A_j + \alpha \left(\sum_{k = 0}^{m - 1} \nabla f_{ik}(A) \right) \]
+\form#39:$ \alpha $
+\form#40:$ j $
+\form#41:$ \epsilon $
+\form#42:$ \gamma $
+\form#43:\begin{eqnarray*} r_t &=& (1 - \gamma) f'(\Delta_t)^2 + \gamma r_{t - 1} \\ v_{t + 1} &=& \frac{\alpha}{\sqrt{r_t}}f'(\Delta_t) \\ \Delta_{t + 1} &=& \Delta_t - v_{t + 1} \end{eqnarray*}
+\form#44:\[ T_{n+1} = (1-\lambda) T_{n} \]
+\form#45:$ 0<\lambda<1 $
+\form#46:$ \lambda $
+\form#47:$ \alpha = (-1 \lambda) $
+\form#48:$ f_i(A) $
+\form#49:\[ A_{j + 1} = A_j + \alpha \nabla f_i(A) \]
+\form#50:$ i $
+\form#51:\[ | f(A_{j + n}) - f(A_j) | < \epsilon. \]
+\form#52:$\epsilon$
+\form#53:$ V \approx WH $
+\form#54:$ \sqrt{\sum_i \sum_j(V-WH)^2} $
+\form#55:\[ W^T = \frac{H V^T}{H H^T} \]
+\form#56:\[ H = \frac{W^T V}{W^T W} \]
+\form#57:\[ W_{ia} \leftarrow W_{ia} \frac{(VH^T)_{ia}}{(WHH^T)_{ia}} \]
+\form#58:\[ H_{a\mu} \leftarrow H_{a\mu} \frac{(W^T V)_{a\mu}}{(W^T WH)_{a\mu}} \]
+\form#59:\[ \sum_i \sum_j (V_{ij} \log\frac{V_{ij}}{(W H)_{ij}} - V_{ij} + (W H)_{ij}) \]
+\form#60:\[ W_{ia} \leftarrow W_{ia} \frac{\sum_{\mu} H_{a\mu} V_{i\mu} / (W H)_{i\mu}} {\sum_{\nu} H_{a\nu}} \]
+\form#61:\[ H_{a\mu} \leftarrow H_{a\mu} \frac{\sum_{i} W_{ia} V_{i\mu}/(WH)_{i\mu}} {\sum_{k} H_{ka}} \]
+\form#62:\[ \min_{\beta} 0.5 || X \beta - y ||_2^2 + 0.5 \lambda_2 || \beta ||_2^2 \]
+\form#63:$ ||\beta||_1 <= \tau $
+\form#64:$ X $
+\form#65:\[ \min_{\beta} 0.5 || X \beta - y ||_2^2 + \lambda_1 || \beta ||_1 + 0.5 \lambda_2 || \beta ||_2^2 \]
+\form#66:$ \beta $
+\form#67:$ \lambda_1 > 0 $
+\form#68:$ \lambda_2 = 0 $
+\form#69:$ \lambda_2 > 0 $
+\form#70:$ \lambda_1 = 0 $
+\form#71:$ \lambda_1 $
+\form#72:\[ (1 / n) * \| y - X B \|^2_2 \]
+\form#73:$ B $
+\form#74:\[ \min_{D,Z} 0.5 ||X - D Z||_{F}^2\ + \lambda_1 \sum_{i=1}^m ||Z_i||_1 + 0.5 \lambda_2 \sum_{i=1}^m ||Z_i||_2^2 \]
+\form#75:$ ||D_j||_2 <= 1 $
+\form#76:$ 1 <= j <= k $
+\form#77:$ lambda_1 > 0 $
+\form#78:$ lambda_2 = 0 $
+\form#79:$(0, 1)$
+\form#80:$(3, 1)$
+\form#81:$(5, -5)$
+\form#82:$ C = X^T X $
+\form#83:$ C = X X^T $
+\form#84:$m$
+\form#85:$V \in \Re^{n \times m}$
+\form#86:$V_{ij}$
+\form#87:$i$
+\form#88:$j$
+\form#89:$V$
+\form#90:$V \approx WH$
+\form#91:$W$
+\form#92:$H$
+\form#93:$\alpha$
+\form#94:$S$
+\form#95:$\mathbf{R}^d$
+\form#96:$kd$
+\form#97:$n-1 \times 3 $
+\form#98:$\log N$
+\form#99:$N$
+\form#100:$O(N^2)$
+\form#101:$Q$
+\form#102:$R$
+\form#103:\[ \arg\max_{p_r \in R} K(p_q, p_r) \]
+\form#104:$p_q \in Q$
+\form#105:$K(\cdot, \cdot)$
+\form#106:$ x_i $
+\form#107:$ c_j $
+\form#108:$ j \le k $
+\form#109:$ k $
+\form#110:\[ \sum_{j = 1}^{k} \sum_{x_i \in c_j} \| x_i - \mu_j \|^2 \]
+\form#111:$\mu_j$
+\form#112:$c_j$
+\form#113:$x_i$
+\form#114:$X$
+\form#115:$O(kN)$
+\form#116:$\mathbf{x_i}, 0 \le i < n$
+\form#117:$d$
+\form#118:$y_i, 0 \le i < n$
+\form#119:$\beta_i, 0 \le i \le d$
+\form#120:\[ y_i = \beta_0 + \displaystyle\sum_{j = 1}^{d} \beta_j x_{ij} \]
+\form#121:$\mathbf{x_i}$
+\form#122:$y_i$
+\form#123:$\mathbf{X}$
+\form#124:$\mathbf{y}$
+\form#125:\[ \mathbf{y} = \mathbf{X} \mathbf{\beta} + \beta_0 \]
+\form#126:$\mathbf{\beta}$
+\form#127:$\beta_0$
+\form#128:$\beta_1$
+\form#129:$\beta_2$
+\form#130:$y$
+\form#131:$f(y)=0+1x_1$
+\form#132:$x_1$
+\form#133:\[ \mathbf{X}' \mathbf{X} \]
+\form#134:\[ \mathbf{X}' \mathbf{X} + \lambda \mathbf{I} \]
+\form#135:$\mathbf{I}$
+\form#136:$\lambda$
+\form#137:$k$
+\form#138:$\mathcal{K}(\cdot, \cdot)$
+\form#139:$\mathcal{K}(a, b)$
+\form#140:$ K(x, x) = 1 \; \forall x $
+\form#141:$d(\cdot, \cdot)$
+\form#142:$d(a, b)$
+\form#143:$ S \in \mathcal{R}^{N \times d} $
+\form#144:$\mathcal{R}^d$
+\form#145:$c$
+\form#146:$p$
+\form#147:$d(p, c) - \lambda$

@@ -1,0 +1,250 @@
+<html>
+<head>
+<!-- probably could use more keywords -->
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>mlpack: a scalable c++ machine learning library</title>
+</head>
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="../../style-man.css">
+<link href='http://fonts.googleapis.com/css?family=Maven+Pro:500'
+rel='stylesheet' type='text/css'>
+<body>
+<!-- very simple table with as few words as possible -->
+<br>
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center>
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a
+href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center>
+<div class="mainsection smallertext manpage">
+
+
+<h1 align="center">mlpack_cf</h1>
+
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_cf</font>
+- collaborating filtering</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_cf</font>
+[<font class="code">-h</font>] [<font class="code">-v</font>] [<font class="code">-a</font> <font class="code2">string</font>]
+[<font class="code">-A</font>] [<font class="code">-m</font> <font class="code2">string</font>] [<font class="code">-I</font>] [<font class="code">-N</font>
+<font class="code2">int</font>] [<font class="code">-r</font> <font class="code2">double</font>] [<font class="code">-n</font> <font class="code2">int</font>]
+[<font class="code">-o</font> <font class="code2">string</font>] [<font class="code">-M</font> <font class="code2">string</font>]
+[<font class="code">-q</font> <font class="code2">string</font>] [<font class="code">-R</font> <font class="code2">int</font>] [<font class="code">-c</font>
+<font class="code2">int</font>] [<font class="code">-s</font> <font class="code2">int</font>] [<font class="code">-T</font> <font class="code2">string</font>]
+[<font class="code">-t</font> <font class="code2">string</font>] <font class="code">-V</font></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p class="closemargin first">This program
+performs collaborative filtering (CF) on the given dataset.
+Given a list of user, item and preferences
+(<font class="code">--training_file</font>) the program will perform a matrix
+decomposition and then can perform a series of actions
+related to collaborative filtering. Alternately, the program
+can load an existing saved CF model with the
+<font class="code">--input_model_file</font> (<font class="code">-m</font>) option and then use
+that model to provide recommendations or predict values.</p>
+
+<p class="closemargin first">The input file
+should contain a 3-column matrix of ratings, where the first
+column is the user, the second column is the item, and the
+third column is that user&rsquo;s rating of that item. Both
+the users and items should be numeric indices, not names.
+The indices are assumed to start from 0.</p>
+
+<p class="closemargin first">A set of query
+users for which recommendations can be generated may be
+specified with the <font class="code">--query_file</font> (<font class="code">-q</font>) option;
+alternately, recommendations may be generated for every user
+in the dataset by specifying the
+<font class="code">--all_user_recommendations</font> (<font class="code">-A</font>) option. In
+addition, the number of recommendations per user to generate
+can be specified with the <font class="code">--recommendations</font>
+(<font class="code">-r</font>) parameter, and the number of similar users (the
+size of the neighborhood) to be considered when generating
+recommendations can be specified with the
+<font class="code">--neighborhood</font> (<font class="code">-n</font>) option.</p>
+
+<p class="closemargin first">For performing
+the matrix decomposition, the following optimization
+algorithms can be specified via the <font class="code">--algorithm</font>
+(<font class="code">-a</font>) parameter: &rsquo;RegSVD&rsquo; -- Regularized
+SVD using a SGD optimizer &rsquo;NMF&rsquo; -- Non-negative
+matrix factorization with alternating least squares update
+rules &rsquo;BatchSVD&rsquo; -- SVD batch learning
+&rsquo;SVDIncompleteIncremental&rsquo; -- SVD incomplete
+incremental learning &rsquo;SVDCompleteIncremental&rsquo; --
+SVD complete incremental learning</p>
+
+<p class="closemargin first">A trained model
+may be saved to a file with the <font class="code">--output_model_file</font>
+(<font class="code">-M</font>) parameter.</p>
+
+<h2>OPTIONS
+<a name="OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--algorithm
+(-a) [</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Algorithm used for matrix
+factorization. Default value &rsquo;NMF&rsquo;.
+<font class="code">--all_user_recommendations</font> (<font class="code">-A</font>) Generate
+recommendations for all users.</p>
+
+<p class="closemargin"><font class="code">--help (-h)</font></p>
+
+<p class="farmargin">Default help info.</p>
+
+<p class="closemargin"><font class="code">--info
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Get help on a specific module
+or option. Default value &rsquo;&rsquo;.
+<font class="code">--input_model_file</font> (<font class="code">-m</font>) [<font class="code2">string</font>] File
+to load trained CF model from. Default value &rsquo;&rsquo;.
+<font class="code">--iteration_only_termination</font> (<font class="code">-I</font>) Terminate
+only when the maximum number of iterations is reached.</p>
+
+<p class="closemargin"><font class="code">--max_iterations (-N)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Maximum number of iterations.
+Default value <br>
+1000.</p>
+
+<p class="closemargin"><font class="code">--min_residue (-r)
+[</font><font class="code2">double</font><font class="code">]</font></p>
+
+<p class="farmargin">Residue required to terminate
+the factorization (lower values generally mean better fits).
+Default value 1e-05.</p>
+
+<p class="closemargin"><font class="code">--neighborhood (-n)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Size of the neighborhood of
+similar users to consider for each query user. Default value
+5.</p>
+
+<p class="closemargin"><font class="code">--output_file (-o)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">File to save output
+recommendations to. Default value &rsquo;&rsquo;.
+<font class="code">--output_model_file</font> (<font class="code">-M</font>) [<font class="code2">string</font>] File
+to save trained CF model to. Default value
+&rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--query_file (-q)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">List of users for which
+recommendations are to be generated. Default value
+&rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--rank (-R)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Rank of decomposed matrices (if
+0, a heuristic is used to estimate the rank). Default
+value</p>
+
+<table width="100
+" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="22
+"></td>
+<td width="3
+">
+
+
+<p>0.</p></td>
+<td width="3
+"></td>
+<td width="72
+">
+
+
+<p><font class="code">--recommendations</font> (<font class="code">-c</font>) [<font class="code2">int</font>] Number
+of recommendations to generate for each query user. Default
+value 5.</p></td></tr>
+</table>
+
+<p class="closemargin"><font class="code">--seed (-s)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Set the random seed (0 uses
+<font class="code">std::time</font>(NULL)). Default value 0.</p>
+
+<p class="closemargin"><font class="code">--test_file (-T)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Test set to calculate RMSE on.
+Default value &rsquo;&rsquo;. <font class="code">--training_file</font>
+(<font class="code">-t</font>) [<font class="code2">string</font>] Input dataset to perform CF on.
+Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--verbose (-v)</font></p>
+
+<p class="farmargin">Display informational messages
+and the full list of parameters and timers at the end of
+execution.</p>
+
+<p class="closemargin"><font class="code">--version (-V)</font></p>
+
+<p class="farmargin">Display the version of
+mlpack.</p>
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<p class="closemargin first">For further
+information, including relevant papers, citations, and
+theory, For further information, including relevant papers,
+citations, and theory, consult the documentation found at
+http://www.mlpack.org or included with your consult the
+documentation found at http://www.mlpack.org or included
+with your DISTRIBUTION OF MLPACK. DISTRIBUTION OF
+MLPACK.</p>
+</div></body></html>

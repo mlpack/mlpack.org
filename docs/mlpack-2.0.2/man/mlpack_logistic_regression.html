@@ -1,0 +1,279 @@
+<html>
+<head>
+<!-- probably could use more keywords -->
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>mlpack: a scalable c++ machine learning library</title>
+</head>
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="../../style-man.css">
+<link href='http://fonts.googleapis.com/css?family=Maven+Pro:500'
+rel='stylesheet' type='text/css'>
+<body>
+<!-- very simple table with as few words as possible -->
+<br>
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center>
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a
+href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center>
+<div class="mainsection smallertext manpage">
+
+
+<h1 align="center">mlpack_logistic_regression</h1>
+
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_logistic_regression</font>
+- l2-regularized logistic regression and prediction</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_logistic_regression</font>
+[<font class="code">-h</font>] [<font class="code">-v</font>] [<font class="code">-b</font> <font class="code2">int</font>] [<font class="code">-d</font>
+<font class="code2">double</font>] [<font class="code">-m</font> <font class="code2">string</font>] [<font class="code">-l</font>
+<font class="code2">string</font>] [<font class="code">-L</font> <font class="code2">double</font>] [<font class="code">-n</font>
+<font class="code2">int</font>] [<font class="code">-O</font> <font class="code2">string</font>] [<font class="code">-o</font>
+<font class="code2">string</font>] [<font class="code">-M</font> <font class="code2">string</font>] [<font class="code">-p</font>
+<font class="code2">string</font>] [<font class="code">-s</font> <font class="code2">double</font>] [<font class="code">-T</font>
+<font class="code2">string</font>] [<font class="code">-e</font> <font class="code2">double</font>] [<font class="code">-t</font>
+<font class="code2">string</font>] <font class="code">-V</font></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p class="closemargin first">An
+implementation of L2-regularized logistic regression using
+either the L-BFGS optimizer or SGD (stochastic gradient
+descent). This solves the regression problem</p>
+
+<p class="closemargin first">y = (1 / 1 +
+e^-(X * b))</p>
+
+<p class="closemargin first">where y takes
+values 0 or 1.</p>
+
+<p class="closemargin first">This program
+allows loading a logistic regression model from a file
+(<font class="code">-i</font>) or training a logistic regression model given
+training data (<font class="code">-t</font>), or both those things at once. In
+addition, this program allows classification on a test
+dataset (<font class="code">-T</font>) and will save the classification results
+to the given output file (<font class="code">-o</font>). The logistic
+regression model itself may be saved with a file specified
+using the <font class="code">-m</font> option.</p>
+
+<p class="closemargin first">The training
+data given with the <font class="code">-t</font> option should have class
+labels as its last dimension (so, if the training data is in
+CSV format, labels should be the last column). Alternately,
+the <font class="code">-l</font> (<font class="code">--labels_file</font>) option may be used to
+specify a separate file of labels.</p>
+
+<p class="closemargin first">When a model is
+being trained, there are many options. L2 regularization (to
+prevent overfitting) can be specified with the <font class="code">-l</font>
+option, and the optimizer used to train the model can be
+specified with the <font class="code">--optimizer</font> option. Available
+options are &rsquo;sgd&rsquo; (stochastic gradient descent),
+&rsquo;lbfgs&rsquo; (the L-BFGS optimizer), and
+&rsquo;minibatch-sgd&rsquo; (minibatch stochastic gradient
+descent). There are also various parameters for the
+optimizer; the <font class="code">--max_iterations</font> parameter specifies
+the maximum number of allowed iterations, and the
+<font class="code">--tolerance</font> (<font class="code">-e</font>) parameter specifies the
+tolerance for convergence. For the SGD and mini-batch SGD
+optimizers, the <font class="code">--step_size</font> parameter controls the
+step size taken at each iteration by the optimizer. The
+batch size for mini-batch SGD is controlled with the
+<font class="code">--batch_size</font> (<font class="code">-b</font>) parameter. If the objective
+function for your data is oscillating between Inf and 0, the
+step size is probably too large. There are more parameters
+for the optimizers, but the C++ interface must be used to
+access these.</p>
+
+<p class="closemargin first">For SGD, an
+iteration refers to a single point, and for mini-batch SGD,
+an iteration refers to a single batch. So to take a single
+pass over the dataset with SGD, <font class="code">--max_iterations</font>
+should be set to the number of points in the dataset.</p>
+
+<p class="closemargin first">Optionally, the
+model can be used to predict the responses for another
+matrix of data points, if <font class="code">--test_file</font> is specified.
+The <font class="code">--test_file</font> option can be specified without
+<font class="code">--input_file</font>, so long as an existing logistic
+regression model is given with <font class="code">--model_file</font>. The
+output predictions from the logistic regression model are
+stored in the file given with
+<font class="code">--output_predictions</font>.</p>
+
+<p class="closemargin first">This
+implementation of logistic regression does not support the
+general multi-class case but instead only the two-class
+case. Any responses must be either 0 or 1.</p>
+
+<h2>OPTIONS
+<a name="OPTIONS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">--batch_size
+(-b) [</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Batch size for mini-batch SGD.
+Default value</p>
+
+<table width="100
+" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="22
+"></td>
+<td width="4
+">
+
+
+<p>50.</p></td>
+<td width="2
+"></td>
+<td width="72
+">
+
+
+<p><font class="code">--decision_boundary</font> (<font class="code">-d</font>) [<font class="code2">double</font>]
+Decision boundary for prediction; if the logistic function
+for a point is less than the boundary, the class is taken to
+be 0; otherwise, the class is 1. Default value 0.5.</p></td></tr>
+</table>
+
+<p class="closemargin"><font class="code">--help (-h)</font></p>
+
+<p class="farmargin">Default help info.</p>
+
+<p class="closemargin"><font class="code">--info
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Get help on a specific module
+or option. Default value &rsquo;&rsquo;.
+<font class="code">--input_model_file</font> (<font class="code">-m</font>) [<font class="code2">string</font>] File
+containing existing model (parameters). Default value
+&rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--labels_file (-l)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">A file containing labels (0 or
+1) for the points in the training set (y). Default value
+&rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--lambda (-L)
+[</font><font class="code2">double</font><font class="code">]</font></p>
+
+<p class="farmargin">L2-regularization parameter for
+training. Default value 0.</p>
+
+<p class="closemargin"><font class="code">--max_iterations (-n)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Maximum iterations for
+optimizer (0 indicates no limit). Default value 10000.</p>
+
+<p class="closemargin"><font class="code">--optimizer (-O)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Optimizer to use for training
+(&rsquo;lbfgs&rsquo; or &rsquo;sgd&rsquo;). Default value
+&rsquo;lbfgs&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--output_file (-o)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">If <font class="code">--test_file</font> is
+specified, this file is where the predictions for the test
+set will be saved. Default value &rsquo;&rsquo;.
+<font class="code">--output_model_file</font> (<font class="code">-M</font>) [<font class="code2">string</font>] File
+to save trained logistic regression model to. Default value
+&rsquo;&rsquo;. <font class="code">--output_probabilities_file</font>
+(<font class="code">-p</font>) [<font class="code2">string</font>] If <font class="code">--test_file</font> is
+specified, this file is where the class probabilities for
+the test set will be saved. Default value
+&rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--step_size (-s)
+[</font><font class="code2">double</font><font class="code">]</font></p>
+
+<p class="farmargin">Step size for SGD and
+mini-batch SGD optimizers. Default value 0.01.</p>
+
+<p class="closemargin"><font class="code">--test_file (-T)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">File containing test dataset.
+Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--tolerance (-e)
+[</font><font class="code2">double</font><font class="code">]</font></p>
+
+<p class="farmargin">Convergence tolerance for
+optimizer. Default value 1e-10. <font class="code">--training_file</font>
+(<font class="code">-t</font>) [<font class="code2">string</font>] A file containing the training
+set (the matrix of predictors, X). Default value
+&rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--verbose (-v)</font></p>
+
+<p class="farmargin">Display informational messages
+and the full list of parameters and timers at the end of
+execution.</p>
+
+<p class="closemargin"><font class="code">--version (-V)</font></p>
+
+<p class="farmargin">Display the version of
+mlpack.</p>
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<p class="closemargin first">For further
+information, including relevant papers, citations, and
+theory, For further information, including relevant papers,
+citations, and theory, consult the documentation found at
+http://www.mlpack.org or included with your consult the
+documentation found at http://www.mlpack.org or included
+with your DISTRIBUTION OF MLPACK. DISTRIBUTION OF
+MLPACK.</p>
+</div></body></html>

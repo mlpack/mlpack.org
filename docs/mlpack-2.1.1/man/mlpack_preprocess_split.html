@@ -1,0 +1,192 @@
+<html>
+<head>
+<!-- probably could use more keywords -->
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>mlpack: a scalable c++ machine learning library</title>
+</head>
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="../../style-man.css">
+<link href='http://fonts.googleapis.com/css?family=Maven+Pro:500'
+rel='stylesheet' type='text/css'>
+<body>
+<!-- very simple table with as few words as possible -->
+<br>
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center>
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a
+href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center>
+<div class="mainsection smallertext manpage">
+
+
+<h1 align="center">mlpack_preprocess_split</h1>
+
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_preprocess_split</font>
+- split data</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_preprocess_split</font>
+[<font class="code">-h</font>] [<font class="code">-v</font>]</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p class="closemargin first">This utility
+takes a dataset and optionally labels and splits them into a
+training set and a test set. Before the split, the points in
+the dataset are randomly reordered. The percentage of the
+dataset to be used as the test set can be specified with the
+<font class="code">--test_ratio</font> (<font class="code">-r</font>) option; the default is 0.2
+(20
+).</p>
+
+<p class="closemargin first">The program
+does not modify the original file, but instead makes
+separate files to save the training and test files; The
+program requires you to specify the file names with
+<font class="code">--training_file</font> (<font class="code">-t</font>) and <font class="code">--test_file</font>
+(<font class="code">-T</font>).</p>
+
+<p class="closemargin first">Optionally,
+labels can be also be split along with the data by
+specifying the <font class="code">--input_labels_file</font> (<font class="code">-I</font>)
+option. Splitting labels works the same way as splitting the
+data. The output training and test labels will be saved to
+the files specified by <font class="code">--training_labels_file</font>
+(<font class="code">-l</font>) and <font class="code">--test_labels_file</font> (<font class="code">-L</font>),
+respectively.</p>
+
+<p class="closemargin first">So, a simple
+example where we want to split dataset.csv into train.csv
+and test.csv with 60
+ of the data in the training set and
+40
+ of the dataset in the test set, we could run</p>
+
+<p class="closemargin first">$
+<font class="code">mlpack_preprocess_split -i</font> dataset.csv <font class="code">-t</font>
+train.csv <font class="code">-T</font> test.csv <font class="code">-r</font> 0.4</p>
+
+<p class="closemargin first">If we had a
+dataset in dataset.csv and associated labels in labels.csv,
+and we wanted to split these into training_set.csv,
+training_labels.csv, test_set.csv, and test_labels.csv, with
+30
+ of the data in the test set, we could run</p>
+
+<p class="closemargin first">$
+<font class="code">mlpack_preprocess_split -i</font> dataset.csv <font class="code">-I</font>
+labels.csv <font class="code">-r</font> 0.3 &gt; <font class="code">-t</font> training_set.csv
+<font class="code">-l</font> training_labels.csv <font class="code">-T</font> test_set.csv &gt;
+<font class="code">-L</font> test_labels.csv</p>
+
+<h2>REQUIRED INPUT OPTIONS
+<a name="REQUIRED INPUT OPTIONS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">--input_file
+(-i) [string]</font></p>
+
+<p class="farmargin">File containing data,</p>
+
+<h2>OPTIONAL INPUT OPTIONS
+<a name="OPTIONAL INPUT OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--help
+(-h)</font></p>
+
+<p class="farmargin">Default help info.</p>
+
+<p class="closemargin"><font class="code">--info [string]</font></p>
+
+<p class="farmargin">Get help on a specific module
+or option. Default value &rsquo;&rsquo;.
+<font class="code">--input_labels_file</font> (<font class="code">-I</font>) [string] File
+containing labels Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--test_ratio (-r)
+[double]</font></p>
+
+<p class="farmargin">Ratio of test set; if not
+set,the ratio defaults to 0.2 Default value 0.2.</p>
+
+<p class="closemargin"><font class="code">--verbose (-v)</font></p>
+
+<p class="farmargin">Display informational messages
+and the full list of parameters and timers at the end of
+execution.</p>
+
+<p class="closemargin"><font class="code">--version (-V)</font></p>
+
+<p class="farmargin">Display the version of
+mlpack.</p>
+
+<h2>OPTIONAL OUTPUT OPTIONS
+<a name="OPTIONAL OUTPUT OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--test_file
+(-T) [string]</font></p>
+
+<p class="farmargin">File name to save test data
+Default value &rsquo;&rsquo;. <font class="code">--test_labels_file</font>
+(<font class="code">-L</font>) [string] File name to save test label Default
+value &rsquo;&rsquo;. <font class="code">--training_file</font> (<font class="code">-t</font>)
+[string] File name to save train data Default value
+&rsquo;&rsquo;. <font class="code">--training_labels_file</font> (<font class="code">-l</font>)
+[string] File name to save train label Default value
+&rsquo;&rsquo;.</p>
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<p class="closemargin first">For further
+information, including relevant papers, citations, and
+theory, For further information, including relevant papers,
+citations, and theory, consult the documentation found at
+http://www.mlpack.org or included with your consult the
+documentation found at http://www.mlpack.org or included
+with your DISTRIBUTION OF MLPACK. DISTRIBUTION OF
+MLPACK.</p>
+</div></body></html>

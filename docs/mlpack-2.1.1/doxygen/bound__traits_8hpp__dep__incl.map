@@ -1,0 +1,51 @@
+<map id="src/mlpack/core/tree/bound_traits.hpp" name="src/mlpack/core/tree/bound_traits.hpp">
+<area shape="rect" id="node2" href="$ballbound_8hpp.html" title="Bounds that are useful for binary space partitioning trees. " alt="" coords="757,95,898,136"/>
+<area shape="rect" id="node3" href="$bounds_8hpp.html" title="Bounds that are useful for binary space partitioning trees. " alt="" coords="298,191,440,233"/>
+<area shape="rect" id="node40" href="$hrectbound_8hpp.html" title="Bounds that are useful for binary space partitioning trees. " alt="" coords="592,95,733,136"/>
+<area shape="rect" id="node49" href="$hollow__ball__bound_8hpp.html" title="Bounds that are useful for binary space partitioning trees. " alt="" coords="194,95,352,136"/>
+<area shape="rect" id="node50" href="$cellbound_8hpp.html" title="src/mlpack/core/tree\l/cellbound.hpp" alt="" coords="376,95,517,136"/>
+<area shape="rect" id="node39" href="$binary__space__tree_2traits_8hpp.html" title="src/mlpack/core/tree\l/binary_space_tree/traits.hpp" alt="" coords="1503,191,1694,233"/>
+<area shape="rect" id="node4" href="$binary__space__tree_8hpp.html" title="src/mlpack/core/tree\l/binary_space_tree.hpp" alt="" coords="1576,295,1733,337"/>
+<area shape="rect" id="node27" href="$octree_8hpp.html" title="src/mlpack/core/tree\l/octree.hpp" alt="" coords="636,399,777,441"/>
+<area shape="rect" id="node28" href="$rectangle__tree_8hpp.html" title="src/mlpack/core/tree\l/rectangle_tree.hpp" alt="" coords="801,399,942,441"/>
+<area shape="rect" id="node29" href="$projection__vector_8hpp.html" title="src/mlpack/core/tree\l/space_split/projection\l_vector.hpp" alt="" coords="52,288,204,344"/>
+<area shape="rect" id="node35" href="$spill__tree_8hpp.html" title="src/mlpack/core/tree\l/spill_tree.hpp" alt="" coords="225,793,366,835"/>
+<area shape="rect" id="node5" href="$binary__space__tree_2binary__space__tree_8hpp.html" title="src/mlpack/core/tree\l/binary_space_tree/binary\l_space_tree.hpp" alt="" coords="1569,392,1740,448"/>
+<area shape="rect" id="node8" href="$neighbor__search_8hpp.html" title="src/mlpack/methods\l/neighbor_search/neighbor\l_search.hpp" alt="" coords="1398,496,1572,552"/>
+<area shape="rect" id="node10" href="$dual__tree__kmeans_8hpp.html" title="src/mlpack/methods\l/kmeans/dual_tree_kmeans.hpp" alt="" coords="1952,600,2159,641"/>
+<area shape="rect" id="node12" href="$ns__model_8hpp.html" title="src/mlpack/methods\l/neighbor_search/ns\l_model.hpp" alt="" coords="768,883,908,939"/>
+<area shape="rect" id="node13" href="$breadth__first__dual__tree__traverser_8hpp.html" title="src/mlpack/core/tree\l/binary_space_tree/breadth\l_first_dual_tree_traverser.hpp" alt="" coords="1764,392,1958,448"/>
+<area shape="rect" id="node14" href="$core_2tree_2binary__space__tree_2typedef_8hpp.html" title="src/mlpack/core/tree\l/binary_space_tree/typedef.hpp" alt="" coords="1983,399,2187,441"/>
+<area shape="rect" id="node15" href="$dtb_8hpp.html" title="src/mlpack/methods\l/emst/dtb.hpp" alt="" coords="2211,399,2351,441"/>
+<area shape="rect" id="node16" href="$kmeans_8hpp.html" title="src/mlpack/methods\l/kmeans/kmeans.hpp" alt="" coords="2536,399,2682,441"/>
+<area shape="rect" id="node20" href="$pelleg__moore__kmeans_8hpp.html" title="src/mlpack/methods\l/kmeans/pelleg_moore\l_kmeans.hpp" alt="" coords="2707,392,2860,448"/>
+<area shape="rect" id="node21" href="$range__search_8hpp.html" title="src/mlpack/methods\l/range_search/range\l_search.hpp" alt="" coords="1018,392,1158,448"/>
+<area shape="rect" id="node22" href="$rs__model_8hpp.html" title="src/mlpack/methods\l/range_search/rs_model.hpp" alt="" coords="926,503,1113,545"/>
+<area shape="rect" id="node23" href="$ra__model_8hpp.html" title="src/mlpack/methods\l/rann/ra_model.hpp" alt="" coords="886,600,1026,641"/>
+<area shape="rect" id="node24" href="$ra__search_8hpp.html" title="src/mlpack/methods\l/rann/ra_search.hpp" alt="" coords="1234,503,1374,545"/>
+<area shape="rect" id="node26" href="$ra__query__stat_8hpp.html" title="src/mlpack/methods\l/rann/ra_query_stat.hpp" alt="" coords="1234,399,1392,441"/>
+<area shape="rect" id="node6" href="$binary__space__tree_2single__tree__traverser_8hpp.html" title="src/mlpack/core/tree\l/binary_space_tree/single\l_tree_traverser.hpp" alt="" coords="1597,496,1768,552"/>
+<area shape="rect" id="node7" href="$binary__space__tree_2dual__tree__traverser_8hpp.html" title="src/mlpack/core/tree\l/binary_space_tree/dual\l_tree_traverser.hpp" alt="" coords="2017,496,2177,552"/>
+<area shape="rect" id="node9" href="$cf_8hpp.html" title="src/mlpack/methods\l/cf/cf.hpp" alt="" coords="1224,600,1364,641"/>
+<area shape="rect" id="node11" href="$methods_2neighbor__search_2typedef_8hpp.html" title="src/mlpack/methods\l/neighbor_search/typedef.hpp" alt="" coords="1388,600,1582,641"/>
+<area shape="rect" id="node17" href="$em__fit_8hpp.html" title="src/mlpack/methods\l/gmm/em_fit.hpp" alt="" coords="2732,503,2872,545"/>
+<area shape="rect" id="node19" href="$kmeans__selection_8hpp.html" title="src/mlpack/methods\l/nystroem_method/kmeans\l_selection.hpp" alt="" coords="2528,496,2708,552"/>
+<area shape="rect" id="node18" href="$gmm_8hpp.html" title="src/mlpack/methods\l/gmm/gmm.hpp" alt="" coords="2732,600,2872,641"/>
+<area shape="rect" id="node25" href="$ra__typedef_8hpp.html" title="src/mlpack/methods\l/rann/ra_typedef.hpp" alt="" coords="1058,600,1200,641"/>
+<area shape="rect" id="node30" href="$hyperplane_8hpp.html" title="src/mlpack/core/tree\l/space_split/hyperplane.hpp" alt="" coords="146,399,330,441"/>
+<area shape="rect" id="node31" href="$mean__space__split_8hpp.html" title="src/mlpack/core/tree\l/space_split/mean_space\l_split.hpp" alt="" coords="254,496,425,552"/>
+<area shape="rect" id="node32" href="$midpoint__space__split_8hpp.html" title="src/mlpack/core/tree\l/space_split/midpoint\l_space_split.hpp" alt="" coords="450,496,595,552"/>
+<area shape="rect" id="node38" href="$space__split_8hpp.html" title="src/mlpack/core/tree\l/space_split/space_split.hpp" alt="" coords="44,503,230,545"/>
+<area shape="rect" id="node33" href="$spill__tree_2spill__tree_8hpp.html" title="src/mlpack/core/tree\l/spill_tree/spill_tree.hpp" alt="" coords="300,600,459,641"/>
+<area shape="rect" id="node34" href="$is__spill__tree_8hpp.html" title="Definition of IsSpillTree. " alt="" coords="558,689,700,745"/>
+<area shape="rect" id="node36" href="$spill__single__tree__traverser_8hpp.html" title="src/mlpack/core/tree\l/spill_tree/spill_single\l_tree_traverser.hpp" alt="" coords="222,689,369,745"/>
+<area shape="rect" id="node37" href="$spill__dual__tree__traverser_8hpp.html" title="src/mlpack/core/tree\l/spill_tree/spill_dual\l_tree_traverser.hpp" alt="" coords="393,689,534,745"/>
+<area shape="rect" id="node41" href="$octree_2octree_8hpp.html" title="src/mlpack/core/tree\l/octree/octree.hpp" alt="" coords="592,191,733,233"/>
+<area shape="rect" id="node44" href="$rectangle__tree_2rectangle__tree_8hpp.html" title="src/mlpack/core/tree\l/rectangle_tree/rectangle\l_tree.hpp" alt="" coords="1021,184,1186,240"/>
+<area shape="rect" id="node48" href="$r__plus__plus__tree__auxiliary__information_8hpp.html" title="src/mlpack/core/tree\l/rectangle_tree/r_plus\l_plus_tree_auxiliary_information.hpp" alt="" coords="1234,184,1467,240"/>
+<area shape="rect" id="node42" href="$octree_2dual__tree__traverser_8hpp.html" title="src/mlpack/core/tree\l/octree/dual_tree_traverser.hpp" alt="" coords="329,295,532,337"/>
+<area shape="rect" id="node43" href="$octree_2single__tree__traverser_8hpp.html" title="src/mlpack/core/tree\l/octree/single_tree_traverser.hpp" alt="" coords="556,295,768,337"/>
+<area shape="rect" id="node45" href="$rectangle__tree_2dual__tree__traverser_8hpp.html" title="src/mlpack/core/tree\l/rectangle_tree/dual\l_tree_traverser.hpp" alt="" coords="1269,288,1410,344"/>
+<area shape="rect" id="node46" href="$rectangle__tree_2single__tree__traverser_8hpp.html" title="src/mlpack/core/tree\l/rectangle_tree/single\l_tree_traverser.hpp" alt="" coords="842,288,989,344"/>
+<area shape="rect" id="node47" href="$core_2tree_2rectangle__tree_2typedef_8hpp.html" title="src/mlpack/core/tree\l/rectangle_tree/typedef.hpp" alt="" coords="1014,295,1194,337"/>
+</map>

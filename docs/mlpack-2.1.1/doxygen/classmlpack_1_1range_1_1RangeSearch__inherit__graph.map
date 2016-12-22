@@ -1,0 +1,16 @@
+<map id="mlpack::range::RangeSearch&lt; MetricType, MatType, TreeType &gt;" name="mlpack::range::RangeSearch&lt; MetricType, MatType, TreeType &gt;">
+<area shape="rect" id="node2" href="$classmlpack_1_1range_1_1RangeSearch.html" title="mlpack::range::RangeSearch\l\&lt; tree::VPTree \&gt;" alt="" coords="459,9,649,50"/>
+<area shape="rect" id="node3" href="$classmlpack_1_1range_1_1RangeSearch.html" title="mlpack::range::RangeSearch\l\&lt; tree::BallTree \&gt;" alt="" coords="459,74,649,115"/>
+<area shape="rect" id="node4" href="$classmlpack_1_1range_1_1RangeSearch.html" title="mlpack::range::RangeSearch\l\&lt; tree::KDTree \&gt;" alt="" coords="459,139,649,181"/>
+<area shape="rect" id="node5" href="$classmlpack_1_1range_1_1RangeSearch.html" title="mlpack::range::RangeSearch\l\&lt; tree::RTree \&gt;" alt="" coords="459,205,649,246"/>
+<area shape="rect" id="node6" href="$classmlpack_1_1range_1_1RangeSearch.html" title="mlpack::range::RangeSearch\l\&lt; tree::UBTree \&gt;" alt="" coords="459,270,649,311"/>
+<area shape="rect" id="node7" href="$classmlpack_1_1range_1_1RangeSearch.html" title="mlpack::range::RangeSearch\l\&lt; tree::RPTree \&gt;" alt="" coords="459,335,649,377"/>
+<area shape="rect" id="node8" href="$classmlpack_1_1range_1_1RangeSearch.html" title="mlpack::range::RangeSearch\l\&lt; tree::StandardCoverTree \&gt;" alt="" coords="459,401,649,442"/>
+<area shape="rect" id="node9" href="$classmlpack_1_1range_1_1RangeSearch.html" title="mlpack::range::RangeSearch\l\&lt; tree::RPlusPlusTree \&gt;" alt="" coords="459,466,649,507"/>
+<area shape="rect" id="node10" href="$classmlpack_1_1range_1_1RangeSearch.html" title="mlpack::range::RangeSearch\l\&lt; tree::HilbertRTree \&gt;" alt="" coords="459,531,649,573"/>
+<area shape="rect" id="node11" href="$classmlpack_1_1range_1_1RangeSearch.html" title="mlpack::range::RangeSearch\l\&lt; tree::Octree \&gt;" alt="" coords="459,597,649,638"/>
+<area shape="rect" id="node12" href="$classmlpack_1_1range_1_1RangeSearch.html" title="mlpack::range::RangeSearch\l\&lt; tree::MaxRPTree \&gt;" alt="" coords="459,662,649,703"/>
+<area shape="rect" id="node13" href="$classmlpack_1_1range_1_1RangeSearch.html" title="mlpack::range::RangeSearch\l\&lt; tree::XTree \&gt;" alt="" coords="459,727,649,769"/>
+<area shape="rect" id="node14" href="$classmlpack_1_1range_1_1RangeSearch.html" title="mlpack::range::RangeSearch\l\&lt; tree::RPlusTree \&gt;" alt="" coords="459,793,649,834"/>
+<area shape="rect" id="node15" href="$classmlpack_1_1range_1_1RangeSearch.html" title="mlpack::range::RangeSearch\l\&lt; tree::RStarTree \&gt;" alt="" coords="459,858,649,899"/>
+</map>

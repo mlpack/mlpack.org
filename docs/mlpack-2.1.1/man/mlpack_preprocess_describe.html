@@ -1,0 +1,183 @@
+<html>
+<head>
+<!-- probably could use more keywords -->
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>mlpack: a scalable c++ machine learning library</title>
+</head>
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="../../style-man.css">
+<link href='http://fonts.googleapis.com/css?family=Maven+Pro:500'
+rel='stylesheet' type='text/css'>
+<body>
+<!-- very simple table with as few words as possible -->
+<br>
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center>
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a
+href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center>
+<div class="mainsection smallertext manpage">
+
+
+<h1 align="center">mlpack_preprocess_describe</h1>
+
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_preprocess_describe</font>
+- descriptive statistics</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_preprocess_describe</font>
+[<font class="code">-h</font>] [<font class="code">-v</font>]</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p class="closemargin first">This utility
+takes a dataset and prints out the descriptive statistics of
+the data. Descriptive statistics is the discipline of
+quantitatively describing the main features of a collection
+of information, or the quantitative description itself. The
+program does not modify the original file, but instead
+prints out the statistics to the console. The printed result
+will look like a table.</p>
+
+<p class="closemargin first">Optionally,
+width and precision of the output can be adjusted by a user
+using the <font class="code">--width</font> (<font class="code">-w</font>) and <font class="code">--precision</font>
+(<font class="code">-p</font>). A user can also select a specific dimension to
+analyize if he or she has too many
+dimensions.<font class="code">--population</font> (<font class="code">-P</font>) is a flag which
+can be used when the user wants the dataset to be considered
+as a population. Otherwise, the dataset will be considered
+as a sample.</p>
+
+<p class="closemargin first">So, a simple
+example where we want to print out statistical facts about
+dataset.csv, and keep the default settings, we could run</p>
+
+<p class="closemargin first">$
+<font class="code">mlpack_preprocess_describe -i</font> dataset.csv
+<font class="code">-v</font></p>
+
+<p class="closemargin first">If we want to
+customize the width to 10 and precision to 5 and consider
+the dataset as a population, we could run</p>
+
+<p class="closemargin first">$
+<font class="code">mlpack_preprocess_describe -i</font> dataset.csv <font class="code">-w</font>
+10 <font class="code">-p</font> 5 <font class="code">-P -v</font></p>
+
+<h2>REQUIRED INPUT OPTIONS
+<a name="REQUIRED INPUT OPTIONS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">--input_file
+(-i) [string]</font></p>
+
+<p class="farmargin">File containing data,</p>
+
+<h2>OPTIONAL INPUT OPTIONS
+<a name="OPTIONAL INPUT OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--dimension
+(-d) [int]</font></p>
+
+<p class="farmargin">Dimension of the data. Use this
+to specify a dimension Default value 0.</p>
+
+<p class="closemargin"><font class="code">--help (-h)</font></p>
+
+<p class="farmargin">Default help info.</p>
+
+<p class="closemargin"><font class="code">--info [string]</font></p>
+
+<p class="farmargin">Get help on a specific module
+or option. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--population (-P)</font></p>
+
+<p class="farmargin">If specified, the program will
+calculate statistics assuming the dataset is the population.
+By default, the program will assume the dataset as a
+sample.</p>
+
+<p class="closemargin"><font class="code">--precision (-p)
+[int]</font></p>
+
+<p class="farmargin">Precision of the output
+statistics. Default value 4.</p>
+
+<p class="closemargin"><font class="code">--row_major (-r)</font></p>
+
+<p class="farmargin">If specified, the program will
+calculate statistics across rows, not across columns.
+(Remember that in mlpack, a column represents a point, so
+this option is generally not necessary.)</p>
+
+<p class="closemargin"><font class="code">--verbose (-v)</font></p>
+
+<p class="farmargin">Display informational messages
+and the full list of parameters and timers at the end of
+execution.</p>
+
+<p class="closemargin"><font class="code">--version (-V)</font></p>
+
+<p class="farmargin">Display the version of
+mlpack.</p>
+
+<p class="closemargin"><font class="code">--width (-w) [int]</font></p>
+
+<p class="farmargin">Width of the output table.
+Default value 8.</p>
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<p class="closemargin first">For further
+information, including relevant papers, citations, and
+theory, For further information, including relevant papers,
+citations, and theory, consult the documentation found at
+http://www.mlpack.org or included with your consult the
+documentation found at http://www.mlpack.org or included
+with your DISTRIBUTION OF MLPACK. DISTRIBUTION OF
+MLPACK.</p>
+</div></body></html>

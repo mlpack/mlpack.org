@@ -73,7 +73,7 @@ hc.methodSelect = function()
   
   // Loop through results and fill the second list box.
   var param_select_box = document.getElementById("param_select");
-  
+
   // Put in the new options.
   clearSelectBox(param_select_box);
   for (i = 0; i < params[0].values.length; i++)

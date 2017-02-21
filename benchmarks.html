@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="css/d3-style.css">
 <link rel="stylesheet" href="style.css">
 <link href='http://fonts.googleapis.com/css?family=Maven+Pro:500' rel='stylesheet' type='text/css'>
-<body>
+<body onload="createColorMapping()">
 <!-- very simple table with as few words as possible -->
 <br>
 <div class="titlebar">
@@ -62,7 +62,6 @@ pre-selected benchmarks for <font class="whitebold">mlpack 1.0.10</font>.</p>
   <div class="clear"></div>
 </div>-->
 
-<script src='js/sql.js'></script>
 <script src='js/jquery.min.js'></script>
 <script src='js/d3.v3.min.js'></script>
 <script src='js/d3.tip.min.js'></script>
@@ -84,20 +83,20 @@ function createColorMapping()
 
   rc.method_name = "ALLKNN";
   rc.param_name = "-k 3 -s 42";
-  rc.groupBy = "datasets.instances";
+  rc.groupBy = "di";
 
-  // Get list of datasets and libraries.
-  var sqlstr = "SELECT DISTINCT results.time, results.var, libraries.id, libraries.name, datasets.name, datasets.id " +
-      "FROM results, datasets, methods, libraries WHERE results.dataset_id == datasets.id AND results.method_id == methods.id " +
-      "AND methods.name == '" + rc.method_name + "' AND methods.parameters == '" + rc.param_name + "' AND libraries.id == results.libary_id " +
-      "GROUP BY datasets.id, libraries.id, " + rc.groupBy + ";";
-  rc.results = db.exec(sqlstr);
-
+  var sqlstr = "SELECT DISTINCT * FROM " +
+      "(SELECT results.time as time, results.var as var, libraries.id, libraries.name as lib, datasets.name as dataset, datasets.id as did, libraries.id as lid, results.build_id as bid, datasets.instances as di, datasets.attributes as da, datasets.size as ds " +
+      "FROM results, datasets, methods, libraries WHERE " +
+      "results.dataset_id = datasets.id AND results.method_id = methods.id AND methods.name = '" + rc.method_name + "' AND methods.parameters = '" + rc.param_name + "' AND libraries.id = results.libary_id ORDER BY bid DESC " +
+      ") tmp GROUP BY lid, " + rc.groupBy + ", did;";
+  rc.results = dbExec(sqlstr);
+  rc.results = dbType === "sqlite" ? rc.results[0].values : rc.results;
 
   // Obtain unique list of datasets.
-  rc.datasets = rc.results[0].values.map(function(d) { return d[4]; }).reduce(function(p, c) { if(p.indexOf(c) < 0) p.push(c); return p; }, []);
+  rc.datasets = rc.results.map(function(d) { return dbType === "sqlite" ? d[4] : d.dataset; }).reduce(function(p, c) { if(p.indexOf(c) < 0) p.push(c); return p; }, []);
   // Obtain unique list of libraries.
-  rc.libraries = rc.results[0].values.map(function(d) { return d[3]; }).reduce(function(p, c) { if(p.indexOf(c) < 0) p.push(c); return p; }, []);
+  rc.libraries = rc.results.map(function(d) { return dbType === "sqlite" ? d[3] : d.lib; }).reduce(function(p, c) { if(p.indexOf(c) < 0) p.push(c); return p; }, []);
 
   // By default, everything is active.
   rc.active_datasets = {};
@@ -112,8 +111,8 @@ function createColorMapping()
     rc.active_libraries[rc.libraries[i]] = true;
   }
 
-  clearChart();
-  buildChart();
+  rc.clearChart();
+  rc.buildChart();
 }
 
 // Also build PCA with no options, and datasets = { "covtype", "Twitter",

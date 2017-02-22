@@ -83,12 +83,13 @@ function createColorMapping()
 
   rc.method_name = "ALLKNN";
   rc.param_name = "-k 3 -s 42";
+  rc.param_name_seed = "-k 3";
   rc.groupBy = "di";
 
   var sqlstr = "SELECT DISTINCT * FROM " +
       "(SELECT results.time as time, results.var as var, libraries.id, libraries.name as lib, datasets.name as dataset, datasets.id as did, libraries.id as lid, results.build_id as bid, datasets.instances as di, datasets.attributes as da, datasets.size as ds " +
       "FROM results, datasets, methods, libraries WHERE " +
-      "results.dataset_id = datasets.id AND results.method_id = methods.id AND methods.name = '" + rc.method_name + "' AND methods.parameters = '" + rc.param_name + "' AND libraries.id = results.libary_id ORDER BY bid DESC " +
+      "results.dataset_id = datasets.id AND results.method_id = methods.id AND methods.name = '" + rc.method_name + "' AND (methods.parameters = '" + rc.param_name + "' OR methods.parameters = '" + rc.param_name_seed + "') AND libraries.id = results.libary_id ORDER BY bid DESC " +
       ") tmp GROUP BY lid, " + rc.groupBy + ", did;";
   rc.results = dbExec(sqlstr);
   rc.results = dbType === "sqlite" ? rc.results[0].values : rc.results;

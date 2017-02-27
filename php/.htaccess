@@ -1,1 +1,3 @@
-deny from all
+<Files "config.ini">
+  deny from all
+</Files>

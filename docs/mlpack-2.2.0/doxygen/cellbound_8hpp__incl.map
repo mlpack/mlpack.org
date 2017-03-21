@@ -1,0 +1,17 @@
+<map id="src/mlpack/core/tree/cellbound.hpp" name="src/mlpack/core/tree/cellbound.hpp">
+<area shape="rect" id="node2" href="$prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo. " alt="" coords="1179,184,1315,211"/>
+<area shape="rect" id="node41" href="$range_8hpp.html" title="Definition of the Range class, which represents a simple range with a lower and upper bound..." alt="" coords="1449,102,1636,129"/>
+<area shape="rect" id="node43" href="$lmetric_8hpp.html" title="mlpack/core/metrics\l/lmetric.hpp" alt="" coords="1285,95,1425,136"/>
+<area shape="rect" id="node45" href="$bound__traits_8hpp.html" title="bound_traits.hpp" alt="" coords="1661,102,1779,129"/>
+<area shape="rect" id="node46" href="$address_8hpp.html" title="address.hpp" alt="" coords="1804,102,1897,129"/>
+<area shape="rect" id="node20" href="$serialization__shim_8hpp.html" title="mlpack/core/data/serialization\l_shim.hpp" alt="" coords="1653,259,1848,300"/>
+<area shape="rect" id="node25" href="$serialization__template__version_8hpp.html" title="mlpack/core/data/serialization\l_template_version.hpp" alt="" coords="2385,259,2580,300"/>
+<area shape="rect" id="node27" href="$arma__traits_8hpp.html" title="mlpack/core/util/arma\l_traits.hpp" alt="" coords="2801,259,2948,300"/>
+<area shape="rect" id="node28" href="$arma__config__check_8hpp.html" title="mlpack/core/util/arma\l_config_check.hpp" alt="" coords="2972,259,3119,300"/>
+<area shape="rect" id="node30" href="$log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="725,266,885,293"/>
+<area shape="rect" id="node37" href="$timers_8hpp.html" title="mlpack/core/util/timers.hpp" alt="" coords="960,266,1139,293"/>
+<area shape="rect" id="node40" href="$deprecated_8hpp.html" title="mlpack/core/util/deprecated.hpp" alt="" coords="3143,266,3350,293"/>
+<area shape="rect" id="node21" href="$sfinae__utility_8hpp.html" title="mlpack/core/util/sfinae\l_utility.hpp" alt="" coords="1689,348,1842,389"/>
+<area shape="rect" id="node33" href="$prefixedoutstream_8hpp.html" title="prefixedoutstream.hpp" alt="" coords="915,355,1066,382"/>
+<area shape="rect" id="node35" href="$nulloutstream_8hpp.html" title="nulloutstream.hpp" alt="" coords="512,355,637,382"/>
+</map>

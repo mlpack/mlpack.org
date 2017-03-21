@@ -1,0 +1,15 @@
+<map id="src/mlpack/core/data/dataset_mapper.hpp" name="src/mlpack/core/data/dataset_mapper.hpp">
+<area shape="rect" id="node2" href="$prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo. " alt="" coords="1179,273,1315,300"/>
+<area shape="rect" id="node43" href="$increment__policy_8hpp.html" title="map_policies/increment\l_policy.hpp" alt="" coords="1319,95,1478,136"/>
+<area shape="rect" id="node20" href="$serialization__shim_8hpp.html" title="mlpack/core/data/serialization\l_shim.hpp" alt="" coords="1653,348,1848,389"/>
+<area shape="rect" id="node25" href="$serialization__template__version_8hpp.html" title="mlpack/core/data/serialization\l_template_version.hpp" alt="" coords="2385,348,2580,389"/>
+<area shape="rect" id="node27" href="$arma__traits_8hpp.html" title="mlpack/core/util/arma\l_traits.hpp" alt="" coords="2801,348,2948,389"/>
+<area shape="rect" id="node28" href="$arma__config__check_8hpp.html" title="mlpack/core/util/arma\l_config_check.hpp" alt="" coords="2972,348,3119,389"/>
+<area shape="rect" id="node30" href="$log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="725,355,885,382"/>
+<area shape="rect" id="node37" href="$timers_8hpp.html" title="mlpack/core/util/timers.hpp" alt="" coords="960,355,1139,382"/>
+<area shape="rect" id="node40" href="$deprecated_8hpp.html" title="mlpack/core/util/deprecated.hpp" alt="" coords="3143,355,3350,382"/>
+<area shape="rect" id="node21" href="$sfinae__utility_8hpp.html" title="mlpack/core/util/sfinae\l_utility.hpp" alt="" coords="1689,437,1842,479"/>
+<area shape="rect" id="node33" href="$prefixedoutstream_8hpp.html" title="prefixedoutstream.hpp" alt="" coords="915,445,1066,471"/>
+<area shape="rect" id="node35" href="$nulloutstream_8hpp.html" title="nulloutstream.hpp" alt="" coords="512,445,637,471"/>
+<area shape="rect" id="node44" href="$datatype_8hpp.html" title="mlpack/core/data/map\l_policies/datatype.hpp" alt="" coords="1284,184,1436,225"/>
+</map>

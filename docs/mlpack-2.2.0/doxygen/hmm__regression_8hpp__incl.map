@@ -1,0 +1,19 @@
+<map id="src/mlpack/methods/hmm/hmm_regression.hpp" name="src/mlpack/methods/hmm/hmm_regression.hpp">
+<area shape="rect" id="node2" href="$prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo. " alt="" coords="1893,348,2029,375"/>
+<area shape="rect" id="node41" href="$regression__distribution_8hpp.html" title="mlpack/core/dists/regression\l_distribution.hpp" alt="" coords="1939,169,2129,211"/>
+<area shape="rect" id="node44" href="$hmm_8hpp.html" title="hmm.hpp" alt="" coords="2291,95,2367,121"/>
+<area shape="rect" id="node20" href="$serialization__shim_8hpp.html" title="mlpack/core/data/serialization\l_shim.hpp" alt="" coords="661,423,855,464"/>
+<area shape="rect" id="node25" href="$serialization__template__version_8hpp.html" title="mlpack/core/data/serialization\l_template_version.hpp" alt="" coords="1563,423,1758,464"/>
+<area shape="rect" id="node27" href="$arma__traits_8hpp.html" title="mlpack/core/util/arma\l_traits.hpp" alt="" coords="1979,423,2126,464"/>
+<area shape="rect" id="node28" href="$arma__config__check_8hpp.html" title="mlpack/core/util/arma\l_config_check.hpp" alt="" coords="1393,423,1539,464"/>
+<area shape="rect" id="node30" href="$log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="3191,430,3351,457"/>
+<area shape="rect" id="node37" href="$timers_8hpp.html" title="mlpack/core/util/timers.hpp" alt="" coords="2566,430,2745,457"/>
+<area shape="rect" id="node40" href="$deprecated_8hpp.html" title="mlpack/core/util/deprecated.hpp" alt="" coords="2335,430,2541,457"/>
+<area shape="rect" id="node21" href="$sfinae__utility_8hpp.html" title="mlpack/core/util/sfinae\l_utility.hpp" alt="" coords="580,512,733,553"/>
+<area shape="rect" id="node33" href="$prefixedoutstream_8hpp.html" title="prefixedoutstream.hpp" alt="" coords="2339,519,2489,546"/>
+<area shape="rect" id="node35" href="$nulloutstream_8hpp.html" title="nulloutstream.hpp" alt="" coords="2814,519,2939,546"/>
+<area shape="rect" id="node42" href="$gaussian__distribution_8hpp.html" title="mlpack/core/dists/gaussian\l_distribution.hpp" alt="" coords="1870,259,2051,300"/>
+<area shape="rect" id="node43" href="$linear__regression_8hpp.html" title="mlpack/methods/linear\l_regression/linear_regression.hpp" alt="" coords="2075,259,2291,300"/>
+<area shape="rect" id="node45" href="$discrete__distribution_8hpp.html" title="mlpack/core/dists/discrete\l_distribution.hpp" alt="" coords="2367,169,2541,211"/>
+<area shape="rect" id="node46" href="$random_8hpp.html" title="Miscellaneous math random&#45;related routines. " alt="" coords="2416,266,2615,293"/>
+</map>

@@ -1,0 +1,22 @@
+<map id="src/mlpack/core/tree/space_split/hyperplane.hpp" name="src/mlpack/core/tree/space_split/hyperplane.hpp">
+<area shape="rect" id="node2" href="$prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo. " alt="" coords="1179,408,1315,435"/>
+<area shape="rect" id="node41" href="$projection__vector_8hpp.html" title="projection_vector.hpp" alt="" coords="1173,95,1320,121"/>
+<area shape="rect" id="node20" href="$serialization__shim_8hpp.html" title="mlpack/core/data/serialization\l_shim.hpp" alt="" coords="1653,483,1848,524"/>
+<area shape="rect" id="node25" href="$serialization__template__version_8hpp.html" title="mlpack/core/data/serialization\l_template_version.hpp" alt="" coords="2385,483,2580,524"/>
+<area shape="rect" id="node27" href="$arma__traits_8hpp.html" title="mlpack/core/util/arma\l_traits.hpp" alt="" coords="2801,483,2948,524"/>
+<area shape="rect" id="node28" href="$arma__config__check_8hpp.html" title="mlpack/core/util/arma\l_config_check.hpp" alt="" coords="2972,483,3119,524"/>
+<area shape="rect" id="node30" href="$log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="725,490,885,517"/>
+<area shape="rect" id="node37" href="$timers_8hpp.html" title="mlpack/core/util/timers.hpp" alt="" coords="960,490,1139,517"/>
+<area shape="rect" id="node40" href="$deprecated_8hpp.html" title="mlpack/core/util/deprecated.hpp" alt="" coords="3143,490,3350,517"/>
+<area shape="rect" id="node21" href="$sfinae__utility_8hpp.html" title="mlpack/core/util/sfinae\l_utility.hpp" alt="" coords="1689,572,1842,613"/>
+<area shape="rect" id="node33" href="$prefixedoutstream_8hpp.html" title="prefixedoutstream.hpp" alt="" coords="915,579,1066,606"/>
+<area shape="rect" id="node35" href="$nulloutstream_8hpp.html" title="nulloutstream.hpp" alt="" coords="512,579,637,606"/>
+<area shape="rect" id="node42" href="$bounds_8hpp.html" title="Bounds that are useful for binary space partitioning trees. " alt="" coords="1196,169,1297,196"/>
+<area shape="rect" id="node43" href="$range_8hpp.html" title="Definition of the Range class, which represents a simple range with a lower and upper bound..." alt="" coords="864,326,1051,353"/>
+<area shape="rect" id="node45" href="$lmetric_8hpp.html" title="mlpack/core/metrics\l/lmetric.hpp" alt="" coords="1177,319,1317,360"/>
+<area shape="rect" id="node46" href="$bound__traits_8hpp.html" title="bound_traits.hpp" alt="" coords="1393,326,1511,353"/>
+<area shape="rect" id="node47" href="$hrectbound_8hpp.html" title="Bounds that are useful for binary space partitioning trees. " alt="" coords="971,244,1082,271"/>
+<area shape="rect" id="node48" href="$ballbound_8hpp.html" title="Bounds that are useful for binary space partitioning trees. " alt="" coords="1285,244,1387,271"/>
+<area shape="rect" id="node49" href="$hollow__ball__bound_8hpp.html" title="Bounds that are useful for binary space partitioning trees. " alt="" coords="1411,244,1565,271"/>
+<area shape="rect" id="node50" href="$cellbound_8hpp.html" title="cellbound.hpp" alt="" coords="1106,244,1209,271"/>
+</map>

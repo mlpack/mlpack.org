@@ -1,0 +1,172 @@
+<html>
+<head>
+<!-- probably could use more keywords -->
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>mlpack: a scalable c++ machine learning library</title>
+</head>
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="../../style-man.css">
+<link href='http://fonts.googleapis.com/css?family=Maven+Pro:500'
+rel='stylesheet' type='text/css'>
+<body>
+<!-- very simple table with as few words as possible -->
+<br>
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center>
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a
+href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center>
+<div class="mainsection smallertext manpage">
+
+
+<h1 align="center">mlpack_nbc</h1>
+
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_nbc</font>
+- parametric naive bayes classifier</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_nbc</font>
+[<font class="code">-h</font>] [<font class="code">-v</font>]</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p class="closemargin first">This program
+trains the Naive Bayes classifier on the given labeled
+training set, or loads a model from the given model file,
+and then may use that trained model to classify the points
+in a given test set.</p>
+
+<p class="closemargin first">Labels are
+expected to be the last row of the training set
+(<font class="code">--training_file</font>), but labels can also be passed in
+separately as their own file (<font class="code">--labels_file</font>). If
+training is not desired, a pre-existing model can be loaded
+with the <font class="code">--input_model_file</font> (<font class="code">-m</font>) option.</p>
+
+<p class="closemargin first">The
+&rsquo;<font class="code">--incremental_variance</font>&rsquo; option can be
+used to force the training to use an incremental algorithm
+for calculating variance. This is slower, but can help avoid
+loss of precision in some cases.</p>
+
+<p class="closemargin first">If classifying
+a test set is desired, the test set should be in the file
+specified with the <font class="code">--test_file</font> (<font class="code">-T</font>) option,
+and the classifications will be saved to the file specified
+with the <font class="code">--output_file</font> (<font class="code">-o</font>) option. If saving
+a trained model is desired, the <font class="code">--output_model_file</font>
+(<font class="code">-M</font>) option should be given.</p>
+
+<h2>OPTIONAL INPUT OPTIONS
+<a name="OPTIONAL INPUT OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--help
+(-h)</font></p>
+
+<p class="farmargin">Default help info.</p>
+
+<p class="closemargin"><font class="code">--incremental_variance
+(-I)</font></p>
+
+<p class="farmargin">The variance of each class will
+be calculated incrementally.</p>
+
+<p class="closemargin"><font class="code">--info [string]</font></p>
+
+<p class="farmargin">Get help on a specific module
+or option. Default value &rsquo;&rsquo;.
+<font class="code">--input_model_file</font> (<font class="code">-m</font>) [string] File
+containing input Naive Bayes model. Default value
+&rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--labels_file (-l)
+[string]</font></p>
+
+<p class="farmargin">A file containing labels for
+the training set. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--test_file (-T)
+[string]</font></p>
+
+<p class="farmargin">A file containing the test set.
+Default value &rsquo;&rsquo;. <font class="code">--training_file</font>
+(<font class="code">-t</font>) [string] A file containing the training set.
+Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--verbose (-v)</font></p>
+
+<p class="farmargin">Display informational messages
+and the full list of parameters and timers at the end of
+execution.</p>
+
+<p class="closemargin"><font class="code">--version (-V)</font></p>
+
+<p class="farmargin">Display the version of
+mlpack.</p>
+
+<h2>OPTIONAL OUTPUT OPTIONS
+<a name="OPTIONAL OUTPUT OPTIONS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">--output_file
+(-o) [string]</font></p>
+
+<p class="farmargin">The file in which the predicted
+labels for the test set will be written. Default value
+&rsquo;&rsquo;. <font class="code">--output_model_file</font> (<font class="code">-M</font>)
+[string] File to save trained Naive Bayes model to. Default
+value &rsquo;&rsquo;.</p>
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<p class="closemargin first">For further
+information, including relevant papers, citations, and
+theory, For further information, including relevant papers,
+citations, and theory, consult the documentation found at
+http://www.mlpack.org or included with your consult the
+documentation found at http://www.mlpack.org or included
+with your DISTRIBUTION OF MLPACK. DISTRIBUTION OF
+MLPACK.</p>
+</div></body></html>

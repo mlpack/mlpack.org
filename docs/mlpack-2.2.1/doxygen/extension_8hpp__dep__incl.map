@@ -1,0 +1,11 @@
+<map id="src/mlpack/core/data/extension.hpp" name="src/mlpack/core/data/extension.hpp">
+<area shape="rect" id="node2" href="$load__csv_8hpp.html" title="src/mlpack/core/data\l/load_csv.hpp" alt="" coords="282,95,426,136"/>
+<area shape="rect" id="node3" href="$load_8hpp.html" title="src/mlpack/core/data\l/load.hpp" alt="" coords="227,184,371,225"/>
+<area shape="rect" id="node4" href="$core_8hpp.html" title="Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu..." alt="" coords="284,273,424,300"/>
+<area shape="rect" id="node5" href="$ann_2init__rules_2random__init_8hpp.html" title="src/mlpack/methods\l/ann/init_rules/random\l_init.hpp" alt="" coords="28,348,179,404"/>
+<area shape="rect" id="node7" href="$dbscan_8hpp.html" title="src/mlpack/methods\l/dbscan/dbscan.hpp" alt="" coords="203,355,343,397"/>
+<area shape="rect" id="node8" href="$gini__gain_8hpp.html" title="src/mlpack/methods\l/decision_tree/gini\l_gain.hpp" alt="" coords="367,348,507,404"/>
+<area shape="rect" id="node10" href="$serialization_8hpp.html" title="src/mlpack/tests/serialization.hpp" alt="" coords="531,363,748,389"/>
+<area shape="rect" id="node6" href="$randomized__svd__method_8hpp.html" title="src/mlpack/methods\l/pca/decomposition_policies\l/randomized_svd_method.hpp" alt="" coords="5,452,201,508"/>
+<area shape="rect" id="node9" href="$decision__tree_8hpp.html" title="src/mlpack/methods\l/decision_tree/decision\l_tree.hpp" alt="" coords="359,452,514,508"/>
+</map>

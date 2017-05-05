@@ -1,0 +1,9 @@
+<map id="mlpack::fastmks::FastMKS&lt; KernelType, MatType, TreeType &gt;" name="mlpack::fastmks::FastMKS&lt; KernelType, MatType, TreeType &gt;">
+<area shape="rect" id="node2" href="$classmlpack_1_1fastmks_1_1FastMKS.html" title="mlpack::fastmks::FastMKS\l\&lt; mlpack::kernel::GaussianKernel \&gt;" alt="" coords="433,26,663,67"/>
+<area shape="rect" id="node3" href="$classmlpack_1_1fastmks_1_1FastMKS.html" title="mlpack::fastmks::FastMKS\l\&lt; mlpack::kernel::TriangularKernel \&gt;" alt="" coords="431,91,665,133"/>
+<area shape="rect" id="node4" href="$classmlpack_1_1fastmks_1_1FastMKS.html" title="mlpack::fastmks::FastMKS\l\&lt; mlpack::kernel::Epanechnikov\lKernel \&gt;" alt="" coords="443,157,653,213"/>
+<area shape="rect" id="node5" href="$classmlpack_1_1fastmks_1_1FastMKS.html" title="mlpack::fastmks::FastMKS\l\&lt; mlpack::kernel::HyperbolicTangent\lKernel \&gt;" alt="" coords="430,237,666,293"/>
+<area shape="rect" id="node6" href="$classmlpack_1_1fastmks_1_1FastMKS.html" title="mlpack::fastmks::FastMKS\l\&lt; mlpack::kernel::PolynomialKernel \&gt;" alt="" coords="428,318,668,359"/>
+<area shape="rect" id="node7" href="$classmlpack_1_1fastmks_1_1FastMKS.html" title="mlpack::fastmks::FastMKS\l\&lt; mlpack::kernel::LinearKernel \&gt;" alt="" coords="443,383,653,425"/>
+<area shape="rect" id="node8" href="$classmlpack_1_1fastmks_1_1FastMKS.html" title="mlpack::fastmks::FastMKS\l\&lt; mlpack::kernel::CosineDistance \&gt;" alt="" coords="432,449,664,490"/>
+</map>

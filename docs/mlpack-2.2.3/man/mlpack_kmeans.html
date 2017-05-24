@@ -1,0 +1,262 @@
+<html>
+<head>
+<!-- probably could use more keywords -->
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>mlpack: a scalable c++ machine learning library</title>
+</head>
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="../../style-man.css">
+<link href='http://fonts.googleapis.com/css?family=Maven+Pro:500'
+rel='stylesheet' type='text/css'>
+<body>
+<!-- very simple table with as few words as possible -->
+<br>
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center>
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a
+href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center>
+<div class="mainsection smallertext manpage">
+
+
+<h1 align="center">mlpack_kmeans</h1>
+
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_kmeans</font>
+- k-means clustering</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_kmeans</font>
+[<font class="code">-h</font>] [<font class="code">-v</font>]</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p class="closemargin first">This program
+performs K-Means clustering on the given dataset, storing
+the learned cluster assignments either as a column of labels
+in the file containing the input dataset or in a separate
+file. Empty clusters are not allowed by default; when a
+cluster becomes empty, the point furthest from the centroid
+of the cluster with maximum variance is taken to fill that
+cluster.</p>
+
+<p class="closemargin first">Optionally, the
+Bradley and Fayyad approach (&quot;Refining initial points
+for k-means clustering&quot;, 1998) can be used to select
+initial points by specifying the <font class="code">--refined_start</font>
+(<font class="code">-r</font>) option. This approach works by taking random
+samples of the dataset; to specify the number of samples,
+the <font class="code">--samples</font> parameter is used, and to specify the
+percentage of the dataset to be used in each sample, the
+<font class="code">--percentage</font> parameter is used (it should be a value
+between 0.0 and 1.0).</p>
+
+<p class="closemargin first">There are
+several options available for the algorithm used for each
+Lloyd iteration, specified with the <font class="code">--algorithm</font>
+(<font class="code">-a</font>) option. The standard <font class="code">O</font>(kN) approach can
+be used (&rsquo;naive&rsquo;). Other options include the
+Pelleg-Moore tree-based algorithm
+(&rsquo;pelleg-moore&rsquo;), Elkan&rsquo;s
+triangle-inequality based algorithm (&rsquo;elkan&rsquo;),
+Hamerly&rsquo;s modification to Elkan&rsquo;s algorithm
+(&rsquo;hamerly&rsquo;), the dual-tree k-means algorithm
+(&rsquo;dualtree&rsquo;), and the dual-tree k-means
+algorithm using the cover tree
+(&rsquo;dualtree-covertree&rsquo;).</p>
+
+<p class="closemargin first">The behavior
+for when an empty cluster is encountered can be modified
+with the <font class="code">--allow_empty_clusters</font> (<font class="code">-e</font>) option.
+When this option is specified and there is a cluster owning
+no points at the end of an iteration, that cluster&rsquo;s
+centroid will simply remain in its position from the
+previous iteration. If the <font class="code">--kill_empty_clusters</font>
+(<font class="code">-E</font>) option is specified, then when a cluster owns no
+points at the end of an iteration, the cluster centroid is
+simply filled with DBL_MAX, killing it and effectively
+reducing k for the rest of the computation. Note that the
+default option when neither empty cluster option is
+specified can be time-consuming to calculate; therefore,
+specifying <font class="code">-e</font> or <font class="code">-E</font> will often accelerate
+runtime.</p>
+
+<p class="closemargin first">As of October
+2014, the <font class="code">--overclustering</font> option has been removed.
+If you want this support back, let us know-<font class="code">--file</font> a
+bug at https://github.com/mlpack/mlpack/ or get in touch
+through another means.</p>
+
+<h2>REQUIRED INPUT OPTIONS
+<a name="REQUIRED INPUT OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--clusters
+(-c) [int]</font></p>
+
+<p class="farmargin">Number of clusters to find (0
+autodetects from initial centroids).</p>
+
+<p class="closemargin"><font class="code">--input_file (-i)
+[string]</font></p>
+
+<p class="farmargin">Input dataset to perform
+clustering on.</p>
+
+<h2>OPTIONAL INPUT OPTIONS
+<a name="OPTIONAL INPUT OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--algorithm
+(-a) [string]</font></p>
+
+<p class="farmargin">Algorithm to use for the Lloyd
+iteration (&rsquo;naive&rsquo;, &rsquo;pelleg-moore&rsquo;,
+&rsquo;elkan&rsquo;, &rsquo;hamerly&rsquo;,
+&rsquo;dualtree&rsquo;, or
+&rsquo;dualtree-covertree&rsquo;). Default value
+&rsquo;naive&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--allow_empty_clusters
+(-e)</font></p>
+
+<p class="farmargin">Allow empty clusters to be
+persist.</p>
+
+<p class="closemargin"><font class="code">--help (-h)</font></p>
+
+<p class="farmargin">Default help info.</p>
+
+<p class="closemargin"><font class="code">--in_place (-P)</font></p>
+
+<p class="farmargin">If specified, a column
+containing the learned cluster assignments will be added to
+the input dataset file. In this case, <font class="code">--outputFile</font> is
+overridden.</p>
+
+<p class="closemargin"><font class="code">--info [string]</font></p>
+
+<p class="farmargin">Get help on a specific module
+or option. Default value &rsquo;&rsquo;.
+<font class="code">--initial_centroids</font> (<font class="code">-I</font>) [string] Start with
+the specified initial centroids. Default value
+&rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--kill_empty_clusters
+(-E)</font></p>
+
+<p class="farmargin">Remove empty clusters when they
+occur.</p>
+
+<p class="closemargin"><font class="code">--labels_only (-l)</font></p>
+
+<p class="farmargin">Only output labels into output
+file.</p>
+
+<p class="closemargin"><font class="code">--max_iterations (-m)
+[int]</font></p>
+
+<p class="farmargin">Maximum number of iterations
+before k-means terminates. Default value 1000.</p>
+
+<p class="closemargin"><font class="code">--percentage (-p)
+[double]</font></p>
+
+<p class="farmargin">Percentage of dataset to use
+for each refined start sampling (use when
+<font class="code">--refined_start</font> is specified). Default value
+0.02.</p>
+
+<p class="closemargin"><font class="code">--refined_start (-r)</font></p>
+
+<p class="farmargin">Use the refined initial point
+strategy by Bradley and Fayyad to choose initial points.</p>
+
+<p class="closemargin"><font class="code">--samplings (-S)
+[int]</font></p>
+
+<p class="farmargin">Number of samplings to perform
+for refined start (use when <font class="code">--refined_start</font> is
+specified). Default value 100.</p>
+
+<p class="closemargin"><font class="code">--seed (-s) [int]</font></p>
+
+<p class="farmargin">Random seed. If 0,
+&rsquo;std::time(NULL)&rsquo; is used. Default value 0.</p>
+
+<p class="closemargin"><font class="code">--verbose (-v)</font></p>
+
+<p class="farmargin">Display informational messages
+and the full list of parameters and timers at the end of
+execution.</p>
+
+<p class="closemargin"><font class="code">--version (-V)</font></p>
+
+<p class="farmargin">Display the version of
+mlpack.</p>
+
+<h2>OPTIONAL OUTPUT OPTIONS
+<a name="OPTIONAL OUTPUT OPTIONS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">--centroid_file</font>
+(<font class="code">-C</font>) [string] If specified, the centroids of each
+cluster will be written to the given file. Default value
+&rsquo;&rsquo;. <font class="code"><br>
+--output_file (-o) [string]</font></p>
+
+<p class="farmargin">File to write output labels or
+labeled data to. Default value &rsquo;&rsquo;.</p>
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<p class="closemargin first">For further
+information, including relevant papers, citations, and
+theory, For further information, including relevant papers,
+citations, and theory, consult the documentation found at
+http://www.mlpack.org or included with your consult the
+documentation found at http://www.mlpack.org or included
+with your DISTRIBUTION OF MLPACK. DISTRIBUTION OF
+MLPACK.</p>
+</div></body></html>

@@ -1,0 +1,240 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+</head><link rel="stylesheet" href="../../../style.css" /></link><link rel="stylesheet" href="../../style-man.css" /></link><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" /></link>
+
+
+
+<body ><br /></br>
+
+
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext manpage">
+
+<h1 align="center">mlpack_approx_kfn</h1>
+
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_approx_kfn</font>
+- approximate furthest neighbor search</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_approx_kfn</font>
+[<font class="code">-h</font>] [<font class="code">-v</font>]</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p class="closemargin first">This program
+implements two strategies for furthest neighbor search.
+These strategies are:</p>
+
+<table width="100
+" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="22
+"></td>
+<td width="1
+">
+
+
+<p>&bull;</p></td>
+<td width="3
+"></td>
+<td width="74
+">
+
+
+<p>The &rsquo;qdafn&rsquo; algorithm from
+&rsquo;Approximate Furthest Neighbor in High
+Dimensions&rsquo; by R. Pagh, F. Silvestri, J. Sivertsen,
+and M. Skala, in Similarity Search and Applications 2015
+(SISAP).</p> </td></tr>
+<tr valign="top" align="left">
+<td width="22
+"></td>
+<td width="1
+">
+
+
+<p>&bull;</p></td>
+<td width="3
+"></td>
+<td width="74
+">
+
+
+<p>The &rsquo;DrusillaSelect&rsquo; algorithm from
+&rsquo;Fast approximate furthest neighbors with
+data-dependent candidate selection, by R.R. Curtin and A.B.
+Gardner, in Similarity Search and Applications 2016
+(SISAP).</p> </td></tr>
+</table>
+
+<p class="closemargin first">These two
+strategies give approximate results for the furthest
+neighbor search problem and can be used as fast replacements
+for other furthest neighbor techniques such as those found
+in the mlpack_kfn program. Note that typically, the
+&rsquo;ds&rsquo; algorithm requires far fewer tables and
+projections than the &rsquo;qdafn&rsquo; algorithm.</p>
+
+<p class="closemargin first">Specify a
+reference set (set to search in) with
+<font class="code">--reference_file</font>, specify a query set with
+<font class="code">--query_file</font>, and specify algorithm parameters with
+<font class="code">--num_tables</font> (<font class="code">-t</font>) and <font class="code">--num_projections</font>
+(<font class="code">-p</font>) (or don&rsquo;t and defaults will be used). The
+algorithm to be used (either &rsquo;ds&rsquo;<font class="code">---the</font>
+default-<font class="code">--or</font> &rsquo;qdafn&rsquo;) may be specified
+with <font class="code">--algorithm</font>. Also specify the number of
+neighbors to search for with <font class="code">--k</font>. Each of those
+options also has short names; see the detailed parameter
+documentation below.</p>
+
+<p class="closemargin first">If no query
+file is specified, the reference set will be used as the
+query set. A model may be saved with
+<font class="code">--output_model_file</font> (<font class="code">-M</font>), and an input model
+may be loaded instead of specifying a reference set with
+<font class="code">--input_model_file</font> (<font class="code">-m</font>).</p>
+
+<p class="closemargin first">Results for
+each query point are stored in the files specified by
+<font class="code">--neighbors_file</font> and <font class="code">--distances_file</font>. This is
+in the same format as the mlpack_kfn and mlpack_knn
+programs: each row holds the k distances or neighbor indices
+for each query point.</p>
+
+<h2>OPTIONAL INPUT OPTIONS
+<a name="OPTIONAL INPUT OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--algorithm
+(-a) [string]</font></p>
+
+<p class="farmargin">Algorithm to use:
+&rsquo;ds&rsquo; or &rsquo;qdafn&rsquo;. Default value
+&rsquo;ds&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--calculate_error
+(-e)</font></p>
+
+<p class="farmargin">If set, calculate the average
+distance error for the first furthest neighbor only.
+<font class="code">--distances_file</font> (<font class="code">-d</font>) [string] File to save
+furthest neighbor distances to. Default value
+&rsquo;&rsquo;. <font class="code">--exact_distances_file</font> (<font class="code">-x</font>)
+[string] File containing exact distances to furthest
+neighbors; this can be used to avoid explicit calculation
+when <font class="code">--calculate_error</font> is set. Default value
+&rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--help (-h)</font></p>
+
+<p class="farmargin">Default help info.</p>
+
+<p class="closemargin"><font class="code">--info [string]</font></p>
+
+<p class="farmargin">Get help on a specific module
+or option. Default value &rsquo;&rsquo;.
+<font class="code">--input_model_file</font> (<font class="code">-m</font>) [string] File
+containing input model. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--k (-k) [int]</font></p>
+
+<p class="farmargin">Number of furthest neighbors to
+search for. Default value 0. <font class="code">--neighbors_file</font>
+(<font class="code">-n</font>) [string] File to save furthest neighbor indices
+to. Default value &rsquo;&rsquo;. <font class="code">--num_projections</font>
+(<font class="code">-p</font>) [int] Number of projections to use in each hash
+table. Default value 5.</p>
+
+<p class="closemargin"><font class="code">--num_tables (-t)
+[int]</font></p>
+
+<p class="farmargin">Number of hash tables to use.
+Default value 5.</p>
+
+<p class="closemargin"><font class="code">--query_file (-q)
+[string]</font></p>
+
+<p class="farmargin">File containing query points.
+Default value &rsquo;&rsquo;. <font class="code">--reference_file</font>
+(<font class="code">-r</font>) [string] File containing reference points.
+Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--verbose (-v)</font></p>
+
+<p class="farmargin">Display informational messages
+and the full list of parameters and timers at the end of
+execution.</p>
+
+<p class="closemargin"><font class="code">--version (-V)</font></p>
+
+<p class="farmargin">Display the version of
+mlpack.</p>
+
+<h2>OPTIONAL OUTPUT OPTIONS
+<a name="OPTIONAL OUTPUT OPTIONS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">--output_model_file</font>
+(<font class="code">-M</font>) [string] File to save output model to. Default
+value &rsquo;&rsquo;.</p>
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<p class="closemargin first">For further
+information, including relevant papers, citations, and
+theory, For further information, including relevant papers,
+citations, and theory, consult the documentation found at
+http://www.mlpack.org or included with your consult the
+documentation found at http://www.mlpack.org or included
+with your DISTRIBUTION OF MLPACK. DISTRIBUTION OF
+MLPACK.</p>
+</div></body></html>

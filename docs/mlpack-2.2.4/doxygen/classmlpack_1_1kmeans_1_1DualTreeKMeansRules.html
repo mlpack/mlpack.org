@@ -1,0 +1,996 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.2.4</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1kmeans.html">kmeans</a></li><li class="navelem"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">DualTreeKMeansRules</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mlpack::kmeans::DualTreeKMeansRules&lt; MetricType, TreeType &gt; Class Template Reference</div>  </div>
+</div>
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ae2564ff6d1bbe4afbedc2aa48e26e5fe"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classmlpack_1_1tree_1_1TraversalInfo.html">tree::TraversalInfo</a>&lt; TreeType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#ae2564ff6d1bbe4afbedc2aa48e26e5fe">TraversalInfoType</a></td></tr>
+<tr class="separator:ae2564ff6d1bbe4afbedc2aa48e26e5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a17fa2263af70f708842459af9474c2be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a17fa2263af70f708842459af9474c2be">DualTreeKMeansRules</a> (const arma::mat &amp;<a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a062b3ecb04d5cd393eb186450c6c3da5">centroids</a>, const arma::mat &amp;<a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a0ed8d49c85ed4953e4cdd4d0d20bdd91">dataset</a>, arma::Row&lt; size_t &gt; &amp;<a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a3ec40fc02a0a9cff429cb1cdf613497d">assignments</a>, arma::vec &amp;<a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a8255a45ad2481091f594933a7f73b33f">upperBounds</a>, arma::vec &amp;<a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#ab4745550c57b988266f582b934c343c4">lowerBounds</a>, MetricType &amp;<a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a673c12aa5ca76ba32659a8e71053f8d3">metric</a>, const std::vector&lt; bool &gt; &amp;<a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a8f8a5c72f04d3a9effc30b007351ee19">prunedPoints</a>, const std::vector&lt; size_t &gt; &amp;<a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a2839b6071dcf57838224d682cf28baa4">oldFromNewCentroids</a>, std::vector&lt; bool &gt; &amp;<a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a3602e522aa673f07c76f00e4b5a9da03">visited</a>)</td></tr>
+<tr class="separator:a17fa2263af70f708842459af9474c2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97ccc713b54346533e45d96760513045"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a97ccc713b54346533e45d96760513045">BaseCase</a> (const size_t queryIndex, const size_t referenceIndex)</td></tr>
+<tr class="separator:a97ccc713b54346533e45d96760513045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f03dfb13fbc7538378074509cfd525"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#ac9f03dfb13fbc7538378074509cfd525">BaseCases</a> () const</td></tr>
+<tr class="separator:ac9f03dfb13fbc7538378074509cfd525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd7f964e4b423fd72191723a1282936b"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#afd7f964e4b423fd72191723a1282936b">BaseCases</a> ()</td></tr>
+<tr class="separator:afd7f964e4b423fd72191723a1282936b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51aacb5357ac97e693e18d7d27859aae"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a51aacb5357ac97e693e18d7d27859aae">Rescore</a> (const size_t queryIndex, TreeType &amp;referenceNode, const double oldScore)</td></tr>
+<tr class="separator:a51aacb5357ac97e693e18d7d27859aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d1a2138f9c14389cf5a41efe8e17c45"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a9d1a2138f9c14389cf5a41efe8e17c45">Rescore</a> (TreeType &amp;queryNode, TreeType &amp;referenceNode, const double oldScore)</td></tr>
+<tr class="separator:a9d1a2138f9c14389cf5a41efe8e17c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad08adaaeb3aa79c09358e5bd9504ef03"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#ad08adaaeb3aa79c09358e5bd9504ef03">Score</a> (const size_t queryIndex, TreeType &amp;referenceNode)</td></tr>
+<tr class="separator:ad08adaaeb3aa79c09358e5bd9504ef03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6935b43b46b832a658e6125e675ae717"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a6935b43b46b832a658e6125e675ae717">Score</a> (TreeType &amp;queryNode, TreeType &amp;referenceNode)</td></tr>
+<tr class="separator:a6935b43b46b832a658e6125e675ae717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97d2c6c1cf09ee814e72fecd79e17167"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a97d2c6c1cf09ee814e72fecd79e17167">Scores</a> () const</td></tr>
+<tr class="separator:a97d2c6c1cf09ee814e72fecd79e17167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefd83b03284fd6ad002c9000f330c6fb"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#aefd83b03284fd6ad002c9000f330c6fb">Scores</a> ()</td></tr>
+<tr class="separator:aefd83b03284fd6ad002c9000f330c6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cefd1f473a2be984944575dc102a218"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#ae2564ff6d1bbe4afbedc2aa48e26e5fe">TraversalInfoType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a4cefd1f473a2be984944575dc102a218">TraversalInfo</a> ()</td></tr>
+<tr class="separator:a4cefd1f473a2be984944575dc102a218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12383f93776a9d9783563c5a77d13255"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#ae2564ff6d1bbe4afbedc2aa48e26e5fe">TraversalInfoType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a12383f93776a9d9783563c5a77d13255">TraversalInfo</a> () const</td></tr>
+<tr class="separator:a12383f93776a9d9783563c5a77d13255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3ec40fc02a0a9cff429cb1cdf613497d"><td class="memItemLeft" align="right" valign="top">arma::Row&lt; size_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a3ec40fc02a0a9cff429cb1cdf613497d">assignments</a></td></tr>
+<tr class="separator:a3ec40fc02a0a9cff429cb1cdf613497d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ad4f19e8807d236eadff33657cd236"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a08ad4f19e8807d236eadff33657cd236">baseCases</a></td></tr>
+<tr class="separator:a08ad4f19e8807d236eadff33657cd236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a062b3ecb04d5cd393eb186450c6c3da5"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a062b3ecb04d5cd393eb186450c6c3da5">centroids</a></td></tr>
+<tr class="separator:a062b3ecb04d5cd393eb186450c6c3da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ed8d49c85ed4953e4cdd4d0d20bdd91"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a0ed8d49c85ed4953e4cdd4d0d20bdd91">dataset</a></td></tr>
+<tr class="separator:a0ed8d49c85ed4953e4cdd4d0d20bdd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe8def16428075ffad5cdafac98e949"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a5fe8def16428075ffad5cdafac98e949">lastBaseCase</a></td></tr>
+<tr class="separator:a5fe8def16428075ffad5cdafac98e949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73869b6e1860b19310f75b7fce5755d3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a73869b6e1860b19310f75b7fce5755d3">lastQueryIndex</a></td></tr>
+<tr class="separator:a73869b6e1860b19310f75b7fce5755d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a127268a4630bc281f303e3dee88ef305"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a127268a4630bc281f303e3dee88ef305">lastReferenceIndex</a></td></tr>
+<tr class="separator:a127268a4630bc281f303e3dee88ef305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4745550c57b988266f582b934c343c4"><td class="memItemLeft" align="right" valign="top">arma::vec &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#ab4745550c57b988266f582b934c343c4">lowerBounds</a></td></tr>
+<tr class="separator:ab4745550c57b988266f582b934c343c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a673c12aa5ca76ba32659a8e71053f8d3"><td class="memItemLeft" align="right" valign="top">MetricType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a673c12aa5ca76ba32659a8e71053f8d3">metric</a></td></tr>
+<tr class="separator:a673c12aa5ca76ba32659a8e71053f8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2839b6071dcf57838224d682cf28baa4"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; size_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a2839b6071dcf57838224d682cf28baa4">oldFromNewCentroids</a></td></tr>
+<tr class="separator:a2839b6071dcf57838224d682cf28baa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f8a5c72f04d3a9effc30b007351ee19"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; bool &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a8f8a5c72f04d3a9effc30b007351ee19">prunedPoints</a></td></tr>
+<tr class="separator:a8f8a5c72f04d3a9effc30b007351ee19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ea05e30c82b6c2e0bfbdc98fe40e9c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a68ea05e30c82b6c2e0bfbdc98fe40e9c">scores</a></td></tr>
+<tr class="separator:a68ea05e30c82b6c2e0bfbdc98fe40e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a595c55bd18dbdb3fdcc9583893b4b15e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#ae2564ff6d1bbe4afbedc2aa48e26e5fe">TraversalInfoType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a595c55bd18dbdb3fdcc9583893b4b15e">traversalInfo</a></td></tr>
+<tr class="separator:a595c55bd18dbdb3fdcc9583893b4b15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8255a45ad2481091f594933a7f73b33f"><td class="memItemLeft" align="right" valign="top">arma::vec &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a8255a45ad2481091f594933a7f73b33f">upperBounds</a></td></tr>
+<tr class="separator:a8255a45ad2481091f594933a7f73b33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3602e522aa673f07c76f00e4b5a9da03"><td class="memItemLeft" align="right" valign="top">std::vector&lt; bool &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#a3602e522aa673f07c76f00e4b5a9da03">visited</a></td></tr>
+<tr class="separator:a3602e522aa673f07c76f00e4b5a9da03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3 ><br /><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></br>
+class mlpack::kmeans::DualTreeKMeansRules&lt; MetricType, TreeType &gt;</h3>
+
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00023">23</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ae2564ff6d1bbe4afbedc2aa48e26e5fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2564ff6d1bbe4afbedc2aa48e26e5fe">&#9670;&nbsp;</a></span>TraversalInfoType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname">typedef <a class="el" href="classmlpack_1_1tree_1_1TraversalInfo.html">tree::TraversalInfo</a>&lt;TreeType&gt; <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::<a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#ae2564ff6d1bbe4afbedc2aa48e26e5fe">TraversalInfoType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00047">47</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a17fa2263af70f708842459af9474c2be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17fa2263af70f708842459af9474c2be">&#9670;&nbsp;</a></span>DualTreeKMeansRules()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::<a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">DualTreeKMeansRules</a> </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >centroids</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >dataset</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::Row&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >assignments</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::vec &amp;&#160;</td>
+          <td class="paramname"><em >upperBounds</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::vec &amp;&#160;</td>
+          <td class="paramname"><em >lowerBounds</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">MetricType &amp;&#160;</td>
+          <td class="paramname"><em >metric</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const std::vector&lt; bool &gt; &amp;&#160;</td>
+          <td class="paramname"><em >prunedPoints</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const std::vector&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >oldFromNewCentroids</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">std::vector&lt; bool &gt; &amp;&#160;</td>
+          <td class="paramname"><em >visited</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a97ccc713b54346533e45d96760513045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97ccc713b54346533e45d96760513045">&#9670;&nbsp;</a></span>BaseCase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname">double <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::BaseCase </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >queryIndex</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >referenceIndex</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9f03dfb13fbc7538378074509cfd525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9f03dfb13fbc7538378074509cfd525">&#9670;&nbsp;</a></span>BaseCases() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::BaseCases </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00052">52</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00072">mlpack::kmeans::DualTreeKMeansRules&lt; MetricType, TreeType &gt;::baseCases</a>.</p>
+
+</div>
+</div>
+<a id="afd7f964e4b423fd72191723a1282936b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd7f964e4b423fd72191723a1282936b">&#9670;&nbsp;</a></span>BaseCases() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::BaseCases </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00053">53</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00072">mlpack::kmeans::DualTreeKMeansRules&lt; MetricType, TreeType &gt;::baseCases</a>.</p>
+
+</div>
+</div>
+<a id="a51aacb5357ac97e693e18d7d27859aae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51aacb5357ac97e693e18d7d27859aae">&#9670;&nbsp;</a></span>Rescore() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname">double <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::Rescore </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >queryIndex</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">TreeType &amp;&#160;</td>
+          <td class="paramname"><em >referenceNode</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >oldScore</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d1a2138f9c14389cf5a41efe8e17c45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d1a2138f9c14389cf5a41efe8e17c45">&#9670;&nbsp;</a></span>Rescore() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname">double <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::Rescore </td>
+          <td >(</td>
+          <td class="paramtype">TreeType &amp;&#160;</td>
+          <td class="paramname"><em >queryNode</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">TreeType &amp;&#160;</td>
+          <td class="paramname"><em >referenceNode</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >oldScore</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad08adaaeb3aa79c09358e5bd9504ef03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad08adaaeb3aa79c09358e5bd9504ef03">&#9670;&nbsp;</a></span>Score() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname">double <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::Score </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >queryIndex</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">TreeType &amp;&#160;</td>
+          <td class="paramname"><em >referenceNode</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6935b43b46b832a658e6125e675ae717"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6935b43b46b832a658e6125e675ae717">&#9670;&nbsp;</a></span>Score() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+      <table class="memname">
+        <tr >
+          <td class="memname">double <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::Score </td>
+          <td >(</td>
+          <td class="paramtype">TreeType &amp;&#160;</td>
+          <td class="paramname"><em >queryNode</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">TreeType &amp;&#160;</td>
+          <td class="paramname"><em >referenceNode</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97d2c6c1cf09ee814e72fecd79e17167"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97d2c6c1cf09ee814e72fecd79e17167">&#9670;&nbsp;</a></span>Scores() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::Scores </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00055">55</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00073">mlpack::kmeans::DualTreeKMeansRules&lt; MetricType, TreeType &gt;::scores</a>.</p>
+
+</div>
+</div>
+<a id="aefd83b03284fd6ad002c9000f330c6fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefd83b03284fd6ad002c9000f330c6fb">&#9670;&nbsp;</a></span>Scores() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::Scores </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00056">56</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00073">mlpack::kmeans::DualTreeKMeansRules&lt; MetricType, TreeType &gt;::scores</a>.</p>
+
+</div>
+</div>
+<a id="a4cefd1f473a2be984944575dc102a218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cefd1f473a2be984944575dc102a218">&#9670;&nbsp;</a></span>TraversalInfo() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#ae2564ff6d1bbe4afbedc2aa48e26e5fe">TraversalInfoType</a>&amp; <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::TraversalInfo </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00049">49</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00075">mlpack::kmeans::DualTreeKMeansRules&lt; MetricType, TreeType &gt;::traversalInfo</a>.</p>
+
+</div>
+</div>
+<a id="a12383f93776a9d9783563c5a77d13255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12383f93776a9d9783563c5a77d13255">&#9670;&nbsp;</a></span>TraversalInfo() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#ae2564ff6d1bbe4afbedc2aa48e26e5fe">TraversalInfoType</a>&amp; <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::TraversalInfo </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00050">50</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00075">mlpack::kmeans::DualTreeKMeansRules&lt; MetricType, TreeType &gt;::traversalInfo</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3ec40fc02a0a9cff429cb1cdf613497d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ec40fc02a0a9cff429cb1cdf613497d">&#9670;&nbsp;</a></span>assignments</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">arma::Row&lt;size_t&gt;&amp; <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::assignments</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00061">61</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a08ad4f19e8807d236eadff33657cd236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08ad4f19e8807d236eadff33657cd236">&#9670;&nbsp;</a></span>baseCases</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::baseCases</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00072">72</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00052">mlpack::kmeans::DualTreeKMeansRules&lt; MetricType, TreeType &gt;::BaseCases()</a>.</p>
+
+</div>
+</div>
+<a id="a062b3ecb04d5cd393eb186450c6c3da5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a062b3ecb04d5cd393eb186450c6c3da5">&#9670;&nbsp;</a></span>centroids</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::mat&amp; <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::centroids</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00059">59</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0ed8d49c85ed4953e4cdd4d0d20bdd91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ed8d49c85ed4953e4cdd4d0d20bdd91">&#9670;&nbsp;</a></span>dataset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::mat&amp; <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::dataset</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00060">60</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a5fe8def16428075ffad5cdafac98e949"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fe8def16428075ffad5cdafac98e949">&#9670;&nbsp;</a></span>lastBaseCase</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::lastBaseCase</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00079">79</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a73869b6e1860b19310f75b7fce5755d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73869b6e1860b19310f75b7fce5755d3">&#9670;&nbsp;</a></span>lastQueryIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::lastQueryIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00077">77</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a127268a4630bc281f303e3dee88ef305"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a127268a4630bc281f303e3dee88ef305">&#9670;&nbsp;</a></span>lastReferenceIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::lastReferenceIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00078">78</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ab4745550c57b988266f582b934c343c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4745550c57b988266f582b934c343c4">&#9670;&nbsp;</a></span>lowerBounds</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">arma::vec&amp; <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::lowerBounds</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00063">63</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a673c12aa5ca76ba32659a8e71053f8d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a673c12aa5ca76ba32659a8e71053f8d3">&#9670;&nbsp;</a></span>metric</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">MetricType&amp; <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::metric</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00064">64</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a2839b6071dcf57838224d682cf28baa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2839b6071dcf57838224d682cf28baa4">&#9670;&nbsp;</a></span>oldFromNewCentroids</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const std::vector&lt;size_t&gt;&amp; <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::oldFromNewCentroids</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00068">68</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a8f8a5c72f04d3a9effc30b007351ee19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f8a5c72f04d3a9effc30b007351ee19">&#9670;&nbsp;</a></span>prunedPoints</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const std::vector&lt;bool&gt;&amp; <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::prunedPoints</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00066">66</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a68ea05e30c82b6c2e0bfbdc98fe40e9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68ea05e30c82b6c2e0bfbdc98fe40e9c">&#9670;&nbsp;</a></span>scores</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::scores</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00073">73</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00055">mlpack::kmeans::DualTreeKMeansRules&lt; MetricType, TreeType &gt;::Scores()</a>.</p>
+
+</div>
+</div>
+<a id="a595c55bd18dbdb3fdcc9583893b4b15e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a595c55bd18dbdb3fdcc9583893b4b15e">&#9670;&nbsp;</a></span>traversalInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html#ae2564ff6d1bbe4afbedc2aa48e26e5fe">TraversalInfoType</a> <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::traversalInfo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00075">75</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00049">mlpack::kmeans::DualTreeKMeansRules&lt; MetricType, TreeType &gt;::TraversalInfo()</a>.</p>
+
+</div>
+</div>
+<a id="a8255a45ad2481091f594933a7f73b33f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8255a45ad2481091f594933a7f73b33f">&#9670;&nbsp;</a></span>upperBounds</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">arma::vec&amp; <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::upperBounds</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00062">62</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a3602e522aa673f07c76f00e4b5a9da03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3602e522aa673f07c76f00e4b5a9da03">&#9670;&nbsp;</a></span>visited</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">std::vector&lt;bool&gt;&amp; <a class="el" href="classmlpack_1_1kmeans_1_1DualTreeKMeansRules.html">mlpack::kmeans::DualTreeKMeansRules</a>&lt; MetricType, TreeType &gt;::visited</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html#l00070">70</a> of file <a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/methods/kmeans/<a class="el" href="dual__tree__kmeans__rules_8hpp_source.html">dual_tree_kmeans_rules.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

@@ -1,0 +1,183 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+</head><link rel="stylesheet" href="../../../style.css" /></link><link rel="stylesheet" href="../../style-man.css" /></link><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" /></link>
+
+
+
+<body ><br /></br>
+
+
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext manpage">
+
+<h1 align="center">mlpack_preprocess_imputer</h1>
+
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_preprocess_imputer</font>
+- impute data</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_preprocess_imputer</font>
+[<font class="code">-h</font>] [<font class="code">-v</font>]</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p class="closemargin first">This utility
+takes a dataset and converts user defined missing variable
+to another to provide more meaningful analysis</p>
+
+<p class="closemargin first">The program
+does not modify the original file, but instead makes a
+separate file to save the output data; You can save the
+output by specifying the file name with <font class="code">--output_file</font>
+(<font class="code">-o</font>).</p>
+
+<p class="closemargin first">For example, if
+we consider &rsquo;NULL&rsquo; in dimension 0 to be a
+missing variable and want to delete whole row containing the
+NULL in the column-wise dataset, and save the result to
+result.csv, we could run</p>
+
+<p class="closemargin first">$
+<font class="code">mlpack_preprocess_imputer -i</font> dataset.csv <font class="code">-o</font>
+result.csv <font class="code">-m</font> NULL <font class="code">-d</font> 0 &gt; <font class="code">-s</font>
+listwise_deletion</p>
+
+<h2>REQUIRED INPUT OPTIONS
+<a name="REQUIRED INPUT OPTIONS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">--input_file
+(-i) [string]</font></p>
+
+<p class="farmargin">File containing data,</p>
+
+<h2>OPTIONAL INPUT OPTIONS
+<a name="OPTIONAL INPUT OPTIONS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">--custom_value</font>
+(<font class="code">-c</font>) [double] user_defined custom value Default value
+0. <font class="code"><br>
+--dimension (-d) [int]</font></p>
+
+<p class="farmargin">the dimension to apply
+imputation Default value</p>
+
+<table width="100
+" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="22
+"></td>
+<td width="3
+">
+
+
+<p>0.</p></td>
+<td width="75
+">
+</td></tr>
+</table>
+
+<p class="closemargin"><font class="code">--help (-h)</font></p>
+
+<p class="farmargin">Default help info.</p>
+
+<p class="closemargin"><font class="code">--info [string]</font></p>
+
+<p class="farmargin">Get help on a specific module
+or option. Default value &rsquo;&rsquo;.
+<font class="code">--missing_value</font> (<font class="code">-m</font>) [string] User defined
+missing value Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--strategy (-s)
+[string]</font></p>
+
+<p class="farmargin">imputation strategy to be
+applied. Strategies should be one of &rsquo;custom&rsquo;,
+&rsquo;mean&rsquo;, &rsquo;median&rsquo;, and
+&rsquo;listwise_deletion&rsquo;. Default value
+&rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--verbose (-v)</font></p>
+
+<p class="farmargin">Display informational messages
+and the full list of parameters and timers at the end of
+execution.</p>
+
+<p class="closemargin"><font class="code">--version (-V)</font></p>
+
+<p class="farmargin">Display the version of
+mlpack.</p>
+
+<h2>OPTIONAL OUTPUT OPTIONS
+<a name="OPTIONAL OUTPUT OPTIONS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">--output_file
+(-o) [string]</font></p>
+
+<p class="farmargin">File to save output Default
+value &rsquo;&rsquo;.</p>
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<p class="closemargin first">For further
+information, including relevant papers, citations, and
+theory, For further information, including relevant papers,
+citations, and theory, consult the documentation found at
+http://www.mlpack.org or included with your consult the
+documentation found at http://www.mlpack.org or included
+with your DISTRIBUTION OF MLPACK. DISTRIBUTION OF
+MLPACK.</p>
+</div></body></html>

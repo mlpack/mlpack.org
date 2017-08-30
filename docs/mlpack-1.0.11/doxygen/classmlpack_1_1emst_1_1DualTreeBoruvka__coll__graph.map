@@ -1,4 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classmlpack_1_1emst_1_1UnionFind.html" title="A Union&#45;Find data structure." alt="" coords="165,5,344,33"/>
-<area shape="rect" id="node4" href="$structmlpack_1_1emst_1_1DualTreeBoruvka_1_1SortEdgesHelper.html" title="For sorting the edge list after the computation." alt="" coords="5,55,504,83"/>
+<map id="mlpack::emst::DualTreeBoruvka&lt; MetricType, TreeType &gt;" name="mlpack::emst::DualTreeBoruvka&lt; MetricType, TreeType &gt;">
+<area shape="rect" id="node2" href="$classmlpack_1_1emst_1_1UnionFind.html" title="A Union&#45;Find data structure. " alt="" coords="27,5,195,32"/>
+<area shape="rect" id="node3" href="$structmlpack_1_1emst_1_1DualTreeBoruvka_1_1SortEdgesHelper.html" title="For sorting the edge list after the computation. " alt="" coords="5,56,216,112"/>
 </map>

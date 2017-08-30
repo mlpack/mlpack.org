@@ -1,0 +1,632 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.2.5</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1optimization.html">optimization</a></li><li class="navelem"><a class="el" href="classmlpack_1_1optimization_1_1MiniBatchSGD.html">MiniBatchSGD</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classmlpack_1_1optimization_1_1MiniBatchSGD-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">MiniBatchSGD&lt; DecomposableFunctionType &gt; Class Template Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >Mini-batch Stochastic Gradient Descent is a technique for minimizing a function which can be expressed as a sum of other functions.  
+ <a href="classmlpack_1_1optimization_1_1MiniBatchSGD.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a17240e0d223442937cae71e88c44fcde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1MiniBatchSGD.html#a17240e0d223442937cae71e88c44fcde">MiniBatchSGD</a> (DecomposableFunctionType &amp;function, const size_t batchSize=1000, const double stepSize=0.01, const size_t maxIterations=100000, const double tolerance=1e-5, const bool shuffle=true)</td></tr>
+<tr class="memdesc:a17240e0d223442937cae71e88c44fcde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the <a class="el" href="classmlpack_1_1optimization_1_1MiniBatchSGD.html" title="Mini-batch Stochastic Gradient Descent is a technique for minimizing a function which can be expresse...">MiniBatchSGD</a> optimizer with the given function and parameters.  <a href="#a17240e0d223442937cae71e88c44fcde">More...</a><br /></br></td></tr>
+<tr class="separator:a17240e0d223442937cae71e88c44fcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fc05cec06f55eb3c79d7f3f2fc197c5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1MiniBatchSGD.html#a7fc05cec06f55eb3c79d7f3f2fc197c5">BatchSize</a> () const</td></tr>
+<tr class="memdesc:a7fc05cec06f55eb3c79d7f3f2fc197c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the batch size.  <a href="#a7fc05cec06f55eb3c79d7f3f2fc197c5">More...</a><br /></br></td></tr>
+<tr class="separator:a7fc05cec06f55eb3c79d7f3f2fc197c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe6fa63561dedf6d88b7076d174e818f"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1MiniBatchSGD.html#abe6fa63561dedf6d88b7076d174e818f">BatchSize</a> ()</td></tr>
+<tr class="memdesc:abe6fa63561dedf6d88b7076d174e818f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the batch size.  <a href="#abe6fa63561dedf6d88b7076d174e818f">More...</a><br /></br></td></tr>
+<tr class="separator:abe6fa63561dedf6d88b7076d174e818f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a862432fca2f9aaca0b8bbe694f838f77"><td class="memItemLeft" align="right" valign="top">const DecomposableFunctionType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1MiniBatchSGD.html#a862432fca2f9aaca0b8bbe694f838f77">Function</a> () const</td></tr>
+<tr class="memdesc:a862432fca2f9aaca0b8bbe694f838f77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the instantiated function to be optimized.  <a href="#a862432fca2f9aaca0b8bbe694f838f77">More...</a><br /></br></td></tr>
+<tr class="separator:a862432fca2f9aaca0b8bbe694f838f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76a8b612a84e287c87407a40efa55119"><td class="memItemLeft" align="right" valign="top">DecomposableFunctionType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1MiniBatchSGD.html#a76a8b612a84e287c87407a40efa55119">Function</a> ()</td></tr>
+<tr class="memdesc:a76a8b612a84e287c87407a40efa55119"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the instantiated function.  <a href="#a76a8b612a84e287c87407a40efa55119">More...</a><br /></br></td></tr>
+<tr class="separator:a76a8b612a84e287c87407a40efa55119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a420770944a5b0c7a852c4ec372c4a2d1"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1MiniBatchSGD.html#a420770944a5b0c7a852c4ec372c4a2d1">MaxIterations</a> () const</td></tr>
+<tr class="memdesc:a420770944a5b0c7a852c4ec372c4a2d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of iterations (0 indicates no limit).  <a href="#a420770944a5b0c7a852c4ec372c4a2d1">More...</a><br /></br></td></tr>
+<tr class="separator:a420770944a5b0c7a852c4ec372c4a2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda675ab4ab86b95c92bc33bc391a61b"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1MiniBatchSGD.html#acda675ab4ab86b95c92bc33bc391a61b">MaxIterations</a> ()</td></tr>
+<tr class="memdesc:acda675ab4ab86b95c92bc33bc391a61b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the maximum number of iterations (0 indicates no limit).  <a href="#acda675ab4ab86b95c92bc33bc391a61b">More...</a><br /></br></td></tr>
+<tr class="separator:acda675ab4ab86b95c92bc33bc391a61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adefbd1c4f0dde4530ce5c43ca8a9bdd6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1MiniBatchSGD.html#adefbd1c4f0dde4530ce5c43ca8a9bdd6">Optimize</a> (arma::mat &amp;iterate)</td></tr>
+<tr class="memdesc:adefbd1c4f0dde4530ce5c43ca8a9bdd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimize the given function using mini-batch <a class="el" href="classmlpack_1_1optimization_1_1SGD.html" title="Stochastic Gradient Descent is a technique for minimizing a function which can be expressed as a sum ...">SGD</a>.  <a href="#adefbd1c4f0dde4530ce5c43ca8a9bdd6">More...</a><br /></br></td></tr>
+<tr class="separator:adefbd1c4f0dde4530ce5c43ca8a9bdd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3905e5cdf39697b4f82a1a53a087ef37"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1MiniBatchSGD.html#a3905e5cdf39697b4f82a1a53a087ef37">Shuffle</a> () const</td></tr>
+<tr class="memdesc:a3905e5cdf39697b4f82a1a53a087ef37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether or not the individual functions are shuffled.  <a href="#a3905e5cdf39697b4f82a1a53a087ef37">More...</a><br /></br></td></tr>
+<tr class="separator:a3905e5cdf39697b4f82a1a53a087ef37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af374b2359713783f431ab1238dc524f3"><td class="memItemLeft" align="right" valign="top">bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1MiniBatchSGD.html#af374b2359713783f431ab1238dc524f3">Shuffle</a> ()</td></tr>
+<tr class="memdesc:af374b2359713783f431ab1238dc524f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify whether or not the individual functions are shuffled.  <a href="#af374b2359713783f431ab1238dc524f3">More...</a><br /></br></td></tr>
+<tr class="separator:af374b2359713783f431ab1238dc524f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11e6eb66d82a14ebd2943b49db676444"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1MiniBatchSGD.html#a11e6eb66d82a14ebd2943b49db676444">StepSize</a> () const</td></tr>
+<tr class="memdesc:a11e6eb66d82a14ebd2943b49db676444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the step size.  <a href="#a11e6eb66d82a14ebd2943b49db676444">More...</a><br /></br></td></tr>
+<tr class="separator:a11e6eb66d82a14ebd2943b49db676444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b273aba48a984b2847aa1593e09477"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1MiniBatchSGD.html#af6b273aba48a984b2847aa1593e09477">StepSize</a> ()</td></tr>
+<tr class="memdesc:af6b273aba48a984b2847aa1593e09477"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the step size.  <a href="#af6b273aba48a984b2847aa1593e09477">More...</a><br /></br></td></tr>
+<tr class="separator:af6b273aba48a984b2847aa1593e09477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b5af5c1a84c507cbaa7f999ea5a4fda"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1MiniBatchSGD.html#a7b5af5c1a84c507cbaa7f999ea5a4fda">Tolerance</a> () const</td></tr>
+<tr class="memdesc:a7b5af5c1a84c507cbaa7f999ea5a4fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the tolerance for termination.  <a href="#a7b5af5c1a84c507cbaa7f999ea5a4fda">More...</a><br /></br></td></tr>
+<tr class="separator:a7b5af5c1a84c507cbaa7f999ea5a4fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9fac84af16250f5a3689692e8f2173"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1MiniBatchSGD.html#a3d9fac84af16250f5a3689692e8f2173">Tolerance</a> ()</td></tr>
+<tr class="memdesc:a3d9fac84af16250f5a3689692e8f2173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the tolerance for termination.  <a href="#a3d9fac84af16250f5a3689692e8f2173">More...</a><br /></br></td></tr>
+<tr class="separator:a3d9fac84af16250f5a3689692e8f2173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3 ><br /><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">DecomposableFunctionType</div><div class="close_bracket">&gt;</div></div></div></div></br>
+class mlpack::optimization::MiniBatchSGD&lt; DecomposableFunctionType &gt;</h3>
+
+<p >Mini-batch Stochastic Gradient Descent is a technique for minimizing a function which can be expressed as a sum of other functions. </p>
+<p >That is, suppose we have</p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[ f(A) = \sum_{i = 0}^{n} f_i(A) \]" src="form_41.png"></img>
+</p>
+<p >and our task is to minimize <img class="formulaInl" alt="$ A $" src="form_42.png"></img>. Mini-batch <a class="el" href="classmlpack_1_1optimization_1_1SGD.html" title="Stochastic Gradient Descent is a technique for minimizing a function which can be expressed as a sum ...">SGD</a> iterates over batches of functions <img class="formulaInl" alt="$ \{ f_{i0}(A), f_{i1}(A), \ldots, f_{i(m - 1)}(A) $" src="form_43.png"></img> for some batch size <img class="formulaInl" alt="$ m $" src="form_44.png"></img>, producing the following update scheme:</p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[ A_{j + 1} = A_j + \alpha \left(\sum_{k = 0}^{m - 1} \nabla f_{ik}(A) \right) \]" src="form_45.png"></img>
+</p>
+<p >where <img class="formulaInl" alt="$ \alpha $" src="form_35.png"></img> is a parameter which specifies the step size. Each mini-batch is passed through either sequentially or randomly. The algorithm continues until <img class="formulaInl" alt="$ j $" src="form_37.png"></img> reaches the maximum number of iterations&mdash;or when a full sequence of updates through each of the mini-batches produces an improvement within a certain tolerance <img class="formulaInl" alt="$ \epsilon $" src="form_38.png"></img>.</p>
+<p >The parameter <img class="formulaInl" alt="$ \epsilon $" src="form_38.png"></img> is specified by the tolerance parameter tot he constructor, as is the maximum number of iterations specified by the maxIterations parameter.</p>
+<p >This class is useful for data-dependent functions whose objective function can be expressed as a sum of objective functions operating on an individual point. Then, mini-batch <a class="el" href="classmlpack_1_1optimization_1_1SGD.html" title="Stochastic Gradient Descent is a technique for minimizing a function which can be expressed as a sum ...">SGD</a> considers the gradient of the objective function operation on an individual mini-batch of points in its update of <img class="formulaInl" alt="$ A $" src="form_42.png"></img>.</p>
+<p >For mini-batch <a class="el" href="classmlpack_1_1optimization_1_1SGD.html" title="Stochastic Gradient Descent is a technique for minimizing a function which can be expressed as a sum ...">SGD</a> to work, a DecomposableFunctionType template parameter is required. This class must implement the following function:</p>
+<p >size_t NumFunctions(); double Evaluate(const arma::mat&amp; coordinates, const size_t i); void Gradient(const arma::mat&amp; coordinates, const size_t i, arma::mat&amp; gradient);</p>
+<p >NumFunctions() should return the number of functions, and in the other two functions, the parameter i refers to which individual function (or gradient) is being evaluated. So, for the case of a data-dependent function, such as NCA (see <a class="el" href="classmlpack_1_1nca_1_1NCA.html" title="An implementation of Neighborhood Components Analysis, both a linear dimensionality reduction techniq...">mlpack::nca::NCA</a>), NumFunctions() should return the number of points in the dataset, and Evaluate(coordinates, 0) will evaluate the objective function on the first point in the dataset (presumably, the dataset is held internally in the DecomposableFunctionType).</p>
+<dl class="tparams"><dt >Template Parameters</dt><dd >
+  <table class="tparams">
+    <tr ><td class="paramname">DecomposableFunctionType</td><td >Decomposable objective function type to be minimized. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="minibatch__sgd_8hpp_source.html#l00074">74</a> of file <a class="el" href="minibatch__sgd_8hpp_source.html">minibatch_sgd.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a17240e0d223442937cae71e88c44fcde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17240e0d223442937cae71e88c44fcde">&#9670;&nbsp;</a></span>MiniBatchSGD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1optimization_1_1MiniBatchSGD.html">MiniBatchSGD</a> </td>
+          <td >(</td>
+          <td class="paramtype">DecomposableFunctionType &amp;&#160;</td>
+          <td class="paramname"><em >function</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >batchSize</em> = <code >1000</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >stepSize</em> = <code >0.01</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >maxIterations</em> = <code >100000</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >tolerance</em> = <code >1e-5</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em >shuffle</em> = <code >true</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Construct the <a class="el" href="classmlpack_1_1optimization_1_1MiniBatchSGD.html" title="Mini-batch Stochastic Gradient Descent is a technique for minimizing a function which can be expresse...">MiniBatchSGD</a> optimizer with the given function and parameters. </p>
+<p >The defaults here are not necessarily good for the given problem, so it is suggested that the values used be tailored for the task at hand. The maximum number of iterations refers to the maximum number of mini-batches that are processed.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">function</td><td >Function to be optimized (minimized). </td></tr>
+    <tr ><td class="paramname">batchSize</td><td >Size of each mini-batch. </td></tr>
+    <tr ><td class="paramname">stepSize</td><td >Step size for each iteration. </td></tr>
+    <tr ><td class="paramname">maxIterations</td><td >Maximum number of iterations allowed (0 means no limit). </td></tr>
+    <tr ><td class="paramname">tolerance</td><td >Maximum absolute tolerance to terminate algorithm. </td></tr>
+    <tr ><td class="paramname">shuffle</td><td >If true, the mini-batch order is shuffled; otherwise, each mini-batch is visited in linear order. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7fc05cec06f55eb3c79d7f3f2fc197c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc05cec06f55eb3c79d7f3f2fc197c5">&#9670;&nbsp;</a></span>BatchSize() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t BatchSize </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the batch size. </p>
+
+<p class="definition">Definition at line <a class="el" href="minibatch__sgd_8hpp_source.html#l00116">116</a> of file <a class="el" href="minibatch__sgd_8hpp_source.html">minibatch_sgd.hpp</a>.</p>
+
+</div>
+</div>
+<a id="abe6fa63561dedf6d88b7076d174e818f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe6fa63561dedf6d88b7076d174e818f">&#9670;&nbsp;</a></span>BatchSize() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; BatchSize </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the batch size. </p>
+
+<p class="definition">Definition at line <a class="el" href="minibatch__sgd_8hpp_source.html#l00118">118</a> of file <a class="el" href="minibatch__sgd_8hpp_source.html">minibatch_sgd.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a862432fca2f9aaca0b8bbe694f838f77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a862432fca2f9aaca0b8bbe694f838f77">&#9670;&nbsp;</a></span>Function() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const DecomposableFunctionType&amp; Function </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the instantiated function to be optimized. </p>
+
+<p class="definition">Definition at line <a class="el" href="minibatch__sgd_8hpp_source.html#l00111">111</a> of file <a class="el" href="minibatch__sgd_8hpp_source.html">minibatch_sgd.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a76a8b612a84e287c87407a40efa55119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76a8b612a84e287c87407a40efa55119">&#9670;&nbsp;</a></span>Function() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">DecomposableFunctionType&amp; Function </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the instantiated function. </p>
+
+<p class="definition">Definition at line <a class="el" href="minibatch__sgd_8hpp_source.html#l00113">113</a> of file <a class="el" href="minibatch__sgd_8hpp_source.html">minibatch_sgd.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a420770944a5b0c7a852c4ec372c4a2d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a420770944a5b0c7a852c4ec372c4a2d1">&#9670;&nbsp;</a></span>MaxIterations() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t MaxIterations </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the maximum number of iterations (0 indicates no limit). </p>
+
+<p class="definition">Definition at line <a class="el" href="minibatch__sgd_8hpp_source.html#l00126">126</a> of file <a class="el" href="minibatch__sgd_8hpp_source.html">minibatch_sgd.hpp</a>.</p>
+
+</div>
+</div>
+<a id="acda675ab4ab86b95c92bc33bc391a61b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acda675ab4ab86b95c92bc33bc391a61b">&#9670;&nbsp;</a></span>MaxIterations() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; MaxIterations </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the maximum number of iterations (0 indicates no limit). </p>
+
+<p class="definition">Definition at line <a class="el" href="minibatch__sgd_8hpp_source.html#l00128">128</a> of file <a class="el" href="minibatch__sgd_8hpp_source.html">minibatch_sgd.hpp</a>.</p>
+
+</div>
+</div>
+<a id="adefbd1c4f0dde4530ce5c43ca8a9bdd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adefbd1c4f0dde4530ce5c43ca8a9bdd6">&#9670;&nbsp;</a></span>Optimize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Optimize </td>
+          <td >(</td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >iterate</em></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Optimize the given function using mini-batch <a class="el" href="classmlpack_1_1optimization_1_1SGD.html" title="Stochastic Gradient Descent is a technique for minimizing a function which can be expressed as a sum ...">SGD</a>. </p>
+<p >The given starting point will be modified to store the finishing point of the algorithm, and the final objective value is returned.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">iterate</td><td >Starting point (will be modified). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt >Returns</dt><dd >Objective value of the final point. </dd></dl>
+
+</div>
+</div>
+<a id="a3905e5cdf39697b4f82a1a53a087ef37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3905e5cdf39697b4f82a1a53a087ef37">&#9670;&nbsp;</a></span>Shuffle() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">bool Shuffle </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get whether or not the individual functions are shuffled. </p>
+
+<p class="definition">Definition at line <a class="el" href="minibatch__sgd_8hpp_source.html#l00136">136</a> of file <a class="el" href="minibatch__sgd_8hpp_source.html">minibatch_sgd.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af374b2359713783f431ab1238dc524f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af374b2359713783f431ab1238dc524f3">&#9670;&nbsp;</a></span>Shuffle() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">bool&amp; Shuffle </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify whether or not the individual functions are shuffled. </p>
+
+<p class="definition">Definition at line <a class="el" href="minibatch__sgd_8hpp_source.html#l00138">138</a> of file <a class="el" href="minibatch__sgd_8hpp_source.html">minibatch_sgd.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a11e6eb66d82a14ebd2943b49db676444"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11e6eb66d82a14ebd2943b49db676444">&#9670;&nbsp;</a></span>StepSize() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double StepSize </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the step size. </p>
+
+<p class="definition">Definition at line <a class="el" href="minibatch__sgd_8hpp_source.html#l00121">121</a> of file <a class="el" href="minibatch__sgd_8hpp_source.html">minibatch_sgd.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af6b273aba48a984b2847aa1593e09477"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6b273aba48a984b2847aa1593e09477">&#9670;&nbsp;</a></span>StepSize() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double&amp; StepSize </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the step size. </p>
+
+<p class="definition">Definition at line <a class="el" href="minibatch__sgd_8hpp_source.html#l00123">123</a> of file <a class="el" href="minibatch__sgd_8hpp_source.html">minibatch_sgd.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a7b5af5c1a84c507cbaa7f999ea5a4fda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b5af5c1a84c507cbaa7f999ea5a4fda">&#9670;&nbsp;</a></span>Tolerance() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Tolerance </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the tolerance for termination. </p>
+
+<p class="definition">Definition at line <a class="el" href="minibatch__sgd_8hpp_source.html#l00131">131</a> of file <a class="el" href="minibatch__sgd_8hpp_source.html">minibatch_sgd.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a3d9fac84af16250f5a3689692e8f2173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d9fac84af16250f5a3689692e8f2173">&#9670;&nbsp;</a></span>Tolerance() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double&amp; Tolerance </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the tolerance for termination. </p>
+
+<p class="definition">Definition at line <a class="el" href="minibatch__sgd_8hpp_source.html#l00133">133</a> of file <a class="el" href="minibatch__sgd_8hpp_source.html">minibatch_sgd.hpp</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/core/optimizers/minibatch_sgd/<a class="el" href="minibatch__sgd_8hpp_source.html">minibatch_sgd.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

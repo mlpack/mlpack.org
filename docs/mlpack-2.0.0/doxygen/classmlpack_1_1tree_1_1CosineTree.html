@@ -1,22 +1,50 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head >
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
-<meta name="generator" content="Doxygen 1.8.9.1"></meta>
-<title >mlpack: mlpack::tree::CosineTree Class Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
-</link>
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
-</link>
-</head>
-<body >
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
 <div id="top">
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody >
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mlpack
    &#160;<span id="projectnumber">2.0.0</span>
    </div>
@@ -26,24 +54,14 @@
 </table>
 </div>
 
-
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
-      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
-      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span >Classes</span></a></li>
-      <li ><a href="files.html"><span >Files</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li ><a href="annotated.html"><span >Class&#160;List</span></a></li>
-      <li ><a href="classes.html"><span >Class&#160;Index</span></a></li>
-      <li ><a href="inherits.html"><span >Class&#160;Hierarchy</span></a></li>
-      <li ><a href="functions.html"><span >Class&#160;Members</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+</script>
+<div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul >
 <li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1tree.html">tree</a></li><li class="navelem"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html">CosineTree</a></li>  </ul>
@@ -103,24 +121,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a26e06926122678981c4a33cb7770a67e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#a26e06926122678981c4a33cb7770a67e">CosineNodeSplit</a> ()</td></tr>
 <tr class="memdesc:a26e06926122678981c4a33cb7770a67e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function splits the cosine node into two children based on the cosines of the columns contained in the node, with respect to the sampled splitting point.  <a href="#a26e06926122678981c4a33cb7770a67e">More...</a><br /></br></td></tr>
 <tr class="separator:a26e06926122678981c4a33cb7770a67e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6cce7142f25d1c83b4f0aad130bed4b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#af6cce7142f25d1c83b4f0aad130bed4b">FrobNormSquared</a> () const </td></tr>
-<tr class="memdesc:af6cce7142f25d1c83b4f0aad130bed4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Frobenius norm squared of columns in the node.  <a href="#af6cce7142f25d1c83b4f0aad130bed4b">More...</a><br /></br></td></tr>
-<tr class="separator:af6cce7142f25d1c83b4f0aad130bed4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72bfd69dddb5522e514b55134e552ee7"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#a72bfd69dddb5522e514b55134e552ee7">GetDataset</a> () const </td></tr>
-<tr class="memdesc:a72bfd69dddb5522e514b55134e552ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pointer to the dataset matrix.  <a href="#a72bfd69dddb5522e514b55134e552ee7">More...</a><br /></br></td></tr>
-<tr class="separator:a72bfd69dddb5522e514b55134e552ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a720d3aa449fc3d5d52fb30932dfd7c7f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#a720d3aa449fc3d5d52fb30932dfd7c7f">FrobNormSquared</a> () const</td></tr>
+<tr class="memdesc:a720d3aa449fc3d5d52fb30932dfd7c7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Frobenius norm squared of columns in the node.  <a href="#a720d3aa449fc3d5d52fb30932dfd7c7f">More...</a><br /></br></td></tr>
+<tr class="separator:a720d3aa449fc3d5d52fb30932dfd7c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd2df195d24e090abd8d0f53b64e627b"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#abd2df195d24e090abd8d0f53b64e627b">GetDataset</a> () const</td></tr>
+<tr class="memdesc:abd2df195d24e090abd8d0f53b64e627b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pointer to the dataset matrix.  <a href="#abd2df195d24e090abd8d0f53b64e627b">More...</a><br /></br></td></tr>
+<tr class="separator:abd2df195d24e090abd8d0f53b64e627b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a047e7e10072a9d88b0cfc2c0bc1b059c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#a047e7e10072a9d88b0cfc2c0bc1b059c">GetFinalBasis</a> (arma::mat &amp;finalBasis)</td></tr>
 <tr class="memdesc:a047e7e10072a9d88b0cfc2c0bc1b059c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the basis of the constructed subspace.  <a href="#a047e7e10072a9d88b0cfc2c0bc1b059c">More...</a><br /></br></td></tr>
 <tr class="separator:a047e7e10072a9d88b0cfc2c0bc1b059c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1cba40f0504fc2fddb25dc9b603f965"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#ac1cba40f0504fc2fddb25dc9b603f965">L2Error</a> (const double error)</td></tr>
 <tr class="memdesc:ac1cba40f0504fc2fddb25dc9b603f965"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Monte Carlo error.  <a href="#ac1cba40f0504fc2fddb25dc9b603f965">More...</a><br /></br></td></tr>
 <tr class="separator:ac1cba40f0504fc2fddb25dc9b603f965"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67be528336b40266704e760c525de9eb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#a67be528336b40266704e760c525de9eb">L2Error</a> () const </td></tr>
-<tr class="memdesc:a67be528336b40266704e760c525de9eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Monte Carlo error.  <a href="#a67be528336b40266704e760c525de9eb">More...</a><br /></br></td></tr>
-<tr class="separator:a67be528336b40266704e760c525de9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a728f226c207b35f4b83ab856bf8e6cd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html">CosineTree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#a728f226c207b35f4b83ab856bf8e6cd7">Left</a> () const </td></tr>
-<tr class="memdesc:a728f226c207b35f4b83ab856bf8e6cd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pointer to the left child of the node.  <a href="#a728f226c207b35f4b83ab856bf8e6cd7">More...</a><br /></br></td></tr>
-<tr class="separator:a728f226c207b35f4b83ab856bf8e6cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa74f7dae5deea2e520c917038419248"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#afa74f7dae5deea2e520c917038419248">L2Error</a> () const</td></tr>
+<tr class="memdesc:afa74f7dae5deea2e520c917038419248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Monte Carlo error.  <a href="#afa74f7dae5deea2e520c917038419248">More...</a><br /></br></td></tr>
+<tr class="separator:afa74f7dae5deea2e520c917038419248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c56069d922055168610ef3e974a8562"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html">CosineTree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#a0c56069d922055168610ef3e974a8562">Left</a> () const</td></tr>
+<tr class="memdesc:a0c56069d922055168610ef3e974a8562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pointer to the left child of the node.  <a href="#a0c56069d922055168610ef3e974a8562">More...</a><br /></br></td></tr>
+<tr class="separator:a0c56069d922055168610ef3e974a8562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6fc04bd566783542113f5b2a47b5a37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html">CosineTree</a> *&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#ae6fc04bd566783542113f5b2a47b5a37">Left</a> ()</td></tr>
 <tr class="memdesc:ae6fc04bd566783542113f5b2a47b5a37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the pointer to the left child of the node.  <a href="#ae6fc04bd566783542113f5b2a47b5a37">More...</a><br /></br></td></tr>
 <tr class="separator:ae6fc04bd566783542113f5b2a47b5a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,24 +148,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6e253238c8eef0a5908978a07f4b8e5c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#a6e253238c8eef0a5908978a07f4b8e5c">MonteCarloError</a> (<a class="el" href="classmlpack_1_1tree_1_1CosineTree.html">CosineTree</a> *node, <a class="el" href="namespacemlpack_1_1tree.html#a84f2fb164d4b443c3409e1b88633745b">CosineNodeQueue</a> &amp;treeQueue, arma::vec *addBasisVector1=NULL, arma::vec *addBasisVector2=NULL)</td></tr>
 <tr class="memdesc:a6e253238c8eef0a5908978a07f4b8e5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates the squared error of the projection of the input node's matrix onto the current vector subspace.  <a href="#a6e253238c8eef0a5908978a07f4b8e5c">More...</a><br /></br></td></tr>
 <tr class="separator:a6e253238c8eef0a5908978a07f4b8e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f7aaaa1d736e6fa5f09596998795246"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#a8f7aaaa1d736e6fa5f09596998795246">NumColumns</a> () const </td></tr>
-<tr class="memdesc:a8f7aaaa1d736e6fa5f09596998795246"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of columns of input matrix in the node.  <a href="#a8f7aaaa1d736e6fa5f09596998795246">More...</a><br /></br></td></tr>
-<tr class="separator:a8f7aaaa1d736e6fa5f09596998795246"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac91909960fc1e92cf083c073c5903c52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html">CosineTree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#ac91909960fc1e92cf083c073c5903c52">Parent</a> () const </td></tr>
-<tr class="memdesc:ac91909960fc1e92cf083c073c5903c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pointer to the parent node.  <a href="#ac91909960fc1e92cf083c073c5903c52">More...</a><br /></br></td></tr>
-<tr class="separator:ac91909960fc1e92cf083c073c5903c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a810f5528092ea0f180f80c481ab7e505"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#a810f5528092ea0f180f80c481ab7e505">NumColumns</a> () const</td></tr>
+<tr class="memdesc:a810f5528092ea0f180f80c481ab7e505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of columns of input matrix in the node.  <a href="#a810f5528092ea0f180f80c481ab7e505">More...</a><br /></br></td></tr>
+<tr class="separator:a810f5528092ea0f180f80c481ab7e505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0eac752b8d47b2d8f3ad5c1030fa2f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html">CosineTree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#ac0eac752b8d47b2d8f3ad5c1030fa2f7">Parent</a> () const</td></tr>
+<tr class="memdesc:ac0eac752b8d47b2d8f3ad5c1030fa2f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pointer to the parent node.  <a href="#ac0eac752b8d47b2d8f3ad5c1030fa2f7">More...</a><br /></br></td></tr>
+<tr class="separator:ac0eac752b8d47b2d8f3ad5c1030fa2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4baa05035e458d8e09a5ccee0fae9f68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html">CosineTree</a> *&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#a4baa05035e458d8e09a5ccee0fae9f68">Parent</a> ()</td></tr>
 <tr class="memdesc:a4baa05035e458d8e09a5ccee0fae9f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the pointer to the parent node.  <a href="#a4baa05035e458d8e09a5ccee0fae9f68">More...</a><br /></br></td></tr>
 <tr class="separator:a4baa05035e458d8e09a5ccee0fae9f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec829bd377937345ab31964c141972c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html">CosineTree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#aec829bd377937345ab31964c141972c2">Right</a> () const </td></tr>
-<tr class="memdesc:aec829bd377937345ab31964c141972c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pointer to the right child of the node.  <a href="#aec829bd377937345ab31964c141972c2">More...</a><br /></br></td></tr>
-<tr class="separator:aec829bd377937345ab31964c141972c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a121e81b50effc393e7b830dbc99d6045"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html">CosineTree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#a121e81b50effc393e7b830dbc99d6045">Right</a> () const</td></tr>
+<tr class="memdesc:a121e81b50effc393e7b830dbc99d6045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pointer to the right child of the node.  <a href="#a121e81b50effc393e7b830dbc99d6045">More...</a><br /></br></td></tr>
+<tr class="separator:a121e81b50effc393e7b830dbc99d6045"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6d68d74021f6ee4d0c0765e323b6cf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html">CosineTree</a> *&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#ad6d68d74021f6ee4d0c0765e323b6cf2">Right</a> ()</td></tr>
 <tr class="memdesc:ad6d68d74021f6ee4d0c0765e323b6cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the pointer to the left child of the node.  <a href="#ad6d68d74021f6ee4d0c0765e323b6cf2">More...</a><br /></br></td></tr>
 <tr class="separator:ad6d68d74021f6ee4d0c0765e323b6cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f130352bda9417a9cfa5dcc53eb0c23"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#a2f130352bda9417a9cfa5dcc53eb0c23">SplitPointIndex</a> () const </td></tr>
-<tr class="memdesc:a2f130352bda9417a9cfa5dcc53eb0c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the column index of split point of the node.  <a href="#a2f130352bda9417a9cfa5dcc53eb0c23">More...</a><br /></br></td></tr>
-<tr class="separator:a2f130352bda9417a9cfa5dcc53eb0c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8b9927f7f1c5529c53fdbbbfe44eaad"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#ad8b9927f7f1c5529c53fdbbbfe44eaad">SplitPointIndex</a> () const</td></tr>
+<tr class="memdesc:ad8b9927f7f1c5529c53fdbbbfe44eaad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the column index of split point of the node.  <a href="#ad8b9927f7f1c5529c53fdbbbfe44eaad">More...</a><br /></br></td></tr>
+<tr class="separator:ad8b9927f7f1c5529c53fdbbbfe44eaad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f80789d3cf00249d6cf2d2c8b0a7a8f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1CosineTree.html#a0f80789d3cf00249d6cf2d2c8b0a7a8f">VectorIndices</a> ()</td></tr>
 <tr class="memdesc:a0f80789d3cf00249d6cf2d2c8b0a7a8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the indices of columns in the node.  <a href="#a0f80789d3cf00249d6cf2d2c8b0a7a8f">More...</a><br /></br></td></tr>
 <tr class="separator:a0f80789d3cf00249d6cf2d2c8b0a7a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,9 +217,11 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00039">39</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00039">39</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a620e8df484ae1137e14747cf8d393c1c"></a>
+<a id="a620e8df484ae1137e14747cf8d393c1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a620e8df484ae1137e14747cf8d393c1c">&#9670;&nbsp;</a></span>CosineTree() <span class="overload">[1/3]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -226,7 +246,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9852c0101777e18dda9d573a508c7e4a"></a>
+<a id="a9852c0101777e18dda9d573a508c7e4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9852c0101777e18dda9d573a508c7e4a">&#9670;&nbsp;</a></span>CosineTree() <span class="overload">[2/3]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -262,7 +284,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa4b0aac9d5c68220b20088ecd7996425"></a>
+<a id="aa4b0aac9d5c68220b20088ecd7996425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4b0aac9d5c68220b20088ecd7996425">&#9670;&nbsp;</a></span>CosineTree() <span class="overload">[3/3]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -305,7 +329,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa56ec4e53efe931b166b7a9ae5aadf61"></a>
+<a id="aa56ec4e53efe931b166b7a9ae5aadf61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa56ec4e53efe931b166b7a9ae5aadf61">&#9670;&nbsp;</a></span>~CosineTree()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -323,7 +349,9 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ade89fb5bbfd026f88049b7f5763e218a"></a>
+<a id="ade89fb5bbfd026f88049b7f5763e218a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade89fb5bbfd026f88049b7f5763e218a">&#9670;&nbsp;</a></span>BasisVector() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -347,13 +375,15 @@ Private Attributes</h2></td></tr>
 
 <p >Set the basis vector of the node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00196">196</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00196">196</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="cosine__tree_8hpp_source.html#l00245">basisVector</a>.</p>
+<p class="reference">References <a class="el" href="cosine__tree_8hpp_source.html#l00245">basisVector</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab44b3a8d993cc5654d0da5b8b2407413"></a>
+<a id="ab44b3a8d993cc5654d0da5b8b2407413"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab44b3a8d993cc5654d0da5b8b2407413">&#9670;&nbsp;</a></span>BasisVector() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -376,13 +406,15 @@ Private Attributes</h2></td></tr>
 
 <p >Get the basis vector of the node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00199">199</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00199">199</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="cosine__tree_8hpp_source.html#l00245">basisVector</a>.</p>
+<p class="reference">References <a class="el" href="cosine__tree_8hpp_source.html#l00245">basisVector</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="afa8865f4f586781f9b15d890bf22ab5b"></a>
+<a id="afa8865f4f586781f9b15d890bf22ab5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa8865f4f586781f9b15d890bf22ab5b">&#9670;&nbsp;</a></span>BinarySearch()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -432,7 +464,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5d4871493ac6da4d49d7bb8c43fffd24"></a>
+<a id="a5d4871493ac6da4d49d7bb8c43fffd24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d4871493ac6da4d49d7bb8c43fffd24">&#9670;&nbsp;</a></span>CalculateCentroid()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -450,7 +484,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5fc5fbcdfe2566da6fab94edcec6a785"></a>
+<a id="a5fc5fbcdfe2566da6fab94edcec6a785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fc5fbcdfe2566da6fab94edcec6a785">&#9670;&nbsp;</a></span>CalculateCosines()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -475,7 +511,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1f96dd6bc7b9ddcae4ab410084277d99"></a>
+<a id="a1f96dd6bc7b9ddcae4ab410084277d99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f96dd6bc7b9ddcae4ab410084277d99">&#9670;&nbsp;</a></span>Centroid()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -498,13 +536,15 @@ Private Attributes</h2></td></tr>
 
 <p >Get pointer to the centroid vector. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00193">193</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00193">193</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="cosine__tree_8hpp_source.html#l00243">centroid</a>.</p>
+<p class="reference">References <a class="el" href="cosine__tree_8hpp_source.html#l00243">centroid</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a18b3ab187c5b76afeda59411ab1957f7"></a>
+<a id="a18b3ab187c5b76afeda59411ab1957f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18b3ab187c5b76afeda59411ab1957f7">&#9670;&nbsp;</a></span>ColumnSampleLS()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -522,7 +562,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac62e11a04ed81d0b58461f398cab9540"></a>
+<a id="ac62e11a04ed81d0b58461f398cab9540"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac62e11a04ed81d0b58461f398cab9540">&#9670;&nbsp;</a></span>ColumnSamplesLS()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -557,7 +599,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad41fd59c39b877eb65b0e9fa83cf9bbc"></a>
+<a id="ad41fd59c39b877eb65b0e9fa83cf9bbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad41fd59c39b877eb65b0e9fa83cf9bbc">&#9670;&nbsp;</a></span>ConstructBasis()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -581,7 +625,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a26e06926122678981c4a33cb7770a67e"></a>
+<a id="a26e06926122678981c4a33cb7770a67e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26e06926122678981c4a33cb7770a67e">&#9670;&nbsp;</a></span>CosineNodeSplit()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -599,7 +645,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af6cce7142f25d1c83b4f0aad130bed4b"></a>
+<a id="a720d3aa449fc3d5d52fb30932dfd7c7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a720d3aa449fc3d5d52fb30932dfd7c7f">&#9670;&nbsp;</a></span>FrobNormSquared()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -622,13 +670,15 @@ Private Attributes</h2></td></tr>
 
 <p >Get the Frobenius norm squared of columns in the node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00220">220</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00220">220</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="cosine__tree_8hpp_source.html#l00253">frobNormSquared</a>.</p>
+<p class="reference">References <a class="el" href="cosine__tree_8hpp_source.html#l00253">frobNormSquared</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a72bfd69dddb5522e514b55134e552ee7"></a>
+<a id="abd2df195d24e090abd8d0f53b64e627b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd2df195d24e090abd8d0f53b64e627b">&#9670;&nbsp;</a></span>GetDataset()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -651,13 +701,15 @@ Private Attributes</h2></td></tr>
 
 <p >Get pointer to the dataset matrix. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00182">182</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00182">182</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="cosine__tree_8hpp_source.html#l00227">dataset</a>.</p>
+<p class="reference">References <a class="el" href="cosine__tree_8hpp_source.html#l00227">dataset</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a047e7e10072a9d88b0cfc2c0bc1b059c"></a>
+<a id="a047e7e10072a9d88b0cfc2c0bc1b059c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a047e7e10072a9d88b0cfc2c0bc1b059c">&#9670;&nbsp;</a></span>GetFinalBasis()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -681,13 +733,15 @@ Private Attributes</h2></td></tr>
 
 <p >Returns the basis of the constructed subspace. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00179">179</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00179">179</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="cosine__tree_8hpp_source.html#l00231">basis</a>.</p>
+<p class="reference">References <a class="el" href="cosine__tree_8hpp_source.html#l00231">basis</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac1cba40f0504fc2fddb25dc9b603f965"></a>
+<a id="ac1cba40f0504fc2fddb25dc9b603f965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1cba40f0504fc2fddb25dc9b603f965">&#9670;&nbsp;</a></span>L2Error() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -711,15 +765,17 @@ Private Attributes</h2></td></tr>
 
 <p >Set the Monte Carlo error. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00188">188</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00188">188</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="cosine__tree_8hpp_source.html#l00251">l2Error</a>.</p>
+<p class="reference">References <a class="el" href="cosine__tree_8hpp_source.html#l00251">l2Error</a>.</p>
 
-<p >Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00261">mlpack::tree::CompareCosineNode::operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00261">mlpack::tree::CompareCosineNode::operator()()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a67be528336b40266704e760c525de9eb"></a>
+<a id="afa74f7dae5deea2e520c917038419248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa74f7dae5deea2e520c917038419248">&#9670;&nbsp;</a></span>L2Error() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -742,13 +798,15 @@ Private Attributes</h2></td></tr>
 
 <p >Get the Monte Carlo error. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00190">190</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00190">190</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="cosine__tree_8hpp_source.html#l00251">l2Error</a>.</p>
+<p class="reference">References <a class="el" href="cosine__tree_8hpp_source.html#l00251">l2Error</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a728f226c207b35f4b83ab856bf8e6cd7"></a>
+<a id="a0c56069d922055168610ef3e974a8562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c56069d922055168610ef3e974a8562">&#9670;&nbsp;</a></span>Left() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -771,13 +829,15 @@ Private Attributes</h2></td></tr>
 
 <p >Get pointer to the left child of the node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00207">207</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00207">207</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="cosine__tree_8hpp_source.html#l00235">left</a>.</p>
+<p class="reference">References <a class="el" href="cosine__tree_8hpp_source.html#l00235">left</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae6fc04bd566783542113f5b2a47b5a37"></a>
+<a id="ae6fc04bd566783542113f5b2a47b5a37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6fc04bd566783542113f5b2a47b5a37">&#9670;&nbsp;</a></span>Left() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -800,13 +860,15 @@ Private Attributes</h2></td></tr>
 
 <p >Modify the pointer to the left child of the node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00209">209</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00209">209</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="cosine__tree_8hpp_source.html#l00235">left</a>.</p>
+<p class="reference">References <a class="el" href="cosine__tree_8hpp_source.html#l00235">left</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7fc34f5ecf6641f5b1585e6aa8909285"></a>
+<a id="a7fc34f5ecf6641f5b1585e6aa8909285"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc34f5ecf6641f5b1585e6aa8909285">&#9670;&nbsp;</a></span>ModifiedGramSchmidt()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -855,7 +917,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6e253238c8eef0a5908978a07f4b8e5c"></a>
+<a id="a6e253238c8eef0a5908978a07f4b8e5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e253238c8eef0a5908978a07f4b8e5c">&#9670;&nbsp;</a></span>MonteCarloError()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -905,7 +969,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8f7aaaa1d736e6fa5f09596998795246"></a>
+<a id="a810f5528092ea0f180f80c481ab7e505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a810f5528092ea0f180f80c481ab7e505">&#9670;&nbsp;</a></span>NumColumns()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -928,13 +994,15 @@ Private Attributes</h2></td></tr>
 
 <p >Get number of columns of input matrix in the node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00217">217</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00217">217</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="cosine__tree_8hpp_source.html#l00249">numColumns</a>.</p>
+<p class="reference">References <a class="el" href="cosine__tree_8hpp_source.html#l00249">numColumns</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac91909960fc1e92cf083c073c5903c52"></a>
+<a id="ac0eac752b8d47b2d8f3ad5c1030fa2f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0eac752b8d47b2d8f3ad5c1030fa2f7">&#9670;&nbsp;</a></span>Parent() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -957,13 +1025,15 @@ Private Attributes</h2></td></tr>
 
 <p >Get pointer to the parent node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00202">202</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00202">202</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="cosine__tree_8hpp_source.html#l00233">parent</a>.</p>
+<p class="reference">References <a class="el" href="cosine__tree_8hpp_source.html#l00233">parent</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4baa05035e458d8e09a5ccee0fae9f68"></a>
+<a id="a4baa05035e458d8e09a5ccee0fae9f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4baa05035e458d8e09a5ccee0fae9f68">&#9670;&nbsp;</a></span>Parent() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -986,13 +1056,15 @@ Private Attributes</h2></td></tr>
 
 <p >Modify the pointer to the parent node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00204">204</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00204">204</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="cosine__tree_8hpp_source.html#l00233">parent</a>.</p>
+<p class="reference">References <a class="el" href="cosine__tree_8hpp_source.html#l00233">parent</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aec829bd377937345ab31964c141972c2"></a>
+<a id="a121e81b50effc393e7b830dbc99d6045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a121e81b50effc393e7b830dbc99d6045">&#9670;&nbsp;</a></span>Right() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1015,13 +1087,15 @@ Private Attributes</h2></td></tr>
 
 <p >Get pointer to the right child of the node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00212">212</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00212">212</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="cosine__tree_8hpp_source.html#l00237">right</a>.</p>
+<p class="reference">References <a class="el" href="cosine__tree_8hpp_source.html#l00237">right</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad6d68d74021f6ee4d0c0765e323b6cf2"></a>
+<a id="ad6d68d74021f6ee4d0c0765e323b6cf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6d68d74021f6ee4d0c0765e323b6cf2">&#9670;&nbsp;</a></span>Right() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1044,13 +1118,15 @@ Private Attributes</h2></td></tr>
 
 <p >Modify the pointer to the left child of the node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00214">214</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00214">214</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="cosine__tree_8hpp_source.html#l00237">right</a>.</p>
+<p class="reference">References <a class="el" href="cosine__tree_8hpp_source.html#l00237">right</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2f130352bda9417a9cfa5dcc53eb0c23"></a>
+<a id="ad8b9927f7f1c5529c53fdbbbfe44eaad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8b9927f7f1c5529c53fdbbbfe44eaad">&#9670;&nbsp;</a></span>SplitPointIndex()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1073,13 +1149,15 @@ Private Attributes</h2></td></tr>
 
 <p >Get the column index of split point of the node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00223">223</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00223">223</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="cosine__tree_8hpp_source.html#l00239">indices</a>, and <a class="el" href="cosine__tree_8hpp_source.html#l00247">splitPointIndex</a>.</p>
+<p class="reference">References <a class="el" href="cosine__tree_8hpp_source.html#l00239">indices</a>, and <a class="el" href="cosine__tree_8hpp_source.html#l00247">splitPointIndex</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0f80789d3cf00249d6cf2d2c8b0a7a8f"></a>
+<a id="a0f80789d3cf00249d6cf2d2c8b0a7a8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f80789d3cf00249d6cf2d2c8b0a7a8f">&#9670;&nbsp;</a></span>VectorIndices()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1102,14 +1180,16 @@ Private Attributes</h2></td></tr>
 
 <p >Get the indices of columns in the node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00185">185</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00185">185</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="cosine__tree_8hpp_source.html#l00239">indices</a>.</p>
+<p class="reference">References <a class="el" href="cosine__tree_8hpp_source.html#l00239">indices</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="aa6350375ea4f9c5cecd97efaa1fc5f87"></a>
+<a id="aa6350375ea4f9c5cecd97efaa1fc5f87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6350375ea4f9c5cecd97efaa1fc5f87">&#9670;&nbsp;</a></span>basis</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1129,13 +1209,15 @@ Private Attributes</h2></td></tr>
 
 <p >Subspace basis of the input dataset. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00231">231</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00231">231</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00179">GetFinalBasis()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00179">GetFinalBasis()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af087a35ed741d7d8ada8921159527aa7"></a>
+<a id="af087a35ed741d7d8ada8921159527aa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af087a35ed741d7d8ada8921159527aa7">&#9670;&nbsp;</a></span>basisVector</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1155,13 +1237,15 @@ Private Attributes</h2></td></tr>
 
 <p >Orthonormalized basis vector of the node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00245">245</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00245">245</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00196">BasisVector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00196">BasisVector()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0f7bb5e3afb23ecf291587ec207cabd7"></a>
+<a id="a0f7bb5e3afb23ecf291587ec207cabd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f7bb5e3afb23ecf291587ec207cabd7">&#9670;&nbsp;</a></span>centroid</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1181,13 +1265,15 @@ Private Attributes</h2></td></tr>
 
 <p >Centroid of columns of input matrix in the node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00243">243</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00243">243</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00193">Centroid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00193">Centroid()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a18a066969b47858bc098512419c2a251"></a>
+<a id="a18a066969b47858bc098512419c2a251"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18a066969b47858bc098512419c2a251">&#9670;&nbsp;</a></span>dataset</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1207,13 +1293,15 @@ Private Attributes</h2></td></tr>
 
 <p >Matrix for which cosine tree is constructed. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00227">227</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00227">227</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00182">GetDataset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00182">GetDataset()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a8fbf6ec7008383e08a4532a9e1a9b1ba"></a>
+<a id="a8fbf6ec7008383e08a4532a9e1a9b1ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fbf6ec7008383e08a4532a9e1a9b1ba">&#9670;&nbsp;</a></span>delta</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1233,11 +1321,13 @@ Private Attributes</h2></td></tr>
 
 <p >Cumulative probability for Monte Carlo error lower bound. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00229">229</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00229">229</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aaec5d90fe58890259e4d1a6fd59ddcb2"></a>
+<a id="aaec5d90fe58890259e4d1a6fd59ddcb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaec5d90fe58890259e4d1a6fd59ddcb2">&#9670;&nbsp;</a></span>frobNormSquared</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1257,13 +1347,15 @@ Private Attributes</h2></td></tr>
 
 <p >Frobenius norm squared of columns in the node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00253">253</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00253">253</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00220">FrobNormSquared()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00220">FrobNormSquared()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac1b92a187dcb787e9c410e5192562772"></a>
+<a id="ac1b92a187dcb787e9c410e5192562772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1b92a187dcb787e9c410e5192562772">&#9670;&nbsp;</a></span>indices</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1283,13 +1375,15 @@ Private Attributes</h2></td></tr>
 
 <p >Indices of columns of input matrix in the node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00239">239</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00239">239</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00223">SplitPointIndex()</a>, and <a class="el" href="cosine__tree_8hpp_source.html#l00185">VectorIndices()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00223">SplitPointIndex()</a>, and <a class="el" href="cosine__tree_8hpp_source.html#l00185">VectorIndices()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aef135dcfc07a26f8af0f6e24ca07d739"></a>
+<a id="aef135dcfc07a26f8af0f6e24ca07d739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef135dcfc07a26f8af0f6e24ca07d739">&#9670;&nbsp;</a></span>l2Error</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1309,13 +1403,15 @@ Private Attributes</h2></td></tr>
 
 <p >Monte Carlo error for this node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00251">251</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00251">251</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00188">L2Error()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00188">L2Error()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa07de1621f98ecfb03b9f3f1ec60a2e2"></a>
+<a id="aa07de1621f98ecfb03b9f3f1ec60a2e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa07de1621f98ecfb03b9f3f1ec60a2e2">&#9670;&nbsp;</a></span>l2NormsSquared</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1335,11 +1431,13 @@ Private Attributes</h2></td></tr>
 
 <p >L2-norm squared of columns in the node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00241">241</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00241">241</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a74fc023dcf26c0fed4db61ea0a9a44eb"></a>
+<a id="a74fc023dcf26c0fed4db61ea0a9a44eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74fc023dcf26c0fed4db61ea0a9a44eb">&#9670;&nbsp;</a></span>left</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1359,13 +1457,15 @@ Private Attributes</h2></td></tr>
 
 <p >Left child of the node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00235">235</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00235">235</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00207">Left()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00207">Left()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af745e768b85f075e5263e2530bbe01c7"></a>
+<a id="af745e768b85f075e5263e2530bbe01c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af745e768b85f075e5263e2530bbe01c7">&#9670;&nbsp;</a></span>numColumns</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1385,13 +1485,15 @@ Private Attributes</h2></td></tr>
 
 <p >Number of columns of input matrix in the node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00249">249</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00249">249</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00217">NumColumns()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00217">NumColumns()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a37f0d9e5e0f12807f8ffc8f179d1d3ef"></a>
+<a id="a37f0d9e5e0f12807f8ffc8f179d1d3ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37f0d9e5e0f12807f8ffc8f179d1d3ef">&#9670;&nbsp;</a></span>parent</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1411,13 +1513,15 @@ Private Attributes</h2></td></tr>
 
 <p >Parent of the node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00233">233</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00233">233</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00202">Parent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00202">Parent()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7c4ac86fd0091c1cd67ce1c45afd9315"></a>
+<a id="a7c4ac86fd0091c1cd67ce1c45afd9315"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c4ac86fd0091c1cd67ce1c45afd9315">&#9670;&nbsp;</a></span>right</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1437,13 +1541,15 @@ Private Attributes</h2></td></tr>
 
 <p >Right child of the node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00237">237</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00237">237</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00212">Right()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00212">Right()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab5fa61c11e0a2899e66ae90b35c4e82c"></a>
+<a id="ab5fa61c11e0a2899e66ae90b35c4e82c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5fa61c11e0a2899e66ae90b35c4e82c">&#9670;&nbsp;</a></span>splitPointIndex</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1463,9 +1569,9 @@ Private Attributes</h2></td></tr>
 
 <p >Index of split point of cosine node. </p>
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00247">247</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00247">247</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00223">SplitPointIndex()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="cosine__tree_8hpp_source.html#l00223">SplitPointIndex()</a>.</p>
 
 </div>
 </div>
@@ -1477,7 +1583,16 @@ Private Attributes</h2></td></tr>
 <hr class="footer"></hr><address class="footer"><small >
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"></img>
-</a> 1.8.9.1
+</a> 1.8.13
 </small></address>
+</div>
 </body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
 </html>

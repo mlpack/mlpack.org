@@ -1,8 +1,8 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$lsh__search_8hpp.html" title="src/mlpack/methods/lsh/lsh_search.hpp" alt="" coords="5,83,280,111"/>
-<area shape="rect" id="node5" href="$neighbor__search_8hpp.html" title="src/mlpack/methods/neighbor_search/neighbor_search.hpp" alt="" coords="304,83,704,111"/>
-<area shape="rect" id="node9" href="$typedef_8hpp.html" title="src/mlpack/methods/neighbor_search/typedef.hpp" alt="" coords="372,161,713,189"/>
-<area shape="rect" id="node13" href="$ra__search_8hpp.html" title="src/mlpack/methods/rann/ra_search.hpp" alt="" coords="779,83,1059,111"/>
-<area shape="rect" id="node15" href="$ra__typedef_8hpp.html" title="src/mlpack/methods/rann/ra_typedef.hpp" alt="" coords="777,161,1060,189"/>
-<area shape="rect" id="node7" href="$cf_8hpp.html" title="src/mlpack/methods/cf/cf.hpp" alt="" coords="140,161,348,189"/>
+<map id="/var/www/www.mlpack.org/mlpack&#45;1.0.8/src/mlpack/methods/neighbor_search/sort_policies/nearest_neighbor_sort.hpp" name="/var/www/www.mlpack.org/mlpack&#45;1.0.8/src/mlpack/methods/neighbor_search/sort_policies/nearest_neighbor_sort.hpp">
+<area shape="rect" id="node2" href="$lsh__search_8hpp.html" title="/var/www/www.mlpack.org\l/mlpack&#45;1.0.8/src/mlpack\l/methods/lsh/lsh_search.hpp" alt="" coords="5,146,195,202"/>
+<area shape="rect" id="node3" href="$neighbor__search_8hpp.html" title="/var/www/www.mlpack.org\l/mlpack&#45;1.0.8/src/mlpack\l/methods/neighbor_search\l/neighbor_search.hpp" alt="" coords="219,139,399,209"/>
+<area shape="rect" id="node5" href="$typedef_8hpp.html" title="/var/www/www.mlpack.org\l/mlpack&#45;1.0.8/src/mlpack\l/methods/neighbor_search\l/typedef.hpp" alt="" coords="243,257,423,328"/>
+<area shape="rect" id="node6" href="$ra__search_8hpp.html" title="/var/www/www.mlpack.org\l/mlpack&#45;1.0.8/src/mlpack\l/methods/rann/ra_search.hpp" alt="" coords="475,146,666,202"/>
+<area shape="rect" id="node7" href="$ra__typedef_8hpp.html" title="/var/www/www.mlpack.org\l/mlpack&#45;1.0.8/src/mlpack\l/methods/rann/ra_typedef.hpp" alt="" coords="473,265,668,321"/>
+<area shape="rect" id="node4" href="$cf_8hpp.html" title="/var/www/www.mlpack.org\l/mlpack&#45;1.0.8/src/mlpack\l/methods/cf/cf.hpp" alt="" coords="39,265,219,321"/>
 </map>

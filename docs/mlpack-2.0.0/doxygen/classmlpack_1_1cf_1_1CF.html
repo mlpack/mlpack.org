@@ -1,22 +1,50 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head >
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
-<meta name="generator" content="Doxygen 1.8.9.1"></meta>
-<title >mlpack: mlpack::cf::CF Class Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
-</link>
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
-</link>
-</head>
-<body >
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
 <div id="top">
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody >
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mlpack
    &#160;<span id="projectnumber">2.0.0</span>
    </div>
@@ -26,24 +54,14 @@
 </table>
 </div>
 
-
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
-      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
-      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span >Classes</span></a></li>
-      <li ><a href="files.html"><span >Files</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li ><a href="annotated.html"><span >Class&#160;List</span></a></li>
-      <li ><a href="classes.html"><span >Class&#160;Index</span></a></li>
-      <li ><a href="inherits.html"><span >Class&#160;Hierarchy</span></a></li>
-      <li ><a href="functions.html"><span >Class&#160;Members</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+</script>
+<div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul >
 <li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1cf.html">cf</a></li><li class="navelem"><a class="el" href="classmlpack_1_1cf_1_1CF.html">CF</a></li>  </ul>
@@ -77,36 +95,36 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aed15fa8739ef6fab33856521e967022a"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#aed15fa8739ef6fab33856521e967022a">CF</a> (const arma::sp_mat &amp;data, FactorizerType factorizer=FactorizerType(), const size_t <a class="el" href="classmlpack_1_1cf_1_1CF.html#a61d6d860984a5d012d10d1f16cec5e98">numUsersForSimilarity</a>=5, const size_t <a class="el" href="classmlpack_1_1cf_1_1CF.html#aee8c0fc0008741132316a422eb4357c2">rank</a>=0, const typename boost::disable_if_c&lt; <a class="el" href="structmlpack_1_1cf_1_1FactorizerTraits.html">FactorizerTraits</a>&lt; FactorizerType &gt;::UsesCoordinateList &gt;::type *=0)</td></tr>
 <tr class="memdesc:aed15fa8739ef6fab33856521e967022a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the <a class="el" href="classmlpack_1_1cf_1_1CF.html" title="This class implements Collaborative Filtering (CF). ">CF</a> object using an instantiated factorizer, immediately factorizing the given data to create a model.  <a href="#aed15fa8739ef6fab33856521e967022a">More...</a><br /></br></td></tr>
 <tr class="separator:aed15fa8739ef6fab33856521e967022a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad45412f766fd70deae43b398430c0c70"><td class="memItemLeft" align="right" valign="top">const arma::sp_mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#ad45412f766fd70deae43b398430c0c70">CleanedData</a> () const </td></tr>
-<tr class="memdesc:ad45412f766fd70deae43b398430c0c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the cleaned data matrix.  <a href="#ad45412f766fd70deae43b398430c0c70">More...</a><br /></br></td></tr>
-<tr class="separator:ad45412f766fd70deae43b398430c0c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36e4096c4106be5294a959b42c4ad5c5"><td class="memItemLeft" align="right" valign="top">const arma::sp_mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a36e4096c4106be5294a959b42c4ad5c5">CleanedData</a> () const</td></tr>
+<tr class="memdesc:a36e4096c4106be5294a959b42c4ad5c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the cleaned data matrix.  <a href="#a36e4096c4106be5294a959b42c4ad5c5">More...</a><br /></br></td></tr>
+<tr class="separator:a36e4096c4106be5294a959b42c4ad5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a750e80f81b8361cfdd713e1179e9e952"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a750e80f81b8361cfdd713e1179e9e952">GetRecommendations</a> (const size_t numRecs, arma::Mat&lt; size_t &gt; &amp;recommendations)</td></tr>
 <tr class="memdesc:a750e80f81b8361cfdd713e1179e9e952"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the given number of recommendations for all users.  <a href="#a750e80f81b8361cfdd713e1179e9e952">More...</a><br /></br></td></tr>
 <tr class="separator:a750e80f81b8361cfdd713e1179e9e952"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c70460b3dad3d598c3e5ab62be72b0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a5c70460b3dad3d598c3e5ab62be72b0f">GetRecommendations</a> (const size_t numRecs, arma::Mat&lt; size_t &gt; &amp;recommendations, arma::Col&lt; size_t &gt; &amp;users)</td></tr>
 <tr class="memdesc:a5c70460b3dad3d598c3e5ab62be72b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the given number of recommendations for the specified users.  <a href="#a5c70460b3dad3d598c3e5ab62be72b0f">More...</a><br /></br></td></tr>
 <tr class="separator:a5c70460b3dad3d598c3e5ab62be72b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f168b756723bc158997ec26332128b7"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a1f168b756723bc158997ec26332128b7">H</a> () const </td></tr>
-<tr class="memdesc:a1f168b756723bc158997ec26332128b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Item Matrix.  <a href="#a1f168b756723bc158997ec26332128b7">More...</a><br /></br></td></tr>
-<tr class="separator:a1f168b756723bc158997ec26332128b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a425c4d724d40c02be4dd105445d5f25a"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a425c4d724d40c02be4dd105445d5f25a">H</a> () const</td></tr>
+<tr class="memdesc:a425c4d724d40c02be4dd105445d5f25a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Item Matrix.  <a href="#a425c4d724d40c02be4dd105445d5f25a">More...</a><br /></br></td></tr>
+<tr class="separator:a425c4d724d40c02be4dd105445d5f25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0077bbf91567fd19392a27c44b600633"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a0077bbf91567fd19392a27c44b600633">NumUsersForSimilarity</a> (const size_t num)</td></tr>
 <tr class="memdesc:a0077bbf91567fd19392a27c44b600633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets number of users for calculating similarity.  <a href="#a0077bbf91567fd19392a27c44b600633">More...</a><br /></br></td></tr>
 <tr class="separator:a0077bbf91567fd19392a27c44b600633"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd989e7380c9e5209bdd81b207c5f3fa"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#afd989e7380c9e5209bdd81b207c5f3fa">NumUsersForSimilarity</a> () const </td></tr>
-<tr class="memdesc:afd989e7380c9e5209bdd81b207c5f3fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets number of users for calculating similarity.  <a href="#afd989e7380c9e5209bdd81b207c5f3fa">More...</a><br /></br></td></tr>
-<tr class="separator:afd989e7380c9e5209bdd81b207c5f3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d0fa02c1159db7306c25ad699afbf65"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a7d0fa02c1159db7306c25ad699afbf65">Predict</a> (const size_t user, const size_t item) const </td></tr>
-<tr class="memdesc:a7d0fa02c1159db7306c25ad699afbf65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Predict the rating of an item by a particular user.  <a href="#a7d0fa02c1159db7306c25ad699afbf65">More...</a><br /></br></td></tr>
-<tr class="separator:a7d0fa02c1159db7306c25ad699afbf65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08dcd2b9349e7c203675547d7a53b3e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a08dcd2b9349e7c203675547d7a53b3e8">Predict</a> (const arma::Mat&lt; size_t &gt; &amp;combinations, arma::vec &amp;predictions) const </td></tr>
-<tr class="memdesc:a08dcd2b9349e7c203675547d7a53b3e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Predict ratings for each user-item combination in the given coordinate list matrix.  <a href="#a08dcd2b9349e7c203675547d7a53b3e8">More...</a><br /></br></td></tr>
-<tr class="separator:a08dcd2b9349e7c203675547d7a53b3e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d1f08dddc117b8cd86b903872116590"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a9d1f08dddc117b8cd86b903872116590">NumUsersForSimilarity</a> () const</td></tr>
+<tr class="memdesc:a9d1f08dddc117b8cd86b903872116590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets number of users for calculating similarity.  <a href="#a9d1f08dddc117b8cd86b903872116590">More...</a><br /></br></td></tr>
+<tr class="separator:a9d1f08dddc117b8cd86b903872116590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51f4e4a8b91113dcaf85ac5d01b80ed9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a51f4e4a8b91113dcaf85ac5d01b80ed9">Predict</a> (const size_t user, const size_t item) const</td></tr>
+<tr class="memdesc:a51f4e4a8b91113dcaf85ac5d01b80ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Predict the rating of an item by a particular user.  <a href="#a51f4e4a8b91113dcaf85ac5d01b80ed9">More...</a><br /></br></td></tr>
+<tr class="separator:a51f4e4a8b91113dcaf85ac5d01b80ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68782166f50e4a9d6088416703c8a380"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a68782166f50e4a9d6088416703c8a380">Predict</a> (const arma::Mat&lt; size_t &gt; &amp;combinations, arma::vec &amp;predictions) const</td></tr>
+<tr class="memdesc:a68782166f50e4a9d6088416703c8a380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Predict ratings for each user-item combination in the given coordinate list matrix.  <a href="#a68782166f50e4a9d6088416703c8a380">More...</a><br /></br></td></tr>
+<tr class="separator:a68782166f50e4a9d6088416703c8a380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab74fd3fd9d29c8cac7fd773f3bcf6555"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#ab74fd3fd9d29c8cac7fd773f3bcf6555">Rank</a> (const size_t rankValue)</td></tr>
 <tr class="memdesc:ab74fd3fd9d29c8cac7fd773f3bcf6555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets rank parameter for matrix factorization.  <a href="#ab74fd3fd9d29c8cac7fd773f3bcf6555">More...</a><br /></br></td></tr>
 <tr class="separator:ab74fd3fd9d29c8cac7fd773f3bcf6555"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37871ff8c6c6cc94f6fecfaa3ba8b05d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a37871ff8c6c6cc94f6fecfaa3ba8b05d">Rank</a> () const </td></tr>
-<tr class="memdesc:a37871ff8c6c6cc94f6fecfaa3ba8b05d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets rank parameter for matrix factorization.  <a href="#a37871ff8c6c6cc94f6fecfaa3ba8b05d">More...</a><br /></br></td></tr>
-<tr class="separator:a37871ff8c6c6cc94f6fecfaa3ba8b05d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a214949b9adabfe9c6ecc9a629dc30699"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a214949b9adabfe9c6ecc9a629dc30699">Rank</a> () const</td></tr>
+<tr class="memdesc:a214949b9adabfe9c6ecc9a629dc30699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets rank parameter for matrix factorization.  <a href="#a214949b9adabfe9c6ecc9a629dc30699">More...</a><br /></br></td></tr>
+<tr class="separator:a214949b9adabfe9c6ecc9a629dc30699"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefcee66f4d248da2cfc77064e03b0115"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
 <tr class="memitem:aefcee66f4d248da2cfc77064e03b0115"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#aefcee66f4d248da2cfc77064e03b0115">Serialize</a> (Archive &amp;ar, const unsigned int)</td></tr>
 <tr class="memdesc:aefcee66f4d248da2cfc77064e03b0115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the <a class="el" href="classmlpack_1_1cf_1_1CF.html" title="This class implements Collaborative Filtering (CF). ">CF</a> model to the given archive.  <a href="#aefcee66f4d248da2cfc77064e03b0115">More...</a><br /></br></td></tr>
@@ -119,9 +137,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:add5926d1c97e7dc796a27246156a16f7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#add5926d1c97e7dc796a27246156a16f7">Train</a> (const arma::sp_mat &amp;data, FactorizerType factorizer=FactorizerType(), const typename boost::disable_if_c&lt; <a class="el" href="structmlpack_1_1cf_1_1FactorizerTraits.html">FactorizerTraits</a>&lt; FactorizerType &gt;::UsesCoordinateList &gt;::type *=0)</td></tr>
 <tr class="memdesc:add5926d1c97e7dc796a27246156a16f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Train the <a class="el" href="classmlpack_1_1cf_1_1CF.html" title="This class implements Collaborative Filtering (CF). ">CF</a> model (i.e.  <a href="#add5926d1c97e7dc796a27246156a16f7">More...</a><br /></br></td></tr>
 <tr class="separator:add5926d1c97e7dc796a27246156a16f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb5a7d4887a68c7551807464ffcc4175"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#abb5a7d4887a68c7551807464ffcc4175">W</a> () const </td></tr>
-<tr class="memdesc:abb5a7d4887a68c7551807464ffcc4175"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the User Matrix.  <a href="#abb5a7d4887a68c7551807464ffcc4175">More...</a><br /></br></td></tr>
-<tr class="separator:abb5a7d4887a68c7551807464ffcc4175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16398e9e2710b191b2eb8e20fef2f271"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a16398e9e2710b191b2eb8e20fef2f271">W</a> () const</td></tr>
+<tr class="memdesc:a16398e9e2710b191b2eb8e20fef2f271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the User Matrix.  <a href="#a16398e9e2710b191b2eb8e20fef2f271">More...</a><br /></br></td></tr>
+<tr class="separator:a16398e9e2710b191b2eb8e20fef2f271"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -131,9 +149,9 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a719e483a86ac4c67aa11fc6533483acd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a719e483a86ac4c67aa11fc6533483acd">InsertNeighbor</a> (const size_t queryIndex, const size_t pos, const size_t neighbor, const double value, arma::Mat&lt; size_t &gt; &amp;recommendations, arma::mat &amp;values) const </td></tr>
-<tr class="memdesc:a719e483a86ac4c67aa11fc6533483acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to insert a point into the recommendation matrices.  <a href="#a719e483a86ac4c67aa11fc6533483acd">More...</a><br /></br></td></tr>
-<tr class="separator:a719e483a86ac4c67aa11fc6533483acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae62814a11b72563eb7bdb0667f38feaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#ae62814a11b72563eb7bdb0667f38feaa">InsertNeighbor</a> (const size_t queryIndex, const size_t pos, const size_t neighbor, const double value, arma::Mat&lt; size_t &gt; &amp;recommendations, arma::mat &amp;values) const</td></tr>
+<tr class="memdesc:ae62814a11b72563eb7bdb0667f38feaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to insert a point into the recommendation matrices.  <a href="#ae62814a11b72563eb7bdb0667f38feaa">More...</a><br /></br></td></tr>
+<tr class="separator:ae62814a11b72563eb7bdb0667f38feaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -157,18 +175,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p >This class implements Collaborative Filtering (<a class="el" href="classmlpack_1_1cf_1_1CF.html" title="This class implements Collaborative Filtering (CF). ">CF</a>). </p>
 <p >This implementation presently supports Alternating Least Squares (ALS) for collaborative filtering.</p>
 <p >A simple example of how to run Collaborative Filtering is shown below.</p>
-<div class="fragment"><div class="line"><span class="keyword">extern</span> arma::mat data; <span class="comment">// (user, item, rating) table</span></div>
-<div class="line"><span class="keyword">extern</span> arma::Col&lt;size_t&gt; users; <span class="comment">// users seeking recommendations</span></div>
-<div class="line">arma::Mat&lt;size_t&gt; recommendations; <span class="comment">// Recommendations</span></div>
-<div class="line"></div>
-<div class="line"><a class="code" href="classmlpack_1_1cf_1_1CF.html#abfe08bf5832880b9ac532453536b5648">CF</a> cf(data); <span class="comment">// Default options.</span></div>
-<div class="line"></div>
-<div class="line"><span class="comment">// Generate 10 recommendations for all users.</span></div>
-<div class="line">cf.GetRecommendations(10, recommendations);</div>
-<div class="line"></div>
-<div class="line"><span class="comment">// Generate 10 recommendations for specified users.</span></div>
-<div class="line">cf.GetRecommendations(10, recommendations, users);</div>
-</div><p >The data matrix is a (user, item, rating) table. Each column in the matrix should have three rows. The first represents the user; the second represents the item; and the third represents the rating. The user and item, while they are in a matrix that holds doubles, should hold integer (or size_t) values. The user and item indices are assumed to start at 0.</p>
+<div class="fragment"><div class="line"><span class="keyword">extern</span> arma::mat data; <span class="comment">// (user, item, rating) table</span></div><div class="line"><span class="keyword">extern</span> arma::Col&lt;size_t&gt; users; <span class="comment">// users seeking recommendations</span></div><div class="line">arma::Mat&lt;size_t&gt; recommendations; <span class="comment">// Recommendations</span></div><div class="line"></div><div class="line"><a class="code" href="classmlpack_1_1cf_1_1CF.html#abfe08bf5832880b9ac532453536b5648">CF</a> cf(data); <span class="comment">// Default options.</span></div><div class="line"></div><div class="line"><span class="comment">// Generate 10 recommendations for all users.</span></div><div class="line">cf.GetRecommendations(10, recommendations);</div><div class="line"></div><div class="line"><span class="comment">// Generate 10 recommendations for specified users.</span></div><div class="line">cf.GetRecommendations(10, recommendations, users);</div></div><p >The data matrix is a (user, item, rating) table. Each column in the matrix should have three rows. The first represents the user; the second represents the item; and the third represents the rating. The user and item, while they are in a matrix that holds doubles, should hold integer (or size_t) values. The user and item indices are assumed to start at 0.</p>
 <dl class="tparams"><dt >Template Parameters</dt><dd >
   <table class="tparams">
     <tr ><td class="paramname">FactorizerType</td><td >The type of matrix factorization to use to decompose the rating matrix (a W and H matrix). This must implement the method Apply(arma::sp_mat&amp; data, size_t rank, arma::mat&amp; W, arma::mat&amp; H). </td></tr>
@@ -176,9 +183,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p >Definition at line <a class="el" href="cf_8hpp_source.html#l00090">90</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cf_8hpp_source.html#l00090">90</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="abfe08bf5832880b9ac532453536b5648"></a>
+<a id="abfe08bf5832880b9ac532453536b5648"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfe08bf5832880b9ac532453536b5648">&#9670;&nbsp;</a></span>CF() <span class="overload">[1/3]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -207,7 +216,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a84b7548da97de84b862205146a25f294"></a>
+<a id="a84b7548da97de84b862205146a25f294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84b7548da97de84b862205146a25f294">&#9670;&nbsp;</a></span>CF() <span class="overload">[2/3]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FactorizerType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">amf::NMFALSFactorizer</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -259,7 +270,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aed15fa8739ef6fab33856521e967022a"></a>
+<a id="aed15fa8739ef6fab33856521e967022a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed15fa8739ef6fab33856521e967022a">&#9670;&nbsp;</a></span>CF() <span class="overload">[3/3]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FactorizerType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">amf::NMFALSFactorizer</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -318,7 +331,9 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="acd2c6a96690e0811245451f72ddb0ce6"></a>
+<a id="acd2c6a96690e0811245451f72ddb0ce6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd2c6a96690e0811245451f72ddb0ce6">&#9670;&nbsp;</a></span>CleanData()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -354,7 +369,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad45412f766fd70deae43b398430c0c70"></a>
+<a id="a36e4096c4106be5294a959b42c4ad5c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36e4096c4106be5294a959b42c4ad5c5">&#9670;&nbsp;</a></span>CleanedData()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -377,13 +394,13 @@ Private Attributes</h2></td></tr>
 
 <p >Get the cleaned data matrix. </p>
 
-<p >Definition at line <a class="el" href="cf_8hpp_source.html#l00210">210</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
-
-<p >References <a class="el" href="cf_8hpp_source.html#l00274">cleanedData</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cf_8hpp_source.html#l00210">210</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a750e80f81b8361cfdd713e1179e9e952"></a>
+<a id="a750e80f81b8361cfdd713e1179e9e952"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a750e80f81b8361cfdd713e1179e9e952">&#9670;&nbsp;</a></span>GetRecommendations() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -418,7 +435,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5c70460b3dad3d598c3e5ab62be72b0f"></a>
+<a id="a5c70460b3dad3d598c3e5ab62be72b0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c70460b3dad3d598c3e5ab62be72b0f">&#9670;&nbsp;</a></span>GetRecommendations() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -460,7 +479,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1f168b756723bc158997ec26332128b7"></a>
+<a id="a425c4d724d40c02be4dd105445d5f25a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a425c4d724d40c02be4dd105445d5f25a">&#9670;&nbsp;</a></span>H()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -483,13 +504,13 @@ Private Attributes</h2></td></tr>
 
 <p >Get the Item Matrix. </p>
 
-<p >Definition at line <a class="el" href="cf_8hpp_source.html#l00208">208</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
-
-<p >References <a class="el" href="cf_8hpp_source.html#l00272">h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cf_8hpp_source.html#l00208">208</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a719e483a86ac4c67aa11fc6533483acd"></a>
+<a id="ae62814a11b72563eb7bdb0667f38feaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae62814a11b72563eb7bdb0667f38feaa">&#9670;&nbsp;</a></span>InsertNeighbor()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -558,7 +579,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0077bbf91567fd19392a27c44b600633"></a>
+<a id="a0077bbf91567fd19392a27c44b600633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0077bbf91567fd19392a27c44b600633">&#9670;&nbsp;</a></span>NumUsersForSimilarity() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -582,13 +605,15 @@ Private Attributes</h2></td></tr>
 
 <p >Sets number of users for calculating similarity. </p>
 
-<p >Definition at line <a class="el" href="cf_8hpp_source.html#l00176">176</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cf_8hpp_source.html#l00176">176</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
 
-<p >References <a class="el" href="cf_8hpp_source.html#l00266">numUsersForSimilarity</a>, and <a class="el" href="log_8hpp_source.html#l00092">mlpack::Log::Warn</a>.</p>
+<p class="reference">References <a class="el" href="log_8hpp_source.html#l00092">mlpack::Log::Warn</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="afd989e7380c9e5209bdd81b207c5f3fa"></a>
+<a id="a9d1f08dddc117b8cd86b903872116590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d1f08dddc117b8cd86b903872116590">&#9670;&nbsp;</a></span>NumUsersForSimilarity() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -611,13 +636,13 @@ Private Attributes</h2></td></tr>
 
 <p >Gets number of users for calculating similarity. </p>
 
-<p >Definition at line <a class="el" href="cf_8hpp_source.html#l00188">188</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
-
-<p >References <a class="el" href="cf_8hpp_source.html#l00266">numUsersForSimilarity</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cf_8hpp_source.html#l00188">188</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7d0fa02c1159db7306c25ad699afbf65"></a>
+<a id="a51f4e4a8b91113dcaf85ac5d01b80ed9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51f4e4a8b91113dcaf85ac5d01b80ed9">&#9670;&nbsp;</a></span>Predict() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -652,7 +677,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a08dcd2b9349e7c203675547d7a53b3e8"></a>
+<a id="a68782166f50e4a9d6088416703c8a380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68782166f50e4a9d6088416703c8a380">&#9670;&nbsp;</a></span>Predict() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -688,7 +715,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab74fd3fd9d29c8cac7fd773f3bcf6555"></a>
+<a id="ab74fd3fd9d29c8cac7fd773f3bcf6555"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74fd3fd9d29c8cac7fd773f3bcf6555">&#9670;&nbsp;</a></span>Rank() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -712,13 +741,13 @@ Private Attributes</h2></td></tr>
 
 <p >Sets rank parameter for matrix factorization. </p>
 
-<p >Definition at line <a class="el" href="cf_8hpp_source.html#l00194">194</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
-
-<p >References <a class="el" href="cf_8hpp_source.html#l00268">rank</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cf_8hpp_source.html#l00194">194</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a37871ff8c6c6cc94f6fecfaa3ba8b05d"></a>
+<a id="a214949b9adabfe9c6ecc9a629dc30699"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a214949b9adabfe9c6ecc9a629dc30699">&#9670;&nbsp;</a></span>Rank() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -741,13 +770,13 @@ Private Attributes</h2></td></tr>
 
 <p >Gets rank parameter for matrix factorization. </p>
 
-<p >Definition at line <a class="el" href="cf_8hpp_source.html#l00200">200</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
-
-<p >References <a class="el" href="cf_8hpp_source.html#l00268">rank</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cf_8hpp_source.html#l00200">200</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aefcee66f4d248da2cfc77064e03b0115"></a>
+<a id="aefcee66f4d248da2cfc77064e03b0115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefcee66f4d248da2cfc77064e03b0115">&#9670;&nbsp;</a></span>Serialize()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -776,7 +805,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab1f6b2154dc41152880e78dde66f13d5"></a>
+<a id="ab1f6b2154dc41152880e78dde66f13d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1f6b2154dc41152880e78dde66f13d5">&#9670;&nbsp;</a></span>Train() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FactorizerType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">amf::NMFALSFactorizer</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -813,7 +844,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="add5926d1c97e7dc796a27246156a16f7"></a>
+<a id="add5926d1c97e7dc796a27246156a16f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add5926d1c97e7dc796a27246156a16f7">&#9670;&nbsp;</a></span>Train() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FactorizerType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">amf::NMFALSFactorizer</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -856,7 +889,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abb5a7d4887a68c7551807464ffcc4175"></a>
+<a id="a16398e9e2710b191b2eb8e20fef2f271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16398e9e2710b191b2eb8e20fef2f271">&#9670;&nbsp;</a></span>W()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -879,14 +914,14 @@ Private Attributes</h2></td></tr>
 
 <p >Get the User Matrix. </p>
 
-<p >Definition at line <a class="el" href="cf_8hpp_source.html#l00206">206</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
-
-<p >References <a class="el" href="cf_8hpp_source.html#l00270">w</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cf_8hpp_source.html#l00206">206</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a1ecb77b22bae1edeab4020cbe669e9f7"></a>
+<a id="a1ecb77b22bae1edeab4020cbe669e9f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ecb77b22bae1edeab4020cbe669e9f7">&#9670;&nbsp;</a></span>cleanedData</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -906,13 +941,13 @@ Private Attributes</h2></td></tr>
 
 <p >Cleaned data matrix. </p>
 
-<p >Definition at line <a class="el" href="cf_8hpp_source.html#l00274">274</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
-
-<p >Referenced by <a class="el" href="cf_8hpp_source.html#l00210">CleanedData()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cf_8hpp_source.html#l00274">274</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a69afa043f85f8142fc8d4516dad21c3d"></a>
+<a id="a69afa043f85f8142fc8d4516dad21c3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69afa043f85f8142fc8d4516dad21c3d">&#9670;&nbsp;</a></span>h</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -932,13 +967,13 @@ Private Attributes</h2></td></tr>
 
 <p >Item matrix. </p>
 
-<p >Definition at line <a class="el" href="cf_8hpp_source.html#l00272">272</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
-
-<p >Referenced by <a class="el" href="cf_8hpp_source.html#l00208">H()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cf_8hpp_source.html#l00272">272</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a61d6d860984a5d012d10d1f16cec5e98"></a>
+<a id="a61d6d860984a5d012d10d1f16cec5e98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61d6d860984a5d012d10d1f16cec5e98">&#9670;&nbsp;</a></span>numUsersForSimilarity</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -958,13 +993,13 @@ Private Attributes</h2></td></tr>
 
 <p >Number of users for similarity. </p>
 
-<p >Definition at line <a class="el" href="cf_8hpp_source.html#l00266">266</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
-
-<p >Referenced by <a class="el" href="cf_8hpp_source.html#l00176">NumUsersForSimilarity()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cf_8hpp_source.html#l00266">266</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aee8c0fc0008741132316a422eb4357c2"></a>
+<a id="aee8c0fc0008741132316a422eb4357c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee8c0fc0008741132316a422eb4357c2">&#9670;&nbsp;</a></span>rank</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -984,13 +1019,13 @@ Private Attributes</h2></td></tr>
 
 <p >Rank used for matrix factorization. </p>
 
-<p >Definition at line <a class="el" href="cf_8hpp_source.html#l00268">268</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
-
-<p >Referenced by <a class="el" href="cf_8hpp_source.html#l00194">Rank()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cf_8hpp_source.html#l00268">268</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab042e5fd412d335ac462f9f0f8445975"></a>
+<a id="ab042e5fd412d335ac462f9f0f8445975"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab042e5fd412d335ac462f9f0f8445975">&#9670;&nbsp;</a></span>w</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1010,9 +1045,7 @@ Private Attributes</h2></td></tr>
 
 <p >User matrix. </p>
 
-<p >Definition at line <a class="el" href="cf_8hpp_source.html#l00270">270</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
-
-<p >Referenced by <a class="el" href="cf_8hpp_source.html#l00206">W()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cf_8hpp_source.html#l00270">270</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
 
 </div>
 </div>
@@ -1024,7 +1057,16 @@ Private Attributes</h2></td></tr>
 <hr class="footer"></hr><address class="footer"><small >
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"></img>
-</a> 1.8.9.1
+</a> 1.8.13
 </small></address>
+</div>
 </body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
 </html>

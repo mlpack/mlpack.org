@@ -1,7 +1,6 @@
-<map id="G" name="G">
-<area shape="rect" id="node5" href="$cli_8hpp.html" title="cli.hpp" alt="" coords="597,83,658,111"/>
-<area shape="rect" id="node18" href="$timers_8hpp.html" title="timers.hpp" alt="" coords="190,161,281,189"/>
-<area shape="rect" id="node22" href="$cli__deleter_8hpp.html" title="cli_deleter.hpp" alt="" coords="660,161,774,189"/>
-<area shape="rect" id="node24" href="$src_2mlpack_2core_2util_2version_8hpp.html" title="version.hpp" alt="" coords="798,161,894,189"/>
-<area shape="rect" id="node29" href="$doc_2guide_2version_8hpp.html" title="version.hpp" alt="" coords="1038,161,1134,189"/>
+<map id="src/mlpack/core/util/option.hpp" name="src/mlpack/core/util/option.hpp">
+<area shape="rect" id="node3" href="$cli_8hpp.html" title="cli.hpp" alt="" coords="478,95,538,121"/>
+<area shape="rect" id="node9" href="$timers_8hpp.html" title="timers.hpp" alt="" coords="184,169,267,196"/>
+<area shape="rect" id="node10" href="$cli__deleter_8hpp.html" title="cli_deleter.hpp" alt="" coords="672,169,779,196"/>
+<area shape="rect" id="node11" href="$src_2mlpack_2core_2util_2version_8hpp.html" title="version.hpp" alt="" coords="918,169,1008,196"/>
 </map>

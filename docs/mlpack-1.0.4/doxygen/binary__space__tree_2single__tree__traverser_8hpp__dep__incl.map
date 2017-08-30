@@ -1,11 +1,10 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$binary__space__tree_8hpp.html" title="src/mlpack/core/tree/binary_space_tree.hpp" alt="" coords="575,83,876,111"/>
-<area shape="rect" id="node6" href="$binary__space__tree_2dual__tree__traverser_8hpp.html" title="src/mlpack/core/tree/binary_space_tree/dual_tree_traverser.hpp" alt="" coords="5,161,435,189"/>
-<area shape="rect" id="node9" href="$dtb_8hpp.html" title="src/mlpack/methods/emst/dtb.hpp" alt="" coords="459,161,701,189"/>
-<area shape="rect" id="node11" href="$kmeans_8hpp.html" title="src/mlpack/methods/kmeans/kmeans.hpp" alt="" coords="725,161,1016,189"/>
-<area shape="rect" id="node17" href="$neighbor__search_8hpp.html" title="src/mlpack/methods/neighbor_search/neighbor_search.hpp" alt="" coords="1040,161,1440,189"/>
-<area shape="rect" id="node22" href="$range__search_8hpp.html" title="src/mlpack/methods/range_search/range_search.hpp" alt="" coords="1464,161,1827,189"/>
-<area shape="rect" id="node13" href="$em__fit_8hpp.html" title="src/mlpack/methods/gmm/em_fit.hpp" alt="" coords="740,238,1001,266"/>
-<area shape="rect" id="node15" href="$gmm_8hpp.html" title="src/mlpack/methods/gmm/gmm.hpp" alt="" coords="743,315,999,343"/>
-<area shape="rect" id="node19" href="$typedef_8hpp.html" title="src/mlpack/methods/neighbor_search/typedef.hpp" alt="" coords="1069,238,1411,266"/>
+<map id="/var/www/www.mlpack.org/mlpack&#45;1.0.4/src/mlpack/core/tree/binary_space_tree/single_tree_traverser.hpp" name="/var/www/www.mlpack.org/mlpack&#45;1.0.4/src/mlpack/core/tree/binary_space_tree/single_tree_traverser.hpp">
+<area shape="rect" id="node2" href="$binary__space__tree_8hpp.html" title="/var/www/www.mlpack.org\l/mlpack&#45;1.0.4/src/mlpack\l/core/tree/binary_space\l_tree.hpp" alt="" coords="327,124,507,195"/>
+<area shape="rect" id="node3" href="$dtb_8hpp.html" title="/var/www/www.mlpack.org\l/mlpack&#45;1.0.4/src/mlpack\l/methods/emst/dtb.hpp" alt="" coords="5,250,185,306"/>
+<area shape="rect" id="node4" href="$kmeans_8hpp.html" title="/var/www/www.mlpack.org\l/mlpack&#45;1.0.4/src/mlpack\l/methods/kmeans/kmeans.hpp" alt="" coords="209,250,411,306"/>
+<area shape="rect" id="node7" href="$neighbor__search_8hpp.html" title="/var/www/www.mlpack.org\l/mlpack&#45;1.0.4/src/mlpack\l/methods/neighbor_search\l/neighbor_search.hpp" alt="" coords="435,243,615,313"/>
+<area shape="rect" id="node9" href="$range__search_8hpp.html" title="/var/www/www.mlpack.org\l/mlpack&#45;1.0.4/src/mlpack\l/methods/range_search/range\l_search.hpp" alt="" coords="639,243,834,313"/>
+<area shape="rect" id="node5" href="$em__fit_8hpp.html" title="/var/www/www.mlpack.org\l/mlpack&#45;1.0.4/src/mlpack\l/methods/gmm/em_fit.hpp" alt="" coords="220,369,400,425"/>
+<area shape="rect" id="node6" href="$gmm_8hpp.html" title="/var/www/www.mlpack.org\l/mlpack&#45;1.0.4/src/mlpack\l/methods/gmm/gmm.hpp" alt="" coords="220,480,400,536"/>
+<area shape="rect" id="node8" href="$typedef_8hpp.html" title="/var/www/www.mlpack.org\l/mlpack&#45;1.0.4/src/mlpack\l/methods/neighbor_search\l/typedef.hpp" alt="" coords="435,361,615,432"/>
 </map>

@@ -1,0 +1,977 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.2.5</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1optimization.html">optimization</a></li><li class="navelem"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html">L_BFGS</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classmlpack_1_1optimization_1_1L__BFGS-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">L_BFGS&lt; FunctionType &gt; Class Template Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >The generic L-BFGS optimizer, which uses a back-tracking line search algorithm to minimize a function.  
+ <a href="classmlpack_1_1optimization_1_1L__BFGS.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for L_BFGS&lt; FunctionType &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmlpack_1_1optimization_1_1L__BFGS__inherit__graph.png" border="0" usemap="#L__BFGS_3_01FunctionType_01_4_inherit__map" alt="Inheritance graph"></img></div>
+<map name="L__BFGS_3_01FunctionType_01_4_inherit__map" id="L__BFGS_3_01FunctionType_01_4_inherit__map">
+<area shape="rect" id="node2" href="classmlpack_1_1optimization_1_1L__BFGS.html" title="L_BFGS\&lt; AugLagrangianFunction\l\&lt; LagrangianFunction \&gt; \&gt;" alt="" coords="456,18,676,59"></area>
+<area shape="rect" id="node3" href="classmlpack_1_1optimization_1_1L__BFGS.html" title="L_BFGS\&lt; AugLagrangianFunction\l\&lt; mlpack::optimization::LRSDPFunction\l\&lt; mlpack::optimization::SDP\&lt; arma\l::sp_mat \&gt; \&gt; \&gt; \&gt;" alt="" coords="437,107,695,178"></area>
+<area shape="rect" id="node4" href="classmlpack_1_1optimization_1_1L__BFGS.html" title="L_BFGS\&lt; AugLagrangianFunction\l\&lt; mlpack::optimization::LRSDPFunction\l\&lt; SDPType \&gt; \&gt; \&gt;" alt="" coords="437,203,695,259"></area>
+</map>
+<center ><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0abce54d624cc53a70e8699cc5beef82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#a0abce54d624cc53a70e8699cc5beef82">L_BFGS</a> (FunctionType &amp;function, const size_t numBasis=10, const size_t maxIterations=10000, const double armijoConstant=1e-4, const double wolfe=0.9, const double minGradientNorm=1e-6, const double factr=1e-15, const size_t maxLineSearchTrials=50, const double minStep=1e-20, const double maxStep=1e20)</td></tr>
+<tr class="memdesc:a0abce54d624cc53a70e8699cc5beef82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the L-BFGS object.  <a href="#a0abce54d624cc53a70e8699cc5beef82">More...</a><br /></br></td></tr>
+<tr class="separator:a0abce54d624cc53a70e8699cc5beef82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67ffa3815e1e426f38c4fc235eaed837"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#a67ffa3815e1e426f38c4fc235eaed837">ArmijoConstant</a> () const</td></tr>
+<tr class="memdesc:a67ffa3815e1e426f38c4fc235eaed837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Armijo condition constant.  <a href="#a67ffa3815e1e426f38c4fc235eaed837">More...</a><br /></br></td></tr>
+<tr class="separator:a67ffa3815e1e426f38c4fc235eaed837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62f075cfc3079495b960674b5348c75b"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#a62f075cfc3079495b960674b5348c75b">ArmijoConstant</a> ()</td></tr>
+<tr class="memdesc:a62f075cfc3079495b960674b5348c75b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the Armijo condition constant.  <a href="#a62f075cfc3079495b960674b5348c75b">More...</a><br /></br></td></tr>
+<tr class="separator:a62f075cfc3079495b960674b5348c75b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4659ce2100fe924768cb00ed52b7016"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#ad4659ce2100fe924768cb00ed52b7016">Factr</a> () const</td></tr>
+<tr class="memdesc:ad4659ce2100fe924768cb00ed52b7016"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the factr value.  <a href="#ad4659ce2100fe924768cb00ed52b7016">More...</a><br /></br></td></tr>
+<tr class="separator:ad4659ce2100fe924768cb00ed52b7016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5694429edac7daf39e1c9ab94ed2468f"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#a5694429edac7daf39e1c9ab94ed2468f">Factr</a> ()</td></tr>
+<tr class="memdesc:a5694429edac7daf39e1c9ab94ed2468f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the factr value.  <a href="#a5694429edac7daf39e1c9ab94ed2468f">More...</a><br /></br></td></tr>
+<tr class="separator:a5694429edac7daf39e1c9ab94ed2468f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b43b2dcb8768aeb39d4ab4198e82ec"><td class="memItemLeft" align="right" valign="top">const FunctionType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#a83b43b2dcb8768aeb39d4ab4198e82ec">Function</a> () const</td></tr>
+<tr class="memdesc:a83b43b2dcb8768aeb39d4ab4198e82ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the function that is being optimized.  <a href="#a83b43b2dcb8768aeb39d4ab4198e82ec">More...</a><br /></br></td></tr>
+<tr class="separator:a83b43b2dcb8768aeb39d4ab4198e82ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cd1924b69a437d93beee1b65b364bd9"><td class="memItemLeft" align="right" valign="top">FunctionType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#a6cd1924b69a437d93beee1b65b364bd9">Function</a> ()</td></tr>
+<tr class="memdesc:a6cd1924b69a437d93beee1b65b364bd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the function that is being optimized.  <a href="#a6cd1924b69a437d93beee1b65b364bd9">More...</a><br /></br></td></tr>
+<tr class="separator:a6cd1924b69a437d93beee1b65b364bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a420770944a5b0c7a852c4ec372c4a2d1"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#a420770944a5b0c7a852c4ec372c4a2d1">MaxIterations</a> () const</td></tr>
+<tr class="memdesc:a420770944a5b0c7a852c4ec372c4a2d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of iterations.  <a href="#a420770944a5b0c7a852c4ec372c4a2d1">More...</a><br /></br></td></tr>
+<tr class="separator:a420770944a5b0c7a852c4ec372c4a2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda675ab4ab86b95c92bc33bc391a61b"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#acda675ab4ab86b95c92bc33bc391a61b">MaxIterations</a> ()</td></tr>
+<tr class="memdesc:acda675ab4ab86b95c92bc33bc391a61b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the maximum number of iterations.  <a href="#acda675ab4ab86b95c92bc33bc391a61b">More...</a><br /></br></td></tr>
+<tr class="separator:acda675ab4ab86b95c92bc33bc391a61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a718b94675591fb9fd47b9ccea19fff7b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#a718b94675591fb9fd47b9ccea19fff7b">MaxLineSearchTrials</a> () const</td></tr>
+<tr class="memdesc:a718b94675591fb9fd47b9ccea19fff7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of line search trials.  <a href="#a718b94675591fb9fd47b9ccea19fff7b">More...</a><br /></br></td></tr>
+<tr class="separator:a718b94675591fb9fd47b9ccea19fff7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59746b9ca2c8113dbeef305fad7f18a"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#af59746b9ca2c8113dbeef305fad7f18a">MaxLineSearchTrials</a> ()</td></tr>
+<tr class="memdesc:af59746b9ca2c8113dbeef305fad7f18a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the maximum number of line search trials.  <a href="#af59746b9ca2c8113dbeef305fad7f18a">More...</a><br /></br></td></tr>
+<tr class="separator:af59746b9ca2c8113dbeef305fad7f18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a1c1eb1f2f42ea206745c37661928d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#ae1a1c1eb1f2f42ea206745c37661928d">MaxStep</a> () const</td></tr>
+<tr class="memdesc:ae1a1c1eb1f2f42ea206745c37661928d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the maximum line search step size.  <a href="#ae1a1c1eb1f2f42ea206745c37661928d">More...</a><br /></br></td></tr>
+<tr class="separator:ae1a1c1eb1f2f42ea206745c37661928d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ec004639bce20133ea8efcc899acf6c"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#a7ec004639bce20133ea8efcc899acf6c">MaxStep</a> ()</td></tr>
+<tr class="memdesc:a7ec004639bce20133ea8efcc899acf6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the maximum line search step size.  <a href="#a7ec004639bce20133ea8efcc899acf6c">More...</a><br /></br></td></tr>
+<tr class="separator:a7ec004639bce20133ea8efcc899acf6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e38817403e71a80eea85caf71da3f0c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#a4e38817403e71a80eea85caf71da3f0c">MinGradientNorm</a> () const</td></tr>
+<tr class="memdesc:a4e38817403e71a80eea85caf71da3f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the minimum gradient norm.  <a href="#a4e38817403e71a80eea85caf71da3f0c">More...</a><br /></br></td></tr>
+<tr class="separator:a4e38817403e71a80eea85caf71da3f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5f4e7b1e5a1ae19ef52e5160837875b"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#ad5f4e7b1e5a1ae19ef52e5160837875b">MinGradientNorm</a> ()</td></tr>
+<tr class="memdesc:ad5f4e7b1e5a1ae19ef52e5160837875b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the minimum gradient norm.  <a href="#ad5f4e7b1e5a1ae19ef52e5160837875b">More...</a><br /></br></td></tr>
+<tr class="separator:ad5f4e7b1e5a1ae19ef52e5160837875b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acefc8cc95703d6f3471000f1ab29efaa"><td class="memItemLeft" align="right" valign="top">const std::pair&lt; arma::mat, double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#acefc8cc95703d6f3471000f1ab29efaa">MinPointIterate</a> () const</td></tr>
+<tr class="memdesc:acefc8cc95703d6f3471000f1ab29efaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the point where the lowest function value has been found.  <a href="#acefc8cc95703d6f3471000f1ab29efaa">More...</a><br /></br></td></tr>
+<tr class="separator:acefc8cc95703d6f3471000f1ab29efaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add704aa5275e16601bfc5b5e7e073d5d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#add704aa5275e16601bfc5b5e7e073d5d">MinStep</a> () const</td></tr>
+<tr class="memdesc:add704aa5275e16601bfc5b5e7e073d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the minimum line search step size.  <a href="#add704aa5275e16601bfc5b5e7e073d5d">More...</a><br /></br></td></tr>
+<tr class="separator:add704aa5275e16601bfc5b5e7e073d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab65887652f6cfeef06a9428f765a10be"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#ab65887652f6cfeef06a9428f765a10be">MinStep</a> ()</td></tr>
+<tr class="memdesc:ab65887652f6cfeef06a9428f765a10be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the minimum line search step size.  <a href="#ab65887652f6cfeef06a9428f765a10be">More...</a><br /></br></td></tr>
+<tr class="separator:ab65887652f6cfeef06a9428f765a10be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83be1580173635335f2b0ec9a8a9198b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#a83be1580173635335f2b0ec9a8a9198b">NumBasis</a> () const</td></tr>
+<tr class="memdesc:a83be1580173635335f2b0ec9a8a9198b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the memory size.  <a href="#a83be1580173635335f2b0ec9a8a9198b">More...</a><br /></br></td></tr>
+<tr class="separator:a83be1580173635335f2b0ec9a8a9198b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5aa9b434ac165ab1a99c9be0026e9c"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#a0e5aa9b434ac165ab1a99c9be0026e9c">NumBasis</a> ()</td></tr>
+<tr class="memdesc:a0e5aa9b434ac165ab1a99c9be0026e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the memory size.  <a href="#a0e5aa9b434ac165ab1a99c9be0026e9c">More...</a><br /></br></td></tr>
+<tr class="separator:a0e5aa9b434ac165ab1a99c9be0026e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adefbd1c4f0dde4530ce5c43ca8a9bdd6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#adefbd1c4f0dde4530ce5c43ca8a9bdd6">Optimize</a> (arma::mat &amp;iterate)</td></tr>
+<tr class="memdesc:adefbd1c4f0dde4530ce5c43ca8a9bdd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use L-BFGS to optimize the given function, starting at the given iterate point and finding the minimum.  <a href="#adefbd1c4f0dde4530ce5c43ca8a9bdd6">More...</a><br /></br></td></tr>
+<tr class="separator:adefbd1c4f0dde4530ce5c43ca8a9bdd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f980aab656e29212c7c00d488d5c710"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#a0f980aab656e29212c7c00d488d5c710">Optimize</a> (arma::mat &amp;iterate, const size_t maxIterations)</td></tr>
+<tr class="memdesc:a0f980aab656e29212c7c00d488d5c710"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use L-BFGS to optimize (minimize) the given function, starting at the given iterate point, and performing no more than the given maximum number of iterations (the class variable maxIterations is ignored for this run, but not modified).  <a href="#a0f980aab656e29212c7c00d488d5c710">More...</a><br /></br></td></tr>
+<tr class="separator:a0f980aab656e29212c7c00d488d5c710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cda127396e876222bbdc72e0291f6ec"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#a8cda127396e876222bbdc72e0291f6ec">Wolfe</a> () const</td></tr>
+<tr class="memdesc:a8cda127396e876222bbdc72e0291f6ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Wolfe parameter.  <a href="#a8cda127396e876222bbdc72e0291f6ec">More...</a><br /></br></td></tr>
+<tr class="separator:a8cda127396e876222bbdc72e0291f6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabc9b0636d6579529d9c9fd5fccfcf36"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#aabc9b0636d6579529d9c9fd5fccfcf36">Wolfe</a> ()</td></tr>
+<tr class="memdesc:aabc9b0636d6579529d9c9fd5fccfcf36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the Wolfe parameter.  <a href="#aabc9b0636d6579529d9c9fd5fccfcf36">More...</a><br /></br></td></tr>
+<tr class="separator:aabc9b0636d6579529d9c9fd5fccfcf36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3 ><br /><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></br>
+class mlpack::optimization::L_BFGS&lt; FunctionType &gt;</h3>
+
+<p >The generic L-BFGS optimizer, which uses a back-tracking line search algorithm to minimize a function. </p>
+<p >The parameters for the algorithm (number of memory points, maximum step size, and so forth) are all configurable via either the constructor or standalone modifier functions. A function which can be optimized by this class must implement the following methods:</p>
+<ul >
+<li >a default constructor</li>
+<li >double Evaluate(const arma::mat&amp; coordinates);</li>
+<li >void Gradient(const arma::mat&amp; coordinates, arma::mat&amp; gradient);</li>
+<li >arma::mat&amp; GetInitialPoint(); </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="lbfgs_8hpp_source.html#l00034">34</a> of file <a class="el" href="lbfgs_8hpp_source.html">lbfgs.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0abce54d624cc53a70e8699cc5beef82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0abce54d624cc53a70e8699cc5beef82">&#9670;&nbsp;</a></span>L_BFGS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html">L_BFGS</a> </td>
+          <td >(</td>
+          <td class="paramtype">FunctionType &amp;&#160;</td>
+          <td class="paramname"><em >function</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >numBasis</em> = <code >10</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >maxIterations</em> = <code >10000</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >armijoConstant</em> = <code >1e-4</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >wolfe</em> = <code >0.9</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >minGradientNorm</em> = <code >1e-6</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >factr</em> = <code >1e-15</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >maxLineSearchTrials</em> = <code >50</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >minStep</em> = <code >1e-20</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >maxStep</em> = <code >1e20</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Initialize the L-BFGS object. </p>
+<p >Store a reference to the function we will be optimizing and set the size of the memory for the algorithm. There are many parameters that can be set for the optimization, but default values are given for each of them.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">function</td><td >Instance of function to be optimized. </td></tr>
+    <tr ><td class="paramname">numBasis</td><td >Number of memory points to be stored (default 5). </td></tr>
+    <tr ><td class="paramname">maxIterations</td><td >Maximum number of iterations for the optimization (0 means no limit and may run indefinitely). </td></tr>
+    <tr ><td class="paramname">armijoConstant</td><td >Controls the accuracy of the line search routine for determining the Armijo condition. </td></tr>
+    <tr ><td class="paramname">wolfe</td><td >Parameter for detecting the Wolfe condition. </td></tr>
+    <tr ><td class="paramname">minGradientNorm</td><td >Minimum gradient norm required to continue the optimization. </td></tr>
+    <tr ><td class="paramname">maxLineSearchTrials</td><td >The maximum number of trials for the line search (before giving up). </td></tr>
+    <tr ><td class="paramname">minStep</td><td >The minimum step of the line search. </td></tr>
+    <tr ><td class="paramname">maxStep</td><td >The maximum step of the line search. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a67ffa3815e1e426f38c4fc235eaed837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67ffa3815e1e426f38c4fc235eaed837">&#9670;&nbsp;</a></span>ArmijoConstant() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double ArmijoConstant </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the Armijo condition constant. </p>
+
+<p class="definition">Definition at line <a class="el" href="lbfgs_8hpp_source.html#l00119">119</a> of file <a class="el" href="lbfgs_8hpp_source.html">lbfgs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a62f075cfc3079495b960674b5348c75b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62f075cfc3079495b960674b5348c75b">&#9670;&nbsp;</a></span>ArmijoConstant() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double&amp; ArmijoConstant </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the Armijo condition constant. </p>
+
+<p class="definition">Definition at line <a class="el" href="lbfgs_8hpp_source.html#l00121">121</a> of file <a class="el" href="lbfgs_8hpp_source.html">lbfgs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad4659ce2100fe924768cb00ed52b7016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4659ce2100fe924768cb00ed52b7016">&#9670;&nbsp;</a></span>Factr() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Factr </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the factr value. </p>
+
+<p class="definition">Definition at line <a class="el" href="lbfgs_8hpp_source.html#l00134">134</a> of file <a class="el" href="lbfgs_8hpp_source.html">lbfgs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a5694429edac7daf39e1c9ab94ed2468f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5694429edac7daf39e1c9ab94ed2468f">&#9670;&nbsp;</a></span>Factr() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double&amp; Factr </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the factr value. </p>
+
+<p class="definition">Definition at line <a class="el" href="lbfgs_8hpp_source.html#l00136">136</a> of file <a class="el" href="lbfgs_8hpp_source.html">lbfgs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a83b43b2dcb8768aeb39d4ab4198e82ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83b43b2dcb8768aeb39d4ab4198e82ec">&#9670;&nbsp;</a></span>Function() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const FunctionType&amp; Function </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the function that is being optimized. </p>
+
+<p class="definition">Definition at line <a class="el" href="lbfgs_8hpp_source.html#l00104">104</a> of file <a class="el" href="lbfgs_8hpp_source.html">lbfgs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a6cd1924b69a437d93beee1b65b364bd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cd1924b69a437d93beee1b65b364bd9">&#9670;&nbsp;</a></span>Function() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">FunctionType&amp; Function </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the function that is being optimized. </p>
+
+<p class="definition">Definition at line <a class="el" href="lbfgs_8hpp_source.html#l00106">106</a> of file <a class="el" href="lbfgs_8hpp_source.html">lbfgs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a420770944a5b0c7a852c4ec372c4a2d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a420770944a5b0c7a852c4ec372c4a2d1">&#9670;&nbsp;</a></span>MaxIterations() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t MaxIterations </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the maximum number of iterations. </p>
+
+<p class="definition">Definition at line <a class="el" href="lbfgs_8hpp_source.html#l00114">114</a> of file <a class="el" href="lbfgs_8hpp_source.html">lbfgs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="acda675ab4ab86b95c92bc33bc391a61b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acda675ab4ab86b95c92bc33bc391a61b">&#9670;&nbsp;</a></span>MaxIterations() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; MaxIterations </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the maximum number of iterations. </p>
+
+<p class="definition">Definition at line <a class="el" href="lbfgs_8hpp_source.html#l00116">116</a> of file <a class="el" href="lbfgs_8hpp_source.html">lbfgs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a718b94675591fb9fd47b9ccea19fff7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a718b94675591fb9fd47b9ccea19fff7b">&#9670;&nbsp;</a></span>MaxLineSearchTrials() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t MaxLineSearchTrials </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the maximum number of line search trials. </p>
+
+<p class="definition">Definition at line <a class="el" href="lbfgs_8hpp_source.html#l00139">139</a> of file <a class="el" href="lbfgs_8hpp_source.html">lbfgs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af59746b9ca2c8113dbeef305fad7f18a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af59746b9ca2c8113dbeef305fad7f18a">&#9670;&nbsp;</a></span>MaxLineSearchTrials() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; MaxLineSearchTrials </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the maximum number of line search trials. </p>
+
+<p class="definition">Definition at line <a class="el" href="lbfgs_8hpp_source.html#l00141">141</a> of file <a class="el" href="lbfgs_8hpp_source.html">lbfgs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae1a1c1eb1f2f42ea206745c37661928d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1a1c1eb1f2f42ea206745c37661928d">&#9670;&nbsp;</a></span>MaxStep() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double MaxStep </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the maximum line search step size. </p>
+
+<p class="definition">Definition at line <a class="el" href="lbfgs_8hpp_source.html#l00149">149</a> of file <a class="el" href="lbfgs_8hpp_source.html">lbfgs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a7ec004639bce20133ea8efcc899acf6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ec004639bce20133ea8efcc899acf6c">&#9670;&nbsp;</a></span>MaxStep() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double&amp; MaxStep </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the maximum line search step size. </p>
+
+<p class="definition">Definition at line <a class="el" href="lbfgs_8hpp_source.html#l00151">151</a> of file <a class="el" href="lbfgs_8hpp_source.html">lbfgs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a4e38817403e71a80eea85caf71da3f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e38817403e71a80eea85caf71da3f0c">&#9670;&nbsp;</a></span>MinGradientNorm() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double MinGradientNorm </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the minimum gradient norm. </p>
+
+<p class="definition">Definition at line <a class="el" href="lbfgs_8hpp_source.html#l00129">129</a> of file <a class="el" href="lbfgs_8hpp_source.html">lbfgs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad5f4e7b1e5a1ae19ef52e5160837875b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5f4e7b1e5a1ae19ef52e5160837875b">&#9670;&nbsp;</a></span>MinGradientNorm() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double&amp; MinGradientNorm </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the minimum gradient norm. </p>
+
+<p class="definition">Definition at line <a class="el" href="lbfgs_8hpp_source.html#l00131">131</a> of file <a class="el" href="lbfgs_8hpp_source.html">lbfgs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="acefc8cc95703d6f3471000f1ab29efaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acefc8cc95703d6f3471000f1ab29efaa">&#9670;&nbsp;</a></span>MinPointIterate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">const std::pair&lt;arma::mat, double&gt;&amp; MinPointIterate </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Return the point where the lowest function value has been found. </p>
+<dl class="section return"><dt >Returns</dt><dd >arma::vec representing the point and a double with the function value at that point. </dd></dl>
+
+</div>
+</div>
+<a id="add704aa5275e16601bfc5b5e7e073d5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add704aa5275e16601bfc5b5e7e073d5d">&#9670;&nbsp;</a></span>MinStep() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double MinStep </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the minimum line search step size. </p>
+
+<p class="definition">Definition at line <a class="el" href="lbfgs_8hpp_source.html#l00144">144</a> of file <a class="el" href="lbfgs_8hpp_source.html">lbfgs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ab65887652f6cfeef06a9428f765a10be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab65887652f6cfeef06a9428f765a10be">&#9670;&nbsp;</a></span>MinStep() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double&amp; MinStep </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the minimum line search step size. </p>
+
+<p class="definition">Definition at line <a class="el" href="lbfgs_8hpp_source.html#l00146">146</a> of file <a class="el" href="lbfgs_8hpp_source.html">lbfgs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a83be1580173635335f2b0ec9a8a9198b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83be1580173635335f2b0ec9a8a9198b">&#9670;&nbsp;</a></span>NumBasis() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t NumBasis </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the memory size. </p>
+
+<p class="definition">Definition at line <a class="el" href="lbfgs_8hpp_source.html#l00109">109</a> of file <a class="el" href="lbfgs_8hpp_source.html">lbfgs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0e5aa9b434ac165ab1a99c9be0026e9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e5aa9b434ac165ab1a99c9be0026e9c">&#9670;&nbsp;</a></span>NumBasis() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; NumBasis </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the memory size. </p>
+
+<p class="definition">Definition at line <a class="el" href="lbfgs_8hpp_source.html#l00111">111</a> of file <a class="el" href="lbfgs_8hpp_source.html">lbfgs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="adefbd1c4f0dde4530ce5c43ca8a9bdd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adefbd1c4f0dde4530ce5c43ca8a9bdd6">&#9670;&nbsp;</a></span>Optimize() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Optimize </td>
+          <td >(</td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >iterate</em></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Use L-BFGS to optimize the given function, starting at the given iterate point and finding the minimum. </p>
+<p >The maximum number of iterations is set in the constructor (or with <a class="el" href="classmlpack_1_1optimization_1_1L__BFGS.html#acda675ab4ab86b95c92bc33bc391a61b" title="Modify the maximum number of iterations. ">MaxIterations()</a>). Alternately, another overload is provided which takes a maximum number of iterations as a parameter. The given starting point will be modified to store the finishing point of the algorithm, and the final objective value is returned.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">iterate</td><td >Starting point (will be modified). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt >Returns</dt><dd >Objective value of the final point. </dd></dl>
+
+</div>
+</div>
+<a id="a0f980aab656e29212c7c00d488d5c710"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f980aab656e29212c7c00d488d5c710">&#9670;&nbsp;</a></span>Optimize() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Optimize </td>
+          <td >(</td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >iterate</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >maxIterations</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Use L-BFGS to optimize (minimize) the given function, starting at the given iterate point, and performing no more than the given maximum number of iterations (the class variable maxIterations is ignored for this run, but not modified). </p>
+<p >The given starting point will be modified to store the finishing point of the algorithm, and the final objective value is returned.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">iterate</td><td >Starting point (will be modified). </td></tr>
+    <tr ><td class="paramname">maxIterations</td><td >Maximum number of iterations (0 specifies no limit). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt >Returns</dt><dd >Objective value of the final point. </dd></dl>
+
+</div>
+</div>
+<a id="a8cda127396e876222bbdc72e0291f6ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cda127396e876222bbdc72e0291f6ec">&#9670;&nbsp;</a></span>Wolfe() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Wolfe </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the Wolfe parameter. </p>
+
+<p class="definition">Definition at line <a class="el" href="lbfgs_8hpp_source.html#l00124">124</a> of file <a class="el" href="lbfgs_8hpp_source.html">lbfgs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aabc9b0636d6579529d9c9fd5fccfcf36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabc9b0636d6579529d9c9fd5fccfcf36">&#9670;&nbsp;</a></span>Wolfe() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double&amp; Wolfe </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the Wolfe parameter. </p>
+
+<p class="definition">Definition at line <a class="el" href="lbfgs_8hpp_source.html#l00126">126</a> of file <a class="el" href="lbfgs_8hpp_source.html">lbfgs.hpp</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/core/optimizers/lbfgs/<a class="el" href="lbfgs_8hpp_source.html">lbfgs.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

@@ -1,0 +1,571 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">master</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1svd.html">svd</a></li><li class="navelem"><a class="el" href="classmlpack_1_1svd_1_1RegularizedSVDFunction.html">RegularizedSVDFunction</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classmlpack_1_1svd_1_1RegularizedSVDFunction-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">RegularizedSVDFunction&lt; MatType &gt; Class Template Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >The data is stored in a matrix of type MatType, so that this class can be used with both dense and sparse matrix types.  
+ <a href="classmlpack_1_1svd_1_1RegularizedSVDFunction.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2875f9fa65d53423c1090a56ea71675c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1svd_1_1RegularizedSVDFunction.html#a2875f9fa65d53423c1090a56ea71675c">RegularizedSVDFunction</a> (const MatType &amp;data, const size_t rank, const double lambda)</td></tr>
+<tr class="memdesc:a2875f9fa65d53423c1090a56ea71675c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classmlpack_1_1svd_1_1RegularizedSVDFunction.html" title="The data is stored in a matrix of type MatType, so that this class can be used with both dense and sp...">RegularizedSVDFunction</a> class.  <a href="#a2875f9fa65d53423c1090a56ea71675c">More...</a><br /></br></td></tr>
+<tr class="separator:a2875f9fa65d53423c1090a56ea71675c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff320b9a86b77a150e630c01d5888273"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1svd_1_1RegularizedSVDFunction.html#aff320b9a86b77a150e630c01d5888273">Dataset</a> () const</td></tr>
+<tr class="memdesc:aff320b9a86b77a150e630c01d5888273"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the dataset passed into the constructor.  <a href="#aff320b9a86b77a150e630c01d5888273">More...</a><br /></br></td></tr>
+<tr class="separator:aff320b9a86b77a150e630c01d5888273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c7f979b684b70aab5bec8b09b5eb1a4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1svd_1_1RegularizedSVDFunction.html#a6c7f979b684b70aab5bec8b09b5eb1a4">Evaluate</a> (const arma::mat &amp;parameters) const</td></tr>
+<tr class="memdesc:a6c7f979b684b70aab5bec8b09b5eb1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the cost function over all examples in the data.  <a href="#a6c7f979b684b70aab5bec8b09b5eb1a4">More...</a><br /></br></td></tr>
+<tr class="separator:a6c7f979b684b70aab5bec8b09b5eb1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92fda9bf1e01e8f0929c96ae473d74ca"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1svd_1_1RegularizedSVDFunction.html#a92fda9bf1e01e8f0929c96ae473d74ca">Evaluate</a> (const arma::mat &amp;parameters, const size_t i) const</td></tr>
+<tr class="memdesc:a92fda9bf1e01e8f0929c96ae473d74ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the cost function for one training example.  <a href="#a92fda9bf1e01e8f0929c96ae473d74ca">More...</a><br /></br></td></tr>
+<tr class="separator:a92fda9bf1e01e8f0929c96ae473d74ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3e9aa612cb56d0d93f3259f4a8122bb"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1svd_1_1RegularizedSVDFunction.html#ac3e9aa612cb56d0d93f3259f4a8122bb">GetInitialPoint</a> () const</td></tr>
+<tr class="memdesc:ac3e9aa612cb56d0d93f3259f4a8122bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the initial point for the optimization.  <a href="#ac3e9aa612cb56d0d93f3259f4a8122bb">More...</a><br /></br></td></tr>
+<tr class="separator:ac3e9aa612cb56d0d93f3259f4a8122bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9a604f48072ce6c08443519ff787a73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1svd_1_1RegularizedSVDFunction.html#ab9a604f48072ce6c08443519ff787a73">Gradient</a> (const arma::mat &amp;parameters, arma::mat &amp;gradient) const</td></tr>
+<tr class="memdesc:ab9a604f48072ce6c08443519ff787a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the full gradient of the cost function over all the training examples.  <a href="#ab9a604f48072ce6c08443519ff787a73">More...</a><br /></br></td></tr>
+<tr class="separator:ab9a604f48072ce6c08443519ff787a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa6453bba1bfb5bd83bd7d4a4c4d097"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">GradType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:abaa6453bba1bfb5bd83bd7d4a4c4d097"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1svd_1_1RegularizedSVDFunction.html#abaa6453bba1bfb5bd83bd7d4a4c4d097">Gradient</a> (const arma::mat &amp;parameters, size_t id, GradType &amp;gradient) const</td></tr>
+<tr class="memdesc:abaa6453bba1bfb5bd83bd7d4a4c4d097"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the gradient of the cost function over one training example.  <a href="#abaa6453bba1bfb5bd83bd7d4a4c4d097">More...</a><br /></br></td></tr>
+<tr class="separator:abaa6453bba1bfb5bd83bd7d4a4c4d097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53535041275cedd0ec3de67ca032aa94"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1svd_1_1RegularizedSVDFunction.html#a53535041275cedd0ec3de67ca032aa94">Lambda</a> () const</td></tr>
+<tr class="memdesc:a53535041275cedd0ec3de67ca032aa94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the regularization parameters.  <a href="#a53535041275cedd0ec3de67ca032aa94">More...</a><br /></br></td></tr>
+<tr class="separator:a53535041275cedd0ec3de67ca032aa94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa76af34a6e3ea927b307f0c318ee4b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1svd_1_1RegularizedSVDFunction.html#a1fa76af34a6e3ea927b307f0c318ee4b">NumFunctions</a> () const</td></tr>
+<tr class="memdesc:a1fa76af34a6e3ea927b307f0c318ee4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of training examples. Useful for SGD optimizer.  <a href="#a1fa76af34a6e3ea927b307f0c318ee4b">More...</a><br /></br></td></tr>
+<tr class="separator:a1fa76af34a6e3ea927b307f0c318ee4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e27ce22a8ed61cf6a83e3c1b48de3a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1svd_1_1RegularizedSVDFunction.html#ad4e27ce22a8ed61cf6a83e3c1b48de3a">NumItems</a> () const</td></tr>
+<tr class="memdesc:ad4e27ce22a8ed61cf6a83e3c1b48de3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of items in the data.  <a href="#ad4e27ce22a8ed61cf6a83e3c1b48de3a">More...</a><br /></br></td></tr>
+<tr class="separator:ad4e27ce22a8ed61cf6a83e3c1b48de3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af41355bc8f20533711975528a054c4dc"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1svd_1_1RegularizedSVDFunction.html#af41355bc8f20533711975528a054c4dc">NumUsers</a> () const</td></tr>
+<tr class="memdesc:af41355bc8f20533711975528a054c4dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of users in the data.  <a href="#af41355bc8f20533711975528a054c4dc">More...</a><br /></br></td></tr>
+<tr class="separator:af41355bc8f20533711975528a054c4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe1447c5e7fa184cbf19ced57a50b7b6"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1svd_1_1RegularizedSVDFunction.html#afe1447c5e7fa184cbf19ced57a50b7b6">Rank</a> () const</td></tr>
+<tr class="memdesc:afe1447c5e7fa184cbf19ced57a50b7b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the rank used for the factorization.  <a href="#afe1447c5e7fa184cbf19ced57a50b7b6">More...</a><br /></br></td></tr>
+<tr class="separator:afe1447c5e7fa184cbf19ced57a50b7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3 ><br /><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">arma::mat</div></div><div class="close_bracket">&gt;</div></div></div></div></br>
+class mlpack::svd::RegularizedSVDFunction&lt; MatType &gt;</h3>
+
+<p >The data is stored in a matrix of type MatType, so that this class can be used with both dense and sparse matrix types. </p>
+<dl class="tparams"><dt >Template Parameters</dt><dd >
+  <table class="tparams">
+    <tr ><td class="paramname">MatType</td><td >The matrix type of the dataset. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="regularized__svd__function_8hpp_source.html#l00031">31</a> of file <a class="el" href="regularized__svd__function_8hpp_source.html">regularized_svd_function.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a2875f9fa65d53423c1090a56ea71675c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2875f9fa65d53423c1090a56ea71675c">&#9670;&nbsp;</a></span>RegularizedSVDFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1svd_1_1RegularizedSVDFunction.html">RegularizedSVDFunction</a> </td>
+          <td >(</td>
+          <td class="paramtype">const MatType &amp;&#160;</td>
+          <td class="paramname"><em >data</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >rank</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >lambda</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Constructor for <a class="el" href="classmlpack_1_1svd_1_1RegularizedSVDFunction.html" title="The data is stored in a matrix of type MatType, so that this class can be used with both dense and sp...">RegularizedSVDFunction</a> class. </p>
+<p >The constructor calculates the number of users and items in the passed data. It also randomly initializes the parameter values.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">data</td><td >Dataset for which SVD is calculated. </td></tr>
+    <tr ><td class="paramname">rank</td><td >Rank used for matrix factorization. </td></tr>
+    <tr ><td class="paramname">lambda</td><td >Regularization parameter used for optimization. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aff320b9a86b77a150e630c01d5888273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff320b9a86b77a150e630c01d5888273">&#9670;&nbsp;</a></span>Dataset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::mat&amp; Dataset </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the dataset passed into the constructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="regularized__svd__function_8hpp_source.html#l00094">94</a> of file <a class="el" href="regularized__svd__function_8hpp_source.html">regularized_svd_function.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a6c7f979b684b70aab5bec8b09b5eb1a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c7f979b684b70aab5bec8b09b5eb1a4">&#9670;&nbsp;</a></span>Evaluate() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Evaluate </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >parameters</em></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Evaluates the cost function over all examples in the data. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">parameters</td><td >Parameters(user/item matrices) of the decomposition. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a92fda9bf1e01e8f0929c96ae473d74ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92fda9bf1e01e8f0929c96ae473d74ca">&#9670;&nbsp;</a></span>Evaluate() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Evaluate </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >parameters</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >i</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Evaluates the cost function for one training example. </p>
+<p >Useful for the SGD optimizer abstraction which uses one training example at a time.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">parameters</td><td >Parameters(user/item matrices) of the decomposition. </td></tr>
+    <tr ><td class="paramname">i</td><td >Index of the training example to be used. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac3e9aa612cb56d0d93f3259f4a8122bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3e9aa612cb56d0d93f3259f4a8122bb">&#9670;&nbsp;</a></span>GetInitialPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::mat&amp; GetInitialPoint </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the initial point for the optimization. </p>
+
+<p class="definition">Definition at line <a class="el" href="regularized__svd__function_8hpp_source.html#l00091">91</a> of file <a class="el" href="regularized__svd__function_8hpp_source.html">regularized_svd_function.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ab9a604f48072ce6c08443519ff787a73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9a604f48072ce6c08443519ff787a73">&#9670;&nbsp;</a></span>Gradient() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Gradient </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >parameters</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >gradient</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Evaluates the full gradient of the cost function over all the training examples. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">parameters</td><td >Parameters(user/item matrices) of the decomposition. </td></tr>
+    <tr ><td class="paramname">gradient</td><td >Calculated gradient for the parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abaa6453bba1bfb5bd83bd7d4a4c4d097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaa6453bba1bfb5bd83bd7d4a4c4d097">&#9670;&nbsp;</a></span>Gradient() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Gradient </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >parameters</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em >id</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">GradType &amp;&#160;</td>
+          <td class="paramname"><em >gradient</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Evaluates the gradient of the cost function over one training example. </p>
+<p >This function is useful for optimizers like SGD. The type of the gradient parameter is a template argument to allow the computation of a sparse gradient.</p>
+<dl class="tparams"><dt >Template Parameters</dt><dd >
+  <table class="tparams">
+    <tr ><td class="paramname">GradType</td><td >The type of the gradient out-param. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">parameters</td><td >Parameters(user/item matrices) of the decomposition. </td></tr>
+    <tr ><td class="paramname">id</td><td >The index of the training example. </td></tr>
+    <tr ><td class="paramname">gradient</td><td >Calculated gradient for the parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a53535041275cedd0ec3de67ca032aa94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53535041275cedd0ec3de67ca032aa94">&#9670;&nbsp;</a></span>Lambda()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Lambda </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the regularization parameters. </p>
+
+<p class="definition">Definition at line <a class="el" href="regularized__svd__function_8hpp_source.html#l00106">106</a> of file <a class="el" href="regularized__svd__function_8hpp_source.html">regularized_svd_function.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a1fa76af34a6e3ea927b307f0c318ee4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fa76af34a6e3ea927b307f0c318ee4b">&#9670;&nbsp;</a></span>NumFunctions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t NumFunctions </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the number of training examples. Useful for SGD optimizer. </p>
+
+<p class="definition">Definition at line <a class="el" href="regularized__svd__function_8hpp_source.html#l00097">97</a> of file <a class="el" href="regularized__svd__function_8hpp_source.html">regularized_svd_function.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad4e27ce22a8ed61cf6a83e3c1b48de3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4e27ce22a8ed61cf6a83e3c1b48de3a">&#9670;&nbsp;</a></span>NumItems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t NumItems </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the number of items in the data. </p>
+
+<p class="definition">Definition at line <a class="el" href="regularized__svd__function_8hpp_source.html#l00103">103</a> of file <a class="el" href="regularized__svd__function_8hpp_source.html">regularized_svd_function.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af41355bc8f20533711975528a054c4dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af41355bc8f20533711975528a054c4dc">&#9670;&nbsp;</a></span>NumUsers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t NumUsers </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the number of users in the data. </p>
+
+<p class="definition">Definition at line <a class="el" href="regularized__svd__function_8hpp_source.html#l00100">100</a> of file <a class="el" href="regularized__svd__function_8hpp_source.html">regularized_svd_function.hpp</a>.</p>
+
+</div>
+</div>
+<a id="afe1447c5e7fa184cbf19ced57a50b7b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe1447c5e7fa184cbf19ced57a50b7b6">&#9670;&nbsp;</a></span>Rank()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t Rank </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the rank used for the factorization. </p>
+
+<p class="definition">Definition at line <a class="el" href="regularized__svd__function_8hpp_source.html#l00109">109</a> of file <a class="el" href="regularized__svd__function_8hpp_source.html">regularized_svd_function.hpp</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/methods/regularized_svd/<a class="el" href="regularized__svd__function_8hpp_source.html">regularized_svd_function.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

@@ -1,0 +1,7 @@
+<map id="SGD&lt; UpdatePolicyType &gt;" name="SGD&lt; UpdatePolicyType &gt;">
+<area shape="rect" id="node2" href="$classmlpack_1_1optimization_1_1SGD.html" title="SGD\&lt; mlpack::optimization\l::SMORMS3Update \&gt;" alt="" coords="373,5,556,47"/>
+<area shape="rect" id="node3" href="$classmlpack_1_1optimization_1_1SGD.html" title="SGD\&lt; UpdateRule \&gt;" alt="" coords="393,71,537,98"/>
+<area shape="rect" id="node4" href="$classmlpack_1_1optimization_1_1SGD.html" title="SGD\&lt; mlpack::optimization\l::RMSPropUpdate \&gt;" alt="" coords="373,123,556,164"/>
+<area shape="rect" id="node5" href="$classmlpack_1_1optimization_1_1SGD.html" title="SGD\&lt; mlpack::optimization\l::AdaGradUpdate \&gt;" alt="" coords="373,188,556,229"/>
+<area shape="rect" id="node6" href="$classmlpack_1_1optimization_1_1SGD.html" title="SGD\&lt; mlpack::optimization\l::AdaDeltaUpdate \&gt;" alt="" coords="373,253,556,295"/>
+</map>

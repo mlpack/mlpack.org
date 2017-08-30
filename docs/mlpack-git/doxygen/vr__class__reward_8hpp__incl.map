@@ -1,0 +1,33 @@
+<map id="src/mlpack/methods/ann/layer/vr_class_reward.hpp" name="src/mlpack/methods/ann/layer/vr_class_reward.hpp">
+<area shape="rect" id="node2" href="$prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo. " alt="" coords="1633,303,1769,329"/>
+<area shape="rect" id="node26" href="$layer__types_8hpp.html" title="layer_types.hpp" alt="" coords="1813,109,1927,136"/>
+<area shape="rect" id="node18" href="$serialization__shim_8hpp.html" title="mlpack/core/data/serialization\l_shim.hpp" alt="" coords="1738,392,1933,433"/>
+<area shape="rect" id="node19" href="$serialization__template__version_8hpp.html" title="mlpack/core/data/serialization\l_template_version.hpp" alt="" coords="2499,392,2694,433"/>
+<area shape="rect" id="node21" href="$arma__traits_8hpp.html" title="mlpack/core/util/arma\l_traits.hpp" alt="" coords="2915,392,3062,433"/>
+<area shape="rect" id="node22" href="$arma__config__check_8hpp.html" title="mlpack/core/util/arma\l_config_check.hpp" alt="" coords="3086,392,3233,433"/>
+<area shape="rect" id="node23" href="$log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="3257,399,3417,426"/>
+<area shape="rect" id="node24" href="$timers_8hpp.html" title="mlpack/core/util/timers.hpp" alt="" coords="3441,399,3619,426"/>
+<area shape="rect" id="node25" href="$deprecated_8hpp.html" title="mlpack/core/util/deprecated.hpp" alt="" coords="3644,399,3851,426"/>
+<area shape="rect" id="node28" href="$layer_2add_8hpp.html" title="mlpack/methods/ann\l/layer/add.hpp" alt="" coords="31,191,173,233"/>
+<area shape="rect" id="node29" href="$base__layer_8hpp.html" title="mlpack/methods/ann\l/layer/base_layer.hpp" alt="" coords="198,191,345,233"/>
+<area shape="rect" id="node30" href="$constant_8hpp.html" title="mlpack/methods/ann\l/layer/constant.hpp" alt="" coords="369,191,512,233"/>
+<area shape="rect" id="node31" href="$cross__entropy__error_8hpp.html" title="mlpack/methods/ann\l/layer/cross_entropy\l_error.hpp" alt="" coords="536,184,679,240"/>
+<area shape="rect" id="node32" href="$dropout_8hpp.html" title="mlpack/methods/ann\l/layer/dropout.hpp" alt="" coords="703,191,845,233"/>
+<area shape="rect" id="node33" href="$elu_8hpp.html" title="mlpack/methods/ann\l/layer/elu.hpp" alt="" coords="869,191,1012,233"/>
+<area shape="rect" id="node34" href="$hard__tanh_8hpp.html" title="mlpack/methods/ann\l/layer/hard_tanh.hpp" alt="" coords="1036,191,1179,233"/>
+<area shape="rect" id="node35" href="$join_8hpp.html" title="mlpack/methods/ann\l/layer/join.hpp" alt="" coords="1203,191,1345,233"/>
+<area shape="rect" id="node36" href="$leaky__relu_8hpp.html" title="mlpack/methods/ann\l/layer/leaky_relu.hpp" alt="" coords="1369,191,1512,233"/>
+<area shape="rect" id="node37" href="$log__softmax_8hpp.html" title="mlpack/methods/ann\l/layer/log_softmax.hpp" alt="" coords="1537,191,1691,233"/>
+<area shape="rect" id="node38" href="$lookup_8hpp.html" title="mlpack/methods/ann\l/layer/lookup.hpp" alt="" coords="1716,191,1859,233"/>
+<area shape="rect" id="node39" href="$mean__squared__error_8hpp.html" title="mlpack/methods/ann\l/layer/mean_squared\l_error.hpp" alt="" coords="1883,184,2025,240"/>
+<area shape="rect" id="node40" href="$multiply__constant_8hpp.html" title="mlpack/methods/ann\l/layer/multiply_constant.hpp" alt="" coords="2049,191,2235,233"/>
+<area shape="rect" id="node41" href="$negative__log__likelihood_8hpp.html" title="mlpack/methods/ann\l/layer/negative_log\l_likelihood.hpp" alt="" coords="2259,184,2401,240"/>
+<area shape="rect" id="node42" href="$max__pooling_8hpp.html" title="mlpack/methods/ann\l/layer/max_pooling.hpp" alt="" coords="2425,191,2581,233"/>
+<area shape="rect" id="node43" href="$mean__pooling_8hpp.html" title="mlpack/methods/ann\l/layer/mean_pooling.hpp" alt="" coords="2606,191,2769,233"/>
+<area shape="rect" id="node44" href="$parametric__relu_8hpp.html" title="mlpack/methods/ann\l/layer/parametric_relu.hpp" alt="" coords="2793,191,2965,233"/>
+<area shape="rect" id="node45" href="$reinforce__normal_8hpp.html" title="mlpack/methods/ann\l/layer/reinforce_normal.hpp" alt="" coords="2990,191,3169,233"/>
+<area shape="rect" id="node46" href="$select_8hpp.html" title="mlpack/methods/ann\l/layer/select.hpp" alt="" coords="3193,191,3336,233"/>
+<area shape="rect" id="node47" href="$border__modes_8hpp.html" title="mlpack/methods/ann\l/convolution_rules/border\l_modes.hpp" alt="" coords="3536,288,3703,344"/>
+<area shape="rect" id="node48" href="$naive__convolution_8hpp.html" title="mlpack/methods/ann\l/convolution_rules/naive\l_convolution.hpp" alt="" coords="3361,184,3523,240"/>
+<area shape="rect" id="node49" href="$fft__convolution_8hpp.html" title="mlpack/methods/ann\l/convolution_rules/fft\l_convolution.hpp" alt="" coords="3548,184,3691,240"/>
+</map>

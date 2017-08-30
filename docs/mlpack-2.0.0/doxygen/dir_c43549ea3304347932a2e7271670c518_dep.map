@@ -1,8 +1,0 @@
-<map id="src/mlpack/methods/adaboost" name="src/mlpack/methods/adaboost">
-<area shape="rect" id="node1" href="dir_c43549ea3304347932a2e7271670c518.html" title="adaboost" alt="" coords="86,52,161,100"/>
-<area shape="rect" id="node2" href="dir_ba5c79a770e20b0fb99c5c82fb05bcfd.html" title="decision_stump" alt="" coords="5,148,119,196"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000027_000035.html" title="1" alt="" coords="90,130,98,145"/>
-<area shape="rect" id="node3" href="dir_3c13e9004b43cb150990c4e05808b509.html" title="perceptron" alt="" coords="143,148,226,196"/>
-<area shape="rect" id="edge2-headlabel" href="dir_000027_000030.html" title="1" alt="" coords="163,121,171,135"/>
-<area shape="rect" id="clust1" href="dir_19fd2ebec21bf6d8aaa7fdf30f286d47.html" title="methods" alt="" coords="75,16,171,111"/>
-</map>

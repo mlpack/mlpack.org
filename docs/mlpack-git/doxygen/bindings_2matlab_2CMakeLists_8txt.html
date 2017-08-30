@@ -1,0 +1,238 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">master</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">src/mlpack/bindings/matlab/CMakeLists.txt File Reference</div>  </div>
+</div>
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a490305d0df10d955cc8734ec2d989ece"><td class="memItemLeft" align="right" valign="top">the MATLAB version can probably be&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bindings_2matlab_2CMakeLists_8txt.html#a490305d0df10d955cc8734ec2d989ece">deleted</a> (always save a copy in case this is wrong!).&quot; &quot;\nFor more information on this confusing issue</td></tr>
+<tr class="separator:a490305d0df10d955cc8734ec2d989ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99640c55bdcc53efa97c09796ffa96a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bindings_2matlab_2CMakeLists_8txt.html#a99640c55bdcc53efa97c09796ffa96a2">find_package</a> (MatlabMex REQUIRED) if(UNIX) execute_process(COMMAND &quot;$</td></tr>
+<tr class="separator:a99640c55bdcc53efa97c09796ffa96a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadb9418f4ec551d8476a44532f0acf86"><td class="memItemLeft" align="right" valign="top">test cpp RESULT_VARIABLE MEX_RESULT_TRASH OUTPUT_VARIABLE MEX_OUTPUT ERROR_VARIABLE MEX_ERROR_TRASH&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bindings_2matlab_2CMakeLists_8txt.html#aadb9418f4ec551d8476a44532f0acf86">string</a> (REGEX MATCH &quot;Warning: You are using&quot; MEX_WARNING &quot;${MEX_OUTPUT}&quot;) if(MEX_WARNING) string(REGEX REPLACE &quot;.*using [a-zA-Z]* version \[0-9.]*)[^\*\*&quot; &quot;\&quot; OTHER_COMPILER_VERSION &quot;$</td></tr>
+<tr class="separator:aadb9418f4ec551d8476a44532f0acf86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2353f74def2aeaa9de0bd63bddba1721"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bindings_2matlab_2CMakeLists_8txt.html#a2353f74def2aeaa9de0bd63bddba1721">string</a> (REGEX REPLACE &quot;.*currently supported with MEX is \[0-9.]*)[^\*\*&quot; &quot;\&quot; MEX_COMPILER_VERSION &quot;${MEX_OUTPUT}&quot;) set(NEED_TO_WARN 1) if(MEX_COMPILER_VERSION AND OTHER_COMPILER_VERSION) if(NOT(&quot;$</td></tr>
+<tr class="separator:a2353f74def2aeaa9de0bd63bddba1721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a3ad5384f46c4dc74d60b8f0322287b5a"><td class="memItemLeft" align="right" valign="top">the MATLAB version can probably be see n&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bindings_2matlab_2CMakeLists_8txt.html#a3ad5384f46c4dc74d60b8f0322287b5a">http</a></td></tr>
+<tr class="separator:a3ad5384f46c4dc74d60b8f0322287b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9400086b3e97b5a80e1ae47fe7731d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bindings_2matlab_2CMakeLists_8txt.html#ae9400086b3e97b5a80e1ae47fe7731d2">VERSION_LESS</a></td></tr>
+<tr class="separator:ae9400086b3e97b5a80e1ae47fe7731d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a490305d0df10d955cc8734ec2d989ece"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a490305d0df10d955cc8734ec2d989ece">&#9670;&nbsp;</a></span>deleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">the MATLAB version can probably be deleted </td>
+          <td >(</td>
+          <td class="paramtype">always save a copy in case this is wrong!&#160;</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99640c55bdcc53efa97c09796ffa96a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99640c55bdcc53efa97c09796ffa96a2">&#9670;&nbsp;</a></span>find_package()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">find_package </td>
+          <td >(</td>
+          <td class="paramtype">MatlabMex&#160;</td>
+          <td class="paramname"><em >REQUIRED</em></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bindings_2matlab_2CMakeLists_8txt_source.html#l00005">5</a> of file <a class="el" href="bindings_2matlab_2CMakeLists_8txt_source.html">CMakeLists.txt</a>.</p>
+
+</div>
+</div>
+<a id="aadb9418f4ec551d8476a44532f0acf86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadb9418f4ec551d8476a44532f0acf86">&#9670;&nbsp;</a></span>string() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">test cpp RESULT_VARIABLE MEX_RESULT_TRASH OUTPUT_VARIABLE MEX_OUTPUT ERROR_VARIABLE MEX_ERROR_TRASH string </td>
+          <td >(</td>
+          <td class="paramtype">REGEX MATCH &quot;Warning: You are using&quot; MEX_WARNING &quot;${MEX_OUTPUT}&quot;&#160;</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bindings_2matlab_2CMakeLists_8txt_source.html#l00018">18</a> of file <a class="el" href="bindings_2matlab_2CMakeLists_8txt_source.html">CMakeLists.txt</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="tests_2CMakeLists_8txt_source.html#l00128">add_custom_command()</a>, <a class="el" href="add__to__po_8hpp_source.html#l00083">mlpack::bindings::cli::AddToPO()</a>, <a class="el" href="cli__option_8hpp_source.html#l00064">CLIOption&lt; N &gt;::CLIOption()</a>, <a class="el" href="default__param_8hpp_source.html#l00066">mlpack::bindings::cli::DefaultParam()</a>, <a class="el" href="end__program_8hpp_source.html#l00021">mlpack::bindings::cli::EndProgram()</a>, <a class="el" href="extension_8hpp_source.html#l00021">mlpack::data::Extension()</a>, <a class="el" href="test__tools_8hpp_source.html#l00052">FilterFileName()</a>, <a class="el" href="get__cython__type_8hpp_source.html#l00097">mlpack::bindings::python::GetCythonType()</a>, <a class="el" href="load__csv_8hpp_source.html#l00078">LoadCSV::GetMatrixSize()</a>, <a class="el" href="cli_2get__param_8hpp_source.html#l00041">mlpack::bindings::cli::GetParam()</a>, <a class="el" href="cli_2get__printable__param_8hpp_source.html#l00056">mlpack::bindings::cli::GetPrintableParam()</a>, <a class="el" href="tests_2get__printable__param_8hpp_source.html#l00070">mlpack::bindings::tests::GetPrintableParam()</a>, <a class="el" href="python_2get__printable__param_8hpp_source.html#l00108">mlpack::bindings::python::GetPrintableParam()</a>, <a class="el" href="get__printable__param__name_8hpp_source.html#l00061">mlpack::bindings::cli::GetPrintableParamName()</a>, <a class="el" href="get__printable__param__value_8hpp_source.html#l00065">mlpack::bindings::cli::GetPrintableParamValue()</a>, <a class="el" href="get__python__type_8hpp_source.html#l00097">mlpack::bindings::python::GetPythonType()</a>, <a class="el" href="load__csv_8hpp_source.html#l00151">LoadCSV::GetTransposeMatrixSize()</a>, <a class="el" href="hyphenate__string_8hpp_source.html#l00020">mlpack::util::HyphenateString()</a>, <a class="el" href="import__decl_8hpp_source.html#l00021">mlpack::bindings::python::ImportDecl()</a>, <a class="el" href="CMakeLists_8txt_source.html#l00001">include_directories()</a>, <a class="el" href="map__parameter__name_8hpp_source.html#l00058">mlpack::bindings::cli::MapParameterName()</a>, <a class="el" href="parse__command__line_8hpp_source.html#l00030">mlpack::bindings::cli::ParseCommandLine()</a>, <a class="el" href="prefixedoutstream_8hpp_source.html#l00058">PrefixedOutStream::PrefixedOutStream()</a>, <a class="el" href="print__class__defn_8hpp_source.html#l00032">mlpack::bindings::python::PrintClassDefn()</a>, <a class="el" href="print__defn_8hpp_source.html#l00021">mlpack::bindings::python::PrintDefn()</a>, <a class="el" href="print__input__processing_8hpp_source.html#l00026">mlpack::bindings::python::PrintInputProcessing()</a>, <a class="el" href="print__output__processing_8hpp_source.html#l00024">mlpack::bindings::python::PrintOutputProcessing()</a>, <a class="el" href="rs__model_8hpp_source.html#l00363">RSModel::RandomBasis()</a>, <a class="el" href="ns__model_8hpp_source.html#l00402">NSModel&lt; SortPolicy &gt;::RandomBasis()</a>, <a class="el" href="dataset__mapper_8hpp_source.html#l00140">DatasetMapper&lt; PolicyType &gt;::Serialize()</a>, <a class="el" href="serialization_8hpp_source.html#l00179">mlpack::SerializeObject()</a>, <a class="el" href="serialization_8hpp_source.html#l00230">mlpack::SerializePointerObject()</a>, <a class="el" href="string__type__param_8hpp_source.html#l00054">mlpack::bindings::cli::StringTypeParam()</a>, <a class="el" href="serialization_8hpp_source.html#l00033">mlpack::TestArmadilloSerialization()</a>, <a class="el" href="test__option_8hpp_source.html#l00057">TestOption&lt; N &gt;::TestOption()</a>, and <a class="el" href="timers_8hpp_source.html#l00076">Timers::Timers()</a>.</p>
+
+</div>
+</div>
+<a id="a2353f74def2aeaa9de0bd63bddba1721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2353f74def2aeaa9de0bd63bddba1721">&#9670;&nbsp;</a></span>string() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">string </td>
+          <td >(</td>
+          <td class="paramtype">REGEX REPLACE &quot;.*currently supported with MEX is \[0-9.]*)*\*&quot; &quot;\&quot; MEX_COMPILER_VERSION &quot;${MEX_OUTPUT}&quot;&#160;</td>
+          <td class="paramname">[^\&quot;]</td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bindings_2matlab_2CMakeLists_8txt_source.html#l00027">27</a> of file <a class="el" href="bindings_2matlab_2CMakeLists_8txt_source.html">CMakeLists.txt</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a3ad5384f46c4dc74d60b8f0322287b5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ad5384f46c4dc74d60b8f0322287b5a">&#9670;&nbsp;</a></span>http</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">the MATLAB version can probably be see n http</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bindings_2matlab_2CMakeLists_8txt_source.html#l00056">56</a> of file <a class="el" href="bindings_2matlab_2CMakeLists_8txt_source.html">CMakeLists.txt</a>.</p>
+
+</div>
+</div>
+<a id="ae9400086b3e97b5a80e1ae47fe7731d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9400086b3e97b5a80e1ae47fe7731d2">&#9670;&nbsp;</a></span>VERSION_LESS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">VERSION_LESS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b >Initial value:</b><div class="fragment"><div class="line">{OTHER_COMPILER_VERSION}<span class="stringliteral">&quot;))</span></div><div class="line"><span class="stringliteral"></span></div><div class="line"><span class="stringliteral"></span></div><div class="line"><span class="stringliteral">        set(NEED_TO_WARN 0)</span></div><div class="line"><span class="stringliteral">      endif(NOT (&quot;</span>${MEX_COMPILER_VERSION}<span class="stringliteral">&quot; VERSION_LESS</span></div><div class="line"><span class="stringliteral">          &quot;</span>${OTHER_COMPILER_VERSION}<span class="stringliteral">&quot;))</span></div><div class="line"><span class="stringliteral">    endif()</span></div><div class="line"><span class="stringliteral"></span></div><div class="line"><span class="stringliteral">    if(NEED_TO_WARN EQUAL 1)</span></div><div class="line"><span class="stringliteral">      message(WARNING &quot;</span>The MATLAB runtime glibc is different than the system <span class="stringliteral">&quot;</span></div><div class="line"><span class="stringliteral">          &quot;</span> glibc.  This can (and probably will) cause the MLPACK bindings <span class="stringliteral">&quot;</span></div><div class="line"><span class="stringliteral">          &quot;</span>generated by <span class="keyword">this</span> build script to fail with odd GLIBCXX_a_b_c <span class="stringliteral">&quot;</span></div><div class="line"><span class="stringliteral">          &quot;</span>version complaints when they are run.  Assuming that the system <span class="stringliteral">&quot;</span></div><div class="line"><span class="stringliteral">          &quot;</span>glibc is newer than the MATLAB-provided version</div></div>
+<p class="definition">Definition at line <a class="el" href="bindings_2matlab_2CMakeLists_8txt_source.html#l00038">38</a> of file <a class="el" href="bindings_2matlab_2CMakeLists_8txt_source.html">CMakeLists.txt</a>.</p>
+
+</div>
+</div>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

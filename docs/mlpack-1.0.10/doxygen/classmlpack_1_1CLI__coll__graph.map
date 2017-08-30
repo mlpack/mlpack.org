@@ -1,4 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$classmlpack_1_1util_1_1ProgramDoc.html" title="A static object whose constructor registers program documentation with the CLI class." alt="" coords="5,6,187,34"/>
-<area shape="rect" id="node5" href="$classmlpack_1_1Timers.html" title="mlpack::Timers" alt="" coords="211,6,328,34"/>
+<map id="mlpack::CLI" name="mlpack::CLI">
+<area shape="rect" id="node2" href="$classmlpack_1_1util_1_1ProgramDoc.html" title="A static object whose constructor registers program documentation with the CLI class. " alt="" coords="5,5,176,32"/>
+<area shape="rect" id="node3" href="$classmlpack_1_1Timers.html" title="mlpack::Timers" alt="" coords="200,5,312,32"/>
 </map>

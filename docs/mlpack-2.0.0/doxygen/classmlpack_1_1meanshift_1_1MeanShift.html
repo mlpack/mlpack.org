@@ -1,22 +1,50 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head >
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
-<meta name="generator" content="Doxygen 1.8.9.1"></meta>
-<title >mlpack: mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt; Class Template Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
-</link>
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
-</link>
-</head>
-<body >
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
 <div id="top">
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody >
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mlpack
    &#160;<span id="projectnumber">2.0.0</span>
    </div>
@@ -26,24 +54,14 @@
 </table>
 </div>
 
-
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
-      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
-      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span >Classes</span></a></li>
-      <li ><a href="files.html"><span >Files</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li ><a href="annotated.html"><span >Class&#160;List</span></a></li>
-      <li ><a href="classes.html"><span >Class&#160;Index</span></a></li>
-      <li ><a href="inherits.html"><span >Class&#160;Hierarchy</span></a></li>
-      <li ><a href="functions.html"><span >Class&#160;Members</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+</script>
+<div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul >
 <li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1meanshift.html">meanshift</a></li><li class="navelem"><a class="el" href="classmlpack_1_1meanshift_1_1MeanShift.html">MeanShift</a></li>  </ul>
@@ -74,21 +92,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af0bf781763e805cdc361e38fc536b0db"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1meanshift_1_1MeanShift.html#af0bf781763e805cdc361e38fc536b0db">EstimateRadius</a> (const MatType &amp;data, const double ratio=0.2)</td></tr>
 <tr class="memdesc:af0bf781763e805cdc361e38fc536b0db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Give an estimation of radius based on given dataset.  <a href="#af0bf781763e805cdc361e38fc536b0db">More...</a><br /></br></td></tr>
 <tr class="separator:af0bf781763e805cdc361e38fc536b0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83f62187a300936a8901be14aceff2a9"><td class="memItemLeft" align="right" valign="top">const KernelType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1meanshift_1_1MeanShift.html#a83f62187a300936a8901be14aceff2a9">Kernel</a> () const </td></tr>
-<tr class="memdesc:a83f62187a300936a8901be14aceff2a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the kernel.  <a href="#a83f62187a300936a8901be14aceff2a9">More...</a><br /></br></td></tr>
-<tr class="separator:a83f62187a300936a8901be14aceff2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc74c26623cfc1d7e2ffc6b6884d6489"><td class="memItemLeft" align="right" valign="top">const KernelType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1meanshift_1_1MeanShift.html#adc74c26623cfc1d7e2ffc6b6884d6489">Kernel</a> () const</td></tr>
+<tr class="memdesc:adc74c26623cfc1d7e2ffc6b6884d6489"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the kernel.  <a href="#adc74c26623cfc1d7e2ffc6b6884d6489">More...</a><br /></br></td></tr>
+<tr class="separator:adc74c26623cfc1d7e2ffc6b6884d6489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac29accd0bc21add072fad9b4e6a3893e"><td class="memItemLeft" align="right" valign="top">KernelType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1meanshift_1_1MeanShift.html#ac29accd0bc21add072fad9b4e6a3893e">Kernel</a> ()</td></tr>
 <tr class="memdesc:ac29accd0bc21add072fad9b4e6a3893e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the kernel.  <a href="#ac29accd0bc21add072fad9b4e6a3893e">More...</a><br /></br></td></tr>
 <tr class="separator:ac29accd0bc21add072fad9b4e6a3893e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a639165a033c556224b044704bcf5f812"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1meanshift_1_1MeanShift.html#a639165a033c556224b044704bcf5f812">MaxIterations</a> () const </td></tr>
-<tr class="memdesc:a639165a033c556224b044704bcf5f812"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of iterations.  <a href="#a639165a033c556224b044704bcf5f812">More...</a><br /></br></td></tr>
-<tr class="separator:a639165a033c556224b044704bcf5f812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd04f2add86add360fd635d415b72c4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1meanshift_1_1MeanShift.html#a7dd04f2add86add360fd635d415b72c4">MaxIterations</a> () const</td></tr>
+<tr class="memdesc:a7dd04f2add86add360fd635d415b72c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of iterations.  <a href="#a7dd04f2add86add360fd635d415b72c4">More...</a><br /></br></td></tr>
+<tr class="separator:a7dd04f2add86add360fd635d415b72c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a542a7b9f360106cea4b7c549d3dcb3c6"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1meanshift_1_1MeanShift.html#a542a7b9f360106cea4b7c549d3dcb3c6">MaxIterations</a> ()</td></tr>
 <tr class="memdesc:a542a7b9f360106cea4b7c549d3dcb3c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the maximum number of iterations.  <a href="#a542a7b9f360106cea4b7c549d3dcb3c6">More...</a><br /></br></td></tr>
 <tr class="separator:a542a7b9f360106cea4b7c549d3dcb3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac1698b2653c2c00494ecfc6775e6652"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1meanshift_1_1MeanShift.html#aac1698b2653c2c00494ecfc6775e6652">Radius</a> () const </td></tr>
-<tr class="memdesc:aac1698b2653c2c00494ecfc6775e6652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the radius.  <a href="#aac1698b2653c2c00494ecfc6775e6652">More...</a><br /></br></td></tr>
-<tr class="separator:aac1698b2653c2c00494ecfc6775e6652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1713d11a7d2e250a7236e6a4bac0bf66"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1meanshift_1_1MeanShift.html#a1713d11a7d2e250a7236e6a4bac0bf66">Radius</a> () const</td></tr>
+<tr class="memdesc:a1713d11a7d2e250a7236e6a4bac0bf66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the radius.  <a href="#a1713d11a7d2e250a7236e6a4bac0bf66">More...</a><br /></br></td></tr>
+<tr class="separator:a1713d11a7d2e250a7236e6a4bac0bf66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1625924f23373fa556be03e0f73c8138"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1meanshift_1_1MeanShift.html#a1625924f23373fa556be03e0f73c8138">Radius</a> (double <a class="el" href="classmlpack_1_1meanshift_1_1MeanShift.html#ac58cdbc587030f79cb05658d0221a88a">radius</a>)</td></tr>
 <tr class="memdesc:a1625924f23373fa556be03e0f73c8138"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the radius.  <a href="#a1625924f23373fa556be03e0f73c8138">More...</a><br /></br></td></tr>
 <tr class="separator:a1625924f23373fa556be03e0f73c8138"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,13 +144,7 @@ class mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt;</h3>
 <p >This class implements mean shift clustering. </p>
 <p >For each point in dataset, apply mean shift algorithm until maximum iterations or convergence. Then remove duplicate centroids.</p>
 <p >A simple example of how to run mean shift clustering is shown below.</p>
-<div class="fragment"><div class="line"><span class="keyword">extern</span> arma::mat data; <span class="comment">// Dataset we want to run mean shift on.</span></div>
-<div class="line">arma::Col&lt;size_t&gt; assignments; <span class="comment">// Cluster assignments.</span></div>
-<div class="line">arma::mat centroids; <span class="comment">// Cluster centroids.</span></div>
-<div class="line"></div>
-<div class="line">MeanShift&lt;&gt; meanShift();</div>
-<div class="line">meanShift.Cluster(dataset, assignments, centroids);</div>
-</div><dl class="tparams"><dt >Template Parameters</dt><dd >
+<div class="fragment"><div class="line"><span class="keyword">extern</span> arma::mat data; <span class="comment">// Dataset we want to run mean shift on.</span></div><div class="line">arma::Col&lt;size_t&gt; assignments; <span class="comment">// Cluster assignments.</span></div><div class="line">arma::mat centroids; <span class="comment">// Cluster centroids.</span></div><div class="line"></div><div class="line">MeanShift&lt;&gt; meanShift();</div><div class="line">meanShift.Cluster(dataset, assignments, centroids);</div></div><dl class="tparams"><dt >Template Parameters</dt><dd >
   <table class="tparams">
     <tr ><td class="paramname">UseKernel</td><td >Use kernel or mean to calculate new centroid. If false, KernelType will be ignored. </td></tr>
     <tr ><td class="paramname">KernelType</td><td >The kernel to use. </td></tr>
@@ -141,9 +153,11 @@ class mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt;</h3>
   </dd>
 </dl>
 
-<p >Definition at line <a class="el" href="mean__shift_8hpp_source.html#l00059">59</a> of file <a class="el" href="mean__shift_8hpp_source.html">mean_shift.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mean__shift_8hpp_source.html#l00059">59</a> of file <a class="el" href="mean__shift_8hpp_source.html">mean_shift.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a7096a27c13dcae8541e3c34794af9b8c"></a>
+<a id="a7096a27c13dcae8541e3c34794af9b8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7096a27c13dcae8541e3c34794af9b8c">&#9670;&nbsp;</a></span>MeanShift()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -188,7 +202,9 @@ template&lt;bool UseKernel = false, typename KernelType  = kernel::GaussianKerne
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aaeed62034a5df967dcae5e2a8e57f0f4"></a>
+<a id="aaeed62034a5df967dcae5e2a8e57f0f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeed62034a5df967dcae5e2a8e57f0f4">&#9670;&nbsp;</a></span>CalculateCentroid() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -247,9 +263,13 @@ template&lt;bool ApplyKernel = UseKernel&gt; </div>
   </dd>
 </dl>
 
+<p class="reference">Referenced by <a class="el" href="mean__shift_8hpp_source.html#l00112">mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt;::Kernel()</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="aa518abec0854f7f4ac9244ff5d3d4910"></a>
+<a id="aa518abec0854f7f4ac9244ff5d3d4910"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa518abec0854f7f4ac9244ff5d3d4910">&#9670;&nbsp;</a></span>CalculateCentroid() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -310,7 +330,9 @@ template&lt;bool ApplyKernel = UseKernel&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a634cc8cb47c41dba7c53cb568a954806"></a>
+<a id="a634cc8cb47c41dba7c53cb568a954806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a634cc8cb47c41dba7c53cb568a954806">&#9670;&nbsp;</a></span>Cluster()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -366,7 +388,9 @@ template&lt;bool UseKernel = false, typename KernelType  = kernel::GaussianKerne
 
 </div>
 </div>
-<a class="anchor" id="af0bf781763e805cdc361e38fc536b0db"></a>
+<a id="af0bf781763e805cdc361e38fc536b0db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0bf781763e805cdc361e38fc536b0db">&#9670;&nbsp;</a></span>EstimateRadius()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -403,7 +427,9 @@ template&lt;bool UseKernel = false, typename KernelType  = kernel::GaussianKerne
 
 </div>
 </div>
-<a class="anchor" id="a49525d3a9a710c8e0329ba7f77d19d64"></a>
+<a id="a49525d3a9a710c8e0329ba7f77d19d64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49525d3a9a710c8e0329ba7f77d19d64">&#9670;&nbsp;</a></span>GenSeeds()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -461,9 +487,13 @@ template&lt;bool UseKernel = false, typename KernelType  = kernel::GaussianKerne
   </dd>
 </dl>
 
+<p class="reference">Referenced by <a class="el" href="mean__shift_8hpp_source.html#l00112">mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt;::Kernel()</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a83f62187a300936a8901be14aceff2a9"></a>
+<a id="adc74c26623cfc1d7e2ffc6b6884d6489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc74c26623cfc1d7e2ffc6b6884d6489">&#9670;&nbsp;</a></span>Kernel() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -488,13 +518,15 @@ template&lt;bool UseKernel = false, typename KernelType  = kernel::GaussianKerne
 
 <p >Get the kernel. </p>
 
-<p >Definition at line <a class="el" href="mean__shift_8hpp_source.html#l00110">110</a> of file <a class="el" href="mean__shift_8hpp_source.html">mean_shift.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mean__shift_8hpp_source.html#l00110">110</a> of file <a class="el" href="mean__shift_8hpp_source.html">mean_shift.hpp</a>.</p>
 
-<p >References <a class="el" href="mean__shift_8hpp_source.html#l00174">mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt;::kernel</a>.</p>
+<p class="reference">References <a class="el" href="mean__shift_8hpp_source.html#l00174">mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt;::kernel</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac29accd0bc21add072fad9b4e6a3893e"></a>
+<a id="ac29accd0bc21add072fad9b4e6a3893e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac29accd0bc21add072fad9b4e6a3893e">&#9670;&nbsp;</a></span>Kernel() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -519,13 +551,15 @@ template&lt;bool UseKernel = false, typename KernelType  = kernel::GaussianKerne
 
 <p >Modify the kernel. </p>
 
-<p >Definition at line <a class="el" href="mean__shift_8hpp_source.html#l00112">112</a> of file <a class="el" href="mean__shift_8hpp_source.html">mean_shift.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mean__shift_8hpp_source.html#l00112">112</a> of file <a class="el" href="mean__shift_8hpp_source.html">mean_shift.hpp</a>.</p>
 
-<p >References <a class="el" href="mean__shift_8hpp_source.html#l00174">mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt;::kernel</a>.</p>
+<p class="reference">References <a class="el" href="classmlpack_1_1meanshift_1_1MeanShift.html#aaeed62034a5df967dcae5e2a8e57f0f4">mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt;::CalculateCentroid()</a>, <a class="el" href="classmlpack_1_1meanshift_1_1MeanShift.html#a49525d3a9a710c8e0329ba7f77d19d64">mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt;::GenSeeds()</a>, and <a class="el" href="mean__shift_8hpp_source.html#l00174">mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt;::kernel</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a639165a033c556224b044704bcf5f812"></a>
+<a id="a7dd04f2add86add360fd635d415b72c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dd04f2add86add360fd635d415b72c4">&#9670;&nbsp;</a></span>MaxIterations() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -550,13 +584,15 @@ template&lt;bool UseKernel = false, typename KernelType  = kernel::GaussianKerne
 
 <p >Get the maximum number of iterations. </p>
 
-<p >Definition at line <a class="el" href="mean__shift_8hpp_source.html#l00100">100</a> of file <a class="el" href="mean__shift_8hpp_source.html">mean_shift.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mean__shift_8hpp_source.html#l00100">100</a> of file <a class="el" href="mean__shift_8hpp_source.html">mean_shift.hpp</a>.</p>
 
-<p >References <a class="el" href="mean__shift_8hpp_source.html#l00171">mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt;::maxIterations</a>.</p>
+<p class="reference">References <a class="el" href="mean__shift_8hpp_source.html#l00171">mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt;::maxIterations</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a542a7b9f360106cea4b7c549d3dcb3c6"></a>
+<a id="a542a7b9f360106cea4b7c549d3dcb3c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a542a7b9f360106cea4b7c549d3dcb3c6">&#9670;&nbsp;</a></span>MaxIterations() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -581,13 +617,15 @@ template&lt;bool UseKernel = false, typename KernelType  = kernel::GaussianKerne
 
 <p >Set the maximum number of iterations. </p>
 
-<p >Definition at line <a class="el" href="mean__shift_8hpp_source.html#l00102">102</a> of file <a class="el" href="mean__shift_8hpp_source.html">mean_shift.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mean__shift_8hpp_source.html#l00102">102</a> of file <a class="el" href="mean__shift_8hpp_source.html">mean_shift.hpp</a>.</p>
 
-<p >References <a class="el" href="mean__shift_8hpp_source.html#l00171">mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt;::maxIterations</a>.</p>
+<p class="reference">References <a class="el" href="mean__shift_8hpp_source.html#l00171">mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt;::maxIterations</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aac1698b2653c2c00494ecfc6775e6652"></a>
+<a id="a1713d11a7d2e250a7236e6a4bac0bf66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1713d11a7d2e250a7236e6a4bac0bf66">&#9670;&nbsp;</a></span>Radius() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -612,13 +650,15 @@ template&lt;bool UseKernel = false, typename KernelType  = kernel::GaussianKerne
 
 <p >Get the radius. </p>
 
-<p >Definition at line <a class="el" href="mean__shift_8hpp_source.html#l00105">105</a> of file <a class="el" href="mean__shift_8hpp_source.html">mean_shift.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mean__shift_8hpp_source.html#l00105">105</a> of file <a class="el" href="mean__shift_8hpp_source.html">mean_shift.hpp</a>.</p>
 
-<p >References <a class="el" href="mean__shift_8hpp_source.html#l00168">mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt;::radius</a>.</p>
+<p class="reference">References <a class="el" href="mean__shift_8hpp_source.html#l00168">mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt;::radius</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1625924f23373fa556be03e0f73c8138"></a>
+<a id="a1625924f23373fa556be03e0f73c8138"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1625924f23373fa556be03e0f73c8138">&#9670;&nbsp;</a></span>Radius() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -639,7 +679,9 @@ template&lt;bool UseKernel = false, typename KernelType  = kernel::GaussianKerne
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a1afba2513233536f47117a7b86e8384b"></a>
+<a id="a1afba2513233536f47117a7b86e8384b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1afba2513233536f47117a7b86e8384b">&#9670;&nbsp;</a></span>kernel</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -661,13 +703,15 @@ template&lt;bool UseKernel = false, typename KernelType  = kernel::GaussianKerne
 
 <p >Instantiated kernel. </p>
 
-<p >Definition at line <a class="el" href="mean__shift_8hpp_source.html#l00174">174</a> of file <a class="el" href="mean__shift_8hpp_source.html">mean_shift.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mean__shift_8hpp_source.html#l00174">174</a> of file <a class="el" href="mean__shift_8hpp_source.html">mean_shift.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="mean__shift_8hpp_source.html#l00110">mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt;::Kernel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mean__shift_8hpp_source.html#l00110">mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt;::Kernel()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad84529171961bfad9b63e9c0bf76384f"></a>
+<a id="ad84529171961bfad9b63e9c0bf76384f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad84529171961bfad9b63e9c0bf76384f">&#9670;&nbsp;</a></span>maxIterations</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -689,13 +733,15 @@ template&lt;bool UseKernel = false, typename KernelType  = kernel::GaussianKerne
 
 <p >Maximum number of iterations before giving up. </p>
 
-<p >Definition at line <a class="el" href="mean__shift_8hpp_source.html#l00171">171</a> of file <a class="el" href="mean__shift_8hpp_source.html">mean_shift.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mean__shift_8hpp_source.html#l00171">171</a> of file <a class="el" href="mean__shift_8hpp_source.html">mean_shift.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="mean__shift_8hpp_source.html#l00100">mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt;::MaxIterations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mean__shift_8hpp_source.html#l00100">mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt;::MaxIterations()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac58cdbc587030f79cb05658d0221a88a"></a>
+<a id="ac58cdbc587030f79cb05658d0221a88a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac58cdbc587030f79cb05658d0221a88a">&#9670;&nbsp;</a></span>radius</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -718,9 +764,9 @@ template&lt;bool UseKernel = false, typename KernelType  = kernel::GaussianKerne
 <p >If distance of two centroids is less than radius, one will be removed. </p>
 <p >Points with distance to current centroid less than radius will be used to calculate new centroid. </p>
 
-<p >Definition at line <a class="el" href="mean__shift_8hpp_source.html#l00168">168</a> of file <a class="el" href="mean__shift_8hpp_source.html">mean_shift.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mean__shift_8hpp_source.html#l00168">168</a> of file <a class="el" href="mean__shift_8hpp_source.html">mean_shift.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="mean__shift_8hpp_source.html#l00105">mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt;::Radius()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mean__shift_8hpp_source.html#l00105">mlpack::meanshift::MeanShift&lt; UseKernel, KernelType, MatType &gt;::Radius()</a>.</p>
 
 </div>
 </div>
@@ -732,7 +778,16 @@ template&lt;bool UseKernel = false, typename KernelType  = kernel::GaussianKerne
 <hr class="footer"></hr><address class="footer"><small >
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"></img>
-</a> 1.8.9.1
+</a> 1.8.13
 </small></address>
+</div>
 </body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
 </html>

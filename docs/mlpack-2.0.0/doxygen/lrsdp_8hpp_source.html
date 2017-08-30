@@ -1,22 +1,50 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head >
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
-<meta name="generator" content="Doxygen 1.8.9.1"></meta>
-<title >mlpack: src/mlpack/core/optimizers/sdp/lrsdp.hpp Source File</title><link href="tabs.css" rel="stylesheet" type="text/css" />
-</link>
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
-</link>
-</head>
-<body >
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
 <div id="top">
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody >
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mlpack
    &#160;<span id="projectnumber">2.0.0</span>
    </div>
@@ -26,25 +54,17 @@
 </table>
 </div>
 
-
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
-      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
-      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
-      <li ><a href="annotated.html"><span >Classes</span></a></li>
-      <li class="current"><a href="files.html"><span >Files</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li ><a href="files.html"><span >File&#160;List</span></a></li>
-      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+</script>
+<div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul >
-<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_88282adca4d2b894221008e7ea77ce6c.html">core</a></li><li class="navelem"><a class="el" href="dir_39ca30c91c6ea9766d4908a704ea4d8b.html">optimizers</a></li><li class="navelem"><a class="el" href="dir_5326b5b873afe66553ab24fcbd83a626.html">sdp</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_44a936ef30fc126706c6284a2fc0c990.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_f7ac9cdfd28b2e882eb44d163e3b98b4.html">core</a></li><li class="navelem"><a class="el" href="dir_c92267e6eea9957c44bb2efde721ca22.html">optimizers</a></li><li class="navelem"><a class="el" href="dir_cef0860c8727e0fef4b30c067d38228f.html">sdp</a></li>  </ul>
 </div>
 </div>
 <div class="header">
@@ -52,76 +72,38 @@
 <div class="title">lrsdp.hpp</div>  </div>
 </div>
 <div class="contents">
-<a href="lrsdp_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifndef __MLPACK_CORE_OPTIMIZERS_SDP_LRSDP_HPP</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define __MLPACK_CORE_OPTIMIZERS_SDP_LRSDP_HPP</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="aug__lagrangian_8hpp.html">mlpack/core/optimizers/aug_lagrangian/aug_lagrangian.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lrsdp__function_8hpp.html">lrsdp_function.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>optimization {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> SDPType&gt;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1LRSDP.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html">LRSDP</a></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#a50ad9d6cffd72ef9a612738732048fd1">LRSDP</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> numSparseConstraints,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">size_t</span> numDenseConstraints,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">const</span> arma::mat&amp; initialPoint);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#a50ad9d6cffd72ef9a612738732048fd1">LRSDP</a>(<span class="keyword">const</span> SDPType&amp; sdp,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">const</span> arma::mat&amp; initialPoint);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#a386379f846db29d31ff06a5546adc053">Optimize</a>(arma::mat&amp; coordinates);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1LRSDP.html#a26e09e9eaa890343b03d5b7471887d56">   76</a></span>&#160;  <span class="keyword">const</span> SDPType&amp; <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#a26e09e9eaa890343b03d5b7471887d56">SDP</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">function</span>.<a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a58046df85fc2c92f3b18b38a3d40213d">SDP</a>(); }</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1LRSDP.html#ab9c8087c07c3502085c032a3b26520c9">   78</a></span>&#160;  SDPType&amp; <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#ab9c8087c07c3502085c032a3b26520c9">SDP</a>() { <span class="keywordflow">return</span> <span class="keyword">function</span>.<a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a58046df85fc2c92f3b18b38a3d40213d">SDP</a>(); }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1LRSDP.html#a1034b3c6ac986793e05f467f630f42db">   81</a></span>&#160;  <span class="keyword">const</span> <a class="code" href="classmlpack_1_1optimization_1_1LRSDPFunction.html">LRSDPFunction&lt;SDPType&gt;</a>&amp; <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#a1034b3c6ac986793e05f467f630f42db">Function</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">function</span>; }</div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1LRSDP.html#a77a7aa7438631ae72cb226f3f2dbe43e">   83</a></span>&#160;  <a class="code" href="classmlpack_1_1optimization_1_1LRSDPFunction.html">LRSDPFunction&lt;SDPType&gt;</a>&amp; <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#a77a7aa7438631ae72cb226f3f2dbe43e">Function</a>() { <span class="keywordflow">return</span> <span class="keyword">function</span>; }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1LRSDP.html#a15c789969d8951a7ed77a8036d80fc9e">   86</a></span>&#160;  <span class="keyword">const</span> <a class="code" href="classmlpack_1_1optimization_1_1AugLagrangian.html">AugLagrangian&lt;LRSDPFunction&lt;SDPType&gt;</a>&gt;&amp; <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#a15c789969d8951a7ed77a8036d80fc9e">AugLag</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#a0d5163d202cae128398bcbdc800cb880">augLag</a>; }</div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1LRSDP.html#ad0d6349ee70807f0355dbcd1ca2fbd2d">   88</a></span>&#160;  <a class="code" href="classmlpack_1_1optimization_1_1AugLagrangian.html">AugLagrangian&lt;LRSDPFunction&lt;SDPType&gt;</a>&gt;&amp; <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#ad0d6349ee70807f0355dbcd1ca2fbd2d">AugLag</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#a0d5163d202cae128398bcbdc800cb880">augLag</a>; }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1LRSDP.html#a9b0cb82cf69c0698505175fe0555921e">   92</a></span>&#160;  <a class="code" href="classmlpack_1_1optimization_1_1LRSDPFunction.html">LRSDPFunction&lt;SDPType&gt;</a> <span class="keyword">function</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1LRSDP.html#a0d5163d202cae128398bcbdc800cb880">   95</a></span>&#160;  <a class="code" href="classmlpack_1_1optimization_1_1AugLagrangian.html">AugLagrangian&lt;LRSDPFunction&lt;SDPType&gt;</a>&gt; <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#a0d5163d202cae128398bcbdc800cb880">augLag</a>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;} <span class="comment">// namespace optimization</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;} <span class="comment">// namespace mlpack</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">// Include implementation</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#include &quot;lrsdp_impl.hpp&quot;</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
+<a href="lrsdp_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifndef __MLPACK_CORE_OPTIMIZERS_SDP_LRSDP_HPP</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define __MLPACK_CORE_OPTIMIZERS_SDP_LRSDP_HPP</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="aug__lagrangian_8hpp.html">mlpack/core/optimizers/aug_lagrangian/aug_lagrangian.hpp</a>&gt;</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lrsdp__function_8hpp.html">lrsdp_function.hpp</a>&quot;</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>optimization {</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> SDPType&gt;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1LRSDP.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html">LRSDP</a></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; <span class="keyword">public</span>:</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#a50ad9d6cffd72ef9a612738732048fd1">LRSDP</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> numSparseConstraints,</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">size_t</span> numDenseConstraints,</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">const</span> arma::mat&amp; initialPoint);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#a50ad9d6cffd72ef9a612738732048fd1">LRSDP</a>(<span class="keyword">const</span> SDPType&amp; sdp,</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">const</span> arma::mat&amp; initialPoint);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#a386379f846db29d31ff06a5546adc053">Optimize</a>(arma::mat&amp; coordinates);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1LRSDP.html#a810e1e79847591797790962fa7d0e99c">   76</a></span>&#160;  <span class="keyword">const</span> SDPType&amp; <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#a810e1e79847591797790962fa7d0e99c">SDP</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">function</span>.<a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a58046df85fc2c92f3b18b38a3d40213d">SDP</a>(); }</div><div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1LRSDP.html#ab9c8087c07c3502085c032a3b26520c9">   78</a></span>&#160;  SDPType&amp; <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#ab9c8087c07c3502085c032a3b26520c9">SDP</a>() { <span class="keywordflow">return</span> <span class="keyword">function</span>.<a class="code" href="classmlpack_1_1optimization_1_1SDP.html#a58046df85fc2c92f3b18b38a3d40213d">SDP</a>(); }</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1LRSDP.html#af669bf8853ee8e4ace5b063e5d1b236a">   81</a></span>&#160;  <span class="keyword">const</span> <a class="code" href="classmlpack_1_1optimization_1_1LRSDPFunction.html">LRSDPFunction&lt;SDPType&gt;</a>&amp; <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#af669bf8853ee8e4ace5b063e5d1b236a">Function</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">function</span>; }</div><div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1LRSDP.html#a77a7aa7438631ae72cb226f3f2dbe43e">   83</a></span>&#160;  <a class="code" href="classmlpack_1_1optimization_1_1LRSDPFunction.html">LRSDPFunction&lt;SDPType&gt;</a>&amp; <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#a77a7aa7438631ae72cb226f3f2dbe43e">Function</a>() { <span class="keywordflow">return</span> <span class="keyword">function</span>; }</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1LRSDP.html#abe4800c59788956560e87aff26515624">   86</a></span>&#160;  <span class="keyword">const</span> <a class="code" href="classmlpack_1_1optimization_1_1AugLagrangian.html">AugLagrangian&lt;LRSDPFunction&lt;SDPType&gt;</a>&gt;&amp; <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#abe4800c59788956560e87aff26515624">AugLag</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#a0d5163d202cae128398bcbdc800cb880">augLag</a>; }</div><div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1LRSDP.html#ad0d6349ee70807f0355dbcd1ca2fbd2d">   88</a></span>&#160;  <a class="code" href="classmlpack_1_1optimization_1_1AugLagrangian.html">AugLagrangian&lt;LRSDPFunction&lt;SDPType&gt;</a>&gt;&amp; <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#ad0d6349ee70807f0355dbcd1ca2fbd2d">AugLag</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#a0d5163d202cae128398bcbdc800cb880">augLag</a>; }</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; <span class="keyword">private</span>:</div><div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1LRSDP.html#a9b0cb82cf69c0698505175fe0555921e">   92</a></span>&#160;  <a class="code" href="classmlpack_1_1optimization_1_1LRSDPFunction.html">LRSDPFunction&lt;SDPType&gt;</a> <span class="keyword">function</span>;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1LRSDP.html#a0d5163d202cae128398bcbdc800cb880">   95</a></span>&#160;  <a class="code" href="classmlpack_1_1optimization_1_1AugLagrangian.html">AugLagrangian&lt;LRSDPFunction&lt;SDPType&gt;</a>&gt; <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html#a0d5163d202cae128398bcbdc800cb880">augLag</a>;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;} <span class="comment">// namespace optimization</span></div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;} <span class="comment">// namespace mlpack</span></div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">// Include implementation</span></div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#include &quot;lrsdp_impl.hpp&quot;</span></div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
 <div class="ttc" id="classmlpack_1_1optimization_1_1LRSDPFunction_html"><div class="ttname"><a href="classmlpack_1_1optimization_1_1LRSDPFunction.html">mlpack::optimization::LRSDPFunction</a></div><div class="ttdoc">The objective function that LRSDP is trying to optimize. </div><div class="ttdef"><b >Definition:</b> <a href="lrsdp__function_8hpp_source.html#l00037">lrsdp_function.hpp:37</a></div></div>
-<div class="ttc" id="classmlpack_1_1optimization_1_1LRSDP_html_a15c789969d8951a7ed77a8036d80fc9e"><div class="ttname"><a href="classmlpack_1_1optimization_1_1LRSDP.html#a15c789969d8951a7ed77a8036d80fc9e">mlpack::optimization::LRSDP::AugLag</a></div><div class="ttdeci">const AugLagrangian&lt; LRSDPFunction&lt; SDPType &gt; &gt; &amp; AugLag() const </div><div class="ttdoc">Return the augmented Lagrangian object. </div><div class="ttdef"><b >Definition:</b> <a href="lrsdp_8hpp_source.html#l00086">lrsdp.hpp:86</a></div></div>
-<div class="ttc" id="classmlpack_1_1optimization_1_1LRSDP_html"><div class="ttname"><a href="classmlpack_1_1optimization_1_1LRSDP.html">mlpack::optimization::LRSDP</a></div><div class="ttdoc">LRSDP is the implementation of Monteiro and Burer&#39;s formulation of low-rank semidefinite programs (LR...</div><div class="ttdef"><b >Definition:</b> <a href="lrsdp_8hpp_source.html#l00040">lrsdp.hpp:40</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1LRSDP_html_abe4800c59788956560e87aff26515624"><div class="ttname"><a href="classmlpack_1_1optimization_1_1LRSDP.html#abe4800c59788956560e87aff26515624">mlpack::optimization::LRSDP::AugLag</a></div><div class="ttdeci">const AugLagrangian&lt; LRSDPFunction&lt; SDPType &gt; &gt; &amp; AugLag() const</div><div class="ttdoc">Return the augmented Lagrangian object. </div><div class="ttdef"><b >Definition:</b> <a href="lrsdp_8hpp_source.html#l00086">lrsdp.hpp:86</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1LRSDP_html"><div class="ttname"><a href="classmlpack_1_1optimization_1_1LRSDP.html">mlpack::optimization::LRSDP</a></div><div class="ttdoc">LRSDP is the implementation of Monteiro and Burer&amp;#39;s formulation of low-rank semidefinite programs (LR...</div><div class="ttdef"><b >Definition:</b> <a href="lrsdp_8hpp_source.html#l00040">lrsdp.hpp:40</a></div></div>
 <div class="ttc" id="classmlpack_1_1optimization_1_1LRSDP_html_a77a7aa7438631ae72cb226f3f2dbe43e"><div class="ttname"><a href="classmlpack_1_1optimization_1_1LRSDP.html#a77a7aa7438631ae72cb226f3f2dbe43e">mlpack::optimization::LRSDP::Function</a></div><div class="ttdeci">LRSDPFunction&lt; SDPType &gt; &amp; Function()</div><div class="ttdoc">Modify the function to be optimized. </div><div class="ttdef"><b >Definition:</b> <a href="lrsdp_8hpp_source.html#l00083">lrsdp.hpp:83</a></div></div>
 <div class="ttc" id="aug__lagrangian_8hpp_html"><div class="ttname"><a href="aug__lagrangian_8hpp.html">aug_lagrangian.hpp</a></div></div>
 <div class="ttc" id="classmlpack_1_1optimization_1_1AugLagrangian_html"><div class="ttname"><a href="classmlpack_1_1optimization_1_1AugLagrangian.html">mlpack::optimization::AugLagrangian</a></div><div class="ttdoc">The AugLagrangian class implements the Augmented Lagrangian method of optimization. </div><div class="ttdef"><b >Definition:</b> <a href="aug__lagrangian_8hpp_source.html#l00059">aug_lagrangian.hpp:59</a></div></div>
 <div class="ttc" id="classmlpack_1_1optimization_1_1LRSDP_html_a50ad9d6cffd72ef9a612738732048fd1"><div class="ttname"><a href="classmlpack_1_1optimization_1_1LRSDP.html#a50ad9d6cffd72ef9a612738732048fd1">mlpack::optimization::LRSDP::LRSDP</a></div><div class="ttdeci">LRSDP(const size_t numSparseConstraints, const size_t numDenseConstraints, const arma::mat &amp;initialPoint)</div><div class="ttdoc">Create an LRSDP to be optimized. </div></div>
 <div class="ttc" id="classmlpack_1_1optimization_1_1SDP_html_a58046df85fc2c92f3b18b38a3d40213d"><div class="ttname"><a href="classmlpack_1_1optimization_1_1SDP.html#a58046df85fc2c92f3b18b38a3d40213d">mlpack::optimization::SDP::SDP</a></div><div class="ttdeci">SDP()</div><div class="ttdoc">Initialize this SDP to an empty state. </div></div>
 <div class="ttc" id="classmlpack_1_1optimization_1_1LRSDP_html_a0d5163d202cae128398bcbdc800cb880"><div class="ttname"><a href="classmlpack_1_1optimization_1_1LRSDP.html#a0d5163d202cae128398bcbdc800cb880">mlpack::optimization::LRSDP::augLag</a></div><div class="ttdeci">AugLagrangian&lt; LRSDPFunction&lt; SDPType &gt; &gt; augLag</div><div class="ttdoc">The AugLagrangian object which will be used for optimization. </div><div class="ttdef"><b >Definition:</b> <a href="lrsdp_8hpp_source.html#l00095">lrsdp.hpp:95</a></div></div>
-<div class="ttc" id="classmlpack_1_1optimization_1_1LRSDP_html_a26e09e9eaa890343b03d5b7471887d56"><div class="ttname"><a href="classmlpack_1_1optimization_1_1LRSDP.html#a26e09e9eaa890343b03d5b7471887d56">mlpack::optimization::LRSDP::SDP</a></div><div class="ttdeci">const SDPType &amp; SDP() const </div><div class="ttdoc">Return the SDP that will be solved. </div><div class="ttdef"><b >Definition:</b> <a href="lrsdp_8hpp_source.html#l00076">lrsdp.hpp:76</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1LRSDP_html_a810e1e79847591797790962fa7d0e99c"><div class="ttname"><a href="classmlpack_1_1optimization_1_1LRSDP.html#a810e1e79847591797790962fa7d0e99c">mlpack::optimization::LRSDP::SDP</a></div><div class="ttdeci">const SDPType &amp; SDP() const</div><div class="ttdoc">Return the SDP that will be solved. </div><div class="ttdef"><b >Definition:</b> <a href="lrsdp_8hpp_source.html#l00076">lrsdp.hpp:76</a></div></div>
 <div class="ttc" id="core_8hpp_html"><div class="ttname"><a href="core_8hpp.html">core.hpp</a></div><div class="ttdoc">Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu...</div></div>
 <div class="ttc" id="lrsdp__function_8hpp_html"><div class="ttname"><a href="lrsdp__function_8hpp.html">lrsdp_function.hpp</a></div></div>
 <div class="ttc" id="classmlpack_1_1optimization_1_1LRSDP_html_ab9c8087c07c3502085c032a3b26520c9"><div class="ttname"><a href="classmlpack_1_1optimization_1_1LRSDP.html#ab9c8087c07c3502085c032a3b26520c9">mlpack::optimization::LRSDP::SDP</a></div><div class="ttdeci">SDPType &amp; SDP()</div><div class="ttdoc">Modify the SDP that will be solved. </div><div class="ttdef"><b >Definition:</b> <a href="lrsdp_8hpp_source.html#l00078">lrsdp.hpp:78</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1LRSDP_html_af669bf8853ee8e4ace5b063e5d1b236a"><div class="ttname"><a href="classmlpack_1_1optimization_1_1LRSDP.html#af669bf8853ee8e4ace5b063e5d1b236a">mlpack::optimization::LRSDP::Function</a></div><div class="ttdeci">const LRSDPFunction&lt; SDPType &gt; &amp; Function() const</div><div class="ttdoc">Return the function to be optimized. </div><div class="ttdef"><b >Definition:</b> <a href="lrsdp_8hpp_source.html#l00081">lrsdp.hpp:81</a></div></div>
 <div class="ttc" id="classmlpack_1_1optimization_1_1LRSDP_html_ad0d6349ee70807f0355dbcd1ca2fbd2d"><div class="ttname"><a href="classmlpack_1_1optimization_1_1LRSDP.html#ad0d6349ee70807f0355dbcd1ca2fbd2d">mlpack::optimization::LRSDP::AugLag</a></div><div class="ttdeci">AugLagrangian&lt; LRSDPFunction&lt; SDPType &gt; &gt; &amp; AugLag()</div><div class="ttdoc">Modify the augmented Lagrangian object. </div><div class="ttdef"><b >Definition:</b> <a href="lrsdp_8hpp_source.html#l00088">lrsdp.hpp:88</a></div></div>
 <div class="ttc" id="classmlpack_1_1optimization_1_1LRSDP_html_a386379f846db29d31ff06a5546adc053"><div class="ttname"><a href="classmlpack_1_1optimization_1_1LRSDP.html#a386379f846db29d31ff06a5546adc053">mlpack::optimization::LRSDP::Optimize</a></div><div class="ttdeci">double Optimize(arma::mat &amp;coordinates)</div><div class="ttdoc">Optimize the LRSDP and return the final objective value. </div></div>
-<div class="ttc" id="classmlpack_1_1optimization_1_1LRSDP_html_a1034b3c6ac986793e05f467f630f42db"><div class="ttname"><a href="classmlpack_1_1optimization_1_1LRSDP.html#a1034b3c6ac986793e05f467f630f42db">mlpack::optimization::LRSDP::Function</a></div><div class="ttdeci">const LRSDPFunction&lt; SDPType &gt; &amp; Function() const </div><div class="ttdoc">Return the function to be optimized. </div><div class="ttdef"><b >Definition:</b> <a href="lrsdp_8hpp_source.html#l00081">lrsdp.hpp:81</a></div></div>
 </div></div>
 
 <hr class="footer"></hr><address class="footer"><small >
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"></img>
-</a> 1.8.9.1
+</a> 1.8.13
 </small></address>
+</div>
 </body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
 </html>

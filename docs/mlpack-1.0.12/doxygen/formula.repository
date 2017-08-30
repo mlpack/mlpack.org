@@ -73,55 +73,46 @@
 \form#72:$ lambda_2 = 0 $
 \form#73:$ C = X^T X $
 \form#74:$ C = X X^T $
-\form#75:$m$
-\form#76:$V \in \Re^{n \times m}$
-\form#77:$V_{ij}$
-\form#78:$i$
-\form#79:$j$
-\form#80:$V$
-\form#81:$V \approx WH$
-\form#82:$W$
-\form#83:$H$
-\form#84:$\alpha$
-\form#85:$S$
-\form#86:$\mathbf{R}^d$
-\form#87:$kd$
-\form#88:$n-1 \times 3 $
-\form#89:$\log N$
-\form#90:$N$
-\form#91:$O(N^2)$
-\form#92:$Q$
-\form#93:$R$
-\form#94:\[ \arg\max_{p_r \in R} K(p_q, p_r) \]
-\form#95:$p_q \in Q$
-\form#96:$K(\cdot, \cdot)$
-\form#97:$ x_i $
-\form#98:$ c_j $
-\form#99:$ j \le k $
-\form#100:$ k $
-\form#101:\[ \sum_{j = 1}^{k} \sum_{x_i \in c_j} \| x_i - \mu_j \|^2 \]
-\form#102:$\mu_j$
-\form#103:$c_j$
-\form#104:$x_i$
-\form#105:$X$
-\form#106:$\mathbf{x_i}, 0 \le i < n$
-\form#107:$d$
-\form#108:$y_i, 0 \le i < n$
-\form#109:$\beta_i, 0 \le i \le d$
-\form#110:\[ y_i = \beta_0 + \displaystyle\sum_{j = 1}^{d} \beta_j x_{ij} \]
-\form#111:$\mathbf{x_i}$
-\form#112:$y_i$
-\form#113:$\mathbf{X}$
-\form#114:$\mathbf{y}$
-\form#115:\[ \mathbf{y} = \mathbf{X} \mathbf{\beta} + \beta_0 \]
-\form#116:$\mathbf{\beta}$
-\form#117:$\beta_0$
-\form#118:$\beta_1$
-\form#119:$\beta_2$
-\form#120:$y$
-\form#121:$f(y)=0+1x_1$
-\form#122:\[ \mathbf{X}' \mathbf{X} \]
-\form#123:\[ \mathbf{X}' \mathbf{X} + \lambda \mathbf{I} \]
-\form#124:$\mathbf{I}$
-\form#125:$\lambda$
-\form#126:$k$
+\form#75:$\alpha$
+\form#76:$S$
+\form#77:$\mathbf{R}^d$
+\form#78:$kd$
+\form#79:$n-1 \times 3 $
+\form#80:$\log N$
+\form#81:$N$
+\form#82:$O(N^2)$
+\form#83:$Q$
+\form#84:$R$
+\form#85:\[ \arg\max_{p_r \in R} K(p_q, p_r) \]
+\form#86:$p_q \in Q$
+\form#87:$K(\cdot, \cdot)$
+\form#88:$ x_i $
+\form#89:$ c_j $
+\form#90:$ j \le k $
+\form#91:$ k $
+\form#92:\[ \sum_{j = 1}^{k} \sum_{x_i \in c_j} \| x_i - \mu_j \|^2 \]
+\form#93:$\mu_j$
+\form#94:$c_j$
+\form#95:$x_i$
+\form#96:$X$
+\form#97:$\mathbf{x_i}, 0 \le i < n$
+\form#98:$d$
+\form#99:$y_i, 0 \le i < n$
+\form#100:$\beta_i, 0 \le i \le d$
+\form#101:\[ y_i = \beta_0 + \displaystyle\sum_{j = 1}^{d} \beta_j x_{ij} \]
+\form#102:$\mathbf{x_i}$
+\form#103:$y_i$
+\form#104:$\mathbf{X}$
+\form#105:$\mathbf{y}$
+\form#106:\[ \mathbf{y} = \mathbf{X} \mathbf{\beta} + \beta_0 \]
+\form#107:$\mathbf{\beta}$
+\form#108:$\beta_0$
+\form#109:$\beta_1$
+\form#110:$\beta_2$
+\form#111:$y$
+\form#112:$f(y)=0+1x_1$
+\form#113:\[ \mathbf{X}' \mathbf{X} \]
+\form#114:\[ \mathbf{X}' \mathbf{X} + \lambda \mathbf{I} \]
+\form#115:$\mathbf{I}$
+\form#116:$\lambda$
+\form#117:$k$

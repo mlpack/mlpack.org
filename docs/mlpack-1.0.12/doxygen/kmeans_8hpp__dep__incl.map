@@ -1,7 +1,7 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$em__fit_8hpp.html" title="src/mlpack/methods/gmm/em_fit.hpp" alt="" coords="5,83,267,111"/>
-<area shape="rect" id="node7" href="$kmeans__selection_8hpp.html" title="src/mlpack/methods/nystroem_method/kmeans_selection.hpp" alt="" coords="291,83,712,111"/>
-<area shape="rect" id="node5" href="$gmm_8hpp.html" title="src/mlpack/methods/gmm/gmm.hpp" alt="" coords="8,161,264,189"/>
-<area shape="rect" id="node9" href="$kernel__pca_2kernel__rules_2nystroem__method_8hpp.html" title="src/mlpack/methods/kernel_pca/kernel_rules/nystroem_method.hpp" alt="" coords="297,238,753,266"/>
-<area shape="rect" id="node11" href="$nystroem__method_2nystroem__method_8hpp.html" title="src/mlpack/methods/nystroem_method/nystroem_method.hpp" alt="" coords="439,161,863,189"/>
+<map id="src/mlpack/methods/kmeans/kmeans.hpp" name="src/mlpack/methods/kmeans/kmeans.hpp">
+<area shape="rect" id="node2" href="$em__fit_8hpp.html" title="src/mlpack/methods\l/gmm/em_fit.hpp" alt="" coords="5,102,145,143"/>
+<area shape="rect" id="node4" href="$kmeans__selection_8hpp.html" title="src/mlpack/methods\l/nystroem_method/kmeans\l_selection.hpp" alt="" coords="169,95,349,151"/>
+<area shape="rect" id="node3" href="$gmm_8hpp.html" title="src/mlpack/methods\l/gmm/gmm.hpp" alt="" coords="5,206,145,247"/>
+<area shape="rect" id="node5" href="$kernel__pca_2kernel__rules_2nystroem__method_8hpp.html" title="src/mlpack/methods\l/kernel_pca/kernel_rules\l/nystroem_method.hpp" alt="" coords="205,303,367,359"/>
+<area shape="rect" id="node6" href="$nystroem__method_2nystroem__method_8hpp.html" title="src/mlpack/methods\l/nystroem_method/nystroem\l_method.hpp" alt="" coords="259,199,447,255"/>
 </map>

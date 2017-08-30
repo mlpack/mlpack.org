@@ -1,4 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo." alt="" coords="417,83,567,111"/>
-<area shape="rect" id="node27" href="$exponential__schedule_8hpp.html" title="exponential_schedule.hpp" alt="" coords="591,83,777,111"/>
+<map id="src/mlpack/core/optimizers/sa/sa.hpp" name="src/mlpack/core/optimizers/sa/sa.hpp">
+<area shape="rect" id="node2" href="$prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo. " alt="" coords="408,95,544,121"/>
+<area shape="rect" id="node14" href="$exponential__schedule_8hpp.html" title="exponential_schedule.hpp" alt="" coords="569,95,741,121"/>
 </map>

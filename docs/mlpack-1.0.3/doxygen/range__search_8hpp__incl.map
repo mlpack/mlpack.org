@@ -1,25 +1,25 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$core_8hpp.html" title="mlpack/core.hpp" alt="" coords="1387,315,1515,343"/>
-<area shape="rect" id="node112" href="$lmetric_8hpp.html" title="mlpack/core/metrics/lmetric.hpp" alt="" coords="1388,238,1615,266"/>
-<area shape="rect" id="node117" href="$binary__space__tree_8hpp.html" title="mlpack/core/tree/binary_space_tree.hpp" alt="" coords="1159,83,1436,111"/>
-<area shape="rect" id="node27" href="$log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="1371,470,1544,498"/>
-<area shape="rect" id="node39" href="$cli_8hpp.html" title="mlpack/core/util/cli.hpp" alt="" coords="2589,470,2757,498"/>
-<area shape="rect" id="node59" href="$load_8hpp.html" title="mlpack/core/data/load.hpp" alt="" coords="1421,393,1613,421"/>
-<area shape="rect" id="node66" href="$save_8hpp.html" title="mlpack/core/data/save.hpp" alt="" coords="1688,393,1883,421"/>
-<area shape="rect" id="node73" href="$clamp_8hpp.html" title="Miscellaneous math clamping routines." alt="" coords="336,393,544,421"/>
-<area shape="rect" id="node78" href="$random_8hpp.html" title="Miscellaneous math random&#45;related routines." alt="" coords="1077,393,1296,421"/>
-<area shape="rect" id="node87" href="$lin__alg_8hpp.html" title="mlpack/core/math/lin_alg.hpp" alt="" coords="2221,393,2432,421"/>
-<area shape="rect" id="node90" href="$range_8hpp.html" title="Definition of the Range class, which represents a simple range with a lower and upper bound..." alt="" coords="5,393,211,421"/>
-<area shape="rect" id="node94" href="$round_8hpp.html" title="mlpack/core/math/round.hpp" alt="" coords="2456,393,2661,421"/>
-<area shape="rect" id="node96" href="$save__restore__utility_8hpp.html" title="mlpack/core/util/save_restore_utility.hpp" alt="" coords="3051,470,3328,498"/>
-<area shape="rect" id="node106" href="$discrete__distribution_8hpp.html" title="mlpack/core/dists/discrete_distribution.hpp" alt="" coords="2685,393,2979,421"/>
-<area shape="rect" id="node109" href="$gaussian__distribution_8hpp.html" title="mlpack/core/dists/gaussian_distribution.hpp" alt="" coords="3003,393,3304,421"/>
-<area shape="rect" id="node31" href="$prefixedoutstream_8hpp.html" title="prefixedoutstream.hpp" alt="" coords="1533,547,1701,575"/>
-<area shape="rect" id="node35" href="$nulloutstream_8hpp.html" title="nulloutstream.hpp" alt="" coords="1371,547,1509,575"/>
-<area shape="rect" id="node51" href="$timers_8hpp.html" title="timers.hpp" alt="" coords="2797,547,2888,575"/>
-<area shape="rect" id="node55" href="$cli__deleter_8hpp.html" title="cli_deleter.hpp" alt="" coords="2355,547,2469,575"/>
-<area shape="rect" id="node119" href="$bounds_8hpp.html" title="Bounds that are useful for binary space partitioning trees." alt="" coords="1468,161,1564,189"/>
-<area shape="rect" id="node123" href="$binary__space__tree_2binary__space__tree_8hpp.html" title="binary_space_tree/binary_space_tree.hpp" alt="" coords="973,238,1261,266"/>
-<area shape="rect" id="node126" href="$binary__space__tree_2single__tree__traverser_8hpp.html" title="binary_space_tree/single_tree_traverser.hpp" alt="" coords="772,161,1076,189"/>
-<area shape="rect" id="node130" href="$binary__space__tree_2dual__tree__traverser_8hpp.html" title="binary_space_tree/dual_tree_traverser.hpp" alt="" coords="1151,161,1444,189"/>
+<map id="/var/www/www.mlpack.org/mlpack&#45;1.0.3/src/mlpack/methods/range_search/range_search.hpp" name="/var/www/www.mlpack.org/mlpack&#45;1.0.3/src/mlpack/methods/range_search/range_search.hpp">
+<area shape="rect" id="node2" href="$core_8hpp.html" title="mlpack/core.hpp" alt="" coords="1315,392,1434,419"/>
+<area shape="rect" id="node43" href="$lmetric_8hpp.html" title="mlpack/core/metrics\l/lmetric.hpp" alt="" coords="1322,303,1462,344"/>
+<area shape="rect" id="node45" href="$binary__space__tree_8hpp.html" title="mlpack/core/tree/binary\l_space_tree.hpp" alt="" coords="1142,124,1301,165"/>
+<area shape="rect" id="node14" href="$log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="1400,563,1560,590"/>
+<area shape="rect" id="node18" href="$cli_8hpp.html" title="mlpack/core/util/cli.hpp" alt="" coords="2402,563,2558,590"/>
+<area shape="rect" id="node26" href="$load_8hpp.html" title="mlpack/core/data/load.hpp" alt="" coords="1350,474,1525,501"/>
+<area shape="rect" id="node28" href="$save_8hpp.html" title="mlpack/core/data/save.hpp" alt="" coords="2563,474,2741,501"/>
+<area shape="rect" id="node30" href="$clamp_8hpp.html" title="Miscellaneous math clamping routines. " alt="" coords="710,474,901,501"/>
+<area shape="rect" id="node31" href="$random_8hpp.html" title="Miscellaneous math random&#45;related routines. " alt="" coords="975,474,1174,501"/>
+<area shape="rect" id="node34" href="$lin__alg_8hpp.html" title="mlpack/core/math/lin\l_alg.hpp" alt="" coords="1729,467,1871,508"/>
+<area shape="rect" id="node35" href="$range_8hpp.html" title="Definition of the Range class, which represents a simple range with a lower and upper bound..." alt="" coords="5,474,192,501"/>
+<area shape="rect" id="node37" href="$round_8hpp.html" title="mlpack/core/math/round.hpp" alt="" coords="1896,474,2083,501"/>
+<area shape="rect" id="node38" href="$save__restore__utility_8hpp.html" title="mlpack/core/util/save\l_restore_utility.hpp" alt="" coords="2768,556,2915,597"/>
+<area shape="rect" id="node41" href="$discrete__distribution_8hpp.html" title="mlpack/core/dists/discrete\l_distribution.hpp" alt="" coords="2107,467,2282,508"/>
+<area shape="rect" id="node42" href="$gaussian__distribution_8hpp.html" title="mlpack/core/dists/gaussian\l_distribution.hpp" alt="" coords="2307,467,2488,508"/>
+<area shape="rect" id="node16" href="$prefixedoutstream_8hpp.html" title="prefixedoutstream.hpp" alt="" coords="1449,645,1599,672"/>
+<area shape="rect" id="node17" href="$nulloutstream_8hpp.html" title="nulloutstream.hpp" alt="" coords="1299,645,1424,672"/>
+<area shape="rect" id="node23" href="$timers_8hpp.html" title="timers.hpp" alt="" coords="2328,645,2411,672"/>
+<area shape="rect" id="node24" href="$cli__deleter_8hpp.html" title="cli_deleter.hpp" alt="" coords="2147,645,2253,672"/>
+<area shape="rect" id="node46" href="$bounds_8hpp.html" title="Bounds that are useful for binary space partitioning trees. " alt="" coords="1329,221,1418,247"/>
+<area shape="rect" id="node47" href="$binary__space__tree_2binary__space__tree_8hpp.html" title="binary_space_tree/binary\l_space_tree.hpp" alt="" coords="1022,303,1189,344"/>
+<area shape="rect" id="node48" href="$binary__space__tree_2single__tree__traverser_8hpp.html" title="binary_space_tree/single\l_tree_traverser.hpp" alt="" coords="1138,213,1305,255"/>
+<area shape="rect" id="node49" href="$binary__space__tree_2dual__tree__traverser_8hpp.html" title="binary_space_tree/dual\l_tree_traverser.hpp" alt="" coords="906,213,1062,255"/>
 </map>

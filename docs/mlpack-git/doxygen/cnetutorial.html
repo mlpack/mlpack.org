@@ -1,0 +1,170 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">master</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">CNE Optimizer tutorial </div>  </div>
+</div>
+<div class="contents">
+<div class="textblock"><h1 ><a class="anchor" id="intro_cnetut"></a>
+Introduction</h1>
+<p >Conventional Neural Evolution (CNE) is a class of evolutionary algorithms focused on dealing with fixed topology networks. The CNE class implements this algorithm as an optimization technique to converge a given function to minima.</p>
+<p >The algorithm works by creating a fixed number of candidates, with random weights. Each candidate is tested upon the training set, and a fitness score is assigned to it. Given the selection percentage of best candidates by the user, for a single generation that many percentage of candidates are selected for the next generation and the rest are removed. The selected candidates for a particular generation then become the parents for the next generation and evolution takes place.</p>
+<h1 ><a class="anchor" id="toc_cnetut"></a>
+Table of Contents</h1>
+<p >A list of all the sections this tutorial contains.</p>
+<ul >
+<li ><a class="el" href="cnetutorial.html#intro_cnetut">Introduction</a></li>
+<li ><a class="el" href="cnetutorial.html#toc_cnetut">Table of Contents</a></li>
+<li ><a class="el" href="cnetutorial.html#cne_cnetut">The CNE optimizer class</a><ul >
+<li ><a class="el" href="cnetutorial.html#cne_ex1_cnetut">The constructor parameters.</a></li>
+<li ><a class="el" href="cnetutorial.html#cne_ex2_cnetut">Creating a model using the mlpack ANN class</a></li>
+<li ><a class="el" href="cnetutorial.html#cne_ex3_cnetut">Complete example</a></li>
+<li ><a class="el" href="cnetutorial.html#cne_ex4_cnetut">Logistic regression using CNE as an optimizer</a></li>
+</ul>
+</li>
+<li ><a class="el" href="cnetutorial.html#further_doc_cnetut">Further documentation</a></li>
+</ul>
+<h1 ><a class="anchor" id="cne_cnetut"></a>
+The CNE optimizer class</h1>
+<p >The CNE class is a simple implementation of the CNE optimizer to converge a given neural network.</p>
+<p >Using the CNE class is very simple and can be divided into 3 simple steps:</p>
+<p >1) The CNE object is made in which the constructor requires 7 input parameters. The default values and detailed explaination have been discussed in a separate section below.</p>
+<div class="fragment"><div class="line">CNE opt(<span class="keyword">const</span> <span class="keywordtype">size_t</span> populationSize,</div><div class="line">        <span class="keyword">const</span> <span class="keywordtype">size_t</span> maxGenerations,</div><div class="line">        <span class="keyword">const</span> <span class="keywordtype">double</span> mutationProb,</div><div class="line">        <span class="keyword">const</span> <span class="keywordtype">double</span> mutationSize,</div><div class="line">        <span class="keyword">const</span> <span class="keywordtype">double</span> selectPercent,</div><div class="line">        <span class="keyword">const</span> <span class="keywordtype">double</span> finalValue,</div><div class="line">        <span class="keyword">const</span> <span class="keywordtype">double</span> fitnessHist);</div></div><p >2) Making a neural network model and giving CNE as an optimizer to train the model. For our test, we will be using a feed forward network or vanilla network from the artificial neural network class.</p>
+<p >3) The trained model can then be used by calling:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> Predict(<span class="keyword">const</span> arma::mat&amp; predictors, arma::mat&amp; results);</div></div><p >Given the data to predict in armadillo matrix format. Matrix result is modified and the output of prediction is stored in it.</p>
+<h2 ><a class="anchor" id="cne_ex1_cnetut"></a>
+The constructor parameters.</h2>
+<div class="fragment"><div class="line">CNE(<span class="keyword">const</span> <span class="keywordtype">size_t</span> populationSize = 500,</div><div class="line">    <span class="keyword">const</span> <span class="keywordtype">size_t</span> maxGenerations = 5000,</div><div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> mutationProb = 0.1,</div><div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> mutationSize = 0.02,</div><div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> selectPercent = 0.2,</div><div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> tolerance = 1e-5,</div><div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> objectiveChange = 1e-5);</div></div><p >All the parameters are optional. The default values provided over here are not necessarily suitable for a given function. Therefore it is highly recommended to adjust the parameters according to the problem.</p>
+<p >The constructor parameters are as follows -</p>
+<p >1) populationSize: The number of candidates in the population. Default value is 500 candidates.</p>
+<p >Note: <code >populationSize</code> should be at least greator than or equal to 4.</p>
+<p >2) maxGenerations: The maximum number of generations allowed for CNE. Default value is 5000.</p>
+<p >Note: the algorithm may terminate in between if the termination conditions specified by the user are met.</p>
+<p >3) mutationProb: Probability that a weight will get mutated. The more the the value between [0, 1] the more chances of mutation in link weights. Default value is 0.1.</p>
+<p >4) mutationSize: The range of mutation noise to be added. This range is between 0 and mutationSize. Default value is 0.02.</p>
+<p >Note: This is not a constant but a range from which the mutation noise will be chosen.</p>
+<p >5) selectPercent: The percentage of candidates to select to become the the next generation. Value between 0 and 1. Where 1 represents 100%. Default value is 0.2.</p>
+<p >6) tolerance: The final value of the objective function for termination. Not considered if not provided by the user. Default value is 1e-5.</p>
+<p >Note: If set to negative value, tolerance will not be taken into consideration.</p>
+<p >7) objectiveChange: Minimum change in best fitness values between two consecutive generations should be greater than objectiveChange value. Default value is 1e-5.</p>
+<p >Note: If set to negative value, objectiveChange will not be taken into consideration.</p>
+<h2 ><a class="anchor" id="cne_ex2_cnetut"></a>
+Creating a model using the mlpack ANN class</h2>
+<p >Creating a model using mlpack's ANN class is simple and straightforward. Below is an example of a feedforward neural network.</p>
+<div class="fragment"><div class="line">FFN&lt;NegativeLogLikelihood&lt;&gt; &gt; network;</div><div class="line">network.Add&lt;Linear&lt;&gt; &gt;(2, 2);</div><div class="line">network.Add&lt;SigmoidLayer&lt;&gt; &gt;();</div><div class="line">network.Add&lt;Linear&lt;&gt; &gt;(2, 2);</div><div class="line">network.Add&lt;LogSoftMax&lt;&gt; &gt;();</div></div><p >First an object is created with the name <code >network</code> of type <code >FFN</code> (feedforward network). Layers can be added by calling the <code >Add()</code> method and specifying the type of layer and the arguments necessary to construct the layer.</p>
+<p >In this example we will be using 2 input nodes, 2 hidden nodes, and 2 output layer nodes. To train the network, we can use the following code:</p>
+<div class="fragment"><div class="line">network.Train(train, labels, opt);</div></div><p >The <code >Train()</code> method takes the following three parameters:</p>
+<p >1) <code >train:</code> The armadillo training data matrix.</p>
+<p >Note: Data points are arranged columnwise, where each column represents one data point. Therefore the number of training data provided is the number of columns in the dataset.</p>
+<p >2) <code >labels:</code> The output of the training data in armadillo format.</p>
+<p >Note: This is also columnwise as the training dataset matrix.</p>
+<p >3) <code >opt:</code> The type of optimizer. We will be using CNE in this tutorial.</p>
+<p >The <code >Predict()</code> method can be called after training to obtain the result:</p>
+<div class="fragment"><div class="line">network.Predict(test, predictions);</div></div><p >The parameter definitions for <code >Predict()</code> are:</p>
+<p >1) <code >test:</code> armadillo test set matrix in the above test set specified format.</p>
+<p >2) <code >predictors:</code> Will be modified by the model and output based on the test case prediction will be added in this matrix.</p>
+<h2 ><a class="anchor" id="cne_ex3_cnetut"></a>
+Complete example</h2>
+<p >In this example we will have two input nodes and the output should be the XOR of the two values. As mentioned before, our network structure is 2 input, 2 hidden and 2 output nodes.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span></div><div class="line"></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="layer_8hpp.html">mlpack/methods/ann/layer/layer.hpp</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="ffn_8hpp.html">mlpack/methods/ann/ffn.hpp</a>&gt;</span></div><div class="line"></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cne_8hpp.html">mlpack/core/optimizers/cne/cne.hpp</a>&gt;</span></div><div class="line"></div><div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacemlpack.html">mlpack</a>;</div><div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacemlpack_1_1ann.html">mlpack::ann</a>;</div><div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacemlpack_1_1optimization.html">mlpack::optimization</a>;</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main()</div><div class="line">{</div><div class="line"> <span class="comment">/*</span></div><div class="line"><span class="comment">   * Create the four cases for XOR with two variable</span></div><div class="line"><span class="comment">    </span></div><div class="line"><span class="comment">   *  Input    Output</span></div><div class="line"><span class="comment">   * 0 XOR 0  =  0</span></div><div class="line"><span class="comment">   * 1 XOR 1  =  0</span></div><div class="line"><span class="comment">   * 0 XOR 1  =  1</span></div><div class="line"><span class="comment">   * 1 XOR 0  =  1</span></div><div class="line"><span class="comment">   */</span></div><div class="line">  arma::mat train(<span class="stringliteral">&quot;1,0,0,1;1,0,1,0&quot;</span>);</div><div class="line">  arma::mat labels(<span class="stringliteral">&quot;1,1,2,2&quot;</span>);</div><div class="line"></div><div class="line">  <span class="comment">// Network with 2 input nodes, 2 hidden nodes, and 2 output layer nodes.</span></div><div class="line">  <a class="code" href="classmlpack_1_1ann_1_1FFN.html">FFN&lt;NegativeLogLikelihood&lt;&gt;</a> &gt; network;</div><div class="line"></div><div class="line">  network.<a class="code" href="classmlpack_1_1ann_1_1FFN.html#a8b5234495846c00f6b2c8296ca6bc718">Add</a>&lt;<a class="code" href="classmlpack_1_1ann_1_1Linear.html">Linear&lt;&gt;</a> &gt;(2, 2);</div><div class="line">  network.<a class="code" href="classmlpack_1_1ann_1_1FFN.html#a8b5234495846c00f6b2c8296ca6bc718">Add</a>&lt;<a class="code" href="classmlpack_1_1ann_1_1BaseLayer.html">SigmoidLayer&lt;&gt;</a> &gt;();</div><div class="line">  network.<a class="code" href="classmlpack_1_1ann_1_1FFN.html#a8b5234495846c00f6b2c8296ca6bc718">Add</a>&lt;<a class="code" href="classmlpack_1_1ann_1_1Linear.html">Linear&lt;&gt;</a> &gt;(2, 2);</div><div class="line">  network.<a class="code" href="classmlpack_1_1ann_1_1FFN.html#a8b5234495846c00f6b2c8296ca6bc718">Add</a>&lt;<a class="code" href="classmlpack_1_1ann_1_1LogSoftMax.html">LogSoftMax&lt;&gt;</a> &gt;();</div><div class="line"></div><div class="line">  <span class="comment">// CNE object.</span></div><div class="line">  <a class="code" href="classmlpack_1_1optimization_1_1CNE.html">CNE</a> opt(20, 5000, 0.1, 0.02, 0.2, 0, 0);</div><div class="line"></div><div class="line">  <span class="comment">// Train the network with CNE.</span></div><div class="line">  network.<a class="code" href="classmlpack_1_1ann_1_1FFN.html#a0f09f265b04e54a39e8627a53b3cab6a">Train</a>(train, labels, opt);</div><div class="line"></div><div class="line">  <span class="comment">// Predict for the same train data.</span></div><div class="line">  arma::mat predictionTemp;</div><div class="line">  network.<a class="code" href="classmlpack_1_1ann_1_1FFN.html#abf82c92c2116f34fb36118155da42a4e">Predict</a>(train, predictionTemp);</div><div class="line"></div><div class="line">  arma::mat prediction = arma::zeros&lt;arma::mat&gt;(1, predictionTemp.n_cols);</div><div class="line"></div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; predictionTemp.n_cols; ++i)</div><div class="line">  {</div><div class="line">    prediction(i) = arma::as_scalar(arma::find(</div><div class="line">        arma::max(predictionTemp.col(i)) == predictionTemp.col(i), 1)) + 1;</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="comment">// Print the results.</span></div><div class="line">  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; 4; i++)</div><div class="line">    std::cout &lt;&lt; prediction &lt;&lt; std::endl;</div><div class="line">}</div></div><h2 ><a class="anchor" id="cne_ex4_cnetut"></a>
+Logistic regression using CNE as an optimizer</h2>
+<p >Though CNE stands for Conventional "Neural" Evolution, we have implemented it as a generic optimizer. Therefore, it is able to converge for logistic regression function also.</p>
+<p >The code below uses mlpack's <code >LogisticRegression</code> class, optimizing with CNE (a separate tutorial exists for LogisticRegression).</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span></div><div class="line"></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="logistic__regression_8hpp.html">mlpack/methods/logistic_regression/logistic_regression.hpp</a>&gt;</span></div><div class="line"></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="layer_8hpp.html">mlpack/methods/ann/layer/layer.hpp</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="ffn_8hpp.html">mlpack/methods/ann/ffn.hpp</a>&gt;</span></div><div class="line"></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cne_8hpp.html">mlpack/core/optimizers/cne/cne.hpp</a>&gt;</span></div><div class="line"></div><div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><span class="keyword">using namespace </span>arma;</div><div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacemlpack.html">mlpack</a>;</div><div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacemlpack_1_1ann.html">mlpack::ann</a>;</div><div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacemlpack_1_1optimization.html">mlpack::optimization</a>;</div><div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacemlpack_1_1optimization_1_1test.html">mlpack::optimization::test</a>;</div><div class="line"></div><div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacemlpack_1_1distribution.html">mlpack::distribution</a>;</div><div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacemlpack_1_1regression.html">mlpack::regression</a>;</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main()</div><div class="line">{</div><div class="line">  <span class="comment">// Generate a two-Gaussian dataset.</span></div><div class="line">  <a class="code" href="classmlpack_1_1distribution_1_1GaussianDistribution.html">GaussianDistribution</a> g1(arma::vec(<span class="stringliteral">&quot;1.0 1.0 1.0&quot;</span>), arma::eye&lt;arma::mat&gt;(3, 3));</div><div class="line">  <a class="code" href="classmlpack_1_1distribution_1_1GaussianDistribution.html">GaussianDistribution</a> g2(arma::vec(<span class="stringliteral">&quot;9.0 9.0 9.0&quot;</span>), arma::eye&lt;arma::mat&gt;(3, 3));</div><div class="line"></div><div class="line">  arma::mat data(3, 1000);</div><div class="line">  arma::Row&lt;size_t&gt; responses(1000);</div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; 500; ++i)</div><div class="line">  {</div><div class="line">    data.col(i) = g1.Random();</div><div class="line">    responses[i] = 0;</div><div class="line">  }</div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 500; i &lt; 1000; ++i)</div><div class="line">  {</div><div class="line">    data.col(i) = g2.Random();</div><div class="line">    responses[i] = 1;</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="comment">// Shuffle the dataset.</span></div><div class="line">  arma::uvec indices = arma::shuffle(arma::linspace&lt;arma::uvec&gt;(0,</div><div class="line">      data.n_cols - 1, data.n_cols));</div><div class="line">  arma::mat shuffledData(3, 1000);</div><div class="line">  arma::Row&lt;size_t&gt; shuffledResponses(1000);</div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; data.n_cols; ++i)</div><div class="line">  {</div><div class="line">    shuffledData.col(i) = data.col(indices[i]);</div><div class="line">    shuffledResponses[i] = responses[indices[i]];</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="comment">// Create a test set.</span></div><div class="line">  arma::mat testData(3, 1000);</div><div class="line">  arma::Row&lt;size_t&gt; testResponses(1000);</div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; 500; ++i)</div><div class="line">  {</div><div class="line">    testData.col(i) = g1.Random();</div><div class="line">    testResponses[i] = 0;</div><div class="line">  }</div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 500; i &lt; 1000; ++i)</div><div class="line">  {</div><div class="line">    testData.col(i) = g2.Random();</div><div class="line">    testResponses[i] = 1;</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="comment">// *******************************************************************</span></div><div class="line"></div><div class="line">  <a class="code" href="classmlpack_1_1optimization_1_1CNE.html">CNE</a> opt(50, 2000, 0.1, 0.02, 0.2, 1, 0);</div><div class="line"></div><div class="line">  <a class="code" href="classmlpack_1_1regression_1_1LogisticRegression.html">LogisticRegression&lt;&gt;</a> lr(shuffledData, shuffledResponses, opt, 0.5);</div><div class="line"></div><div class="line">  <span class="comment">// *******************************************************************</span></div><div class="line"></div><div class="line">  <span class="comment">// Ensure that the error is close to zero. This is 100% means no error</span></div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">double</span> acc = lr.ComputeAccuracy(data, responses);</div><div class="line">  cout &lt;&lt; acc &lt;&lt; endl;</div><div class="line"></div><div class="line">  <span class="comment">// Check if optimization happened correctly or not by using test set.</span></div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">double</span> testAcc = lr.ComputeAccuracy(testData, testResponses);</div><div class="line"></div><div class="line">  <span class="comment">// 100% means no error.</span></div><div class="line">  cout &lt;&lt; testAcc &lt;&lt; endl;</div><div class="line">}</div></div><h1 ><a class="anchor" id="further_doc_cnetut"></a>
+Further documentation</h1>
+<p >For further documentation on the CNE class, consult the complete API documentation. </p>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

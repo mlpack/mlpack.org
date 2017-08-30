@@ -1,20 +1,18 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$binary__space__tree_8hpp.html" title="src/mlpack/core/tree/binary_space_tree.hpp" alt="" coords="1039,83,1340,111"/>
-<area shape="rect" id="node5" href="$binary__space__tree_2single__tree__traverser_8hpp.html" title="src/mlpack/core/tree/binary_space_tree/single_tree_traverser.hpp" alt="" coords="5,161,445,189"/>
-<area shape="rect" id="node8" href="$binary__space__tree_2dual__tree__traverser_8hpp.html" title="src/mlpack/core/tree/binary_space_tree/dual_tree_traverser.hpp" alt="" coords="469,161,899,189"/>
-<area shape="rect" id="node11" href="$dtb_8hpp.html" title="src/mlpack/methods/emst/dtb.hpp" alt="" coords="923,161,1165,189"/>
-<area shape="rect" id="node13" href="$kmeans_8hpp.html" title="src/mlpack/methods/kmeans/kmeans.hpp" alt="" coords="1189,161,1480,189"/>
-<area shape="rect" id="node26" href="$neighbor__search_8hpp.html" title="src/mlpack/methods/neighbor_search/neighbor_search.hpp" alt="" coords="1504,161,1904,189"/>
-<area shape="rect" id="node33" href="$range__search_8hpp.html" title="src/mlpack/methods/range_search/range_search.hpp" alt="" coords="1928,161,2291,189"/>
-<area shape="rect" id="node35" href="$ra__query__stat_8hpp.html" title="src/mlpack/methods/rann/ra_query_stat.hpp" alt="" coords="2315,161,2619,189"/>
-<area shape="rect" id="node37" href="$ra__search_8hpp.html" title="src/mlpack/methods/rann/ra_search.hpp" alt="" coords="2421,238,2701,266"/>
-<area shape="rect" id="node15" href="$em__fit_8hpp.html" title="src/mlpack/methods/gmm/em_fit.hpp" alt="" coords="839,238,1100,266"/>
-<area shape="rect" id="node19" href="$kmeans__selection_8hpp.html" title="src/mlpack/methods/nystroem_method/kmeans_selection.hpp" alt="" coords="1124,238,1545,266"/>
-<area shape="rect" id="node17" href="$gmm_8hpp.html" title="src/mlpack/methods/gmm/gmm.hpp" alt="" coords="841,315,1097,343"/>
-<area shape="rect" id="node21" href="$kernel__pca_2kernel__rules_2nystroem__method_8hpp.html" title="src/mlpack/methods/kernel_pca/kernel_rules/nystroem_method.hpp" alt="" coords="1131,393,1587,421"/>
-<area shape="rect" id="node23" href="$nystroem__method_2nystroem__method_8hpp.html" title="src/mlpack/methods/nystroem_method/nystroem_method.hpp" alt="" coords="1272,315,1696,343"/>
-<area shape="rect" id="node28" href="$cf_8hpp.html" title="src/mlpack/methods/cf/cf.hpp" alt="" coords="1569,238,1777,266"/>
-<area shape="rect" id="node30" href="$typedef_8hpp.html" title="src/mlpack/methods/neighbor_search/typedef.hpp" alt="" coords="1801,238,2143,266"/>
-<area shape="rect" id="node39" href="$ra__typedef_8hpp.html" title="src/mlpack/methods/rann/ra_typedef.hpp" alt="" coords="2420,315,2703,343"/>
-<area shape="rect" id="node42" href="$ra__search__rules_8hpp.html" title="src/mlpack/methods/rann/ra_search_rules.hpp" alt="" coords="2727,315,3044,343"/>
+<map id="src/mlpack/core/tree/binary_space_tree/traits.hpp" name="src/mlpack/core/tree/binary_space_tree/traits.hpp">
+<area shape="rect" id="node2" href="$binary__space__tree_8hpp.html" title="src/mlpack/core/tree\l/binary_space_tree.hpp" alt="" coords="457,95,614,136"/>
+<area shape="rect" id="node3" href="$dtb_8hpp.html" title="src/mlpack/methods\l/emst/dtb.hpp" alt="" coords="21,191,161,233"/>
+<area shape="rect" id="node4" href="$kmeans_8hpp.html" title="src/mlpack/methods\l/kmeans/kmeans.hpp" alt="" coords="186,191,333,233"/>
+<area shape="rect" id="node10" href="$neighbor__search_8hpp.html" title="src/mlpack/methods\l/neighbor_search/neighbor\l_search.hpp" alt="" coords="357,184,532,240"/>
+<area shape="rect" id="node13" href="$range__search_8hpp.html" title="src/mlpack/methods\l/range_search/range\l_search.hpp" alt="" coords="556,184,696,240"/>
+<area shape="rect" id="node14" href="$ra__query__stat_8hpp.html" title="src/mlpack/methods\l/rann/ra_query_stat.hpp" alt="" coords="720,191,879,233"/>
+<area shape="rect" id="node15" href="$ra__search_8hpp.html" title="src/mlpack/methods\l/rann/ra_search.hpp" alt="" coords="800,295,940,337"/>
+<area shape="rect" id="node5" href="$em__fit_8hpp.html" title="src/mlpack/methods\l/gmm/em_fit.hpp" alt="" coords="5,295,145,337"/>
+<area shape="rect" id="node7" href="$kmeans__selection_8hpp.html" title="src/mlpack/methods\l/nystroem_method/kmeans\l_selection.hpp" alt="" coords="169,288,349,344"/>
+<area shape="rect" id="node6" href="$gmm_8hpp.html" title="src/mlpack/methods\l/gmm/gmm.hpp" alt="" coords="5,399,145,441"/>
+<area shape="rect" id="node8" href="$kernel__pca_2kernel__rules_2nystroem__method_8hpp.html" title="src/mlpack/methods\l/kernel_pca/kernel_rules\l/nystroem_method.hpp" alt="" coords="206,496,369,552"/>
+<area shape="rect" id="node9" href="$nystroem__method_2nystroem__method_8hpp.html" title="src/mlpack/methods\l/nystroem_method/nystroem\l_method.hpp" alt="" coords="260,392,448,448"/>
+<area shape="rect" id="node11" href="$cf_8hpp.html" title="src/mlpack/methods\l/cf/cf.hpp" alt="" coords="373,295,513,337"/>
+<area shape="rect" id="node12" href="$typedef_8hpp.html" title="src/mlpack/methods\l/neighbor_search/typedef.hpp" alt="" coords="537,295,731,337"/>
+<area shape="rect" id="node16" href="$ra__typedef_8hpp.html" title="src/mlpack/methods\l/rann/ra_typedef.hpp" alt="" coords="799,399,941,441"/>
+<area shape="rect" id="node17" href="$ra__search__rules_8hpp.html" title="src/mlpack/methods\l/rann/ra_search_rules.hpp" alt="" coords="965,399,1137,441"/>
 </map>

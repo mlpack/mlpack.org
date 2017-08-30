@@ -1,22 +1,50 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head >
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
-<meta name="generator" content="Doxygen 1.8.9.1"></meta>
-<title >mlpack: src/mlpack/methods/gmm/positive_definite_constraint.hpp Source File</title><link href="tabs.css" rel="stylesheet" type="text/css" />
-</link>
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
-</link>
-</head>
-<body >
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
 <div id="top">
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody >
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mlpack
    &#160;<span id="projectnumber">2.0.0</span>
    </div>
@@ -26,25 +54,17 @@
 </table>
 </div>
 
-
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
-      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
-      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
-      <li ><a href="annotated.html"><span >Classes</span></a></li>
-      <li class="current"><a href="files.html"><span >Files</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li ><a href="files.html"><span >File&#160;List</span></a></li>
-      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+</script>
+<div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul >
-<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_19fd2ebec21bf6d8aaa7fdf30f286d47.html">methods</a></li><li class="navelem"><a class="el" href="dir_ca9b5c0fce4be685e93c1c45bc439235.html">gmm</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_44a936ef30fc126706c6284a2fc0c990.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_3cfbf900288ec2fe8dd2c2c8482f216e.html">methods</a></li><li class="navelem"><a class="el" href="dir_8736a0c763d9f23987032ed3e2a224d2.html">gmm</a></li>  </ul>
 </div>
 </div>
 <div class="header">
@@ -52,74 +72,7 @@
 <div class="title">positive_definite_constraint.hpp</div>  </div>
 </div>
 <div class="contents">
-<a href="positive__definite__constraint_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef __MLPACK_METHODS_GMM_POSITIVE_DEFINITE_CONSTRAINT_HPP</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define __MLPACK_METHODS_GMM_POSITIVE_DEFINITE_CONSTRAINT_HPP</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>gmm {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classmlpack_1_1gmm_1_1PositiveDefiniteConstraint.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1gmm_1_1PositiveDefiniteConstraint.html">PositiveDefiniteConstraint</a></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classmlpack_1_1gmm_1_1PositiveDefiniteConstraint.html#adc78dda1c4fd422beb3a49ba3e4cc144">   41</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1gmm_1_1PositiveDefiniteConstraint.html#adc78dda1c4fd422beb3a49ba3e4cc144">ApplyConstraint</a>(arma::mat&amp; covariance)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// Realistically, all we care about is that we can perform a Cholesky</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// decomposition of the matrix, so that FactorCovariance() doesn&#39;t fail</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// later.  Therefore, that&#39;s what we&#39;ll do to check for positive</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// definiteness...</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// Note that other techniques like checking the determinant *could* work,</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// but floating-point errors mean that various decompositions may start to</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// fail when the matrix gets close to being indefinite.  This is why we test</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// with chol() and not something else, since that&#39;s what will be used later.</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// We also need to make sure that the errors go to nowhere, so we have to</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// call set_stream_err2()...</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    std::ostringstream oss;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    std::ostream&amp; originalStream = arma::get_stream_err2();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    arma::set_stream_err2(oss); <span class="comment">// Thus, errors won&#39;t be displayed.</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    arma::mat covLower;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">    #if (ARMA_VERSION_MAJOR &lt; 4) || \</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">        ((ARMA_VERSION_MAJOR == 4) &amp;&amp; (ARMA_VERSION_MINOR &lt; 500))</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span> (!arma::chol(covLower, covariance))</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">    #else</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span> (!arma::chol(covLower, covariance, <span class="stringliteral">&quot;lower&quot;</span>))</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">    #endif</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <a class="code" href="classmlpack_1_1Log.html#a771c6107b594176ffae1a036c253ca93">Log::Debug</a> &lt;&lt; <span class="stringliteral">&quot;Covariance matrix is not positive definite.  Adding &quot;</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;perturbation.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordtype">double</span> perturbation = 1e-15;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">      #if (ARMA_VERSION_MAJOR &lt; 4) || \</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">          ((ARMA_VERSION_MAJOR == 4) &amp;&amp; (ARMA_VERSION_MAJOR &lt; 500))</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordflow">while</span> (!arma::chol(covLower, covariance))</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">      #else</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordflow">while</span> (!arma::chol(covLower, covariance, <span class="stringliteral">&quot;lower&quot;</span>))</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">      #endif</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        covariance.diag() += perturbation;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        perturbation *= 10;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// Restore the original stream state.</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    arma::set_stream_err2(originalStream);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Archive&gt;</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classmlpack_1_1gmm_1_1PositiveDefiniteConstraint.html#a7be39fa4bb0c5095d0c870507315602b">   89</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1gmm_1_1PositiveDefiniteConstraint.html#a7be39fa4bb0c5095d0c870507315602b">Serialize</a>(Archive&amp; <span class="comment">/* ar */</span>, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="comment">/* version */</span>) { }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;} <span class="comment">// namespace gmm</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;} <span class="comment">// namespace mlpack</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
+<a href="positive__definite__constraint_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef __MLPACK_METHODS_GMM_POSITIVE_DEFINITE_CONSTRAINT_HPP</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define __MLPACK_METHODS_GMM_POSITIVE_DEFINITE_CONSTRAINT_HPP</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>gmm {</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classmlpack_1_1gmm_1_1PositiveDefiniteConstraint.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1gmm_1_1PositiveDefiniteConstraint.html">PositiveDefiniteConstraint</a></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; <span class="keyword">public</span>:</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classmlpack_1_1gmm_1_1PositiveDefiniteConstraint.html#adc78dda1c4fd422beb3a49ba3e4cc144">   41</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1gmm_1_1PositiveDefiniteConstraint.html#adc78dda1c4fd422beb3a49ba3e4cc144">ApplyConstraint</a>(arma::mat&amp; covariance)</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  {</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// Realistically, all we care about is that we can perform a Cholesky</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// decomposition of the matrix, so that FactorCovariance() doesn&#39;t fail</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// later.  Therefore, that&#39;s what we&#39;ll do to check for positive</span></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// definiteness...</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">//</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// Note that other techniques like checking the determinant *could* work,</span></div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// but floating-point errors mean that various decompositions may start to</span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// fail when the matrix gets close to being indefinite.  This is why we test</span></div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// with chol() and not something else, since that&#39;s what will be used later.</span></div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// We also need to make sure that the errors go to nowhere, so we have to</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// call set_stream_err2()...</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    std::ostringstream oss;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    std::ostream&amp; originalStream = arma::get_stream_err2();</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    arma::set_stream_err2(oss); <span class="comment">// Thus, errors won&#39;t be displayed.</span></div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    arma::mat covLower;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">    #if (ARMA_VERSION_MAJOR &lt; 4) || \</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">        ((ARMA_VERSION_MAJOR == 4) &amp;&amp; (ARMA_VERSION_MINOR &lt; 500))</span></div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span> (!arma::chol(covLower, covariance))</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">    #else</span></div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span> (!arma::chol(covLower, covariance, <span class="stringliteral">&quot;lower&quot;</span>))</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">    #endif</span></div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <a class="code" href="classmlpack_1_1Log.html#a771c6107b594176ffae1a036c253ca93">Log::Debug</a> &lt;&lt; <span class="stringliteral">&quot;Covariance matrix is not positive definite.  Adding &quot;</span></div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;perturbation.&quot;</span> &lt;&lt; std::endl;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordtype">double</span> perturbation = 1e-15;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">      #if (ARMA_VERSION_MAJOR &lt; 4) || \</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">          ((ARMA_VERSION_MAJOR == 4) &amp;&amp; (ARMA_VERSION_MAJOR &lt; 500))</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordflow">while</span> (!arma::chol(covLower, covariance))</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">      #else</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordflow">while</span> (!arma::chol(covLower, covariance, <span class="stringliteral">&quot;lower&quot;</span>))</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">      #endif</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      {</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        covariance.diag() += perturbation;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        perturbation *= 10;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      }</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// Restore the original stream state.</span></div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    arma::set_stream_err2(originalStream);</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Archive&gt;</div><div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classmlpack_1_1gmm_1_1PositiveDefiniteConstraint.html#a7be39fa4bb0c5095d0c870507315602b">   89</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1gmm_1_1PositiveDefiniteConstraint.html#a7be39fa4bb0c5095d0c870507315602b">Serialize</a>(Archive&amp; <span class="comment">/* ar */</span>, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="comment">/* version */</span>) { }</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;} <span class="comment">// namespace gmm</span></div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;} <span class="comment">// namespace mlpack</span></div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div><div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
 <div class="ttc" id="classmlpack_1_1gmm_1_1PositiveDefiniteConstraint_html_adc78dda1c4fd422beb3a49ba3e4cc144"><div class="ttname"><a href="classmlpack_1_1gmm_1_1PositiveDefiniteConstraint.html#adc78dda1c4fd422beb3a49ba3e4cc144">mlpack::gmm::PositiveDefiniteConstraint::ApplyConstraint</a></div><div class="ttdeci">static void ApplyConstraint(arma::mat &amp;covariance)</div><div class="ttdoc">Apply the positive definiteness constraint to the given covariance matrix. </div><div class="ttdef"><b >Definition:</b> <a href="positive__definite__constraint_8hpp_source.html#l00041">positive_definite_constraint.hpp:41</a></div></div>
 <div class="ttc" id="core_8hpp_html"><div class="ttname"><a href="core_8hpp.html">core.hpp</a></div><div class="ttdoc">Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu...</div></div>
 <div class="ttc" id="classmlpack_1_1Log_html_a771c6107b594176ffae1a036c253ca93"><div class="ttname"><a href="classmlpack_1_1Log.html#a771c6107b594176ffae1a036c253ca93">mlpack::Log::Debug</a></div><div class="ttdeci">static util::NullOutStream Debug</div><div class="ttdoc">Dumps debug output into the bit nether regions. </div><div class="ttdef"><b >Definition:</b> <a href="log_8hpp_source.html#l00084">log.hpp:84</a></div></div>
@@ -130,7 +83,16 @@
 <hr class="footer"></hr><address class="footer"><small >
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"></img>
-</a> 1.8.9.1
+</a> 1.8.13
 </small></address>
+</div>
 </body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
 </html>

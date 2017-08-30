@@ -1,22 +1,50 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head >
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
-<meta name="generator" content="Doxygen 1.8.9.1"></meta>
-<title >mlpack: src/mlpack/methods/emst/dtb_rules.hpp File Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
-</link>
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
-</link>
-</head>
-<body >
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
 <div id="top">
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody >
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mlpack
    &#160;<span id="projectnumber">2.0.0</span>
    </div>
@@ -26,25 +54,17 @@
 </table>
 </div>
 
-
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
-      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
-      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
-      <li ><a href="annotated.html"><span >Classes</span></a></li>
-      <li class="current"><a href="files.html"><span >Files</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li ><a href="files.html"><span >File&#160;List</span></a></li>
-      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+</script>
+<div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul >
-<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_19fd2ebec21bf6d8aaa7fdf30f286d47.html">methods</a></li><li class="navelem"><a class="el" href="dir_7e716b94d8fcf76b5db585c54c231d8b.html">emst</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_44a936ef30fc126706c6284a2fc0c990.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_3cfbf900288ec2fe8dd2c2c8482f216e.html">methods</a></li><li class="navelem"><a class="el" href="dir_88d49b0062d70fa894a1612206b4da93.html">emst</a></li>  </ul>
 </div>
 </div>
 <div class="header">
@@ -60,7 +80,39 @@ Include dependency graph for dtb_rules.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="dtb__rules_8hpp__incl.png" border="0" usemap="#src_2mlpack_2methods_2emst_2dtb__rules_8hpp" alt=""></img></div>
 <map name="src_2mlpack_2methods_2emst_2dtb__rules_8hpp" id="src_2mlpack_2methods_2emst_2dtb__rules_8hpp">
-<area shape="rect" id="node2" href="core_8hpp.html" title="Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu..." alt="" coords="3435,102,3553,129"></area><area shape="rect" id="node49" href="ns__traversal__info_8hpp.html" title="../neighbor_search\l/ns_traversal_info.hpp" alt="" coords="3577,95,3728,136"></area><area shape="rect" id="node3" href="prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo. " alt="" coords="1074,288,1210,315"></area><area shape="rect" id="node22" href="arma__traits_8hpp.html" title="mlpack/core/util/arma\l_traits.hpp" alt="" coords="2611,191,2758,233"></area><area shape="rect" id="node23" href="log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="2166,288,2326,315"></area><area shape="rect" id="node25" href="cli_8hpp.html" title="mlpack/core/util/cli.hpp" alt="" coords="1833,288,1989,315"></area><area shape="rect" id="node26" href="load_8hpp.html" title="mlpack/core/data/load.hpp" alt="" coords="1940,199,2115,225"></area><area shape="rect" id="node27" href="save_8hpp.html" title="mlpack/core/data/save.hpp" alt="" coords="2139,199,2318,225"></area><area shape="rect" id="node28" href="normalize__labels_8hpp.html" title="mlpack/core/data/normalize\l_labels.hpp" alt="" coords="1289,191,1472,233"></area><area shape="rect" id="node29" href="clamp_8hpp.html" title="Miscellaneous math clamping routines. " alt="" coords="72,288,263,315"></area><area shape="rect" id="node30" href="random_8hpp.html" title="Miscellaneous math random-related routines. " alt="" coords="1496,199,1695,225"></area><area shape="rect" id="node31" href="random__basis_8hpp.html" title="mlpack/core/math/random\l_basis.hpp" alt="" coords="873,191,1046,233"></area><area shape="rect" id="node32" href="lin__alg_8hpp.html" title="mlpack/core/math/lin\l_alg.hpp" alt="" coords="1071,191,1213,233"></area><area shape="rect" id="node33" href="range_8hpp.html" title="Definition of the Range class, which represents a simple range with a lower and upper bound..." alt="" coords="2782,199,2969,225"></area><area shape="rect" id="node34" href="round_8hpp.html" title="mlpack/core/math/round.hpp" alt="" coords="2993,199,3179,225"></area><area shape="rect" id="node35" href="discrete__distribution_8hpp.html" title="mlpack/core/dists/discrete\l_distribution.hpp" alt="" coords="3204,191,3379,233"></area><area shape="rect" id="node36" href="gaussian__distribution_8hpp.html" title="mlpack/core/dists/gaussian\l_distribution.hpp" alt="" coords="3403,191,3585,233"></area><area shape="rect" id="node37" href="laplace__distribution_8hpp.html" title="mlpack/core/dists/laplace\l_distribution.hpp" alt="" coords="3609,191,3779,233"></area><area shape="rect" id="node38" href="kernel__traits_8hpp.html" title="mlpack/core/kernels\l/kernel_traits.hpp" alt="" coords="3803,191,3942,233"></area><area shape="rect" id="node39" href="linear__kernel_8hpp.html" title="mlpack/core/kernels\l/linear_kernel.hpp" alt="" coords="3966,191,4105,233"></area><area shape="rect" id="node40" href="polynomial__kernel_8hpp.html" title="mlpack/core/kernels\l/polynomial_kernel.hpp" alt="" coords="4129,191,4283,233"></area><area shape="rect" id="node41" href="cosine__distance_8hpp.html" title="mlpack/core/kernels\l/cosine_distance.hpp" alt="" coords="4308,191,4453,233"></area><area shape="rect" id="node42" href="gaussian__kernel_8hpp.html" title="mlpack/core/kernels\l/gaussian_kernel.hpp" alt="" coords="4477,191,4623,233"></area><area shape="rect" id="node43" href="epanechnikov__kernel_8hpp.html" title="mlpack/core/kernels\l/epanechnikov_kernel.hpp" alt="" coords="4647,191,4821,233"></area><area shape="rect" id="node44" href="hyperbolic__tangent__kernel_8hpp.html" title="mlpack/core/kernels\l/hyperbolic_tangent\l_kernel.hpp" alt="" coords="4845,184,4983,240"></area><area shape="rect" id="node45" href="laplacian__kernel_8hpp.html" title="mlpack/core/kernels\l/laplacian_kernel.hpp" alt="" coords="5007,191,5151,233"></area><area shape="rect" id="node46" href="pspectrum__string__kernel_8hpp.html" title="mlpack/core/kernels\l/pspectrum_string_kernel.hpp" alt="" coords="2393,191,2587,233"></area><area shape="rect" id="node47" href="spherical__kernel_8hpp.html" title="mlpack/core/kernels\l/spherical_kernel.hpp" alt="" coords="1719,191,1864,233"></area><area shape="rect" id="node48" href="triangular__kernel_8hpp.html" title="mlpack/core/kernels\l/triangular_kernel.hpp" alt="" coords="5175,191,5322,233"></area><area shape="rect" id="node18" href="unordered__map_8hpp.html" title="core/boost_backport\l/unordered_map.hpp" alt="" coords="1028,363,1168,404"></area><area shape="rect" id="node19" href="serialization__shim_8hpp.html" title="mlpack/core/data/serialization\l_shim.hpp" alt="" coords="507,363,702,404"></area><area shape="rect" id="node21" href="arma__config__check_8hpp.html" title="mlpack/core/util/arma\l_config_check.hpp" alt="" coords="1193,363,1339,404"></area></map>
+<area shape="rect" id="node2" href="core_8hpp.html" title="Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu..." alt="" coords="3435,102,3553,129"></area>
+<area shape="rect" id="node49" href="ns__traversal__info_8hpp.html" title="../neighbor_search\l/ns_traversal_info.hpp" alt="" coords="3577,95,3728,136"></area>
+<area shape="rect" id="node3" href="prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo. " alt="" coords="1074,288,1210,315"></area>
+<area shape="rect" id="node22" href="arma__traits_8hpp.html" title="mlpack/core/util/arma\l_traits.hpp" alt="" coords="2611,191,2758,233"></area>
+<area shape="rect" id="node23" href="log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="2166,288,2326,315"></area>
+<area shape="rect" id="node25" href="cli_8hpp.html" title="mlpack/core/util/cli.hpp" alt="" coords="1833,288,1989,315"></area>
+<area shape="rect" id="node26" href="load_8hpp.html" title="mlpack/core/data/load.hpp" alt="" coords="1940,199,2115,225"></area>
+<area shape="rect" id="node27" href="save_8hpp.html" title="mlpack/core/data/save.hpp" alt="" coords="2139,199,2318,225"></area>
+<area shape="rect" id="node28" href="normalize__labels_8hpp.html" title="mlpack/core/data/normalize\l_labels.hpp" alt="" coords="1289,191,1472,233"></area>
+<area shape="rect" id="node29" href="clamp_8hpp.html" title="Miscellaneous math clamping routines. " alt="" coords="72,288,263,315"></area>
+<area shape="rect" id="node30" href="random_8hpp.html" title="Miscellaneous math random-related routines. " alt="" coords="1496,199,1695,225"></area>
+<area shape="rect" id="node31" href="random__basis_8hpp.html" title="mlpack/core/math/random\l_basis.hpp" alt="" coords="873,191,1046,233"></area>
+<area shape="rect" id="node32" href="lin__alg_8hpp.html" title="mlpack/core/math/lin\l_alg.hpp" alt="" coords="1071,191,1213,233"></area>
+<area shape="rect" id="node33" href="range_8hpp.html" title="Definition of the Range class, which represents a simple range with a lower and upper bound..." alt="" coords="2782,199,2969,225"></area>
+<area shape="rect" id="node34" href="round_8hpp.html" title="mlpack/core/math/round.hpp" alt="" coords="2993,199,3179,225"></area>
+<area shape="rect" id="node35" href="discrete__distribution_8hpp.html" title="mlpack/core/dists/discrete\l_distribution.hpp" alt="" coords="3204,191,3379,233"></area>
+<area shape="rect" id="node36" href="gaussian__distribution_8hpp.html" title="mlpack/core/dists/gaussian\l_distribution.hpp" alt="" coords="3403,191,3585,233"></area>
+<area shape="rect" id="node37" href="laplace__distribution_8hpp.html" title="mlpack/core/dists/laplace\l_distribution.hpp" alt="" coords="3609,191,3779,233"></area>
+<area shape="rect" id="node38" href="kernel__traits_8hpp.html" title="mlpack/core/kernels\l/kernel_traits.hpp" alt="" coords="3803,191,3942,233"></area>
+<area shape="rect" id="node39" href="linear__kernel_8hpp.html" title="mlpack/core/kernels\l/linear_kernel.hpp" alt="" coords="3966,191,4105,233"></area>
+<area shape="rect" id="node40" href="polynomial__kernel_8hpp.html" title="mlpack/core/kernels\l/polynomial_kernel.hpp" alt="" coords="4129,191,4283,233"></area>
+<area shape="rect" id="node41" href="cosine__distance_8hpp.html" title="mlpack/core/kernels\l/cosine_distance.hpp" alt="" coords="4308,191,4453,233"></area>
+<area shape="rect" id="node42" href="gaussian__kernel_8hpp.html" title="mlpack/core/kernels\l/gaussian_kernel.hpp" alt="" coords="4477,191,4623,233"></area>
+<area shape="rect" id="node43" href="epanechnikov__kernel_8hpp.html" title="mlpack/core/kernels\l/epanechnikov_kernel.hpp" alt="" coords="4647,191,4821,233"></area>
+<area shape="rect" id="node44" href="hyperbolic__tangent__kernel_8hpp.html" title="mlpack/core/kernels\l/hyperbolic_tangent\l_kernel.hpp" alt="" coords="4845,184,4983,240"></area>
+<area shape="rect" id="node45" href="laplacian__kernel_8hpp.html" title="mlpack/core/kernels\l/laplacian_kernel.hpp" alt="" coords="5007,191,5151,233"></area>
+<area shape="rect" id="node46" href="pspectrum__string__kernel_8hpp.html" title="mlpack/core/kernels\l/pspectrum_string_kernel.hpp" alt="" coords="2393,191,2587,233"></area>
+<area shape="rect" id="node47" href="spherical__kernel_8hpp.html" title="mlpack/core/kernels\l/spherical_kernel.hpp" alt="" coords="1719,191,1864,233"></area>
+<area shape="rect" id="node48" href="triangular__kernel_8hpp.html" title="mlpack/core/kernels\l/triangular_kernel.hpp" alt="" coords="5175,191,5322,233"></area>
+<area shape="rect" id="node18" href="unordered__map_8hpp.html" title="core/boost_backport\l/unordered_map.hpp" alt="" coords="1028,363,1168,404"></area>
+<area shape="rect" id="node19" href="serialization__shim_8hpp.html" title="mlpack/core/data/serialization\l_shim.hpp" alt="" coords="507,363,702,404"></area>
+<area shape="rect" id="node21" href="arma__config__check_8hpp.html" title="mlpack/core/util/arma\l_config_check.hpp" alt="" coords="1193,363,1339,404"></area>
+</map>
 </div>
 </div>
 <p ><a href="dtb__rules_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -84,7 +136,16 @@ Namespaces</h2></td></tr>
 <hr class="footer"></hr><address class="footer"><small >
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"></img>
-</a> 1.8.9.1
+</a> 1.8.13
 </small></address>
+</div>
 </body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
 </html>

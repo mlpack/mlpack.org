@@ -1,0 +1,736 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">master</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1optimization.html">optimization</a></li><li class="navelem"><a class="el" href="classmlpack_1_1optimization_1_1SA.html">SA</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classmlpack_1_1optimization_1_1SA-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">SA&lt; CoolingScheduleType &gt; Class Template Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >Simulated Annealing is an stochastic optimization algorithm which is able to deliver near-optimal results quickly without knowing the gradient of the function being optimized.  
+ <a href="classmlpack_1_1optimization_1_1SA.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae2a01a248fe44f9596d8aae48364b490"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#ae2a01a248fe44f9596d8aae48364b490">SA</a> (CoolingScheduleType &amp;coolingSchedule, const size_t maxIterations=1000000, const double initT=10000., const size_t initMoves=1000, const size_t moveCtrlSweep=100, const double tolerance=1e-5, const size_t maxToleranceSweep=3, const double maxMoveCoef=20, const double initMoveCoef=0.3, const double gain=0.3)</td></tr>
+<tr class="memdesc:ae2a01a248fe44f9596d8aae48364b490"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the <a class="el" href="classmlpack_1_1optimization_1_1SA.html" title="Simulated Annealing is an stochastic optimization algorithm which is able to deliver near-optimal res...">SA</a> optimizer with the given parameters.  <a href="#ae2a01a248fe44f9596d8aae48364b490">More...</a><br /></br></td></tr>
+<tr class="separator:ae2a01a248fe44f9596d8aae48364b490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9a48f687e712de83a282c939fc0484d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#ad9a48f687e712de83a282c939fc0484d">Gain</a> () const</td></tr>
+<tr class="memdesc:ad9a48f687e712de83a282c939fc0484d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the gain.  <a href="#ad9a48f687e712de83a282c939fc0484d">More...</a><br /></br></td></tr>
+<tr class="separator:ad9a48f687e712de83a282c939fc0484d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5919392af3768b144812e2b236a0a43a"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a5919392af3768b144812e2b236a0a43a">Gain</a> ()</td></tr>
+<tr class="memdesc:a5919392af3768b144812e2b236a0a43a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the gain.  <a href="#a5919392af3768b144812e2b236a0a43a">More...</a><br /></br></td></tr>
+<tr class="separator:a5919392af3768b144812e2b236a0a43a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa5d0148c45db3831c888de239e990dd"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#aaa5d0148c45db3831c888de239e990dd">InitMoves</a> () const</td></tr>
+<tr class="memdesc:aaa5d0148c45db3831c888de239e990dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the initial moves.  <a href="#aaa5d0148c45db3831c888de239e990dd">More...</a><br /></br></td></tr>
+<tr class="separator:aaa5d0148c45db3831c888de239e990dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac55c5aa3a245423983b82c172c2b0afb"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#ac55c5aa3a245423983b82c172c2b0afb">InitMoves</a> ()</td></tr>
+<tr class="memdesc:ac55c5aa3a245423983b82c172c2b0afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the initial moves.  <a href="#ac55c5aa3a245423983b82c172c2b0afb">More...</a><br /></br></td></tr>
+<tr class="separator:ac55c5aa3a245423983b82c172c2b0afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a420770944a5b0c7a852c4ec372c4a2d1"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a420770944a5b0c7a852c4ec372c4a2d1">MaxIterations</a> () const</td></tr>
+<tr class="memdesc:a420770944a5b0c7a852c4ec372c4a2d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of iterations.  <a href="#a420770944a5b0c7a852c4ec372c4a2d1">More...</a><br /></br></td></tr>
+<tr class="separator:a420770944a5b0c7a852c4ec372c4a2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda675ab4ab86b95c92bc33bc391a61b"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#acda675ab4ab86b95c92bc33bc391a61b">MaxIterations</a> ()</td></tr>
+<tr class="memdesc:acda675ab4ab86b95c92bc33bc391a61b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the maximum number of iterations.  <a href="#acda675ab4ab86b95c92bc33bc391a61b">More...</a><br /></br></td></tr>
+<tr class="separator:acda675ab4ab86b95c92bc33bc391a61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf1145ca401daa933ad01b955e69b611"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#adf1145ca401daa933ad01b955e69b611">MaxToleranceSweep</a> () const</td></tr>
+<tr class="memdesc:adf1145ca401daa933ad01b955e69b611"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maxToleranceSweep.  <a href="#adf1145ca401daa933ad01b955e69b611">More...</a><br /></br></td></tr>
+<tr class="separator:adf1145ca401daa933ad01b955e69b611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc91cfaceb4f4c831c3bf8b72e614da"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a5dc91cfaceb4f4c831c3bf8b72e614da">MaxToleranceSweep</a> ()</td></tr>
+<tr class="memdesc:a5dc91cfaceb4f4c831c3bf8b72e614da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the maxToleranceSweep.  <a href="#a5dc91cfaceb4f4c831c3bf8b72e614da">More...</a><br /></br></td></tr>
+<tr class="separator:a5dc91cfaceb4f4c831c3bf8b72e614da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade07081242552e28ca3f8cff2e4d4f70"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#ade07081242552e28ca3f8cff2e4d4f70">MoveCtrlSweep</a> () const</td></tr>
+<tr class="memdesc:ade07081242552e28ca3f8cff2e4d4f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sweeps per move control.  <a href="#ade07081242552e28ca3f8cff2e4d4f70">More...</a><br /></br></td></tr>
+<tr class="separator:ade07081242552e28ca3f8cff2e4d4f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2740c19bb0e6dbc82037a1524e34cbb6"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a2740c19bb0e6dbc82037a1524e34cbb6">MoveCtrlSweep</a> ()</td></tr>
+<tr class="memdesc:a2740c19bb0e6dbc82037a1524e34cbb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify sweeps per move control.  <a href="#a2740c19bb0e6dbc82037a1524e34cbb6">More...</a><br /></br></td></tr>
+<tr class="separator:a2740c19bb0e6dbc82037a1524e34cbb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa87fd82bd4d8e6c35d23b2feaa3f9d99"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:aa87fd82bd4d8e6c35d23b2feaa3f9d99"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#aa87fd82bd4d8e6c35d23b2feaa3f9d99">Optimize</a> (FunctionType &amp;function, arma::mat &amp;iterate)</td></tr>
+<tr class="memdesc:aa87fd82bd4d8e6c35d23b2feaa3f9d99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimize the given function using simulated annealing.  <a href="#aa87fd82bd4d8e6c35d23b2feaa3f9d99">More...</a><br /></br></td></tr>
+<tr class="separator:aa87fd82bd4d8e6c35d23b2feaa3f9d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43cf45c92c010f037a1149fe51e04331"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a43cf45c92c010f037a1149fe51e04331">Temperature</a> () const</td></tr>
+<tr class="memdesc:a43cf45c92c010f037a1149fe51e04331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the temperature.  <a href="#a43cf45c92c010f037a1149fe51e04331">More...</a><br /></br></td></tr>
+<tr class="separator:a43cf45c92c010f037a1149fe51e04331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43a565075ab42e034f45af748cd99db0"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a43a565075ab42e034f45af748cd99db0">Temperature</a> ()</td></tr>
+<tr class="memdesc:a43a565075ab42e034f45af748cd99db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the temperature.  <a href="#a43a565075ab42e034f45af748cd99db0">More...</a><br /></br></td></tr>
+<tr class="separator:a43a565075ab42e034f45af748cd99db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b5af5c1a84c507cbaa7f999ea5a4fda"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a7b5af5c1a84c507cbaa7f999ea5a4fda">Tolerance</a> () const</td></tr>
+<tr class="memdesc:a7b5af5c1a84c507cbaa7f999ea5a4fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the tolerance.  <a href="#a7b5af5c1a84c507cbaa7f999ea5a4fda">More...</a><br /></br></td></tr>
+<tr class="separator:a7b5af5c1a84c507cbaa7f999ea5a4fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9fac84af16250f5a3689692e8f2173"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a3d9fac84af16250f5a3689692e8f2173">Tolerance</a> ()</td></tr>
+<tr class="memdesc:a3d9fac84af16250f5a3689692e8f2173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the tolerance.  <a href="#a3d9fac84af16250f5a3689692e8f2173">More...</a><br /></br></td></tr>
+<tr class="separator:a3d9fac84af16250f5a3689692e8f2173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3 ><br /><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></br>
+class mlpack::optimization::SA&lt; CoolingScheduleType &gt;</h3>
+
+<p >Simulated Annealing is an stochastic optimization algorithm which is able to deliver near-optimal results quickly without knowing the gradient of the function being optimized. </p>
+<p >It has unique hill climbing capability that makes it less vulnerable to local minima. This implementation uses exponential cooling schedule and feedback move control by default, but the cooling schedule can be changed via a template parameter.</p>
+<p >The algorithm keeps the temperature at initial temperature for initMove steps to get rid of the dependency on the initial condition. After that, it cools every step until the system is considered frozen or maxIterations is reached.</p>
+<p >At each step, <a class="el" href="classmlpack_1_1optimization_1_1SA.html" title="Simulated Annealing is an stochastic optimization algorithm which is able to deliver near-optimal res...">SA</a> only perturbs one parameter at a time. When <a class="el" href="classmlpack_1_1optimization_1_1SA.html" title="Simulated Annealing is an stochastic optimization algorithm which is able to deliver near-optimal res...">SA</a> has perturbed all parameters in a problem, a sweep has been completed. Every moveCtrlSweep sweeps, the algorithm does feedback move control to change the average move size depending on the responsiveness of each parameter. Parameter gain controls the proportion of the feedback control.</p>
+<p >The system is considered "frozen" when its score fails to change more then tolerance for maxToleranceSweep consecutive sweeps.</p>
+<p >For <a class="el" href="classmlpack_1_1optimization_1_1SA.html" title="Simulated Annealing is an stochastic optimization algorithm which is able to deliver near-optimal res...">SA</a> to work, the FunctionType template class, used by the <a class="el" href="classmlpack_1_1optimization_1_1SA.html#aa87fd82bd4d8e6c35d23b2feaa3f9d99" title="Optimize the given function using simulated annealing. ">Optimize()</a> method, must implement the following two methods:</p>
+<p >double Evaluate(const arma::mat&amp; coordinates); arma::mat&amp; GetInitialPoint();</p>
+<p >and the CoolingScheduleType parameter must implement the following method:</p>
+<p >double NextTemperature(const double currentTemperature, const double currentValue);</p>
+<p >which returns the next temperature given current temperature and the value of the function being optimized.</p>
+<dl class="tparams"><dt >Template Parameters</dt><dd >
+  <table class="tparams">
+    <tr ><td class="paramname">CoolingScheduleType</td><td >type for cooling schedule </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00061">61</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae2a01a248fe44f9596d8aae48364b490"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2a01a248fe44f9596d8aae48364b490">&#9670;&nbsp;</a></span>SA()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1optimization_1_1SA.html">SA</a> </td>
+          <td >(</td>
+          <td class="paramtype">CoolingScheduleType &amp;&#160;</td>
+          <td class="paramname"><em >coolingSchedule</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >maxIterations</em> = <code >1000000</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >initT</em> = <code >10000.</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >initMoves</em> = <code >1000</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >moveCtrlSweep</em> = <code >100</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >tolerance</em> = <code >1e-5</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >maxToleranceSweep</em> = <code >3</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >maxMoveCoef</em> = <code >20</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >initMoveCoef</em> = <code >0.3</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >gain</em> = <code >0.3</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Construct the <a class="el" href="classmlpack_1_1optimization_1_1SA.html" title="Simulated Annealing is an stochastic optimization algorithm which is able to deliver near-optimal res...">SA</a> optimizer with the given parameters. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">coolingSchedule</td><td >Instantiated cooling schedule. </td></tr>
+    <tr ><td class="paramname">maxIterations</td><td >Maximum number of iterations allowed (0 indicates no limit). </td></tr>
+    <tr ><td class="paramname">initT</td><td >Initial temperature. </td></tr>
+    <tr ><td class="paramname">initMoves</td><td >Number of initial iterations without changing temperature. </td></tr>
+    <tr ><td class="paramname">moveCtrlSweep</td><td >Sweeps per feedback move control. </td></tr>
+    <tr ><td class="paramname">tolerance</td><td >Tolerance to consider system frozen. </td></tr>
+    <tr ><td class="paramname">maxToleranceSweep</td><td >Maximum sweeps below tolerance to consider system frozen. </td></tr>
+    <tr ><td class="paramname">maxMoveCoef</td><td >Maximum move size. </td></tr>
+    <tr ><td class="paramname">initMoveCoef</td><td >Initial move size. </td></tr>
+    <tr ><td class="paramname">gain</td><td >Proportional control in feedback move control. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad9a48f687e712de83a282c939fc0484d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9a48f687e712de83a282c939fc0484d">&#9670;&nbsp;</a></span>Gain() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Gain </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the gain. </p>
+
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00129">129</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a5919392af3768b144812e2b236a0a43a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5919392af3768b144812e2b236a0a43a">&#9670;&nbsp;</a></span>Gain() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double&amp; Gain </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the gain. </p>
+
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00131">131</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aaa5d0148c45db3831c888de239e990dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa5d0148c45db3831c888de239e990dd">&#9670;&nbsp;</a></span>InitMoves() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t InitMoves </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the initial moves. </p>
+
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00109">109</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ac55c5aa3a245423983b82c172c2b0afb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac55c5aa3a245423983b82c172c2b0afb">&#9670;&nbsp;</a></span>InitMoves() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; InitMoves </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the initial moves. </p>
+
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00111">111</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a420770944a5b0c7a852c4ec372c4a2d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a420770944a5b0c7a852c4ec372c4a2d1">&#9670;&nbsp;</a></span>MaxIterations() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t MaxIterations </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the maximum number of iterations. </p>
+
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00134">134</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+
+</div>
+</div>
+<a id="acda675ab4ab86b95c92bc33bc391a61b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acda675ab4ab86b95c92bc33bc391a61b">&#9670;&nbsp;</a></span>MaxIterations() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; MaxIterations </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the maximum number of iterations. </p>
+
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00136">136</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+
+</div>
+</div>
+<a id="adf1145ca401daa933ad01b955e69b611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf1145ca401daa933ad01b955e69b611">&#9670;&nbsp;</a></span>MaxToleranceSweep() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t MaxToleranceSweep </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the maxToleranceSweep. </p>
+
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00124">124</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a5dc91cfaceb4f4c831c3bf8b72e614da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dc91cfaceb4f4c831c3bf8b72e614da">&#9670;&nbsp;</a></span>MaxToleranceSweep() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; MaxToleranceSweep </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the maxToleranceSweep. </p>
+
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00126">126</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ade07081242552e28ca3f8cff2e4d4f70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade07081242552e28ca3f8cff2e4d4f70">&#9670;&nbsp;</a></span>MoveCtrlSweep() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t MoveCtrlSweep </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get sweeps per move control. </p>
+
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00114">114</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a2740c19bb0e6dbc82037a1524e34cbb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2740c19bb0e6dbc82037a1524e34cbb6">&#9670;&nbsp;</a></span>MoveCtrlSweep() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; MoveCtrlSweep </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify sweeps per move control. </p>
+
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00116">116</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa87fd82bd4d8e6c35d23b2feaa3f9d99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa87fd82bd4d8e6c35d23b2feaa3f9d99">&#9670;&nbsp;</a></span>Optimize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Optimize </td>
+          <td >(</td>
+          <td class="paramtype">FunctionType &amp;&#160;</td>
+          <td class="paramname"><em >function</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >iterate</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Optimize the given function using simulated annealing. </p>
+<p >The given starting point will be modified to store the finishing point of the algorithm, and the final objective value is returned.</p>
+<dl class="tparams"><dt >Template Parameters</dt><dd >
+  <table class="tparams">
+    <tr ><td class="paramname">FunctionType</td><td >Type of function to optimize. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">function</td><td >Function to optimize. </td></tr>
+    <tr ><td class="paramname">iterate</td><td >Starting point (will be modified). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt >Returns</dt><dd >Objective value of the final point. </dd></dl>
+
+</div>
+</div>
+<a id="a43cf45c92c010f037a1149fe51e04331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43cf45c92c010f037a1149fe51e04331">&#9670;&nbsp;</a></span>Temperature() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Temperature </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the temperature. </p>
+
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00104">104</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a43a565075ab42e034f45af748cd99db0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43a565075ab42e034f45af748cd99db0">&#9670;&nbsp;</a></span>Temperature() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double&amp; Temperature </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the temperature. </p>
+
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00106">106</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a7b5af5c1a84c507cbaa7f999ea5a4fda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b5af5c1a84c507cbaa7f999ea5a4fda">&#9670;&nbsp;</a></span>Tolerance() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Tolerance </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the tolerance. </p>
+
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00119">119</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a3d9fac84af16250f5a3689692e8f2173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d9fac84af16250f5a3689692e8f2173">&#9670;&nbsp;</a></span>Tolerance() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double&amp; Tolerance </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the tolerance. </p>
+
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00121">121</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/core/optimizers/sa/<a class="el" href="sa_8hpp_source.html">sa.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

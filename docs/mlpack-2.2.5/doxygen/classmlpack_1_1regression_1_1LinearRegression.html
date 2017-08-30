@@ -1,0 +1,606 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.2.5</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1regression.html">regression</a></li><li class="navelem"><a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html">LinearRegression</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classmlpack_1_1regression_1_1LinearRegression-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">LinearRegression Class Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >A simple linear regression algorithm using ordinary least squares.  
+ <a href="classmlpack_1_1regression_1_1LinearRegression.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a1dd8b70118a5757c4d2dbd6c40c11056"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html#a1dd8b70118a5757c4d2dbd6c40c11056">LinearRegression</a> (const arma::mat &amp;predictors, const arma::vec &amp;responses, const double lambda=0, const bool intercept=true, const arma::vec &amp;weights=arma::vec())</td></tr>
+<tr class="memdesc:a1dd8b70118a5757c4d2dbd6c40c11056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the model.  <a href="#a1dd8b70118a5757c4d2dbd6c40c11056">More...</a><br /></br></td></tr>
+<tr class="separator:a1dd8b70118a5757c4d2dbd6c40c11056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a204da29419b16f094daa7de7905dae5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html#a204da29419b16f094daa7de7905dae5f">LinearRegression</a> (const <a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html">LinearRegression</a> &amp;linearRegression)</td></tr>
+<tr class="memdesc:a204da29419b16f094daa7de7905dae5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#a204da29419b16f094daa7de7905dae5f">More...</a><br /></br></td></tr>
+<tr class="separator:a204da29419b16f094daa7de7905dae5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f04840f1f440c8ab14254ce127cf9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html#a33f04840f1f440c8ab14254ce127cf9f">LinearRegression</a> ()</td></tr>
+<tr class="memdesc:a33f04840f1f440c8ab14254ce127cf9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty constructor.  <a href="#a33f04840f1f440c8ab14254ce127cf9f">More...</a><br /></br></td></tr>
+<tr class="separator:a33f04840f1f440c8ab14254ce127cf9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac40ecd0b43553c5924d73f2c3a614a12"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html#ac40ecd0b43553c5924d73f2c3a614a12">ComputeError</a> (const arma::mat &amp;points, const arma::vec &amp;responses) const</td></tr>
+<tr class="memdesc:ac40ecd0b43553c5924d73f2c3a614a12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the L2 squared error on the given predictors and responses using this linear regression model.  <a href="#ac40ecd0b43553c5924d73f2c3a614a12">More...</a><br /></br></td></tr>
+<tr class="separator:ac40ecd0b43553c5924d73f2c3a614a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa755a6a1366c3ba88bb0f8543127ccea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html#aa755a6a1366c3ba88bb0f8543127ccea">Intercept</a> () const</td></tr>
+<tr class="memdesc:aa755a6a1366c3ba88bb0f8543127ccea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether or not an intercept term is used in the model.  <a href="#aa755a6a1366c3ba88bb0f8543127ccea">More...</a><br /></br></td></tr>
+<tr class="separator:aa755a6a1366c3ba88bb0f8543127ccea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53535041275cedd0ec3de67ca032aa94"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html#a53535041275cedd0ec3de67ca032aa94">Lambda</a> () const</td></tr>
+<tr class="memdesc:a53535041275cedd0ec3de67ca032aa94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the Tikhonov regularization parameter for ridge regression.  <a href="#a53535041275cedd0ec3de67ca032aa94">More...</a><br /></br></td></tr>
+<tr class="separator:a53535041275cedd0ec3de67ca032aa94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf66629b989a326453647f42443c6a0c"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html#aaf66629b989a326453647f42443c6a0c">Lambda</a> ()</td></tr>
+<tr class="memdesc:aaf66629b989a326453647f42443c6a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the Tikhonov regularization parameter for ridge regression.  <a href="#aaf66629b989a326453647f42443c6a0c">More...</a><br /></br></td></tr>
+<tr class="separator:aaf66629b989a326453647f42443c6a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a67e9b83bb8f0ea6122efcc5f75927c"><td class="memItemLeft" align="right" valign="top">const arma::vec &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html#a6a67e9b83bb8f0ea6122efcc5f75927c">Parameters</a> () const</td></tr>
+<tr class="memdesc:a6a67e9b83bb8f0ea6122efcc5f75927c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the parameters (the b vector).  <a href="#a6a67e9b83bb8f0ea6122efcc5f75927c">More...</a><br /></br></td></tr>
+<tr class="separator:a6a67e9b83bb8f0ea6122efcc5f75927c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c16a2172d1b0486c8677bba4c5a3ff1"><td class="memItemLeft" align="right" valign="top">arma::vec &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html#a6c16a2172d1b0486c8677bba4c5a3ff1">Parameters</a> ()</td></tr>
+<tr class="memdesc:a6c16a2172d1b0486c8677bba4c5a3ff1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the parameters (the b vector).  <a href="#a6c16a2172d1b0486c8677bba4c5a3ff1">More...</a><br /></br></td></tr>
+<tr class="separator:a6c16a2172d1b0486c8677bba4c5a3ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d19ed95586237c227d2a433b7ee947f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html#a2d19ed95586237c227d2a433b7ee947f">Predict</a> (const arma::mat &amp;points, arma::vec &amp;predictions) const</td></tr>
+<tr class="memdesc:a2d19ed95586237c227d2a433b7ee947f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate y_i for each data point in points.  <a href="#a2d19ed95586237c227d2a433b7ee947f">More...</a><br /></br></td></tr>
+<tr class="separator:a2d19ed95586237c227d2a433b7ee947f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae187181bfb4ff8601e6385fd4fc4999d"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:ae187181bfb4ff8601e6385fd4fc4999d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html#ae187181bfb4ff8601e6385fd4fc4999d">Serialize</a> (Archive &amp;ar, const unsigned int)</td></tr>
+<tr class="memdesc:ae187181bfb4ff8601e6385fd4fc4999d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the model.  <a href="#ae187181bfb4ff8601e6385fd4fc4999d">More...</a><br /></br></td></tr>
+<tr class="separator:ae187181bfb4ff8601e6385fd4fc4999d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae91509ce720ed2d97299551cc0b55222"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html#ae91509ce720ed2d97299551cc0b55222">Train</a> (const arma::mat &amp;predictors, const arma::vec &amp;responses, const bool intercept=true, const arma::vec &amp;weights=arma::vec())</td></tr>
+<tr class="memdesc:ae91509ce720ed2d97299551cc0b55222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Train the <a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html" title="A simple linear regression algorithm using ordinary least squares. ">LinearRegression</a> model on the given data.  <a href="#ae91509ce720ed2d97299551cc0b55222">More...</a><br /></br></td></tr>
+<tr class="separator:ae91509ce720ed2d97299551cc0b55222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A simple linear regression algorithm using ordinary least squares. </p>
+<p >Optionally, this class can perform ridge regression, if the lambda parameter is set to a number greater than zero. </p>
+
+<p class="definition">Definition at line <a class="el" href="linear__regression_8hpp_source.html#l00026">26</a> of file <a class="el" href="linear__regression_8hpp_source.html">linear_regression.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1dd8b70118a5757c4d2dbd6c40c11056"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dd8b70118a5757c4d2dbd6c40c11056">&#9670;&nbsp;</a></span>LinearRegression() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html">LinearRegression</a> </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >predictors</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const arma::vec &amp;&#160;</td>
+          <td class="paramname"><em >responses</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >lambda</em> = <code >0</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em >intercept</em> = <code >true</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const arma::vec &amp;&#160;</td>
+          <td class="paramname"><em >weights</em> = <code >arma::vec()</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Creates the model. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">predictors</td><td >X, matrix of data points to create B with. </td></tr>
+    <tr ><td class="paramname">responses</td><td >y, the measured data for each point in X. </td></tr>
+    <tr ><td class="paramname">lambda</td><td >Regularization constant for ridge regression. </td></tr>
+    <tr ><td class="paramname">intercept</td><td >Whether or not to include an intercept term. </td></tr>
+    <tr ><td class="paramname">weights</td><td >Observation weights (for boosting). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a204da29419b16f094daa7de7905dae5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a204da29419b16f094daa7de7905dae5f">&#9670;&nbsp;</a></span>LinearRegression() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html">LinearRegression</a> </td>
+          <td >(</td>
+          <td class="paramtype">const <a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html">LinearRegression</a> &amp;&#160;</td>
+          <td class="paramname"><em >linearRegression</em></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Copy constructor. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">linearRegression</td><td >the other instance to copy parameters from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a33f04840f1f440c8ab14254ce127cf9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33f04840f1f440c8ab14254ce127cf9f">&#9670;&nbsp;</a></span>LinearRegression() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html">LinearRegression</a> </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Empty constructor. </p>
+<p >This gives a non-working model, so make sure <a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html#ae91509ce720ed2d97299551cc0b55222" title="Train the LinearRegression model on the given data. ">Train()</a> is called (or make sure the model parameters are set) before calling <a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html#a2d19ed95586237c227d2a433b7ee947f" title="Calculate y_i for each data point in points. ">Predict()</a>! </p>
+
+<p class="definition">Definition at line <a class="el" href="linear__regression_8hpp_source.html#l00056">56</a> of file <a class="el" href="linear__regression_8hpp_source.html">linear_regression.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html#ac40ecd0b43553c5924d73f2c3a614a12">LinearRegression::ComputeError()</a>, <a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html#a2d19ed95586237c227d2a433b7ee947f">LinearRegression::Predict()</a>, and <a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html#ae91509ce720ed2d97299551cc0b55222">LinearRegression::Train()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac40ecd0b43553c5924d73f2c3a614a12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac40ecd0b43553c5924d73f2c3a614a12">&#9670;&nbsp;</a></span>ComputeError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">double ComputeError </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >points</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const arma::vec &amp;&#160;</td>
+          <td class="paramname"><em >responses</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Calculate the L2 squared error on the given predictors and responses using this linear regression model. </p>
+<p >This calculation returns</p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[ (1 / n) * \| y - X B \|^2_2 \]" src="form_75.png"></img>
+</p>
+<p >where <img class="formulaInl" alt="$ y $" src="form_8.png"></img> is the responses vector, <img class="formulaInl" alt="$ X $" src="form_67.png"></img> is the matrix of predictors, and <img class="formulaInl" alt="$ B $" src="form_76.png"></img> is the parameters of the trained linear regression model.</p>
+<p >As this number decreases to 0, the linear regression fit is better.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">points</td><td >Matrix of predictors (X). </td></tr>
+    <tr ><td class="paramname">responses</td><td >Vector of responses (y). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="linear__regression_8hpp_source.html#l00056">LinearRegression::LinearRegression()</a>, and <a class="el" href="regression__distribution_8hpp_source.html#l00051">RegressionDistribution::RegressionDistribution()</a>.</p>
+
+</div>
+</div>
+<a id="aa755a6a1366c3ba88bb0f8543127ccea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa755a6a1366c3ba88bb0f8543127ccea">&#9670;&nbsp;</a></span>Intercept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">bool Intercept </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return whether or not an intercept term is used in the model. </p>
+
+<p class="definition">Definition at line <a class="el" href="linear__regression_8hpp_source.html#l00114">114</a> of file <a class="el" href="linear__regression_8hpp_source.html">linear_regression.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a53535041275cedd0ec3de67ca032aa94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53535041275cedd0ec3de67ca032aa94">&#9670;&nbsp;</a></span>Lambda() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Lambda </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the Tikhonov regularization parameter for ridge regression. </p>
+
+<p class="definition">Definition at line <a class="el" href="linear__regression_8hpp_source.html#l00109">109</a> of file <a class="el" href="linear__regression_8hpp_source.html">linear_regression.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aaf66629b989a326453647f42443c6a0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf66629b989a326453647f42443c6a0c">&#9670;&nbsp;</a></span>Lambda() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double&amp; Lambda </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the Tikhonov regularization parameter for ridge regression. </p>
+
+<p class="definition">Definition at line <a class="el" href="linear__regression_8hpp_source.html#l00111">111</a> of file <a class="el" href="linear__regression_8hpp_source.html">linear_regression.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a6a67e9b83bb8f0ea6122efcc5f75927c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a67e9b83bb8f0ea6122efcc5f75927c">&#9670;&nbsp;</a></span>Parameters() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::vec&amp; Parameters </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the parameters (the b vector). </p>
+
+<p class="definition">Definition at line <a class="el" href="linear__regression_8hpp_source.html#l00104">104</a> of file <a class="el" href="linear__regression_8hpp_source.html">linear_regression.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="regression__distribution_8hpp_source.html#l00123">RegressionDistribution::Dimensionality()</a>, and <a class="el" href="regression__distribution_8hpp_source.html#l00120">RegressionDistribution::Parameters()</a>.</p>
+
+</div>
+</div>
+<a id="a6c16a2172d1b0486c8677bba4c5a3ff1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c16a2172d1b0486c8677bba4c5a3ff1">&#9670;&nbsp;</a></span>Parameters() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">arma::vec&amp; Parameters </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the parameters (the b vector). </p>
+
+<p class="definition">Definition at line <a class="el" href="linear__regression_8hpp_source.html#l00106">106</a> of file <a class="el" href="linear__regression_8hpp_source.html">linear_regression.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a2d19ed95586237c227d2a433b7ee947f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d19ed95586237c227d2a433b7ee947f">&#9670;&nbsp;</a></span>Predict()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Predict </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >points</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::vec &amp;&#160;</td>
+          <td class="paramname"><em >predictions</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Calculate y_i for each data point in points. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">points</td><td >the data points to calculate with. </td></tr>
+    <tr ><td class="paramname">predictions</td><td >y, will contain calculated values on completion. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="linear__regression_8hpp_source.html#l00056">LinearRegression::LinearRegression()</a>.</p>
+
+</div>
+</div>
+<a id="ae187181bfb4ff8601e6385fd4fc4999d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae187181bfb4ff8601e6385fd4fc4999d">&#9670;&nbsp;</a></span>Serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Serialize </td>
+          <td >(</td>
+          <td class="paramtype">Archive &amp;&#160;</td>
+          <td class="paramname"><em >ar</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em >int</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Serialize the model. </p>
+
+<p class="definition">Definition at line <a class="el" href="linear__regression_8hpp_source.html#l00120">120</a> of file <a class="el" href="linear__regression_8hpp_source.html">linear_regression.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="serialization__shim_8hpp_source.html#l00093">mlpack::data::CreateNVP()</a>.</p>
+
+</div>
+</div>
+<a id="ae91509ce720ed2d97299551cc0b55222"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae91509ce720ed2d97299551cc0b55222">&#9670;&nbsp;</a></span>Train()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Train </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >predictors</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const arma::vec &amp;&#160;</td>
+          <td class="paramname"><em >responses</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em >intercept</em> = <code >true</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const arma::vec &amp;&#160;</td>
+          <td class="paramname"><em >weights</em> = <code >arma::vec()</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Train the <a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html" title="A simple linear regression algorithm using ordinary least squares. ">LinearRegression</a> model on the given data. </p>
+<p >Careful! This will completely ignore and overwrite the existing model. This particular implementation does not have an incremental training algorithm. To set the regularization parameter lambda, call <a class="el" href="classmlpack_1_1regression_1_1LinearRegression.html#aaf66629b989a326453647f42443c6a0c" title="Modify the Tikhonov regularization parameter for ridge regression. ">Lambda()</a> or set a different value in the constructor.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">predictors</td><td >X, the matrix of data points to train the model on. </td></tr>
+    <tr ><td class="paramname">responses</td><td >y, the vector of responses to each data point. </td></tr>
+    <tr ><td class="paramname">intercept</td><td >Whether or not to fit an intercept term. </td></tr>
+    <tr ><td class="paramname">weights</td><td >Observation weights (for boosting). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="linear__regression_8hpp_source.html#l00056">LinearRegression::LinearRegression()</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/methods/linear_regression/<a class="el" href="linear__regression_8hpp_source.html">linear_regression.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

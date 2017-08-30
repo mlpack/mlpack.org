@@ -1,0 +1,204 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">master</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_44a936ef30fc126706c6284a2fc0c990.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_3cfbf900288ec2fe8dd2c2c8482f216e.html">methods</a></li><li class="navelem"><a class="el" href="dir_04cdefcc9a97fb221ee3f2d7fb8aab76.html">ann</a></li><li class="navelem"><a class="el" href="dir_a05b89e13e21ccb1d653eec334a23617.html">activation_functions</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
+  <div class="headertitle">
+<div class="title">identity_function.hpp File Reference</div>  </div>
+</div>
+<div class="contents">
+<div class="textblock"><div class="dynheader">
+Include dependency graph for identity_function.hpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="identity__function_8hpp__incl.png" border="0" usemap="#src_2mlpack_2methods_2ann_2activation__functions_2identity__function_8hpp" alt=""></img></div>
+<map name="src_2mlpack_2methods_2ann_2activation__functions_2identity__function_8hpp" id="src_2mlpack_2methods_2ann_2activation__functions_2identity__function_8hpp">
+<area shape="rect" id="node2" href="prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo. " alt="" coords="943,109,1079,136"></area>
+<area shape="rect" id="node18" href="serialization__shim_8hpp.html" title="mlpack/core/data/serialization\l_shim.hpp" alt="" coords="981,184,1176,225"></area>
+<area shape="rect" id="node22" href="serialization__template__version_8hpp.html" title="mlpack/core/data/serialization\l_template_version.hpp" alt="" coords="1743,184,1937,225"></area>
+<area shape="rect" id="node24" href="arma__traits_8hpp.html" title="mlpack/core/util/arma\l_traits.hpp" alt="" coords="2159,184,2305,225"></area>
+<area shape="rect" id="node25" href="arma__config__check_8hpp.html" title="mlpack/core/util/arma\l_config_check.hpp" alt="" coords="2329,184,2476,225"></area>
+<area shape="rect" id="node27" href="log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="2500,191,2660,218"></area>
+<area shape="rect" id="node35" href="timers_8hpp.html" title="mlpack/core/util/timers.hpp" alt="" coords="2735,191,2913,218"></area>
+<area shape="rect" id="node38" href="deprecated_8hpp.html" title="mlpack/core/util/deprecated.hpp" alt="" coords="2938,191,3145,218"></area>
+<area shape="rect" id="node19" href="sfinae__utility_8hpp.html" title="mlpack/core/util/sfinae\l_utility.hpp" alt="" coords="1083,273,1237,315"></area>
+<area shape="rect" id="node26" href="arma__config_8hpp.html" title="This is an autogenerated file which contains the configuration of Armadillo at the time mlpack was bu..." alt="" coords="2075,281,2194,307"></area>
+<area shape="rect" id="node30" href="prefixedoutstream_8hpp.html" title="prefixedoutstream.hpp" alt="" coords="2622,281,2773,307"></area>
+<area shape="rect" id="node32" href="nulloutstream_8hpp.html" title="nulloutstream.hpp" alt="" coords="2421,281,2547,307"></area>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="identity__function_8hpp__dep__incl.png" border="0" usemap="#src_2mlpack_2methods_2ann_2activation__functions_2identity__function_8hppdep" alt=""></img></div>
+<map name="src_2mlpack_2methods_2ann_2activation__functions_2identity__function_8hppdep" id="src_2mlpack_2methods_2ann_2activation__functions_2identity__function_8hppdep">
+<area shape="rect" id="node2" href="base__layer_8hpp.html" title="src/mlpack/methods\l/ann/layer/base_layer.hpp" alt="" coords="2629,109,2800,151"></area>
+<area shape="rect" id="node3" href="layer__types_8hpp.html" title="src/mlpack/methods\l/ann/layer/layer_types.hpp" alt="" coords="2627,199,2802,240"></area>
+<area shape="rect" id="node4" href="delete__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/delete\l_visitor.hpp" alt="" coords="1281,288,1421,344"></area>
+<area shape="rect" id="node5" href="ffn_8hpp.html" title="src/mlpack/methods\l/ann/ffn.hpp" alt="" coords="1738,496,1878,537"></area>
+<area shape="rect" id="node6" href="add__merge_8hpp.html" title="src/mlpack/methods\l/ann/layer/add_merge.hpp" alt="" coords="499,399,671,441"></area>
+<area shape="rect" id="node7" href="dropconnect_8hpp.html" title="src/mlpack/methods\l/ann/layer/dropconnect.hpp" alt="" coords="1283,593,1461,634"></area>
+<area shape="rect" id="node8" href="layer_8hpp.html" title="src/mlpack/methods\l/ann/layer/layer.hpp" alt="" coords="1118,689,1258,731"></area>
+<area shape="rect" id="node9" href="sequential_8hpp.html" title="src/mlpack/methods\l/ann/layer/sequential.hpp" alt="" coords="987,496,1154,537"></area>
+<area shape="rect" id="node10" href="gru_8hpp.html" title="src/mlpack/methods\l/ann/layer/gru.hpp" alt="" coords="427,593,567,634"></area>
+<area shape="rect" id="node11" href="lstm_8hpp.html" title="src/mlpack/methods\l/ann/layer/lstm.hpp" alt="" coords="247,593,387,634"></area>
+<area shape="rect" id="node12" href="recurrent_8hpp.html" title="src/mlpack/methods\l/ann/layer/recurrent.hpp" alt="" coords="651,593,810,634"></area>
+<area shape="rect" id="node13" href="recurrent__attention_8hpp.html" title="src/mlpack/methods\l/ann/layer/recurrent\l_attention.hpp" alt="" coords="1118,585,1258,641"></area>
+<area shape="rect" id="node14" href="concat_8hpp.html" title="src/mlpack/methods\l/ann/layer/concat.hpp" alt="" coords="949,399,1096,441"></area>
+<area shape="rect" id="node15" href="rnn_8hpp.html" title="src/mlpack/methods\l/ann/rnn.hpp" alt="" coords="2219,496,2359,537"></area>
+<area shape="rect" id="node16" href="delta__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/delta_visitor.hpp" alt="" coords="657,295,842,337"></area>
+<area shape="rect" id="node17" href="output__height__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/output\l_height_visitor.hpp" alt="" coords="1489,392,1629,448"></area>
+<area shape="rect" id="node18" href="output__parameter__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/output\l_parameter_visitor.hpp" alt="" coords="893,288,1048,344"></area>
+<area shape="rect" id="node19" href="output__width__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/output\l_width_visitor.hpp" alt="" coords="1273,392,1413,448"></area>
+<area shape="rect" id="node20" href="reset__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/reset_visitor.hpp" alt="" coords="2339,295,2525,337"></area>
+<area shape="rect" id="node21" href="network__init_8hpp.html" title="src/mlpack/methods\l/ann/init_rules/network\l_init.hpp" alt="" coords="2219,392,2373,448"></area>
+<area shape="rect" id="node22" href="weight__size__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/weight\l_size_visitor.hpp" alt="" coords="1958,288,2098,344"></area>
+<area shape="rect" id="node23" href="copy__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/copy_visitor.hpp" alt="" coords="1806,399,1991,441"></area>
+<area shape="rect" id="node24" href="weight__set__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/weight\l_set_visitor.hpp" alt="" coords="2174,288,2314,344"></area>
+<area shape="rect" id="node25" href="concat__performance_8hpp.html" title="src/mlpack/methods\l/ann/layer/concat_performance.hpp" alt="" coords="2701,496,2928,537"></area>
+<area shape="rect" id="node26" href="convolution_8hpp.html" title="src/mlpack/methods\l/ann/layer/convolution.hpp" alt="" coords="2803,399,2978,441"></area>
+<area shape="rect" id="node27" href="linear_8hpp.html" title="src/mlpack/methods\l/ann/layer/linear.hpp" alt="" coords="2537,496,2677,537"></area>
+<area shape="rect" id="node28" href="glimpse_8hpp.html" title="src/mlpack/methods\l/ann/layer/glimpse.hpp" alt="" coords="3003,496,3157,537"></area>
+<area shape="rect" id="node29" href="linear__no__bias_8hpp.html" title="src/mlpack/methods\l/ann/layer/linear_no\l_bias.hpp" alt="" coords="3065,585,3205,641"></area>
+<area shape="rect" id="node30" href="vr__class__reward_8hpp.html" title="src/mlpack/methods\l/ann/layer/vr_class\l_reward.hpp" alt="" coords="3158,392,3298,448"></area>
+<area shape="rect" id="node31" href="add__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/add_visitor.hpp" alt="" coords="3005,295,3184,337"></area>
+<area shape="rect" id="node32" href="backward__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/backward\l_visitor.hpp" alt="" coords="3208,288,3355,344"></area>
+<area shape="rect" id="node33" href="deterministic__set__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/deterministic\l_set_visitor.hpp" alt="" coords="3379,288,3543,344"></area>
+<area shape="rect" id="node34" href="forward__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/forward\l_visitor.hpp" alt="" coords="3567,288,3707,344"></area>
+<area shape="rect" id="node35" href="gradient__set__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/gradient\l_set_visitor.hpp" alt="" coords="3731,288,3871,344"></area>
+<area shape="rect" id="node36" href="gradient__update__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/gradient\l_update_visitor.hpp" alt="" coords="3895,288,4035,344"></area>
+<area shape="rect" id="node37" href="gradient__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/gradient\l_visitor.hpp" alt="" coords="4059,288,4199,344"></area>
+<area shape="rect" id="node38" href="gradient__zero__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/gradient\l_zero_visitor.hpp" alt="" coords="4223,288,4363,344"></area>
+<area shape="rect" id="node39" href="load__output__parameter__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/load_output\l_parameter_visitor.hpp" alt="" coords="4388,288,4545,344"></area>
+<area shape="rect" id="node40" href="parameters__set__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/parameters\l_set_visitor.hpp" alt="" coords="4569,288,4724,344"></area>
+<area shape="rect" id="node41" href="parameters__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/parameters\l_visitor.hpp" alt="" coords="4748,288,4903,344"></area>
+<area shape="rect" id="node42" href="reset__cell__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/reset_cell\l_visitor.hpp" alt="" coords="4927,288,5073,344"></area>
+<area shape="rect" id="node43" href="reward__set__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/reward\l_set_visitor.hpp" alt="" coords="5098,288,5238,344"></area>
+<area shape="rect" id="node44" href="save__output__parameter__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/save_output\l_parameter_visitor.hpp" alt="" coords="5262,288,5423,344"></area>
+<area shape="rect" id="node45" href="set__input__height__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/set_input\l_height_visitor.hpp" alt="" coords="5447,288,5590,344"></area>
+<area shape="rect" id="node46" href="set__input__width__visitor_8hpp.html" title="src/mlpack/methods\l/ann/visitor/set_input\l_width_visitor.hpp" alt="" coords="5614,288,5757,344"></area>
+</map>
+</div>
+</div>
+<p ><a href="identity__function_8hpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1IdentityFunction.html">IdentityFunction</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The identity function, defined by.  <a href="classmlpack_1_1ann_1_1IdentityFunction.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacemlpack"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack.html">mlpack</a></td></tr>
+<tr class="memdesc:namespacemlpack"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br />Linear algebra utility functions, generally performed on matrices or vectors. </br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacemlpack_1_1ann"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1ann.html">mlpack::ann</a></td></tr>
+<tr class="memdesc:namespacemlpack_1_1ann"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br />Artificial Neural Network. </br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="section author"><dt >Author</dt><dd >Marcus Edel</dd></dl>
+<p >Definition and implementation of the identity function.</p>
+<p >mlpack is free software; you may redistribute it and/or modify it under the terms of the 3-clause BSD license. You should have received a copy of the 3-clause BSD license along with mlpack. If not, see <a href="http://www.opensource.org/licenses/BSD-3-Clause">http://www.opensource.org/licenses/BSD-3-Clause</a> for more information. </p>
+
+<p class="definition">Definition in file <a class="el" href="identity__function_8hpp_source.html">identity_function.hpp</a>.</p>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

@@ -1,6 +1,6 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$dtb_8hpp.html" title="src/mlpack/methods/emst/dtb.hpp" alt="" coords="5,83,248,111"/>
-<area shape="rect" id="node5" href="$neighbor__search_8hpp.html" title="src/mlpack/methods/neighbor_search/neighbor_search.hpp" alt="" coords="272,83,672,111"/>
-<area shape="rect" id="node10" href="$range__search_8hpp.html" title="src/mlpack/methods/range_search/range_search.hpp" alt="" coords="696,83,1059,111"/>
-<area shape="rect" id="node7" href="$typedef_8hpp.html" title="src/mlpack/methods/neighbor_search/typedef.hpp" alt="" coords="301,161,643,189"/>
+<map id="src/mlpack/core/tree/binary_space_tree.hpp" name="src/mlpack/core/tree/binary_space_tree.hpp">
+<area shape="rect" id="node2" href="$dtb_8hpp.html" title="src/mlpack/methods\l/emst/dtb.hpp" alt="" coords="5,102,145,143"/>
+<area shape="rect" id="node3" href="$neighbor__search_8hpp.html" title="src/mlpack/methods\l/neighbor_search/neighbor\l_search.hpp" alt="" coords="169,95,344,151"/>
+<area shape="rect" id="node5" href="$range__search_8hpp.html" title="src/mlpack/methods\l/range_search/range\l_search.hpp" alt="" coords="368,95,508,151"/>
+<area shape="rect" id="node4" href="$typedef_8hpp.html" title="src/mlpack/methods\l/neighbor_search/typedef.hpp" alt="" coords="160,199,353,240"/>
 </map>

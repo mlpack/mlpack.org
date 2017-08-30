@@ -1,5 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$cover__tree_8hpp.html" title="src/mlpack/core/tree/cover_tree.hpp" alt="" coords="73,83,327,111"/>
-<area shape="rect" id="node5" href="$cover__tree_2single__tree__traverser_8hpp.html" title="src/mlpack/core/tree/cover_tree/single_tree_traverser.hpp" alt="" coords="5,161,395,189"/>
-<area shape="rect" id="node8" href="$fastmks_8hpp.html" title="src/mlpack/methods/fastmks/fastmks.hpp" alt="" coords="419,161,709,189"/>
+<map id="src/mlpack/core/tree/cover_tree/dual_tree_traverser.hpp" name="src/mlpack/core/tree/cover_tree/dual_tree_traverser.hpp">
+<area shape="rect" id="node2" href="$cover__tree_8hpp.html" title="src/mlpack/core/tree\l/cover_tree.hpp" alt="" coords="9,109,151,151"/>
+<area shape="rect" id="node3" href="$fastmks_8hpp.html" title="src/mlpack/methods\l/fastmks/fastmks.hpp" alt="" coords="5,199,155,240"/>
 </map>

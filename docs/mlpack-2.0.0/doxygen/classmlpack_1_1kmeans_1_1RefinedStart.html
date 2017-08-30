@@ -1,22 +1,50 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head >
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
-<meta name="generator" content="Doxygen 1.8.9.1"></meta>
-<title >mlpack: mlpack::kmeans::RefinedStart Class Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
-</link>
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
-</link>
-</head>
-<body >
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
 <div id="top">
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody >
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mlpack
    &#160;<span id="projectnumber">2.0.0</span>
    </div>
@@ -26,24 +54,14 @@
 </table>
 </div>
 
-
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
-      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
-      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span >Classes</span></a></li>
-      <li ><a href="files.html"><span >Files</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li ><a href="annotated.html"><span >Class&#160;List</span></a></li>
-      <li ><a href="classes.html"><span >Class&#160;Index</span></a></li>
-      <li ><a href="inherits.html"><span >Class&#160;Hierarchy</span></a></li>
-      <li ><a href="functions.html"><span >Class&#160;Members</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+</script>
+<div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul >
 <li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1kmeans.html">kmeans</a></li><li class="navelem"><a class="el" href="classmlpack_1_1kmeans_1_1RefinedStart.html">RefinedStart</a></li>  </ul>
@@ -67,19 +85,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adde167739b1f6a60b818ecba61b36075"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1RefinedStart.html#adde167739b1f6a60b818ecba61b36075">RefinedStart</a> (const size_t <a class="el" href="classmlpack_1_1kmeans_1_1RefinedStart.html#a61b896a0eac690c67f258bf127beab15">samplings</a>=100, const double <a class="el" href="classmlpack_1_1kmeans_1_1RefinedStart.html#a12e904e46c1c8d2b38c9f4e4a2c95477">percentage</a>=0.02)</td></tr>
 <tr class="memdesc:adde167739b1f6a60b818ecba61b36075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the <a class="el" href="classmlpack_1_1kmeans_1_1RefinedStart.html" title="A refined approach for choosing initial points for k-means clustering. ">RefinedStart</a> object, optionally specifying parameters for the number of samplings to perform and the percentage of the dataset to use in each sampling.  <a href="#adde167739b1f6a60b818ecba61b36075">More...</a><br /></br></td></tr>
 <tr class="separator:adde167739b1f6a60b818ecba61b36075"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acee9423ccf7d4cc259611ef9fe1c2199"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
-<tr class="memitem:acee9423ccf7d4cc259611ef9fe1c2199"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1RefinedStart.html#acee9423ccf7d4cc259611ef9fe1c2199">Cluster</a> (const MatType &amp;data, const size_t clusters, arma::Row&lt; size_t &gt; &amp;assignments) const </td></tr>
-<tr class="memdesc:acee9423ccf7d4cc259611ef9fe1c2199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Partition the given dataset into the given number of clusters according to the random sampling scheme outlined in Bradley and Fayyad's paper.  <a href="#acee9423ccf7d4cc259611ef9fe1c2199">More...</a><br /></br></td></tr>
-<tr class="separator:acee9423ccf7d4cc259611ef9fe1c2199"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedb68e69d98b83790dcf86d5ce0b898a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1RefinedStart.html#aedb68e69d98b83790dcf86d5ce0b898a">Percentage</a> () const </td></tr>
-<tr class="memdesc:aedb68e69d98b83790dcf86d5ce0b898a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the percentage of the data used by each subsampling.  <a href="#aedb68e69d98b83790dcf86d5ce0b898a">More...</a><br /></br></td></tr>
-<tr class="separator:aedb68e69d98b83790dcf86d5ce0b898a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a052c94b0ee31f6ad9db76c634dc73edb"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a052c94b0ee31f6ad9db76c634dc73edb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1RefinedStart.html#a052c94b0ee31f6ad9db76c634dc73edb">Cluster</a> (const MatType &amp;data, const size_t clusters, arma::Row&lt; size_t &gt; &amp;assignments) const</td></tr>
+<tr class="memdesc:a052c94b0ee31f6ad9db76c634dc73edb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Partition the given dataset into the given number of clusters according to the random sampling scheme outlined in Bradley and Fayyad's paper.  <a href="#a052c94b0ee31f6ad9db76c634dc73edb">More...</a><br /></br></td></tr>
+<tr class="separator:a052c94b0ee31f6ad9db76c634dc73edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa320f55a08b00462ccf715de8568597"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1RefinedStart.html#afa320f55a08b00462ccf715de8568597">Percentage</a> () const</td></tr>
+<tr class="memdesc:afa320f55a08b00462ccf715de8568597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the percentage of the data used by each subsampling.  <a href="#afa320f55a08b00462ccf715de8568597">More...</a><br /></br></td></tr>
+<tr class="separator:afa320f55a08b00462ccf715de8568597"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43b1e93b34096dab2168f59e9b996e22"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1RefinedStart.html#a43b1e93b34096dab2168f59e9b996e22">Percentage</a> ()</td></tr>
 <tr class="memdesc:a43b1e93b34096dab2168f59e9b996e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the percentage of the data used by each subsampling.  <a href="#a43b1e93b34096dab2168f59e9b996e22">More...</a><br /></br></td></tr>
 <tr class="separator:a43b1e93b34096dab2168f59e9b996e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3e5baee99d8a819727a4dc4de3de832"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1RefinedStart.html#af3e5baee99d8a819727a4dc4de3de832">Samplings</a> () const </td></tr>
-<tr class="memdesc:af3e5baee99d8a819727a4dc4de3de832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of samplings that will be performed.  <a href="#af3e5baee99d8a819727a4dc4de3de832">More...</a><br /></br></td></tr>
-<tr class="separator:af3e5baee99d8a819727a4dc4de3de832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e165782787a1c6a40f15a0c305e4848"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1RefinedStart.html#a5e165782787a1c6a40f15a0c305e4848">Samplings</a> () const</td></tr>
+<tr class="memdesc:a5e165782787a1c6a40f15a0c305e4848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of samplings that will be performed.  <a href="#a5e165782787a1c6a40f15a0c305e4848">More...</a><br /></br></td></tr>
+<tr class="separator:a5e165782787a1c6a40f15a0c305e4848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ea1474663b9ab0a81ced2618da4088f"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1kmeans_1_1RefinedStart.html#a6ea1474663b9ab0a81ced2618da4088f">Samplings</a> ()</td></tr>
 <tr class="memdesc:a6ea1474663b9ab0a81ced2618da4088f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the number of samplings that will be performed.  <a href="#a6ea1474663b9ab0a81ced2618da4088f">More...</a><br /></br></td></tr>
 <tr class="separator:a6ea1474663b9ab0a81ced2618da4088f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -102,9 +120,11 @@ Private Attributes</h2></td></tr>
 <p >This approach runs k-means several times on random subsets of the data, and then clusters those solutions to select refined initial cluster assignments. It is an implementation of the following paper:</p>
 <p >{bradley1998refining, title={Refining initial points for k-means clustering}, author={Bradley, Paul S and Fayyad, Usama M}, booktitle={Proceedings of the Fifteenth International Conference on Machine Learning (ICML 1998)}, volume={66}, year={1998} } </p>
 
-<p >Definition at line <a class="el" href="refined__start_8hpp_source.html#l00047">47</a> of file <a class="el" href="refined__start_8hpp_source.html">refined_start.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refined__start_8hpp_source.html#l00047">47</a> of file <a class="el" href="refined__start_8hpp_source.html">refined_start.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="adde167739b1f6a60b818ecba61b36075"></a>
+<a id="adde167739b1f6a60b818ecba61b36075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adde167739b1f6a60b818ecba61b36075">&#9670;&nbsp;</a></span>RefinedStart()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -138,12 +158,16 @@ Private Attributes</h2></td></tr>
 
 <p >Create the <a class="el" href="classmlpack_1_1kmeans_1_1RefinedStart.html" title="A refined approach for choosing initial points for k-means clustering. ">RefinedStart</a> object, optionally specifying parameters for the number of samplings to perform and the percentage of the dataset to use in each sampling. </p>
 
-<p >Definition at line <a class="el" href="refined__start_8hpp_source.html#l00055">55</a> of file <a class="el" href="refined__start_8hpp_source.html">refined_start.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refined__start_8hpp_source.html#l00055">55</a> of file <a class="el" href="refined__start_8hpp_source.html">refined_start.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="classmlpack_1_1kmeans_1_1RefinedStart.html#a052c94b0ee31f6ad9db76c634dc73edb">Cluster()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="acee9423ccf7d4cc259611ef9fe1c2199"></a>
+<a id="a052c94b0ee31f6ad9db76c634dc73edb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a052c94b0ee31f6ad9db76c634dc73edb">&#9670;&nbsp;</a></span>Cluster()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -190,9 +214,13 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p class="reference">Referenced by <a class="el" href="refined__start_8hpp_source.html#l00055">RefinedStart()</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="aedb68e69d98b83790dcf86d5ce0b898a"></a>
+<a id="afa320f55a08b00462ccf715de8568597"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa320f55a08b00462ccf715de8568597">&#9670;&nbsp;</a></span>Percentage() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -215,13 +243,15 @@ Private Attributes</h2></td></tr>
 
 <p >Get the percentage of the data used by each subsampling. </p>
 
-<p >Definition at line <a class="el" href="refined__start_8hpp_source.html#l00080">80</a> of file <a class="el" href="refined__start_8hpp_source.html">refined_start.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refined__start_8hpp_source.html#l00080">80</a> of file <a class="el" href="refined__start_8hpp_source.html">refined_start.hpp</a>.</p>
 
-<p >References <a class="el" href="refined__start_8hpp_source.html#l00096">percentage</a>.</p>
+<p class="reference">References <a class="el" href="refined__start_8hpp_source.html#l00096">percentage</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a43b1e93b34096dab2168f59e9b996e22"></a>
+<a id="a43b1e93b34096dab2168f59e9b996e22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43b1e93b34096dab2168f59e9b996e22">&#9670;&nbsp;</a></span>Percentage() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -244,13 +274,15 @@ Private Attributes</h2></td></tr>
 
 <p >Modify the percentage of the data used by each subsampling. </p>
 
-<p >Definition at line <a class="el" href="refined__start_8hpp_source.html#l00082">82</a> of file <a class="el" href="refined__start_8hpp_source.html">refined_start.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refined__start_8hpp_source.html#l00082">82</a> of file <a class="el" href="refined__start_8hpp_source.html">refined_start.hpp</a>.</p>
 
-<p >References <a class="el" href="refined__start_8hpp_source.html#l00096">percentage</a>.</p>
+<p class="reference">References <a class="el" href="refined__start_8hpp_source.html#l00096">percentage</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af3e5baee99d8a819727a4dc4de3de832"></a>
+<a id="a5e165782787a1c6a40f15a0c305e4848"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e165782787a1c6a40f15a0c305e4848">&#9670;&nbsp;</a></span>Samplings() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -273,13 +305,15 @@ Private Attributes</h2></td></tr>
 
 <p >Get the number of samplings that will be performed. </p>
 
-<p >Definition at line <a class="el" href="refined__start_8hpp_source.html#l00075">75</a> of file <a class="el" href="refined__start_8hpp_source.html">refined_start.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refined__start_8hpp_source.html#l00075">75</a> of file <a class="el" href="refined__start_8hpp_source.html">refined_start.hpp</a>.</p>
 
-<p >References <a class="el" href="refined__start_8hpp_source.html#l00094">samplings</a>.</p>
+<p class="reference">References <a class="el" href="refined__start_8hpp_source.html#l00094">samplings</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a6ea1474663b9ab0a81ced2618da4088f"></a>
+<a id="a6ea1474663b9ab0a81ced2618da4088f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ea1474663b9ab0a81ced2618da4088f">&#9670;&nbsp;</a></span>Samplings() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -302,13 +336,15 @@ Private Attributes</h2></td></tr>
 
 <p >Modify the number of samplings that will be performed. </p>
 
-<p >Definition at line <a class="el" href="refined__start_8hpp_source.html#l00077">77</a> of file <a class="el" href="refined__start_8hpp_source.html">refined_start.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refined__start_8hpp_source.html#l00077">77</a> of file <a class="el" href="refined__start_8hpp_source.html">refined_start.hpp</a>.</p>
 
-<p >References <a class="el" href="refined__start_8hpp_source.html#l00094">samplings</a>.</p>
+<p class="reference">References <a class="el" href="refined__start_8hpp_source.html#l00094">samplings</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a352f8bc1555fa578ce96454c2765bdbf"></a>
+<a id="a352f8bc1555fa578ce96454c2765bdbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a352f8bc1555fa578ce96454c2765bdbf">&#9670;&nbsp;</a></span>Serialize()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -343,14 +379,16 @@ Private Attributes</h2></td></tr>
 
 <p >Serialize the object. </p>
 
-<p >Definition at line <a class="el" href="refined__start_8hpp_source.html#l00086">86</a> of file <a class="el" href="refined__start_8hpp_source.html">refined_start.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refined__start_8hpp_source.html#l00086">86</a> of file <a class="el" href="refined__start_8hpp_source.html">refined_start.hpp</a>.</p>
 
-<p >References <a class="el" href="serialization__shim_8hpp_source.html#l00103">mlpack::data::CreateNVP()</a>, <a class="el" href="refined__start_8hpp_source.html#l00096">percentage</a>, and <a class="el" href="refined__start_8hpp_source.html#l00094">samplings</a>.</p>
+<p class="reference">References <a class="el" href="serialization__shim_8hpp_source.html#l00103">mlpack::data::CreateNVP()</a>, <a class="el" href="refined__start_8hpp_source.html#l00096">percentage</a>, and <a class="el" href="refined__start_8hpp_source.html#l00094">samplings</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a12e904e46c1c8d2b38c9f4e4a2c95477"></a>
+<a id="a12e904e46c1c8d2b38c9f4e4a2c95477"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12e904e46c1c8d2b38c9f4e4a2c95477">&#9670;&nbsp;</a></span>percentage</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -370,13 +408,15 @@ Private Attributes</h2></td></tr>
 
 <p >The percentage of the data to use for each subsampling. </p>
 
-<p >Definition at line <a class="el" href="refined__start_8hpp_source.html#l00096">96</a> of file <a class="el" href="refined__start_8hpp_source.html">refined_start.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refined__start_8hpp_source.html#l00096">96</a> of file <a class="el" href="refined__start_8hpp_source.html">refined_start.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="refined__start_8hpp_source.html#l00080">Percentage()</a>, and <a class="el" href="refined__start_8hpp_source.html#l00086">Serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refined__start_8hpp_source.html#l00080">Percentage()</a>, and <a class="el" href="refined__start_8hpp_source.html#l00086">Serialize()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a61b896a0eac690c67f258bf127beab15"></a>
+<a id="a61b896a0eac690c67f258bf127beab15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b896a0eac690c67f258bf127beab15">&#9670;&nbsp;</a></span>samplings</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -396,9 +436,9 @@ Private Attributes</h2></td></tr>
 
 <p >The number of samplings to perform. </p>
 
-<p >Definition at line <a class="el" href="refined__start_8hpp_source.html#l00094">94</a> of file <a class="el" href="refined__start_8hpp_source.html">refined_start.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refined__start_8hpp_source.html#l00094">94</a> of file <a class="el" href="refined__start_8hpp_source.html">refined_start.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="refined__start_8hpp_source.html#l00075">Samplings()</a>, and <a class="el" href="refined__start_8hpp_source.html#l00086">Serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refined__start_8hpp_source.html#l00075">Samplings()</a>, and <a class="el" href="refined__start_8hpp_source.html#l00086">Serialize()</a>.</p>
 
 </div>
 </div>
@@ -410,7 +450,16 @@ Private Attributes</h2></td></tr>
 <hr class="footer"></hr><address class="footer"><small >
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"></img>
-</a> 1.8.9.1
+</a> 1.8.13
 </small></address>
+</div>
 </body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
 </html>

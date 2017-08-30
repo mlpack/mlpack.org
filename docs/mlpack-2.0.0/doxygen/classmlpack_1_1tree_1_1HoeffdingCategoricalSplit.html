@@ -1,22 +1,50 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head >
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
-<meta name="generator" content="Doxygen 1.8.9.1"></meta>
-<title >mlpack: mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt; Class Template Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
-</link>
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
-</link>
-</head>
-<body >
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
 <div id="top">
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody >
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mlpack
    &#160;<span id="projectnumber">2.0.0</span>
    </div>
@@ -26,24 +54,14 @@
 </table>
 </div>
 
-
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
-      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
-      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span >Classes</span></a></li>
-      <li ><a href="files.html"><span >Files</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li ><a href="annotated.html"><span >Class&#160;List</span></a></li>
-      <li ><a href="classes.html"><span >Class&#160;Index</span></a></li>
-      <li ><a href="inherits.html"><span >Class&#160;Hierarchy</span></a></li>
-      <li ><a href="functions.html"><span >Class&#160;Members</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+</script>
+<div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul >
 <li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1tree.html">tree</a></li><li class="navelem"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingCategoricalSplit.html">HoeffdingCategoricalSplit</a></li>  </ul>
@@ -77,18 +95,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeb6bc46b96e1ace389d26f5f5e6aa2bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingCategoricalSplit.html#aeb6bc46b96e1ace389d26f5f5e6aa2bc">HoeffdingCategoricalSplit</a> (const size_t numCategories, const size_t numClasses, const <a class="el" href="classmlpack_1_1tree_1_1HoeffdingCategoricalSplit.html">HoeffdingCategoricalSplit</a> &amp;other)</td></tr>
 <tr class="memdesc:aeb6bc46b96e1ace389d26f5f5e6aa2bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the <a class="el" href="classmlpack_1_1tree_1_1HoeffdingCategoricalSplit.html" title="This is the standard Hoeffding-bound categorical feature proposed in the paper below: ...">HoeffdingCategoricalSplit</a> given a number of categories for this dimension and a number of classes and another <a class="el" href="classmlpack_1_1tree_1_1HoeffdingCategoricalSplit.html" title="This is the standard Hoeffding-bound categorical feature proposed in the paper below: ...">HoeffdingCategoricalSplit</a> to take parameters from.  <a href="#aeb6bc46b96e1ace389d26f5f5e6aa2bc">More...</a><br /></br></td></tr>
 <tr class="separator:aeb6bc46b96e1ace389d26f5f5e6aa2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e83a6bd5de5bcec736942233dc5d27d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingCategoricalSplit.html#a8e83a6bd5de5bcec736942233dc5d27d">EvaluateFitnessFunction</a> (double &amp;bestFitness, double &amp;secondBestFitness) const </td></tr>
-<tr class="memdesc:a8e83a6bd5de5bcec736942233dc5d27d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the points seen so far, evaluate the fitness function, returning the gain for the best possible split and the second best possible split.  <a href="#a8e83a6bd5de5bcec736942233dc5d27d">More...</a><br /></br></td></tr>
-<tr class="separator:a8e83a6bd5de5bcec736942233dc5d27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bf75d6c120eadc57b1ee633076f6111"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingCategoricalSplit.html#a8bf75d6c120eadc57b1ee633076f6111">MajorityClass</a> () const </td></tr>
-<tr class="memdesc:a8bf75d6c120eadc57b1ee633076f6111"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the majority class seen so far.  <a href="#a8bf75d6c120eadc57b1ee633076f6111">More...</a><br /></br></td></tr>
-<tr class="separator:a8bf75d6c120eadc57b1ee633076f6111"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8ac79b79aecc337360e1e401228254d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingCategoricalSplit.html#ae8ac79b79aecc337360e1e401228254d">MajorityProbability</a> () const </td></tr>
-<tr class="memdesc:ae8ac79b79aecc337360e1e401228254d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the probability of the majority class given the points seen so far.  <a href="#ae8ac79b79aecc337360e1e401228254d">More...</a><br /></br></td></tr>
-<tr class="separator:ae8ac79b79aecc337360e1e401228254d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae842f2c5aaa9580a8596c70d928095bf"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingCategoricalSplit.html#ae842f2c5aaa9580a8596c70d928095bf">NumChildren</a> () const </td></tr>
-<tr class="memdesc:ae842f2c5aaa9580a8596c70d928095bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of children, if the node were to split.  <a href="#ae842f2c5aaa9580a8596c70d928095bf">More...</a><br /></br></td></tr>
-<tr class="separator:ae842f2c5aaa9580a8596c70d928095bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1739589530952543cc385362dee30fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingCategoricalSplit.html#ad1739589530952543cc385362dee30fd">EvaluateFitnessFunction</a> (double &amp;bestFitness, double &amp;secondBestFitness) const</td></tr>
+<tr class="memdesc:ad1739589530952543cc385362dee30fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the points seen so far, evaluate the fitness function, returning the gain for the best possible split and the second best possible split.  <a href="#ad1739589530952543cc385362dee30fd">More...</a><br /></br></td></tr>
+<tr class="separator:ad1739589530952543cc385362dee30fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0ce1a182b5cfa8fda36fa6556064ac4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingCategoricalSplit.html#af0ce1a182b5cfa8fda36fa6556064ac4">MajorityClass</a> () const</td></tr>
+<tr class="memdesc:af0ce1a182b5cfa8fda36fa6556064ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the majority class seen so far.  <a href="#af0ce1a182b5cfa8fda36fa6556064ac4">More...</a><br /></br></td></tr>
+<tr class="separator:af0ce1a182b5cfa8fda36fa6556064ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b9baa6801dde57d6f78653c43df58b1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingCategoricalSplit.html#a4b9baa6801dde57d6f78653c43df58b1">MajorityProbability</a> () const</td></tr>
+<tr class="memdesc:a4b9baa6801dde57d6f78653c43df58b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the probability of the majority class given the points seen so far.  <a href="#a4b9baa6801dde57d6f78653c43df58b1">More...</a><br /></br></td></tr>
+<tr class="separator:a4b9baa6801dde57d6f78653c43df58b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c22da9e53402b5a0e9eb618e159b446"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingCategoricalSplit.html#a1c22da9e53402b5a0e9eb618e159b446">NumChildren</a> () const</td></tr>
+<tr class="memdesc:a1c22da9e53402b5a0e9eb618e159b446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of children, if the node were to split.  <a href="#a1c22da9e53402b5a0e9eb618e159b446">More...</a><br /></br></td></tr>
+<tr class="separator:a1c22da9e53402b5a0e9eb618e159b446"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0907313ec2125e70f87d110d6072d6e"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
 <tr class="memitem:ac0907313ec2125e70f87d110d6072d6e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingCategoricalSplit.html#ac0907313ec2125e70f87d110d6072d6e">Serialize</a> (Archive &amp;ar, const unsigned int)</td></tr>
 <tr class="memdesc:ac0907313ec2125e70f87d110d6072d6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the categorical split.  <a href="#ac0907313ec2125e70f87d110d6072d6e">More...</a><br /></br></td></tr>
@@ -112,15 +130,7 @@ Private Attributes</h2></td></tr>
 class mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;</h3>
 
 <p >This is the standard Hoeffding-bound categorical feature proposed in the paper below: </p>
-<div class="fragment"><div class="line">@inproceedings{domingos2000mining,</div>
-<div class="line">  title={{Mining High-Speed Data Streams}},</div>
-<div class="line">  author={Domingos, P. and Hulten, G.},</div>
-<div class="line">  year={2000},</div>
-<div class="line">  booktitle={Proceedings of the Sixth ACM SIGKDD International Conference on</div>
-<div class="line">      Knowledge Discovery and Data Mining (KDD <span class="stringliteral">&#39;00)},</span></div>
-<div class="line"><span class="stringliteral">  pages={71--80}</span></div>
-<div class="line"><span class="stringliteral">}</span></div>
-</div><p >This class will track the sufficient statistics of the training points it has seen. The HoeffdingSplit class (and other related classes) can use this class to track categorical features and split decision tree nodes.</p>
+<div class="fragment"><div class="line">@inproceedings{domingos2000mining,</div><div class="line">  title={{Mining High-Speed Data Streams}},</div><div class="line">  author={Domingos, P. and Hulten, G.},</div><div class="line">  year={2000},</div><div class="line">  booktitle={Proceedings of the Sixth ACM SIGKDD International Conference on</div><div class="line">      Knowledge Discovery and Data Mining (KDD <span class="stringliteral">&#39;00)},</span></div><div class="line"><span class="stringliteral">  pages={71--80}</span></div><div class="line"><span class="stringliteral">}</span></div></div><p >This class will track the sufficient statistics of the training points it has seen. The HoeffdingSplit class (and other related classes) can use this class to track categorical features and split decision tree nodes.</p>
 <dl class="tparams"><dt >Template Parameters</dt><dd >
   <table class="tparams">
     <tr ><td class="paramname">FitnessFunction</td><td >Fitness function to use for calculating gain. </td></tr>
@@ -128,9 +138,11 @@ class mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;</h3>
   </dd>
 </dl>
 
-<p >Definition at line <a class="el" href="hoeffding__categorical__split_8hpp_source.html#l00054">54</a> of file <a class="el" href="hoeffding__categorical__split_8hpp_source.html">hoeffding_categorical_split.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__categorical__split_8hpp_source.html#l00054">54</a> of file <a class="el" href="hoeffding__categorical__split_8hpp_source.html">hoeffding_categorical_split.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="aaaceda36c643ac16508f9048568f0368"></a>
+<a id="aaaceda36c643ac16508f9048568f0368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaceda36c643ac16508f9048568f0368">&#9670;&nbsp;</a></span>SplitInfo</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -143,12 +155,14 @@ class mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;</h3>
 
 <p >The type of split information required by the <a class="el" href="classmlpack_1_1tree_1_1HoeffdingCategoricalSplit.html" title="This is the standard Hoeffding-bound categorical feature proposed in the paper below: ...">HoeffdingCategoricalSplit</a>. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__categorical__split_8hpp_source.html#l00058">58</a> of file <a class="el" href="hoeffding__categorical__split_8hpp_source.html">hoeffding_categorical_split.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__categorical__split_8hpp_source.html#l00058">58</a> of file <a class="el" href="hoeffding__categorical__split_8hpp_source.html">hoeffding_categorical_split.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a730063dd72f998b8c2cd22634c688741"></a>
+<a id="a730063dd72f998b8c2cd22634c688741"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a730063dd72f998b8c2cd22634c688741">&#9670;&nbsp;</a></span>HoeffdingCategoricalSplit() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -184,7 +198,9 @@ class mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;</h3>
 
 </div>
 </div>
-<a class="anchor" id="aeb6bc46b96e1ace389d26f5f5e6aa2bc"></a>
+<a id="aeb6bc46b96e1ace389d26f5f5e6aa2bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb6bc46b96e1ace389d26f5f5e6aa2bc">&#9670;&nbsp;</a></span>HoeffdingCategoricalSplit() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -221,7 +237,9 @@ class mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;</h3>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a8e83a6bd5de5bcec736942233dc5d27d"></a>
+<a id="ad1739589530952543cc385362dee30fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1739589530952543cc385362dee30fd">&#9670;&nbsp;</a></span>EvaluateFitnessFunction()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -258,7 +276,9 @@ class mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;</h3>
 
 </div>
 </div>
-<a class="anchor" id="a8bf75d6c120eadc57b1ee633076f6111"></a>
+<a id="af0ce1a182b5cfa8fda36fa6556064ac4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0ce1a182b5cfa8fda36fa6556064ac4">&#9670;&nbsp;</a></span>MajorityClass()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -274,9 +294,13 @@ class mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;</h3>
 
 <p >Get the majority class seen so far. </p>
 
+<p class="reference">Referenced by <a class="el" href="hoeffding__categorical__split_8hpp_source.html#l00103">mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;::NumChildren()</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="ae8ac79b79aecc337360e1e401228254d"></a>
+<a id="a4b9baa6801dde57d6f78653c43df58b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b9baa6801dde57d6f78653c43df58b1">&#9670;&nbsp;</a></span>MajorityProbability()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -292,9 +316,13 @@ class mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;</h3>
 
 <p >Get the probability of the majority class given the points seen so far. </p>
 
+<p class="reference">Referenced by <a class="el" href="hoeffding__categorical__split_8hpp_source.html#l00103">mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;::NumChildren()</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="ae842f2c5aaa9580a8596c70d928095bf"></a>
+<a id="a1c22da9e53402b5a0e9eb618e159b446"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c22da9e53402b5a0e9eb618e159b446">&#9670;&nbsp;</a></span>NumChildren()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -318,13 +346,15 @@ class mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;</h3>
 
 <p >Return the number of children, if the node were to split. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__categorical__split_8hpp_source.html#l00103">103</a> of file <a class="el" href="hoeffding__categorical__split_8hpp_source.html">hoeffding_categorical_split.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__categorical__split_8hpp_source.html#l00103">103</a> of file <a class="el" href="hoeffding__categorical__split_8hpp_source.html">hoeffding_categorical_split.hpp</a>.</p>
 
-<p >References <a class="el" href="hoeffding__categorical__split_8hpp_source.html#l00130">mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;::sufficientStatistics</a>.</p>
+<p class="reference">References <a class="el" href="classmlpack_1_1tree_1_1HoeffdingCategoricalSplit.html#af0ce1a182b5cfa8fda36fa6556064ac4">mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;::MajorityClass()</a>, <a class="el" href="classmlpack_1_1tree_1_1HoeffdingCategoricalSplit.html#a4b9baa6801dde57d6f78653c43df58b1">mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;::MajorityProbability()</a>, <a class="el" href="classmlpack_1_1tree_1_1HoeffdingCategoricalSplit.html#ae9bb73f8f902d4d0ed6585454feff18c">mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;::Split()</a>, and <a class="el" href="hoeffding__categorical__split_8hpp_source.html#l00130">mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;::sufficientStatistics</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac0907313ec2125e70f87d110d6072d6e"></a>
+<a id="ac0907313ec2125e70f87d110d6072d6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0907313ec2125e70f87d110d6072d6e">&#9670;&nbsp;</a></span>Serialize()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -360,13 +390,15 @@ class mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;</h3>
 
 <p >Serialize the categorical split. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__categorical__split_8hpp_source.html#l00121">121</a> of file <a class="el" href="hoeffding__categorical__split_8hpp_source.html">hoeffding_categorical_split.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__categorical__split_8hpp_source.html#l00121">121</a> of file <a class="el" href="hoeffding__categorical__split_8hpp_source.html">hoeffding_categorical_split.hpp</a>.</p>
 
-<p >References <a class="el" href="serialization__shim_8hpp_source.html#l00103">mlpack::data::CreateNVP()</a>, and <a class="el" href="hoeffding__categorical__split_8hpp_source.html#l00130">mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;::sufficientStatistics</a>.</p>
+<p class="reference">References <a class="el" href="serialization__shim_8hpp_source.html#l00103">mlpack::data::CreateNVP()</a>, and <a class="el" href="hoeffding__categorical__split_8hpp_source.html#l00130">mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;::sufficientStatistics</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae9bb73f8f902d4d0ed6585454feff18c"></a>
+<a id="ae9bb73f8f902d4d0ed6585454feff18c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9bb73f8f902d4d0ed6585454feff18c">&#9670;&nbsp;</a></span>Split()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -400,9 +432,13 @@ class mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;</h3>
   </dd>
 </dl>
 
+<p class="reference">Referenced by <a class="el" href="hoeffding__categorical__split_8hpp_source.html#l00103">mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;::NumChildren()</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="af6805d9aaa9f19f1ed73ca3b295bae78"></a>
+<a id="af6805d9aaa9f19f1ed73ca3b295bae78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6805d9aaa9f19f1ed73ca3b295bae78">&#9670;&nbsp;</a></span>Train()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -440,7 +476,9 @@ class mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;</h3>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a032cf1957fc1cebc2472e741d8bf6f90"></a>
+<a id="a032cf1957fc1cebc2472e741d8bf6f90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a032cf1957fc1cebc2472e741d8bf6f90">&#9670;&nbsp;</a></span>sufficientStatistics</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -462,9 +500,9 @@ class mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;</h3>
 <p >The sufficient statistics for all points seen so far. </p>
 <p >Each column corresponds to a category, and contains a count of each of the classes seen for points in that category. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__categorical__split_8hpp_source.html#l00130">130</a> of file <a class="el" href="hoeffding__categorical__split_8hpp_source.html">hoeffding_categorical_split.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__categorical__split_8hpp_source.html#l00130">130</a> of file <a class="el" href="hoeffding__categorical__split_8hpp_source.html">hoeffding_categorical_split.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="hoeffding__categorical__split_8hpp_source.html#l00103">mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;::NumChildren()</a>, and <a class="el" href="hoeffding__categorical__split_8hpp_source.html#l00121">mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;::Serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="hoeffding__categorical__split_8hpp_source.html#l00103">mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;::NumChildren()</a>, and <a class="el" href="hoeffding__categorical__split_8hpp_source.html#l00121">mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;::Serialize()</a>.</p>
 
 </div>
 </div>
@@ -476,7 +514,16 @@ class mlpack::tree::HoeffdingCategoricalSplit&lt; FitnessFunction &gt;</h3>
 <hr class="footer"></hr><address class="footer"><small >
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"></img>
-</a> 1.8.9.1
+</a> 1.8.13
 </small></address>
+</div>
 </body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
 </html>

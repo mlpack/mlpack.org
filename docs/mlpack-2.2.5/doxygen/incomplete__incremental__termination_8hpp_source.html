@@ -1,0 +1,118 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.2.5</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_44a936ef30fc126706c6284a2fc0c990.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_3cfbf900288ec2fe8dd2c2c8482f216e.html">methods</a></li><li class="navelem"><a class="el" href="dir_5d79f627790f2a48f4f1d0c9d0b8c107.html">amf</a></li><li class="navelem"><a class="el" href="dir_c5874ad48fbf1d21a244b283cb97025e.html">termination_policies</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">incomplete_incremental_termination.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="incomplete__incremental__termination_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef _MLPACK_METHODS_AMF_INCOMPLETE_INCREMENTAL_TERMINATION_HPP</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define _MLPACK_METHODS_AMF_INCOMPLETE_INCREMENTAL_TERMINATION_HPP</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="prereqs_8hpp.html">mlpack/prereqs.hpp</a>&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>amf {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TerminationPolicy&gt;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html">IncompleteIncrementalTermination</a></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; <span class="keyword">public</span>:</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#ad304bbad7ff21b99648f715528d1667d">   36</a></span>&#160;  <a class="code" href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#ad304bbad7ff21b99648f715528d1667d">IncompleteIncrementalTermination</a>(</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      TerminationPolicy tPolicy = TerminationPolicy()) :</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      tPolicy(tPolicy) { }</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class</span> MatType&gt;</div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#a7cd2df552c1f471b3248ac66291133f3">   46</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#a7cd2df552c1f471b3248ac66291133f3">Initialize</a>(<span class="keyword">const</span> MatType&amp; V)</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  {</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    tPolicy.Initialize(V);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// Initialize incremental index to number of rows.</span></div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    incrementalIndex = V.n_rows;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    iteration = 0;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#a21aa00d1db37e94076e46c66313514df">   61</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#a21aa00d1db37e94076e46c66313514df">IsConverged</a>(arma::mat&amp; W, arma::mat&amp; H)</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// increment iteration count</span></div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    iteration++;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// If the iteration count is a multiple of incremental index, return the</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// wrapped termination policy result.</span></div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> (iteration % incrementalIndex == 0)</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keywordflow">return</span> tPolicy.IsConverged(W, H);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#a866b70f9202a81d2bdbb116bc2683eb2">   75</a></span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; <a class="code" href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#a866b70f9202a81d2bdbb116bc2683eb2">Index</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> tPolicy.Index(); }</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#a5226c80136390904f5893e72749211e6">   78</a></span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span>&amp; <a class="code" href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#a5226c80136390904f5893e72749211e6">Iteration</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> iteration; }</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#a420770944a5b0c7a852c4ec372c4a2d1">   81</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#a420770944a5b0c7a852c4ec372c4a2d1">MaxIterations</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> tPolicy.MaxIterations(); }</div><div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#acda675ab4ab86b95c92bc33bc391a61b">   83</a></span>&#160;  <span class="keywordtype">size_t</span>&amp; <a class="code" href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#acda675ab4ab86b95c92bc33bc391a61b">MaxIterations</a>() { <span class="keywordflow">return</span> tPolicy.MaxIterations(); }</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#a523fe69db072d54bbb214e80d28db0d1">   86</a></span>&#160;  <span class="keyword">const</span> TerminationPolicy&amp; <a class="code" href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#a523fe69db072d54bbb214e80d28db0d1">TPolicy</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> tPolicy; }</div><div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#ab45272397c548991adca60a51a1e00dc">   88</a></span>&#160;  TerminationPolicy&amp; <a class="code" href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#ab45272397c548991adca60a51a1e00dc">TPolicy</a>() { <span class="keywordflow">return</span> tPolicy; }</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; <span class="keyword">private</span>:</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  TerminationPolicy tPolicy;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">size_t</span> incrementalIndex;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">size_t</span> iteration;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}; <span class="comment">// class IncompleteIncrementalTermination</span></div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;} <span class="comment">// namespace amf</span></div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;} <span class="comment">// namespace mlpack</span></div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classmlpack_1_1amf_1_1IncompleteIncrementalTermination_html_acda675ab4ab86b95c92bc33bc391a61b"><div class="ttname"><a href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#acda675ab4ab86b95c92bc33bc391a61b">mlpack::amf::IncompleteIncrementalTermination::MaxIterations</a></div><div class="ttdeci">size_t &amp; MaxIterations()</div><div class="ttdoc">Modify maximum number of iterations. </div><div class="ttdef"><b >Definition:</b> <a href="incomplete__incremental__termination_8hpp_source.html#l00083">incomplete_incremental_termination.hpp:83</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1IncompleteIncrementalTermination_html_a21aa00d1db37e94076e46c66313514df"><div class="ttname"><a href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#a21aa00d1db37e94076e46c66313514df">mlpack::amf::IncompleteIncrementalTermination::IsConverged</a></div><div class="ttdeci">bool IsConverged(arma::mat &amp;W, arma::mat &amp;H)</div><div class="ttdoc">Check if termination criterio is met. </div><div class="ttdef"><b >Definition:</b> <a href="incomplete__incremental__termination_8hpp_source.html#l00061">incomplete_incremental_termination.hpp:61</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1IncompleteIncrementalTermination_html_ab45272397c548991adca60a51a1e00dc"><div class="ttname"><a href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#ab45272397c548991adca60a51a1e00dc">mlpack::amf::IncompleteIncrementalTermination::TPolicy</a></div><div class="ttdeci">TerminationPolicy &amp; TPolicy()</div><div class="ttdoc">Modify the wrapped termination policy. </div><div class="ttdef"><b >Definition:</b> <a href="incomplete__incremental__termination_8hpp_source.html#l00088">incomplete_incremental_termination.hpp:88</a></div></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="binarize_8hpp_source.html#l00018">binarize.hpp:18</a></div></div>
+<div class="ttc" id="prereqs_8hpp_html"><div class="ttname"><a href="prereqs_8hpp.html">prereqs.hpp</a></div><div class="ttdoc">The core includes that mlpack expects; standard C++ includes and Armadillo. </div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1IncompleteIncrementalTermination_html_a523fe69db072d54bbb214e80d28db0d1"><div class="ttname"><a href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#a523fe69db072d54bbb214e80d28db0d1">mlpack::amf::IncompleteIncrementalTermination::TPolicy</a></div><div class="ttdeci">const TerminationPolicy &amp; TPolicy() const</div><div class="ttdoc">Access the wrapped termination policy. </div><div class="ttdef"><b >Definition:</b> <a href="incomplete__incremental__termination_8hpp_source.html#l00086">incomplete_incremental_termination.hpp:86</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1IncompleteIncrementalTermination_html_a5226c80136390904f5893e72749211e6"><div class="ttname"><a href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#a5226c80136390904f5893e72749211e6">mlpack::amf::IncompleteIncrementalTermination::Iteration</a></div><div class="ttdeci">const size_t &amp; Iteration() const</div><div class="ttdoc">Get current iteration count. </div><div class="ttdef"><b >Definition:</b> <a href="incomplete__incremental__termination_8hpp_source.html#l00078">incomplete_incremental_termination.hpp:78</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1IncompleteIncrementalTermination_html_ad304bbad7ff21b99648f715528d1667d"><div class="ttname"><a href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#ad304bbad7ff21b99648f715528d1667d">mlpack::amf::IncompleteIncrementalTermination::IncompleteIncrementalTermination</a></div><div class="ttdeci">IncompleteIncrementalTermination(TerminationPolicy tPolicy=TerminationPolicy())</div><div class="ttdoc">Empty constructor. </div><div class="ttdef"><b >Definition:</b> <a href="incomplete__incremental__termination_8hpp_source.html#l00036">incomplete_incremental_termination.hpp:36</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1IncompleteIncrementalTermination_html_a420770944a5b0c7a852c4ec372c4a2d1"><div class="ttname"><a href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#a420770944a5b0c7a852c4ec372c4a2d1">mlpack::amf::IncompleteIncrementalTermination::MaxIterations</a></div><div class="ttdeci">size_t MaxIterations() const</div><div class="ttdoc">Access maximum number of iterations. </div><div class="ttdef"><b >Definition:</b> <a href="incomplete__incremental__termination_8hpp_source.html#l00081">incomplete_incremental_termination.hpp:81</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1IncompleteIncrementalTermination_html_a866b70f9202a81d2bdbb116bc2683eb2"><div class="ttname"><a href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#a866b70f9202a81d2bdbb116bc2683eb2">mlpack::amf::IncompleteIncrementalTermination::Index</a></div><div class="ttdeci">const double &amp; Index() const</div><div class="ttdoc">Get current value of residue. </div><div class="ttdef"><b >Definition:</b> <a href="incomplete__incremental__termination_8hpp_source.html#l00075">incomplete_incremental_termination.hpp:75</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1IncompleteIncrementalTermination_html"><div class="ttname"><a href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html">mlpack::amf::IncompleteIncrementalTermination</a></div><div class="ttdoc">This class acts as a wrapper for basic termination policies to be used by SVDIncompleteIncrementalLea...</div><div class="ttdef"><b >Definition:</b> <a href="incomplete__incremental__termination_8hpp_source.html#l00028">incomplete_incremental_termination.hpp:28</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1IncompleteIncrementalTermination_html_a7cd2df552c1f471b3248ac66291133f3"><div class="ttname"><a href="classmlpack_1_1amf_1_1IncompleteIncrementalTermination.html#a7cd2df552c1f471b3248ac66291133f3">mlpack::amf::IncompleteIncrementalTermination::Initialize</a></div><div class="ttdeci">void Initialize(const MatType &amp;V)</div><div class="ttdoc">Initializes the termination policy before stating the factorization. </div><div class="ttdef"><b >Definition:</b> <a href="incomplete__incremental__termination_8hpp_source.html#l00046">incomplete_incremental_termination.hpp:46</a></div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

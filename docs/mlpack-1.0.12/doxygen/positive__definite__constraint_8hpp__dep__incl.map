@@ -1,4 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$em__fit_8hpp.html" title="src/mlpack/methods/gmm/em_fit.hpp" alt="" coords="72,83,333,111"/>
-<area shape="rect" id="node5" href="$gmm_8hpp.html" title="src/mlpack/methods/gmm/gmm.hpp" alt="" coords="75,161,331,189"/>
+<map id="src/mlpack/methods/gmm/positive_definite_constraint.hpp" name="src/mlpack/methods/gmm/positive_definite_constraint.hpp">
+<area shape="rect" id="node2" href="$em__fit_8hpp.html" title="src/mlpack/methods\l/gmm/em_fit.hpp" alt="" coords="12,109,152,151"/>
+<area shape="rect" id="node3" href="$gmm_8hpp.html" title="src/mlpack/methods\l/gmm/gmm.hpp" alt="" coords="12,199,152,240"/>
 </map>

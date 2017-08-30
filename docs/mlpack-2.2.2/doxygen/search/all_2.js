@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['a9506a33',['a9506a33',['../gitversion_8hpp.html#a496ded9711e2399c9fe92211a5800c74',1,'gitversion.hpp']]],
   ['activate',['Activate',['../classmlpack_1_1regression_1_1LARS.html#a504b043dbd8ddad13ed8d5cccd095b03',1,'mlpack::regression::LARS']]],
   ['activeset',['activeSet',['../classmlpack_1_1regression_1_1LARS.html#a89b9907865950046de9487f0b4382e6f',1,'mlpack::regression::LARS::activeSet()'],['../classmlpack_1_1regression_1_1LARS.html#aae77f9a6fe5dfe9892e0c31f384c9bd6',1,'mlpack::regression::LARS::ActiveSet() const']]],
   ['ada_5fdelta_2ehpp',['ada_delta.hpp',['../ada__delta_8hpp.html',1,'']]],

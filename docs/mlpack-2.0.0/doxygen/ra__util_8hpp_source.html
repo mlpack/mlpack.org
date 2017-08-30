@@ -1,22 +1,50 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head >
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
-<meta name="generator" content="Doxygen 1.8.9.1"></meta>
-<title >mlpack: src/mlpack/methods/rann/ra_util.hpp Source File</title><link href="tabs.css" rel="stylesheet" type="text/css" />
-</link>
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
-</link>
-</head>
-<body >
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
 <div id="top">
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody >
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mlpack
    &#160;<span id="projectnumber">2.0.0</span>
    </div>
@@ -26,25 +54,17 @@
 </table>
 </div>
 
-
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
-      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
-      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
-      <li ><a href="annotated.html"><span >Classes</span></a></li>
-      <li class="current"><a href="files.html"><span >Files</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li ><a href="files.html"><span >File&#160;List</span></a></li>
-      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+</script>
+<div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul >
-<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_19fd2ebec21bf6d8aaa7fdf30f286d47.html">methods</a></li><li class="navelem"><a class="el" href="dir_81230a91bc9f2a4d579232cca5923447.html">rann</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_44a936ef30fc126706c6284a2fc0c990.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_3cfbf900288ec2fe8dd2c2c8482f216e.html">methods</a></li><li class="navelem"><a class="el" href="dir_b3b2a45410bb0010ddefc979f918eabf.html">rann</a></li>  </ul>
 </div>
 </div>
 <div class="header">
@@ -52,50 +72,28 @@
 <div class="title">ra_util.hpp</div>  </div>
 </div>
 <div class="contents">
-<a href="ra__util_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifndef __MLPACK_METHODS_RANN_RA_UTIL_HPP</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define __MLPACK_METHODS_RANN_RA_UTIL_HPP</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span>neighbor {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classmlpack_1_1neighbor_1_1RAUtil.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1neighbor_1_1RAUtil.html">RAUtil</a></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1neighbor_1_1RAUtil.html#a3e004c7082de16b5365c7d27d7208220">MinimumSamplesReqd</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> n,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">size_t</span> k,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">double</span> tau,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="det_8txt.html#ab91e75beea981a97844ff19e46d522e5">alpha</a>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1neighbor_1_1RAUtil.html#aaa9f86a34028f67529f3771409a033a1">SuccessProbability</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> n,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">size_t</span> k,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">size_t</span> m,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">size_t</span> t);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1neighbor_1_1RAUtil.html#a521f426a54e5f41464046c5f1fd6308c">ObtainDistinctSamples</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> numSamples,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                    <span class="keyword">const</span> <span class="keywordtype">size_t</span> rangeUpperBound,</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                    arma::uvec&amp; distinctSamples);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;} <span class="comment">// namespace neighbor</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;} <span class="comment">// namespace mlpack</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
+<a href="ra__util_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifndef __MLPACK_METHODS_RANN_RA_UTIL_HPP</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define __MLPACK_METHODS_RANN_RA_UTIL_HPP</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span>neighbor {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classmlpack_1_1neighbor_1_1RAUtil.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1neighbor_1_1RAUtil.html">RAUtil</a></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; <span class="keyword">public</span>:</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">size_t</span> <a class="code" href="classmlpack_1_1neighbor_1_1RAUtil.html#a3e004c7082de16b5365c7d27d7208220">MinimumSamplesReqd</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> n,</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">size_t</span> k,</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">double</span> tau,</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="det_8txt.html#ae7ed598bdef2a989db6a7ae6e7c11288">alpha</a>);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1neighbor_1_1RAUtil.html#aaa9f86a34028f67529f3771409a033a1">SuccessProbability</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> n,</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">size_t</span> k,</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">size_t</span> m,</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">size_t</span> t);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1neighbor_1_1RAUtil.html#a521f426a54e5f41464046c5f1fd6308c">ObtainDistinctSamples</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> numSamples,</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                    <span class="keyword">const</span> <span class="keywordtype">size_t</span> rangeUpperBound,</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                    arma::uvec&amp; distinctSamples);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;} <span class="comment">// namespace neighbor</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;} <span class="comment">// namespace mlpack</span></div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
 <div class="ttc" id="classmlpack_1_1neighbor_1_1RAUtil_html"><div class="ttname"><a href="classmlpack_1_1neighbor_1_1RAUtil.html">mlpack::neighbor::RAUtil</a></div><div class="ttdef"><b >Definition:</b> <a href="ra__util_8hpp_source.html#l00031">ra_util.hpp:31</a></div></div>
 <div class="ttc" id="core_8hpp_html"><div class="ttname"><a href="core_8hpp.html">core.hpp</a></div><div class="ttdoc">Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu...</div></div>
+<div class="ttc" id="det_8txt_html_ae7ed598bdef2a989db6a7ae6e7c11288"><div class="ttname"><a href="det_8txt.html#ae7ed598bdef2a989db6a7ae6e7c11288">alpha</a></div><div class="ttdeci">see subsection cli_alt_reg_tut Alternate DET regularization The usual regularized error f $R_ alpha(t)\f$ of a node \f $t\f$ is given by</div><div class="ttdef"><b >Definition:</b> <a href="det_8txt_source.html#l00344">det.txt:344</a></div></div>
 <div class="ttc" id="classmlpack_1_1neighbor_1_1RAUtil_html_a3e004c7082de16b5365c7d27d7208220"><div class="ttname"><a href="classmlpack_1_1neighbor_1_1RAUtil.html#a3e004c7082de16b5365c7d27d7208220">mlpack::neighbor::RAUtil::MinimumSamplesReqd</a></div><div class="ttdeci">static size_t MinimumSamplesReqd(const size_t n, const size_t k, const double tau, const double alpha)</div><div class="ttdoc">Compute the minimum number of samples required to guarantee the given rank-approximation and success ...</div></div>
-<div class="ttc" id="classmlpack_1_1neighbor_1_1RAUtil_html_aaa9f86a34028f67529f3771409a033a1"><div class="ttname"><a href="classmlpack_1_1neighbor_1_1RAUtil.html#aaa9f86a34028f67529f3771409a033a1">mlpack::neighbor::RAUtil::SuccessProbability</a></div><div class="ttdeci">static double SuccessProbability(const size_t n, const size_t k, const size_t m, const size_t t)</div><div class="ttdoc">Compute the success probability of obtaining &#39;k&#39;-neighbors from a set of size &#39;n&#39; within the top &#39;t&#39; ...</div></div>
+<div class="ttc" id="classmlpack_1_1neighbor_1_1RAUtil_html_aaa9f86a34028f67529f3771409a033a1"><div class="ttname"><a href="classmlpack_1_1neighbor_1_1RAUtil.html#aaa9f86a34028f67529f3771409a033a1">mlpack::neighbor::RAUtil::SuccessProbability</a></div><div class="ttdeci">static double SuccessProbability(const size_t n, const size_t k, const size_t m, const size_t t)</div><div class="ttdoc">Compute the success probability of obtaining &amp;#39;k&amp;#39;-neighbors from a set of size &amp;#39;n&amp;#39; within the top &amp;#39;t&amp;#39; ...</div></div>
 <div class="ttc" id="classmlpack_1_1neighbor_1_1RAUtil_html_a521f426a54e5f41464046c5f1fd6308c"><div class="ttname"><a href="classmlpack_1_1neighbor_1_1RAUtil.html#a521f426a54e5f41464046c5f1fd6308c">mlpack::neighbor::RAUtil::ObtainDistinctSamples</a></div><div class="ttdeci">static void ObtainDistinctSamples(const size_t numSamples, const size_t rangeUpperBound, arma::uvec &amp;distinctSamples)</div><div class="ttdoc">Pick up desired number of samples (with replacement) from a given range of integers so that only the ...</div></div>
-<div class="ttc" id="det_8txt_html_ab91e75beea981a97844ff19e46d522e5"><div class="ttname"><a href="det_8txt.html#ab91e75beea981a97844ff19e46d522e5">alpha</a></div><div class="ttdeci">see subsection cli_alt_reg_tut Alternate DET regularization The usual regularized error f $R_ alpha(t)\f $of a node\f $t\f $is given by</div><div class="ttdef"><b >Definition:</b> <a href="det_8txt_source.html#l00344">det.txt:344</a></div></div>
 </div></div>
 
 <hr class="footer"></hr><address class="footer"><small >
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"></img>
-</a> 1.8.9.1
+</a> 1.8.13
 </small></address>
+</div>
 </body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
 </html>

@@ -1,22 +1,50 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head >
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
-<meta name="generator" content="Doxygen 1.8.9.1"></meta>
-<title >mlpack: mlpack::amf::SVDBatchLearning Class Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
-</link>
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
-</link>
-</head>
-<body >
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
 <div id="top">
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody >
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mlpack
    &#160;<span id="projectnumber">2.0.0</span>
    </div>
@@ -26,24 +54,14 @@
 </table>
 </div>
 
-
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
-      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
-      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span >Classes</span></a></li>
-      <li ><a href="files.html"><span >Files</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li ><a href="annotated.html"><span >Class&#160;List</span></a></li>
-      <li ><a href="classes.html"><span >Class&#160;Index</span></a></li>
-      <li ><a href="inherits.html"><span >Class&#160;Hierarchy</span></a></li>
-      <li ><a href="functions.html"><span >Class&#160;Members</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+</script>
+<div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul >
 <li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1amf.html">amf</a></li><li class="navelem"><a class="el" href="classmlpack_1_1amf_1_1SVDBatchLearning.html">SVDBatchLearning</a></li>  </ul>
@@ -108,19 +126,14 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This class implements SVD batch learning with momentum. </p>
 <p >This procedure is described in the following paper:</p>
-<div class="fragment"><div class="line">@techreport{ma2008guide,</div>
-<div class="line">  title={A Guide to Singular Value Decomposition <span class="keywordflow">for</span> Collaborative</div>
-<div class="line">      Filtering},</div>
-<div class="line">  author={Ma, Chih-Chao},</div>
-<div class="line">  year={2008},</div>
-<div class="line">  institution={Department of Computer Science, National Taiwan University}</div>
-<div class="line">}</div>
-</div><p >This class implements 'Algorithm 4' as given in the paper.</p>
+<div class="fragment"><div class="line">@techreport{ma2008guide,</div><div class="line">  title={A Guide to Singular Value Decomposition <span class="keywordflow">for</span> Collaborative</div><div class="line">      Filtering},</div><div class="line">  author={Ma, Chih-Chao},</div><div class="line">  year={2008},</div><div class="line">  institution={Department of Computer Science, National Taiwan University}</div><div class="line">}</div></div><p >This class implements 'Algorithm 4' as given in the paper.</p>
 <p >The factorizer decomposes the matrix V into two matrices W and H such that sum of sum of squared error between V and W * H is minimum. This optimization is performed with gradient descent. To make gradient descent faster, momentum is added. </p>
 
-<p >Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00051">51</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00051">51</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a180c77df8990203257919ec73f1dd097"></a>
+<a id="a180c77df8990203257919ec73f1dd097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a180c77df8990203257919ec73f1dd097">&#9670;&nbsp;</a></span>SVDBatchLearning()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -175,12 +188,14 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p >Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00062">62</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00062">62</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a986d428f8db1544bcdd4ff0de4ec5866"></a>
+<a id="a986d428f8db1544bcdd4ff0de4ec5866"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a986d428f8db1544bcdd4ff0de4ec5866">&#9670;&nbsp;</a></span>HUpdate()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -230,13 +245,15 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p >Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00143">143</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00143">143</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
 
-<p >References <a class="el" href="svd__batch__learning_8hpp_source.html#l00196">kh</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00203">mH</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00198">momentum</a>, and <a class="el" href="svd__batch__learning_8hpp_source.html#l00192">u</a>.</p>
+<p class="reference">References <a class="el" href="svd__batch__learning_8hpp_source.html#l00196">kh</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00203">mH</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00198">momentum</a>, and <a class="el" href="svd__batch__learning_8hpp_source.html#l00192">u</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a366329ff8e455ad5426a59c3c7088aab"></a>
+<a id="a366329ff8e455ad5426a59c3c7088aab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a366329ff8e455ad5426a59c3c7088aab">&#9670;&nbsp;</a></span>Initialize()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -279,13 +296,15 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p >Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00079">79</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00079">79</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
 
-<p >References <a class="el" href="svd__batch__learning_8hpp_source.html#l00203">mH</a>, and <a class="el" href="svd__batch__learning_8hpp_source.html#l00201">mW</a>.</p>
+<p class="reference">References <a class="el" href="svd__batch__learning_8hpp_source.html#l00203">mH</a>, and <a class="el" href="svd__batch__learning_8hpp_source.html#l00201">mW</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a916ec112cc73c6a0cd06f13a514da1c9"></a>
+<a id="a916ec112cc73c6a0cd06f13a514da1c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a916ec112cc73c6a0cd06f13a514da1c9">&#9670;&nbsp;</a></span>Serialize()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -320,13 +339,15 @@ Private Attributes</h2></td></tr>
 
 <p >Serialize the SVDBatch object. </p>
 
-<p >Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00179">179</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00179">179</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
 
-<p >References <a class="el" href="serialization__shim_8hpp_source.html#l00103">mlpack::data::CreateNVP()</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00196">kh</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00194">kw</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00203">mH</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00198">momentum</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00201">mW</a>, and <a class="el" href="svd__batch__learning_8hpp_source.html#l00192">u</a>.</p>
+<p class="reference">References <a class="el" href="serialization__shim_8hpp_source.html#l00103">mlpack::data::CreateNVP()</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00196">kh</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00194">kw</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00203">mH</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00198">momentum</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00201">mW</a>, and <a class="el" href="svd__batch__learning_8hpp_source.html#l00192">u</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a6cd4aa4d07ac58ae1a19cc6e5045f530"></a>
+<a id="a6cd4aa4d07ac58ae1a19cc6e5045f530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cd4aa4d07ac58ae1a19cc6e5045f530">&#9670;&nbsp;</a></span>WUpdate()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -376,14 +397,16 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p >Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00098">98</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00098">98</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
 
-<p >References <a class="el" href="svd__batch__learning_8hpp_source.html#l00194">kw</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00198">momentum</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00201">mW</a>, and <a class="el" href="svd__batch__learning_8hpp_source.html#l00192">u</a>.</p>
+<p class="reference">References <a class="el" href="svd__batch__learning_8hpp_source.html#l00194">kw</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00198">momentum</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00201">mW</a>, and <a class="el" href="svd__batch__learning_8hpp_source.html#l00192">u</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ada381dbf4c249d020ca1172ba2b14522"></a>
+<a id="ada381dbf4c249d020ca1172ba2b14522"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada381dbf4c249d020ca1172ba2b14522">&#9670;&nbsp;</a></span>kh</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -403,13 +426,15 @@ Private Attributes</h2></td></tr>
 
 <p >Regularization parameter for matrix H. </p>
 
-<p >Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00196">196</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00196">196</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="svd__batch__learning_8hpp_source.html#l00143">HUpdate()</a>, and <a class="el" href="svd__batch__learning_8hpp_source.html#l00179">Serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="svd__batch__learning_8hpp_source.html#l00143">HUpdate()</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00179">Serialize()</a>, and <a class="el" href="svd__batch__learning_8hpp_source.html#l00241">mlpack::amf::SVDBatchLearning::HUpdate&lt; arma::sp_mat &gt;()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aaee5ceafcb9b97f7380846ca115bc66d"></a>
+<a id="aaee5ceafcb9b97f7380846ca115bc66d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaee5ceafcb9b97f7380846ca115bc66d">&#9670;&nbsp;</a></span>kw</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -429,13 +454,15 @@ Private Attributes</h2></td></tr>
 
 <p >Regularization parameter for matrix W. </p>
 
-<p >Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00194">194</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00194">194</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="svd__batch__learning_8hpp_source.html#l00179">Serialize()</a>, and <a class="el" href="svd__batch__learning_8hpp_source.html#l00098">WUpdate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="svd__batch__learning_8hpp_source.html#l00179">Serialize()</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00213">mlpack::amf::SVDBatchLearning::WUpdate&lt; arma::sp_mat &gt;()</a>, and <a class="el" href="svd__batch__learning_8hpp_source.html#l00098">WUpdate()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7b33197f276bf37458898c9b322f69c8"></a>
+<a id="a7b33197f276bf37458898c9b322f69c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b33197f276bf37458898c9b322f69c8">&#9670;&nbsp;</a></span>mH</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -455,13 +482,15 @@ Private Attributes</h2></td></tr>
 
 <p >Momentum matrix for matrix H. </p>
 
-<p >Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00203">203</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00203">203</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="svd__batch__learning_8hpp_source.html#l00143">HUpdate()</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00079">Initialize()</a>, and <a class="el" href="svd__batch__learning_8hpp_source.html#l00179">Serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="svd__batch__learning_8hpp_source.html#l00143">HUpdate()</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00079">Initialize()</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00179">Serialize()</a>, and <a class="el" href="svd__batch__learning_8hpp_source.html#l00241">mlpack::amf::SVDBatchLearning::HUpdate&lt; arma::sp_mat &gt;()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a634ccfb27e600ffc433223dcea8763a1"></a>
+<a id="a634ccfb27e600ffc433223dcea8763a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a634ccfb27e600ffc433223dcea8763a1">&#9670;&nbsp;</a></span>momentum</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -481,13 +510,15 @@ Private Attributes</h2></td></tr>
 
 <p >Momentum value (between 0 and 1). </p>
 
-<p >Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00198">198</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00198">198</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="svd__batch__learning_8hpp_source.html#l00143">HUpdate()</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00179">Serialize()</a>, and <a class="el" href="svd__batch__learning_8hpp_source.html#l00098">WUpdate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="svd__batch__learning_8hpp_source.html#l00143">HUpdate()</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00179">Serialize()</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00241">mlpack::amf::SVDBatchLearning::HUpdate&lt; arma::sp_mat &gt;()</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00213">mlpack::amf::SVDBatchLearning::WUpdate&lt; arma::sp_mat &gt;()</a>, and <a class="el" href="svd__batch__learning_8hpp_source.html#l00098">WUpdate()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab3e822a4685a26878119a457386e981e"></a>
+<a id="ab3e822a4685a26878119a457386e981e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3e822a4685a26878119a457386e981e">&#9670;&nbsp;</a></span>mW</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -507,13 +538,15 @@ Private Attributes</h2></td></tr>
 
 <p >Momentum matrix for matrix W. </p>
 
-<p >Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00201">201</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00201">201</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="svd__batch__learning_8hpp_source.html#l00079">Initialize()</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00179">Serialize()</a>, and <a class="el" href="svd__batch__learning_8hpp_source.html#l00098">WUpdate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="svd__batch__learning_8hpp_source.html#l00079">Initialize()</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00179">Serialize()</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00213">mlpack::amf::SVDBatchLearning::WUpdate&lt; arma::sp_mat &gt;()</a>, and <a class="el" href="svd__batch__learning_8hpp_source.html#l00098">WUpdate()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="acea55e198332c16129d79bb00cc97737"></a>
+<a id="acea55e198332c16129d79bb00cc97737"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acea55e198332c16129d79bb00cc97737">&#9670;&nbsp;</a></span>u</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -533,9 +566,9 @@ Private Attributes</h2></td></tr>
 
 <p >Step size of the algorithm. </p>
 
-<p >Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00192">192</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="svd__batch__learning_8hpp_source.html#l00192">192</a> of file <a class="el" href="svd__batch__learning_8hpp_source.html">svd_batch_learning.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="svd__batch__learning_8hpp_source.html#l00143">HUpdate()</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00179">Serialize()</a>, and <a class="el" href="svd__batch__learning_8hpp_source.html#l00098">WUpdate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="svd__batch__learning_8hpp_source.html#l00143">HUpdate()</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00179">Serialize()</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00241">mlpack::amf::SVDBatchLearning::HUpdate&lt; arma::sp_mat &gt;()</a>, <a class="el" href="svd__batch__learning_8hpp_source.html#l00213">mlpack::amf::SVDBatchLearning::WUpdate&lt; arma::sp_mat &gt;()</a>, and <a class="el" href="svd__batch__learning_8hpp_source.html#l00098">WUpdate()</a>.</p>
 
 </div>
 </div>
@@ -547,7 +580,16 @@ Private Attributes</h2></td></tr>
 <hr class="footer"></hr><address class="footer"><small >
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"></img>
-</a> 1.8.9.1
+</a> 1.8.13
 </small></address>
+</div>
 </body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
 </html>

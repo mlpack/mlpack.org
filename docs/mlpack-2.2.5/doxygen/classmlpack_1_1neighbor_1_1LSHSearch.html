@@ -1,0 +1,935 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.2.5</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1neighbor.html">neighbor</a></li><li class="navelem"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">LSHSearch</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="classmlpack_1_1neighbor_1_1LSHSearch-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">LSHSearch&lt; SortPolicy &gt; Class Template Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >The <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html" title="The LSHSearch class; this class builds a hash on the reference set and uses this hash to compute the ...">LSHSearch</a> class; this class builds a hash on the reference set and uses this hash to compute the distance-approximate nearest-neighbors of the given queries.  
+ <a href="classmlpack_1_1neighbor_1_1LSHSearch.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aabfd3716a07b9adc7ab3c97ea507352a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#aabfd3716a07b9adc7ab3c97ea507352a">LSHSearch</a> (const arma::mat &amp;referenceSet, const arma::cube &amp;projections, const double hashWidth=0.0, const size_t secondHashSize=99901, const size_t bucketSize=500)</td></tr>
+<tr class="memdesc:aabfd3716a07b9adc7ab3c97ea507352a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function initializes the LSH class.  <a href="#aabfd3716a07b9adc7ab3c97ea507352a">More...</a><br /></br></td></tr>
+<tr class="separator:aabfd3716a07b9adc7ab3c97ea507352a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a813d628ba105fa18f2410ada6b4c90d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a813d628ba105fa18f2410ada6b4c90d4">LSHSearch</a> (const arma::mat &amp;referenceSet, const size_t numProj, const size_t numTables, const double hashWidth=0.0, const size_t secondHashSize=99901, const size_t bucketSize=500)</td></tr>
+<tr class="memdesc:a813d628ba105fa18f2410ada6b4c90d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function initializes the LSH class.  <a href="#a813d628ba105fa18f2410ada6b4c90d4">More...</a><br /></br></td></tr>
+<tr class="separator:a813d628ba105fa18f2410ada6b4c90d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f0dfc59a1df743a8e957e86f7b4d5cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a3f0dfc59a1df743a8e957e86f7b4d5cb">LSHSearch</a> ()</td></tr>
+<tr class="memdesc:a3f0dfc59a1df743a8e957e86f7b4d5cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an untrained LSH model.  <a href="#a3f0dfc59a1df743a8e957e86f7b4d5cb">More...</a><br /></br></td></tr>
+<tr class="separator:a3f0dfc59a1df743a8e957e86f7b4d5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92df536b1f0bec462173e408f312b01c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a92df536b1f0bec462173e408f312b01c">~LSHSearch</a> ()</td></tr>
+<tr class="memdesc:a92df536b1f0bec462173e408f312b01c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean memory.  <a href="#a92df536b1f0bec462173e408f312b01c">More...</a><br /></br></td></tr>
+<tr class="separator:a92df536b1f0bec462173e408f312b01c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02905662835f4c07653df0773e0db6f3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a02905662835f4c07653df0773e0db6f3">BucketSize</a> () const</td></tr>
+<tr class="memdesc:a02905662835f4c07653df0773e0db6f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the bucket size of the second hash.  <a href="#a02905662835f4c07653df0773e0db6f3">More...</a><br /></br></td></tr>
+<tr class="separator:a02905662835f4c07653df0773e0db6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afafe9a518f2b8fb1643809a51af2dacf"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#afafe9a518f2b8fb1643809a51af2dacf">DistanceEvaluations</a> () const</td></tr>
+<tr class="memdesc:afafe9a518f2b8fb1643809a51af2dacf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of distance evaluations performed.  <a href="#afafe9a518f2b8fb1643809a51af2dacf">More...</a><br /></br></td></tr>
+<tr class="separator:afafe9a518f2b8fb1643809a51af2dacf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9fadea5b764d312c040a70e5d6951ce"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#af9fadea5b764d312c040a70e5d6951ce">DistanceEvaluations</a> ()</td></tr>
+<tr class="memdesc:af9fadea5b764d312c040a70e5d6951ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the number of distance evaluations performed.  <a href="#af9fadea5b764d312c040a70e5d6951ce">More...</a><br /></br></td></tr>
+<tr class="separator:af9fadea5b764d312c040a70e5d6951ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1781bad06c46fac9a519e8cbc66c7758"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a1781bad06c46fac9a519e8cbc66c7758">NumProjections</a> () const</td></tr>
+<tr class="memdesc:a1781bad06c46fac9a519e8cbc66c7758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of projections.  <a href="#a1781bad06c46fac9a519e8cbc66c7758">More...</a><br /></br></td></tr>
+<tr class="separator:a1781bad06c46fac9a519e8cbc66c7758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84fb2bebd168520b625e4d451f336398"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a84fb2bebd168520b625e4d451f336398">Offsets</a> () const</td></tr>
+<tr class="memdesc:a84fb2bebd168520b625e4d451f336398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the offsets 'b' for each of the projections. (One 'b' per column.)  <a href="#a84fb2bebd168520b625e4d451f336398">More...</a><br /></br></td></tr>
+<tr class="separator:a84fb2bebd168520b625e4d451f336398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63e14758f25866a71ca24ac6d5046232"><td class="memItemLeft" align="right" valign="top">const arma::cube &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a63e14758f25866a71ca24ac6d5046232">Projections</a> ()</td></tr>
+<tr class="memdesc:a63e14758f25866a71ca24ac6d5046232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the projection tables.  <a href="#a63e14758f25866a71ca24ac6d5046232">More...</a><br /></br></td></tr>
+<tr class="separator:a63e14758f25866a71ca24ac6d5046232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5c03969d08d7534de9a07d863e1019d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#ab5c03969d08d7534de9a07d863e1019d">Projections</a> (const arma::cube &amp;projTables)</td></tr>
+<tr class="memdesc:ab5c03969d08d7534de9a07d863e1019d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the projection tables (this retrains the LSH model).  <a href="#ab5c03969d08d7534de9a07d863e1019d">More...</a><br /></br></td></tr>
+<tr class="separator:ab5c03969d08d7534de9a07d863e1019d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecd01286c1f16ac78edebed27b048671"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#aecd01286c1f16ac78edebed27b048671">ReferenceSet</a> () const</td></tr>
+<tr class="memdesc:aecd01286c1f16ac78edebed27b048671"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the reference dataset.  <a href="#aecd01286c1f16ac78edebed27b048671">More...</a><br /></br></td></tr>
+<tr class="separator:aecd01286c1f16ac78edebed27b048671"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a7d36087f4b09ee8ae9d7ff3fd0bb21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a9a7d36087f4b09ee8ae9d7ff3fd0bb21">Search</a> (const arma::mat &amp;querySet, const size_t k, arma::Mat&lt; size_t &gt; &amp;resultingNeighbors, arma::mat &amp;distances, const size_t numTablesToSearch=0, const size_t T=0)</td></tr>
+<tr class="memdesc:a9a7d36087f4b09ee8ae9d7ff3fd0bb21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the nearest neighbors of the points in the given query set and store the output in the given matrices.  <a href="#a9a7d36087f4b09ee8ae9d7ff3fd0bb21">More...</a><br /></br></td></tr>
+<tr class="separator:a9a7d36087f4b09ee8ae9d7ff3fd0bb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefffa95464b5cb9d6aabfc1fbe7b420d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#aefffa95464b5cb9d6aabfc1fbe7b420d">Search</a> (const size_t k, arma::Mat&lt; size_t &gt; &amp;resultingNeighbors, arma::mat &amp;distances, const size_t numTablesToSearch=0, size_t T=0)</td></tr>
+<tr class="memdesc:aefffa95464b5cb9d6aabfc1fbe7b420d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the nearest neighbors and store the output in the given matrices.  <a href="#aefffa95464b5cb9d6aabfc1fbe7b420d">More...</a><br /></br></td></tr>
+<tr class="separator:aefffa95464b5cb9d6aabfc1fbe7b420d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4bdf7cfa1f81b5fc9db761f9505c2a7"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; arma::Col&lt; size_t &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#ac4bdf7cfa1f81b5fc9db761f9505c2a7">SecondHashTable</a> () const</td></tr>
+<tr class="memdesc:ac4bdf7cfa1f81b5fc9db761f9505c2a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the second hash table.  <a href="#ac4bdf7cfa1f81b5fc9db761f9505c2a7">More...</a><br /></br></td></tr>
+<tr class="separator:ac4bdf7cfa1f81b5fc9db761f9505c2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadec61275f680335c8f795c21ee35b41"><td class="memItemLeft" align="right" valign="top">const arma::vec &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#aadec61275f680335c8f795c21ee35b41">SecondHashWeights</a> () const</td></tr>
+<tr class="memdesc:aadec61275f680335c8f795c21ee35b41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the weights of the second hash.  <a href="#aadec61275f680335c8f795c21ee35b41">More...</a><br /></br></td></tr>
+<tr class="separator:aadec61275f680335c8f795c21ee35b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a428c327df03391e32f8184b97f0cb5b7"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a428c327df03391e32f8184b97f0cb5b7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a428c327df03391e32f8184b97f0cb5b7">Serialize</a> (Archive &amp;ar, const unsigned int version)</td></tr>
+<tr class="memdesc:a428c327df03391e32f8184b97f0cb5b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the LSH model.  <a href="#a428c327df03391e32f8184b97f0cb5b7">More...</a><br /></br></td></tr>
+<tr class="separator:a428c327df03391e32f8184b97f0cb5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade45a828ba50baa346171c422ae5e699"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#ade45a828ba50baa346171c422ae5e699">Train</a> (const arma::mat &amp;referenceSet, const size_t numProj, const size_t numTables, const double hashWidth=0.0, const size_t secondHashSize=99901, const size_t bucketSize=500, const arma::cube &amp;projection=arma::cube())</td></tr>
+<tr class="memdesc:ade45a828ba50baa346171c422ae5e699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Train the LSH model on the given dataset.  <a href="#ade45a828ba50baa346171c422ae5e699">More...</a><br /></br></td></tr>
+<tr class="separator:ade45a828ba50baa346171c422ae5e699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a5e22f2820bf8ef0005b10d9f8d2c73b5"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a5e22f2820bf8ef0005b10d9f8d2c73b5">ComputeRecall</a> (const arma::Mat&lt; size_t &gt; &amp;foundNeighbors, const arma::Mat&lt; size_t &gt; &amp;realNeighbors)</td></tr>
+<tr class="memdesc:a5e22f2820bf8ef0005b10d9f8d2c73b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the recall (% of neighbors found) given the neighbors returned by <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a9a7d36087f4b09ee8ae9d7ff3fd0bb21" title="Compute the nearest neighbors of the points in the given query set and store the output in the given ...">LSHSearch::Search</a> and a "ground truth" set of neighbors.  <a href="#a5e22f2820bf8ef0005b10d9f8d2c73b5">More...</a><br /></br></td></tr>
+<tr class="separator:a5e22f2820bf8ef0005b10d9f8d2c73b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3 ><br /><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="default_argument"><div class="equals">=</div><div class="identifier">NearestNeighborSort</div></div><div class="close_bracket">&gt;</div></div></div></div></br>
+class mlpack::neighbor::LSHSearch&lt; SortPolicy &gt;</h3>
+
+<p >The <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html" title="The LSHSearch class; this class builds a hash on the reference set and uses this hash to compute the ...">LSHSearch</a> class; this class builds a hash on the reference set and uses this hash to compute the distance-approximate nearest-neighbors of the given queries. </p>
+<dl class="tparams"><dt >Template Parameters</dt><dd >
+  <table class="tparams">
+    <tr ><td class="paramname">SortPolicy</td><td >The sort policy for distances; see <a class="el" href="classmlpack_1_1neighbor_1_1NearestNeighborSort.html" title="This class implements the necessary methods for the SortPolicy template parameter of the NeighborSear...">NearestNeighborSort</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00062">62</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aabfd3716a07b9adc7ab3c97ea507352a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabfd3716a07b9adc7ab3c97ea507352a">&#9670;&nbsp;</a></span>LSHSearch() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">LSHSearch</a> </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >referenceSet</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const arma::cube &amp;&#160;</td>
+          <td class="paramname"><em >projections</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >hashWidth</em> = <code >0.0</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >secondHashSize</em> = <code >99901</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >bucketSize</em> = <code >500</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This function initializes the LSH class. </p>
+<p >It builds the hash on the reference set with 2-stable distributions. See the individual functions performing the hashing for details on how the hashing is done.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">referenceSet</td><td >Set of reference points and the set of queries. </td></tr>
+    <tr ><td class="paramname">projections</td><td >Cube of projection tables. For a cube of size (a, b, c) we set numProj = a, numTables = c. b is the reference set dimensionality. </td></tr>
+    <tr ><td class="paramname">hashWidth</td><td >The width of hash for every table. If 0 (the default) is provided, then the hash width is automatically obtained by computing the average pairwise distance of 25 pairs. This should be a reasonable upper bound on the nearest-neighbor distance in general. </td></tr>
+    <tr ><td class="paramname">secondHashSize</td><td >The size of the second hash table. This should be a large prime number. </td></tr>
+    <tr ><td class="paramname">bucketSize</td><td >The size of the bucket in the second hash table. This is the maximum number of points that can be hashed into single bucket. A value of 0 indicates that there is no limit (so the second hash table can be arbitrarily large&mdash;be careful!). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a813d628ba105fa18f2410ada6b4c90d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a813d628ba105fa18f2410ada6b4c90d4">&#9670;&nbsp;</a></span>LSHSearch() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">LSHSearch</a> </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >referenceSet</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >numProj</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >numTables</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >hashWidth</em> = <code >0.0</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >secondHashSize</em> = <code >99901</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >bucketSize</em> = <code >500</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This function initializes the LSH class. </p>
+<p >It builds the hash one the reference set using the provided projections. See the individual functions performing the hashing for details on how the hashing is done.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">referenceSet</td><td >Set of reference points and the set of queries. </td></tr>
+    <tr ><td class="paramname">numProj</td><td >Number of projections in each hash table (anything between 10-50 might be a decent choice). </td></tr>
+    <tr ><td class="paramname">numTables</td><td >Total number of hash tables (anything between 10-20 should suffice). </td></tr>
+    <tr ><td class="paramname">hashWidth</td><td >The width of hash for every table. If 0 (the default) is provided, then the hash width is automatically obtained by computing the average pairwise distance of 25 pairs. This should be a reasonable upper bound on the nearest-neighbor distance in general. </td></tr>
+    <tr ><td class="paramname">secondHashSize</td><td >The size of the second hash table. This should be a large prime number. </td></tr>
+    <tr ><td class="paramname">bucketSize</td><td >The size of the bucket in the second hash table. This is the maximum number of points that can be hashed into single bucket. A value of 0 indicates that there is no limit (so the second hash table can be arbitrarily large&mdash;be careful!). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3f0dfc59a1df743a8e957e86f7b4d5cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f0dfc59a1df743a8e957e86f7b4d5cb">&#9670;&nbsp;</a></span>LSHSearch() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">LSHSearch</a> </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Create an untrained LSH model. </p>
+<p >Be sure to call <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#ade45a828ba50baa346171c422ae5e699" title="Train the LSH model on the given dataset. ">Train()</a> before calling <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a9a7d36087f4b09ee8ae9d7ff3fd0bb21" title="Compute the nearest neighbors of the points in the given query set and store the output in the given ...">Search()</a>; otherwise, an exception will be thrown when <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a9a7d36087f4b09ee8ae9d7ff3fd0bb21" title="Compute the nearest neighbors of the points in the given query set and store the output in the given ...">Search()</a> is called. </p>
+
+</div>
+</div>
+<a id="a92df536b1f0bec462173e408f312b01c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92df536b1f0bec462173e408f312b01c">&#9670;&nbsp;</a></span>~LSHSearch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">~<a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html">LSHSearch</a> </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Clean memory. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a02905662835f4c07653df0773e0db6f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02905662835f4c07653df0773e0db6f3">&#9670;&nbsp;</a></span>BucketSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t BucketSize </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the bucket size of the second hash. </p>
+
+<p class="definition">Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00252">252</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a5e22f2820bf8ef0005b10d9f8d2c73b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e22f2820bf8ef0005b10d9f8d2c73b5">&#9670;&nbsp;</a></span>ComputeRecall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">static double ComputeRecall </td>
+          <td >(</td>
+          <td class="paramtype">const arma::Mat&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >foundNeighbors</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const arma::Mat&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >realNeighbors</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Compute the recall (% of neighbors found) given the neighbors returned by <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#a9a7d36087f4b09ee8ae9d7ff3fd0bb21" title="Compute the nearest neighbors of the points in the given query set and store the output in the given ...">LSHSearch::Search</a> and a "ground truth" set of neighbors. </p>
+<p >The recall returned will be in the range [0, 1].</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">foundNeighbors</td><td >Set of neighbors to compute recall of. </td></tr>
+    <tr ><td class="paramname">realNeighbors</td><td >Set of "ground truth" neighbors to compute recall against. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afafe9a518f2b8fb1643809a51af2dacf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afafe9a518f2b8fb1643809a51af2dacf">&#9670;&nbsp;</a></span>DistanceEvaluations() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t DistanceEvaluations </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the number of distance evaluations performed. </p>
+
+<p class="definition">Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00235">235</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af9fadea5b764d312c040a70e5d6951ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9fadea5b764d312c040a70e5d6951ce">&#9670;&nbsp;</a></span>DistanceEvaluations() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; DistanceEvaluations </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the number of distance evaluations performed. </p>
+
+<p class="definition">Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00237">237</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a1781bad06c46fac9a519e8cbc66c7758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1781bad06c46fac9a519e8cbc66c7758">&#9670;&nbsp;</a></span>NumProjections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t NumProjections </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the number of projections. </p>
+
+<p class="definition">Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00243">243</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a84fb2bebd168520b625e4d451f336398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84fb2bebd168520b625e4d451f336398">&#9670;&nbsp;</a></span>Offsets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::mat&amp; Offsets </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the offsets 'b' for each of the projections. (One 'b' per column.) </p>
+
+<p class="definition">Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00246">246</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a63e14758f25866a71ca24ac6d5046232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63e14758f25866a71ca24ac6d5046232">&#9670;&nbsp;</a></span>Projections() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::cube&amp; Projections </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the projection tables. </p>
+
+<p class="definition">Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00259">259</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ab5c03969d08d7534de9a07d863e1019d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5c03969d08d7534de9a07d863e1019d">&#9670;&nbsp;</a></span>Projections() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Projections </td>
+          <td >(</td>
+          <td class="paramtype">const arma::cube &amp;&#160;</td>
+          <td class="paramname"><em >projTables</em></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Change the projection tables (this retrains the LSH model). </p>
+
+<p class="definition">Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00262">262</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="lsh__search_8hpp.html#a7ad0a77d33d6f9bd16ad91f55439fd3c">BOOST_TEMPLATE_CLASS_VERSION()</a>, and <a class="el" href="classmlpack_1_1neighbor_1_1LSHSearch.html#ade45a828ba50baa346171c422ae5e699">LSHSearch&lt; SortPolicy &gt;::Train()</a>.</p>
+
+</div>
+</div>
+<a id="aecd01286c1f16ac78edebed27b048671"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecd01286c1f16ac78edebed27b048671">&#9670;&nbsp;</a></span>ReferenceSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::mat&amp; ReferenceSet </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the reference dataset. </p>
+
+<p class="definition">Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00240">240</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a9a7d36087f4b09ee8ae9d7ff3fd0bb21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a7d36087f4b09ee8ae9d7ff3fd0bb21">&#9670;&nbsp;</a></span>Search() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Search </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >querySet</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >k</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::Mat&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >resultingNeighbors</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >distances</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >numTablesToSearch</em> = <code >0</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >T</em> = <code >0</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Compute the nearest neighbors of the points in the given query set and store the output in the given matrices. </p>
+<p >The matrices will be set to the size of n columns by k rows, where n is the number of points in the query dataset and k is the number of neighbors being searched for.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">querySet</td><td >Set of query points. </td></tr>
+    <tr ><td class="paramname">k</td><td >Number of neighbors to search for. </td></tr>
+    <tr ><td class="paramname">resultingNeighbors</td><td >Matrix storing lists of neighbors for each query point. </td></tr>
+    <tr ><td class="paramname">distances</td><td >Matrix storing distances of neighbors for each query point. </td></tr>
+    <tr ><td class="paramname">numTablesToSearch</td><td >This parameter allows the user to have control over the number of hash tables to be searched. This allows the user to pick the number of tables it can afford for the time available without having to build hashing for every table size. By default, this is set to zero in which case all tables are considered. </td></tr>
+    <tr ><td class="paramname">T</td><td >The number of additional probing bins to examine with multiprobe LSH. If T = 0, classic single-probe LSH is run (default). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aefffa95464b5cb9d6aabfc1fbe7b420d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefffa95464b5cb9d6aabfc1fbe7b420d">&#9670;&nbsp;</a></span>Search() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Search </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >k</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::Mat&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >resultingNeighbors</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >distances</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >numTablesToSearch</em> = <code >0</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em >T</em> = <code >0</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Compute the nearest neighbors and store the output in the given matrices. </p>
+<p >The matrices will be set to the size of n columns by k rows, where n is the number of points in the query dataset and k is the number of neighbors being searched for.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">k</td><td >Number of neighbors to search for. </td></tr>
+    <tr ><td class="paramname">resultingNeighbors</td><td >Matrix storing lists of neighbors for each query point. </td></tr>
+    <tr ><td class="paramname">distances</td><td >Matrix storing distances of neighbors for each query point. </td></tr>
+    <tr ><td class="paramname">numTablesToSearch</td><td >This parameter allows the user to have control over the number of hash tables to be searched. This allows the user to pick the number of tables it can afford for the time available without having to build hashing for every table size. By default, this is set to zero in which case all tables are considered. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac4bdf7cfa1f81b5fc9db761f9505c2a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4bdf7cfa1f81b5fc9db761f9505c2a7">&#9670;&nbsp;</a></span>SecondHashTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const std::vector&lt;arma::Col&lt;size_t&gt; &gt;&amp; SecondHashTable </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the second hash table. </p>
+
+<p class="definition">Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00255">255</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aadec61275f680335c8f795c21ee35b41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadec61275f680335c8f795c21ee35b41">&#9670;&nbsp;</a></span>SecondHashWeights()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::vec&amp; SecondHashWeights </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the weights of the second hash. </p>
+
+<p class="definition">Definition at line <a class="el" href="lsh__search_8hpp_source.html#l00249">249</a> of file <a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a428c327df03391e32f8184b97f0cb5b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a428c327df03391e32f8184b97f0cb5b7">&#9670;&nbsp;</a></span>Serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Serialize </td>
+          <td >(</td>
+          <td class="paramtype">Archive &amp;&#160;</td>
+          <td class="paramname"><em >ar</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em >version</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Serialize the LSH model. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">ar</td><td >Archive to serialize to. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ade45a828ba50baa346171c422ae5e699"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade45a828ba50baa346171c422ae5e699">&#9670;&nbsp;</a></span>Train()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Train </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >referenceSet</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >numProj</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >numTables</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >hashWidth</em> = <code >0.0</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >secondHashSize</em> = <code >99901</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >bucketSize</em> = <code >500</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const arma::cube &amp;&#160;</td>
+          <td class="paramname"><em >projection</em> = <code >arma::cube()</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Train the LSH model on the given dataset. </p>
+<p >If a correctly-sized projection cube is not provided, this means building new hash tables. Otherwise, we use the projections provided by the user.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">referenceSet</td><td >Set of reference points and the set of queries. </td></tr>
+    <tr ><td class="paramname">numProj</td><td >Number of projections in each hash table (anything between 10-50 might be a decent choice). </td></tr>
+    <tr ><td class="paramname">numTables</td><td >Total number of hash tables (anything between 10-20 should suffice). </td></tr>
+    <tr ><td class="paramname">hashWidth</td><td >The width of hash for every table. If 0 (the default) is provided, then the hash width is automatically obtained by computing the average pairwise distance of 25 pairs. This should be a reasonable upper bound on the nearest-neighbor distance in general. </td></tr>
+    <tr ><td class="paramname">secondHashSize</td><td >The size of the second hash table. This should be a large prime number. </td></tr>
+    <tr ><td class="paramname">bucketSize</td><td >The size of the bucket in the second hash table. This is the maximum number of points that can be hashed into single bucket. A value of 0 indicates that there is no limit (so the second hash table can be arbitrarily large&mdash;be careful!). </td></tr>
+    <tr ><td class="paramname">projections</td><td >Cube of projection tables. For a cube of size (a, b, c) we set numProj = a, numTables = c. b is the reference set dimensionality. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="lsh__search_8hpp_source.html#l00262">LSHSearch&lt; SortPolicy &gt;::Projections()</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/methods/lsh/<a class="el" href="lsh__search_8hpp_source.html">lsh_search.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

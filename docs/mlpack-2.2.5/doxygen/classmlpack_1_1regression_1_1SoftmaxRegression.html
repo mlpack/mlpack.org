@@ -1,0 +1,776 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.2.5</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1regression.html">regression</a></li><li class="navelem"><a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html">SoftmaxRegression</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classmlpack_1_1regression_1_1SoftmaxRegression-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">SoftmaxRegression&lt; OptimizerType &gt; Class Template Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >Softmax Regression is a classifier which can be used for classification when the data available can take two or more class values.  
+ <a href="classmlpack_1_1regression_1_1SoftmaxRegression.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a66c8f4fffc67e0600720f3c0fcd423a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html#a66c8f4fffc67e0600720f3c0fcd423a2">SoftmaxRegression</a> (const size_t inputSize, const size_t numClasses, const bool fitIntercept=false)</td></tr>
+<tr class="memdesc:a66c8f4fffc67e0600720f3c0fcd423a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the <a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html" title="Softmax Regression is a classifier which can be used for classification when the data available can t...">SoftmaxRegression</a> without performing training.  <a href="#a66c8f4fffc67e0600720f3c0fcd423a2">More...</a><br /></br></td></tr>
+<tr class="separator:a66c8f4fffc67e0600720f3c0fcd423a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac363e304f73ca6678a5ffbaa03353725"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html#ac363e304f73ca6678a5ffbaa03353725">SoftmaxRegression</a> (const arma::mat &amp;data, const arma::Row&lt; size_t &gt; &amp;labels, const size_t numClasses, const double lambda=0.0001, const bool fitIntercept=false)</td></tr>
+<tr class="memdesc:ac363e304f73ca6678a5ffbaa03353725"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the <a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html" title="Softmax Regression is a classifier which can be used for classification when the data available can t...">SoftmaxRegression</a> class with the provided data and labels.  <a href="#ac363e304f73ca6678a5ffbaa03353725">More...</a><br /></br></td></tr>
+<tr class="separator:ac363e304f73ca6678a5ffbaa03353725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2887dc256c43b2509a872b1cc2e2215"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html#ad2887dc256c43b2509a872b1cc2e2215">SoftmaxRegression</a> (OptimizerType&lt; <a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegressionFunction.html">SoftmaxRegressionFunction</a> &gt; &amp;optimizer)</td></tr>
+<tr class="memdesc:ad2887dc256c43b2509a872b1cc2e2215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the softmax regression model with the given training data.  <a href="#ad2887dc256c43b2509a872b1cc2e2215">More...</a><br /></br></td></tr>
+<tr class="separator:ad2887dc256c43b2509a872b1cc2e2215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25d8b43bbbdabff816a6769ab7b35557"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html#a25d8b43bbbdabff816a6769ab7b35557">Classify</a> (const arma::mat &amp;dataset, arma::Row&lt; size_t &gt; &amp;labels) const</td></tr>
+<tr class="memdesc:a25d8b43bbbdabff816a6769ab7b35557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classify the given points, returning the predicted labels for each point.  <a href="#a25d8b43bbbdabff816a6769ab7b35557">More...</a><br /></br></td></tr>
+<tr class="separator:a25d8b43bbbdabff816a6769ab7b35557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5c25234688c75c84a65607e820985d1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html#af5c25234688c75c84a65607e820985d1">ComputeAccuracy</a> (const arma::mat &amp;testData, const arma::Row&lt; size_t &gt; &amp;labels) const</td></tr>
+<tr class="memdesc:af5c25234688c75c84a65607e820985d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes accuracy of the learned model given the feature data and the labels associated with each data point.  <a href="#af5c25234688c75c84a65607e820985d1">More...</a><br /></br></td></tr>
+<tr class="separator:af5c25234688c75c84a65607e820985d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c4a6c2db59e7a14196cc6e9846a29b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html#a71c4a6c2db59e7a14196cc6e9846a29b">FeatureSize</a> () const</td></tr>
+<tr class="memdesc:a71c4a6c2db59e7a14196cc6e9846a29b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the features size of the training data.  <a href="#a71c4a6c2db59e7a14196cc6e9846a29b">More...</a><br /></br></td></tr>
+<tr class="separator:a71c4a6c2db59e7a14196cc6e9846a29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2878e0828ecdc1d486b0f43a81f95059"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html#a2878e0828ecdc1d486b0f43a81f95059">FitIntercept</a> () const</td></tr>
+<tr class="memdesc:a2878e0828ecdc1d486b0f43a81f95059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the intercept term flag. We can't change this after training.  <a href="#a2878e0828ecdc1d486b0f43a81f95059">More...</a><br /></br></td></tr>
+<tr class="separator:a2878e0828ecdc1d486b0f43a81f95059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf66629b989a326453647f42443c6a0c"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html#aaf66629b989a326453647f42443c6a0c">Lambda</a> ()</td></tr>
+<tr class="memdesc:aaf66629b989a326453647f42443c6a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the regularization parameter.  <a href="#aaf66629b989a326453647f42443c6a0c">More...</a><br /></br></td></tr>
+<tr class="separator:aaf66629b989a326453647f42443c6a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53535041275cedd0ec3de67ca032aa94"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html#a53535041275cedd0ec3de67ca032aa94">Lambda</a> () const</td></tr>
+<tr class="memdesc:a53535041275cedd0ec3de67ca032aa94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the regularization parameter.  <a href="#a53535041275cedd0ec3de67ca032aa94">More...</a><br /></br></td></tr>
+<tr class="separator:a53535041275cedd0ec3de67ca032aa94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b6fde1dc1604ba744b1e6ab5b1d499"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html#ac9b6fde1dc1604ba744b1e6ab5b1d499">NumClasses</a> ()</td></tr>
+<tr class="memdesc:ac9b6fde1dc1604ba744b1e6ab5b1d499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the number of classes.  <a href="#ac9b6fde1dc1604ba744b1e6ab5b1d499">More...</a><br /></br></td></tr>
+<tr class="separator:ac9b6fde1dc1604ba744b1e6ab5b1d499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a088ebfdf3c7a9e7eea81716d0c55b5a3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html#a088ebfdf3c7a9e7eea81716d0c55b5a3">NumClasses</a> () const</td></tr>
+<tr class="memdesc:a088ebfdf3c7a9e7eea81716d0c55b5a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of classes.  <a href="#a088ebfdf3c7a9e7eea81716d0c55b5a3">More...</a><br /></br></td></tr>
+<tr class="separator:a088ebfdf3c7a9e7eea81716d0c55b5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a043f0ccd62e6711a18e0d81047be9a0a"><td class="memItemLeft" align="right" valign="top">arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html#a043f0ccd62e6711a18e0d81047be9a0a">Parameters</a> ()</td></tr>
+<tr class="memdesc:a043f0ccd62e6711a18e0d81047be9a0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the model parameters.  <a href="#a043f0ccd62e6711a18e0d81047be9a0a">More...</a><br /></br></td></tr>
+<tr class="separator:a043f0ccd62e6711a18e0d81047be9a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa68d74dc1e86e4352e00a3cab83a0e4a"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html#aa68d74dc1e86e4352e00a3cab83a0e4a">Parameters</a> () const</td></tr>
+<tr class="memdesc:aa68d74dc1e86e4352e00a3cab83a0e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the model parameters.  <a href="#aa68d74dc1e86e4352e00a3cab83a0e4a">More...</a><br /></br></td></tr>
+<tr class="separator:aa68d74dc1e86e4352e00a3cab83a0e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad515c8613a421fe8c60230b49946cc7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="deprecated_8hpp.html#a3d7d5df477a8805980e43e423e18a525">mlpack_deprecated</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html#ad515c8613a421fe8c60230b49946cc7b">Predict</a> (const arma::mat &amp;testData, arma::Row&lt; size_t &gt; &amp;predictions) const</td></tr>
+<tr class="memdesc:ad515c8613a421fe8c60230b49946cc7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Predict the class labels for the provided feature points.  <a href="#ad515c8613a421fe8c60230b49946cc7b">More...</a><br /></br></td></tr>
+<tr class="separator:ad515c8613a421fe8c60230b49946cc7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae187181bfb4ff8601e6385fd4fc4999d"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:ae187181bfb4ff8601e6385fd4fc4999d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html#ae187181bfb4ff8601e6385fd4fc4999d">Serialize</a> (Archive &amp;ar, const unsigned int)</td></tr>
+<tr class="memdesc:ae187181bfb4ff8601e6385fd4fc4999d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the <a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html" title="Softmax Regression is a classifier which can be used for classification when the data available can t...">SoftmaxRegression</a> model.  <a href="#ae187181bfb4ff8601e6385fd4fc4999d">More...</a><br /></br></td></tr>
+<tr class="separator:ae187181bfb4ff8601e6385fd4fc4999d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a319e7646382079d648ea264f6dec1985"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html#a319e7646382079d648ea264f6dec1985">Train</a> (OptimizerType&lt; <a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegressionFunction.html">SoftmaxRegressionFunction</a> &gt; &amp;optimizer)</td></tr>
+<tr class="memdesc:a319e7646382079d648ea264f6dec1985"><td class="mdescLeft">&#160;</td><td class="mdescRight">Train the softmax regression model with the given optimizer.  <a href="#a319e7646382079d648ea264f6dec1985">More...</a><br /></br></td></tr>
+<tr class="separator:a319e7646382079d648ea264f6dec1985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8320d4187fceeb862c887fe8eb84054b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html#a8320d4187fceeb862c887fe8eb84054b">Train</a> (const arma::mat &amp;data, const arma::Row&lt; size_t &gt; &amp;labels, const size_t numClasses)</td></tr>
+<tr class="memdesc:a8320d4187fceeb862c887fe8eb84054b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Train the softmax regression with the given training data.  <a href="#a8320d4187fceeb862c887fe8eb84054b">More...</a><br /></br></td></tr>
+<tr class="separator:a8320d4187fceeb862c887fe8eb84054b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3 ><br /><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">OptimizerType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">mlpack::optimization::L_BFGS</div></div><div class="close_bracket">&gt;</div></div></div></div></div></br>
+class mlpack::regression::SoftmaxRegression&lt; OptimizerType &gt;</h3>
+
+<p >Softmax Regression is a classifier which can be used for classification when the data available can take two or more class values. </p>
+<p >It is a generalization of Logistic Regression (which is used only for binary classification). The model has a different set of parameters for each class, but can be easily converted into a vectorized implementation as has been done in this module. The model can be used for direct classification of feature data or in conjunction with unsupervised learning methods. More technical details about the model can be found on the following webpage:</p>
+<p ><a href="http://ufldl.stanford.edu/wiki/index.php/Softmax_Regression">http://ufldl.stanford.edu/wiki/index.php/Softmax_Regression</a></p>
+<p >An example on how to use the interface is shown below:</p>
+<div class="fragment"><div class="line">arma::mat train_data; <span class="comment">// Training data matrix.</span></div><div class="line">arma::vec labels; <span class="comment">// Labels associated with the data.</span></div><div class="line"><span class="keyword">const</span> <span class="keywordtype">size_t</span> inputSize = 784; <span class="comment">// Size of input feature vector.</span></div><div class="line"><span class="keyword">const</span> <span class="keywordtype">size_t</span> numClasses = 10; <span class="comment">// Number of classes.</span></div><div class="line"></div><div class="line"><span class="comment">// Train the model using default options.</span></div><div class="line">SoftmaxRegression&lt;&gt; regressor1(train_data, labels, inputSize, numClasses);</div><div class="line"></div><div class="line"><span class="keyword">const</span> <span class="keywordtype">size_t</span> numBasis = 5; <span class="comment">// Parameter required for L-BFGS algorithm.</span></div><div class="line"><span class="keyword">const</span> <span class="keywordtype">size_t</span> numIterations = 100; <span class="comment">// Maximum number of iterations.</span></div><div class="line"></div><div class="line"><span class="comment">// Use an instantiated optimizer for the training.</span></div><div class="line">SoftmaxRegressionFunction srf(train_data, labels, inputSize, numClasses);</div><div class="line">L_BFGS&lt;SoftmaxRegressionFunction&gt; optimizer(srf, numBasis, numIterations);</div><div class="line">SoftmaxRegression&lt;L_BFGS&gt; regressor2(optimizer);</div><div class="line"></div><div class="line">arma::mat test_data; <span class="comment">// Test data matrix.</span></div><div class="line">arma::vec predictions1, predictions2; <span class="comment">// Vectors to store predictions in.</span></div><div class="line"></div><div class="line"><span class="comment">// Obtain predictions from both the learned models.</span></div><div class="line">regressor1.Classify(test_data, predictions1);</div><div class="line">regressor2.Classify(test_data, predictions2);</div></div> 
+<p class="definition">Definition at line <a class="el" href="softmax__regression_8hpp_source.html#l00065">65</a> of file <a class="el" href="softmax__regression_8hpp_source.html">softmax_regression.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a66c8f4fffc67e0600720f3c0fcd423a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66c8f4fffc67e0600720f3c0fcd423a2">&#9670;&nbsp;</a></span>SoftmaxRegression() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html">SoftmaxRegression</a> </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >inputSize</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >numClasses</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em >fitIntercept</em> = <code >false</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Initialize the <a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html" title="Softmax Regression is a classifier which can be used for classification when the data available can t...">SoftmaxRegression</a> without performing training. </p>
+<p >Default value of lambda is 0.0001. Be sure to use <a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html#a319e7646382079d648ea264f6dec1985" title="Train the softmax regression model with the given optimizer. ">Train()</a> before calling <a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html#a25d8b43bbbdabff816a6769ab7b35557" title="Classify the given points, returning the predicted labels for each point. ">Classify()</a> or <a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html#af5c25234688c75c84a65607e820985d1" title="Computes accuracy of the learned model given the feature data and the labels associated with each dat...">ComputeAccuracy()</a>, otherwise the results may be meaningless.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">inputSize</td><td >Size of the input feature vector. </td></tr>
+    <tr ><td class="paramname">numClasses</td><td >Number of classes for classification. </td></tr>
+    <tr ><td class="paramname">fitIntercept</td><td >add intercept term or not. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac363e304f73ca6678a5ffbaa03353725"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac363e304f73ca6678a5ffbaa03353725">&#9670;&nbsp;</a></span>SoftmaxRegression() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html">SoftmaxRegression</a> </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >data</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const arma::Row&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >labels</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >numClasses</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >lambda</em> = <code >0.0001</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em >fitIntercept</em> = <code >false</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Construct the <a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html" title="Softmax Regression is a classifier which can be used for classification when the data available can t...">SoftmaxRegression</a> class with the provided data and labels. </p>
+<p >This will train the model. Optionally, the parameter 'lambda' can be passed, which controls the amount of L2-regularization in the objective function. By default, the model takes a small value.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">data</td><td >Input training features. Each column associate with one sample </td></tr>
+    <tr ><td class="paramname">labels</td><td >Labels associated with the feature data. </td></tr>
+    <tr ><td class="paramname">inputSize</td><td >Size of the input feature vector. </td></tr>
+    <tr ><td class="paramname">numClasses</td><td >Number of classes for classification. </td></tr>
+    <tr ><td class="paramname">lambda</td><td >L2-regularization constant. </td></tr>
+    <tr ><td class="paramname">fitIntercept</td><td >add intercept term or not. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad2887dc256c43b2509a872b1cc2e2215"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2887dc256c43b2509a872b1cc2e2215">&#9670;&nbsp;</a></span>SoftmaxRegression() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html">SoftmaxRegression</a> </td>
+          <td >(</td>
+          <td class="paramtype">OptimizerType&lt; <a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegressionFunction.html">SoftmaxRegressionFunction</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em >optimizer</em></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Construct the softmax regression model with the given training data. </p>
+<p >This will train the model. This overload takes an already instantiated optimizer and uses it to train the model. The optimizer should hold an instantiated <a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegressionFunction.html">SoftmaxRegressionFunction</a> object for the function to operate upon. This option should be preferred when the optimizer options are to be changed.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">optimizer</td><td >Instantiated optimizer with instantiated error function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a25d8b43bbbdabff816a6769ab7b35557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25d8b43bbbdabff816a6769ab7b35557">&#9670;&nbsp;</a></span>Classify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Classify </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >dataset</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::Row&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >labels</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Classify the given points, returning the predicted labels for each point. </p>
+<p >The function calculates the probabilities for every class, given a data point. It then chooses the class which has the highest probability among all.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">dataset</td><td >Set of points to classify. </td></tr>
+    <tr ><td class="paramname">labels</td><td >Predicted labels for each point. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af5c25234688c75c84a65607e820985d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5c25234688c75c84a65607e820985d1">&#9670;&nbsp;</a></span>ComputeAccuracy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">double ComputeAccuracy </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >testData</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const arma::Row&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >labels</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Computes accuracy of the learned model given the feature data and the labels associated with each data point. </p>
+<p >Predictions are made using the provided data and are compared with the actual labels.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">testData</td><td >Matrix of data points using which predictions are made. </td></tr>
+    <tr ><td class="paramname">labels</td><td >Vector of labels associated with the data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a71c4a6c2db59e7a14196cc6e9846a29b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71c4a6c2db59e7a14196cc6e9846a29b">&#9670;&nbsp;</a></span>FeatureSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t FeatureSize </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Gets the features size of the training data. </p>
+
+<p class="definition">Definition at line <a class="el" href="softmax__regression_8hpp_source.html#l00186">186</a> of file <a class="el" href="softmax__regression_8hpp_source.html">softmax_regression.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a2878e0828ecdc1d486b0f43a81f95059"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2878e0828ecdc1d486b0f43a81f95059">&#9670;&nbsp;</a></span>FitIntercept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">bool FitIntercept </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Gets the intercept term flag. We can't change this after training. </p>
+
+<p class="definition">Definition at line <a class="el" href="softmax__regression_8hpp_source.html#l00178">178</a> of file <a class="el" href="softmax__regression_8hpp_source.html">softmax_regression.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aaf66629b989a326453647f42443c6a0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf66629b989a326453647f42443c6a0c">&#9670;&nbsp;</a></span>Lambda() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double&amp; Lambda </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Sets the regularization parameter. </p>
+
+<p class="definition">Definition at line <a class="el" href="softmax__regression_8hpp_source.html#l00173">173</a> of file <a class="el" href="softmax__regression_8hpp_source.html">softmax_regression.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a53535041275cedd0ec3de67ca032aa94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53535041275cedd0ec3de67ca032aa94">&#9670;&nbsp;</a></span>Lambda() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Lambda </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Gets the regularization parameter. </p>
+
+<p class="definition">Definition at line <a class="el" href="softmax__regression_8hpp_source.html#l00175">175</a> of file <a class="el" href="softmax__regression_8hpp_source.html">softmax_regression.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ac9b6fde1dc1604ba744b1e6ab5b1d499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9b6fde1dc1604ba744b1e6ab5b1d499">&#9670;&nbsp;</a></span>NumClasses() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; NumClasses </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Sets the number of classes. </p>
+
+<p class="definition">Definition at line <a class="el" href="softmax__regression_8hpp_source.html#l00168">168</a> of file <a class="el" href="softmax__regression_8hpp_source.html">softmax_regression.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a088ebfdf3c7a9e7eea81716d0c55b5a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a088ebfdf3c7a9e7eea81716d0c55b5a3">&#9670;&nbsp;</a></span>NumClasses() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t NumClasses </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Gets the number of classes. </p>
+
+<p class="definition">Definition at line <a class="el" href="softmax__regression_8hpp_source.html#l00170">170</a> of file <a class="el" href="softmax__regression_8hpp_source.html">softmax_regression.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a043f0ccd62e6711a18e0d81047be9a0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a043f0ccd62e6711a18e0d81047be9a0a">&#9670;&nbsp;</a></span>Parameters() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">arma::mat&amp; Parameters </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the model parameters. </p>
+
+<p class="definition">Definition at line <a class="el" href="softmax__regression_8hpp_source.html#l00181">181</a> of file <a class="el" href="softmax__regression_8hpp_source.html">softmax_regression.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa68d74dc1e86e4352e00a3cab83a0e4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa68d74dc1e86e4352e00a3cab83a0e4a">&#9670;&nbsp;</a></span>Parameters() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::mat&amp; Parameters </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the model parameters. </p>
+
+<p class="definition">Definition at line <a class="el" href="softmax__regression_8hpp_source.html#l00183">183</a> of file <a class="el" href="softmax__regression_8hpp_source.html">softmax_regression.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad515c8613a421fe8c60230b49946cc7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad515c8613a421fe8c60230b49946cc7b">&#9670;&nbsp;</a></span>Predict()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="deprecated_8hpp.html#a3d7d5df477a8805980e43e423e18a525">mlpack_deprecated</a> void Predict </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >testData</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::Row&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >predictions</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Predict the class labels for the provided feature points. </p>
+<p >The function calculates the probabilities for every class, given a data point. It then chooses the class which has the highest probability among all.</p>
+<p >This method is deprecated and will be removed in mlpack 3.0.0. You should use <a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html#a25d8b43bbbdabff816a6769ab7b35557" title="Classify the given points, returning the predicted labels for each point. ">Classify()</a> instead.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">testData</td><td >Matrix of data points for which predictions are to be made. </td></tr>
+    <tr ><td class="paramname">predictions</td><td >Vector to store the predictions in. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae187181bfb4ff8601e6385fd4fc4999d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae187181bfb4ff8601e6385fd4fc4999d">&#9670;&nbsp;</a></span>Serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Serialize </td>
+          <td >(</td>
+          <td class="paramtype">Archive &amp;&#160;</td>
+          <td class="paramname"><em >ar</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em >int</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Serialize the <a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegression.html" title="Softmax Regression is a classifier which can be used for classification when the data available can t...">SoftmaxRegression</a> model. </p>
+
+<p class="definition">Definition at line <a class="el" href="softmax__regression_8hpp_source.html#l00194">194</a> of file <a class="el" href="softmax__regression_8hpp_source.html">softmax_regression.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="serialization__shim_8hpp_source.html#l00093">mlpack::data::CreateNVP()</a>.</p>
+
+</div>
+</div>
+<a id="a319e7646382079d648ea264f6dec1985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a319e7646382079d648ea264f6dec1985">&#9670;&nbsp;</a></span>Train() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Train </td>
+          <td >(</td>
+          <td class="paramtype">OptimizerType&lt; <a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegressionFunction.html">SoftmaxRegressionFunction</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em >optimizer</em></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Train the softmax regression model with the given optimizer. </p>
+<p >The optimizer should hold an instantiated <a class="el" href="classmlpack_1_1regression_1_1SoftmaxRegressionFunction.html">SoftmaxRegressionFunction</a> object for the function to operate upon. This option should be preferred when the optimizer options are to be changed. </p><dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">optimizer</td><td >Instantiated optimizer with instantiated error function. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt >Returns</dt><dd >Objective value of the final point. </dd></dl>
+
+</div>
+</div>
+<a id="a8320d4187fceeb862c887fe8eb84054b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8320d4187fceeb862c887fe8eb84054b">&#9670;&nbsp;</a></span>Train() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Train </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >data</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const arma::Row&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >labels</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >numClasses</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Train the softmax regression with the given training data. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">data</td><td >Input data with each column as one example. </td></tr>
+    <tr ><td class="paramname">labels</td><td >Labels associated with the feature data. </td></tr>
+    <tr ><td class="paramname">numClasses</td><td >Number of classes for classification. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt >Returns</dt><dd >Objective value of the final point. </dd></dl>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/methods/softmax_regression/<a class="el" href="softmax__regression_8hpp_source.html">softmax_regression.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

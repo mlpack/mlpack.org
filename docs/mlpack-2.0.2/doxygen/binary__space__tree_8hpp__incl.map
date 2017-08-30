@@ -2,13 +2,13 @@
 <area shape="rect" id="node2" href="$core_8hpp.html" title="Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu..." alt="" coords="2410,377,2529,404"/>
 <area shape="rect" id="node31" href="$bounds_8hpp.html" title="Bounds that are useful for binary space partitioning trees. " alt="" coords="114,206,204,233"/>
 <area shape="rect" id="node35" href="$midpoint__split_8hpp.html" title="binary_space_tree/midpoint\l_split.hpp" alt="" coords="2683,288,2864,329"/>
-<area shape="rect" id="node37" href="$mean__split_8hpp.html" title="binary_space_tree/mean\l_split.hpp" alt="" coords="2325,102,2489,143"/>
-<area shape="rect" id="node39" href="$binary__space__tree_2binary__space__tree_8hpp.html" title="binary_space_tree/binary\l_space_tree.hpp" alt="" coords="2001,199,2168,240"/>
-<area shape="rect" id="node42" href="$binary__space__tree_2single__tree__traverser_8hpp.html" title="binary_space_tree/single\l_tree_traverser.hpp" alt="" coords="2134,102,2301,143"/>
-<area shape="rect" id="node45" href="$binary__space__tree_2dual__tree__traverser_8hpp.html" title="binary_space_tree/dual\l_tree_traverser.hpp" alt="" coords="1878,102,2034,143"/>
-<area shape="rect" id="node47" href="$breadth__first__dual__tree__traverser_8hpp.html" title="binary_space_tree/breadth\l_first_dual_tree_traverser.hpp" alt="" coords="2704,102,2899,143"/>
-<area shape="rect" id="node49" href="$binary__space__tree_2traits_8hpp.html" title="binary_space_tree/traits.hpp" alt="" coords="3363,109,3550,136"/>
-<area shape="rect" id="node50" href="$core_2tree_2binary__space__tree_2typedef_8hpp.html" title="binary_space_tree/typedef.hpp" alt="" coords="3574,109,3774,136"/>
+<area shape="rect" id="node37" href="$mean__split_8hpp.html" title="binary_space_tree/mean\l_split.hpp" alt="" coords="2324,102,2488,143"/>
+<area shape="rect" id="node39" href="$binary__space__tree_2binary__space__tree_8hpp.html" title="binary_space_tree/binary\l_space_tree.hpp" alt="" coords="2000,199,2166,240"/>
+<area shape="rect" id="node42" href="$binary__space__tree_2single__tree__traverser_8hpp.html" title="binary_space_tree/single\l_tree_traverser.hpp" alt="" coords="2133,102,2300,143"/>
+<area shape="rect" id="node45" href="$binary__space__tree_2dual__tree__traverser_8hpp.html" title="binary_space_tree/dual\l_tree_traverser.hpp" alt="" coords="1877,102,2033,143"/>
+<area shape="rect" id="node47" href="$breadth__first__dual__tree__traverser_8hpp.html" title="binary_space_tree/breadth\l_first_dual_tree_traverser.hpp" alt="" coords="2703,102,2898,143"/>
+<area shape="rect" id="node49" href="$binary__space__tree_2traits_8hpp.html" title="binary_space_tree/traits.hpp" alt="" coords="3362,109,3548,136"/>
+<area shape="rect" id="node50" href="$core_2tree_2binary__space__tree_2typedef_8hpp.html" title="binary_space_tree/typedef.hpp" alt="" coords="3572,109,3772,136"/>
 <area shape="rect" id="node3" href="$prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo. " alt="" coords="4252,563,4388,590"/>
 <area shape="rect" id="node4" href="$arma__traits_8hpp.html" title="mlpack/core/util/arma\l_traits.hpp" alt="" coords="4467,459,4614,501"/>
 <area shape="rect" id="node5" href="$log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="1034,563,1194,590"/>
@@ -40,5 +40,5 @@
 <area shape="rect" id="node32" href="$bound__traits_8hpp.html" title="bound_traits.hpp" alt="" coords="121,377,240,404"/>
 <area shape="rect" id="node33" href="$hrectbound_8hpp.html" title="Bounds that are useful for binary space partitioning trees. " alt="" coords="241,295,352,322"/>
 <area shape="rect" id="node34" href="$ballbound_8hpp.html" title="Bounds that are useful for binary space partitioning trees. " alt="" coords="62,295,165,322"/>
-<area shape="rect" id="node40" href="$statistic_8hpp.html" title="Definition of the policy type for the statistic class. " alt="" coords="2201,295,2306,322"/>
+<area shape="rect" id="node40" href="$statistic_8hpp.html" title="Definition of the policy type for the statistic class. " alt="" coords="2200,295,2305,322"/>
 </map>

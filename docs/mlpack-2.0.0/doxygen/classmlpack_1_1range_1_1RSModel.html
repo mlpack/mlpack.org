@@ -1,22 +1,50 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head >
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
-<meta name="generator" content="Doxygen 1.8.9.1"></meta>
-<title >mlpack: mlpack::range::RSModel Class Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
-</link>
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
-</link>
-</head>
-<body >
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
 <div id="top">
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody >
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mlpack
    &#160;<span id="projectnumber">2.0.0</span>
    </div>
@@ -26,24 +54,14 @@
 </table>
 </div>
 
-
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
-      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
-      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span >Classes</span></a></li>
-      <li ><a href="files.html"><span >Files</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li ><a href="annotated.html"><span >Class&#160;List</span></a></li>
-      <li ><a href="classes.html"><span >Class&#160;Index</span></a></li>
-      <li ><a href="inherits.html"><span >Class&#160;Hierarchy</span></a></li>
-      <li ><a href="functions.html"><span >Class&#160;Members</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+</script>
+<div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul >
 <li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1range.html">range</a></li><li class="navelem"><a class="el" href="classmlpack_1_1range_1_1RSModel.html">RSModel</a></li>  </ul>
@@ -89,24 +107,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a573f6f2496cd4fbcb69cc2d3c3581c12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#a573f6f2496cd4fbcb69cc2d3c3581c12">BuildModel</a> (arma::mat &amp;&amp;referenceSet, const size_t <a class="el" href="classmlpack_1_1range_1_1RSModel.html#a21aa6deb45618b5abc54acdf989aa2f7">leafSize</a>, const bool naive, const bool singleMode)</td></tr>
 <tr class="memdesc:a573f6f2496cd4fbcb69cc2d3c3581c12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build the reference tree on the given dataset with the given parameters.  <a href="#a573f6f2496cd4fbcb69cc2d3c3581c12">More...</a><br /></br></td></tr>
 <tr class="separator:a573f6f2496cd4fbcb69cc2d3c3581c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac3369dfc410e5c15172de6115868659"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#aac3369dfc410e5c15172de6115868659">Dataset</a> () const </td></tr>
-<tr class="memdesc:aac3369dfc410e5c15172de6115868659"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expose the dataset.  <a href="#aac3369dfc410e5c15172de6115868659">More...</a><br /></br></td></tr>
-<tr class="separator:aac3369dfc410e5c15172de6115868659"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac15f935653d42e68e2b7d4fd5a402d9c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#ac15f935653d42e68e2b7d4fd5a402d9c">LeafSize</a> () const </td></tr>
-<tr class="memdesc:ac15f935653d42e68e2b7d4fd5a402d9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the leaf size (applicable to everything but the cover tree).  <a href="#ac15f935653d42e68e2b7d4fd5a402d9c">More...</a><br /></br></td></tr>
-<tr class="separator:ac15f935653d42e68e2b7d4fd5a402d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a434adbd7349389cca13688ba391b7933"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#a434adbd7349389cca13688ba391b7933">Dataset</a> () const</td></tr>
+<tr class="memdesc:a434adbd7349389cca13688ba391b7933"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expose the dataset.  <a href="#a434adbd7349389cca13688ba391b7933">More...</a><br /></br></td></tr>
+<tr class="separator:a434adbd7349389cca13688ba391b7933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44309e6a8854e3554b356f138292d418"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#a44309e6a8854e3554b356f138292d418">LeafSize</a> () const</td></tr>
+<tr class="memdesc:a44309e6a8854e3554b356f138292d418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the leaf size (applicable to everything but the cover tree).  <a href="#a44309e6a8854e3554b356f138292d418">More...</a><br /></br></td></tr>
+<tr class="separator:a44309e6a8854e3554b356f138292d418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a404bdb14c44b10ea1a6f2a0e3b9b32f8"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#a404bdb14c44b10ea1a6f2a0e3b9b32f8">LeafSize</a> ()</td></tr>
 <tr class="memdesc:a404bdb14c44b10ea1a6f2a0e3b9b32f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the leaf size (applicable to everything but the cover tree).  <a href="#a404bdb14c44b10ea1a6f2a0e3b9b32f8">More...</a><br /></br></td></tr>
 <tr class="separator:a404bdb14c44b10ea1a6f2a0e3b9b32f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4043a6c1b03fa409e2def0560a52ea14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#a4043a6c1b03fa409e2def0560a52ea14">Naive</a> () const </td></tr>
-<tr class="memdesc:a4043a6c1b03fa409e2def0560a52ea14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether the model is in naive search mode.  <a href="#a4043a6c1b03fa409e2def0560a52ea14">More...</a><br /></br></td></tr>
-<tr class="separator:a4043a6c1b03fa409e2def0560a52ea14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abafeda55aed634ec272d21504186db7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#abafeda55aed634ec272d21504186db7c">Naive</a> () const</td></tr>
+<tr class="memdesc:abafeda55aed634ec272d21504186db7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether the model is in naive search mode.  <a href="#abafeda55aed634ec272d21504186db7c">More...</a><br /></br></td></tr>
+<tr class="separator:abafeda55aed634ec272d21504186db7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26fece7a1dfe204b75ba431e36642d98"><td class="memItemLeft" align="right" valign="top">bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#a26fece7a1dfe204b75ba431e36642d98">Naive</a> ()</td></tr>
 <tr class="memdesc:a26fece7a1dfe204b75ba431e36642d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify whether the model is in naive search mode.  <a href="#a26fece7a1dfe204b75ba431e36642d98">More...</a><br /></br></td></tr>
 <tr class="separator:a26fece7a1dfe204b75ba431e36642d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae18c48bfe2c2fd6ce37cab57db1be582"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#ae18c48bfe2c2fd6ce37cab57db1be582">RandomBasis</a> () const </td></tr>
-<tr class="memdesc:ae18c48bfe2c2fd6ce37cab57db1be582"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether a random basis is used.  <a href="#ae18c48bfe2c2fd6ce37cab57db1be582">More...</a><br /></br></td></tr>
-<tr class="separator:ae18c48bfe2c2fd6ce37cab57db1be582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5515b849b7a9f02dffb179d16290a188"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#a5515b849b7a9f02dffb179d16290a188">RandomBasis</a> () const</td></tr>
+<tr class="memdesc:a5515b849b7a9f02dffb179d16290a188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether a random basis is used.  <a href="#a5515b849b7a9f02dffb179d16290a188">More...</a><br /></br></td></tr>
+<tr class="separator:a5515b849b7a9f02dffb179d16290a188"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95f7344493b74e4c8e8c2e77d3e2b91e"><td class="memItemLeft" align="right" valign="top">bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#a95f7344493b74e4c8e8c2e77d3e2b91e">RandomBasis</a> ()</td></tr>
 <tr class="memdesc:a95f7344493b74e4c8e8c2e77d3e2b91e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify whether a random basis is used (don't do this after the model has been built).  <a href="#a95f7344493b74e4c8e8c2e77d3e2b91e">More...</a><br /></br></td></tr>
 <tr class="separator:a95f7344493b74e4c8e8c2e77d3e2b91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,15 +138,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af86096e0a7d972d53de6d81ff2437789"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#af86096e0a7d972d53de6d81ff2437789">Serialize</a> (Archive &amp;ar, const unsigned int)</td></tr>
 <tr class="memdesc:af86096e0a7d972d53de6d81ff2437789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the range search model.  <a href="#af86096e0a7d972d53de6d81ff2437789">More...</a><br /></br></td></tr>
 <tr class="separator:af86096e0a7d972d53de6d81ff2437789"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b597c26d2b65551757ed4749c4288b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#a1b597c26d2b65551757ed4749c4288b2">SingleMode</a> () const </td></tr>
-<tr class="memdesc:a1b597c26d2b65551757ed4749c4288b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether the model is in single-tree search mode.  <a href="#a1b597c26d2b65551757ed4749c4288b2">More...</a><br /></br></td></tr>
-<tr class="separator:a1b597c26d2b65551757ed4749c4288b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0539bd47ca7cb0c6a932ad7fea1a34e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#a0539bd47ca7cb0c6a932ad7fea1a34e1">SingleMode</a> () const</td></tr>
+<tr class="memdesc:a0539bd47ca7cb0c6a932ad7fea1a34e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether the model is in single-tree search mode.  <a href="#a0539bd47ca7cb0c6a932ad7fea1a34e1">More...</a><br /></br></td></tr>
+<tr class="separator:a0539bd47ca7cb0c6a932ad7fea1a34e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba8e1caac185b971834d0250499e7cde"><td class="memItemLeft" align="right" valign="top">bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#aba8e1caac185b971834d0250499e7cde">SingleMode</a> ()</td></tr>
 <tr class="memdesc:aba8e1caac185b971834d0250499e7cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify whether the model is in single-tree search mode.  <a href="#aba8e1caac185b971834d0250499e7cde">More...</a><br /></br></td></tr>
 <tr class="separator:aba8e1caac185b971834d0250499e7cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa048e2fde42de4eeb1a45dc2a06658b4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#aa048e2fde42de4eeb1a45dc2a06658b4">TreeType</a> () const </td></tr>
-<tr class="memdesc:aa048e2fde42de4eeb1a45dc2a06658b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of tree.  <a href="#aa048e2fde42de4eeb1a45dc2a06658b4">More...</a><br /></br></td></tr>
-<tr class="separator:aa048e2fde42de4eeb1a45dc2a06658b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a923a1785d47f5cd5cc34663048e62086"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#a923a1785d47f5cd5cc34663048e62086">TreeType</a> () const</td></tr>
+<tr class="memdesc:a923a1785d47f5cd5cc34663048e62086"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of tree.  <a href="#a923a1785d47f5cd5cc34663048e62086">More...</a><br /></br></td></tr>
+<tr class="separator:a923a1785d47f5cd5cc34663048e62086"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1834b689cbdde7033f3a3d75fad3083c"><td class="memItemLeft" align="right" valign="top">int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#a1834b689cbdde7033f3a3d75fad3083c">TreeType</a> ()</td></tr>
 <tr class="memdesc:a1834b689cbdde7033f3a3d75fad3083c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the type of tree (don't do this after the model has been built).  <a href="#a1834b689cbdde7033f3a3d75fad3083c">More...</a><br /></br></td></tr>
 <tr class="separator:a1834b689cbdde7033f3a3d75fad3083c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,7 +154,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
 <tr class="memitem:ad9a4e7a599d3edd31b3eb119520e2c2f"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeMetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeStatType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeMatType</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div></td></tr>
-<tr class="memitem:ad9a4e7a599d3edd31b3eb119520e2c2f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#ad9a4e7a599d3edd31b3eb119520e2c2f">RSType</a> = <a class="el" href="classmlpack_1_1range_1_1RangeSearch.html">RangeSearch</a>&lt; <a class="el" href="namespacemlpack_1_1metric.html#a012695bde5dbf7ded7f7a180b5f3f512">metric::EuclideanDistance</a>, arma::mat, <a class="el" href="classmlpack_1_1range_1_1RSModel.html#aa048e2fde42de4eeb1a45dc2a06658b4">TreeType</a> &gt;</td></tr>
+<tr class="memitem:ad9a4e7a599d3edd31b3eb119520e2c2f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#ad9a4e7a599d3edd31b3eb119520e2c2f">RSType</a> = <a class="el" href="classmlpack_1_1range_1_1RangeSearch.html">RangeSearch</a>&lt; <a class="el" href="namespacemlpack_1_1metric.html#a012695bde5dbf7ded7f7a180b5f3f512">metric::EuclideanDistance</a>, arma::mat, <a class="el" href="classmlpack_1_1range_1_1RSModel.html#a923a1785d47f5cd5cc34663048e62086">TreeType</a> &gt;</td></tr>
 <tr class="memdesc:ad9a4e7a599d3edd31b3eb119520e2c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mostly-specified type of the range search model.  <a href="#ad9a4e7a599d3edd31b3eb119520e2c2f">More...</a><br /></br></td></tr>
 <tr class="separator:ad9a4e7a599d3edd31b3eb119520e2c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -145,9 +163,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:aafcf8521afc3d63838bd6dc9c652e1ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#aafcf8521afc3d63838bd6dc9c652e1ff">CleanMemory</a> ()</td></tr>
 <tr class="memdesc:aafcf8521afc3d63838bd6dc9c652e1ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up memory.  <a href="#aafcf8521afc3d63838bd6dc9c652e1ff">More...</a><br /></br></td></tr>
 <tr class="separator:aafcf8521afc3d63838bd6dc9c652e1ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76eba8e5770a5767a302763ca0001793"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#a76eba8e5770a5767a302763ca0001793">TreeName</a> () const </td></tr>
-<tr class="memdesc:a76eba8e5770a5767a302763ca0001793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a string representing the name of the tree.  <a href="#a76eba8e5770a5767a302763ca0001793">More...</a><br /></br></td></tr>
-<tr class="separator:a76eba8e5770a5767a302763ca0001793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae59bede2f6113267cce5efcb76230e59"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1range_1_1RSModel.html#ae59bede2f6113267cce5efcb76230e59">TreeName</a> () const</td></tr>
+<tr class="memdesc:ae59bede2f6113267cce5efcb76230e59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a string representing the name of the tree.  <a href="#ae59bede2f6113267cce5efcb76230e59">More...</a><br /></br></td></tr>
+<tr class="separator:ae59bede2f6113267cce5efcb76230e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -179,9 +197,11 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p >Definition at line <a class="el" href="rs__model_8hpp_source.html#l00037">37</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rs__model_8hpp_source.html#l00037">37</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="ad9a4e7a599d3edd31b3eb119520e2c2f"></a>
+<a id="ad9a4e7a599d3edd31b3eb119520e2c2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9a4e7a599d3edd31b3eb119520e2c2f">&#9670;&nbsp;</a></span>RSType</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeMetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeStatType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeMatType</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -190,7 +210,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr >
-          <td class="memname">using <a class="el" href="classmlpack_1_1range_1_1RSModel.html#ad9a4e7a599d3edd31b3eb119520e2c2f">mlpack::range::RSModel::RSType</a> =  <a class="el" href="classmlpack_1_1range_1_1RangeSearch.html">RangeSearch</a>&lt;<a class="el" href="namespacemlpack_1_1metric.html#a012695bde5dbf7ded7f7a180b5f3f512">metric::EuclideanDistance</a>, arma::mat, <a class="el" href="classmlpack_1_1range_1_1RSModel.html#aa048e2fde42de4eeb1a45dc2a06658b4">TreeType</a>&gt;</td>
+          <td class="memname">using <a class="el" href="classmlpack_1_1range_1_1RSModel.html#ad9a4e7a599d3edd31b3eb119520e2c2f">mlpack::range::RSModel::RSType</a> =  <a class="el" href="classmlpack_1_1range_1_1RangeSearch.html">RangeSearch</a>&lt;<a class="el" href="namespacemlpack_1_1metric.html#a012695bde5dbf7ded7f7a180b5f3f512">metric::EuclideanDistance</a>, arma::mat, <a class="el" href="classmlpack_1_1range_1_1RSModel.html#a923a1785d47f5cd5cc34663048e62086">TreeType</a>&gt;</td>
         </tr>
       </table>
   </td>
@@ -202,12 +222,14 @@ Private Attributes</h2></td></tr>
 
 <p >The mostly-specified type of the range search model. </p>
 
-<p >Definition at line <a class="el" href="rs__model_8hpp_source.html#l00062">62</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rs__model_8hpp_source.html#l00062">62</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a6656fd60cdc1463f8cf2ae0661fab117"></a>
+<a id="a6656fd60cdc1463f8cf2ae0661fab117"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6656fd60cdc1463f8cf2ae0661fab117">&#9670;&nbsp;</a></span>TreeTypes</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -217,24 +239,21 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr ><th colspan="2">Enumerator</th></tr><tr ><td class="fieldname"><a class="anchor" id="a6656fd60cdc1463f8cf2ae0661fab117ae5d5be6aa144f457cbcd2cc5e87684a6"></a>KD_TREE&#160;</td><td class="fielddoc">
-</td></tr>
-<tr ><td class="fieldname"><a class="anchor" id="a6656fd60cdc1463f8cf2ae0661fab117adae2c050509d6333c0b5405faee94d6d"></a>COVER_TREE&#160;</td><td class="fielddoc">
-</td></tr>
-<tr ><td class="fieldname"><a class="anchor" id="a6656fd60cdc1463f8cf2ae0661fab117a4e2a332be6d264c43ca5383f836800c5"></a>R_TREE&#160;</td><td class="fielddoc">
-</td></tr>
-<tr ><td class="fieldname"><a class="anchor" id="a6656fd60cdc1463f8cf2ae0661fab117a8049028476529ea9ecd4d3e72d923705"></a>R_STAR_TREE&#160;</td><td class="fielddoc">
-</td></tr>
-<tr ><td class="fieldname"><a class="anchor" id="a6656fd60cdc1463f8cf2ae0661fab117ac5cf95e05999d9ab13ce53dc416ca119"></a>BALL_TREE&#160;</td><td class="fielddoc">
-</td></tr>
+<tr ><th colspan="2">Enumerator</th></tr><tr ><td class="fieldname"><a id="a6656fd60cdc1463f8cf2ae0661fab117ae5d5be6aa144f457cbcd2cc5e87684a6"></a>KD_TREE&#160;</td><td class="fielddoc"></td></tr>
+<tr ><td class="fieldname"><a id="a6656fd60cdc1463f8cf2ae0661fab117adae2c050509d6333c0b5405faee94d6d"></a>COVER_TREE&#160;</td><td class="fielddoc"></td></tr>
+<tr ><td class="fieldname"><a id="a6656fd60cdc1463f8cf2ae0661fab117a4e2a332be6d264c43ca5383f836800c5"></a>R_TREE&#160;</td><td class="fielddoc"></td></tr>
+<tr ><td class="fieldname"><a id="a6656fd60cdc1463f8cf2ae0661fab117a8049028476529ea9ecd4d3e72d923705"></a>R_STAR_TREE&#160;</td><td class="fielddoc"></td></tr>
+<tr ><td class="fieldname"><a id="a6656fd60cdc1463f8cf2ae0661fab117ac5cf95e05999d9ab13ce53dc416ca119"></a>BALL_TREE&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p >Definition at line <a class="el" href="rs__model_8hpp_source.html#l00040">40</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rs__model_8hpp_source.html#l00040">40</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a973ef89ff0932ba3e7b6c902b9e79060"></a>
+<a id="a973ef89ff0932ba3e7b6c902b9e79060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a973ef89ff0932ba3e7b6c902b9e79060">&#9670;&nbsp;</a></span>RSModel()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -269,7 +288,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="adef744e9c3333f5b1691085cbd9f796f"></a>
+<a id="adef744e9c3333f5b1691085cbd9f796f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adef744e9c3333f5b1691085cbd9f796f">&#9670;&nbsp;</a></span>~RSModel()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -287,7 +308,9 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a573f6f2496cd4fbcb69cc2d3c3581c12"></a>
+<a id="a573f6f2496cd4fbcb69cc2d3c3581c12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a573f6f2496cd4fbcb69cc2d3c3581c12">&#9670;&nbsp;</a></span>BuildModel()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -335,9 +358,13 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p class="reference">Referenced by <a class="el" href="rs__model_8hpp_source.html#l00123">RandomBasis()</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="aafcf8521afc3d63838bd6dc9c652e1ff"></a>
+<a id="aafcf8521afc3d63838bd6dc9c652e1ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafcf8521afc3d63838bd6dc9c652e1ff">&#9670;&nbsp;</a></span>CleanMemory()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -360,9 +387,13 @@ Private Attributes</h2></td></tr>
 
 <p >Clean up memory. </p>
 
+<p class="reference">Referenced by <a class="el" href="rs__model_8hpp_source.html#l00123">RandomBasis()</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="aac3369dfc410e5c15172de6115868659"></a>
+<a id="a434adbd7349389cca13688ba391b7933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a434adbd7349389cca13688ba391b7933">&#9670;&nbsp;</a></span>Dataset()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -379,7 +410,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac15f935653d42e68e2b7d4fd5a402d9c"></a>
+<a id="a44309e6a8854e3554b356f138292d418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44309e6a8854e3554b356f138292d418">&#9670;&nbsp;</a></span>LeafSize() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -402,13 +435,15 @@ Private Attributes</h2></td></tr>
 
 <p >Get the leaf size (applicable to everything but the cover tree). </p>
 
-<p >Definition at line <a class="el" href="rs__model_8hpp_source.html#l00110">110</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rs__model_8hpp_source.html#l00110">110</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
 
-<p >References <a class="el" href="rs__model_8hpp_source.html#l00051">leafSize</a>.</p>
+<p class="reference">References <a class="el" href="rs__model_8hpp_source.html#l00051">leafSize</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a404bdb14c44b10ea1a6f2a0e3b9b32f8"></a>
+<a id="a404bdb14c44b10ea1a6f2a0e3b9b32f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a404bdb14c44b10ea1a6f2a0e3b9b32f8">&#9670;&nbsp;</a></span>LeafSize() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -431,13 +466,15 @@ Private Attributes</h2></td></tr>
 
 <p >Modify the leaf size (applicable to everything but the cover tree). </p>
 
-<p >Definition at line <a class="el" href="rs__model_8hpp_source.html#l00112">112</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rs__model_8hpp_source.html#l00112">112</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
 
-<p >References <a class="el" href="rs__model_8hpp_source.html#l00051">leafSize</a>.</p>
+<p class="reference">References <a class="el" href="rs__model_8hpp_source.html#l00051">leafSize</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4043a6c1b03fa409e2def0560a52ea14"></a>
+<a id="abafeda55aed634ec272d21504186db7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abafeda55aed634ec272d21504186db7c">&#9670;&nbsp;</a></span>Naive() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -454,7 +491,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a26fece7a1dfe204b75ba431e36642d98"></a>
+<a id="a26fece7a1dfe204b75ba431e36642d98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26fece7a1dfe204b75ba431e36642d98">&#9670;&nbsp;</a></span>Naive() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -471,7 +510,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae18c48bfe2c2fd6ce37cab57db1be582"></a>
+<a id="a5515b849b7a9f02dffb179d16290a188"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5515b849b7a9f02dffb179d16290a188">&#9670;&nbsp;</a></span>RandomBasis() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -494,13 +535,15 @@ Private Attributes</h2></td></tr>
 
 <p >Get whether a random basis is used. </p>
 
-<p >Definition at line <a class="el" href="rs__model_8hpp_source.html#l00120">120</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rs__model_8hpp_source.html#l00120">120</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
 
-<p >References <a class="el" href="rs__model_8hpp_source.html#l00054">randomBasis</a>.</p>
+<p class="reference">References <a class="el" href="rs__model_8hpp_source.html#l00054">randomBasis</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a95f7344493b74e4c8e8c2e77d3e2b91e"></a>
+<a id="a95f7344493b74e4c8e8c2e77d3e2b91e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95f7344493b74e4c8e8c2e77d3e2b91e">&#9670;&nbsp;</a></span>RandomBasis() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -523,13 +566,15 @@ Private Attributes</h2></td></tr>
 
 <p >Modify whether a random basis is used (don't do this after the model has been built). </p>
 
-<p >Definition at line <a class="el" href="rs__model_8hpp_source.html#l00123">123</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rs__model_8hpp_source.html#l00123">123</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
 
-<p >References <a class="el" href="rs__model_8hpp_source.html#l00054">randomBasis</a>.</p>
+<p class="reference">References <a class="el" href="classmlpack_1_1range_1_1RSModel.html#a573f6f2496cd4fbcb69cc2d3c3581c12">BuildModel()</a>, <a class="el" href="classmlpack_1_1range_1_1RSModel.html#aafcf8521afc3d63838bd6dc9c652e1ff">CleanMemory()</a>, <a class="el" href="rs__model_8hpp_source.html#l00054">randomBasis</a>, <a class="el" href="classmlpack_1_1range_1_1RSModel.html#afdea99a3b496840e6b9a9834bcb8af66">Search()</a>, and <a class="el" href="classmlpack_1_1range_1_1RSModel.html#ae59bede2f6113267cce5efcb76230e59">TreeName()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="afdea99a3b496840e6b9a9834bcb8af66"></a>
+<a id="afdea99a3b496840e6b9a9834bcb8af66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdea99a3b496840e6b9a9834bcb8af66">&#9670;&nbsp;</a></span>Search() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -577,9 +622,13 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p class="reference">Referenced by <a class="el" href="rs__model_8hpp_source.html#l00123">RandomBasis()</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="adf7b85f7559a13c36adeb4d47f9b5010"></a>
+<a id="adf7b85f7559a13c36adeb4d47f9b5010"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf7b85f7559a13c36adeb4d47f9b5010">&#9670;&nbsp;</a></span>Search() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -622,7 +671,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af86096e0a7d972d53de6d81ff2437789"></a>
+<a id="af86096e0a7d972d53de6d81ff2437789"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af86096e0a7d972d53de6d81ff2437789">&#9670;&nbsp;</a></span>Serialize()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -651,7 +702,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1b597c26d2b65551757ed4749c4288b2"></a>
+<a id="a0539bd47ca7cb0c6a932ad7fea1a34e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0539bd47ca7cb0c6a932ad7fea1a34e1">&#9670;&nbsp;</a></span>SingleMode() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -668,7 +721,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aba8e1caac185b971834d0250499e7cde"></a>
+<a id="aba8e1caac185b971834d0250499e7cde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba8e1caac185b971834d0250499e7cde">&#9670;&nbsp;</a></span>SingleMode() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -685,7 +740,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a76eba8e5770a5767a302763ca0001793"></a>
+<a id="ae59bede2f6113267cce5efcb76230e59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae59bede2f6113267cce5efcb76230e59">&#9670;&nbsp;</a></span>TreeName()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -709,9 +766,13 @@ Private Attributes</h2></td></tr>
 <p >Return a string representing the name of the tree. </p>
 <p >This is used for logging output. </p>
 
+<p class="reference">Referenced by <a class="el" href="rs__model_8hpp_source.html#l00123">RandomBasis()</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="aa048e2fde42de4eeb1a45dc2a06658b4"></a>
+<a id="a923a1785d47f5cd5cc34663048e62086"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a923a1785d47f5cd5cc34663048e62086">&#9670;&nbsp;</a></span>TreeType() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -734,13 +795,15 @@ Private Attributes</h2></td></tr>
 
 <p >Get the type of tree. </p>
 
-<p >Definition at line <a class="el" href="rs__model_8hpp_source.html#l00115">115</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rs__model_8hpp_source.html#l00115">115</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
 
-<p >References <a class="el" href="rs__model_8hpp_source.html#l00050">treeType</a>.</p>
+<p class="reference">References <a class="el" href="rs__model_8hpp_source.html#l00050">treeType</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1834b689cbdde7033f3a3d75fad3083c"></a>
+<a id="a1834b689cbdde7033f3a3d75fad3083c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1834b689cbdde7033f3a3d75fad3083c">&#9670;&nbsp;</a></span>TreeType() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -763,14 +826,16 @@ Private Attributes</h2></td></tr>
 
 <p >Modify the type of tree (don't do this after the model has been built). </p>
 
-<p >Definition at line <a class="el" href="rs__model_8hpp_source.html#l00117">117</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rs__model_8hpp_source.html#l00117">117</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
 
-<p >References <a class="el" href="rs__model_8hpp_source.html#l00050">treeType</a>.</p>
+<p class="reference">References <a class="el" href="rs__model_8hpp_source.html#l00050">treeType</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a43e73e8b6020f1b1fc35560b3700f18b"></a>
+<a id="a43e73e8b6020f1b1fc35560b3700f18b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43e73e8b6020f1b1fc35560b3700f18b">&#9670;&nbsp;</a></span>ballTreeRS</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -790,11 +855,13 @@ Private Attributes</h2></td></tr>
 
 <p >Ball tree based range search object (NULL if not in use). </p>
 
-<p >Definition at line <a class="el" href="rs__model_8hpp_source.html#l00074">74</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rs__model_8hpp_source.html#l00074">74</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="abea06ade2d752d9b5f07da939a0e0084"></a>
+<a id="abea06ade2d752d9b5f07da939a0e0084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abea06ade2d752d9b5f07da939a0e0084">&#9670;&nbsp;</a></span>coverTreeRS</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -814,11 +881,13 @@ Private Attributes</h2></td></tr>
 
 <p >Cover tree based range search object (NULL if not in use). </p>
 
-<p >Definition at line <a class="el" href="rs__model_8hpp_source.html#l00068">68</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rs__model_8hpp_source.html#l00068">68</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a897f4357de03e48f27adcd166e6a03ca"></a>
+<a id="a897f4357de03e48f27adcd166e6a03ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a897f4357de03e48f27adcd166e6a03ca">&#9670;&nbsp;</a></span>kdTreeRS</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -838,11 +907,13 @@ Private Attributes</h2></td></tr>
 
 <p >kd-tree based range search object (NULL if not in use). </p>
 
-<p >Definition at line <a class="el" href="rs__model_8hpp_source.html#l00066">66</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rs__model_8hpp_source.html#l00066">66</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a21aa6deb45618b5abc54acdf989aa2f7"></a>
+<a id="a21aa6deb45618b5abc54acdf989aa2f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21aa6deb45618b5abc54acdf989aa2f7">&#9670;&nbsp;</a></span>leafSize</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -860,13 +931,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p >Definition at line <a class="el" href="rs__model_8hpp_source.html#l00051">51</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rs__model_8hpp_source.html#l00051">51</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="rs__model_8hpp_source.html#l00110">LeafSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rs__model_8hpp_source.html#l00110">LeafSize()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a85010e82249397132f5eacf71ea5b0fa"></a>
+<a id="a85010e82249397132f5eacf71ea5b0fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85010e82249397132f5eacf71ea5b0fa">&#9670;&nbsp;</a></span>q</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -886,11 +959,13 @@ Private Attributes</h2></td></tr>
 
 <p >Random projection matrix. </p>
 
-<p >Definition at line <a class="el" href="rs__model_8hpp_source.html#l00056">56</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rs__model_8hpp_source.html#l00056">56</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4f045305d2478e3c20a2144154c1a2f3"></a>
+<a id="a4f045305d2478e3c20a2144154c1a2f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f045305d2478e3c20a2144154c1a2f3">&#9670;&nbsp;</a></span>randomBasis</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -910,13 +985,15 @@ Private Attributes</h2></td></tr>
 
 <p >If true, we randomly project the data into a new basis before search. </p>
 
-<p >Definition at line <a class="el" href="rs__model_8hpp_source.html#l00054">54</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rs__model_8hpp_source.html#l00054">54</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="rs__model_8hpp_source.html#l00120">RandomBasis()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rs__model_8hpp_source.html#l00120">RandomBasis()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a225ec1d190230fdd9d0e25c7fc675ade"></a>
+<a id="a225ec1d190230fdd9d0e25c7fc675ade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a225ec1d190230fdd9d0e25c7fc675ade">&#9670;&nbsp;</a></span>rStarTreeRS</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -936,11 +1013,13 @@ Private Attributes</h2></td></tr>
 
 <p >R* tree based range search object (NULL if not in use). </p>
 
-<p >Definition at line <a class="el" href="rs__model_8hpp_source.html#l00072">72</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rs__model_8hpp_source.html#l00072">72</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af743f934ce6704ba6e2111c1caf08e8d"></a>
+<a id="af743f934ce6704ba6e2111c1caf08e8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af743f934ce6704ba6e2111c1caf08e8d">&#9670;&nbsp;</a></span>rTreeRS</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -960,11 +1039,13 @@ Private Attributes</h2></td></tr>
 
 <p >R tree based range search object (NULL if not in use). </p>
 
-<p >Definition at line <a class="el" href="rs__model_8hpp_source.html#l00070">70</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rs__model_8hpp_source.html#l00070">70</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a31417600b47989a0d58d4d8d889c9864"></a>
+<a id="a31417600b47989a0d58d4d8d889c9864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31417600b47989a0d58d4d8d889c9864">&#9670;&nbsp;</a></span>treeType</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -982,9 +1063,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p >Definition at line <a class="el" href="rs__model_8hpp_source.html#l00050">50</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rs__model_8hpp_source.html#l00050">50</a> of file <a class="el" href="rs__model_8hpp_source.html">rs_model.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="rs__model_8hpp_source.html#l00115">TreeType()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rs__model_8hpp_source.html#l00115">TreeType()</a>.</p>
 
 </div>
 </div>
@@ -996,7 +1077,16 @@ Private Attributes</h2></td></tr>
 <hr class="footer"></hr><address class="footer"><small >
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"></img>
-</a> 1.8.9.1
+</a> 1.8.13
 </small></address>
+</div>
 </body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
 </html>

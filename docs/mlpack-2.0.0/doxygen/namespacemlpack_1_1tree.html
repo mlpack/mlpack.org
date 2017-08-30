@@ -1,22 +1,50 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head >
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
-<meta name="generator" content="Doxygen 1.8.9.1"></meta>
-<title >mlpack: mlpack::tree Namespace Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
-</link>
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
-</link>
-</head>
-<body >
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
 <div id="top">
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody >
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mlpack
    &#160;<span id="projectnumber">2.0.0</span>
    </div>
@@ -26,22 +54,14 @@
 </table>
 </div>
 
-
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
-      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
-      <li class="current"><a href="namespaces.html"><span >Namespaces</span></a></li>
-      <li ><a href="annotated.html"><span >Classes</span></a></li>
-      <li ><a href="files.html"><span >Files</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li ><a href="namespaces.html"><span >Namespace&#160;List</span></a></li>
-      <li ><a href="namespacemembers.html"><span >Namespace&#160;Members</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+</script>
+<div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul >
 <li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1tree.html">tree</a></li>  </ul>
@@ -193,7 +213,9 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Trees and tree-building procedures. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="a918273941d2d1d3999bf232280530d50"></a>
+<a id="a918273941d2d1d3999bf232280530d50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a918273941d2d1d3999bf232280530d50">&#9670;&nbsp;</a></span>BallTree</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">StatisticType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -206,22 +228,16 @@ Variables</h2></td></tr>
 
 <p >A midpoint-split ball tree. </p>
 <p >This tree holds its points only in the leaves, similar to the KDTree and MeanSplitKDTree. However, the bounding shape of each node is a ball, not a hyper-rectangle. This can make the ball tree advantageous in some higher-dimensional situations and for some datasets. The tree construction algorithm here is the same as Omohundro's 'K-d construction algorithm', except the splitting value is the midpoint, not the median. This can result in trees that better reflect the data, although they may be unbalanced.</p>
-<div class="fragment"><div class="line">@techreport{omohundro1989five,</div>
-<div class="line">  author={S.M. Omohundro},</div>
-<div class="line">  title={Five balltree construction algorithms},</div>
-<div class="line">  year={1989},</div>
-<div class="line">  institution={University of California, Berkeley International Computer</div>
-<div class="line">      Science Institute Technical Reports},</div>
-<div class="line">  number={TR-89-063}</div>
-<div class="line">}</div>
-</div><p >This template typedef satisfies the TreeType policy API.</p>
+<div class="fragment"><div class="line">@techreport{omohundro1989five,</div><div class="line">  author={S.M. Omohundro},</div><div class="line">  title={Five balltree construction algorithms},</div><div class="line">  year={1989},</div><div class="line">  institution={University of California, Berkeley International Computer</div><div class="line">      Science Institute Technical Reports},</div><div class="line">  number={TR-89-063}</div><div class="line">}</div></div><p >This template typedef satisfies the TreeType policy API.</p>
 <dl class="section see"><dt >See also</dt><dd ><a class="el" href="trees.html">The TreeType policy in mlpack</a>, <a class="el" href="classmlpack_1_1tree_1_1BinarySpaceTree.html" title="A binary space partitioning tree, such as a KD-tree or a ball tree. ">BinarySpaceTree</a>, <a class="el" href="namespacemlpack_1_1tree.html#a562474c3dca60a6ac3c5168ae88bc028" title="The standard midpoint-split kd-tree. ">KDTree</a>, <a class="el" href="namespacemlpack_1_1tree.html#a0b9f6976f0322ead90f096067bbf65c2" title="A mean-split ball tree. ">MeanSplitBallTree</a> </dd></dl>
 
-<p >Definition at line <a class="el" href="core_2tree_2binary__space__tree_2typedef_8hpp_source.html#l00122">122</a> of file <a class="el" href="core_2tree_2binary__space__tree_2typedef_8hpp_source.html">typedef.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2tree_2binary__space__tree_2typedef_8hpp_source.html#l00122">122</a> of file <a class="el" href="core_2tree_2binary__space__tree_2typedef_8hpp_source.html">typedef.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aee8064e063faf98870a4a5d4c2a0c46f"></a>
+<a id="aee8064e063faf98870a4a5d4c2a0c46f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee8064e063faf98870a4a5d4c2a0c46f">&#9670;&nbsp;</a></span>BinaryDoubleNumericSplit</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -232,11 +248,13 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p >Definition at line <a class="el" href="binary__numeric__split_8hpp_source.html#l00138">138</a> of file <a class="el" href="binary__numeric__split_8hpp_source.html">binary_numeric_split.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="binary__numeric__split_8hpp_source.html#l00138">138</a> of file <a class="el" href="binary__numeric__split_8hpp_source.html">binary_numeric_split.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a84f2fb164d4b443c3409e1b88633745b"></a>
+<a id="a84f2fb164d4b443c3409e1b88633745b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84f2fb164d4b443c3409e1b88633745b">&#9670;&nbsp;</a></span>CosineNodeQueue</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -246,11 +264,13 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p >Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00033">33</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cosine__tree_8hpp_source.html#l00033">33</a> of file <a class="el" href="cosine__tree_8hpp_source.html">cosine_tree.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a20fda6c6aece9c58c011ffea7e123378"></a>
+<a id="a20fda6c6aece9c58c011ffea7e123378"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20fda6c6aece9c58c011ffea7e123378">&#9670;&nbsp;</a></span>HoeffdingDoubleNumericSplit</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -263,11 +283,13 @@ Variables</h2></td></tr>
 
 <p >Convenience typedef. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__numeric__split_8hpp_source.html#l00158">158</a> of file <a class="el" href="hoeffding__numeric__split_8hpp_source.html">hoeffding_numeric_split.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__numeric__split_8hpp_source.html#l00158">158</a> of file <a class="el" href="hoeffding__numeric__split_8hpp_source.html">hoeffding_numeric_split.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a94a035a6b91291ba28e1255b1555edc2"></a>
+<a id="a94a035a6b91291ba28e1255b1555edc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94a035a6b91291ba28e1255b1555edc2">&#9670;&nbsp;</a></span>HoeffdingTreeType</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -277,11 +299,13 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p >Definition at line <a class="el" href="methods_2hoeffding__trees_2typedef_8hpp_source.html#l00031">31</a> of file <a class="el" href="methods_2hoeffding__trees_2typedef_8hpp_source.html">typedef.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="methods_2hoeffding__trees_2typedef_8hpp_source.html#l00031">31</a> of file <a class="el" href="methods_2hoeffding__trees_2typedef_8hpp_source.html">typedef.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a562474c3dca60a6ac3c5168ae88bc028"></a>
+<a id="a562474c3dca60a6ac3c5168ae88bc028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a562474c3dca60a6ac3c5168ae88bc028">&#9670;&nbsp;</a></span>KDTree</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">StatisticType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -295,33 +319,16 @@ Variables</h2></td></tr>
 <p >The standard midpoint-split kd-tree. </p>
 <p >This is not the original formulation by Bentley but instead the later formulation by Deng and Moore, which only holds points in the leaves of the tree. When recursively splitting nodes, the KDTree class select the dimension with maximum variance to split on, and picks the midpoint of the range in that dimension as the value on which to split nodes.</p>
 <p >For more information, see the following papers.</p>
-<div class="fragment"><div class="line">@article{bentley1975multidimensional,</div>
-<div class="line">  title={Multidimensional <a class="code" href="namespacemlpack_1_1data.html#a82fdad40c0f211749dd5b7794a478ad7a00d3edb681e6bb8301dd7ede06c12dbd">binary</a> search trees used <span class="keywordflow">for</span> associative searching},</div>
-<div class="line">  author={Bentley, J.L.},</div>
-<div class="line">  journal={Communications of the ACM},</div>
-<div class="line">  volume={18},</div>
-<div class="line">  number={9},</div>
-<div class="line">  pages={509--517},</div>
-<div class="line">  year={1975},</div>
-<div class="line">  publisher={ACM}</div>
-<div class="line">}</div>
-<div class="line"></div>
-<div class="line">@inproceedings{deng1995multiresolution,</div>
-<div class="line">  title={Multiresolution instance-based learning},</div>
-<div class="line">  author={Deng, K. and Moore, A.W.},</div>
-<div class="line">  booktitle={Proceedings of the 1995 International Joint Conference on AI</div>
-<div class="line">      (IJCAI-95)},</div>
-<div class="line">  pages={1233--1239},</div>
-<div class="line">  year={1995}</div>
-<div class="line">}</div>
-</div><p >This template typedef satisfies the TreeType policy API.</p>
+<div class="fragment"><div class="line">@article{bentley1975multidimensional,</div><div class="line">  title={Multidimensional <a class="code" href="namespacemlpack_1_1data.html#a82fdad40c0f211749dd5b7794a478ad7a00d3edb681e6bb8301dd7ede06c12dbd">binary</a> search trees used <span class="keywordflow">for</span> associative searching},</div><div class="line">  author={Bentley, J.L.},</div><div class="line">  journal={Communications of the ACM},</div><div class="line">  volume={18},</div><div class="line">  number={9},</div><div class="line">  pages={509--517},</div><div class="line">  year={1975},</div><div class="line">  publisher={ACM}</div><div class="line">}</div><div class="line"></div><div class="line">@inproceedings{deng1995multiresolution,</div><div class="line">  title={Multiresolution instance-based learning},</div><div class="line">  author={Deng, K. and Moore, A.W.},</div><div class="line">  booktitle={Proceedings of the 1995 International Joint Conference on AI</div><div class="line">      (IJCAI-95)},</div><div class="line">  pages={1233--1239},</div><div class="line">  year={1995}</div><div class="line">}</div></div><p >This template typedef satisfies the TreeType policy API.</p>
 <dl class="section see"><dt >See also</dt><dd ><a class="el" href="trees.html">The TreeType policy in mlpack</a>, <a class="el" href="classmlpack_1_1tree_1_1BinarySpaceTree.html" title="A binary space partitioning tree, such as a KD-tree or a ball tree. ">BinarySpaceTree</a>, <a class="el" href="namespacemlpack_1_1tree.html#a5f0cce5886fb2559c7e7cb0a9efb2079" title="A mean-split kd-tree. ">MeanSplitKDTree</a> </dd></dl>
 
-<p >Definition at line <a class="el" href="core_2tree_2binary__space__tree_2typedef_8hpp_source.html#l00073">73</a> of file <a class="el" href="core_2tree_2binary__space__tree_2typedef_8hpp_source.html">typedef.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2tree_2binary__space__tree_2typedef_8hpp_source.html#l00073">73</a> of file <a class="el" href="core_2tree_2binary__space__tree_2typedef_8hpp_source.html">typedef.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0b9f6976f0322ead90f096067bbf65c2"></a>
+<a id="a0b9f6976f0322ead90f096067bbf65c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b9f6976f0322ead90f096067bbf65c2">&#9670;&nbsp;</a></span>MeanSplitBallTree</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">StatisticType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -334,22 +341,16 @@ Variables</h2></td></tr>
 
 <p >A mean-split ball tree. </p>
 <p >This tree, like the BallTree, holds its points only in the leaves. The tree construction algorithm here is the same as Omohundro's 'K-dc onstruction algorithm', except the splitting value is the mean, not the median. This can result in trees that better reflect the data, although they may be unbalanced.</p>
-<div class="fragment"><div class="line">@techreport{omohundro1989five,</div>
-<div class="line">  author={S.M. Omohundro},</div>
-<div class="line">  title={Five balltree construction algorithms},</div>
-<div class="line">  year={1989},</div>
-<div class="line">  institution={University of California, Berkeley International Computer</div>
-<div class="line">      Science Institute Technical Reports},</div>
-<div class="line">  number={TR-89-063}</div>
-<div class="line">}</div>
-</div><p >This template typedef satisfies the TreeType policy API.</p>
+<div class="fragment"><div class="line">@techreport{omohundro1989five,</div><div class="line">  author={S.M. Omohundro},</div><div class="line">  title={Five balltree construction algorithms},</div><div class="line">  year={1989},</div><div class="line">  institution={University of California, Berkeley International Computer</div><div class="line">      Science Institute Technical Reports},</div><div class="line">  number={TR-89-063}</div><div class="line">}</div></div><p >This template typedef satisfies the TreeType policy API.</p>
 <dl class="section see"><dt >See also</dt><dd ><a class="el" href="trees.html">The TreeType policy in mlpack</a>, <a class="el" href="classmlpack_1_1tree_1_1BinarySpaceTree.html" title="A binary space partitioning tree, such as a KD-tree or a ball tree. ">BinarySpaceTree</a>, <a class="el" href="namespacemlpack_1_1tree.html#a918273941d2d1d3999bf232280530d50" title="A midpoint-split ball tree. ">BallTree</a>, <a class="el" href="namespacemlpack_1_1tree.html#a5f0cce5886fb2559c7e7cb0a9efb2079" title="A mean-split kd-tree. ">MeanSplitKDTree</a> </dd></dl>
 
-<p >Definition at line <a class="el" href="core_2tree_2binary__space__tree_2typedef_8hpp_source.html#l00151">151</a> of file <a class="el" href="core_2tree_2binary__space__tree_2typedef_8hpp_source.html">typedef.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2tree_2binary__space__tree_2typedef_8hpp_source.html#l00151">151</a> of file <a class="el" href="core_2tree_2binary__space__tree_2typedef_8hpp_source.html">typedef.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5f0cce5886fb2559c7e7cb0a9efb2079"></a>
+<a id="a5f0cce5886fb2559c7e7cb0a9efb2079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f0cce5886fb2559c7e7cb0a9efb2079">&#9670;&nbsp;</a></span>MeanSplitKDTree</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">StatisticType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -365,11 +366,13 @@ Variables</h2></td></tr>
 <p >This template typedef satisfies the TreeType policy API.</p>
 <dl class="section see"><dt >See also</dt><dd ><a class="el" href="trees.html">The TreeType policy in mlpack</a>, <a class="el" href="classmlpack_1_1tree_1_1BinarySpaceTree.html" title="A binary space partitioning tree, such as a KD-tree or a ball tree. ">BinarySpaceTree</a>, <a class="el" href="namespacemlpack_1_1tree.html#a562474c3dca60a6ac3c5168ae88bc028" title="The standard midpoint-split kd-tree. ">KDTree</a> </dd></dl>
 
-<p >Definition at line <a class="el" href="core_2tree_2binary__space__tree_2typedef_8hpp_source.html#l00090">90</a> of file <a class="el" href="core_2tree_2binary__space__tree_2typedef_8hpp_source.html">typedef.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2tree_2binary__space__tree_2typedef_8hpp_source.html#l00090">90</a> of file <a class="el" href="core_2tree_2binary__space__tree_2typedef_8hpp_source.html">typedef.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="adbf07e6ff61d2d7840b2c7ea88d25fb7"></a>
+<a id="adbf07e6ff61d2d7840b2c7ea88d25fb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbf07e6ff61d2d7840b2c7ea88d25fb7">&#9670;&nbsp;</a></span>RStarTree</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">StatisticType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -382,24 +385,15 @@ Variables</h2></td></tr>
 
 <p >The R*-tree, a more recent variant of the R tree. </p>
 <p >This template typedef satisfies the TreeType policy API.</p>
-<div class="fragment"><div class="line">@inproceedings{beckmann1990r,</div>
-<div class="line">  title={The R*-tree: an efficient and robust access method <span class="keywordflow">for</span> points and</div>
-<div class="line">      rectangles},</div>
-<div class="line">  author={Beckmann, N. and Kriegel, H.-P. and Schneider, R. and Seeger, B.},</div>
-<div class="line">  booktitle={Proceedings of the 1990 ACM SIGMOD International Conference on</div>
-<div class="line">      Management of Data (SIGMOD <span class="stringliteral">&#39;90)},</span></div>
-<div class="line"><span class="stringliteral">  volume={19},</span></div>
-<div class="line"><span class="stringliteral">  number={2},</span></div>
-<div class="line"><span class="stringliteral">  year={1990},</span></div>
-<div class="line"><span class="stringliteral">  publisher={ACM}</span></div>
-<div class="line"><span class="stringliteral">}</span></div>
-</div><dl class="section see"><dt >See also</dt><dd ><a class="el" href="trees.html">The TreeType policy in mlpack</a>, <a class="el" href="namespacemlpack_1_1tree.html#ae9e12acec37727ae9a4dbca379ba4317" title="An implementation of the R tree that satisfies the TreeType policy API. ">RTree</a> </dd></dl>
+<div class="fragment"><div class="line">@inproceedings{beckmann1990r,</div><div class="line">  title={The R*-tree: an efficient and robust access method <span class="keywordflow">for</span> points and</div><div class="line">      rectangles},</div><div class="line">  author={Beckmann, N. and Kriegel, H.-P. and Schneider, R. and Seeger, B.},</div><div class="line">  booktitle={Proceedings of the 1990 ACM SIGMOD International Conference on</div><div class="line">      Management of Data (SIGMOD <span class="stringliteral">&#39;90)},</span></div><div class="line"><span class="stringliteral">  volume={19},</span></div><div class="line"><span class="stringliteral">  number={2},</span></div><div class="line"><span class="stringliteral">  year={1990},</span></div><div class="line"><span class="stringliteral">  publisher={ACM}</span></div><div class="line"><span class="stringliteral">}</span></div></div><dl class="section see"><dt >See also</dt><dd ><a class="el" href="trees.html">The TreeType policy in mlpack</a>, <a class="el" href="namespacemlpack_1_1tree.html#ae9e12acec37727ae9a4dbca379ba4317" title="An implementation of the R tree that satisfies the TreeType policy API. ">RTree</a> </dd></dl>
 
-<p >Definition at line <a class="el" href="core_2tree_2rectangle__tree_2typedef_8hpp_source.html#l00083">83</a> of file <a class="el" href="core_2tree_2rectangle__tree_2typedef_8hpp_source.html">typedef.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2tree_2rectangle__tree_2typedef_8hpp_source.html#l00083">83</a> of file <a class="el" href="core_2tree_2rectangle__tree_2typedef_8hpp_source.html">typedef.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae9e12acec37727ae9a4dbca379ba4317"></a>
+<a id="ae9e12acec37727ae9a4dbca379ba4317"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9e12acec37727ae9a4dbca379ba4317">&#9670;&nbsp;</a></span>RTree</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">StatisticType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -412,23 +406,15 @@ Variables</h2></td></tr>
 
 <p >An implementation of the R tree that satisfies the TreeType policy API. </p>
 <p >This is the same R-tree structure as proposed by Guttman:</p>
-<div class="fragment"><div class="line">@inproceedings{guttman1984r,</div>
-<div class="line">  title={R-trees: a dynamic index structure <span class="keywordflow">for</span> spatial searching},</div>
-<div class="line">  author={Guttman, A.},</div>
-<div class="line">  booktitle={Proceedings of the 1984 ACM SIGMOD International Conference on</div>
-<div class="line">      Management of Data (SIGMOD <span class="stringliteral">&#39;84)},</span></div>
-<div class="line"><span class="stringliteral">  volume={14},</span></div>
-<div class="line"><span class="stringliteral">  number={2},</span></div>
-<div class="line"><span class="stringliteral">  year={1984},</span></div>
-<div class="line"><span class="stringliteral">  publisher={ACM}</span></div>
-<div class="line"><span class="stringliteral">}</span></div>
-</div><dl class="section see"><dt >See also</dt><dd ><a class="el" href="trees.html">The TreeType policy in mlpack</a>, <a class="el" href="namespacemlpack_1_1tree.html#adbf07e6ff61d2d7840b2c7ea88d25fb7" title="The R*-tree, a more recent variant of the R tree. ">RStarTree</a> </dd></dl>
+<div class="fragment"><div class="line">@inproceedings{guttman1984r,</div><div class="line">  title={R-trees: a dynamic index structure <span class="keywordflow">for</span> spatial searching},</div><div class="line">  author={Guttman, A.},</div><div class="line">  booktitle={Proceedings of the 1984 ACM SIGMOD International Conference on</div><div class="line">      Management of Data (SIGMOD <span class="stringliteral">&#39;84)},</span></div><div class="line"><span class="stringliteral">  volume={14},</span></div><div class="line"><span class="stringliteral">  number={2},</span></div><div class="line"><span class="stringliteral">  year={1984},</span></div><div class="line"><span class="stringliteral">  publisher={ACM}</span></div><div class="line"><span class="stringliteral">}</span></div></div><dl class="section see"><dt >See also</dt><dd ><a class="el" href="trees.html">The TreeType policy in mlpack</a>, <a class="el" href="namespacemlpack_1_1tree.html#adbf07e6ff61d2d7840b2c7ea88d25fb7" title="The R*-tree, a more recent variant of the R tree. ">RStarTree</a> </dd></dl>
 
-<p >Definition at line <a class="el" href="core_2tree_2rectangle__tree_2typedef_8hpp_source.html#l00056">56</a> of file <a class="el" href="core_2tree_2rectangle__tree_2typedef_8hpp_source.html">typedef.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2tree_2rectangle__tree_2typedef_8hpp_source.html#l00056">56</a> of file <a class="el" href="core_2tree_2rectangle__tree_2typedef_8hpp_source.html">typedef.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a97bb6c0e6c1be359a95c89d21b1afd42"></a>
+<a id="a97bb6c0e6c1be359a95c89d21b1afd42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97bb6c0e6c1be359a95c89d21b1afd42">&#9670;&nbsp;</a></span>StandardCoverTree</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">StatisticType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -440,23 +426,17 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p >The standard cover tree, as detailed in the original cover tree paper: </p>
-<div class="fragment"><div class="line">@inproceedings{</div>
-<div class="line">  author={Beygelzimer, A. and Kakade, S. and Langford, J.},</div>
-<div class="line">  title={Cover trees <span class="keywordflow">for</span> nearest neighbor},</div>
-<div class="line">  booktitle={Proceedings of the 23rd International Conference on Machine</div>
-<div class="line">      Learning (ICML 2006)},</div>
-<div class="line">  pages={97--104},</div>
-<div class="line">  year={2006}</div>
-<div class="line">}</div>
-</div><p >This template typedef satisfies the requirements of the TreeType API.</p>
+<div class="fragment"><div class="line">@inproceedings{</div><div class="line">  author={Beygelzimer, A. and Kakade, S. and Langford, J.},</div><div class="line">  title={Cover trees <span class="keywordflow">for</span> nearest neighbor},</div><div class="line">  booktitle={Proceedings of the 23rd International Conference on Machine</div><div class="line">      Learning (ICML 2006)},</div><div class="line">  pages={97--104},</div><div class="line">  year={2006}</div><div class="line">}</div></div><p >This template typedef satisfies the requirements of the TreeType API.</p>
 <dl class="section see"><dt >See also</dt><dd ><a class="el" href="trees.html">The TreeType policy in mlpack</a>, <a class="el" href="classmlpack_1_1tree_1_1CoverTree.html" title="A cover tree is a tree specifically designed to speed up nearest-neighbor computation in high-dimensi...">CoverTree</a> </dd></dl>
 
-<p >Definition at line <a class="el" href="core_2tree_2cover__tree_2typedef_8hpp_source.html#l00052">52</a> of file <a class="el" href="core_2tree_2cover__tree_2typedef_8hpp_source.html">typedef.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2tree_2cover__tree_2typedef_8hpp_source.html#l00052">52</a> of file <a class="el" href="core_2tree_2cover__tree_2typedef_8hpp_source.html">typedef.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a9a652c551813fa3c2ddf96f6361fa200"></a>
+<a id="a9a652c551813fa3c2ddf96f6361fa200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a652c551813fa3c2ddf96f6361fa200">&#9670;&nbsp;</a></span>MAX_OVERLAP</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -469,7 +449,7 @@ Variables</h2></td></tr>
 <p >The X-tree paper says that a maximum allowable overlap of 20% works well. </p>
 <p >This code should eventually be refactored so as to avoid polluting <a class="el" href="namespacemlpack_1_1tree.html" title="Trees and tree-building procedures. ">mlpack::tree</a> with this random double. </p>
 
-<p >Definition at line <a class="el" href="x__tree__split_8hpp_source.html#l00039">39</a> of file <a class="el" href="x__tree__split_8hpp_source.html">x_tree_split.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="x__tree__split_8hpp_source.html#l00039">39</a> of file <a class="el" href="x__tree__split_8hpp_source.html">x_tree_split.hpp</a>.</p>
 
 </div>
 </div>
@@ -478,7 +458,16 @@ Variables</h2></td></tr>
 <hr class="footer"></hr><address class="footer"><small >
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"></img>
-</a> 1.8.9.1
+</a> 1.8.13
 </small></address>
+</div>
 </body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
 </html>

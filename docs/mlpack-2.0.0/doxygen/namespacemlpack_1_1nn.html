@@ -1,22 +1,50 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head >
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
-<meta name="generator" content="Doxygen 1.8.9.1"></meta>
-<title >mlpack: mlpack::nn Namespace Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
-</link>
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
-</link>
-</head>
-<body >
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
 <div id="top">
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody >
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mlpack
    &#160;<span id="projectnumber">2.0.0</span>
    </div>
@@ -26,22 +54,14 @@
 </table>
 </div>
 
-
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
-      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
-      <li class="current"><a href="namespaces.html"><span >Namespaces</span></a></li>
-      <li ><a href="annotated.html"><span >Classes</span></a></li>
-      <li ><a href="files.html"><span >Files</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li ><a href="namespaces.html"><span >Namespace&#160;List</span></a></li>
-      <li ><a href="namespacemembers.html"><span >Namespace&#160;Members</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+</script>
+<div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul >
 <li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1nn.html">nn</a></li>  </ul>
@@ -75,7 +95,9 @@ Functions</h2></td></tr>
 <tr class="separator:a9887e1e5ada8c7d5fb1ad59dc4d16b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a5fcd73722265acc12d00ba8d32db6f17"></a>
+<a id="a5fcd73722265acc12d00ba8d32db6f17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fcd73722265acc12d00ba8d32db6f17">&#9670;&nbsp;</a></span>MaximalInputs()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -105,37 +127,8 @@ Functions</h2></td></tr>
 <p >This function is based on the implementation (display_network.m) from the "Exercise: Sparse Autoencoder" page of the UFLDL tutorial:</p>
 <p ><a href="http://deeplearning.stanford.edu/wiki/index.php/Exercise:Sparse_Autoencoder">http://deeplearning.stanford.edu/wiki/index.php/Exercise:Sparse_Autoencoder</a></p>
 <p >Example usage of this function can be seen below. Note that this function can work with the ColumnsToBlocks class in order to reshape the maximal inputs for visualization, as in the UFLDL tutorial. The code below demonstrates this.</p>
-<div class="fragment"><div class="line">arma::mat data; <span class="comment">// Data matrix.</span></div>
-<div class="line"><span class="keyword">const</span> <span class="keywordtype">size_t</span> vSize = 64; <span class="comment">// Size of visible layer, depends on the data.</span></div>
-<div class="line"><span class="keyword">const</span> <span class="keywordtype">size_t</span> hSize = 25; <span class="comment">// Size of hidden layer, depends on requirements.</span></div>
-<div class="line"></div>
-<div class="line"><span class="keyword">const</span> <span class="keywordtype">size_t</span> numBasis = 5; <span class="comment">// Parameter required for L-BFGS algorithm.</span></div>
-<div class="line"><span class="keyword">const</span> <span class="keywordtype">size_t</span> numIterations = 100; <span class="comment">// Maximum number of iterations.</span></div>
-<div class="line"></div>
-<div class="line"><span class="comment">// Use an instantiated optimizer for the training.</span></div>
-<div class="line">SparseAutoencoder&lt;L_BFGS&gt; encoder(data, vSize, hSize);</div>
-<div class="line"></div>
-<div class="line">arma::mat maximalInput; <span class="comment">// Store the features learned by sparse autoencoder</span></div>
-<div class="line"><a class="code" href="namespacemlpack_1_1nn.html#a5fcd73722265acc12d00ba8d32db6f17">mlpack::nn::MaximalInputs</a>(encoder.Parameters(), maximalInput);</div>
-<div class="line"></div>
-<div class="line">arma::mat outputs;</div>
-<div class="line"><span class="keyword">const</span> <span class="keywordtype">bool</span> scale = <span class="keyword">true</span>;</div>
-<div class="line"></div>
-<div class="line">ColumnsToBlocks ctb(5,5);</div>
-<div class="line">arma::mat output;</div>
-<div class="line">ctb.Transform(maximalInput, output);</div>
-<div class="line"><span class="comment">// Save the output as PGM, for visualization.</span></div>
-<div class="line">output.save(fileName, arma::pgm_binary);</div>
-</div><dl class="section pre"><dt >Precondition</dt><dd >Layout of parameters</dd></dl>
-<p >The layout of the parameters matrix should be same as following </p><div class="fragment"><div class="line"><span class="comment">//          vSize   1</span></div>
-<div class="line"><span class="comment">//       |        |  |</span></div>
-<div class="line"><span class="comment">//  hSize|   w1   |b1|</span></div>
-<div class="line"><span class="comment">//       |________|__|</span></div>
-<div class="line"><span class="comment">//       |        |  |</span></div>
-<div class="line"><span class="comment">//  hSize|   w2&#39;  |  |</span></div>
-<div class="line"><span class="comment">//       |________|__|</span></div>
-<div class="line"><span class="comment">//      1|   b2&#39;  |  |</span></div>
-</div><p >Also, the square root of vSize must be an integer (i.e. vSize must be a perfect square).</p>
+<div class="fragment"><div class="line">arma::mat data; <span class="comment">// Data matrix.</span></div><div class="line"><span class="keyword">const</span> <span class="keywordtype">size_t</span> vSize = 64; <span class="comment">// Size of visible layer, depends on the data.</span></div><div class="line"><span class="keyword">const</span> <span class="keywordtype">size_t</span> hSize = 25; <span class="comment">// Size of hidden layer, depends on requirements.</span></div><div class="line"></div><div class="line"><span class="keyword">const</span> <span class="keywordtype">size_t</span> numBasis = 5; <span class="comment">// Parameter required for L-BFGS algorithm.</span></div><div class="line"><span class="keyword">const</span> <span class="keywordtype">size_t</span> numIterations = 100; <span class="comment">// Maximum number of iterations.</span></div><div class="line"></div><div class="line"><span class="comment">// Use an instantiated optimizer for the training.</span></div><div class="line">SparseAutoencoder&lt;L_BFGS&gt; encoder(data, vSize, hSize);</div><div class="line"></div><div class="line">arma::mat maximalInput; <span class="comment">// Store the features learned by sparse autoencoder</span></div><div class="line"><a class="code" href="namespacemlpack_1_1nn.html#a5fcd73722265acc12d00ba8d32db6f17">mlpack::nn::MaximalInputs</a>(encoder.Parameters(), maximalInput);</div><div class="line"></div><div class="line">arma::mat outputs;</div><div class="line"><span class="keyword">const</span> <span class="keywordtype">bool</span> scale = <span class="keyword">true</span>;</div><div class="line"></div><div class="line">ColumnsToBlocks ctb(5,5);</div><div class="line">arma::mat output;</div><div class="line">ctb.Transform(maximalInput, output);</div><div class="line"><span class="comment">// Save the output as PGM, for visualization.</span></div><div class="line">output.save(fileName, arma::pgm_binary);</div></div><dl class="section pre"><dt >Precondition</dt><dd >Layout of parameters</dd></dl>
+<p >The layout of the parameters matrix should be same as following </p><div class="fragment"><div class="line"><span class="comment">//          vSize   1</span></div><div class="line"><span class="comment">//       |        |  |</span></div><div class="line"><span class="comment">//  hSize|   w1   |b1|</span></div><div class="line"><span class="comment">//       |________|__|</span></div><div class="line"><span class="comment">//       |        |  |</span></div><div class="line"><span class="comment">//  hSize|   w2&#39;  |  |</span></div><div class="line"><span class="comment">//       |________|__|</span></div><div class="line"><span class="comment">//      1|   b2&#39;  |  |</span></div></div><p >Also, the square root of vSize must be an integer (i.e. vSize must be a perfect square).</p>
 <dl class="params"><dt >Parameters</dt><dd >
   <table class="params">
     <tr ><td class="paramname">parameters</td><td >The parameters of the autoencoder. </td></tr>
@@ -146,7 +139,9 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9887e1e5ada8c7d5fb1ad59dc4d16b4a"></a>
+<a id="a9887e1e5ada8c7d5fb1ad59dc4d16b4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9887e1e5ada8c7d5fb1ad59dc4d16b4a">&#9670;&nbsp;</a></span>NormalizeColByMax()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -186,7 +181,16 @@ Functions</h2></td></tr>
 <hr class="footer"></hr><address class="footer"><small >
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"></img>
-</a> 1.8.9.1
+</a> 1.8.13
 </small></address>
+</div>
 </body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
 </html>

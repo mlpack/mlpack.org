@@ -1,0 +1,121 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">master</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_44a936ef30fc126706c6284a2fc0c990.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_7808eba2b1d1a419326241ed839b4c84.html">bindings</a></li><li class="navelem"><a class="el" href="dir_c021fde7de128a22d216c6f0a3fbb630.html">python</a></li><li class="navelem"><a class="el" href="dir_288160191cdf7449c4da8e52e0a18597.html">mlpack</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">cli_util.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="cli__util_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef MLPACK_BINDINGS_PYTHON_CYTHON_CLI_UTIL_HPP</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define MLPACK_BINDINGS_PYTHON_CYTHON_CLI_UTIL_HPP</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cli_8hpp.html">mlpack/core/util/cli.hpp</a>&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="dataset__mapper_8hpp.html">mlpack/core/data/dataset_mapper.hpp</a>&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="namespacemlpack_1_1util.html">   20</a></span>&#160;<span class="keyword">namespace </span>util {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="namespacemlpack_1_1util.html#a69380e85a17a8bf06e98c459b505768e">   32</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1util.html#a69380e85a17a8bf06e98c459b505768e">SetParam</a>(<span class="keyword">const</span> <a class="code" href="bindings_2matlab_2CMakeLists_8txt.html#aadb9418f4ec551d8476a44532f0acf86">std::string</a>&amp; identifier, <span class="keyword">const</span> T&amp; value)</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  CLI::GetParam&lt;T&gt;(identifier) = value;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="namespacemlpack_1_1util.html#a756b737c2657acb1d5b7a0c346f9f0a6">   41</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1util.html#a756b737c2657acb1d5b7a0c346f9f0a6">SetParamWithInfo</a>(<span class="keyword">const</span> <a class="code" href="bindings_2matlab_2CMakeLists_8txt.html#aadb9418f4ec551d8476a44532f0acf86">std::string</a>&amp; identifier,</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                             <span class="keyword">const</span> T&amp; matrix,</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">bool</span>* dims)</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> std::tuple&lt;data::DatasetInfo, T&gt; TupleType;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> T::elem_type eT;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="comment">// The true type of the parameter is std::tuple&lt;T, DatasetInfo&gt;.</span></div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  std::get&lt;1&gt;(CLI::GetParam&lt;TupleType&gt;(identifier)) = matrix;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="classmlpack_1_1data_1_1DatasetMapper.html">data::DatasetInfo</a>&amp; di = std::get&lt;0&gt;(CLI::GetParam&lt;TupleType&gt;(identifier));</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  di = <a class="code" href="namespacemlpack_1_1data.html#a3fdea6452e0eaabf3ca4186b528b590c">data::DatasetInfo</a>(matrix.n_rows);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">bool</span> hasCategoricals = <span class="keyword">false</span>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; matrix.n_rows; ++i)</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  {</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">if</span> (dims[i])</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      di.<a class="code" href="classmlpack_1_1data_1_1DatasetMapper.html#af46c276f8b3c130454e23447bcb959e4">Type</a>(i) = <a class="code" href="namespacemlpack_1_1data.html#aa7714fa0b7efc7b31cbda21da607c5b6a2992a7ab833605792145cd40762644c7">data::Datatype::categorical</a>;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      hasCategoricals = <span class="keyword">true</span>;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="comment">// Do we need to find how many categories we have?</span></div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">if</span> (hasCategoricals)</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  {</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    arma::vec maxs = arma::max(matrix, 1);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; matrix.n_rows; ++i)</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">if</span> (dims[i])</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="comment">// Map the right number of objects.</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; (size_t) maxs[i]; ++j)</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        {</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;          std::ostringstream oss;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;          oss &lt;&lt; j;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;          di.<a class="code" href="classmlpack_1_1data_1_1DatasetMapper.html#a7ad4f8c586473575c9bec76834b22f26">MapString</a>&lt;eT&gt;(oss.str(), i);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      }</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div><div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="namespacemlpack_1_1util.html#a02467c0d501c83596e52a066ba498a85">   88</a></span>&#160;T&amp; <a class="code" href="namespacemlpack_1_1util.html#a02467c0d501c83596e52a066ba498a85">GetParamWithInfo</a>(<span class="keyword">const</span> <a class="code" href="bindings_2matlab_2CMakeLists_8txt.html#aadb9418f4ec551d8476a44532f0acf86">std::string</a>&amp; paramName)</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="comment">// T will be the Armadillo type.</span></div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keyword">typedef</span> std::tuple&lt;data::DatasetInfo, T&gt; TupleType;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">return</span> std::get&lt;1&gt;(CLI::GetParam&lt;TupleType&gt;(paramName));</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="namespacemlpack_1_1util.html#a33d5bd42732e70873825875927c94aa1">   98</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacemlpack_1_1util.html#a33d5bd42732e70873825875927c94aa1">EnableVerbose</a>()</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="classmlpack_1_1Log.html#a6e069f745e1bbea8ccc4c1d39bf56089">Log::Info</a>.<a class="code" href="classmlpack_1_1util_1_1PrefixedOutStream.html#afd382e0526bef760552ccae39559116a">ignoreInput</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;} <span class="comment">// namespace util</span></div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;} <span class="comment">// namespace mlpack</span></div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classmlpack_1_1data_1_1DatasetMapper_html"><div class="ttname"><a href="classmlpack_1_1data_1_1DatasetMapper.html">mlpack::data::DatasetMapper</a></div><div class="ttdoc">Auxiliary information for a dataset, including mappings to/from strings and the datatype of each dime...</div><div class="ttdef"><b >Definition:</b> <a href="dataset__mapper_8hpp_source.html#l00035">dataset_mapper.hpp:35</a></div></div>
+<div class="ttc" id="classmlpack_1_1data_1_1DatasetMapper_html_a7ad4f8c586473575c9bec76834b22f26"><div class="ttname"><a href="classmlpack_1_1data_1_1DatasetMapper.html#a7ad4f8c586473575c9bec76834b22f26">mlpack::data::DatasetMapper::MapString</a></div><div class="ttdeci">T MapString(const std::string &amp;string, const size_t dimension)</div><div class="ttdoc">Given the string and the dimension to which it belongs, return its numeric mapping. </div></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="add__to__po_8hpp_source.html#l00016">add_to_po.hpp:16</a></div></div>
+<div class="ttc" id="bindings_2matlab_2CMakeLists_8txt_html_aadb9418f4ec551d8476a44532f0acf86"><div class="ttname"><a href="bindings_2matlab_2CMakeLists_8txt.html#aadb9418f4ec551d8476a44532f0acf86">string</a></div><div class="ttdeci">test cpp RESULT_VARIABLE MEX_RESULT_TRASH OUTPUT_VARIABLE MEX_OUTPUT ERROR_VARIABLE MEX_ERROR_TRASH string(REGEX MATCH &quot;Warning: You are using&quot; MEX_WARNING &quot;${MEX_OUTPUT}&quot;) if(MEX_WARNING) string(REGEX REPLACE &quot;.*using [a-zA-Z]* version \[0-9.]*)[^\*\*&quot; &quot;\&quot; OTHER_COMPILER_VERSION &quot;$</div><div class="ttdef"><b >Definition:</b> <a href="bindings_2matlab_2CMakeLists_8txt_source.html#l00018">CMakeLists.txt:18</a></div></div>
+<div class="ttc" id="classmlpack_1_1util_1_1PrefixedOutStream_html_afd382e0526bef760552ccae39559116a"><div class="ttname"><a href="classmlpack_1_1util_1_1PrefixedOutStream.html#afd382e0526bef760552ccae39559116a">mlpack::util::PrefixedOutStream::ignoreInput</a></div><div class="ttdeci">bool ignoreInput</div><div class="ttdoc">Discards input, prints nothing if true. </div><div class="ttdef"><b >Definition:</b> <a href="prefixedoutstream_8hpp_source.html#l00114">prefixedoutstream.hpp:114</a></div></div>
+<div class="ttc" id="classmlpack_1_1data_1_1DatasetMapper_html_af46c276f8b3c130454e23447bcb959e4"><div class="ttname"><a href="classmlpack_1_1data_1_1DatasetMapper.html#af46c276f8b3c130454e23447bcb959e4">mlpack::data::DatasetMapper::Type</a></div><div class="ttdeci">Datatype Type(const size_t dimension) const</div><div class="ttdoc">Return the type of a given dimension (numeric or categorical). </div></div>
+<div class="ttc" id="cli_8hpp_html"><div class="ttname"><a href="cli_8hpp.html">cli.hpp</a></div></div>
+<div class="ttc" id="classmlpack_1_1Log_html_a6e069f745e1bbea8ccc4c1d39bf56089"><div class="ttname"><a href="classmlpack_1_1Log.html#a6e069f745e1bbea8ccc4c1d39bf56089">mlpack::Log::Info</a></div><div class="ttdeci">static MLPACK_EXPORT util::PrefixedOutStream Info</div><div class="ttdoc">Prints informational messages if –verbose is specified, prefixed with [INFO ]. </div><div class="ttdef"><b >Definition:</b> <a href="log_8hpp_source.html#l00084">log.hpp:84</a></div></div>
+<div class="ttc" id="namespacemlpack_1_1data_html_a3fdea6452e0eaabf3ca4186b528b590c"><div class="ttname"><a href="namespacemlpack_1_1data.html#a3fdea6452e0eaabf3ca4186b528b590c">mlpack::data::DatasetInfo</a></div><div class="ttdeci">DatasetMapper&lt; data::IncrementPolicy &gt; DatasetInfo</div><div class="ttdef"><b >Definition:</b> <a href="dataset__mapper_8hpp_source.html#l00182">dataset_mapper.hpp:182</a></div></div>
+<div class="ttc" id="namespacemlpack_1_1util_html_a756b737c2657acb1d5b7a0c346f9f0a6"><div class="ttname"><a href="namespacemlpack_1_1util.html#a756b737c2657acb1d5b7a0c346f9f0a6">mlpack::util::SetParamWithInfo</a></div><div class="ttdeci">void SetParamWithInfo(const std::string &amp;identifier, const T &amp;matrix, const bool *dims)</div><div class="ttdoc">Set the parameter (which is a matrix/DatasetInfo tuple) to the given value. </div><div class="ttdef"><b >Definition:</b> <a href="cli__util_8hpp_source.html#l00041">cli_util.hpp:41</a></div></div>
+<div class="ttc" id="namespacemlpack_1_1util_html_a02467c0d501c83596e52a066ba498a85"><div class="ttname"><a href="namespacemlpack_1_1util.html#a02467c0d501c83596e52a066ba498a85">mlpack::util::GetParamWithInfo</a></div><div class="ttdeci">T &amp; GetParamWithInfo(const std::string &amp;paramName)</div><div class="ttdoc">Return the matrix part of a matrix + dataset info parameter. </div><div class="ttdef"><b >Definition:</b> <a href="cli__util_8hpp_source.html#l00088">cli_util.hpp:88</a></div></div>
+<div class="ttc" id="namespacemlpack_1_1data_html_aa7714fa0b7efc7b31cbda21da607c5b6a2992a7ab833605792145cd40762644c7"><div class="ttname"><a href="namespacemlpack_1_1data.html#aa7714fa0b7efc7b31cbda21da607c5b6a2992a7ab833605792145cd40762644c7">mlpack::data::categorical</a></div><div class="ttdef"><b >Definition:</b> <a href="datatype_8hpp_source.html#l00027">datatype.hpp:27</a></div></div>
+<div class="ttc" id="dataset__mapper_8hpp_html"><div class="ttname"><a href="dataset__mapper_8hpp.html">dataset_mapper.hpp</a></div></div>
+<div class="ttc" id="namespacemlpack_1_1util_html_a69380e85a17a8bf06e98c459b505768e"><div class="ttname"><a href="namespacemlpack_1_1util.html#a69380e85a17a8bf06e98c459b505768e">mlpack::util::SetParam</a></div><div class="ttdeci">void SetParam(const std::string &amp;identifier, const T &amp;value)</div><div class="ttdoc">Set the parameter to the given value. </div><div class="ttdef"><b >Definition:</b> <a href="cli__util_8hpp_source.html#l00032">cli_util.hpp:32</a></div></div>
+<div class="ttc" id="namespacemlpack_1_1util_html_a33d5bd42732e70873825875927c94aa1"><div class="ttname"><a href="namespacemlpack_1_1util.html#a33d5bd42732e70873825875927c94aa1">mlpack::util::EnableVerbose</a></div><div class="ttdeci">void EnableVerbose()</div><div class="ttdoc">Turn verbose output on. </div><div class="ttdef"><b >Definition:</b> <a href="cli__util_8hpp_source.html#l00098">cli_util.hpp:98</a></div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

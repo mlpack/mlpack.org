@@ -55,6 +55,7 @@ var searchData=
   ['gini_5fimpurity_2ehpp',['gini_impurity.hpp',['../gini__impurity_8hpp.html',1,'']]],
   ['ginigain',['GiniGain',['../classmlpack_1_1tree_1_1GiniGain.html',1,'mlpack::tree']]],
   ['giniimpurity',['GiniImpurity',['../classmlpack_1_1tree_1_1GiniImpurity.html',1,'mlpack::tree']]],
+  ['git',['git',['../gitversion_8hpp.html#aaca1455e845db62f07e71d1a49fb32e6',1,'gitversion.hpp']]],
   ['gitversion_2ehpp',['gitversion.hpp',['../gitversion_8hpp.html',1,'']]],
   ['given_5finit_2ehpp',['given_init.hpp',['../given__init_8hpp.html',1,'']]],
   ['giveninitialization',['GivenInitialization',['../classmlpack_1_1amf_1_1GivenInitialization.html',1,'mlpack::amf::GivenInitialization'],['../classmlpack_1_1amf_1_1GivenInitialization.html#aa7ffbd014ade54c1be4803fcc472c59d',1,'mlpack::amf::GivenInitialization::GivenInitialization()'],['../classmlpack_1_1amf_1_1GivenInitialization.html#a4649fc68042d5d09ae8e75da83ee982d',1,'mlpack::amf::GivenInitialization::GivenInitialization(const arma::mat &amp;w, const arma::mat &amp;h)'],['../classmlpack_1_1amf_1_1GivenInitialization.html#ae2d7c453039daaa217b08e0de2e06a15',1,'mlpack::amf::GivenInitialization::GivenInitialization(const arma::mat &amp;&amp;w, const arma::mat &amp;&amp;h)']]],

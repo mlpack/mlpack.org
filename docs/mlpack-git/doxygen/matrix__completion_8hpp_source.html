@@ -1,0 +1,115 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">master</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_44a936ef30fc126706c6284a2fc0c990.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_3cfbf900288ec2fe8dd2c2c8482f216e.html">methods</a></li><li class="navelem"><a class="el" href="dir_132206e4f3eb299a76e39a3cdd5fd682.html">matrix_completion</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">matrix_completion.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="matrix__completion_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef MLPACK_METHODS_MATRIX_COMPLETION_MATRIX_COMPLETION_HPP</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define MLPACK_METHODS_MATRIX_COMPLETION_MATRIX_COMPLETION_HPP</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="sdp_8hpp.html">mlpack/core/optimizers/sdp/sdp.hpp</a>&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="lrsdp_8hpp.html">mlpack/core/optimizers/sdp/lrsdp.hpp</a>&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="namespacemlpack_1_1matrix__completion.html">   20</a></span>&#160;<span class="keyword">namespace </span>matrix_completion {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classmlpack_1_1matrix__completion_1_1MatrixCompletion.html">   53</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1matrix__completion_1_1MatrixCompletion.html">MatrixCompletion</a></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; <span class="keyword">public</span>:</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="classmlpack_1_1matrix__completion_1_1MatrixCompletion.html#a5f500c0e84f8afe5603571983f88339b">MatrixCompletion</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> m,</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                   <span class="keyword">const</span> <span class="keywordtype">size_t</span> n,</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                   <span class="keyword">const</span> arma::umat&amp; indices,</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                   <span class="keyword">const</span> arma::vec&amp; values,</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                   <span class="keyword">const</span> <span class="keywordtype">size_t</span> r);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="classmlpack_1_1matrix__completion_1_1MatrixCompletion.html#a5f500c0e84f8afe5603571983f88339b">MatrixCompletion</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> m,</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                   <span class="keyword">const</span> <span class="keywordtype">size_t</span> n,</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                   <span class="keyword">const</span> arma::umat&amp; indices,</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                   <span class="keyword">const</span> arma::vec&amp; values,</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                   <span class="keyword">const</span> arma::mat&amp; initialPoint);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <a class="code" href="classmlpack_1_1matrix__completion_1_1MatrixCompletion.html#a5f500c0e84f8afe5603571983f88339b">MatrixCompletion</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> m,</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                   <span class="keyword">const</span> <span class="keywordtype">size_t</span> n,</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                   <span class="keyword">const</span> arma::umat&amp; indices,</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                   <span class="keyword">const</span> arma::vec&amp; values);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1matrix__completion_1_1MatrixCompletion.html#aa758764911348e5540da0ffd092eba75">Recover</a>(arma::mat&amp; recovered);</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div><div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classmlpack_1_1matrix__completion_1_1MatrixCompletion.html#ac44998cb74e2e58217a091386f506c31">  115</a></span>&#160;  <span class="keyword">const</span> <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html">optimization::LRSDP&lt;optimization::SDP&lt;arma::sp_mat&gt;</a>&gt;&amp; <a class="code" href="classmlpack_1_1matrix__completion_1_1MatrixCompletion.html#ac44998cb74e2e58217a091386f506c31">Sdp</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">  </span>{</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">return</span> sdp;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  }</div><div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classmlpack_1_1matrix__completion_1_1MatrixCompletion.html#a2d8d39328f43a0e6381489b382bb3f17">  120</a></span>&#160;  <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html">optimization::LRSDP&lt;optimization::SDP&lt;arma::sp_mat&gt;</a>&gt;&amp; <a class="code" href="classmlpack_1_1matrix__completion_1_1MatrixCompletion.html#a2d8d39328f43a0e6381489b382bb3f17">Sdp</a>() { <span class="keywordflow">return</span> sdp; }</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; <span class="keyword">private</span>:</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordtype">size_t</span> m;</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordtype">size_t</span> n;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  arma::umat indices;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  arma::mat values;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <a class="code" href="classmlpack_1_1optimization_1_1LRSDP.html">optimization::LRSDP&lt;optimization::SDP&lt;arma::sp_mat&gt;</a>&gt; sdp;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">void</span> CheckValues();</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keywordtype">void</span> InitSDP();</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">size_t</span> DefaultRank(<span class="keyword">const</span> <span class="keywordtype">size_t</span> m, <span class="keyword">const</span> <span class="keywordtype">size_t</span> n, <span class="keyword">const</span> <span class="keywordtype">size_t</span> p);</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;};</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;} <span class="comment">// namespace matrix_completion</span></div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;} <span class="comment">// namespace mlpack</span></div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="add__to__po_8hpp_source.html#l00016">add_to_po.hpp:16</a></div></div>
+<div class="ttc" id="classmlpack_1_1matrix__completion_1_1MatrixCompletion_html_a5f500c0e84f8afe5603571983f88339b"><div class="ttname"><a href="classmlpack_1_1matrix__completion_1_1MatrixCompletion.html#a5f500c0e84f8afe5603571983f88339b">mlpack::matrix_completion::MatrixCompletion::MatrixCompletion</a></div><div class="ttdeci">MatrixCompletion(const size_t m, const size_t n, const arma::umat &amp;indices, const arma::vec &amp;values, const size_t r)</div><div class="ttdoc">Construct a matrix completion problem, specifying the maximum rank of the solution. </div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1LRSDP_html"><div class="ttname"><a href="classmlpack_1_1optimization_1_1LRSDP.html">mlpack::optimization::LRSDP</a></div><div class="ttdoc">LRSDP is the implementation of Monteiro and Burer&amp;#39;s formulation of low-rank semidefinite programs (LR...</div><div class="ttdef"><b >Definition:</b> <a href="lrsdp_8hpp_source.html#l00030">lrsdp.hpp:30</a></div></div>
+<div class="ttc" id="classmlpack_1_1matrix__completion_1_1MatrixCompletion_html_aa758764911348e5540da0ffd092eba75"><div class="ttname"><a href="classmlpack_1_1matrix__completion_1_1MatrixCompletion.html#aa758764911348e5540da0ffd092eba75">mlpack::matrix_completion::MatrixCompletion::Recover</a></div><div class="ttdeci">void Recover(arma::mat &amp;recovered)</div><div class="ttdoc">Solve the underlying SDP to fill in the remaining values. </div></div>
+<div class="ttc" id="lrsdp_8hpp_html"><div class="ttname"><a href="lrsdp_8hpp.html">lrsdp.hpp</a></div></div>
+<div class="ttc" id="classmlpack_1_1matrix__completion_1_1MatrixCompletion_html_a2d8d39328f43a0e6381489b382bb3f17"><div class="ttname"><a href="classmlpack_1_1matrix__completion_1_1MatrixCompletion.html#a2d8d39328f43a0e6381489b382bb3f17">mlpack::matrix_completion::MatrixCompletion::Sdp</a></div><div class="ttdeci">optimization::LRSDP&lt; optimization::SDP&lt; arma::sp_mat &gt; &gt; &amp; Sdp()</div><div class="ttdoc">Modify the underlying SDP. </div><div class="ttdef"><b >Definition:</b> <a href="matrix__completion_8hpp_source.html#l00120">matrix_completion.hpp:120</a></div></div>
+<div class="ttc" id="sdp_8hpp_html"><div class="ttname"><a href="sdp_8hpp.html">sdp.hpp</a></div></div>
+<div class="ttc" id="classmlpack_1_1matrix__completion_1_1MatrixCompletion_html_ac44998cb74e2e58217a091386f506c31"><div class="ttname"><a href="classmlpack_1_1matrix__completion_1_1MatrixCompletion.html#ac44998cb74e2e58217a091386f506c31">mlpack::matrix_completion::MatrixCompletion::Sdp</a></div><div class="ttdeci">const optimization::LRSDP&lt; optimization::SDP&lt; arma::sp_mat &gt; &gt; &amp; Sdp() const</div><div class="ttdoc">Return the underlying SDP. </div><div class="ttdef"><b >Definition:</b> <a href="matrix__completion_8hpp_source.html#l00115">matrix_completion.hpp:115</a></div></div>
+<div class="ttc" id="classmlpack_1_1matrix__completion_1_1MatrixCompletion_html"><div class="ttname"><a href="classmlpack_1_1matrix__completion_1_1MatrixCompletion.html">mlpack::matrix_completion::MatrixCompletion</a></div><div class="ttdoc">This class implements the popular nuclear norm minimization heuristic for matrix completion problems...</div><div class="ttdef"><b >Definition:</b> <a href="matrix__completion_8hpp_source.html#l00053">matrix_completion.hpp:53</a></div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

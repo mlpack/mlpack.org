@@ -1,0 +1,233 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+</head><link rel="stylesheet" href="../../../style.css" /></link><link rel="stylesheet" href="../../style-man.css" /></link><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" /></link>
+
+
+
+<body ><br /></br>
+
+
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext manpage">
+
+<h1 align="center">mlpack_softmax_regression</h1>
+
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_softmax_regression</font>
+- softmax regression</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_softmax_regression</font>
+[<font class="code">-h</font>] [<font class="code">-v</font>]</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p class="closemargin first">This program
+performs softmax regression, a generalization of logistic
+regression to the multiclass case, and has support for L2
+regularization. The program is able to train a model, load
+an existing model, and give predictions (and optionally
+their accuracy) for test data.</p>
+
+<p class="closemargin first">Training a
+softmax regression model is done by giving a file of
+training points with the &rsquo;<font class="code">--training_file</font>
+(<font class="code">-t</font>)&rsquo; parameter and their corresponding labels
+with the &rsquo;<font class="code">--labels_file</font> (<font class="code">-l</font>)&rsquo;
+parameter. The number of classes can be manually specified
+with the &rsquo;<font class="code">--number_of_classes</font>
+(<font class="code">-c</font>)&rsquo; parameter, and the maximum number of
+iterations of the L-BFGS optimizer can be specified with the
+&rsquo;<font class="code">--max_iterations</font> (<font class="code">-n</font>)&rsquo; parameter.
+The L2 regularization constant can be specified with the
+&rsquo;<font class="code">--lambda</font> (<font class="code">-r</font>)&rsquo; parameter and if
+an intercept term is not desired in the model, the
+&rsquo;<font class="code">--no_intercept</font> (<font class="code">-N</font>)&rsquo; parameter
+can be specified.</p>
+
+<p class="closemargin first">The trained
+model can be saved with the
+&rsquo;<font class="code">--output_model_file</font> (<font class="code">-M</font>)&rsquo; output
+parameter. If training is not desired, but only testing is,
+a model can be loaded with the
+&rsquo;<font class="code">--input_model_file</font> (<font class="code">-m</font>)&rsquo;
+parameter. At the current time, a loaded model cannot be
+trained further, so specifying both
+&rsquo;<font class="code">--input_model_file</font> (<font class="code">-m</font>)&rsquo; and
+&rsquo;<font class="code">--training_file</font> (<font class="code">-t</font>)&rsquo; is not
+allowed.</p>
+
+<p class="closemargin first">The program is
+also able to evaluate a model on test data. A test dataset
+can be specified with the &rsquo;<font class="code">--test_file</font>
+(<font class="code">-T</font>)&rsquo; parameter. Class predictions can be saved
+with the &rsquo;<font class="code">--predictions_file</font> (<font class="code">-p</font>)&rsquo;
+output parameter. If labels are specified for the test data
+with the &rsquo;<font class="code">--test_labels_file</font> (<font class="code">-L</font>)&rsquo;
+parameter, then the program will print the accuracy of the
+predictions on the given test set and its corresponding
+labels.</p>
+
+<p class="closemargin first">For example, to
+train a softmax regression model on the data
+&rsquo;dataset.csv&rsquo; with labels
+&rsquo;labels.csv&rsquo; with a maximum of 1000 iterations
+for training, saving the trained model to
+&rsquo;sr_model.bin&rsquo;, the following command can be
+used:</p>
+
+<p style="margin-left:22
+; margin-top: 1em">$
+softmax_regression <font class="code">--training_file</font> dataset.csv
+<font class="code">--labels_file</font> labels.csv <font class="code">--output_model_file</font>
+sr_model.bin</p>
+
+<p style="margin-left:22
+; margin-top: 1em">Then, to use
+&rsquo;sr_model.bin&rsquo; to classify the test points in
+&rsquo;test_points.csv&rsquo;, saving the output predictions
+to &rsquo;predictions.csv&rsquo;, the following command can
+be used:</p>
+
+<p style="margin-left:22
+; margin-top: 1em">$
+softmax_regression <font class="code">--input_model_file</font> sr_model.bin
+<font class="code">--test_file</font> test_points.csv <font class="code">--predictions_file</font>
+predictions.csv</p>
+
+<h2>OPTIONAL INPUT OPTIONS
+<a name="OPTIONAL INPUT OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--help (-h)
+[bool]</font></p>
+
+<p class="farmargin">Default help info.</p>
+
+<p class="closemargin"><font class="code">--info [string]</font></p>
+
+<p class="farmargin">Get help on a specific module
+or option. Default value &rsquo;&rsquo;.
+<font class="code">--input_model_file</font> (<font class="code">-m</font>) [string] File
+containing existing model (parameters). Default value
+&rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--labels_file (-l)
+[string]</font></p>
+
+<p class="farmargin">A matrix containing labels (0
+or 1) for the points in the training set (y). The labels
+must order as a row. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--lambda (-r)
+[double]</font></p>
+
+<p class="farmargin">L2-regularization constant
+Default value 0.0001.</p>
+
+<p class="closemargin"><font class="code">--max_iterations (-n)
+[int]</font></p>
+
+<p class="farmargin">Maximum number of iterations
+before termination. Default value 400.</p>
+
+<p class="closemargin"><font class="code">--no_intercept (-N)
+[bool]</font></p>
+
+<p class="farmargin">Do not add the intercept term
+to the model. <font class="code">--number_of_classes</font> (<font class="code">-c</font>) [int]
+Number of classes for classification; if unspecified (or 0),
+the number of classes found in the labels will be used.
+Default value 0.</p>
+
+<p class="closemargin"><font class="code">--test_file (-T)
+[string]</font></p>
+
+<p class="farmargin">Matrix containing test dataset.
+Default value &rsquo;&rsquo;. <font class="code">--test_labels_file</font>
+(<font class="code">-L</font>) [string] Matrix containing test labels. Default
+value &rsquo;&rsquo;. <font class="code">--training_file</font> (<font class="code">-t</font>)
+[string] A matrix containing the training set (the matrix of
+predictors, X). Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--verbose (-v)
+[bool]</font></p>
+
+<p class="farmargin">Display informational messages
+and the full list of parameters and timers at the end of
+execution.</p>
+
+<p class="closemargin"><font class="code">--version (-V)
+[bool]</font></p>
+
+<p class="farmargin">Display the version of
+mlpack.</p>
+
+<h2>OPTIONAL OUTPUT OPTIONS
+<a name="OPTIONAL OUTPUT OPTIONS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">--output_model_file</font>
+(<font class="code">-M</font>) [string] File to save trained softmax regression
+model to. Default value &rsquo;&rsquo;.
+<font class="code">--predictions_file</font> (<font class="code">-p</font>) [string] Matrix to
+save predictions for test dataset into. Default value
+&rsquo;&rsquo;.</p>
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<p class="closemargin first">For further
+information, including relevant papers, citations, and
+theory, For further information, including relevant papers,
+citations, and theory, consult the documentation found at
+http://www.mlpack.org or included with your consult the
+documentation found at http://www.mlpack.org or included
+with your DISTRIBUTION OF MLPACK. DISTRIBUTION OF
+MLPACK.</p>
+</div></body></html>

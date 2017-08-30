@@ -1,0 +1,118 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">master</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_44a936ef30fc126706c6284a2fc0c990.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_3cfbf900288ec2fe8dd2c2c8482f216e.html">methods</a></li><li class="navelem"><a class="el" href="dir_04cdefcc9a97fb221ee3f2d7fb8aab76.html">ann</a></li><li class="navelem"><a class="el" href="dir_b52cc5b391c1a60ddf624b13b597843f.html">init_rules</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">kathirvalavakumar_subavathi_init.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="kathirvalavakumar__subavathi__init_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef MLPACK_METHODS_ANN_INIT_RULES_KATHIRVALAVAKUMAR_SUBAVATHI_INIT_HPP</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define MLPACK_METHODS_ANN_INIT_RULES_KATHIRVALAVAKUMAR_SUBAVATHI_INIT_HPP</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="prereqs_8hpp.html">mlpack/prereqs.hpp</a>&gt;</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="init__rules__traits_8hpp.html">init_rules_traits.hpp</a>&quot;</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ann_2init__rules_2random__init_8hpp.html">random_init.hpp</a>&quot;</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logistic__function_8hpp.html">mlpack/methods/ann/activation_functions/logistic_function.hpp</a>&gt;</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span>ann  {</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classmlpack_1_1ann_1_1KathirvalavakumarSubavathiInitialization.html">   60</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1ann_1_1KathirvalavakumarSubavathiInitialization.html">KathirvalavakumarSubavathiInitialization</a></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; <span class="keyword">public</span>:</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> eT&gt;</div><div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classmlpack_1_1ann_1_1KathirvalavakumarSubavathiInitialization.html#aaf0e7a11a0a428552525a83382e45148">   70</a></span>&#160;  <a class="code" href="classmlpack_1_1ann_1_1KathirvalavakumarSubavathiInitialization.html#aaf0e7a11a0a428552525a83382e45148">KathirvalavakumarSubavathiInitialization</a>(<span class="keyword">const</span> arma::Mat&lt;eT&gt;&amp; data,</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                           <span class="keyword">const</span> <span class="keywordtype">double</span> s) : s(s)</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  {</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    dataSum = arma::sum(data % data);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> eT&gt;</div><div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classmlpack_1_1ann_1_1KathirvalavakumarSubavathiInitialization.html#a5cfe472251a41fffd45b170bb0d3c1bd">   85</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1ann_1_1KathirvalavakumarSubavathiInitialization.html#a5cfe472251a41fffd45b170bb0d3c1bd">Initialize</a>(arma::Mat&lt;eT&gt;&amp; W, <span class="keyword">const</span> <span class="keywordtype">size_t</span> rows, <span class="keyword">const</span> <span class="keywordtype">size_t</span> cols)</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  {</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    arma::Row&lt;eT&gt; b = s * arma::sqrt(3 / (rows * dataSum));</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> theta = b.min();</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classmlpack_1_1ann_1_1RandomInitialization.html">RandomInitialization</a> randomInit(-theta, theta);</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    randomInit.<a class="code" href="classmlpack_1_1ann_1_1RandomInitialization.html#a5cfe472251a41fffd45b170bb0d3c1bd">Initialize</a>(W, rows, cols);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  }</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> eT&gt;</div><div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classmlpack_1_1ann_1_1KathirvalavakumarSubavathiInitialization.html#a40a2b6466bdba0f6aab4eb92b6e65934">  102</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1ann_1_1KathirvalavakumarSubavathiInitialization.html#a40a2b6466bdba0f6aab4eb92b6e65934">Initialize</a>(arma::Cube&lt;eT&gt;&amp; W,</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                  <span class="keyword">const</span> <span class="keywordtype">size_t</span> rows,</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                  <span class="keyword">const</span> <span class="keywordtype">size_t</span> cols,</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                  <span class="keyword">const</span> <span class="keywordtype">size_t</span> slices)</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  {</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    W = arma::Cube&lt;eT&gt;(rows, cols, slices);</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; slices; i++)</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <a class="code" href="classmlpack_1_1ann_1_1KathirvalavakumarSubavathiInitialization.html#a5cfe472251a41fffd45b170bb0d3c1bd">Initialize</a>(W.slice(i), rows, cols);</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  }</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; <span class="keyword">private</span>:</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  arma::rowvec dataSum;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">double</span> s;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}; <span class="comment">// class KathirvalavakumarSubavathiInitialization</span></div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">template</span>&lt;&gt;</div><div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classmlpack_1_1ann_1_1InitTraits_3_01KathirvalavakumarSubavathiInitialization_01_4.html">  123</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1ann_1_1InitTraits.html">InitTraits</a>&lt;<a class="code" href="classmlpack_1_1ann_1_1KathirvalavakumarSubavathiInitialization.html">KathirvalavakumarSubavathiInitialization</a>&gt;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; <span class="keyword">public</span>:</div><div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classmlpack_1_1ann_1_1InitTraits_3_01KathirvalavakumarSubavathiInitialization_01_4.html#a6aadf10c95af2a5f0ab17196f682ffd4">  128</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> UseLayer = <span class="keyword">false</span>;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;};</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;} <span class="comment">// namespace ann</span></div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;} <span class="comment">// namespace mlpack</span></div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="ann_2init__rules_2random__init_8hpp_html"><div class="ttname"><a href="ann_2init__rules_2random__init_8hpp.html">random_init.hpp</a></div></div>
+<div class="ttc" id="classmlpack_1_1ann_1_1KathirvalavakumarSubavathiInitialization_html_a40a2b6466bdba0f6aab4eb92b6e65934"><div class="ttname"><a href="classmlpack_1_1ann_1_1KathirvalavakumarSubavathiInitialization.html#a40a2b6466bdba0f6aab4eb92b6e65934">mlpack::ann::KathirvalavakumarSubavathiInitialization::Initialize</a></div><div class="ttdeci">void Initialize(arma::Cube&lt; eT &gt; &amp;W, const size_t rows, const size_t cols, const size_t slices)</div><div class="ttdoc">Initialize the elements of the specified weight 3rd order tensor with the Kathirvalavakumar-Subavathi...</div><div class="ttdef"><b >Definition:</b> <a href="kathirvalavakumar__subavathi__init_8hpp_source.html#l00102">kathirvalavakumar_subavathi_init.hpp:102</a></div></div>
+<div class="ttc" id="classmlpack_1_1ann_1_1KathirvalavakumarSubavathiInitialization_html_a5cfe472251a41fffd45b170bb0d3c1bd"><div class="ttname"><a href="classmlpack_1_1ann_1_1KathirvalavakumarSubavathiInitialization.html#a5cfe472251a41fffd45b170bb0d3c1bd">mlpack::ann::KathirvalavakumarSubavathiInitialization::Initialize</a></div><div class="ttdeci">void Initialize(arma::Mat&lt; eT &gt; &amp;W, const size_t rows, const size_t cols)</div><div class="ttdoc">Initialize the elements of the specified weight matrix with the Kathirvalavakumar-Subavathi method...</div><div class="ttdef"><b >Definition:</b> <a href="kathirvalavakumar__subavathi__init_8hpp_source.html#l00085">kathirvalavakumar_subavathi_init.hpp:85</a></div></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="add__to__po_8hpp_source.html#l00016">add_to_po.hpp:16</a></div></div>
+<div class="ttc" id="logistic__function_8hpp_html"><div class="ttname"><a href="logistic__function_8hpp.html">logistic_function.hpp</a></div></div>
+<div class="ttc" id="classmlpack_1_1ann_1_1KathirvalavakumarSubavathiInitialization_html_aaf0e7a11a0a428552525a83382e45148"><div class="ttname"><a href="classmlpack_1_1ann_1_1KathirvalavakumarSubavathiInitialization.html#aaf0e7a11a0a428552525a83382e45148">mlpack::ann::KathirvalavakumarSubavathiInitialization::KathirvalavakumarSubavathiInitialization</a></div><div class="ttdeci">KathirvalavakumarSubavathiInitialization(const arma::Mat&lt; eT &gt; &amp;data, const double s)</div><div class="ttdoc">Initialize the random initialization rule with the given values. </div><div class="ttdef"><b >Definition:</b> <a href="kathirvalavakumar__subavathi__init_8hpp_source.html#l00070">kathirvalavakumar_subavathi_init.hpp:70</a></div></div>
+<div class="ttc" id="classmlpack_1_1ann_1_1RandomInitialization_html"><div class="ttname"><a href="classmlpack_1_1ann_1_1RandomInitialization.html">mlpack::ann::RandomInitialization</a></div><div class="ttdoc">This class is used to initialize randomly the weight matrix. </div><div class="ttdef"><b >Definition:</b> <a href="ann_2init__rules_2random__init_8hpp_source.html#l00024">random_init.hpp:24</a></div></div>
+<div class="ttc" id="prereqs_8hpp_html"><div class="ttname"><a href="prereqs_8hpp.html">prereqs.hpp</a></div><div class="ttdoc">The core includes that mlpack expects; standard C++ includes and Armadillo. </div></div>
+<div class="ttc" id="init__rules__traits_8hpp_html"><div class="ttname"><a href="init__rules__traits_8hpp.html">init_rules_traits.hpp</a></div></div>
+<div class="ttc" id="classmlpack_1_1ann_1_1KathirvalavakumarSubavathiInitialization_html"><div class="ttname"><a href="classmlpack_1_1ann_1_1KathirvalavakumarSubavathiInitialization.html">mlpack::ann::KathirvalavakumarSubavathiInitialization</a></div><div class="ttdoc">This class is used to initialize the weight matrix with the method proposed by T. ...</div><div class="ttdef"><b >Definition:</b> <a href="kathirvalavakumar__subavathi__init_8hpp_source.html#l00060">kathirvalavakumar_subavathi_init.hpp:60</a></div></div>
+<div class="ttc" id="classmlpack_1_1ann_1_1RandomInitialization_html_a5cfe472251a41fffd45b170bb0d3c1bd"><div class="ttname"><a href="classmlpack_1_1ann_1_1RandomInitialization.html#a5cfe472251a41fffd45b170bb0d3c1bd">mlpack::ann::RandomInitialization::Initialize</a></div><div class="ttdeci">void Initialize(arma::Mat&lt; eT &gt; &amp;W, const size_t rows, const size_t cols)</div><div class="ttdoc">Initialize randomly the elements of the specified weight matrix. </div><div class="ttdef"><b >Definition:</b> <a href="ann_2init__rules_2random__init_8hpp_source.html#l00056">random_init.hpp:56</a></div></div>
+<div class="ttc" id="classmlpack_1_1ann_1_1InitTraits_html"><div class="ttname"><a href="classmlpack_1_1ann_1_1InitTraits.html">mlpack::ann::InitTraits</a></div><div class="ttdoc">This is a template class that can provide information about various initialization methods...</div><div class="ttdef"><b >Definition:</b> <a href="init__rules__traits_8hpp_source.html#l00028">init_rules_traits.hpp:28</a></div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

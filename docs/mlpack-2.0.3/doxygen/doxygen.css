@@ -1,7 +1,17 @@
-/* The standard CSS for doxygen 1.8.11 */
+/* The standard CSS for doxygen 1.8.13 */
 
 body, table, div, p, dl {
-	font: 400 14px/22px Roboto,sans-serif;
+	font: 400 14px/22px 'Maven Pro',sans-serif;
+}
+
+p {
+  line-height: 120%;
+}
+
+p.reference, p.definition {
+	font: 400 14px/22px 'Maven Pro',sans-serif;
+  font-size: 85%;
+  line-height: 120%;
 }
 
 /* @group Heading Levels */
@@ -11,25 +21,36 @@ h1.groupheader {
 }
 
 .title {
-	font: 400 14px/28px Roboto,sans-serif;
+	font: 400 14px/28px 'Maven Pro',sans-serif;
 	font-size: 150%;
 	font-weight: bold;
 	margin: 10px 2px;
+	color: #ffffff;
+	text-align: center;
 }
 
 h2.groupheader {
-	border-bottom: 1px solid #879ECB;
-	color: #354C7B;
+	border-bottom: 15px solid #101010;
+	color: #ffffff;
 	font-size: 150%;
 	font-weight: normal;
-	margin-top: 1.75em;
-	padding-top: 8px;
-	padding-bottom: 4px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	width: 100%;
 }
 
 h3.groupheader {
 	font-size: 100%;
+}
+
+h3 {
+  font-family: monospace, fixed;
+  font-weight: normal;
+  text-align: left !important;
+}
+
+h3 br {
+  display: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,7 +59,12 @@ h1, h2, h3, h4, h5, h6 {
 	-ms-transition: text-shadow 0.5s linear;
 	-o-transition: text-shadow 0.5s linear;
 	transition: text-shadow 0.5s linear;
-	margin-right: 15px;
+	color: #ffffff;
+	text-align: center;
+  border-bottom: 15px solid #101010;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 15px solid #101010;
 }
 
 h1.glow, h2.glow, h3.glow, h4.glow, h5.glow, h6.glow {
@@ -93,14 +119,14 @@ h3.version {
 }
 
 div.qindex, div.navtab{
-	background-color: #EBEFF6;
-	border: 1px solid #A3B4D7;
+	background-color: #202020;
 	text-align: center;
 }
 
 div.qindex, div.navpath {
-	width: 100%;
+	width: 610px;
 	line-height: 140%;
+        padding-left: 10px;
 }
 
 div.navtab {
@@ -110,17 +136,13 @@ div.navtab {
 /* @group Link Styling */
 
 a {
-	color: #3D578C;
-	font-weight: normal;
+	color: #eab72c !important;
+	font-weight: bold;
 	text-decoration: none;
 }
 
 .contents a:visited {
 	color: #4665A2;
-}
-
-a:hover {
-	text-decoration: underline;
 }
 
 a.qindex {
@@ -173,16 +195,46 @@ pre.fragment {
 }
 
 div.fragment {
-        padding: 4px 6px;
+        padding: 0px;
         margin: 4px 8px 4px 2px;
-	background-color: #FBFCFD;
-	border: 1px solid #C4CFE5;
+	background-color: #000000;
+	border: 15px solid #101010;
 }
+
+div.fragment div.line {
+	font-family: monospace, fixed;
+        font-size: 11px;
+        color: #ffffff;
+	min-height: 11px;
+	line-height: 1.2em;
+	text-wrap: unrestricted;
+	white-space: -moz-pre-wrap; /* Moz */
+	white-space: -pre-wrap;     /* Opera 4-6 */
+	white-space: -o-pre-wrap;   /* Opera 7 */
+	white-space: pre-wrap;      /* CSS3  */
+	word-wrap: break-word;      /* IE 5.5+ */
+	text-indent: -53px;
+	padding-left: 53px;
+	padding-bottom: 0px;
+	margin: 0px;
+	-webkit-transition-property: background-color, box-shadow;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-property: background-color, box-shadow;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-property: background-color, box-shadow;
+	-ms-transition-duration: 0.5s;
+	-o-transition-property: background-color, box-shadow;
+	-o-transition-duration: 0.5s;
+	transition-property: background-color, box-shadow;
+	transition-duration: 0.5s;
+}
+
 
 div.line {
 	font-family: monospace, fixed;
-        font-size: 13px;
-	min-height: 13px;
+        font-size: 12px;
+        color: #ffffff;
+	min-height: 12px;
 	line-height: 1.0;
 	text-wrap: unrestricted;
 	white-space: -moz-pre-wrap; /* Moz */
@@ -221,7 +273,7 @@ span.lineno {
 	padding-right: 4px;
 	text-align: right;
 	border-right: 2px solid #0F0;
-	background-color: #E8E8E8;
+	background-color: #202020;
         white-space: pre;
 }
 span.lineno a {
@@ -230,6 +282,15 @@ span.lineno a {
 
 span.lineno a:hover {
 	background-color: #C8C8C8;
+}
+
+.lineno {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 div.ah, span.ah {
@@ -270,12 +331,6 @@ div.groupText {
 	font-style: italic;
 }
 
-body {
-	background-color: white;
-	color: black;
-        margin: 0;
-}
-
 div.contents {
 	margin-top: 10px;
 	margin-left: 12px;
@@ -307,23 +362,21 @@ p.formulaDsp {
 	text-align: center;
 }
 
-img.formulaDsp {
-	
-}
-
 img.formulaInl {
 	vertical-align: middle;
+  height: 1.1em;
 }
 
 div.center {
 	text-align: center;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin: 0px;
+        margin-top: 10px;
         padding: 0px;
 }
 
 div.center img {
 	border: 0px;
+        max-width: 600px;
 }
 
 address.footer {
@@ -339,31 +392,31 @@ img.footer {
 /* @group Code Colorization */
 
 span.keyword {
-	color: #008000
+	color: #88ff88
 }
 
 span.keywordtype {
-	color: #604020
+	color: #907050
 }
 
 span.keywordflow {
-	color: #e08000
+	color: #ffb444
 }
 
 span.comment {
-	color: #800000
+	color: #bb2222
 }
 
 span.preprocessor {
-	color: #806020
+	color: #a08040
 }
 
 span.stringliteral {
-	color: #002080
+	color: #6686f6
 }
 
 span.charliteral {
-	color: #008080
+	color: #88ffff
 }
 
 span.vhdldigit { 
@@ -371,15 +424,15 @@ span.vhdldigit {
 }
 
 span.vhdlchar { 
-	color: #000000 
+	color: #ffffff 
 }
 
 span.vhdlkeyword { 
-	color: #700070 
+	color: #a050a0 
 }
 
 span.vhdllogic { 
-	color: #ff0000 
+	color: #ff2222
 }
 
 blockquote {
@@ -428,7 +481,7 @@ th.dirtab {
 hr {
 	height: 0px;
 	border: none;
-	border-top: 1px solid #4A6AAA;
+	border-top: 15px solid #101010;
 }
 
 hr.footer {
@@ -440,6 +493,7 @@ hr.footer {
 table.memberdecls {
 	border-spacing: 0px;
 	padding: 0px;
+        width: 610px;
 }
 
 .memberdecls td, .fieldtable tr {
@@ -453,6 +507,7 @@ table.memberdecls {
 	-o-transition-duration: 0.5s;
 	transition-property: background-color, box-shadow;
 	transition-duration: 0.5s;
+        line-height: 120%;
 }
 
 .memberdecls td.glow, .fieldtable tr.glow {
@@ -460,39 +515,60 @@ table.memberdecls {
 	box-shadow: 0 0 15px cyan;
 }
 
-.mdescLeft, .mdescRight,
+.mdescRight {
+  background-color: #202020;
+  border: none;
+  margin: 4px;
+  padding: 1px 0 0 8px;
+}
+.mdescRight br {
+  display: none
+}
+.mdescLeft,
 .memItemLeft, .memItemRight,
 .memTemplItemLeft, .memTemplItemRight, .memTemplParams {
-	background-color: #F9FAFC;
+	background-color: #202020;
 	border: none;
 	margin: 4px;
 	padding: 1px 0 0 8px;
+        font-family: monospace, fixed;
 }
 
 .mdescLeft, .mdescRight {
 	padding: 0px 8px 4px 8px;
-	color: #555;
 }
 
 .memSeparator {
-        border-bottom: 1px solid #DEE4F0;
+        border-bottom: 1px solid #101010;
         line-height: 1px;
         margin: 0px;
         padding: 0px;
 }
 
 .memItemLeft, .memTemplItemLeft {
-        white-space: nowrap;
+  white-space: nowrap;
+}
+
+.mdescRight {
+  padding-top: 5px;
 }
 
 .memItemRight {
 	width: 100%;
 }
 
+.memItemRight, .memTemplItemRight {
+  max-width: 430px;
+  white-space: nowrap;
+  color: #ffffff;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .memTemplParams {
-	color: #4665A2;
+	color: #ffffff;
         white-space: nowrap;
-	font-size: 80%;
+	font-family: monospace, fixed;
 }
 
 /* @end */
@@ -501,11 +577,27 @@ table.memberdecls {
 
 /* Styles for detailed member documentation */
 
+.memtitle {
+	border: none;
+	font-weight: normal;
+        font-size:120%;
+        font-family: monospace,fixed;
+	float:left;
+}
+
+.permalink
+{
+        font-size: 65%;
+        display: inline-block;
+        vertical-align: middle;
+}
+
 .memtemplate {
-	font-size: 80%;
-	color: #4665A2;
+	color: #fff;
 	font-weight: normal;
 	margin-left: 9px;
+  line-height: 120%;
+  font-family: monospace, fixed;
 }
 
 .memnav {
@@ -531,7 +623,8 @@ table.memberdecls {
         -o-transition: box-shadow 0.5s linear;
         transition: box-shadow 0.5s linear;
         display: table !important;
-        width: 100%;
+        width: 580px;
+        padding-left: 30px;
 }
 
 .memitem.glow {
@@ -539,50 +632,67 @@ table.memberdecls {
 }
 
 .memname {
-        font-weight: bold;
+        font-weight: 400;
         margin-left: 6px;
+        font-family: monospace, fixed;
+        color: #fff;
+        line-height: 1.1em;
+        table-layout: fixed;
 }
 
 .memname td {
-	vertical-align: bottom;
+      vertical-align: bottom;
+      white-space: nowrap; /* needed to get width in JS */
+}
+
+.memname td.paramtype div.content, td.memItemLeft div.content, td.memTemplItemLeft div.content {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom;
+  font-family: monospace, fixed;
+  line-height: 1.1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+td.memItemLeft div.content, td.memTemplItemLeft div.content {
+  width: 150px;
 }
 
 .memproto, dl.reflist dt {
-        border-top: 1px solid #A8B8D9;
-        border-left: 1px solid #A8B8D9;
-        border-right: 1px solid #A8B8D9;
         padding: 6px 0px 6px 0px;
-        color: #253555;
+        color: #fff;
         font-weight: bold;
-        text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.9);
-        background-image:url('nav_f.png');
-        background-repeat:repeat-x;
-        background-color: #E2E8F2;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.9);
+        background-color: #101010;
         /* opera specific markup */
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
         border-top-right-radius: 4px;
-        border-top-left-radius: 4px;
         /* firefox specific markup */
         -moz-box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 5px;
         -moz-border-radius-topright: 4px;
-        -moz-border-radius-topleft: 4px;
         /* webkit specific markup */
         -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
         -webkit-border-top-right-radius: 4px;
-        -webkit-border-top-left-radius: 4px;
 
 }
 
+.overload {
+        font-family: "courier new",courier,monospace;
+	font-size: 65%;
+}
+
 .memdoc, dl.reflist dd {
-        border-bottom: 1px solid #A8B8D9;      
-        border-left: 1px solid #A8B8D9;      
-        border-right: 1px solid #A8B8D9; 
+        width: 580px;
+        border-bottom: 1px solid #101010;
+        border-left: 1px solid #101010;
+        border-right: 1px solid #101010;
         padding: 6px 10px 2px 10px;
-        background-color: #FBFCFD;
+        background-color: #333;
         border-top-width: 0;
         background-image:url('nav_g.png');
         background-repeat:repeat-x;
-        background-color: #FFFFFF;
         /* opera specific markup */
         border-bottom-left-radius: 4px;
         border-bottom-right-radius: 4px;
@@ -615,7 +725,7 @@ dl.reflist dd {
 }
 
 .paramname {
-	color: #602020;
+	color: #eab72c;
 	white-space: nowrap;
 }
 .paramname em {
@@ -628,10 +738,11 @@ dl.reflist dd {
 .params, .retval, .exception, .tparams {
         margin-left: 0px;
         padding-left: 0px;
+        line-height: 1.1em;
 }       
 
 .params .paramname, .retval .paramname {
-        font-weight: bold;
+        font-weight: normal;
         vertical-align: top;
 }
         
@@ -650,8 +761,9 @@ table.mlabels {
 }
 
 td.mlabels-left {
-	width: 100%;
+	width: 520px /* intentionally too small */;
 	padding: 0px;
+        float: left;
 }
 
 td.mlabels-right {
@@ -665,11 +777,11 @@ span.mlabels {
 }
 
 span.mlabel {
-        background-color: #728DC1;
-        border-top:1px solid #5373B4;
-        border-left:1px solid #5373B4;
-        border-right:1px solid #C4CFE5;
-        border-bottom:1px solid #C4CFE5;
+        background-color: #bb2222;
+        border-top:1px solid #888;
+        border-left:1px solid #888;
+        border-right:1px solid #aaa;
+        border-bottom:1px solid #aaa;
 	text-shadow: none;
 	color: white;
 	margin-right: 4px;
@@ -727,7 +839,7 @@ div.directory {
 
 .directory tr.even {
 	padding-left: 6px;
-	background-color: #F7F8FB;
+	background-color: #202020;
 }
 
 .directory img {
@@ -745,11 +857,11 @@ div.directory {
         cursor: pointer;
         padding-left: 2px;
         padding-right: 2px;
-	color: #3D578C;
+	color: #eab72c;
 }
 
 .arrow {
-    color: #9CAFD4;
+    color: #bb2222;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -769,7 +881,7 @@ div.directory {
     height: 14px;
     width: 16px;
     display: inline-block;
-    background-color: #728DC1;
+    background-color: #bb2222;
     color: white;
     text-align: center;
     border-radius: 4px;
@@ -817,7 +929,7 @@ div.directory {
 }
 
 table.directory {
-    font: 400 14px Roboto,sans-serif;
+    font: 400 14px 'Maven Pro',sans-serif;
 }
 
 /* @end */
@@ -834,7 +946,7 @@ div.dynheader {
 
 address {
 	font-style: normal;
-	color: #2A3D61;
+	color: #eab72c;
 }
 
 table.doxtable caption {
@@ -863,7 +975,7 @@ table.doxtable th {
 table.fieldtable {
         /*width: 100%;*/
         margin-bottom: 10px;
-        border: 1px solid #A8B8D9;
+        border: 1px solid #101010;
         border-spacing: 0px;
         -moz-border-radius: 4px;
         -webkit-border-radius: 4px;
@@ -871,6 +983,8 @@ table.fieldtable {
         -moz-box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 2px;
         -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
         box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+        margin-left: auto;
+        margin-right: auto;
 }
 
 .fieldtable td, .fieldtable th {
@@ -879,8 +993,8 @@ table.fieldtable {
 
 .fieldtable td.fieldtype, .fieldtable td.fieldname {
         white-space: nowrap;
-        border-right: 1px solid #A8B8D9;
-        border-bottom: 1px solid #A8B8D9;
+        border-right: 1px solid #aaa;
+        border-bottom: 1px solid #aaa;
         vertical-align: top;
 }
 
@@ -889,7 +1003,7 @@ table.fieldtable {
 }
 
 .fieldtable td.fielddoc {
-        border-bottom: 1px solid #A8B8D9;
+        border-bottom: 1px solid #aaa;
         /*width: 100%;*/
 }
 
@@ -906,21 +1020,20 @@ table.fieldtable {
 }
 
 .fieldtable th {
-        background-image:url('nav_f.png');
-        background-repeat:repeat-x;
-        background-color: #E2E8F2;
-        font-size: 90%;
-        color: #253555;
+        background-color: #101010;
+        font-size: 100%;
+        color: #fff;
         padding-bottom: 4px;
         padding-top: 5px;
         text-align:left;
+        font-weight: 400;
         -moz-border-radius-topleft: 4px;
         -moz-border-radius-topright: 4px;
         -webkit-border-top-left-radius: 4px;
         -webkit-border-top-right-radius: 4px;
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
-        border-bottom: 1px solid #A8B8D9;
+        border-bottom: 1px solid #aaa;
 }
 
 
@@ -937,18 +1050,20 @@ table.fieldtable {
 .navpath ul
 {
 	font-size: 11px;
-	background-image:url('tab_b.png');
-	background-repeat:repeat-x;
 	background-position: 0 -5px;
 	height:30px;
 	line-height:30px;
 	color:#8AA0CC;
-	border:solid 1px #C2CDE4;
+	border:solid 1px #101010;
 	overflow:hidden;
 	margin:0px;
 	padding:0px;
 }
 
+.navpath li::before
+{
+  content: none !important;
+}
 .navpath li
 {
 	list-style-type:none;
@@ -967,10 +1082,10 @@ table.fieldtable {
 	display:block;
 	text-decoration: none;
 	outline: none;
-	color: #283A5D;
-	font-family: 'Lucida Grande',Geneva,Helvetica,Arial,sans-serif;
-	text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.9);
-	text-decoration: none;        
+	color: #eab72c;
+	font-family: 'Maven Pro',Geneva,Helvetica,Arial,sans-serif;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.9);
+	text-decoration: none;
 }
 
 .navpath li.navelem a:hover
@@ -1032,11 +1147,7 @@ div.ingroups a
 
 div.header
 {
-        background-image:url('nav_h.png');
-        background-repeat:repeat-x;
-	background-color: #F9FAFC;
-	margin:  0px;
-	border-bottom: 1px solid #C4CFE5;
+  display: none;
 }
 
 div.headertitle
@@ -1058,7 +1169,7 @@ dl.section
 
 dl.note
 {
-        margin-left:-7px;
+        margin-left: 30px;
         padding-left: 3px;
         border-left:4px solid;
         border-color: #D0C000;
@@ -1066,7 +1177,7 @@ dl.note
 
 dl.warning, dl.attention
 {
-        margin-left:-7px;
+        margin-left: 30px;
         padding-left: 3px;
         border-left:4px solid;
         border-color: #FF0000;
@@ -1074,7 +1185,7 @@ dl.warning, dl.attention
 
 dl.pre, dl.post, dl.invariant
 {
-        margin-left:-7px;
+        margin-left: 30px;
         padding-left: 3px;
         border-left:4px solid;
         border-color: #00D000;
@@ -1082,7 +1193,7 @@ dl.pre, dl.post, dl.invariant
 
 dl.deprecated
 {
-        margin-left:-7px;
+        margin-left: 30px;
         padding-left: 3px;
         border-left:4px solid;
         border-color: #505050;
@@ -1090,7 +1201,7 @@ dl.deprecated
 
 dl.todo
 {
-        margin-left:-7px;
+        margin-left: 30px;
         padding-left: 3px;
         border-left:4px solid;
         border-color: #00C0E0;
@@ -1098,7 +1209,7 @@ dl.todo
 
 dl.test
 {
-        margin-left:-7px;
+        margin-left: 30px;
         padding-left: 3px;
         border-left:4px solid;
         border-color: #3030E0;
@@ -1106,7 +1217,7 @@ dl.test
 
 dl.bug
 {
-        margin-left:-7px;
+        margin-left: 30px;
         padding-left: 3px;
         border-left:4px solid;
         border-color: #C08050;
@@ -1136,7 +1247,8 @@ dl.section dd {
 
 #projectname
 {
-	font: 300% Tahoma, Arial,sans-serif;
+	font-size: 300%;
+	color: #ffffff;
 	margin: 0px;
 	padding: 2px 0px;
 }
@@ -1150,7 +1262,8 @@ dl.section dd {
 
 #projectnumber
 {
-	font: 50% Tahoma, Arial,sans-serif;
+	font-size: 50%;
+	color: #eab72c;
 	margin: 0px;
 	padding: 0px;
 }
@@ -1158,9 +1271,9 @@ dl.section dd {
 #titlearea
 {
 	padding: 0px;
-	margin: 0px;
-	width: 100%;
-	border-bottom: 1px solid #5373B4;
+	margin: 15px;
+	width: 610px;
+	border-bottom: 15px solid #101010;
 }
 
 .image
@@ -1174,6 +1287,11 @@ dl.section dd {
 }
 
 .mscgraph
+{
+        text-align: center;
+}
+
+.plantumlgraph
 {
         text-align: center;
 }
@@ -1326,7 +1444,7 @@ tr.heading h2 {
 #powerTip div {
         margin: 0px;
         padding: 0px;
-        font: 12px/16px Roboto,sans-serif;
+        font: 12px/16px 'Maven Pro',sans-serif;
 }
 
 #powerTip:before, #powerTip:after {
@@ -1473,3 +1591,169 @@ tr.heading h2 {
   }
 }
 
+/* @group Markdown */
+
+/*
+table.markdownTable {
+	border-collapse:collapse;
+        margin-top: 4px;
+        margin-bottom: 4px;
+}
+
+table.markdownTable td, table.markdownTable th {
+	border: 1px solid #2D4068;
+	padding: 3px 7px 2px;
+}
+
+table.markdownTableHead tr {
+}
+
+table.markdownTableBodyLeft td, table.markdownTable th {
+	border: 1px solid #2D4068;
+	padding: 3px 7px 2px;
+}
+
+th.markdownTableHeadLeft th.markdownTableHeadRight th.markdownTableHeadCenter th.markdownTableHeadNone {
+	background-color: #374F7F;
+	color: #FFFFFF;
+	font-size: 110%;
+	padding-bottom: 4px;
+	padding-top: 5px;
+}
+
+th.markdownTableHeadLeft {
+	text-align: left
+}
+
+th.markdownTableHeadRight {
+	text-align: right
+}
+
+th.markdownTableHeadCenter {
+	text-align: center
+}
+*/
+
+table.markdownTable {
+	border-collapse:collapse;
+        margin-top: 4px;
+        margin-bottom: 4px;
+}
+
+table.markdownTable td, table.markdownTable th {
+	border: 1px solid #2D4068;
+	padding: 3px 7px 2px;
+}
+
+table.markdownTable tr {
+}
+
+th.markdownTableHeadLeft, th.markdownTableHeadRight, th.markdownTableHeadCenter, th.markdownTableHeadNone {
+	background-color: #374F7F;
+	color: #FFFFFF;
+	font-size: 110%;
+	padding-bottom: 4px;
+	padding-top: 5px;
+}
+
+th.markdownTableHeadLeft, td.markdownTableBodyLeft {
+	text-align: left
+}
+
+th.markdownTableHeadRight, td.markdownTableBodyRight {
+	text-align: right
+}
+
+th.markdownTableHeadCenter, td.markdownTableBodyCenter {
+	text-align: center
+}
+
+/* template parameter formatting, ugh */
+.template_param_list {
+  display: table;
+}
+.template_expr div {
+  font-family: monospace, fixed;
+}
+.template_expr .template_decl {
+  float: left;
+  color: #aaa;
+}
+.template_template_param .template, .template_expr .default_argument .identifier
+{
+  float: left;
+}
+.template_template_param .type_decl {
+  padding-left: 1em;
+}
+.template_template_param .template_param_list .type_decl {
+  padding-left: 0;
+}
+.template_expr .default_argument .equals {
+  float: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.template_expr .default_argument {
+  float: left;
+}
+
+.template_expr .open_bracket, .template_expr .comma, .template_expr .close_bracket {
+  float: left;
+  color: #bb2222;
+}
+
+.template_expr .type_decl {
+  float: left;
+  color: #aaa;
+  padding-right: 0.5em;
+}
+.template_expr .identifier {
+  float: left;
+  color: #fff;
+}
+.template_expr .close_bracket {
+  color: #bb2222;
+}
+
+dl.author dt {
+  float: left;
+  font-weight: bold;
+  color: #fff;
+  padding-right: 0.5em;
+}
+
+code {
+  color: #fff;
+}
+
+td.paramtype, td.memItemLeft, td.memTemplItemLeft
+{
+  position: relative;
+}
+
+td.paramtype div.hover, td.memItemLeft div.hover, td.memTemplItemLeft div.hover
+{
+  position: absolute;
+  top: 1px;
+  left: -2px;
+  display: none;
+  background: #303030;
+  color: #ffffff;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-family: monospace, fixed;
+  line-height: 1.1em;
+  margin: 0;
+  border: 0;
+}
+
+td.paramtype:hover div.hover, td.memItemLeft:hover div.hover, td.memTemplItemLeft:hover div.hover
+{
+  display: block;
+  width: 500px;
+  z-index: 2;
+  overflow: visible;
+}
+
+/* @end */

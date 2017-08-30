@@ -1,0 +1,211 @@
+\form#0:$ 2 * precision * recall / (precision + recall) $
+\form#1:$ tp / (tp + fp) $
+\form#2:$ tp $
+\form#3:$ fp $
+\form#4:$ N + 1 $
+\form#5:\[ (tp_0 + tp_1 + \ldots + tp_N) / (tp_0 + tp_1 + \ldots + tp_N + fp_0 + fp_1 + \ldots + fp_N), \]
+\form#6:$ tp_i $
+\form#7:$ fp_i $
+\form#8:$ i $
+\form#9:\[ tp_0 / (tp_0 + fp_0), tp_1 / (tp_1 + fp_1), \ldots, tp_N / (tp_N + fp_N), \]
+\form#10:$ tp / (tp + fn) $
+\form#11:$ fn $
+\form#12:\[ (tp_0 + tp_1 + \ldots + tp_N) / (tp_0 + tp_1 + \ldots + tp_N + fn_0 + fn_1 + \ldots + fn_N), \]
+\form#13:$ fn_i $
+\form#14:\[ tp_0 / (tp_0 + fn_0), tp_1 / (tp_1 + fn_1), \ldots, tp_N / (tp_N + fn_N), \]
+\form#15:\[ f(x|\theta) = \frac{1}{2 \theta}\exp\left(-\frac{\|x - \mu\|}{\theta}\right) \]
+\form#16:$\theta$
+\form#17:$\mu$
+\form#18:\[ d(a, b) = \frac{a^T b}{|| a || || b ||} \]
+\form#19:\[ K(x, y) = \max \{0, 1 - || x - y ||^2_2 / b^2 \} \]
+\form#20:$ b $
+\form#21:$ K(x, y) $
+\form#22:$ x $
+\form#23:$ y $
+\form#24:\[ \int \int K(x, y) g(x) g(y) dx dy \ge 0 \]
+\form#25:$ g(x) $
+\form#26:$ \mu $
+\form#27:\[ K(x, y) = \exp(-\frac{|| x - y ||^2}{2 \mu^2}). \]
+\form#28:$ \gamma = -\frac{1}{2 \mu^2} $
+\form#29:$ s $
+\form#30:$ t $
+\form#31:\[ K(x, y) = \tanh(s <x, y> + t) \]
+\form#32:\[ K(x, y) = \exp(-\frac{|| x - y ||}{\mu}). \]
+\form#33:\[ K(x, y) = x^T y \]
+\form#34:$ degree $
+\form#35:$ offset $
+\form#36:\[ K(x, y) = (x^T * y + offset) ^ {degree}. \]
+\form#37:\[ K(x, y) = \max \{ 0, 1 - \frac{|| x - y ||_2}{b} \} \]
+\form#38:$ W = x (x^T x)^{-0.5} $
+\form#39:\[ d(x, y) = \sqrt{ K(x, x) + K(y, y) - 2K(x, y) }. \]
+\form#40:$ n $
+\form#41:\[ d(x, y) = \left( \sum_{i = 1}^{n} | x_i - y_i |^p \right)^{\frac{1}{p}}. \]
+\form#42:$ d(x, y) $
+\form#43:\[ d(x, y) = \sum_{i = 1}^{n} | x_i - y_i |^p \]
+\form#44:$ Q $
+\form#45:$ d $
+\form#46:\[ d(x, y) = \sqrt{(x - y)^T Q (x - y)} \]
+\form#47:\[ d(x, y) = (x - y)^T Q (x - y) \]
+\form#48:$n$
+\form#49:$ \Lambda $
+\form#50:\[ \sum_{n=1}^{\Lambda}\omega_n = \omega_n + \rho, \]
+\form#51:$ \rho $
+\form#52:$ v $
+\form#53:\[ s:=arg\min_{s\in D} <s, v> \]
+\form#54:$ D $
+\form#55:$ p=1 $
+\form#56:$ k = arg\max_j |v_j|$
+\form#57:\[ s_k = -sign(v_k), \qquad s_j = 0, j\neq k. \]
+\form#58:$ 1<p<\infty $
+\form#59:\[ s_j = -sign(v_j) |v_j|^{p-1} \]
+\form#60:$ p=\infty $
+\form#61:\[ s_j = -sign(v_j) \]
+\form#62:$ \alpha $
+\form#63:$ j $
+\form#64:$ f $
+\form#65:$ k $
+\form#66:\[ s_k:= arg\min_{s\in D} <s_k, \nabla f(x_k)> \]
+\form#67:\[ x_{k+1} := (1-\gamma) x_k + \gamma s_k \]
+\form#68:$ \gamma \in (0, 1) $
+\form#69:\[ x_{k+1}:= arg\min_{x\in conv(s_0, \cdots, s_k)} f(x) \]
+\form#70:$ \epsilon $
+\form#71:\[ g(x):= \max_{s\in D} <x-s, \nabla f(x)> \quad \leq \epsilon, \]
+\form#72:$ g(x) \geq f(x) - f(x^*) $
+\form#73:$ x^* $
+\form#74:$ x-> 0.5 * || Ax - b ||_2^2 $
+\form#75:$ f(x) = 0.5 * ||Ax - b||_2^2 $
+\form#76:$ A $
+\form#77:$ f(x) $
+\form#78:$ \nabla f(x) = A^T(Ax - b) $
+\form#79:$ f(x) = (x1 - 0.1)^2 + (x2 - 0.2)^2 + (x3 - 0.3)^2 $
+\form#80:$ \gamma = \frac{2}{k+2} $
+\form#81:\[ x_{k+1} = (1-\gamma) x_k + \gamma s \]
+\form#82:$ x_{k+1} = (1-\gamma)x_k + \gamma s $
+\form#83:$ \gamma = 2/(k+2) $
+\form#84:\[ A_{j + 1} = A_j + \alpha \nabla F(A) \]
+\form#85:$ F $
+\form#86:\[ | F(A_{j + 1}) - F(A_j) | < \epsilon. \]
+\form#87:$\epsilon$
+\form#88:\[ f(A) = \sum_{i = 0}^{n} f_i(A) \]
+\form#89:$ \{ f_{i0}(A), f_{i1}(A), \ldots, f_{i(m - 1)}(A) $
+\form#90:$ m $
+\form#91:\[ A_{j + 1} = A_j + \alpha \left(\sum_{k = 0}^{m - 1} \nabla f_{ik}(A) \right) \]
+\form#92:$ \gamma $
+\form#93:\begin{eqnarray*} r_t &=& (1 - \gamma) f'(\Delta_t)^2 + \gamma r_{t - 1} \\ v_{t + 1} &=& \frac{\alpha}{\sqrt{r_t}}f'(\Delta_t) \\ \Delta_{t + 1} &=& \Delta_t - v_{t + 1} \end{eqnarray*}
+\form#94:\[ T_{n+1} = (1-\lambda) T_{n} \]
+\form#95:$ 0<\lambda<1 $
+\form#96:$ \lambda $
+\form#97:$ \alpha = (-1 \lambda) $
+\form#98:$ f_i(A) $
+\form#99:$ f_i(A)$
+\form#100:$ j$
+\form#101:\[ | f(A_{j + n}) - f(A_j) | < \epsilon. \]
+\form#102:$ g_{\text{clipped}} = \max(g_{\text{min}}, \min(g_{\text{min}}, g))) $
+\form#103:\[ A_{j + 1} = A_j + \alpha \nabla f_i(A) \]
+\form#104:$ V \approx WH $
+\form#105:$ \sqrt{\sum_i \sum_j(V-WH)^2} $
+\form#106:\[ W^T = \frac{H V^T}{H H^T} \]
+\form#107:\[ H = \frac{W^T V}{W^T W} \]
+\form#108:\[ W_{ia} \leftarrow W_{ia} \frac{(VH^T)_{ia}}{(WHH^T)_{ia}} \]
+\form#109:\[ H_{a\mu} \leftarrow H_{a\mu} \frac{(W^T V)_{a\mu}}{(W^T WH)_{a\mu}} \]
+\form#110:\[ \sum_i \sum_j (V_{ij} \log\frac{V_{ij}}{(W H)_{ij}} - V_{ij} + (W H)_{ij}) \]
+\form#111:\[ W_{ia} \leftarrow W_{ia} \frac{\sum_{\mu} H_{a\mu} V_{i\mu} / (W H)_{i\mu}} {\sum_{\nu} H_{a\nu}} \]
+\form#112:\[ H_{a\mu} \leftarrow H_{a\mu} \frac{\sum_{i} W_{ia} V_{i\mu}/(WH)_{i\mu}} {\sum_{k} H_{ka}} \]
+\form#113:\begin{eqnarray*} f(x) &=& x \\ f'(x) &=& 1 \end{eqnarray*}
+\form#114:\begin{eqnarray*} f(x) &=& \frac{1}{1 + e^{-x}} \\ f'(x) &=& f(x) * (1 - f(x)) \\ f^{-1}(y) &=& ln(\frac{y}{1-y}) \end{eqnarray*}
+\form#115:\begin{eqnarray*} f(x) &=& \max(0, x) \\ f'(x) &=& \left\{ \begin{array}{lr} 1 & : x > 0 \\ 0 & : x \le 0 \end{array} \right. \end{eqnarray*}
+\form#116:\begin{eqnarray*} f(x) &=& \ln(1 + e^{x}) \\ f'(x) &=& \frac{1}{1 + e^{-x}} \\ f^{-1}(y) &=& \ln(e^{y} - 1) \end{eqnarray*}
+\form#117:\begin{eqnarray*} f(x) &=& \frac{x}{1 + |x|} \\ f'(x) &=& (1 - |x|)^2 \\ f(x) &=& \left\{ \begin{array}{lr} -\frac{y}{y-1} & : x > 0 \\ \frac{x}{1 + x} & : x \le 0 \end{array} \right. \end{eqnarray*}
+\form#118:\begin{eqnarray*} f(x) &=& \frac{e^x - e^{-x}}{e^x + e^{-x}} \\ f'(x) &=& 1 - \tanh^2(x) \\ f^{-1}(x) &=& \arctan(x) \end{eqnarray*}
+\form#119:\begin{eqnarray*} \overline{s} &=& f^{-1}(\overline{t}) \\ \Theta^{1}_{p} &\le& \overline{s} \sqrt{\frac{3}{I \sum_{i = 1}^{I} (x_{ip}^2)}} \\ \Theta^1 &=& min(\Theta_{p}^{1}); p=1,2,..,P \\ -\Theta^{1} \le w_{i}^{1} &\le& \Theta^{1} \end{eqnarray*}
+\form#120:\begin{eqnarray*} \gamma &\le& w_i \le \gamma \\ \beta &=& 0.7H^{\frac{1}{I}} \\ n &=& \sqrt{\sum_{i=0}{I}w_{i}^{2}} \\ w_i &=& \frac{\beta w_i}{n} \end{eqnarray*}
+\form#121:\begin{eqnarray*} b &=& |F^{-1}(1 - \epsilon) - f^{-1}(\epsilon)| \\ \hat{w} &=& \frac{b}{k \cdot n} \\ \gamma &\le& a_i \le \gamma \\ w_i &=& \hat{w} \cdot \sqrt{a_i + 1} \end{eqnarray*}
+\form#122:\begin{eqnarray*} f(x) &=& \left\{ \begin{array}{lr} x & : x > 0 \\ alpha(e^x - 1) & : x \le 0 \end{array} \right. \\ f'(x) &=& \left\{ \begin{array}{lr} 1 & : x > 0 \\ y + alpha & : x \le 0 \end{array} \right. \end{eqnarray*}
+\form#123:\begin{eqnarray*} f(x) &=& \left\{ \begin{array}{lr} max & : x > maxValue \\ min & : x \le minValue \\ x & : otherwise \end{array} \right. \\ f'(x) &=& \left\{ \begin{array}{lr} 0 & : x > maxValue \\ 0 & : x \le minValue \\ 1 & : otherwise \end{array} \right. \end{eqnarray*}
+\form#124:\begin{eqnarray*} f(x) &=& \max(x, alpha*x) \\ f'(x) &=& \left\{ \begin{array}{lr} 1 & : x > 0 \\ alpha & : x \le 0 \end{array} \right. \end{eqnarray*}
+\form#125:\[ \min_{\beta} 0.5 || X \beta - y ||_2^2 + 0.5 \lambda_2 || \beta ||_2^2 \]
+\form#126:$ ||\beta||_1 <= \tau $
+\form#127:$ X $
+\form#128:\[ \min_{\beta} 0.5 || X \beta - y ||_2^2 + \lambda_1 || \beta ||_1 + 0.5 \lambda_2 || \beta ||_2^2 \]
+\form#129:$ \beta $
+\form#130:$ \lambda_1 > 0 $
+\form#131:$ \lambda_2 = 0 $
+\form#132:$ \lambda_2 > 0 $
+\form#133:$ \lambda_1 = 0 $
+\form#134:$ \lambda_1 $
+\form#135:\[ (1 / n) * \| y - X B \|^2_2 \]
+\form#136:$ B $
+\form#137:\[ \min_{D,Z} 0.5 ||X - D Z||_{F}^2\ + \lambda_1 \sum_{i=1}^m ||Z_i||_1 + 0.5 \lambda_2 \sum_{i=1}^m ||Z_i||_2^2 \]
+\form#138:$ ||D_j||_2 <= 1 $
+\form#139:$ 1 <= j <= k $
+\form#140:$ lambda_1 > 0 $
+\form#141:$ lambda_2 = 0 $
+\form#142:$(0, 1)$
+\form#143:$(3, 1)$
+\form#144:$(5, -5)$
+\form#145:$ C = X^T X $
+\form#146:$ C = X X^T $
+\form#147:$R$
+\form#148:$Q$
+\form#149:$k$
+\form#150:\[ \operatorname{k-argmax}_{p_r \in R} d(p_q, p_r). \]
+\form#151:$m$
+\form#152:$V \in \Re^{n \times m}$
+\form#153:$V_{ij}$
+\form#154:$i$
+\form#155:$j$
+\form#156:$V$
+\form#157:$V \approx WH$
+\form#158:$W$
+\form#159:$H$
+\form#160:$\alpha$
+\form#161:$S$
+\form#162:$\mathbf{R}^d$
+\form#163:$kd$
+\form#164:$n-1 \times 3 $
+\form#165:$\log N$
+\form#166:$N$
+\form#167:$O(N^2)$
+\form#168:\[ \arg\max_{p_r \in R} K(p_q, p_r) \]
+\form#169:$p_q \in Q$
+\form#170:$K(\cdot, \cdot)$
+\form#171:$ x_i $
+\form#172:$ c_j $
+\form#173:$ j \le k $
+\form#174:\[ \sum_{j = 1}^{k} \sum_{x_i \in c_j} \| x_i - \mu_j \|^2 \]
+\form#175:$\mu_j$
+\form#176:$c_j$
+\form#177:$x_i$
+\form#178:$X$
+\form#179:$O(kN)$
+\form#180:$\mathbf{x_i}, 0 \le i < n$
+\form#181:$d$
+\form#182:$y_i, 0 \le i < n$
+\form#183:$\beta_i, 0 \le i \le d$
+\form#184:\[ y_i = \beta_0 + \displaystyle\sum_{j = 1}^{d} \beta_j x_{ij} \]
+\form#185:$\mathbf{x_i}$
+\form#186:$y_i$
+\form#187:$\mathbf{X}$
+\form#188:$\mathbf{y}$
+\form#189:\[ \mathbf{y} = \mathbf{X} \mathbf{\beta} + \beta_0 \]
+\form#190:$\mathbf{\beta}$
+\form#191:$\beta_0$
+\form#192:$\beta_1$
+\form#193:$\beta_2$
+\form#194:$y$
+\form#195:$f(y)=0+1x_1$
+\form#196:$x_1$
+\form#197:\[ \mathbf{X}' \mathbf{X} \]
+\form#198:\[ \mathbf{X}' \mathbf{X} + \lambda \mathbf{I} \]
+\form#199:$\mathbf{I}$
+\form#200:$\lambda$
+\form#201:$\mathcal{K}(\cdot, \cdot)$
+\form#202:$\mathcal{K}(a, b)$
+\form#203:$ K(x, x) = 1 \; \forall x $
+\form#204:$d(\cdot, \cdot)$
+\form#205:$d(a, b)$
+\form#206:$ S \in \mathcal{R}^{N \times d} $
+\form#207:$\mathcal{R}^d$
+\form#208:$c$
+\form#209:$p$
+\form#210:$d(p, c) - \lambda$

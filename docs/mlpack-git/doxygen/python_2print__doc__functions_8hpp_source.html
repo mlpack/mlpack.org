@@ -1,0 +1,117 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">master</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_44a936ef30fc126706c6284a2fc0c990.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_7808eba2b1d1a419326241ed839b4c84.html">bindings</a></li><li class="navelem"><a class="el" href="dir_c021fde7de128a22d216c6f0a3fbb630.html">python</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">print_doc_functions.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="python_2print__doc__functions_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef MLPACK_BINDINGS_PYTHON_PRINT_DOC_FUNCTIONS_HPP</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define MLPACK_BINDINGS_PYTHON_PRINT_DOC_FUNCTIONS_HPP</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="hyphenate__string_8hpp.html">mlpack/core/util/hyphenate_string.hpp</a>&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>bindings {</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>python {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">inline</span> <a class="code" href="bindings_2matlab_2CMakeLists_8txt.html#aadb9418f4ec551d8476a44532f0acf86">std::string</a> <a class="code" href="namespacemlpack_1_1bindings_1_1python.html#a0d643eb3c0bdd232a1c6e50fbcb943d4">PrintValue</a>(<span class="keyword">const</span> T&amp; value, <span class="keywordtype">bool</span> quotes);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// Special overload for booleans.</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span>&lt;&gt;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">inline</span> <a class="code" href="bindings_2matlab_2CMakeLists_8txt.html#aadb9418f4ec551d8476a44532f0acf86">std::string</a> <a class="code" href="namespacemlpack_1_1bindings_1_1python.html#a0d643eb3c0bdd232a1c6e50fbcb943d4">PrintValue</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; value, <span class="keywordtype">bool</span> quotes);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// Recursion base case.</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">inline</span> <a class="code" href="bindings_2matlab_2CMakeLists_8txt.html#aadb9418f4ec551d8476a44532f0acf86">std::string</a> <a class="code" href="namespacemlpack_1_1bindings_1_1python.html#aee67e03f9f9ba1b8e7a30d1f160b464c">PrintInputOptions</a>();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Args&gt;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<a class="code" href="bindings_2matlab_2CMakeLists_8txt.html#aadb9418f4ec551d8476a44532f0acf86">std::string</a> <a class="code" href="namespacemlpack_1_1bindings_1_1python.html#aee67e03f9f9ba1b8e7a30d1f160b464c">PrintInputOptions</a>(<span class="keyword">const</span> <a class="code" href="bindings_2matlab_2CMakeLists_8txt.html#aadb9418f4ec551d8476a44532f0acf86">std::string</a>&amp; paramName,</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                              <span class="keyword">const</span> T&amp; value,</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                              Args... args);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">// Recursion base case.</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">inline</span> <a class="code" href="bindings_2matlab_2CMakeLists_8txt.html#aadb9418f4ec551d8476a44532f0acf86">std::string</a> <a class="code" href="namespacemlpack_1_1bindings_1_1python.html#a4d147955dd7f5d654e112998d3ca51ca">PrintOutputOptions</a>();</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Args&gt;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<a class="code" href="bindings_2matlab_2CMakeLists_8txt.html#aadb9418f4ec551d8476a44532f0acf86">std::string</a> <a class="code" href="namespacemlpack_1_1bindings_1_1python.html#a4d147955dd7f5d654e112998d3ca51ca">PrintOutputOptions</a>(<span class="keyword">const</span> <a class="code" href="bindings_2matlab_2CMakeLists_8txt.html#aadb9418f4ec551d8476a44532f0acf86">std::string</a>&amp; paramName,</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                               <span class="keyword">const</span> T&amp; value,</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                               Args... args);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Args&gt;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<a class="code" href="bindings_2matlab_2CMakeLists_8txt.html#aadb9418f4ec551d8476a44532f0acf86">std::string</a> <a class="code" href="namespacemlpack_1_1bindings_1_1python.html#a6735678589340d2ecc4d8f0c8746179b">ProgramCall</a>(<span class="keyword">const</span> <a class="code" href="bindings_2matlab_2CMakeLists_8txt.html#aadb9418f4ec551d8476a44532f0acf86">std::string</a>&amp; <a class="code" href="namespacemlpack_1_1bindings_1_1python.html#a24d855d329269931b59bdf1b36706a88">programName</a>, Args... args);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">inline</span> <a class="code" href="bindings_2matlab_2CMakeLists_8txt.html#aadb9418f4ec551d8476a44532f0acf86">std::string</a> <a class="code" href="namespacemlpack_1_1bindings_1_1python.html#a2c09399575bb61ca91eb665e67f1a2f6">PrintModel</a>(<span class="keyword">const</span> <a class="code" href="bindings_2matlab_2CMakeLists_8txt.html#aadb9418f4ec551d8476a44532f0acf86">std::string</a>&amp; modelName);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">inline</span> <a class="code" href="bindings_2matlab_2CMakeLists_8txt.html#aadb9418f4ec551d8476a44532f0acf86">std::string</a> <a class="code" href="namespacemlpack_1_1bindings_1_1python.html#abfff680c34a36b80498b39de5c002bae">PrintDataset</a>(<span class="keyword">const</span> <a class="code" href="bindings_2matlab_2CMakeLists_8txt.html#aadb9418f4ec551d8476a44532f0acf86">std::string</a>&amp; datasetName);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">inline</span> <a class="code" href="bindings_2matlab_2CMakeLists_8txt.html#aadb9418f4ec551d8476a44532f0acf86">std::string</a> <a class="code" href="namespacemlpack_1_1bindings_1_1python.html#a439896a9de3ddc4c67f15b55b7dff2e3">ParamString</a>(<span class="keyword">const</span> <a class="code" href="bindings_2matlab_2CMakeLists_8txt.html#aadb9418f4ec551d8476a44532f0acf86">std::string</a>&amp; paramName);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;} <span class="comment">// namespace python</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;} <span class="comment">// namespace bindings</span></div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;} <span class="comment">// namespace mlpack</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">// Include implementation.</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#include &quot;print_doc_functions_impl.hpp&quot;</span></div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="namespacemlpack_1_1bindings_1_1python_html_a0d643eb3c0bdd232a1c6e50fbcb943d4"><div class="ttname"><a href="namespacemlpack_1_1bindings_1_1python.html#a0d643eb3c0bdd232a1c6e50fbcb943d4">mlpack::bindings::python::PrintValue</a></div><div class="ttdeci">std::string PrintValue(const T &amp;value, bool quotes)</div><div class="ttdoc">Given a parameter type, print the corresponding value. </div></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="add__to__po_8hpp_source.html#l00016">add_to_po.hpp:16</a></div></div>
+<div class="ttc" id="namespacemlpack_1_1bindings_1_1python_html_a4d147955dd7f5d654e112998d3ca51ca"><div class="ttname"><a href="namespacemlpack_1_1bindings_1_1python.html#a4d147955dd7f5d654e112998d3ca51ca">mlpack::bindings::python::PrintOutputOptions</a></div><div class="ttdeci">std::string PrintOutputOptions()</div></div>
+<div class="ttc" id="namespacemlpack_1_1bindings_1_1python_html_a6735678589340d2ecc4d8f0c8746179b"><div class="ttname"><a href="namespacemlpack_1_1bindings_1_1python.html#a6735678589340d2ecc4d8f0c8746179b">mlpack::bindings::python::ProgramCall</a></div><div class="ttdeci">std::string ProgramCall(const std::string &amp;programName, Args... args)</div><div class="ttdoc">Given a name of a binding and a variable number of arguments (and their contents), print the corresponding function call. </div></div>
+<div class="ttc" id="bindings_2matlab_2CMakeLists_8txt_html_aadb9418f4ec551d8476a44532f0acf86"><div class="ttname"><a href="bindings_2matlab_2CMakeLists_8txt.html#aadb9418f4ec551d8476a44532f0acf86">string</a></div><div class="ttdeci">test cpp RESULT_VARIABLE MEX_RESULT_TRASH OUTPUT_VARIABLE MEX_OUTPUT ERROR_VARIABLE MEX_ERROR_TRASH string(REGEX MATCH &quot;Warning: You are using&quot; MEX_WARNING &quot;${MEX_OUTPUT}&quot;) if(MEX_WARNING) string(REGEX REPLACE &quot;.*using [a-zA-Z]* version \[0-9.]*)[^\*\*&quot; &quot;\&quot; OTHER_COMPILER_VERSION &quot;$</div><div class="ttdef"><b >Definition:</b> <a href="bindings_2matlab_2CMakeLists_8txt_source.html#l00018">CMakeLists.txt:18</a></div></div>
+<div class="ttc" id="namespacemlpack_1_1bindings_1_1python_html_a2c09399575bb61ca91eb665e67f1a2f6"><div class="ttname"><a href="namespacemlpack_1_1bindings_1_1python.html#a2c09399575bb61ca91eb665e67f1a2f6">mlpack::bindings::python::PrintModel</a></div><div class="ttdeci">std::string PrintModel(const std::string &amp;modelName)</div><div class="ttdoc">Given the name of a model, print it. </div></div>
+<div class="ttc" id="namespacemlpack_1_1bindings_1_1python_html_a439896a9de3ddc4c67f15b55b7dff2e3"><div class="ttname"><a href="namespacemlpack_1_1bindings_1_1python.html#a439896a9de3ddc4c67f15b55b7dff2e3">mlpack::bindings::python::ParamString</a></div><div class="ttdeci">std::string ParamString(const std::string &amp;paramName)</div><div class="ttdoc">Given the parameter name, determine what it would actually be when passed to the command line...</div></div>
+<div class="ttc" id="namespacemlpack_1_1bindings_1_1python_html_a24d855d329269931b59bdf1b36706a88"><div class="ttname"><a href="namespacemlpack_1_1bindings_1_1python.html#a24d855d329269931b59bdf1b36706a88">mlpack::bindings::python::programName</a></div><div class="ttdeci">std::string programName</div></div>
+<div class="ttc" id="namespacemlpack_1_1bindings_1_1python_html_abfff680c34a36b80498b39de5c002bae"><div class="ttname"><a href="namespacemlpack_1_1bindings_1_1python.html#abfff680c34a36b80498b39de5c002bae">mlpack::bindings::python::PrintDataset</a></div><div class="ttdeci">std::string PrintDataset(const std::string &amp;datasetName)</div><div class="ttdoc">Given the name of a matrix, print it. </div></div>
+<div class="ttc" id="hyphenate__string_8hpp_html"><div class="ttname"><a href="hyphenate__string_8hpp.html">hyphenate_string.hpp</a></div></div>
+<div class="ttc" id="namespacemlpack_1_1bindings_1_1python_html_aee67e03f9f9ba1b8e7a30d1f160b464c"><div class="ttname"><a href="namespacemlpack_1_1bindings_1_1python.html#aee67e03f9f9ba1b8e7a30d1f160b464c">mlpack::bindings::python::PrintInputOptions</a></div><div class="ttdeci">std::string PrintInputOptions()</div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

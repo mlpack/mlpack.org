@@ -1,22 +1,50 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head >
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
-<meta name="generator" content="Doxygen 1.8.9.1"></meta>
-<title >mlpack: mlpack::lcc::LocalCoordinateCoding Class Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
-</link>
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
-</link>
-</head>
-<body >
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
 <div id="top">
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody >
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mlpack
    &#160;<span id="projectnumber">2.0.0</span>
    </div>
@@ -26,24 +54,14 @@
 </table>
 </div>
 
-
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
-      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
-      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span >Classes</span></a></li>
-      <li ><a href="files.html"><span >Files</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li ><a href="annotated.html"><span >Class&#160;List</span></a></li>
-      <li ><a href="classes.html"><span >Class&#160;Index</span></a></li>
-      <li ><a href="inherits.html"><span >Class&#160;Hierarchy</span></a></li>
-      <li ><a href="functions.html"><span >Class&#160;Members</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+</script>
+<div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul >
 <li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1lcc.html">lcc</a></li><li class="navelem"><a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html">LocalCoordinateCoding</a></li>  </ul>
@@ -71,36 +89,36 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a48792d234b6e69e97b898363c04935eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#a48792d234b6e69e97b898363c04935eb">LocalCoordinateCoding</a> (const size_t <a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#ae92dc9e4da959a3e51b14400d5e52b78">atoms</a>, const double <a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#a49bf691c98b92c8f4155da7b0c2e6f66">lambda</a>, const size_t <a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#a32c30877cc77b8f7d73e7359cf310ead">maxIterations</a>=0, const double <a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#a2a0dfbaca1f31964eea94e016a6e9de5">tolerance</a>=0.01)</td></tr>
 <tr class="memdesc:a48792d234b6e69e97b898363c04935eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the parameters to <a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html" title="An implementation of Local Coordinate Coding (LCC) that codes data which approximately lives on a man...">LocalCoordinateCoding</a>.  <a href="#a48792d234b6e69e97b898363c04935eb">More...</a><br /></br></td></tr>
 <tr class="separator:a48792d234b6e69e97b898363c04935eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac235dd36b80be03130a4394d0baec097"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#ac235dd36b80be03130a4394d0baec097">Atoms</a> () const </td></tr>
-<tr class="memdesc:ac235dd36b80be03130a4394d0baec097"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of atoms.  <a href="#ac235dd36b80be03130a4394d0baec097">More...</a><br /></br></td></tr>
-<tr class="separator:ac235dd36b80be03130a4394d0baec097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8792e3b9a066975e78aec3e3ab7c7c9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#aa8792e3b9a066975e78aec3e3ab7c7c9">Atoms</a> () const</td></tr>
+<tr class="memdesc:aa8792e3b9a066975e78aec3e3ab7c7c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of atoms.  <a href="#aa8792e3b9a066975e78aec3e3ab7c7c9">More...</a><br /></br></td></tr>
+<tr class="separator:aa8792e3b9a066975e78aec3e3ab7c7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60a74e6fad08f1843938633dfcff1381"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#a60a74e6fad08f1843938633dfcff1381">Atoms</a> ()</td></tr>
 <tr class="memdesc:a60a74e6fad08f1843938633dfcff1381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the number of atoms.  <a href="#a60a74e6fad08f1843938633dfcff1381">More...</a><br /></br></td></tr>
 <tr class="separator:a60a74e6fad08f1843938633dfcff1381"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc7221e38b65f3e2b0a604a6f8bfeb55"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#abc7221e38b65f3e2b0a604a6f8bfeb55">Dictionary</a> () const </td></tr>
-<tr class="memdesc:abc7221e38b65f3e2b0a604a6f8bfeb55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accessor for dictionary.  <a href="#abc7221e38b65f3e2b0a604a6f8bfeb55">More...</a><br /></br></td></tr>
-<tr class="separator:abc7221e38b65f3e2b0a604a6f8bfeb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add0749cce4f0269af11aba6379b868a1"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#add0749cce4f0269af11aba6379b868a1">Dictionary</a> () const</td></tr>
+<tr class="memdesc:add0749cce4f0269af11aba6379b868a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accessor for dictionary.  <a href="#add0749cce4f0269af11aba6379b868a1">More...</a><br /></br></td></tr>
+<tr class="separator:add0749cce4f0269af11aba6379b868a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a997b137f3e1e8a9535691a44be0f6511"><td class="memItemLeft" align="right" valign="top">arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#a997b137f3e1e8a9535691a44be0f6511">Dictionary</a> ()</td></tr>
 <tr class="memdesc:a997b137f3e1e8a9535691a44be0f6511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutator for dictionary.  <a href="#a997b137f3e1e8a9535691a44be0f6511">More...</a><br /></br></td></tr>
 <tr class="separator:a997b137f3e1e8a9535691a44be0f6511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f970678a35eb42195b423fd2e365736"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#a3f970678a35eb42195b423fd2e365736">Encode</a> (const arma::mat &amp;data, arma::mat &amp;codes)</td></tr>
 <tr class="memdesc:a3f970678a35eb42195b423fd2e365736"><td class="mdescLeft">&#160;</td><td class="mdescRight">Code each point via distance-weighted LARS.  <a href="#a3f970678a35eb42195b423fd2e365736">More...</a><br /></br></td></tr>
 <tr class="separator:a3f970678a35eb42195b423fd2e365736"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb64582fc383528cf464dd7f2b96ac55"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#aeb64582fc383528cf464dd7f2b96ac55">Lambda</a> () const </td></tr>
-<tr class="memdesc:aeb64582fc383528cf464dd7f2b96ac55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the L1 regularization parameter.  <a href="#aeb64582fc383528cf464dd7f2b96ac55">More...</a><br /></br></td></tr>
-<tr class="separator:aeb64582fc383528cf464dd7f2b96ac55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a250e2e48a60b31e432d17beddf1d820f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#a250e2e48a60b31e432d17beddf1d820f">Lambda</a> () const</td></tr>
+<tr class="memdesc:a250e2e48a60b31e432d17beddf1d820f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the L1 regularization parameter.  <a href="#a250e2e48a60b31e432d17beddf1d820f">More...</a><br /></br></td></tr>
+<tr class="separator:a250e2e48a60b31e432d17beddf1d820f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a519b7abbee7ada887265b1c157dd71bd"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#a519b7abbee7ada887265b1c157dd71bd">Lambda</a> ()</td></tr>
 <tr class="memdesc:a519b7abbee7ada887265b1c157dd71bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the L1 regularization parameter.  <a href="#a519b7abbee7ada887265b1c157dd71bd">More...</a><br /></br></td></tr>
 <tr class="separator:a519b7abbee7ada887265b1c157dd71bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6706bc0aa78c7c67f22e88575925439b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#a6706bc0aa78c7c67f22e88575925439b">MaxIterations</a> () const </td></tr>
-<tr class="memdesc:a6706bc0aa78c7c67f22e88575925439b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of iterations.  <a href="#a6706bc0aa78c7c67f22e88575925439b">More...</a><br /></br></td></tr>
-<tr class="separator:a6706bc0aa78c7c67f22e88575925439b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98db97f8fd90e9ee7ca4b8fd0671cff4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#a98db97f8fd90e9ee7ca4b8fd0671cff4">MaxIterations</a> () const</td></tr>
+<tr class="memdesc:a98db97f8fd90e9ee7ca4b8fd0671cff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of iterations.  <a href="#a98db97f8fd90e9ee7ca4b8fd0671cff4">More...</a><br /></br></td></tr>
+<tr class="separator:a98db97f8fd90e9ee7ca4b8fd0671cff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ea2d15ea475d3c772d6d3c12d42cb01"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#a8ea2d15ea475d3c772d6d3c12d42cb01">MaxIterations</a> ()</td></tr>
 <tr class="memdesc:a8ea2d15ea475d3c772d6d3c12d42cb01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the maximum number of iterations.  <a href="#a8ea2d15ea475d3c772d6d3c12d42cb01">More...</a><br /></br></td></tr>
 <tr class="separator:a8ea2d15ea475d3c772d6d3c12d42cb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a220f12be7413036948416e01dc980da9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#a220f12be7413036948416e01dc980da9">Objective</a> (const arma::mat &amp;data, const arma::mat &amp;codes, const arma::uvec &amp;adjacencies) const </td></tr>
-<tr class="memdesc:a220f12be7413036948416e01dc980da9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute objective function given the list of adjacencies.  <a href="#a220f12be7413036948416e01dc980da9">More...</a><br /></br></td></tr>
-<tr class="separator:a220f12be7413036948416e01dc980da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b03a574bebea58c28be315191c8a0f3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#a9b03a574bebea58c28be315191c8a0f3">Objective</a> (const arma::mat &amp;data, const arma::mat &amp;codes, const arma::uvec &amp;adjacencies) const</td></tr>
+<tr class="memdesc:a9b03a574bebea58c28be315191c8a0f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute objective function given the list of adjacencies.  <a href="#a9b03a574bebea58c28be315191c8a0f3">More...</a><br /></br></td></tr>
+<tr class="separator:a9b03a574bebea58c28be315191c8a0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a449cf87b14125311ff0c85988d2772d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#a449cf87b14125311ff0c85988d2772d2">OptimizeDictionary</a> (const arma::mat &amp;data, const arma::mat &amp;codes, const arma::uvec &amp;adjacencies)</td></tr>
 <tr class="memdesc:a449cf87b14125311ff0c85988d2772d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Learn dictionary by solving linear system.  <a href="#a449cf87b14125311ff0c85988d2772d2">More...</a><br /></br></td></tr>
 <tr class="separator:a449cf87b14125311ff0c85988d2772d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,9 +126,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac63b7db3482e5c652f909e5cd91d2abf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#ac63b7db3482e5c652f909e5cd91d2abf">Serialize</a> (Archive &amp;ar, const unsigned int)</td></tr>
 <tr class="memdesc:ac63b7db3482e5c652f909e5cd91d2abf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the model.  <a href="#ac63b7db3482e5c652f909e5cd91d2abf">More...</a><br /></br></td></tr>
 <tr class="separator:ac63b7db3482e5c652f909e5cd91d2abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c70ee7855f9d3cd7f3f5b8cc1d65245"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#a0c70ee7855f9d3cd7f3f5b8cc1d65245">Tolerance</a> () const </td></tr>
-<tr class="memdesc:a0c70ee7855f9d3cd7f3f5b8cc1d65245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the objective tolerance.  <a href="#a0c70ee7855f9d3cd7f3f5b8cc1d65245">More...</a><br /></br></td></tr>
-<tr class="separator:a0c70ee7855f9d3cd7f3f5b8cc1d65245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ad7cb6247d2fa999da0cc4431b866cf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#a9ad7cb6247d2fa999da0cc4431b866cf">Tolerance</a> () const</td></tr>
+<tr class="memdesc:a9ad7cb6247d2fa999da0cc4431b866cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the objective tolerance.  <a href="#a9ad7cb6247d2fa999da0cc4431b866cf">More...</a><br /></br></td></tr>
+<tr class="separator:a9ad7cb6247d2fa999da0cc4431b866cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a851f46b776d3c41ca5587dad046d998a"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#a851f46b776d3c41ca5587dad046d998a">Tolerance</a> ()</td></tr>
 <tr class="memdesc:a851f46b776d3c41ca5587dad046d998a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the objective tolerance.  <a href="#a851f46b776d3c41ca5587dad046d998a">More...</a><br /></br></td></tr>
 <tr class="separator:a851f46b776d3c41ca5587dad046d998a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,29 +162,12 @@ Private Attributes</h2></td></tr>
 </ul>
 <p >This problem is solved by an algorithm that alternates between a dictionary learning step and a sparse coding step. The dictionary learning step updates the dictionary D by solving a linear system (note that the objective is a positive definite quadratic program). The sparse coding step involves solving a large number of weighted l1-norm regularized linear regression problems problems; this can be done efficiently using LARS, an algorithm that can solve the LASSO (paper below).</p>
 <p >The papers are listed below.</p>
-<div class="fragment"><div class="line">@incollection{NIPS2009_0719,</div>
-<div class="line">  title = {Nonlinear Learning <span class="keyword">using</span> Local Coordinate Coding},</div>
-<div class="line">  author = {Kai Yu and Tong Zhang and Yihong Gong},</div>
-<div class="line">  booktitle = {Advances in Neural Information Processing Systems 22},</div>
-<div class="line">  editor = {Y. Bengio and D. Schuurmans and J. Lafferty and C. K. I. Williams</div>
-<div class="line">      and A. Culotta},</div>
-<div class="line">  pages = {2223--2231},</div>
-<div class="line">  year = {2009}</div>
-<div class="line">}</div>
-</div><div class="fragment"><div class="line">@article{efron2004least,</div>
-<div class="line">  title={Least angle regression},</div>
-<div class="line">  author={Efron, B. and Hastie, T. and Johnstone, I. and Tibshirani, R.},</div>
-<div class="line">  journal={The Annals of statistics},</div>
-<div class="line">  volume={32},</div>
-<div class="line">  number={2},</div>
-<div class="line">  pages={407--499},</div>
-<div class="line">  year={2004},</div>
-<div class="line">  publisher={Institute of Mathematical Statistics}</div>
-<div class="line">}</div>
-</div> 
-<p >Definition at line <a class="el" href="lcc_8hpp_source.html#l00089">89</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
+<div class="fragment"><div class="line">@incollection{NIPS2009_0719,</div><div class="line">  title = {Nonlinear Learning <span class="keyword">using</span> Local Coordinate Coding},</div><div class="line">  author = {Kai Yu and Tong Zhang and Yihong Gong},</div><div class="line">  booktitle = {Advances in Neural Information Processing Systems 22},</div><div class="line">  editor = {Y. Bengio and D. Schuurmans and J. Lafferty and C. K. I. Williams</div><div class="line">      and A. Culotta},</div><div class="line">  pages = {2223--2231},</div><div class="line">  year = {2009}</div><div class="line">}</div></div><div class="fragment"><div class="line">@article{efron2004least,</div><div class="line">  title={Least angle regression},</div><div class="line">  author={Efron, B. and Hastie, T. and Johnstone, I. and Tibshirani, R.},</div><div class="line">  journal={The Annals of statistics},</div><div class="line">  volume={32},</div><div class="line">  number={2},</div><div class="line">  pages={407--499},</div><div class="line">  year={2004},</div><div class="line">  publisher={Institute of Mathematical Statistics}</div><div class="line">}</div></div> 
+<p class="definition">Definition at line <a class="el" href="lcc_8hpp_source.html#l00089">89</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="acef0104111b0fb2dd6305e0b245b84c8"></a>
+<a id="acef0104111b0fb2dd6305e0b245b84c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acef0104111b0fb2dd6305e0b245b84c8">&#9670;&nbsp;</a></span>LocalCoordinateCoding() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">DictionaryInitializer</div><div class="default_argument"><div class="equals">=</div><div class="identifier">sparse_coding::DataDependentRandomInitializer</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -231,7 +232,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a48792d234b6e69e97b898363c04935eb"></a>
+<a id="a48792d234b6e69e97b898363c04935eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48792d234b6e69e97b898363c04935eb">&#9670;&nbsp;</a></span>LocalCoordinateCoding() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -282,7 +285,9 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac235dd36b80be03130a4394d0baec097"></a>
+<a id="aa8792e3b9a066975e78aec3e3ab7c7c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8792e3b9a066975e78aec3e3ab7c7c9">&#9670;&nbsp;</a></span>Atoms() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -305,13 +310,15 @@ Private Attributes</h2></td></tr>
 
 <p >Get the number of atoms. </p>
 
-<p >Definition at line <a class="el" href="lcc_8hpp_source.html#l00183">183</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lcc_8hpp_source.html#l00183">183</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
 
-<p >References <a class="el" href="lcc_8hpp_source.html#l00213">atoms</a>.</p>
+<p class="reference">References <a class="el" href="lcc_8hpp_source.html#l00213">atoms</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a60a74e6fad08f1843938633dfcff1381"></a>
+<a id="a60a74e6fad08f1843938633dfcff1381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60a74e6fad08f1843938633dfcff1381">&#9670;&nbsp;</a></span>Atoms() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -334,13 +341,15 @@ Private Attributes</h2></td></tr>
 
 <p >Modify the number of atoms. </p>
 
-<p >Definition at line <a class="el" href="lcc_8hpp_source.html#l00185">185</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lcc_8hpp_source.html#l00185">185</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
 
-<p >References <a class="el" href="lcc_8hpp_source.html#l00213">atoms</a>.</p>
+<p class="reference">References <a class="el" href="lcc_8hpp_source.html#l00213">atoms</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="abc7221e38b65f3e2b0a604a6f8bfeb55"></a>
+<a id="add0749cce4f0269af11aba6379b868a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add0749cce4f0269af11aba6379b868a1">&#9670;&nbsp;</a></span>Dictionary() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -363,13 +372,15 @@ Private Attributes</h2></td></tr>
 
 <p >Accessor for dictionary. </p>
 
-<p >Definition at line <a class="el" href="lcc_8hpp_source.html#l00188">188</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lcc_8hpp_source.html#l00188">188</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
 
-<p >References <a class="el" href="lcc_8hpp_source.html#l00216">dictionary</a>.</p>
+<p class="reference">References <a class="el" href="lcc_8hpp_source.html#l00216">dictionary</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a997b137f3e1e8a9535691a44be0f6511"></a>
+<a id="a997b137f3e1e8a9535691a44be0f6511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a997b137f3e1e8a9535691a44be0f6511">&#9670;&nbsp;</a></span>Dictionary() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -392,13 +403,15 @@ Private Attributes</h2></td></tr>
 
 <p >Mutator for dictionary. </p>
 
-<p >Definition at line <a class="el" href="lcc_8hpp_source.html#l00190">190</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lcc_8hpp_source.html#l00190">190</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
 
-<p >References <a class="el" href="lcc_8hpp_source.html#l00216">dictionary</a>.</p>
+<p class="reference">References <a class="el" href="lcc_8hpp_source.html#l00216">dictionary</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a3f970678a35eb42195b423fd2e365736"></a>
+<a id="a3f970678a35eb42195b423fd2e365736"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f970678a35eb42195b423fd2e365736">&#9670;&nbsp;</a></span>Encode()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -433,7 +446,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aeb64582fc383528cf464dd7f2b96ac55"></a>
+<a id="a250e2e48a60b31e432d17beddf1d820f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a250e2e48a60b31e432d17beddf1d820f">&#9670;&nbsp;</a></span>Lambda() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -456,13 +471,15 @@ Private Attributes</h2></td></tr>
 
 <p >Get the L1 regularization parameter. </p>
 
-<p >Definition at line <a class="el" href="lcc_8hpp_source.html#l00193">193</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lcc_8hpp_source.html#l00193">193</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
 
-<p >References <a class="el" href="lcc_8hpp_source.html#l00219">lambda</a>.</p>
+<p class="reference">References <a class="el" href="lcc_8hpp_source.html#l00219">lambda</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a519b7abbee7ada887265b1c157dd71bd"></a>
+<a id="a519b7abbee7ada887265b1c157dd71bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a519b7abbee7ada887265b1c157dd71bd">&#9670;&nbsp;</a></span>Lambda() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -485,13 +502,15 @@ Private Attributes</h2></td></tr>
 
 <p >Modify the L1 regularization parameter. </p>
 
-<p >Definition at line <a class="el" href="lcc_8hpp_source.html#l00195">195</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lcc_8hpp_source.html#l00195">195</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
 
-<p >References <a class="el" href="lcc_8hpp_source.html#l00219">lambda</a>.</p>
+<p class="reference">References <a class="el" href="lcc_8hpp_source.html#l00219">lambda</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a6706bc0aa78c7c67f22e88575925439b"></a>
+<a id="a98db97f8fd90e9ee7ca4b8fd0671cff4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98db97f8fd90e9ee7ca4b8fd0671cff4">&#9670;&nbsp;</a></span>MaxIterations() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -514,13 +533,15 @@ Private Attributes</h2></td></tr>
 
 <p >Get the maximum number of iterations. </p>
 
-<p >Definition at line <a class="el" href="lcc_8hpp_source.html#l00198">198</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lcc_8hpp_source.html#l00198">198</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
 
-<p >References <a class="el" href="lcc_8hpp_source.html#l00222">maxIterations</a>.</p>
+<p class="reference">References <a class="el" href="lcc_8hpp_source.html#l00222">maxIterations</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a8ea2d15ea475d3c772d6d3c12d42cb01"></a>
+<a id="a8ea2d15ea475d3c772d6d3c12d42cb01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ea2d15ea475d3c772d6d3c12d42cb01">&#9670;&nbsp;</a></span>MaxIterations() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -543,13 +564,15 @@ Private Attributes</h2></td></tr>
 
 <p >Modify the maximum number of iterations. </p>
 
-<p >Definition at line <a class="el" href="lcc_8hpp_source.html#l00200">200</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lcc_8hpp_source.html#l00200">200</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
 
-<p >References <a class="el" href="lcc_8hpp_source.html#l00222">maxIterations</a>.</p>
+<p class="reference">References <a class="el" href="lcc_8hpp_source.html#l00222">maxIterations</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a220f12be7413036948416e01dc980da9"></a>
+<a id="a9b03a574bebea58c28be315191c8a0f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b03a574bebea58c28be315191c8a0f3">&#9670;&nbsp;</a></span>Objective()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -583,7 +606,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a449cf87b14125311ff0c85988d2772d2"></a>
+<a id="a449cf87b14125311ff0c85988d2772d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a449cf87b14125311ff0c85988d2772d2">&#9670;&nbsp;</a></span>OptimizeDictionary()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -623,7 +648,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac63b7db3482e5c652f909e5cd91d2abf"></a>
+<a id="ac63b7db3482e5c652f909e5cd91d2abf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac63b7db3482e5c652f909e5cd91d2abf">&#9670;&nbsp;</a></span>Serialize()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -650,9 +677,13 @@ Private Attributes</h2></td></tr>
 
 <p >Serialize the model. </p>
 
+<p class="reference">Referenced by <a class="el" href="lcc_8hpp_source.html#l00205">Tolerance()</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a0c70ee7855f9d3cd7f3f5b8cc1d65245"></a>
+<a id="a9ad7cb6247d2fa999da0cc4431b866cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ad7cb6247d2fa999da0cc4431b866cf">&#9670;&nbsp;</a></span>Tolerance() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -675,13 +706,15 @@ Private Attributes</h2></td></tr>
 
 <p >Get the objective tolerance. </p>
 
-<p >Definition at line <a class="el" href="lcc_8hpp_source.html#l00203">203</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lcc_8hpp_source.html#l00203">203</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
 
-<p >References <a class="el" href="lcc_8hpp_source.html#l00224">tolerance</a>.</p>
+<p class="reference">References <a class="el" href="lcc_8hpp_source.html#l00224">tolerance</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a851f46b776d3c41ca5587dad046d998a"></a>
+<a id="a851f46b776d3c41ca5587dad046d998a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a851f46b776d3c41ca5587dad046d998a">&#9670;&nbsp;</a></span>Tolerance() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -704,13 +737,15 @@ Private Attributes</h2></td></tr>
 
 <p >Modify the objective tolerance. </p>
 
-<p >Definition at line <a class="el" href="lcc_8hpp_source.html#l00205">205</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lcc_8hpp_source.html#l00205">205</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
 
-<p >References <a class="el" href="lcc_8hpp_source.html#l00224">tolerance</a>.</p>
+<p class="reference">References <a class="el" href="classmlpack_1_1lcc_1_1LocalCoordinateCoding.html#ac63b7db3482e5c652f909e5cd91d2abf">Serialize()</a>, and <a class="el" href="lcc_8hpp_source.html#l00224">tolerance</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9634cdff4c7813236b91c50cc0da6dfd"></a>
+<a id="a9634cdff4c7813236b91c50cc0da6dfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9634cdff4c7813236b91c50cc0da6dfd">&#9670;&nbsp;</a></span>Train()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">DictionaryInitializer</div><div class="default_argument"><div class="equals">=</div><div class="identifier">sparse_coding::DataDependentRandomInitializer</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -747,7 +782,9 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ae92dc9e4da959a3e51b14400d5e52b78"></a>
+<a id="ae92dc9e4da959a3e51b14400d5e52b78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae92dc9e4da959a3e51b14400d5e52b78">&#9670;&nbsp;</a></span>atoms</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -767,13 +804,15 @@ Private Attributes</h2></td></tr>
 
 <p >Number of atoms in dictionary. </p>
 
-<p >Definition at line <a class="el" href="lcc_8hpp_source.html#l00213">213</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lcc_8hpp_source.html#l00213">213</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="lcc_8hpp_source.html#l00183">Atoms()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lcc_8hpp_source.html#l00183">Atoms()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4f5fb90cfeabac047fbc8197ee3dd53b"></a>
+<a id="a4f5fb90cfeabac047fbc8197ee3dd53b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f5fb90cfeabac047fbc8197ee3dd53b">&#9670;&nbsp;</a></span>dictionary</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -793,13 +832,15 @@ Private Attributes</h2></td></tr>
 
 <p >Dictionary (columns are atoms). </p>
 
-<p >Definition at line <a class="el" href="lcc_8hpp_source.html#l00216">216</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lcc_8hpp_source.html#l00216">216</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="lcc_8hpp_source.html#l00188">Dictionary()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lcc_8hpp_source.html#l00188">Dictionary()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a49bf691c98b92c8f4155da7b0c2e6f66"></a>
+<a id="a49bf691c98b92c8f4155da7b0c2e6f66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49bf691c98b92c8f4155da7b0c2e6f66">&#9670;&nbsp;</a></span>lambda</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -819,13 +860,15 @@ Private Attributes</h2></td></tr>
 
 <p >l1 regularization term. </p>
 
-<p >Definition at line <a class="el" href="lcc_8hpp_source.html#l00219">219</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lcc_8hpp_source.html#l00219">219</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="lcc_8hpp_source.html#l00193">Lambda()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lcc_8hpp_source.html#l00193">Lambda()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a32c30877cc77b8f7d73e7359cf310ead"></a>
+<a id="a32c30877cc77b8f7d73e7359cf310ead"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32c30877cc77b8f7d73e7359cf310ead">&#9670;&nbsp;</a></span>maxIterations</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -845,13 +888,15 @@ Private Attributes</h2></td></tr>
 
 <p >Maximum number of iterations during training. </p>
 
-<p >Definition at line <a class="el" href="lcc_8hpp_source.html#l00222">222</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lcc_8hpp_source.html#l00222">222</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="lcc_8hpp_source.html#l00198">MaxIterations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lcc_8hpp_source.html#l00198">MaxIterations()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2a0dfbaca1f31964eea94e016a6e9de5"></a>
+<a id="a2a0dfbaca1f31964eea94e016a6e9de5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a0dfbaca1f31964eea94e016a6e9de5">&#9670;&nbsp;</a></span>tolerance</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -871,9 +916,9 @@ Private Attributes</h2></td></tr>
 
 <p >Tolerance for main objective. </p>
 
-<p >Definition at line <a class="el" href="lcc_8hpp_source.html#l00224">224</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lcc_8hpp_source.html#l00224">224</a> of file <a class="el" href="lcc_8hpp_source.html">lcc.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="lcc_8hpp_source.html#l00203">Tolerance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lcc_8hpp_source.html#l00203">Tolerance()</a>.</p>
 
 </div>
 </div>
@@ -885,7 +930,16 @@ Private Attributes</h2></td></tr>
 <hr class="footer"></hr><address class="footer"><small >
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"></img>
-</a> 1.8.9.1
+</a> 1.8.13
 </small></address>
+</div>
 </body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
 </html>

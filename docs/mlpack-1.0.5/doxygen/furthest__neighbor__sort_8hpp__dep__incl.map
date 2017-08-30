@@ -1,6 +1,6 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$typedef_8hpp.html" title="src/mlpack/methods/neighbor_search/typedef.hpp" alt="" coords="35,83,376,111"/>
-<area shape="rect" id="node8" href="$ra__typedef_8hpp.html" title="src/mlpack/methods/rann/ra_typedef.hpp" alt="" coords="428,83,711,111"/>
-<area shape="rect" id="node5" href="$neighbor__search_8hpp.html" title="src/mlpack/methods/neighbor_search/neighbor_search.hpp" alt="" coords="5,161,405,189"/>
-<area shape="rect" id="node10" href="$ra__search_8hpp.html" title="src/mlpack/methods/rann/ra_search.hpp" alt="" coords="429,161,709,189"/>
+<map id="/var/www/www.mlpack.org/mlpack&#45;1.0.5/src/mlpack/methods/neighbor_search/sort_policies/furthest_neighbor_sort.hpp" name="/var/www/www.mlpack.org/mlpack&#45;1.0.5/src/mlpack/methods/neighbor_search/sort_policies/furthest_neighbor_sort.hpp">
+<area shape="rect" id="node2" href="$typedef_8hpp.html" title="/var/www/www.mlpack.org\l/mlpack&#45;1.0.5/src/mlpack\l/methods/neighbor_search\l/typedef.hpp" alt="" coords="5,139,185,209"/>
+<area shape="rect" id="node4" href="$ra__typedef_8hpp.html" title="/var/www/www.mlpack.org\l/mlpack&#45;1.0.5/src/mlpack\l/methods/rann/ra_typedef.hpp" alt="" coords="210,146,405,202"/>
+<area shape="rect" id="node3" href="$neighbor__search_8hpp.html" title="/var/www/www.mlpack.org\l/mlpack&#45;1.0.5/src/mlpack\l/methods/neighbor_search\l/neighbor_search.hpp" alt="" coords="5,257,185,328"/>
+<area shape="rect" id="node5" href="$ra__search_8hpp.html" title="/var/www/www.mlpack.org\l/mlpack&#45;1.0.5/src/mlpack\l/methods/rann/ra_search.hpp" alt="" coords="212,265,403,321"/>
 </map>

@@ -1,10 +1,10 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classmlpack_1_1optimization_1_1LRSDPFunction.html" title="The objective function that LRSDP is trying to optimize." alt="" coords="315,69,573,97"/>
-<area shape="rect" id="node4" href="$classmlpack_1_1optimization_1_1AugLagrangian.html" title="mlpack::optimization::AugLagrangian\&lt; LRSDPFunction \&gt;" alt="" coords="2424,146,2808,174"/>
-<area shape="rect" id="node10" href="$classmlpack_1_1optimization_1_1AugLagrangianFunction.html" title="mlpack::optimization::AugLagrangianFunction\&lt; LRSDPFunction \&gt;" alt="" coords="1113,186,1551,214"/>
-<area shape="rect" id="node6" href="$classmlpack_1_1optimization_1_1L__BFGS.html" title="The generic L&#45;BFGS optimizer, which uses a back&#45;tracking line search algorithm to minimize a function..." alt="" coords="283,285,605,313"/>
-<area shape="rect" id="node16" href="$classmlpack_1_1optimization_1_1L__BFGS.html" title="mlpack::optimization::L_BFGS\&lt; AugLagrangianFunction\&lt; LRSDPFunction \&gt; \&gt;" alt="" coords="1735,234,2249,262"/>
-<area shape="rect" id="node20" href="$classmlpack_1_1optimization_1_1AugLagrangian.html" title="The AugLagrangian class implements the Augmented Lagrangian method of optimization." alt="" coords="1785,341,2199,369"/>
-<area shape="rect" id="node23" href="$classmlpack_1_1optimization_1_1L__BFGS.html" title="mlpack::optimization::L_BFGS\&lt; AugLagrangianFunction\&lt; LagrangianFunction \&gt; \&gt;" alt="" coords="1060,378,1604,406"/>
-<area shape="rect" id="node13" href="$classmlpack_1_1optimization_1_1AugLagrangianFunction.html" title="This is a utility class used by AugLagrangian, meant to wrap a LagrangianFunction into a function usa..." alt="" coords="211,202,677,230"/>
+<map id="mlpack::optimization::LRSDP" name="mlpack::optimization::LRSDP">
+<area shape="rect" id="node2" href="$classmlpack_1_1optimization_1_1AugLagrangian.html" title="mlpack::optimization\l::AugLagrangian\&lt; mlpack\l::optimization::LRSDPFunction \&gt;" alt="" coords="1408,302,1623,358"/>
+<area shape="rect" id="node3" href="$classmlpack_1_1optimization_1_1L__BFGS.html" title="The generic L&#45;BFGS optimizer, which uses a back&#45;tracking line search algorithm to minimize a function..." alt="" coords="205,121,388,163"/>
+<area shape="rect" id="node5" href="$classmlpack_1_1optimization_1_1L__BFGS.html" title="mlpack::optimization\l::L_BFGS\&lt; AugLagrangianFunction\l\&lt; mlpack::optimization::LRSDPFunction \&gt; \&gt;" alt="" coords="941,263,1223,319"/>
+<area shape="rect" id="node9" href="$classmlpack_1_1optimization_1_1AugLagrangian.html" title="The AugLagrangian class implements the Augmented Lagrangian method of optimization. " alt="" coords="987,127,1177,183"/>
+<area shape="rect" id="node10" href="$classmlpack_1_1optimization_1_1L__BFGS.html" title="mlpack::optimization\l::L_BFGS\&lt; AugLagrangianFunction\l\&lt; LagrangianFunction \&gt; \&gt;" alt="" coords="589,37,817,93"/>
+<area shape="rect" id="node6" href="$classmlpack_1_1optimization_1_1AugLagrangianFunction.html" title="mlpack::optimization\l::AugLagrangianFunction\l\&lt; mlpack::optimization\l::LRSDPFunction \&gt;" alt="" coords="620,323,787,393"/>
+<area shape="rect" id="node7" href="$classmlpack_1_1optimization_1_1LRSDPFunction.html" title="The objective function that LRSDP is trying to optimize. " alt="" coords="225,411,368,452"/>
+<area shape="rect" id="node8" href="$classmlpack_1_1optimization_1_1AugLagrangianFunction.html" title="This is a utility class used by AugLagrangian, meant to wrap a LagrangianFunction into a function usa..." alt="" coords="213,314,380,370"/>
 </map>

@@ -1,8 +1,8 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$kmeans_8hpp.html" title="src/mlpack/methods/kmeans/kmeans.hpp" alt="" coords="173,83,464,111"/>
-<area shape="rect" id="node5" href="$em__fit_8hpp.html" title="src/mlpack/methods/gmm/em_fit.hpp" alt="" coords="5,161,267,189"/>
-<area shape="rect" id="node9" href="$kmeans__selection_8hpp.html" title="src/mlpack/methods/nystroem_method/kmeans_selection.hpp" alt="" coords="291,161,712,189"/>
-<area shape="rect" id="node7" href="$gmm_8hpp.html" title="src/mlpack/methods/gmm/gmm.hpp" alt="" coords="8,238,264,266"/>
-<area shape="rect" id="node11" href="$kernel__pca_2kernel__rules_2nystroem__method_8hpp.html" title="src/mlpack/methods/kernel_pca/kernel_rules/nystroem_method.hpp" alt="" coords="297,315,753,343"/>
-<area shape="rect" id="node13" href="$nystroem__method_2nystroem__method_8hpp.html" title="src/mlpack/methods/nystroem_method/nystroem_method.hpp" alt="" coords="439,238,863,266"/>
+<map id="src/mlpack/methods/kmeans/max_variance_new_cluster.hpp" name="src/mlpack/methods/kmeans/max_variance_new_cluster.hpp">
+<area shape="rect" id="node2" href="$kmeans_8hpp.html" title="src/mlpack/methods\l/kmeans/kmeans.hpp" alt="" coords="94,109,241,151"/>
+<area shape="rect" id="node3" href="$em__fit_8hpp.html" title="src/mlpack/methods\l/gmm/em_fit.hpp" alt="" coords="5,206,145,247"/>
+<area shape="rect" id="node5" href="$kmeans__selection_8hpp.html" title="src/mlpack/methods\l/nystroem_method/kmeans\l_selection.hpp" alt="" coords="169,199,349,255"/>
+<area shape="rect" id="node4" href="$gmm_8hpp.html" title="src/mlpack/methods\l/gmm/gmm.hpp" alt="" coords="5,310,145,351"/>
+<area shape="rect" id="node6" href="$kernel__pca_2kernel__rules_2nystroem__method_8hpp.html" title="src/mlpack/methods\l/kernel_pca/kernel_rules\l/nystroem_method.hpp" alt="" coords="205,407,367,463"/>
+<area shape="rect" id="node7" href="$nystroem__method_2nystroem__method_8hpp.html" title="src/mlpack/methods\l/nystroem_method/nystroem\l_method.hpp" alt="" coords="259,303,447,359"/>
 </map>

@@ -1,22 +1,50 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head >
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
-<meta name="generator" content="Doxygen 1.8.9.1"></meta>
-<title >mlpack: mlpack::amf::SVDIncompleteIncrementalLearning Class Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
-</link>
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
-</link>
-</head>
-<body >
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
 <div id="top">
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody >
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mlpack
    &#160;<span id="projectnumber">2.0.0</span>
    </div>
@@ -26,24 +54,14 @@
 </table>
 </div>
 
-
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
-      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
-      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span >Classes</span></a></li>
-      <li ><a href="files.html"><span >Files</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li ><a href="annotated.html"><span >Class&#160;List</span></a></li>
-      <li ><a href="classes.html"><span >Class&#160;Index</span></a></li>
-      <li ><a href="inherits.html"><span >Class&#160;Hierarchy</span></a></li>
-      <li ><a href="functions.html"><span >Class&#160;Members</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+</script>
+<div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul >
 <li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1amf.html">amf</a></li><li class="navelem"><a class="el" href="classmlpack_1_1amf_1_1SVDIncompleteIncrementalLearning.html">SVDIncompleteIncrementalLearning</a></li>  </ul>
@@ -97,19 +115,14 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This class computes SVD using incomplete incremental batch learning, as described in the following paper: </p>
-<div class="fragment"><div class="line">@techreport{ma2008guide,</div>
-<div class="line">  title={A Guide to Singular Value Decomposition <span class="keywordflow">for</span> Collaborative</div>
-<div class="line">      Filtering},</div>
-<div class="line">  author={Ma, Chih-Chao},</div>
-<div class="line">  year={2008},</div>
-<div class="line">  institution={Department of Computer Science, National Taiwan University}</div>
-<div class="line">}</div>
-</div><p >This class implements 'Algorithm 2' as given in the paper. Incremental learning modifies only some feature values in W and H after scanning part of the input matrix (V). This differs from batch learning, which considers every element in V for each update of W and H. The regularization technique is also different: in incomplete incremental learning, regularization takes into account the number of elements in a given column of V.</p>
+<div class="fragment"><div class="line">@techreport{ma2008guide,</div><div class="line">  title={A Guide to Singular Value Decomposition <span class="keywordflow">for</span> Collaborative</div><div class="line">      Filtering},</div><div class="line">  author={Ma, Chih-Chao},</div><div class="line">  year={2008},</div><div class="line">  institution={Department of Computer Science, National Taiwan University}</div><div class="line">}</div></div><p >This class implements 'Algorithm 2' as given in the paper. Incremental learning modifies only some feature values in W and H after scanning part of the input matrix (V). This differs from batch learning, which considers every element in V for each update of W and H. The regularization technique is also different: in incomplete incremental learning, regularization takes into account the number of elements in a given column of V.</p>
 <dl class="section see"><dt >See also</dt><dd ><a class="el" href="classmlpack_1_1amf_1_1SVDBatchLearning.html" title="This class implements SVD batch learning with momentum. ">SVDBatchLearning</a> </dd></dl>
 
-<p >Definition at line <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00053">53</a> of file <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html">svd_incomplete_incremental_learning.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00053">53</a> of file <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html">svd_incomplete_incremental_learning.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2db9d35f7cecdf1b1245c5b8dd2ea399"></a>
+<a id="a2db9d35f7cecdf1b1245c5b8dd2ea399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2db9d35f7cecdf1b1245c5b8dd2ea399">&#9670;&nbsp;</a></span>SVDIncompleteIncrementalLearning()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -157,12 +170,14 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p >Definition at line <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00063">63</a> of file <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html">svd_incomplete_incremental_learning.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00063">63</a> of file <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html">svd_incomplete_incremental_learning.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a16a86dc84685cc29941afa0dea170779"></a>
+<a id="a16a86dc84685cc29941afa0dea170779"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16a86dc84685cc29941afa0dea170779">&#9670;&nbsp;</a></span>HUpdate()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -212,13 +227,15 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p >Definition at line <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00129">129</a> of file <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html">svd_incomplete_incremental_learning.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00129">129</a> of file <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html">svd_incomplete_incremental_learning.hpp</a>.</p>
 
-<p >References <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00164">currentUserIndex</a>, <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00161">kh</a>, and <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00157">u</a>.</p>
+<p class="reference">References <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00164">currentUserIndex</a>, <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00161">kh</a>, and <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00157">u</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac1b0692150d434d5921196b99d2ea786"></a>
+<a id="ac1b0692150d434d5921196b99d2ea786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1b0692150d434d5921196b99d2ea786">&#9670;&nbsp;</a></span>Initialize()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -261,13 +278,15 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p >Definition at line <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00080">80</a> of file <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html">svd_incomplete_incremental_learning.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00080">80</a> of file <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html">svd_incomplete_incremental_learning.hpp</a>.</p>
 
-<p >References <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00164">currentUserIndex</a>.</p>
+<p class="reference">References <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00164">currentUserIndex</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a289e4f0f252a8287503fa53751b1c57a"></a>
+<a id="a289e4f0f252a8287503fa53751b1c57a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a289e4f0f252a8287503fa53751b1c57a">&#9670;&nbsp;</a></span>WUpdate()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -317,14 +336,16 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p >Definition at line <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00096">96</a> of file <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html">svd_incomplete_incremental_learning.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00096">96</a> of file <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html">svd_incomplete_incremental_learning.hpp</a>.</p>
 
-<p >References <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00164">currentUserIndex</a>, <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00159">kw</a>, and <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00157">u</a>.</p>
+<p class="reference">References <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00164">currentUserIndex</a>, <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00159">kw</a>, and <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00157">u</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a7122b39b6451f9c4cd1d1f083c675a1b"></a>
+<a id="a7122b39b6451f9c4cd1d1f083c675a1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7122b39b6451f9c4cd1d1f083c675a1b">&#9670;&nbsp;</a></span>currentUserIndex</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -344,13 +365,15 @@ Private Attributes</h2></td></tr>
 
 <p >Current user under consideration. </p>
 
-<p >Definition at line <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00164">164</a> of file <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html">svd_incomplete_incremental_learning.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00164">164</a> of file <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html">svd_incomplete_incremental_learning.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00129">HUpdate()</a>, <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00080">Initialize()</a>, and <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00096">WUpdate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00129">HUpdate()</a>, <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00080">Initialize()</a>, <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00194">mlpack::amf::SVDIncompleteIncrementalLearning::HUpdate&lt; arma::sp_mat &gt;()</a>, <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00173">mlpack::amf::SVDIncompleteIncrementalLearning::WUpdate&lt; arma::sp_mat &gt;()</a>, and <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00096">WUpdate()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a266431544e21ae146fe840d218c811a9"></a>
+<a id="a266431544e21ae146fe840d218c811a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a266431544e21ae146fe840d218c811a9">&#9670;&nbsp;</a></span>kh</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -370,13 +393,15 @@ Private Attributes</h2></td></tr>
 
 <p >Regularization parameter for H matrix. </p>
 
-<p >Definition at line <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00161">161</a> of file <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html">svd_incomplete_incremental_learning.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00161">161</a> of file <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html">svd_incomplete_incremental_learning.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00129">HUpdate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00129">HUpdate()</a>, and <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00194">mlpack::amf::SVDIncompleteIncrementalLearning::HUpdate&lt; arma::sp_mat &gt;()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a78d9b969ba33ebe917282ca0984fcf96"></a>
+<a id="a78d9b969ba33ebe917282ca0984fcf96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78d9b969ba33ebe917282ca0984fcf96">&#9670;&nbsp;</a></span>kw</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -396,13 +421,15 @@ Private Attributes</h2></td></tr>
 
 <p >Regularization parameter for W matrix. </p>
 
-<p >Definition at line <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00159">159</a> of file <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html">svd_incomplete_incremental_learning.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00159">159</a> of file <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html">svd_incomplete_incremental_learning.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00096">WUpdate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00173">mlpack::amf::SVDIncompleteIncrementalLearning::WUpdate&lt; arma::sp_mat &gt;()</a>, and <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00096">WUpdate()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae86a953f3f95fc58ad25ef1618d53f58"></a>
+<a id="ae86a953f3f95fc58ad25ef1618d53f58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae86a953f3f95fc58ad25ef1618d53f58">&#9670;&nbsp;</a></span>u</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -422,9 +449,9 @@ Private Attributes</h2></td></tr>
 
 <p >Step size of batch learning. </p>
 
-<p >Definition at line <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00157">157</a> of file <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html">svd_incomplete_incremental_learning.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00157">157</a> of file <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html">svd_incomplete_incremental_learning.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00129">HUpdate()</a>, and <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00096">WUpdate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00129">HUpdate()</a>, <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00194">mlpack::amf::SVDIncompleteIncrementalLearning::HUpdate&lt; arma::sp_mat &gt;()</a>, <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00173">mlpack::amf::SVDIncompleteIncrementalLearning::WUpdate&lt; arma::sp_mat &gt;()</a>, and <a class="el" href="svd__incomplete__incremental__learning_8hpp_source.html#l00096">WUpdate()</a>.</p>
 
 </div>
 </div>
@@ -436,7 +463,16 @@ Private Attributes</h2></td></tr>
 <hr class="footer"></hr><address class="footer"><small >
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"></img>
-</a> 1.8.9.1
+</a> 1.8.13
 </small></address>
+</div>
 </body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
 </html>

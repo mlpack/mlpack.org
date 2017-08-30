@@ -1,22 +1,50 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head >
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
-<meta name="generator" content="Doxygen 1.8.9.1"></meta>
-<title >mlpack: mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt; Class Template Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
-</link>
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
-</link>
-</head>
-<body >
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
 <div id="top">
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody >
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mlpack
    &#160;<span id="projectnumber">2.0.0</span>
    </div>
@@ -26,24 +54,14 @@
 </table>
 </div>
 
-
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
-      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
-      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span >Classes</span></a></li>
-      <li ><a href="files.html"><span >Files</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li ><a href="annotated.html"><span >Class&#160;List</span></a></li>
-      <li ><a href="classes.html"><span >Class&#160;Index</span></a></li>
-      <li ><a href="inherits.html"><span >Class&#160;Hierarchy</span></a></li>
-      <li ><a href="functions.html"><span >Class&#160;Members</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+</script>
+<div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul >
 <li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1tree.html">tree</a></li><li class="navelem"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html">HoeffdingTree</a></li>  </ul>
@@ -87,50 +105,50 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa172871b4874bb500eaff55f2e7a9be9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#aa172871b4874bb500eaff55f2e7a9be9">~HoeffdingTree</a> ()</td></tr>
 <tr class="memdesc:aa172871b4874bb500eaff55f2e7a9be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up memory.  <a href="#aa172871b4874bb500eaff55f2e7a9be9">More...</a><br /></br></td></tr>
 <tr class="separator:aa172871b4874bb500eaff55f2e7a9be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c99fda2dfe1b7225a0369cfd5ee3c70"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">VecType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
-<tr class="memitem:a7c99fda2dfe1b7225a0369cfd5ee3c70"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#a7c99fda2dfe1b7225a0369cfd5ee3c70">CalculateDirection</a> (const VecType &amp;point) const </td></tr>
-<tr class="memdesc:a7c99fda2dfe1b7225a0369cfd5ee3c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a point and that this node is not a leaf, calculate the index of the child node this point would go towards.  <a href="#a7c99fda2dfe1b7225a0369cfd5ee3c70">More...</a><br /></br></td></tr>
-<tr class="separator:a7c99fda2dfe1b7225a0369cfd5ee3c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a383ffcc47c960bedba0ad4cde609a2e8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html">HoeffdingTree</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#a383ffcc47c960bedba0ad4cde609a2e8">Child</a> (const size_t i) const </td></tr>
-<tr class="memdesc:a383ffcc47c960bedba0ad4cde609a2e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a child.  <a href="#a383ffcc47c960bedba0ad4cde609a2e8">More...</a><br /></br></td></tr>
-<tr class="separator:a383ffcc47c960bedba0ad4cde609a2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19c0fdebe5bcd9b45ef2454779b5af66"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">VecType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a19c0fdebe5bcd9b45ef2454779b5af66"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#a19c0fdebe5bcd9b45ef2454779b5af66">CalculateDirection</a> (const VecType &amp;point) const</td></tr>
+<tr class="memdesc:a19c0fdebe5bcd9b45ef2454779b5af66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a point and that this node is not a leaf, calculate the index of the child node this point would go towards.  <a href="#a19c0fdebe5bcd9b45ef2454779b5af66">More...</a><br /></br></td></tr>
+<tr class="separator:a19c0fdebe5bcd9b45ef2454779b5af66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae8f29bc63be5f86d194fcc0b9d41511"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html">HoeffdingTree</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#aae8f29bc63be5f86d194fcc0b9d41511">Child</a> (const size_t i) const</td></tr>
+<tr class="memdesc:aae8f29bc63be5f86d194fcc0b9d41511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a child.  <a href="#aae8f29bc63be5f86d194fcc0b9d41511">More...</a><br /></br></td></tr>
+<tr class="separator:aae8f29bc63be5f86d194fcc0b9d41511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad141745c3ebd2d225ac2347c468a3b36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html">HoeffdingTree</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#ad141745c3ebd2d225ac2347c468a3b36">Child</a> (const size_t i)</td></tr>
 <tr class="memdesc:ad141745c3ebd2d225ac2347c468a3b36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify a child.  <a href="#ad141745c3ebd2d225ac2347c468a3b36">More...</a><br /></br></td></tr>
 <tr class="separator:ad141745c3ebd2d225ac2347c468a3b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc0e953e5b981804d6249915728e0e8e"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">VecType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
-<tr class="memitem:acc0e953e5b981804d6249915728e0e8e"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#acc0e953e5b981804d6249915728e0e8e">Classify</a> (const VecType &amp;point) const </td></tr>
-<tr class="memdesc:acc0e953e5b981804d6249915728e0e8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classify the given point, using this node and the entire (sub)tree beneath it.  <a href="#acc0e953e5b981804d6249915728e0e8e">More...</a><br /></br></td></tr>
-<tr class="separator:acc0e953e5b981804d6249915728e0e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0f0ce344d7ae386599157e9f9efbf0d"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">VecType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
-<tr class="memitem:af0f0ce344d7ae386599157e9f9efbf0d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#af0f0ce344d7ae386599157e9f9efbf0d">Classify</a> (const VecType &amp;point, size_t &amp;prediction, double &amp;probability) const </td></tr>
-<tr class="memdesc:af0f0ce344d7ae386599157e9f9efbf0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classify the given point and also return an estimate of the probability that the prediction is correct.  <a href="#af0f0ce344d7ae386599157e9f9efbf0d">More...</a><br /></br></td></tr>
-<tr class="separator:af0f0ce344d7ae386599157e9f9efbf0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3da5a17a132c180bab0affcc2824509"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
-<tr class="memitem:af3da5a17a132c180bab0affcc2824509"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#af3da5a17a132c180bab0affcc2824509">Classify</a> (const MatType &amp;data, arma::Row&lt; size_t &gt; &amp;predictions) const </td></tr>
-<tr class="memdesc:af3da5a17a132c180bab0affcc2824509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classify the given points, using this node and the entire (sub)tree beneath it.  <a href="#af3da5a17a132c180bab0affcc2824509">More...</a><br /></br></td></tr>
-<tr class="separator:af3da5a17a132c180bab0affcc2824509"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93368a257ec643974385dc31be286742"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
-<tr class="memitem:a93368a257ec643974385dc31be286742"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#a93368a257ec643974385dc31be286742">Classify</a> (const MatType &amp;data, arma::Row&lt; size_t &gt; &amp;predictions, arma::rowvec &amp;probabilities) const </td></tr>
-<tr class="memdesc:a93368a257ec643974385dc31be286742"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classify the given points, using this node and the entire (sub)tree beneath it.  <a href="#a93368a257ec643974385dc31be286742">More...</a><br /></br></td></tr>
-<tr class="separator:a93368a257ec643974385dc31be286742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac275e44db33e977cbb12dad35e6e4801"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">VecType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:ac275e44db33e977cbb12dad35e6e4801"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#ac275e44db33e977cbb12dad35e6e4801">Classify</a> (const VecType &amp;point) const</td></tr>
+<tr class="memdesc:ac275e44db33e977cbb12dad35e6e4801"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classify the given point, using this node and the entire (sub)tree beneath it.  <a href="#ac275e44db33e977cbb12dad35e6e4801">More...</a><br /></br></td></tr>
+<tr class="separator:ac275e44db33e977cbb12dad35e6e4801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96198a1b34c50b9f0dce714075300934"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">VecType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a96198a1b34c50b9f0dce714075300934"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#a96198a1b34c50b9f0dce714075300934">Classify</a> (const VecType &amp;point, size_t &amp;prediction, double &amp;probability) const</td></tr>
+<tr class="memdesc:a96198a1b34c50b9f0dce714075300934"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classify the given point and also return an estimate of the probability that the prediction is correct.  <a href="#a96198a1b34c50b9f0dce714075300934">More...</a><br /></br></td></tr>
+<tr class="separator:a96198a1b34c50b9f0dce714075300934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a993642ae20c71af562081ad08a4a6b82"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a993642ae20c71af562081ad08a4a6b82"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#a993642ae20c71af562081ad08a4a6b82">Classify</a> (const MatType &amp;data, arma::Row&lt; size_t &gt; &amp;predictions) const</td></tr>
+<tr class="memdesc:a993642ae20c71af562081ad08a4a6b82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classify the given points, using this node and the entire (sub)tree beneath it.  <a href="#a993642ae20c71af562081ad08a4a6b82">More...</a><br /></br></td></tr>
+<tr class="separator:a993642ae20c71af562081ad08a4a6b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad83a241c9250a59cab391fbc49d1df06"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:ad83a241c9250a59cab391fbc49d1df06"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#ad83a241c9250a59cab391fbc49d1df06">Classify</a> (const MatType &amp;data, arma::Row&lt; size_t &gt; &amp;predictions, arma::rowvec &amp;probabilities) const</td></tr>
+<tr class="memdesc:ad83a241c9250a59cab391fbc49d1df06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classify the given points, using this node and the entire (sub)tree beneath it.  <a href="#ad83a241c9250a59cab391fbc49d1df06">More...</a><br /></br></td></tr>
+<tr class="separator:ad83a241c9250a59cab391fbc49d1df06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7919868233138dd248b6e2778cb762b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#a7919868233138dd248b6e2778cb762b5">CreateChildren</a> ()</td></tr>
 <tr class="memdesc:a7919868233138dd248b6e2778cb762b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given that this node should split, create the children.  <a href="#a7919868233138dd248b6e2778cb762b5">More...</a><br /></br></td></tr>
 <tr class="separator:a7919868233138dd248b6e2778cb762b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade4967faf6c0d09b19b86f9d47df2d48"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#ade4967faf6c0d09b19b86f9d47df2d48">MajorityClass</a> () const </td></tr>
-<tr class="memdesc:ade4967faf6c0d09b19b86f9d47df2d48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the majority class.  <a href="#ade4967faf6c0d09b19b86f9d47df2d48">More...</a><br /></br></td></tr>
-<tr class="separator:ade4967faf6c0d09b19b86f9d47df2d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefc2ecd6f213d503ad215ff68d5a1ca3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#aefc2ecd6f213d503ad215ff68d5a1ca3">MajorityClass</a> () const</td></tr>
+<tr class="memdesc:aefc2ecd6f213d503ad215ff68d5a1ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the majority class.  <a href="#aefc2ecd6f213d503ad215ff68d5a1ca3">More...</a><br /></br></td></tr>
+<tr class="separator:aefc2ecd6f213d503ad215ff68d5a1ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a574d52457625baf2596be5c649d04db1"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#a574d52457625baf2596be5c649d04db1">MajorityClass</a> ()</td></tr>
 <tr class="memdesc:a574d52457625baf2596be5c649d04db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the majority class.  <a href="#a574d52457625baf2596be5c649d04db1">More...</a><br /></br></td></tr>
 <tr class="separator:a574d52457625baf2596be5c649d04db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95f09abf1a126c2b53b34f064b2c142f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#a95f09abf1a126c2b53b34f064b2c142f">MajorityProbability</a> () const </td></tr>
-<tr class="memdesc:a95f09abf1a126c2b53b34f064b2c142f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the probability of the majority class (based on training samples).  <a href="#a95f09abf1a126c2b53b34f064b2c142f">More...</a><br /></br></td></tr>
-<tr class="separator:a95f09abf1a126c2b53b34f064b2c142f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9e200da1e888449b548b2c1997aa459"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#ad9e200da1e888449b548b2c1997aa459">MajorityProbability</a> () const</td></tr>
+<tr class="memdesc:ad9e200da1e888449b548b2c1997aa459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the probability of the majority class (based on training samples).  <a href="#ad9e200da1e888449b548b2c1997aa459">More...</a><br /></br></td></tr>
+<tr class="separator:ad9e200da1e888449b548b2c1997aa459"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b19bab10125e782e20b37d1814c4e9d"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#a4b19bab10125e782e20b37d1814c4e9d">MajorityProbability</a> ()</td></tr>
 <tr class="memdesc:a4b19bab10125e782e20b37d1814c4e9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the probability of the majority class.  <a href="#a4b19bab10125e782e20b37d1814c4e9d">More...</a><br /></br></td></tr>
 <tr class="separator:a4b19bab10125e782e20b37d1814c4e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a8190c38569b104398f7ff796346589"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#a4a8190c38569b104398f7ff796346589">NumChildren</a> () const </td></tr>
-<tr class="memdesc:a4a8190c38569b104398f7ff796346589"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of children.  <a href="#a4a8190c38569b104398f7ff796346589">More...</a><br /></br></td></tr>
-<tr class="separator:a4a8190c38569b104398f7ff796346589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935d2d9ffb0350c7cf6cbb30fe3f5b8c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#a935d2d9ffb0350c7cf6cbb30fe3f5b8c">NumChildren</a> () const</td></tr>
+<tr class="memdesc:a935d2d9ffb0350c7cf6cbb30fe3f5b8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of children.  <a href="#a935d2d9ffb0350c7cf6cbb30fe3f5b8c">More...</a><br /></br></td></tr>
+<tr class="separator:a935d2d9ffb0350c7cf6cbb30fe3f5b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48a89464c5fb95d12bc38cbb6ec9b678"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
 <tr class="memitem:a48a89464c5fb95d12bc38cbb6ec9b678"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#a48a89464c5fb95d12bc38cbb6ec9b678">Serialize</a> (Archive &amp;ar, const unsigned int)</td></tr>
 <tr class="memdesc:a48a89464c5fb95d12bc38cbb6ec9b678"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the split.  <a href="#a48a89464c5fb95d12bc38cbb6ec9b678">More...</a><br /></br></td></tr>
@@ -138,9 +156,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6ac5b55cf81817624a3251db20b50160"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#a6ac5b55cf81817624a3251db20b50160">SplitCheck</a> ()</td></tr>
 <tr class="memdesc:a6ac5b55cf81817624a3251db20b50160"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a split would satisfy the conditions of the Hoeffding bound with the node's specified success probability.  <a href="#a6ac5b55cf81817624a3251db20b50160">More...</a><br /></br></td></tr>
 <tr class="separator:a6ac5b55cf81817624a3251db20b50160"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74d712fe39e9a3f0375d22c2f17b8c0e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#a74d712fe39e9a3f0375d22c2f17b8c0e">SplitDimension</a> () const </td></tr>
-<tr class="memdesc:a74d712fe39e9a3f0375d22c2f17b8c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the splitting dimension (size_t(-1) if no split).  <a href="#a74d712fe39e9a3f0375d22c2f17b8c0e">More...</a><br /></br></td></tr>
-<tr class="separator:a74d712fe39e9a3f0375d22c2f17b8c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89b0eb420db9e9a832d272396785f4b5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#a89b0eb420db9e9a832d272396785f4b5">SplitDimension</a> () const</td></tr>
+<tr class="memdesc:a89b0eb420db9e9a832d272396785f4b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the splitting dimension (size_t(-1) if no split).  <a href="#a89b0eb420db9e9a832d272396785f4b5">More...</a><br /></br></td></tr>
+<tr class="separator:a89b0eb420db9e9a832d272396785f4b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54cf439ed323eac7dc3f17c876c768e7"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MatType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
 <tr class="memitem:a54cf439ed323eac7dc3f17c876c768e7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#a54cf439ed323eac7dc3f17c876c768e7">Train</a> (const MatType &amp;data, const arma::Row&lt; size_t &gt; &amp;labels, const bool batchTraining=true)</td></tr>
 <tr class="memdesc:a54cf439ed323eac7dc3f17c876c768e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Train on a set of points, either in streaming mode or in batch mode, with the given labels.  <a href="#a54cf439ed323eac7dc3f17c876c768e7">More...</a><br /></br></td></tr>
@@ -214,15 +232,7 @@ class mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, Categor
 <p >The <a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html" title="The HoeffdingTree object represents all of the necessary information for a Hoeffding-bound-based deci...">HoeffdingTree</a> object represents all of the necessary information for a Hoeffding-bound-based decision tree. </p>
 <p >This class is able to train on samples in streaming settings and batch settings, and perform splits based on the Hoeffding bound. The Hoeffding tree (also known as the "very fast decision
 tree" &ndash; VFDT) is described in the following paper:</p>
-<div class="fragment"><div class="line">@inproceedings{domingos2000mining,</div>
-<div class="line">    title={{Mining High-Speed Data Streams}},</div>
-<div class="line">    author={Domingos, P. and Hulten, G.},</div>
-<div class="line">    year={2000},</div>
-<div class="line">    booktitle={Proceedings of the Sixth ACM SIGKDD International Conference</div>
-<div class="line">        on Knowledge Discovery and Data Mining (KDD <span class="stringliteral">&#39;00)},</span></div>
-<div class="line"><span class="stringliteral">    pages={71--80}</span></div>
-<div class="line"><span class="stringliteral">}</span></div>
-</div><p >The class is modular, and takes three template parameters. The first, FitnessFunction, is the fitness function that should be used to determine whether a split is beneficial; examples might be <a class="el" href="classmlpack_1_1tree_1_1GiniImpurity.html">GiniImpurity</a> or <a class="el" href="classmlpack_1_1tree_1_1InformationGain.html">InformationGain</a>. The NumericSplitType determines how numeric attributes are handled, and the CategoricalSplitType determines how categorical attributes are handled. As far as the actual splitting goes, the meat of the splitting procedure will be contained in those two classes.</p>
+<div class="fragment"><div class="line">@inproceedings{domingos2000mining,</div><div class="line">    title={{Mining High-Speed Data Streams}},</div><div class="line">    author={Domingos, P. and Hulten, G.},</div><div class="line">    year={2000},</div><div class="line">    booktitle={Proceedings of the Sixth ACM SIGKDD International Conference</div><div class="line">        on Knowledge Discovery and Data Mining (KDD <span class="stringliteral">&#39;00)},</span></div><div class="line"><span class="stringliteral">    pages={71--80}</span></div><div class="line"><span class="stringliteral">}</span></div></div><p >The class is modular, and takes three template parameters. The first, FitnessFunction, is the fitness function that should be used to determine whether a split is beneficial; examples might be <a class="el" href="classmlpack_1_1tree_1_1GiniImpurity.html">GiniImpurity</a> or <a class="el" href="classmlpack_1_1tree_1_1InformationGain.html">InformationGain</a>. The NumericSplitType determines how numeric attributes are handled, and the CategoricalSplitType determines how categorical attributes are handled. As far as the actual splitting goes, the meat of the splitting procedure will be contained in those two classes.</p>
 <dl class="tparams"><dt >Template Parameters</dt><dd >
   <table class="tparams">
     <tr ><td class="paramname">FitnessFunction</td><td >Fitness function to use. </td></tr>
@@ -232,9 +242,11 @@ tree" &ndash; VFDT) is described in the following paper:</p>
   </dd>
 </dl>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00070">70</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00070">70</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a8d2bce15dacf23fc6f513e1fcd66a786"></a>
+<a id="a8d2bce15dacf23fc6f513e1fcd66a786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d2bce15dacf23fc6f513e1fcd66a786">&#9670;&nbsp;</a></span>CategoricalSplit</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -247,11 +259,13 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >Allow access to the categorical split type. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00076">76</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00076">76</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0eff97cb145bfc41d3a1dc4efd682e45"></a>
+<a id="a0eff97cb145bfc41d3a1dc4efd682e45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eff97cb145bfc41d3a1dc4efd682e45">&#9670;&nbsp;</a></span>NumericSplit</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -264,12 +278,14 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >Allow access to the numeric split type. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00074">74</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00074">74</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ad07c2c792ceaace94b5125de78c353a5"></a>
+<a id="ad07c2c792ceaace94b5125de78c353a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad07c2c792ceaace94b5125de78c353a5">&#9670;&nbsp;</a></span>HoeffdingTree() <span class="overload">[1/3]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -368,7 +384,9 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 </div>
 </div>
-<a class="anchor" id="aee112374e6d7665539fc97730c91410f"></a>
+<a id="aee112374e6d7665539fc97730c91410f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee112374e6d7665539fc97730c91410f">&#9670;&nbsp;</a></span>HoeffdingTree() <span class="overload">[2/3]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -453,7 +471,9 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 </div>
 </div>
-<a class="anchor" id="ae78a802f8ba5b394741ebbba0cb15865"></a>
+<a id="ae78a802f8ba5b394741ebbba0cb15865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae78a802f8ba5b394741ebbba0cb15865">&#9670;&nbsp;</a></span>HoeffdingTree() <span class="overload">[3/3]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -479,7 +499,9 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 </div>
 </div>
-<a class="anchor" id="aa172871b4874bb500eaff55f2e7a9be9"></a>
+<a id="aa172871b4874bb500eaff55f2e7a9be9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa172871b4874bb500eaff55f2e7a9be9">&#9670;&nbsp;</a></span>~HoeffdingTree()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -498,7 +520,9 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a7c99fda2dfe1b7225a0369cfd5ee3c70"></a>
+<a id="a19c0fdebe5bcd9b45ef2454779b5af66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19c0fdebe5bcd9b45ef2454779b5af66">&#9670;&nbsp;</a></span>CalculateDirection()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -515,7 +539,7 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 </div><div class="memdoc">
 
 <p >Given a point and that this node is not a leaf, calculate the index of the child node this point would go towards. </p>
-<p >This method is primarily used by the <a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#acc0e953e5b981804d6249915728e0e8e" title="Classify the given point, using this node and the entire (sub)tree beneath it. ">Classify()</a> function, but it can be used in a standalone sense too.</p>
+<p >This method is primarily used by the <a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#ac275e44db33e977cbb12dad35e6e4801" title="Classify the given point, using this node and the entire (sub)tree beneath it. ">Classify()</a> function, but it can be used in a standalone sense too.</p>
 <dl class="params"><dt >Parameters</dt><dd >
   <table class="params">
     <tr ><td class="paramname">point</td><td >Point to classify. </td></tr>
@@ -523,9 +547,13 @@ tree" &ndash; VFDT) is described in the following paper:</p>
   </dd>
 </dl>
 
+<p class="reference">Referenced by <a class="el" href="hoeffding__tree_8hpp_source.html#l00208">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::Child()</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a383ffcc47c960bedba0ad4cde609a2e8"></a>
+<a id="aae8f29bc63be5f86d194fcc0b9d41511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae8f29bc63be5f86d194fcc0b9d41511">&#9670;&nbsp;</a></span>Child() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -550,13 +578,15 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >Get a child. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00206">206</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00206">206</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="hoeffding__tree_8hpp_source.html#l00324">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::children</a>.</p>
+<p class="reference">References <a class="el" href="hoeffding__tree_8hpp_source.html#l00324">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::children</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad141745c3ebd2d225ac2347c468a3b36"></a>
+<a id="ad141745c3ebd2d225ac2347c468a3b36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad141745c3ebd2d225ac2347c468a3b36">&#9670;&nbsp;</a></span>Child() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -581,13 +611,15 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >Modify a child. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00208">208</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00208">208</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="hoeffding__tree_8hpp_source.html#l00324">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::children</a>.</p>
+<p class="reference">References <a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#a19c0fdebe5bcd9b45ef2454779b5af66">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::CalculateDirection()</a>, <a class="el" href="hoeffding__tree_8hpp_source.html#l00324">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::children</a>, <a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#ac275e44db33e977cbb12dad35e6e4801">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::Classify()</a>, <a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#a7919868233138dd248b6e2778cb762b5">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::CreateChildren()</a>, and <a class="el" href="classmlpack_1_1tree_1_1HoeffdingTree.html#a48a89464c5fb95d12bc38cbb6ec9b678">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::Serialize()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="acc0e953e5b981804d6249915728e0e8e"></a>
+<a id="ac275e44db33e977cbb12dad35e6e4801"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac275e44db33e977cbb12dad35e6e4801">&#9670;&nbsp;</a></span>Classify() <span class="overload">[1/4]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -613,9 +645,13 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 </dl>
 <dl class="section return"><dt >Returns</dt><dd >Predicted label of point. </dd></dl>
 
+<p class="reference">Referenced by <a class="el" href="hoeffding__tree_8hpp_source.html#l00208">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::Child()</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="af0f0ce344d7ae386599157e9f9efbf0d"></a>
+<a id="a96198a1b34c50b9f0dce714075300934"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96198a1b34c50b9f0dce714075300934">&#9670;&nbsp;</a></span>Classify() <span class="overload">[2/4]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -660,7 +696,9 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 </div>
 </div>
-<a class="anchor" id="af3da5a17a132c180bab0affcc2824509"></a>
+<a id="a993642ae20c71af562081ad08a4a6b82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a993642ae20c71af562081ad08a4a6b82">&#9670;&nbsp;</a></span>Classify() <span class="overload">[3/4]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -698,7 +736,9 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 </div>
 </div>
-<a class="anchor" id="a93368a257ec643974385dc31be286742"></a>
+<a id="ad83a241c9250a59cab391fbc49d1df06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad83a241c9250a59cab391fbc49d1df06">&#9670;&nbsp;</a></span>Classify() <span class="overload">[4/4]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -743,7 +783,9 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 </div>
 </div>
-<a class="anchor" id="a7919868233138dd248b6e2778cb762b5"></a>
+<a id="a7919868233138dd248b6e2778cb762b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7919868233138dd248b6e2778cb762b5">&#9670;&nbsp;</a></span>CreateChildren()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -759,9 +801,13 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >Given that this node should split, create the children. </p>
 
+<p class="reference">Referenced by <a class="el" href="hoeffding__tree_8hpp_source.html#l00208">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::Child()</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="ade4967faf6c0d09b19b86f9d47df2d48"></a>
+<a id="aefc2ecd6f213d503ad215ff68d5a1ca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefc2ecd6f213d503ad215ff68d5a1ca3">&#9670;&nbsp;</a></span>MajorityClass() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -785,13 +831,15 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >Get the majority class. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00193">193</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00193">193</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="hoeffding__tree_8hpp_source.html#l00315">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::majorityClass</a>.</p>
+<p class="reference">References <a class="el" href="hoeffding__tree_8hpp_source.html#l00315">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::majorityClass</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a574d52457625baf2596be5c649d04db1"></a>
+<a id="a574d52457625baf2596be5c649d04db1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a574d52457625baf2596be5c649d04db1">&#9670;&nbsp;</a></span>MajorityClass() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -815,13 +863,15 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >Modify the majority class. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00195">195</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00195">195</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="hoeffding__tree_8hpp_source.html#l00315">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::majorityClass</a>.</p>
+<p class="reference">References <a class="el" href="hoeffding__tree_8hpp_source.html#l00315">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::majorityClass</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a95f09abf1a126c2b53b34f064b2c142f"></a>
+<a id="ad9e200da1e888449b548b2c1997aa459"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9e200da1e888449b548b2c1997aa459">&#9670;&nbsp;</a></span>MajorityProbability() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -845,13 +895,15 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >Get the probability of the majority class (based on training samples). </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00198">198</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00198">198</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="hoeffding__tree_8hpp_source.html#l00318">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::majorityProbability</a>.</p>
+<p class="reference">References <a class="el" href="hoeffding__tree_8hpp_source.html#l00318">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::majorityProbability</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4b19bab10125e782e20b37d1814c4e9d"></a>
+<a id="a4b19bab10125e782e20b37d1814c4e9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b19bab10125e782e20b37d1814c4e9d">&#9670;&nbsp;</a></span>MajorityProbability() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -875,13 +927,15 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >Modify the probability of the majority class. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00200">200</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00200">200</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="hoeffding__tree_8hpp_source.html#l00318">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::majorityProbability</a>.</p>
+<p class="reference">References <a class="el" href="hoeffding__tree_8hpp_source.html#l00318">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::majorityProbability</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4a8190c38569b104398f7ff796346589"></a>
+<a id="a935d2d9ffb0350c7cf6cbb30fe3f5b8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a935d2d9ffb0350c7cf6cbb30fe3f5b8c">&#9670;&nbsp;</a></span>NumChildren()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -905,13 +959,15 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >Get the number of children. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00203">203</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00203">203</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="hoeffding__tree_8hpp_source.html#l00324">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::children</a>.</p>
+<p class="reference">References <a class="el" href="hoeffding__tree_8hpp_source.html#l00324">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::children</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a48a89464c5fb95d12bc38cbb6ec9b678"></a>
+<a id="a48a89464c5fb95d12bc38cbb6ec9b678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48a89464c5fb95d12bc38cbb6ec9b678">&#9670;&nbsp;</a></span>Serialize()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -939,9 +995,13 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >Serialize the split. </p>
 
+<p class="reference">Referenced by <a class="el" href="hoeffding__tree_8hpp_source.html#l00208">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::Child()</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a6ac5b55cf81817624a3251db20b50160"></a>
+<a id="a6ac5b55cf81817624a3251db20b50160"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ac5b55cf81817624a3251db20b50160">&#9670;&nbsp;</a></span>SplitCheck()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -960,7 +1020,9 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 </div>
 </div>
-<a class="anchor" id="a74d712fe39e9a3f0375d22c2f17b8c0e"></a>
+<a id="a89b0eb420db9e9a832d272396785f4b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89b0eb420db9e9a832d272396785f4b5">&#9670;&nbsp;</a></span>SplitDimension()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -984,13 +1046,15 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >Get the splitting dimension (size_t(-1) if no split). </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00190">190</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00190">190</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
-<p >References <a class="el" href="hoeffding__tree_8hpp_source.html#l00313">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::splitDimension</a>.</p>
+<p class="reference">References <a class="el" href="hoeffding__tree_8hpp_source.html#l00313">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::splitDimension</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a54cf439ed323eac7dc3f17c876c768e7"></a>
+<a id="a54cf439ed323eac7dc3f17c876c768e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54cf439ed323eac7dc3f17c876c768e7">&#9670;&nbsp;</a></span>Train() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -1034,7 +1098,9 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 </div>
 </div>
-<a class="anchor" id="afa35ebdbc389a329611d940a4e51351c"></a>
+<a id="afa35ebdbc389a329611d940a4e51351c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa35ebdbc389a329611d940a4e51351c">&#9670;&nbsp;</a></span>Train() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -1072,7 +1138,9 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a75921b6a575c0bfd4feb7edea67fb731"></a>
+<a id="a75921b6a575c0bfd4feb7edea67fb731"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75921b6a575c0bfd4feb7edea67fb731">&#9670;&nbsp;</a></span>categoricalSplit</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -1093,11 +1161,13 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >If the split is categorical, this holds the splitting information. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00320">320</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00320">320</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a88d41a2fe0df1df3833fc035cf647e95"></a>
+<a id="a88d41a2fe0df1df3833fc035cf647e95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88d41a2fe0df1df3833fc035cf647e95">&#9670;&nbsp;</a></span>categoricalSplits</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -1118,11 +1188,13 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >Information for splitting of categorical features (used before split). </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00286">286</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00286">286</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae989373eed16a13a99f7dabb521edb6a"></a>
+<a id="ae989373eed16a13a99f7dabb521edb6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae989373eed16a13a99f7dabb521edb6a">&#9670;&nbsp;</a></span>checkInterval</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -1143,11 +1215,13 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >The number of samples that should be seen before checking for a split. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00300">300</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00300">300</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a14215fa247b8c2c9123de4d31f95154d"></a>
+<a id="a14215fa247b8c2c9123de4d31f95154d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14215fa247b8c2c9123de4d31f95154d">&#9670;&nbsp;</a></span>children</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -1168,13 +1242,15 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >If the split has occurred, these are the children. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00324">324</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00324">324</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="hoeffding__tree_8hpp_source.html#l00206">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::Child()</a>, and <a class="el" href="hoeffding__tree_8hpp_source.html#l00203">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::NumChildren()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="hoeffding__tree_8hpp_source.html#l00206">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::Child()</a>, and <a class="el" href="hoeffding__tree_8hpp_source.html#l00203">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::NumChildren()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a3b2adfbce59218d401a955fe11926ee7"></a>
+<a id="a3b2adfbce59218d401a955fe11926ee7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b2adfbce59218d401a955fe11926ee7">&#9670;&nbsp;</a></span>datasetInfo</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -1195,11 +1271,13 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >The dataset information. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00304">304</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00304">304</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5ee68a0a876a9a8bb9e4633541b710f4"></a>
+<a id="a5ee68a0a876a9a8bb9e4633541b710f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ee68a0a876a9a8bb9e4633541b710f4">&#9670;&nbsp;</a></span>dimensionMappings</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -1220,11 +1298,13 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >This structure is owned by this node only if it is the root of the tree. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00289">289</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00289">289</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad7295c1e96ba6a145c3acfec2aa09ffa"></a>
+<a id="ad7295c1e96ba6a145c3acfec2aa09ffa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7295c1e96ba6a145c3acfec2aa09ffa">&#9670;&nbsp;</a></span>majorityClass</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -1245,13 +1325,15 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >The majority class of this node. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00315">315</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00315">315</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="hoeffding__tree_8hpp_source.html#l00193">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::MajorityClass()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="hoeffding__tree_8hpp_source.html#l00193">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::MajorityClass()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a85132e63b14563edc7c86fb2b6c536df"></a>
+<a id="a85132e63b14563edc7c86fb2b6c536df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85132e63b14563edc7c86fb2b6c536df">&#9670;&nbsp;</a></span>majorityProbability</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -1272,13 +1354,15 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >The empirical probability of a point this node saw having the majority class. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00318">318</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00318">318</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="hoeffding__tree_8hpp_source.html#l00198">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::MajorityProbability()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="hoeffding__tree_8hpp_source.html#l00198">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::MajorityProbability()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4b14b0df4fc515d8d92f058370ab6ba9"></a>
+<a id="a4b14b0df4fc515d8d92f058370ab6ba9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b14b0df4fc515d8d92f058370ab6ba9">&#9670;&nbsp;</a></span>maxSamples</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -1299,11 +1383,13 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >The maximum number of samples we can see before splitting. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00298">298</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00298">298</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab2d14a1b3688ffeb4a14f32505be3567"></a>
+<a id="ab2d14a1b3688ffeb4a14f32505be3567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2d14a1b3688ffeb4a14f32505be3567">&#9670;&nbsp;</a></span>minSamples</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -1324,11 +1410,13 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >The minimum number of samples for splitting. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00302">302</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00302">302</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4f53c35d0d231b21d743768e79c40e7c"></a>
+<a id="a4f53c35d0d231b21d743768e79c40e7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f53c35d0d231b21d743768e79c40e7c">&#9670;&nbsp;</a></span>numClasses</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -1349,11 +1437,13 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >The number of classes this node is trained on. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00296">296</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00296">296</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aae9d70d3718a68d83e9bcf016e37166b"></a>
+<a id="aae9d70d3718a68d83e9bcf016e37166b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae9d70d3718a68d83e9bcf016e37166b">&#9670;&nbsp;</a></span>numericSplit</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -1374,11 +1464,13 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >If the split is numeric, this holds the splitting information. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00322">322</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00322">322</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a041f5826547efdf330a60bcdf4f362d3"></a>
+<a id="a041f5826547efdf330a60bcdf4f362d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a041f5826547efdf330a60bcdf4f362d3">&#9670;&nbsp;</a></span>numericSplits</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -1399,11 +1491,13 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >Information for splitting of numeric features (used before split). </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00284">284</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00284">284</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="acc5763176c600afe01104b4ed4892d32"></a>
+<a id="acc5763176c600afe01104b4ed4892d32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc5763176c600afe01104b4ed4892d32">&#9670;&nbsp;</a></span>numSamples</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -1424,11 +1518,13 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >The number of samples seen so far by this node. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00294">294</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00294">294</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a289d372af1648bc3585bef53bfe50392"></a>
+<a id="a289d372af1648bc3585bef53bfe50392"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a289d372af1648bc3585bef53bfe50392">&#9670;&nbsp;</a></span>ownsInfo</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -1449,11 +1545,13 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >Whether or not we own the dataset information. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00306">306</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00306">306</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a258b46af757f1022515c988858c72feb"></a>
+<a id="a258b46af757f1022515c988858c72feb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a258b46af757f1022515c988858c72feb">&#9670;&nbsp;</a></span>ownsMappings</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -1474,11 +1572,13 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >Indicates whether or not we own the mappings. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00291">291</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00291">291</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1795be22222c893656fcc7b1262faea9"></a>
+<a id="a1795be22222c893656fcc7b1262faea9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1795be22222c893656fcc7b1262faea9">&#9670;&nbsp;</a></span>splitDimension</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -1499,13 +1599,15 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >The dimension that this node has split on. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00313">313</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00313">313</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="hoeffding__tree_8hpp_source.html#l00190">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::SplitDimension()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="hoeffding__tree_8hpp_source.html#l00190">mlpack::tree::HoeffdingTree&lt; FitnessFunction, NumericSplitType, CategoricalSplitType &gt;::SplitDimension()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4504ac6c73113e466ec26746e7db6af2"></a>
+<a id="a4504ac6c73113e466ec26746e7db6af2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4504ac6c73113e466ec26746e7db6af2">&#9670;&nbsp;</a></span>successProbability</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FitnessFunction</div><div class="default_argument"><div class="equals">=</div><div class="identifier">GiniImpurity</div></div><div class="comma">,</div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">NumericSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingDoubleNumericSplit</div></div><div class="comma">,</div></div></div><div class="template_template_param"><div class="template">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="close_bracket">&gt;</div></div></div><div class="template_template_param_name"><div class="type_decl">class</div><div class="identifier">CategoricalSplitType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">HoeffdingCategoricalSplit</div></div><div class="close_bracket">&gt;</div></div></div></div></div></div>
@@ -1526,7 +1628,7 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 
 <p >The required probability of success for a split to be performed. </p>
 
-<p >Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00308">308</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoeffding__tree_8hpp_source.html#l00308">308</a> of file <a class="el" href="hoeffding__tree_8hpp_source.html">hoeffding_tree.hpp</a>.</p>
 
 </div>
 </div>
@@ -1538,7 +1640,16 @@ tree" &ndash; VFDT) is described in the following paper:</p>
 <hr class="footer"></hr><address class="footer"><small >
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"></img>
-</a> 1.8.9.1
+</a> 1.8.13
 </small></address>
+</div>
 </body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
 </html>

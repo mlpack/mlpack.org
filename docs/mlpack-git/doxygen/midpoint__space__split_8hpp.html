@@ -1,0 +1,169 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">master</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_44a936ef30fc126706c6284a2fc0c990.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_f7ac9cdfd28b2e882eb44d163e3b98b4.html">core</a></li><li class="navelem"><a class="el" href="dir_d361cbf9654077cd65f7968e3f8eccf6.html">tree</a></li><li class="navelem"><a class="el" href="dir_ed97a359292189f6ce70548f8cfe7fb7.html">space_split</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
+  <div class="headertitle">
+<div class="title">midpoint_space_split.hpp File Reference</div>  </div>
+</div>
+<div class="contents">
+<div class="textblock"><div class="dynheader">
+Include dependency graph for midpoint_space_split.hpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="midpoint__space__split_8hpp__incl.png" border="0" usemap="#src_2mlpack_2core_2tree_2space__split_2midpoint__space__split_8hpp" alt=""></img></div>
+<map name="src_2mlpack_2core_2tree_2space__split_2midpoint__space__split_8hpp" id="src_2mlpack_2core_2tree_2space__split_2midpoint__space__split_8hpp">
+<area shape="rect" id="node2" href="prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo. " alt="" coords="927,512,1063,539"></area>
+<area shape="rect" id="node39" href="hyperplane_8hpp.html" title="hyperplane.hpp" alt="" coords="1083,117,1194,143"></area>
+<area shape="rect" id="node18" href="serialization__shim_8hpp.html" title="mlpack/core/data/serialization\l_shim.hpp" alt="" coords="1524,587,1719,628"></area>
+<area shape="rect" id="node22" href="serialization__template__version_8hpp.html" title="mlpack/core/data/serialization\l_template_version.hpp" alt="" coords="1743,587,1937,628"></area>
+<area shape="rect" id="node24" href="arma__traits_8hpp.html" title="mlpack/core/util/arma\l_traits.hpp" alt="" coords="2159,587,2305,628"></area>
+<area shape="rect" id="node25" href="arma__config__check_8hpp.html" title="mlpack/core/util/arma\l_config_check.hpp" alt="" coords="2329,587,2476,628"></area>
+<area shape="rect" id="node27" href="log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="2500,594,2660,621"></area>
+<area shape="rect" id="node35" href="timers_8hpp.html" title="mlpack/core/util/timers.hpp" alt="" coords="2684,594,2863,621"></area>
+<area shape="rect" id="node38" href="deprecated_8hpp.html" title="mlpack/core/util/deprecated.hpp" alt="" coords="2887,594,3094,621"></area>
+<area shape="rect" id="node19" href="sfinae__utility_8hpp.html" title="mlpack/core/util/sfinae\l_utility.hpp" alt="" coords="1430,676,1583,717"></area>
+<area shape="rect" id="node26" href="arma__config_8hpp.html" title="This is an autogenerated file which contains the configuration of Armadillo at the time mlpack was bu..." alt="" coords="2171,683,2290,710"></area>
+<area shape="rect" id="node30" href="prefixedoutstream_8hpp.html" title="prefixedoutstream.hpp" alt="" coords="2990,683,3141,710"></area>
+<area shape="rect" id="node32" href="nulloutstream_8hpp.html" title="nulloutstream.hpp" alt="" coords="2517,683,2643,710"></area>
+<area shape="rect" id="node40" href="projection__vector_8hpp.html" title="projection_vector.hpp" alt="" coords="997,199,1144,225"></area>
+<area shape="rect" id="node41" href="bounds_8hpp.html" title="Bounds that are useful for binary space partitioning trees. " alt="" coords="699,273,800,300"></area>
+<area shape="rect" id="node42" href="range_8hpp.html" title="Definition of the Range class, which represents a simple range with a lower and upper bound..." alt="" coords="336,430,523,457"></area>
+<area shape="rect" id="node44" href="lmetric_8hpp.html" title="mlpack/core/metrics\l/lmetric.hpp" alt="" coords="649,423,789,464"></area>
+<area shape="rect" id="node45" href="bound__traits_8hpp.html" title="bound_traits.hpp" alt="" coords="813,430,931,457"></area>
+<area shape="rect" id="node46" href="hrectbound_8hpp.html" title="Bounds that are useful for binary space partitioning trees. " alt="" coords="575,348,686,375"></area>
+<area shape="rect" id="node47" href="ballbound_8hpp.html" title="Bounds that are useful for binary space partitioning trees. " alt="" coords="813,348,915,375"></area>
+<area shape="rect" id="node48" href="hollow__ball__bound_8hpp.html" title="Bounds that are useful for binary space partitioning trees. " alt="" coords="939,348,1093,375"></area>
+<area shape="rect" id="node49" href="cellbound_8hpp.html" title="cellbound.hpp" alt="" coords="449,348,551,375"></area>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="midpoint__space__split_8hpp__dep__incl.png" border="0" usemap="#src_2mlpack_2core_2tree_2space__split_2midpoint__space__split_8hppdep" alt=""></img></div>
+<map name="src_2mlpack_2core_2tree_2space__split_2midpoint__space__split_8hppdep" id="src_2mlpack_2core_2tree_2space__split_2midpoint__space__split_8hppdep">
+<area shape="rect" id="node2" href="spill__tree_2spill__tree_8hpp.html" title="src/mlpack/core/tree\l/spill_tree/spill_tree.hpp" alt="" coords="171,109,330,151"></area>
+<area shape="rect" id="node8" href="core_2tree_2spill__tree_2typedef_8hpp.html" title="src/mlpack/core/tree\l/spill_tree/typedef.hpp" alt="" coords="463,109,614,151"></area>
+<area shape="rect" id="node3" href="is__spill__tree_8hpp.html" title="Definition of IsSpillTree. " alt="" coords="5,199,147,255"></area>
+<area shape="rect" id="node4" href="spill__tree_8hpp.html" title="src/mlpack/core/tree\l/spill_tree.hpp" alt="" coords="187,303,328,344"></area>
+<area shape="rect" id="node6" href="spill__single__tree__traverser_8hpp.html" title="src/mlpack/core/tree\l/spill_tree/spill_single\l_tree_traverser.hpp" alt="" coords="245,199,392,255"></area>
+<area shape="rect" id="node7" href="spill__dual__tree__traverser_8hpp.html" title="src/mlpack/core/tree\l/spill_tree/spill_dual\l_tree_traverser.hpp" alt="" coords="416,199,557,255"></area>
+<area shape="rect" id="node5" href="ns__model_8hpp.html" title="src/mlpack/methods\l/neighbor_search/ns\l_model.hpp" alt="" coords="187,392,327,448"></area>
+</map>
+</div>
+</div>
+<p ><a href="midpoint__space__split_8hpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1tree_1_1MidpointSpaceSplit.html">MidpointSpaceSplit&lt; MetricType, MatType &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacemlpack"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack.html">mlpack</a></td></tr>
+<tr class="memdesc:namespacemlpack"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br />Linear algebra utility functions, generally performed on matrices or vectors. </br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacemlpack_1_1tree"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1tree.html">mlpack::tree</a></td></tr>
+<tr class="memdesc:namespacemlpack_1_1tree"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br />Trees and tree-building procedures. </br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

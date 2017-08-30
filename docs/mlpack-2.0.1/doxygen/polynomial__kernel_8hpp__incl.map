@@ -1,34 +1,34 @@
 <map id="src/mlpack/core/kernels/polynomial_kernel.hpp" name="src/mlpack/core/kernels/polynomial_kernel.hpp">
-<area shape="rect" id="node2" href="$core_8hpp.html" title="Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu..." alt="" coords="3315,95,3434,121"/>
-<area shape="rect" id="node3" href="$prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo. " alt="" coords="988,273,1124,300"/>
-<area shape="rect" id="node22" href="$arma__traits_8hpp.html" title="mlpack/core/util/arma\l_traits.hpp" alt="" coords="2695,177,2841,218"/>
-<area shape="rect" id="node23" href="$log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="2403,273,2563,300"/>
-<area shape="rect" id="node27" href="$cli_8hpp.html" title="mlpack/core/util/cli.hpp" alt="" coords="1894,355,2050,382"/>
-<area shape="rect" id="node29" href="$load_8hpp.html" title="mlpack/core/data/load.hpp" alt="" coords="2278,184,2453,211"/>
-<area shape="rect" id="node30" href="$save_8hpp.html" title="mlpack/core/data/save.hpp" alt="" coords="2024,184,2203,211"/>
-<area shape="rect" id="node31" href="$normalize__labels_8hpp.html" title="mlpack/core/data/normalize\l_labels.hpp" alt="" coords="1597,177,1779,218"/>
+<area shape="rect" id="node2" href="$core_8hpp.html" title="Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu..." alt="" coords="3317,95,3435,121"/>
+<area shape="rect" id="node3" href="$prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo. " alt="" coords="989,273,1125,300"/>
+<area shape="rect" id="node22" href="$arma__traits_8hpp.html" title="mlpack/core/util/arma\l_traits.hpp" alt="" coords="2696,177,2843,218"/>
+<area shape="rect" id="node23" href="$log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="2404,273,2564,300"/>
+<area shape="rect" id="node27" href="$cli_8hpp.html" title="mlpack/core/util/cli.hpp" alt="" coords="1895,355,2051,382"/>
+<area shape="rect" id="node29" href="$load_8hpp.html" title="mlpack/core/data/load.hpp" alt="" coords="2279,184,2454,211"/>
+<area shape="rect" id="node30" href="$save_8hpp.html" title="mlpack/core/data/save.hpp" alt="" coords="2025,184,2204,211"/>
+<area shape="rect" id="node31" href="$normalize__labels_8hpp.html" title="mlpack/core/data/normalize\l_labels.hpp" alt="" coords="1598,177,1781,218"/>
 <area shape="rect" id="node32" href="$clamp_8hpp.html" title="Miscellaneous math clamping routines. " alt="" coords="70,273,261,300"/>
-<area shape="rect" id="node33" href="$random_8hpp.html" title="Miscellaneous math random&#45;related routines. " alt="" coords="957,184,1155,211"/>
-<area shape="rect" id="node34" href="$random__basis_8hpp.html" title="mlpack/core/math/random\l_basis.hpp" alt="" coords="1180,177,1353,218"/>
-<area shape="rect" id="node35" href="$lin__alg_8hpp.html" title="mlpack/core/math/lin\l_alg.hpp" alt="" coords="1378,177,1521,218"/>
-<area shape="rect" id="node36" href="$range_8hpp.html" title="Definition of the Range class, which represents a simple range with a lower and upper bound..." alt="" coords="2865,184,3052,211"/>
-<area shape="rect" id="node37" href="$round_8hpp.html" title="mlpack/core/math/round.hpp" alt="" coords="3076,184,3263,211"/>
-<area shape="rect" id="node38" href="$discrete__distribution_8hpp.html" title="mlpack/core/dists/discrete\l_distribution.hpp" alt="" coords="3287,177,3462,218"/>
-<area shape="rect" id="node39" href="$gaussian__distribution_8hpp.html" title="mlpack/core/dists/gaussian\l_distribution.hpp" alt="" coords="3487,177,3668,218"/>
-<area shape="rect" id="node40" href="$laplace__distribution_8hpp.html" title="mlpack/core/dists/laplace\l_distribution.hpp" alt="" coords="3692,177,3863,218"/>
-<area shape="rect" id="node41" href="$kernel__traits_8hpp.html" title="mlpack/core/kernels\l/kernel_traits.hpp" alt="" coords="3887,177,4025,218"/>
-<area shape="rect" id="node42" href="$linear__kernel_8hpp.html" title="mlpack/core/kernels\l/linear_kernel.hpp" alt="" coords="4049,177,4188,218"/>
-<area shape="rect" id="node43" href="$cosine__distance_8hpp.html" title="mlpack/core/kernels\l/cosine_distance.hpp" alt="" coords="4213,177,4358,218"/>
-<area shape="rect" id="node44" href="$gaussian__kernel_8hpp.html" title="mlpack/core/kernels\l/gaussian_kernel.hpp" alt="" coords="4382,177,4527,218"/>
-<area shape="rect" id="node45" href="$epanechnikov__kernel_8hpp.html" title="mlpack/core/kernels\l/epanechnikov_kernel.hpp" alt="" coords="4552,177,4725,218"/>
-<area shape="rect" id="node46" href="$hyperbolic__tangent__kernel_8hpp.html" title="mlpack/core/kernels\l/hyperbolic_tangent\l_kernel.hpp" alt="" coords="4749,169,4888,225"/>
-<area shape="rect" id="node47" href="$laplacian__kernel_8hpp.html" title="mlpack/core/kernels\l/laplacian_kernel.hpp" alt="" coords="4912,177,5056,218"/>
-<area shape="rect" id="node48" href="$pspectrum__string__kernel_8hpp.html" title="mlpack/core/kernels\l/pspectrum_string_kernel.hpp" alt="" coords="2477,177,2670,218"/>
-<area shape="rect" id="node49" href="$spherical__kernel_8hpp.html" title="mlpack/core/kernels\l/spherical_kernel.hpp" alt="" coords="1803,177,1949,218"/>
-<area shape="rect" id="node50" href="$triangular__kernel_8hpp.html" title="mlpack/core/kernels\l/triangular_kernel.hpp" alt="" coords="5080,177,5227,218"/>
+<area shape="rect" id="node33" href="$random_8hpp.html" title="Miscellaneous math random&#45;related routines. " alt="" coords="958,184,1157,211"/>
+<area shape="rect" id="node34" href="$random__basis_8hpp.html" title="mlpack/core/math/random\l_basis.hpp" alt="" coords="1181,177,1355,218"/>
+<area shape="rect" id="node35" href="$lin__alg_8hpp.html" title="mlpack/core/math/lin\l_alg.hpp" alt="" coords="1379,177,1522,218"/>
+<area shape="rect" id="node36" href="$range_8hpp.html" title="Definition of the Range class, which represents a simple range with a lower and upper bound..." alt="" coords="2867,184,3053,211"/>
+<area shape="rect" id="node37" href="$round_8hpp.html" title="mlpack/core/math/round.hpp" alt="" coords="3077,184,3264,211"/>
+<area shape="rect" id="node38" href="$discrete__distribution_8hpp.html" title="mlpack/core/dists/discrete\l_distribution.hpp" alt="" coords="3289,177,3463,218"/>
+<area shape="rect" id="node39" href="$gaussian__distribution_8hpp.html" title="mlpack/core/dists/gaussian\l_distribution.hpp" alt="" coords="3488,177,3669,218"/>
+<area shape="rect" id="node40" href="$laplace__distribution_8hpp.html" title="mlpack/core/dists/laplace\l_distribution.hpp" alt="" coords="3693,177,3864,218"/>
+<area shape="rect" id="node41" href="$kernel__traits_8hpp.html" title="mlpack/core/kernels\l/kernel_traits.hpp" alt="" coords="3888,177,4027,218"/>
+<area shape="rect" id="node42" href="$linear__kernel_8hpp.html" title="mlpack/core/kernels\l/linear_kernel.hpp" alt="" coords="4051,177,4189,218"/>
+<area shape="rect" id="node43" href="$cosine__distance_8hpp.html" title="mlpack/core/kernels\l/cosine_distance.hpp" alt="" coords="4214,177,4359,218"/>
+<area shape="rect" id="node44" href="$gaussian__kernel_8hpp.html" title="mlpack/core/kernels\l/gaussian_kernel.hpp" alt="" coords="4383,177,4529,218"/>
+<area shape="rect" id="node45" href="$epanechnikov__kernel_8hpp.html" title="mlpack/core/kernels\l/epanechnikov_kernel.hpp" alt="" coords="4553,177,4727,218"/>
+<area shape="rect" id="node46" href="$hyperbolic__tangent__kernel_8hpp.html" title="mlpack/core/kernels\l/hyperbolic_tangent\l_kernel.hpp" alt="" coords="4751,169,4889,225"/>
+<area shape="rect" id="node47" href="$laplacian__kernel_8hpp.html" title="mlpack/core/kernels\l/laplacian_kernel.hpp" alt="" coords="4913,177,5057,218"/>
+<area shape="rect" id="node48" href="$pspectrum__string__kernel_8hpp.html" title="mlpack/core/kernels\l/pspectrum_string_kernel.hpp" alt="" coords="2478,177,2671,218"/>
+<area shape="rect" id="node49" href="$spherical__kernel_8hpp.html" title="mlpack/core/kernels\l/spherical_kernel.hpp" alt="" coords="1805,177,1950,218"/>
+<area shape="rect" id="node50" href="$triangular__kernel_8hpp.html" title="mlpack/core/kernels\l/triangular_kernel.hpp" alt="" coords="5081,177,5228,218"/>
 <area shape="rect" id="node18" href="$unordered__map_8hpp.html" title="core/boost_backport\l/unordered_map.hpp" alt="" coords="1115,348,1255,389"/>
 <area shape="rect" id="node19" href="$serialization__shim_8hpp.html" title="mlpack/core/data/serialization\l_shim.hpp" alt="" coords="352,348,547,389"/>
 <area shape="rect" id="node21" href="$arma__config__check_8hpp.html" title="mlpack/core/util/arma\l_config_check.hpp" alt="" coords="1280,348,1427,389"/>
-<area shape="rect" id="node25" href="$prefixedoutstream_8hpp.html" title="prefixedoutstream.hpp" alt="" coords="2270,355,2421,382"/>
-<area shape="rect" id="node26" href="$nulloutstream_8hpp.html" title="nulloutstream.hpp" alt="" coords="2496,355,2621,382"/>
+<area shape="rect" id="node25" href="$prefixedoutstream_8hpp.html" title="prefixedoutstream.hpp" alt="" coords="2271,355,2422,382"/>
+<area shape="rect" id="node26" href="$nulloutstream_8hpp.html" title="nulloutstream.hpp" alt="" coords="2497,355,2623,382"/>
 </map>

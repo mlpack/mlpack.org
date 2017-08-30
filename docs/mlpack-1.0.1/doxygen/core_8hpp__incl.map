@@ -1,17 +1,17 @@
-<map id="G" name="G">
-<area shape="rect" id="node23" href="$log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="809,161,983,189"/>
-<area shape="rect" id="node44" href="$cli_8hpp.html" title="mlpack/core/util/cli.hpp" alt="" coords="1025,161,1193,189"/>
-<area shape="rect" id="node66" href="$load_8hpp.html" title="mlpack/core/data/load.hpp" alt="" coords="1185,83,1377,111"/>
-<area shape="rect" id="node73" href="$save_8hpp.html" title="mlpack/core/data/save.hpp" alt="" coords="1452,83,1647,111"/>
-<area shape="rect" id="node80" href="$clamp_8hpp.html" title="Miscellaneous math clamping routines." alt="" coords="49,83,257,111"/>
-<area shape="rect" id="node85" href="$random_8hpp.html" title="Miscellaneous math random&#45;related routines." alt="" coords="281,83,500,111"/>
-<area shape="rect" id="node94" href="$range_8hpp.html" title="Definition of the Range class, which represents a simple range with a lower and upper bound..." alt="" coords="1745,83,1951,111"/>
-<area shape="rect" id="node98" href="$save__restore__utility_8hpp.html" title="mlpack/core/util/save_restore_utility.hpp" alt="" coords="1921,161,2199,189"/>
-<area shape="rect" id="node114" href="$discrete__distribution_8hpp.html" title="mlpack/core/dists/discrete_distribution.hpp" alt="" coords="1975,83,2268,111"/>
-<area shape="rect" id="node117" href="$gaussian__distribution_8hpp.html" title="mlpack/core/dists/gaussian_distribution.hpp" alt="" coords="2343,83,2644,111"/>
-<area shape="rect" id="node27" href="$prefixedoutstream_8hpp.html" title="prefixedoutstream.hpp" alt="" coords="653,238,821,266"/>
-<area shape="rect" id="node39" href="$nulloutstream_8hpp.html" title="nulloutstream.hpp" alt="" coords="491,238,629,266"/>
-<area shape="rect" id="node56" href="$timers_8hpp.html" title="timers.hpp" alt="" coords="1776,238,1867,266"/>
-<area shape="rect" id="node62" href="$cli__deleter_8hpp.html" title="cli_deleter.hpp" alt="" coords="1251,238,1365,266"/>
-<area shape="rect" id="node120" href="$phi_8hpp.html" title="mlpack/methods/gmm/phi.hpp" alt="" coords="2377,161,2596,189"/>
+<map id="src/mlpack/core.hpp" name="src/mlpack/core.hpp">
+<area shape="rect" id="node12" href="$log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="784,177,944,203"/>
+<area shape="rect" id="node20" href="$cli_8hpp.html" title="mlpack/core/util/cli.hpp" alt="" coords="1005,177,1161,203"/>
+<area shape="rect" id="node29" href="$load_8hpp.html" title="mlpack/core/data/load.hpp" alt="" coords="1143,87,1318,114"/>
+<area shape="rect" id="node31" href="$save_8hpp.html" title="mlpack/core/data/save.hpp" alt="" coords="1393,87,1572,114"/>
+<area shape="rect" id="node33" href="$clamp_8hpp.html" title="Miscellaneous math clamping routines. " alt="" coords="59,87,250,114"/>
+<area shape="rect" id="node34" href="$random_8hpp.html" title="Miscellaneous math random&#45;related routines. " alt="" coords="274,87,473,114"/>
+<area shape="rect" id="node37" href="$range_8hpp.html" title="Definition of the Range class, which represents a simple range with a lower and upper bound..." alt="" coords="1671,87,1857,114"/>
+<area shape="rect" id="node39" href="$save__restore__utility_8hpp.html" title="mlpack/core/util/save\l_restore_utility.hpp" alt="" coords="1827,169,1973,211"/>
+<area shape="rect" id="node45" href="$discrete__distribution_8hpp.html" title="mlpack/core/dists/discrete\l_distribution.hpp" alt="" coords="1882,80,2057,121"/>
+<area shape="rect" id="node46" href="$gaussian__distribution_8hpp.html" title="mlpack/core/dists/gaussian\l_distribution.hpp" alt="" coords="2132,80,2313,121"/>
+<area shape="rect" id="node14" href="$prefixedoutstream_8hpp.html" title="prefixedoutstream.hpp" alt="" coords="639,266,790,293"/>
+<area shape="rect" id="node19" href="$nulloutstream_8hpp.html" title="nulloutstream.hpp" alt="" coords="489,266,615,293"/>
+<area shape="rect" id="node25" href="$timers_8hpp.html" title="timers.hpp" alt="" coords="1708,266,1791,293"/>
+<area shape="rect" id="node27" href="$cli__deleter_8hpp.html" title="cli_deleter.hpp" alt="" coords="1196,266,1303,293"/>
+<area shape="rect" id="node47" href="$phi_8hpp.html" title="mlpack/methods/gmm\l/phi.hpp" alt="" coords="2142,169,2293,211"/>
 </map>

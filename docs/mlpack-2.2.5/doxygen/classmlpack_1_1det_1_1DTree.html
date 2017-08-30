@@ -1,0 +1,1283 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">2.2.5</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1det.html">det</a></li><li class="navelem"><a class="el" href="classmlpack_1_1det_1_1DTree.html">DTree</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classmlpack_1_1det_1_1DTree-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">DTree Class Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >A density estimation tree is similar to both a decision tree and a space partitioning tree (like a kd-tree).  
+ <a href="classmlpack_1_1det_1_1DTree.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aeb922a13b4645b611d04538638632b6e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#aeb922a13b4645b611d04538638632b6e">DTree</a> ()</td></tr>
+<tr class="memdesc:aeb922a13b4645b611d04538638632b6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an empty density estimation tree.  <a href="#aeb922a13b4645b611d04538638632b6e">More...</a><br /></br></td></tr>
+<tr class="separator:aeb922a13b4645b611d04538638632b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade54f7a6954bb71ac28523ee1871d8a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#ade54f7a6954bb71ac28523ee1871d8a2">DTree</a> (const arma::vec &amp;maxVals, const arma::vec &amp;minVals, const size_t totalPoints)</td></tr>
+<tr class="memdesc:ade54f7a6954bb71ac28523ee1871d8a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a density estimation tree with the given bounds and the given number of total points.  <a href="#ade54f7a6954bb71ac28523ee1871d8a2">More...</a><br /></br></td></tr>
+<tr class="separator:ade54f7a6954bb71ac28523ee1871d8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a108c3670d5a93b0a0991ad2e41f5d7eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#a108c3670d5a93b0a0991ad2e41f5d7eb">DTree</a> (arma::mat &amp;data)</td></tr>
+<tr class="memdesc:a108c3670d5a93b0a0991ad2e41f5d7eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a density estimation tree on the given data.  <a href="#a108c3670d5a93b0a0991ad2e41f5d7eb">More...</a><br /></br></td></tr>
+<tr class="separator:a108c3670d5a93b0a0991ad2e41f5d7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a733e12487662ddd3f231a766884c7ee6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#a733e12487662ddd3f231a766884c7ee6">DTree</a> (const arma::vec &amp;maxVals, const arma::vec &amp;minVals, const size_t start, const size_t end, const double logNegError)</td></tr>
+<tr class="memdesc:a733e12487662ddd3f231a766884c7ee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a child node of a density estimation tree given the bounding box specified by maxVals and minVals, using the size given in start and end and the specified error.  <a href="#a733e12487662ddd3f231a766884c7ee6">More...</a><br /></br></td></tr>
+<tr class="separator:a733e12487662ddd3f231a766884c7ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa06ceaffca61e482574b3a0388423776"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#aa06ceaffca61e482574b3a0388423776">DTree</a> (const arma::vec &amp;maxVals, const arma::vec &amp;minVals, const size_t totalPoints, const size_t start, const size_t end)</td></tr>
+<tr class="memdesc:aa06ceaffca61e482574b3a0388423776"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a child node of a density estimation tree given the bounding box specified by maxVals and minVals, using the size given in start and end, and calculating the error with the total number of points given.  <a href="#aa06ceaffca61e482574b3a0388423776">More...</a><br /></br></td></tr>
+<tr class="separator:aa06ceaffca61e482574b3a0388423776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdcf08945ef6a9e395acc1cea13582b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#afdcf08945ef6a9e395acc1cea13582b1">~DTree</a> ()</td></tr>
+<tr class="memdesc:afdcf08945ef6a9e395acc1cea13582b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up memory allocated by the tree.  <a href="#afdcf08945ef6a9e395acc1cea13582b1">More...</a><br /></br></td></tr>
+<tr class="separator:afdcf08945ef6a9e395acc1cea13582b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac68e0c97d89449fb5b376c5efea143af"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#ac68e0c97d89449fb5b376c5efea143af">AlphaUpper</a> () const</td></tr>
+<tr class="memdesc:ac68e0c97d89449fb5b376c5efea143af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the upper part of the alpha sum.  <a href="#ac68e0c97d89449fb5b376c5efea143af">More...</a><br /></br></td></tr>
+<tr class="separator:ac68e0c97d89449fb5b376c5efea143af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae864367476cf39dc0b80317255ea26f3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#ae864367476cf39dc0b80317255ea26f3">ComputeValue</a> (const arma::vec &amp;query) const</td></tr>
+<tr class="memdesc:ae864367476cf39dc0b80317255ea26f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the logarithm of the density estimate of a given query point.  <a href="#ae864367476cf39dc0b80317255ea26f3">More...</a><br /></br></td></tr>
+<tr class="separator:ae864367476cf39dc0b80317255ea26f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1adcb64ec2d66b8299df1271a1ed1cac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#a1adcb64ec2d66b8299df1271a1ed1cac">ComputeVariableImportance</a> (arma::vec &amp;importances) const</td></tr>
+<tr class="memdesc:a1adcb64ec2d66b8299df1271a1ed1cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the variable importance of each dimension in the learned tree.  <a href="#a1adcb64ec2d66b8299df1271a1ed1cac">More...</a><br /></br></td></tr>
+<tr class="separator:a1adcb64ec2d66b8299df1271a1ed1cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d5a763647411c8a0f06e031c4611a0f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#a8d5a763647411c8a0f06e031c4611a0f">End</a> () const</td></tr>
+<tr class="memdesc:a8d5a763647411c8a0f06e031c4611a0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first index of a point not contained in this node.  <a href="#a8d5a763647411c8a0f06e031c4611a0f">More...</a><br /></br></td></tr>
+<tr class="separator:a8d5a763647411c8a0f06e031c4611a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cfb87e06de0a51254317d77208bf96e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#a1cfb87e06de0a51254317d77208bf96e">FindBucket</a> (const arma::vec &amp;query) const</td></tr>
+<tr class="memdesc:a1cfb87e06de0a51254317d77208bf96e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the tag of the leaf containing the query.  <a href="#a1cfb87e06de0a51254317d77208bf96e">More...</a><br /></br></td></tr>
+<tr class="separator:a1cfb87e06de0a51254317d77208bf96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa6dcebc35389bd34e78e059069470d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#affa6dcebc35389bd34e78e059069470d">Grow</a> (arma::mat &amp;data, arma::Col&lt; size_t &gt; &amp;oldFromNew, const bool useVolReg=false, const size_t maxLeafSize=10, const size_t minLeafSize=5)</td></tr>
+<tr class="memdesc:affa6dcebc35389bd34e78e059069470d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Greedily expand the tree.  <a href="#affa6dcebc35389bd34e78e059069470d">More...</a><br /></br></td></tr>
+<tr class="separator:affa6dcebc35389bd34e78e059069470d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79cce69b3ecde079bd57239a87c64c19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmlpack_1_1det_1_1DTree.html">DTree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#a79cce69b3ecde079bd57239a87c64c19">Left</a> () const</td></tr>
+<tr class="memdesc:a79cce69b3ecde079bd57239a87c64c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the left child.  <a href="#a79cce69b3ecde079bd57239a87c64c19">More...</a><br /></br></td></tr>
+<tr class="separator:a79cce69b3ecde079bd57239a87c64c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bc8836adf076875ac64f2e74cef34bb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#a0bc8836adf076875ac64f2e74cef34bb">LogNegativeError</a> (const size_t totalPoints) const</td></tr>
+<tr class="memdesc:a0bc8836adf076875ac64f2e74cef34bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the log-negative-error for this point, given the total number of points in the dataset.  <a href="#a0bc8836adf076875ac64f2e74cef34bb">More...</a><br /></br></td></tr>
+<tr class="separator:a0bc8836adf076875ac64f2e74cef34bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38a7244bcf0177609f89719fab505337"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#a38a7244bcf0177609f89719fab505337">LogNegError</a> () const</td></tr>
+<tr class="memdesc:a38a7244bcf0177609f89719fab505337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the log negative error of this node.  <a href="#a38a7244bcf0177609f89719fab505337">More...</a><br /></br></td></tr>
+<tr class="separator:a38a7244bcf0177609f89719fab505337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b35659c3302722bb6ecb80dccba9cb6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#a7b35659c3302722bb6ecb80dccba9cb6">LogVolume</a> () const</td></tr>
+<tr class="memdesc:a7b35659c3302722bb6ecb80dccba9cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the inverse of the volume of this node.  <a href="#a7b35659c3302722bb6ecb80dccba9cb6">More...</a><br /></br></td></tr>
+<tr class="separator:a7b35659c3302722bb6ecb80dccba9cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0275a25412b559866dc15a3da17bbd1"><td class="memItemLeft" align="right" valign="top">const arma::vec &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#af0275a25412b559866dc15a3da17bbd1">MaxVals</a> () const</td></tr>
+<tr class="memdesc:af0275a25412b559866dc15a3da17bbd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the maximum values.  <a href="#af0275a25412b559866dc15a3da17bbd1">More...</a><br /></br></td></tr>
+<tr class="separator:af0275a25412b559866dc15a3da17bbd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5be7b6502d2d16242f763135275ce5b8"><td class="memItemLeft" align="right" valign="top">arma::vec &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#a5be7b6502d2d16242f763135275ce5b8">MaxVals</a> ()</td></tr>
+<tr class="memdesc:a5be7b6502d2d16242f763135275ce5b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the maximum values.  <a href="#a5be7b6502d2d16242f763135275ce5b8">More...</a><br /></br></td></tr>
+<tr class="separator:a5be7b6502d2d16242f763135275ce5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e22319664f69182336a5d842d708e35"><td class="memItemLeft" align="right" valign="top">const arma::vec &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#a0e22319664f69182336a5d842d708e35">MinVals</a> () const</td></tr>
+<tr class="memdesc:a0e22319664f69182336a5d842d708e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the minimum values.  <a href="#a0e22319664f69182336a5d842d708e35">More...</a><br /></br></td></tr>
+<tr class="separator:a0e22319664f69182336a5d842d708e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31cc5b096a87e946b26e96c95db55490"><td class="memItemLeft" align="right" valign="top">arma::vec &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#a31cc5b096a87e946b26e96c95db55490">MinVals</a> ()</td></tr>
+<tr class="memdesc:a31cc5b096a87e946b26e96c95db55490"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the minimum values.  <a href="#a31cc5b096a87e946b26e96c95db55490">More...</a><br /></br></td></tr>
+<tr class="separator:a31cc5b096a87e946b26e96c95db55490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6a3d2b5cdf33af3808b659e45750203"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#ac6a3d2b5cdf33af3808b659e45750203">PruneAndUpdate</a> (const double oldAlpha, const size_t points, const bool useVolReg=false)</td></tr>
+<tr class="memdesc:ac6a3d2b5cdf33af3808b659e45750203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform alpha pruning on a tree.  <a href="#ac6a3d2b5cdf33af3808b659e45750203">More...</a><br /></br></td></tr>
+<tr class="separator:ac6a3d2b5cdf33af3808b659e45750203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0052f2d1427761ea25fb01a05d966a40"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#a0052f2d1427761ea25fb01a05d966a40">Ratio</a> () const</td></tr>
+<tr class="memdesc:a0052f2d1427761ea25fb01a05d966a40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the ratio of points in this node to the points in the whole dataset.  <a href="#a0052f2d1427761ea25fb01a05d966a40">More...</a><br /></br></td></tr>
+<tr class="separator:a0052f2d1427761ea25fb01a05d966a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a307f2b17aaa261c5ad13c9ede094da2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmlpack_1_1det_1_1DTree.html">DTree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#a307f2b17aaa261c5ad13c9ede094da2a">Right</a> () const</td></tr>
+<tr class="memdesc:a307f2b17aaa261c5ad13c9ede094da2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the right child.  <a href="#a307f2b17aaa261c5ad13c9ede094da2a">More...</a><br /></br></td></tr>
+<tr class="separator:a307f2b17aaa261c5ad13c9ede094da2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae294c1fd88f903e9d9869d8cface6b39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#ae294c1fd88f903e9d9869d8cface6b39">Root</a> () const</td></tr>
+<tr class="memdesc:ae294c1fd88f903e9d9869d8cface6b39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether or not this is the root of the tree.  <a href="#ae294c1fd88f903e9d9869d8cface6b39">More...</a><br /></br></td></tr>
+<tr class="separator:ae294c1fd88f903e9d9869d8cface6b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae187181bfb4ff8601e6385fd4fc4999d"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:ae187181bfb4ff8601e6385fd4fc4999d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#ae187181bfb4ff8601e6385fd4fc4999d">Serialize</a> (Archive &amp;ar, const unsigned int)</td></tr>
+<tr class="memdesc:ae187181bfb4ff8601e6385fd4fc4999d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the density estimation tree.  <a href="#ae187181bfb4ff8601e6385fd4fc4999d">More...</a><br /></br></td></tr>
+<tr class="separator:ae187181bfb4ff8601e6385fd4fc4999d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46ee4cbf7c7a198da7b47edb54fb39ad"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#a46ee4cbf7c7a198da7b47edb54fb39ad">SplitDim</a> () const</td></tr>
+<tr class="memdesc:a46ee4cbf7c7a198da7b47edb54fb39ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the split dimension of this node.  <a href="#a46ee4cbf7c7a198da7b47edb54fb39ad">More...</a><br /></br></td></tr>
+<tr class="separator:a46ee4cbf7c7a198da7b47edb54fb39ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a707ca794f89a339ba3162131c1fd401d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#a707ca794f89a339ba3162131c1fd401d">SplitValue</a> () const</td></tr>
+<tr class="memdesc:a707ca794f89a339ba3162131c1fd401d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the split value of this node.  <a href="#a707ca794f89a339ba3162131c1fd401d">More...</a><br /></br></td></tr>
+<tr class="separator:a707ca794f89a339ba3162131c1fd401d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af08dc5cd1920c643d789d89f8386d24e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#af08dc5cd1920c643d789d89f8386d24e">Start</a> () const</td></tr>
+<tr class="memdesc:af08dc5cd1920c643d789d89f8386d24e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the starting index of points contained in this node.  <a href="#af08dc5cd1920c643d789d89f8386d24e">More...</a><br /></br></td></tr>
+<tr class="separator:af08dc5cd1920c643d789d89f8386d24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2328d45aa8b19c2aa22b4cf0f3ec9c02"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#a2328d45aa8b19c2aa22b4cf0f3ec9c02">SubtreeLeaves</a> () const</td></tr>
+<tr class="memdesc:a2328d45aa8b19c2aa22b4cf0f3ec9c02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of leaves which are descendants of this node.  <a href="#a2328d45aa8b19c2aa22b4cf0f3ec9c02">More...</a><br /></br></td></tr>
+<tr class="separator:a2328d45aa8b19c2aa22b4cf0f3ec9c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace34bbc6045e759256ddb44ceb7e457c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#ace34bbc6045e759256ddb44ceb7e457c">SubtreeLeavesLogNegError</a> () const</td></tr>
+<tr class="memdesc:ace34bbc6045e759256ddb44ceb7e457c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the log negative error of all descendants of this node.  <a href="#ace34bbc6045e759256ddb44ceb7e457c">More...</a><br /></br></td></tr>
+<tr class="separator:ace34bbc6045e759256ddb44ceb7e457c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a766c5be040ae825060f4acc3facef40c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#a766c5be040ae825060f4acc3facef40c">TagTree</a> (const int tag=0)</td></tr>
+<tr class="memdesc:a766c5be040ae825060f4acc3facef40c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index the buckets for possible usage later; this results in every leaf in the tree having a specific tag (accessible with BucketTag()).  <a href="#a766c5be040ae825060f4acc3facef40c">More...</a><br /></br></td></tr>
+<tr class="separator:a766c5be040ae825060f4acc3facef40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3e842b4bf5e9bdcef4a6c818c8192d9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#ae3e842b4bf5e9bdcef4a6c818c8192d9">WithinRange</a> (const arma::vec &amp;query) const</td></tr>
+<tr class="memdesc:ae3e842b4bf5e9bdcef4a6c818c8192d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a query point is within the range of this node.  <a href="#ae3e842b4bf5e9bdcef4a6c818c8192d9">More...</a><br /></br></td></tr>
+<tr class="separator:ae3e842b4bf5e9bdcef4a6c818c8192d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affb1c092dd41829cd3c1adc635076081"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1det_1_1DTree.html#affb1c092dd41829cd3c1adc635076081">WriteTree</a> (FILE *fp, const size_t level=0) const</td></tr>
+<tr class="memdesc:affb1c092dd41829cd3c1adc635076081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the tree in a depth-first manner (this function is called recursively).  <a href="#affb1c092dd41829cd3c1adc635076081">More...</a><br /></br></td></tr>
+<tr class="separator:affb1c092dd41829cd3c1adc635076081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A density estimation tree is similar to both a decision tree and a space partitioning tree (like a kd-tree). </p>
+<p >Each leaf represents a constant-density hyper-rectangle. The tree is constructed in such a way as to minimize the integrated square error between the probability distribution of the tree and the observed probability distribution of the data. Because the tree is similar to a decision tree, the density estimation tree can provide very fast density estimates for a given point.</p>
+<p >For more information, see the following paper:</p>
+<div class="fragment"><div class="line">@incollection{ram2011,</div><div class="line">  author = {Ram, Parikshit and Gray, Alexander G.},</div><div class="line">  title = {Density <a class="code" href="det_8txt.html#a65306fe60b0233b3af272883cdc54a9d">estimation</a> trees},</div><div class="line">  booktitle = {{Proceedings of the 17th ACM SIGKDD International Conference</div><div class="line">      on Knowledge Discovery and Data Mining}},</div><div class="line">  series = {KDD <span class="stringliteral">&#39;11},</span></div><div class="line"><span class="stringliteral">  year = {2011},</span></div><div class="line"><span class="stringliteral">  pages = {627--635}</span></div><div class="line"><span class="stringliteral">}</span></div></div> 
+<p class="definition">Definition at line <a class="el" href="dtree_8hpp_source.html#l00044">44</a> of file <a class="el" href="dtree_8hpp_source.html">dtree.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aeb922a13b4645b611d04538638632b6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb922a13b4645b611d04538638632b6e">&#9670;&nbsp;</a></span>DTree() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1det_1_1DTree.html">DTree</a> </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Create an empty density estimation tree. </p>
+
+</div>
+</div>
+<a id="ade54f7a6954bb71ac28523ee1871d8a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade54f7a6954bb71ac28523ee1871d8a2">&#9670;&nbsp;</a></span>DTree() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1det_1_1DTree.html">DTree</a> </td>
+          <td >(</td>
+          <td class="paramtype">const arma::vec &amp;&#160;</td>
+          <td class="paramname"><em >maxVals</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const arma::vec &amp;&#160;</td>
+          <td class="paramname"><em >minVals</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >totalPoints</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Create a density estimation tree with the given bounds and the given number of total points. </p>
+<p >Children will not be created.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">maxVals</td><td >Maximum values of the bounding box. </td></tr>
+    <tr ><td class="paramname">minVals</td><td >Minimum values of the bounding box. </td></tr>
+    <tr ><td class="paramname">totalPoints</td><td >Total number of points in the dataset. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a108c3670d5a93b0a0991ad2e41f5d7eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a108c3670d5a93b0a0991ad2e41f5d7eb">&#9670;&nbsp;</a></span>DTree() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1det_1_1DTree.html">DTree</a> </td>
+          <td >(</td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >data</em></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Create a density estimation tree on the given data. </p>
+<p >Children will be created following the procedure outlined in the paper. The data will be modified; it will be reordered similar to the way BinarySpaceTree modifies datasets.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">data</td><td >Dataset to build tree on. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a733e12487662ddd3f231a766884c7ee6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a733e12487662ddd3f231a766884c7ee6">&#9670;&nbsp;</a></span>DTree() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1det_1_1DTree.html">DTree</a> </td>
+          <td >(</td>
+          <td class="paramtype">const arma::vec &amp;&#160;</td>
+          <td class="paramname"><em >maxVals</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const arma::vec &amp;&#160;</td>
+          <td class="paramname"><em >minVals</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >start</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >end</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >logNegError</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Create a child node of a density estimation tree given the bounding box specified by maxVals and minVals, using the size given in start and end and the specified error. </p>
+<p >Children of this node will not be created recursively.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">maxVals</td><td >Upper bound of bounding box. </td></tr>
+    <tr ><td class="paramname">minVals</td><td >Lower bound of bounding box. </td></tr>
+    <tr ><td class="paramname">start</td><td >Start of points represented by this node in the data matrix. </td></tr>
+    <tr ><td class="paramname">end</td><td >End of points represented by this node in the data matrix. </td></tr>
+    <tr ><td class="paramname">error</td><td >log-negative error of this node. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa06ceaffca61e482574b3a0388423776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa06ceaffca61e482574b3a0388423776">&#9670;&nbsp;</a></span>DTree() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1det_1_1DTree.html">DTree</a> </td>
+          <td >(</td>
+          <td class="paramtype">const arma::vec &amp;&#160;</td>
+          <td class="paramname"><em >maxVals</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const arma::vec &amp;&#160;</td>
+          <td class="paramname"><em >minVals</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >totalPoints</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >start</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >end</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Create a child node of a density estimation tree given the bounding box specified by maxVals and minVals, using the size given in start and end, and calculating the error with the total number of points given. </p>
+<p >Children of this node will not be created recursively.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">maxVals</td><td >Upper bound of bounding box. </td></tr>
+    <tr ><td class="paramname">minVals</td><td >Lower bound of bounding box. </td></tr>
+    <tr ><td class="paramname">start</td><td >Start of points represented by this node in the data matrix. </td></tr>
+    <tr ><td class="paramname">end</td><td >End of points represented by this node in the data matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afdcf08945ef6a9e395acc1cea13582b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdcf08945ef6a9e395acc1cea13582b1">&#9670;&nbsp;</a></span>~DTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">~<a class="el" href="classmlpack_1_1det_1_1DTree.html">DTree</a> </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Clean up memory allocated by the tree. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac68e0c97d89449fb5b376c5efea143af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac68e0c97d89449fb5b376c5efea143af">&#9670;&nbsp;</a></span>AlphaUpper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double AlphaUpper </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the upper part of the alpha sum. </p>
+
+<p class="definition">Definition at line <a class="el" href="dtree_8hpp_source.html#l00274">274</a> of file <a class="el" href="dtree_8hpp_source.html">dtree.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae864367476cf39dc0b80317255ea26f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae864367476cf39dc0b80317255ea26f3">&#9670;&nbsp;</a></span>ComputeValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">double ComputeValue </td>
+          <td >(</td>
+          <td class="paramtype">const arma::vec &amp;&#160;</td>
+          <td class="paramname"><em >query</em></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Compute the logarithm of the density estimate of a given query point. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">query</td><td >Point to estimate density of. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1adcb64ec2d66b8299df1271a1ed1cac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1adcb64ec2d66b8299df1271a1ed1cac">&#9670;&nbsp;</a></span>ComputeVariableImportance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void ComputeVariableImportance </td>
+          <td >(</td>
+          <td class="paramtype">arma::vec &amp;&#160;</td>
+          <td class="paramname"><em >importances</em></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Compute the variable importance of each dimension in the learned tree. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">importances</td><td >Vector to store the calculated importances in. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8d5a763647411c8a0f06e031c4611a0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d5a763647411c8a0f06e031c4611a0f">&#9670;&nbsp;</a></span>End()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t End </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the first index of a point not contained in this node. </p>
+
+<p class="definition">Definition at line <a class="el" href="dtree_8hpp_source.html#l00251">251</a> of file <a class="el" href="dtree_8hpp_source.html">dtree.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a1cfb87e06de0a51254317d77208bf96e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cfb87e06de0a51254317d77208bf96e">&#9670;&nbsp;</a></span>FindBucket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">int FindBucket </td>
+          <td >(</td>
+          <td class="paramtype">const arma::vec &amp;&#160;</td>
+          <td class="paramname"><em >query</em></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Return the tag of the leaf containing the query. </p>
+<p >This is useful for generating class memberships.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">query</td><td >Query to search for. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="affa6dcebc35389bd34e78e059069470d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affa6dcebc35389bd34e78e059069470d">&#9670;&nbsp;</a></span>Grow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Grow </td>
+          <td >(</td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >data</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::Col&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >oldFromNew</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em >useVolReg</em> = <code >false</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >maxLeafSize</em> = <code >10</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >minLeafSize</em> = <code >5</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Greedily expand the tree. </p>
+<p >The points in the dataset will be reordered during tree growth.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">data</td><td >Dataset to build tree on. </td></tr>
+    <tr ><td class="paramname">oldFromNew</td><td >Mappings from old points to new points. </td></tr>
+    <tr ><td class="paramname">useVolReg</td><td >If true, volume regularization is used. </td></tr>
+    <tr ><td class="paramname">maxLeafSize</td><td >Maximum size of a leaf. </td></tr>
+    <tr ><td class="paramname">minLeafSize</td><td >Minimum size of a leaf. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a79cce69b3ecde079bd57239a87c64c19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79cce69b3ecde079bd57239a87c64c19">&#9670;&nbsp;</a></span>Left()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1det_1_1DTree.html">DTree</a>* Left </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the left child. </p>
+
+<p class="definition">Definition at line <a class="el" href="dtree_8hpp_source.html#l00268">268</a> of file <a class="el" href="dtree_8hpp_source.html">dtree.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0bc8836adf076875ac64f2e74cef34bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bc8836adf076875ac64f2e74cef34bb">&#9670;&nbsp;</a></span>LogNegativeError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">double LogNegativeError </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >totalPoints</em></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Compute the log-negative-error for this point, given the total number of points in the dataset. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">totalPoints</td><td >Total number of points in the dataset. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a38a7244bcf0177609f89719fab505337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38a7244bcf0177609f89719fab505337">&#9670;&nbsp;</a></span>LogNegError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double LogNegError </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the log negative error of this node. </p>
+
+<p class="definition">Definition at line <a class="el" href="dtree_8hpp_source.html#l00257">257</a> of file <a class="el" href="dtree_8hpp_source.html">dtree.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a7b35659c3302722bb6ecb80dccba9cb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b35659c3302722bb6ecb80dccba9cb6">&#9670;&nbsp;</a></span>LogVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double LogVolume </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the inverse of the volume of this node. </p>
+
+<p class="definition">Definition at line <a class="el" href="dtree_8hpp_source.html#l00266">266</a> of file <a class="el" href="dtree_8hpp_source.html">dtree.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af0275a25412b559866dc15a3da17bbd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0275a25412b559866dc15a3da17bbd1">&#9670;&nbsp;</a></span>MaxVals() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::vec&amp; MaxVals </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the maximum values. </p>
+
+<p class="definition">Definition at line <a class="el" href="dtree_8hpp_source.html#l00277">277</a> of file <a class="el" href="dtree_8hpp_source.html">dtree.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a5be7b6502d2d16242f763135275ce5b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5be7b6502d2d16242f763135275ce5b8">&#9670;&nbsp;</a></span>MaxVals() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">arma::vec&amp; MaxVals </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the maximum values. </p>
+
+<p class="definition">Definition at line <a class="el" href="dtree_8hpp_source.html#l00279">279</a> of file <a class="el" href="dtree_8hpp_source.html">dtree.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0e22319664f69182336a5d842d708e35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e22319664f69182336a5d842d708e35">&#9670;&nbsp;</a></span>MinVals() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::vec&amp; MinVals </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the minimum values. </p>
+
+<p class="definition">Definition at line <a class="el" href="dtree_8hpp_source.html#l00282">282</a> of file <a class="el" href="dtree_8hpp_source.html">dtree.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a31cc5b096a87e946b26e96c95db55490"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31cc5b096a87e946b26e96c95db55490">&#9670;&nbsp;</a></span>MinVals() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">arma::vec&amp; MinVals </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the minimum values. </p>
+
+<p class="definition">Definition at line <a class="el" href="dtree_8hpp_source.html#l00284">284</a> of file <a class="el" href="dtree_8hpp_source.html">dtree.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ac6a3d2b5cdf33af3808b659e45750203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6a3d2b5cdf33af3808b659e45750203">&#9670;&nbsp;</a></span>PruneAndUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">double PruneAndUpdate </td>
+          <td >(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >oldAlpha</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >points</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em >useVolReg</em> = <code >false</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Perform alpha pruning on a tree. </p>
+<p >Returns the new value of alpha.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">oldAlpha</td><td >Old value of alpha. </td></tr>
+    <tr ><td class="paramname">points</td><td >Total number of points in dataset. </td></tr>
+    <tr ><td class="paramname">useVolReg</td><td >If true, volume regularization is used. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt >Returns</dt><dd >New value of alpha. </dd></dl>
+
+</div>
+</div>
+<a id="a0052f2d1427761ea25fb01a05d966a40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0052f2d1427761ea25fb01a05d966a40">&#9670;&nbsp;</a></span>Ratio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Ratio </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the ratio of points in this node to the points in the whole dataset. </p>
+
+<p class="definition">Definition at line <a class="el" href="dtree_8hpp_source.html#l00264">264</a> of file <a class="el" href="dtree_8hpp_source.html">dtree.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a307f2b17aaa261c5ad13c9ede094da2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a307f2b17aaa261c5ad13c9ede094da2a">&#9670;&nbsp;</a></span>Right()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1det_1_1DTree.html">DTree</a>* Right </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the right child. </p>
+
+<p class="definition">Definition at line <a class="el" href="dtree_8hpp_source.html#l00270">270</a> of file <a class="el" href="dtree_8hpp_source.html">dtree.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae294c1fd88f903e9d9869d8cface6b39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae294c1fd88f903e9d9869d8cface6b39">&#9670;&nbsp;</a></span>Root()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">bool Root </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return whether or not this is the root of the tree. </p>
+
+<p class="definition">Definition at line <a class="el" href="dtree_8hpp_source.html#l00272">272</a> of file <a class="el" href="dtree_8hpp_source.html">dtree.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae187181bfb4ff8601e6385fd4fc4999d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae187181bfb4ff8601e6385fd4fc4999d">&#9670;&nbsp;</a></span>Serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Serialize </td>
+          <td >(</td>
+          <td class="paramtype">Archive &amp;&#160;</td>
+          <td class="paramname"><em >ar</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em >int</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Serialize the density estimation tree. </p>
+
+<p class="definition">Definition at line <a class="el" href="dtree_8hpp_source.html#l00290">290</a> of file <a class="el" href="dtree_8hpp_source.html">dtree.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="serialization__shim_8hpp_source.html#l00093">mlpack::data::CreateNVP()</a>.</p>
+
+</div>
+</div>
+<a id="a46ee4cbf7c7a198da7b47edb54fb39ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46ee4cbf7c7a198da7b47edb54fb39ad">&#9670;&nbsp;</a></span>SplitDim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t SplitDim </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the split dimension of this node. </p>
+
+<p class="definition">Definition at line <a class="el" href="dtree_8hpp_source.html#l00253">253</a> of file <a class="el" href="dtree_8hpp_source.html">dtree.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a707ca794f89a339ba3162131c1fd401d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a707ca794f89a339ba3162131c1fd401d">&#9670;&nbsp;</a></span>SplitValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double SplitValue </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the split value of this node. </p>
+
+<p class="definition">Definition at line <a class="el" href="dtree_8hpp_source.html#l00255">255</a> of file <a class="el" href="dtree_8hpp_source.html">dtree.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af08dc5cd1920c643d789d89f8386d24e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af08dc5cd1920c643d789d89f8386d24e">&#9670;&nbsp;</a></span>Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t Start </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the starting index of points contained in this node. </p>
+
+<p class="definition">Definition at line <a class="el" href="dtree_8hpp_source.html#l00249">249</a> of file <a class="el" href="dtree_8hpp_source.html">dtree.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a2328d45aa8b19c2aa22b4cf0f3ec9c02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2328d45aa8b19c2aa22b4cf0f3ec9c02">&#9670;&nbsp;</a></span>SubtreeLeaves()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t SubtreeLeaves </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the number of leaves which are descendants of this node. </p>
+
+<p class="definition">Definition at line <a class="el" href="dtree_8hpp_source.html#l00261">261</a> of file <a class="el" href="dtree_8hpp_source.html">dtree.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ace34bbc6045e759256ddb44ceb7e457c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace34bbc6045e759256ddb44ceb7e457c">&#9670;&nbsp;</a></span>SubtreeLeavesLogNegError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double SubtreeLeavesLogNegError </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Return the log negative error of all descendants of this node. </p>
+
+<p class="definition">Definition at line <a class="el" href="dtree_8hpp_source.html#l00259">259</a> of file <a class="el" href="dtree_8hpp_source.html">dtree.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a766c5be040ae825060f4acc3facef40c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a766c5be040ae825060f4acc3facef40c">&#9670;&nbsp;</a></span>TagTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">int TagTree </td>
+          <td >(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em >tag</em> = <code >0</code></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Index the buckets for possible usage later; this results in every leaf in the tree having a specific tag (accessible with BucketTag()). </p>
+<p >This function calls itself recursively.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">tag</td><td >Tag for the next leaf; leave at 0 for the initial call. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae3e842b4bf5e9bdcef4a6c818c8192d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3e842b4bf5e9bdcef4a6c818c8192d9">&#9670;&nbsp;</a></span>WithinRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">bool WithinRange </td>
+          <td >(</td>
+          <td class="paramtype">const arma::vec &amp;&#160;</td>
+          <td class="paramname"><em >query</em></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Return whether a query point is within the range of this node. </p>
+
+</div>
+</div>
+<a id="affb1c092dd41829cd3c1adc635076081"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affb1c092dd41829cd3c1adc635076081">&#9670;&nbsp;</a></span>WriteTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void WriteTree </td>
+          <td >(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em >fp</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >level</em> = <code >0</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Print the tree in a depth-first manner (this function is called recursively). </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">fp</td><td >File to write the tree to. </td></tr>
+    <tr ><td class="paramname">level</td><td >Level of the tree (should start at 0). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/methods/det/<a class="el" href="dtree_8hpp_source.html">dtree.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

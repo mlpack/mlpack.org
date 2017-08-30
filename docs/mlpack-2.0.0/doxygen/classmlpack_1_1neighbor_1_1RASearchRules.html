@@ -1,22 +1,50 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head >
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
-<meta name="generator" content="Doxygen 1.8.9.1"></meta>
-<title >mlpack: mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt; Class Template Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
-</link>
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
-</link>
-</head>
-<body >
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
 <div id="top">
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody >
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mlpack
    &#160;<span id="projectnumber">2.0.0</span>
    </div>
@@ -26,24 +54,14 @@
 </table>
 </div>
 
-
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
-      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
-      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span >Classes</span></a></li>
-      <li ><a href="files.html"><span >Files</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li ><a href="annotated.html"><span >Class&#160;List</span></a></li>
-      <li ><a href="classes.html"><span >Class&#160;Index</span></a></li>
-      <li ><a href="inherits.html"><span >Class&#160;Hierarchy</span></a></li>
-      <li ><a href="functions.html"><span >Class&#160;Members</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+</script>
+<div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul >
 <li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1neighbor.html">neighbor</a></li><li class="navelem"><a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html">RASearchRules</a></li>  </ul>
@@ -68,7 +86,7 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2b8990966078cf8c0b26d2b16cff6de7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#a2b8990966078cf8c0b26d2b16cff6de7">RASearchRules</a> (const arma::mat &amp;<a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#ad68fb2a917750a04891ab7038fe14c1c">referenceSet</a>, const arma::mat &amp;<a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#a45f4b523edeaec45c008c6afdafe0b15">querySet</a>, arma::Mat&lt; size_t &gt; &amp;<a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#a80486b1fbf6eaffee9515cd1e65a71ce">neighbors</a>, arma::mat &amp;<a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#ad9e4dc6891f2c2e499165e80585d54e0">distances</a>, MetricType &amp;<a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#a39a48dc48445713707688480328cc7d0">metric</a>, const double tau=5, const double <a class="el" href="det_8txt.html#ab91e75beea981a97844ff19e46d522e5">alpha</a>=0.95, const bool naive=false, const bool <a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#aff207b85035a96adaa2ddd9e5c2b1eb8">sampleAtLeaves</a>=false, const bool <a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#aee9f688b1e22ffc6152f07598227f1af">firstLeafExact</a>=false, const size_t <a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#a3f9d1c8e6b9339a68b559b725a914c52">singleSampleLimit</a>=20, const bool <a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#af17962e454af4aed23f0d7adaae22778">sameSet</a>=false)</td></tr>
+<tr class="memitem:a2b8990966078cf8c0b26d2b16cff6de7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#a2b8990966078cf8c0b26d2b16cff6de7">RASearchRules</a> (const arma::mat &amp;<a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#ad68fb2a917750a04891ab7038fe14c1c">referenceSet</a>, const arma::mat &amp;<a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#a45f4b523edeaec45c008c6afdafe0b15">querySet</a>, arma::Mat&lt; size_t &gt; &amp;<a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#a80486b1fbf6eaffee9515cd1e65a71ce">neighbors</a>, arma::mat &amp;<a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#ad9e4dc6891f2c2e499165e80585d54e0">distances</a>, MetricType &amp;<a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#a39a48dc48445713707688480328cc7d0">metric</a>, const double tau=5, const double <a class="el" href="det_8txt.html#ae7ed598bdef2a989db6a7ae6e7c11288">alpha</a>=0.95, const bool naive=false, const bool <a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#aff207b85035a96adaa2ddd9e5c2b1eb8">sampleAtLeaves</a>=false, const bool <a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#aee9f688b1e22ffc6152f07598227f1af">firstLeafExact</a>=false, const size_t <a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#a3f9d1c8e6b9339a68b559b725a914c52">singleSampleLimit</a>=20, const bool <a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#af17962e454af4aed23f0d7adaae22778">sameSet</a>=false)</td></tr>
 <tr class="separator:a2b8990966078cf8c0b26d2b16cff6de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04043cd033205b49c5c8bed14ed003ef"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#a04043cd033205b49c5c8bed14ed003ef">BaseCase</a> (const size_t queryIndex, const size_t referenceIndex)</td></tr>
 <tr class="separator:a04043cd033205b49c5c8bed14ed003ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -94,8 +112,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a43c10090e916f7d397aad449ad05735f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#a43c10090e916f7d397aad449ad05735f">Score</a> (TreeType &amp;queryNode, TreeType &amp;referenceNode, const double baseCaseResult)</td></tr>
 <tr class="memdesc:a43c10090e916f7d397aad449ad05735f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the score for recursion order, passing the base case result (in the situation where it may be needed to calculate the recursion order).  <a href="#a43c10090e916f7d397aad449ad05735f">More...</a><br /></br></td></tr>
 <tr class="separator:a43c10090e916f7d397aad449ad05735f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa14107e65fee40320ef82ffccbc10875"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#aad508670c1f95033543b9dacdc89dc43">TraversalInfoType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#aa14107e65fee40320ef82ffccbc10875">TraversalInfo</a> () const </td></tr>
-<tr class="separator:aa14107e65fee40320ef82ffccbc10875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af890967b469cc8c88d247dd8c91dc76d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#aad508670c1f95033543b9dacdc89dc43">TraversalInfoType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#af890967b469cc8c88d247dd8c91dc76d">TraversalInfo</a> () const</td></tr>
+<tr class="separator:af890967b469cc8c88d247dd8c91dc76d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebf9794fc98aa1f8ea0acd81233a8f80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#aad508670c1f95033543b9dacdc89dc43">TraversalInfoType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1neighbor_1_1RASearchRules.html#aebf9794fc98aa1f8ea0acd81233a8f80">TraversalInfo</a> ()</td></tr>
 <tr class="separator:aebf9794fc98aa1f8ea0acd81233a8f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -159,9 +177,11 @@ Private Attributes</h2></td></tr>
 class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;</h3>
 
 
-<p >Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00033">33</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00033">33</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="aad508670c1f95033543b9dacdc89dc43"></a>
+<a id="aad508670c1f95033543b9dacdc89dc43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad508670c1f95033543b9dacdc89dc43">&#9670;&nbsp;</a></span>TraversalInfoType</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -172,12 +192,14 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
       </table>
 </div><div class="memdoc">
 
-<p >Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00203">203</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00203">203</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2b8990966078cf8c0b26d2b16cff6de7"></a>
+<a id="a2b8990966078cf8c0b26d2b16cff6de7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b8990966078cf8c0b26d2b16cff6de7">&#9670;&nbsp;</a></span>RASearchRules()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -265,7 +287,9 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a04043cd033205b49c5c8bed14ed003ef"></a>
+<a id="a04043cd033205b49c5c8bed14ed003ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04043cd033205b49c5c8bed14ed003ef">&#9670;&nbsp;</a></span>BaseCase()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -292,7 +316,9 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 
 </div>
 </div>
-<a class="anchor" id="a80cc71b34aa369704f7307adcac21b87"></a>
+<a id="a80cc71b34aa369704f7307adcac21b87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80cc71b34aa369704f7307adcac21b87">&#9670;&nbsp;</a></span>InsertNeighbor()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -350,7 +376,9 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 
 </div>
 </div>
-<a class="anchor" id="ac330f6e8079d98c995881219675d2199"></a>
+<a id="ac330f6e8079d98c995881219675d2199"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac330f6e8079d98c995881219675d2199">&#9670;&nbsp;</a></span>NumDistComputations()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -372,13 +400,15 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 </table>
 </div><div class="memdoc">
 
-<p >Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00194">194</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00194">194</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
 
-<p >References <a class="el" href="ra__search__rules_8hpp_source.html#l00243">mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;::numDistComputations</a>.</p>
+<p class="reference">References <a class="el" href="ra__search__rules_8hpp_source.html#l00243">mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;::numDistComputations</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a345f53d0e65721c9d14cb13772872400"></a>
+<a id="a345f53d0e65721c9d14cb13772872400"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a345f53d0e65721c9d14cb13772872400">&#9670;&nbsp;</a></span>NumEffectiveSamples()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -400,13 +430,15 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 </table>
 </div><div class="memdoc">
 
-<p >Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00195">195</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00195">195</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
 
-<p >References <a class="el" href="ra__search__rules_8hpp_source.html#l00237">mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;::numSamplesMade</a>.</p>
+<p class="reference">References <a class="el" href="ra__search__rules_8hpp_source.html#l00237">mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;::numSamplesMade</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0ef2f7df444c8e48566ee9d9f2eee04a"></a>
+<a id="a0ef2f7df444c8e48566ee9d9f2eee04a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ef2f7df444c8e48566ee9d9f2eee04a">&#9670;&nbsp;</a></span>Rescore() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -451,7 +483,9 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 
 </div>
 </div>
-<a class="anchor" id="ab1b7e932026c8da2ebe1a0850ef74e1b"></a>
+<a id="ab1b7e932026c8da2ebe1a0850ef74e1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1b7e932026c8da2ebe1a0850ef74e1b">&#9670;&nbsp;</a></span>Rescore() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -497,7 +531,9 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 
 </div>
 </div>
-<a class="anchor" id="aecec6c616cb42dd9213b7fc28b42e59b"></a>
+<a id="aecec6c616cb42dd9213b7fc28b42e59b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecec6c616cb42dd9213b7fc28b42e59b">&#9670;&nbsp;</a></span>Score() <span class="overload">[1/6]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -537,7 +573,9 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 
 </div>
 </div>
-<a class="anchor" id="a99bf0fe9e89f02c6d528e8336412b586"></a>
+<a id="a99bf0fe9e89f02c6d528e8336412b586"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99bf0fe9e89f02c6d528e8336412b586">&#9670;&nbsp;</a></span>Score() <span class="overload">[2/6]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -584,7 +622,9 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 
 </div>
 </div>
-<a class="anchor" id="a67cc346d0a0372bf508f13a1bc90fba1"></a>
+<a id="a67cc346d0a0372bf508f13a1bc90fba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67cc346d0a0372bf508f13a1bc90fba1">&#9670;&nbsp;</a></span>Score() <span class="overload">[3/6]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -623,7 +663,9 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 
 </div>
 </div>
-<a class="anchor" id="a43c10090e916f7d397aad449ad05735f"></a>
+<a id="a43c10090e916f7d397aad449ad05735f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43c10090e916f7d397aad449ad05735f">&#9670;&nbsp;</a></span>Score() <span class="overload">[4/6]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -669,7 +711,9 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 
 </div>
 </div>
-<a class="anchor" id="a318f1323e382838e8189ca43ddb5f246"></a>
+<a id="a318f1323e382838e8189ca43ddb5f246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a318f1323e382838e8189ca43ddb5f246">&#9670;&nbsp;</a></span>Score() <span class="overload">[5/6]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -718,7 +762,9 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 
 </div>
 </div>
-<a class="anchor" id="ab1a37212480c77803637ee31432251ec"></a>
+<a id="ab1a37212480c77803637ee31432251ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1a37212480c77803637ee31432251ec">&#9670;&nbsp;</a></span>Score() <span class="overload">[6/6]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -767,7 +813,9 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 
 </div>
 </div>
-<a class="anchor" id="aa14107e65fee40320ef82ffccbc10875"></a>
+<a id="af890967b469cc8c88d247dd8c91dc76d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af890967b469cc8c88d247dd8c91dc76d">&#9670;&nbsp;</a></span>TraversalInfo() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -789,13 +837,15 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 </table>
 </div><div class="memdoc">
 
-<p >Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00205">205</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00205">205</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
 
-<p >References <a class="el" href="ra__search__rules_8hpp_source.html#l00248">mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;::traversalInfo</a>.</p>
+<p class="reference">References <a class="el" href="ra__search__rules_8hpp_source.html#l00248">mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;::traversalInfo</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aebf9794fc98aa1f8ea0acd81233a8f80"></a>
+<a id="aebf9794fc98aa1f8ea0acd81233a8f80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebf9794fc98aa1f8ea0acd81233a8f80">&#9670;&nbsp;</a></span>TraversalInfo() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -817,14 +867,16 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 </table>
 </div><div class="memdoc">
 
-<p >Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00206">206</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00206">206</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
 
-<p >References <a class="el" href="ra__search__rules_8hpp_source.html#l00248">mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;::traversalInfo</a>.</p>
+<p class="reference">References <a class="el" href="ra__search__rules_8hpp_source.html#l00248">mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;::traversalInfo</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ad9e4dc6891f2c2e499165e80585d54e0"></a>
+<a id="ad9e4dc6891f2c2e499165e80585d54e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9e4dc6891f2c2e499165e80585d54e0">&#9670;&nbsp;</a></span>distances</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -845,11 +897,13 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 
 <p >The matrix the resultant neighbor distances should be stored in. </p>
 
-<p >Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00219">219</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00219">219</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aee9f688b1e22ffc6152f07598227f1af"></a>
+<a id="aee9f688b1e22ffc6152f07598227f1af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee9f688b1e22ffc6152f07598227f1af">&#9670;&nbsp;</a></span>firstLeafExact</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -870,11 +924,13 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 
 <p >Whether to do exact computation on the first leaf before any sampling. </p>
 
-<p >Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00228">228</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00228">228</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a39a48dc48445713707688480328cc7d0"></a>
+<a id="a39a48dc48445713707688480328cc7d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39a48dc48445713707688480328cc7d0">&#9670;&nbsp;</a></span>metric</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -895,11 +951,13 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 
 <p >The instantiated metric. </p>
 
-<p >Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00222">222</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00222">222</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a80486b1fbf6eaffee9515cd1e65a71ce"></a>
+<a id="a80486b1fbf6eaffee9515cd1e65a71ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80486b1fbf6eaffee9515cd1e65a71ce">&#9670;&nbsp;</a></span>neighbors</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -920,11 +978,13 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 
 <p >The matrix the resultant neighbor indices should be stored in. </p>
 
-<p >Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00216">216</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00216">216</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4f344e7cbe096b65a5630c44fb853bcb"></a>
+<a id="a4f344e7cbe096b65a5630c44fb853bcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f344e7cbe096b65a5630c44fb853bcb">&#9670;&nbsp;</a></span>numDistComputations</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -943,13 +1003,15 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 </table>
 </div><div class="memdoc">
 
-<p >Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00243">243</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00243">243</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="ra__search__rules_8hpp_source.html#l00194">mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;::NumDistComputations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ra__search__rules_8hpp_source.html#l00194">mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;::NumDistComputations()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a743d34199cea283a411b4273625f45e3"></a>
+<a id="a743d34199cea283a411b4273625f45e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a743d34199cea283a411b4273625f45e3">&#9670;&nbsp;</a></span>numSamplesMade</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -970,13 +1032,15 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 
 <p >The number of samples made for every query. </p>
 
-<p >Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00237">237</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00237">237</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="ra__search__rules_8hpp_source.html#l00195">mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;::NumEffectiveSamples()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ra__search__rules_8hpp_source.html#l00195">mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;::NumEffectiveSamples()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aeb00aa72b98e76453fa7905d387a25ca"></a>
+<a id="aeb00aa72b98e76453fa7905d387a25ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb00aa72b98e76453fa7905d387a25ca">&#9670;&nbsp;</a></span>numSamplesReqd</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -997,11 +1061,13 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 
 <p >The minimum number of samples required per query. </p>
 
-<p >Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00234">234</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00234">234</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a45f4b523edeaec45c008c6afdafe0b15"></a>
+<a id="a45f4b523edeaec45c008c6afdafe0b15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45f4b523edeaec45c008c6afdafe0b15">&#9670;&nbsp;</a></span>querySet</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -1022,11 +1088,13 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 
 <p >The query set. </p>
 
-<p >Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00213">213</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00213">213</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad68fb2a917750a04891ab7038fe14c1c"></a>
+<a id="ad68fb2a917750a04891ab7038fe14c1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad68fb2a917750a04891ab7038fe14c1c">&#9670;&nbsp;</a></span>referenceSet</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -1047,11 +1115,13 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 
 <p >The reference set. </p>
 
-<p >Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00210">210</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00210">210</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af17962e454af4aed23f0d7adaae22778"></a>
+<a id="af17962e454af4aed23f0d7adaae22778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af17962e454af4aed23f0d7adaae22778">&#9670;&nbsp;</a></span>sameSet</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -1072,11 +1142,13 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 
 <p >If the query and reference set are identical, this is true. </p>
 
-<p >Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00246">246</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00246">246</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aff207b85035a96adaa2ddd9e5c2b1eb8"></a>
+<a id="aff207b85035a96adaa2ddd9e5c2b1eb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff207b85035a96adaa2ddd9e5c2b1eb8">&#9670;&nbsp;</a></span>sampleAtLeaves</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -1097,11 +1169,13 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 
 <p >Whether to sample at leaves or just use all of it. </p>
 
-<p >Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00225">225</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00225">225</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a80c829f23240a95f839feec344e6bdd4"></a>
+<a id="a80c829f23240a95f839feec344e6bdd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80c829f23240a95f839feec344e6bdd4">&#9670;&nbsp;</a></span>samplingRatio</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -1122,11 +1196,13 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 
 <p >The sampling ratio. </p>
 
-<p >Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00240">240</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00240">240</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a3f9d1c8e6b9339a68b559b725a914c52"></a>
+<a id="a3f9d1c8e6b9339a68b559b725a914c52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f9d1c8e6b9339a68b559b725a914c52">&#9670;&nbsp;</a></span>singleSampleLimit</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -1147,11 +1223,13 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 
 <p >The limit on the largest node that can be approximated by sampling. </p>
 
-<p >Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00231">231</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00231">231</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a39c0c64915315f578cc4c7b695cdcd2b"></a>
+<a id="a39c0c64915315f578cc4c7b695cdcd2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39c0c64915315f578cc4c7b695cdcd2b">&#9670;&nbsp;</a></span>traversalInfo</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SortPolicy</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">MetricType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">TreeType</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -1170,9 +1248,9 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 </table>
 </div><div class="memdoc">
 
-<p >Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00248">248</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ra__search__rules_8hpp_source.html#l00248">248</a> of file <a class="el" href="ra__search__rules_8hpp_source.html">ra_search_rules.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="ra__search__rules_8hpp_source.html#l00205">mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;::TraversalInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ra__search__rules_8hpp_source.html#l00205">mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;::TraversalInfo()</a>.</p>
 
 </div>
 </div>
@@ -1184,7 +1262,16 @@ class mlpack::neighbor::RASearchRules&lt; SortPolicy, MetricType, TreeType &gt;<
 <hr class="footer"></hr><address class="footer"><small >
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"></img>
-</a> 1.8.9.1
+</a> 1.8.13
 </small></address>
+</div>
 </body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
 </html>

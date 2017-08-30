@@ -1,22 +1,50 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head >
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
-<meta name="generator" content="Doxygen 1.8.9.1"></meta>
-<title >mlpack: src/mlpack/core/kernels/laplacian_kernel.hpp Source File</title><link href="tabs.css" rel="stylesheet" type="text/css" />
-</link>
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
-</link>
-</head>
-<body >
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
 <div id="top">
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody >
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mlpack
    &#160;<span id="projectnumber">2.0.0</span>
    </div>
@@ -26,25 +54,17 @@
 </table>
 </div>
 
-
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
-      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
-      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
-      <li ><a href="annotated.html"><span >Classes</span></a></li>
-      <li class="current"><a href="files.html"><span >Files</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li ><a href="files.html"><span >File&#160;List</span></a></li>
-      <li ><a href="globals.html"><span >File&#160;Members</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+</script>
+<div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul >
-<li class="navelem"><a class="el" href="dir_9b5b079cb084c9a3ab478b74e4f18afb.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8a328fb52332a17c5ad8355ad0fb78.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_88282adca4d2b894221008e7ea77ce6c.html">core</a></li><li class="navelem"><a class="el" href="dir_ef8af52f36e272d95fa069c4d06b2f61.html">kernels</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_44a936ef30fc126706c6284a2fc0c990.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_f7ac9cdfd28b2e882eb44d163e3b98b4.html">core</a></li><li class="navelem"><a class="el" href="dir_b554345f14f7af9192a000ede2774b80.html">kernels</a></li>  </ul>
 </div>
 </div>
 <div class="header">
@@ -52,90 +72,36 @@
 <div class="title">laplacian_kernel.hpp</div>  </div>
 </div>
 <div class="contents">
-<a href="laplacian__kernel_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef __MLPACK_CORE_KERNELS_LAPLACIAN_KERNEL_HPP</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define __MLPACK_CORE_KERNELS_LAPLACIAN_KERNEL_HPP</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>kernel {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1LaplacianKernel.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html">LaplacianKernel</a></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a6968fb3d4d461196394037e79401fd76">   46</a></span>&#160;  <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a6968fb3d4d461196394037e79401fd76">LaplacianKernel</a>() : <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">bandwidth</a>(1.0)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  { }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#af2d60fd48c94f74db932a0f5adf35982">   54</a></span>&#160;  <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#af2d60fd48c94f74db932a0f5adf35982">LaplacianKernel</a>(<span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">bandwidth</a>) :</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      bandwidth(bandwidth)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  { }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> VecTypeA, <span class="keyword">typename</span> VecTypeB&gt;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a994f9e763d66eb96cd73a6834496e2bc">   71</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a994f9e763d66eb96cd73a6834496e2bc">Evaluate</a>(<span class="keyword">const</span> VecTypeA&amp; a, <span class="keyword">const</span> VecTypeB&amp; b)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// The precalculation of gamma saves us a little computation time.</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> exp(-<a class="code" href="classmlpack_1_1metric_1_1LMetric.html#a36950eea5b7ff69b0d36590f8a795089">metric::EuclideanDistance::Evaluate</a>(a, b) / <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">bandwidth</a>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#ac84bc5a72ef2c3ee2071e4e79368a4f6">   85</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#ac84bc5a72ef2c3ee2071e4e79368a4f6">Evaluate</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> t)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">// The precalculation of gamma saves us a little computation time.</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> exp(-t / <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">bandwidth</a>);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  </div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#ab529a71122f34974c5792cf0296b8755">  100</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#ab529a71122f34974c5792cf0296b8755">Gradient</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> t)<span class="keyword"> const  </span>{</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> exp(-t / <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">bandwidth</a>) / -<a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">bandwidth</a>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a4c7d30c97b0859d0dc12d4be243ec745">  105</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a4c7d30c97b0859d0dc12d4be243ec745">Bandwidth</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">bandwidth</a>; }</div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#af33423c6278fdf7c116ca5580eb10eca">  107</a></span>&#160;  <span class="keywordtype">double</span>&amp; <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#af33423c6278fdf7c116ca5580eb10eca">Bandwidth</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">bandwidth</a>; }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Archive&gt;</div>
-<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a399f4327c25c4923ce98dd14f0e579e2">  111</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a399f4327c25c4923ce98dd14f0e579e2">Serialize</a>(Archive&amp; ar, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="comment">/* version */</span>)</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    ar &amp; <a class="code" href="namespacemlpack_1_1data.html#afeda624bdd47a8387cc8fb25772e7567">data::CreateNVP</a>(<a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">bandwidth</a>, <span class="stringliteral">&quot;bandwidth&quot;</span>);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">  118</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">bandwidth</a>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1KernelTraits_3_01LaplacianKernel_01_4.html">  123</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1kernel_1_1KernelTraits.html">KernelTraits</a>&lt;<a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html">LaplacianKernel</a>&gt;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1KernelTraits_3_01LaplacianKernel_01_4.html#a3057882456025fdf59e196dc1eeeff93">  127</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1kernel_1_1KernelTraits.html#a57dad77da8e7a9b8c8c91fd06c091ecf">IsNormalized</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1KernelTraits_3_01LaplacianKernel_01_4.html#a0cd108cbdbd6d26afdbf9ba2ce89e0d6">  129</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classmlpack_1_1kernel_1_1KernelTraits.html#a6bf58f67ce8d1a1b7366f1b771d87c25">UsesSquaredDistance</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;};</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;} <span class="comment">// namespace kernel</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;} <span class="comment">// namespace mlpack</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classmlpack_1_1kernel_1_1KernelTraits_html"><div class="ttname"><a href="classmlpack_1_1kernel_1_1KernelTraits.html">mlpack::kernel::KernelTraits</a></div><div class="ttdoc">This is a template class that can provide information about various kernels. </div><div class="ttdef"><b >Definition:</b> <a href="kernel__traits_8hpp_source.html#l00037">kernel_traits.hpp:37</a></div></div>
-<div class="ttc" id="classmlpack_1_1kernel_1_1LaplacianKernel_html_ab529a71122f34974c5792cf0296b8755"><div class="ttname"><a href="classmlpack_1_1kernel_1_1LaplacianKernel.html#ab529a71122f34974c5792cf0296b8755">mlpack::kernel::LaplacianKernel::Gradient</a></div><div class="ttdeci">double Gradient(const double t) const </div><div class="ttdoc">Evaluation of the gradient of the Laplacian kernel given the distance between two points...</div><div class="ttdef"><b >Definition:</b> <a href="laplacian__kernel_8hpp_source.html#l00100">laplacian_kernel.hpp:100</a></div></div>
+<a href="laplacian__kernel_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef __MLPACK_CORE_KERNELS_LAPLACIAN_KERNEL_HPP</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define __MLPACK_CORE_KERNELS_LAPLACIAN_KERNEL_HPP</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">mlpack/core.hpp</a>&gt;</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>kernel {</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1LaplacianKernel.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html">LaplacianKernel</a></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; <span class="keyword">public</span>:</div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a6968fb3d4d461196394037e79401fd76">   46</a></span>&#160;  <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a6968fb3d4d461196394037e79401fd76">LaplacianKernel</a>() : <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">bandwidth</a>(1.0)</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  { }</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#af2d60fd48c94f74db932a0f5adf35982">   54</a></span>&#160;  <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#af2d60fd48c94f74db932a0f5adf35982">LaplacianKernel</a>(<span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">bandwidth</a>) :</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      bandwidth(bandwidth)</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  { }</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> VecTypeA, <span class="keyword">typename</span> VecTypeB&gt;</div><div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82c70cad7376b8144e8ed485224bd95a">   71</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82c70cad7376b8144e8ed485224bd95a">Evaluate</a>(<span class="keyword">const</span> VecTypeA&amp; a, <span class="keyword">const</span> VecTypeB&amp; b)<span class="keyword"> const</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">  </span>{</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// The precalculation of gamma saves us a little computation time.</span></div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> exp(-<a class="code" href="classmlpack_1_1metric_1_1LMetric.html#a36950eea5b7ff69b0d36590f8a795089">metric::EuclideanDistance::Evaluate</a>(a, b) / <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">bandwidth</a>);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#adbda9770d08b6ab82d36a530dcb85d29">   85</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#adbda9770d08b6ab82d36a530dcb85d29">Evaluate</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> t)<span class="keyword"> const</span></div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">  </span>{</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">// The precalculation of gamma saves us a little computation time.</span></div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> exp(-t / <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">bandwidth</a>);</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  </div><div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a13b6cd2e505b510caa40b13491037f38">  100</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a13b6cd2e505b510caa40b13491037f38">Gradient</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> t)<span class="keyword"> const  </span>{</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> exp(-t / <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">bandwidth</a>) / -<a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">bandwidth</a>;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  }</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#af6702d65583fdc2356925d8e13674218">  105</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#af6702d65583fdc2356925d8e13674218">Bandwidth</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">bandwidth</a>; }</div><div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#af33423c6278fdf7c116ca5580eb10eca">  107</a></span>&#160;  <span class="keywordtype">double</span>&amp; <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#af33423c6278fdf7c116ca5580eb10eca">Bandwidth</a>() { <span class="keywordflow">return</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">bandwidth</a>; }</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Archive&gt;</div><div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a399f4327c25c4923ce98dd14f0e579e2">  111</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a399f4327c25c4923ce98dd14f0e579e2">Serialize</a>(Archive&amp; ar, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="comment">/* version */</span>)</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  {</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    ar &amp; <a class="code" href="namespacemlpack_1_1data.html#afeda624bdd47a8387cc8fb25772e7567">data::CreateNVP</a>(<a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">bandwidth</a>, <span class="stringliteral">&quot;bandwidth&quot;</span>);</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  }</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; <span class="keyword">private</span>:</div><div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">  118</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">bandwidth</a>;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">template</span>&lt;&gt;</div><div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1KernelTraits_3_01LaplacianKernel_01_4.html">  123</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1kernel_1_1KernelTraits.html">KernelTraits</a>&lt;<a class="code" href="classmlpack_1_1kernel_1_1LaplacianKernel.html">LaplacianKernel</a>&gt;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; <span class="keyword">public</span>:</div><div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1KernelTraits_3_01LaplacianKernel_01_4.html#a3057882456025fdf59e196dc1eeeff93">  127</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> IsNormalized = <span class="keyword">true</span>;</div><div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="classmlpack_1_1kernel_1_1KernelTraits_3_01LaplacianKernel_01_4.html#a0cd108cbdbd6d26afdbf9ba2ce89e0d6">  129</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> UsesSquaredDistance = <span class="keyword">false</span>;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;};</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;} <span class="comment">// namespace kernel</span></div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;} <span class="comment">// namespace mlpack</span></div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classmlpack_1_1kernel_1_1KernelTraits_html"><div class="ttname"><a href="classmlpack_1_1kernel_1_1KernelTraits.html">mlpack::kernel::KernelTraits</a></div><div class="ttdoc">This is a template class that can provide information about various kernels. </div><div class="ttdef"><b >Definition:</b> <a href="kernel__traits_8hpp_source.html#l00037">kernel_traits.hpp:37</a></div></div>
 <div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="dataset__info_8hpp_source.html#l00031">dataset_info.hpp:31</a></div></div>
 <div class="ttc" id="namespacemlpack_1_1data_html_afeda624bdd47a8387cc8fb25772e7567"><div class="ttname"><a href="namespacemlpack_1_1data.html#afeda624bdd47a8387cc8fb25772e7567">mlpack::data::CreateNVP</a></div><div class="ttdeci">FirstShim&lt; T &gt; CreateNVP(T &amp;t, const std::string &amp;name, typename boost::enable_if&lt; HasSerialize&lt; T &gt;&gt;::type *=0)</div><div class="ttdoc">Call this function to produce a name-value pair; this is similar to BOOST_SERIALIZATION_NVP(), but should be used for types that have a Serialize() function (or contain a type that has a Serialize() function) instead of a serialize() function. </div><div class="ttdef"><b >Definition:</b> <a href="serialization__shim_8hpp_source.html#l00103">serialization_shim.hpp:103</a></div></div>
-<div class="ttc" id="classmlpack_1_1kernel_1_1LaplacianKernel_html_a994f9e763d66eb96cd73a6834496e2bc"><div class="ttname"><a href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a994f9e763d66eb96cd73a6834496e2bc">mlpack::kernel::LaplacianKernel::Evaluate</a></div><div class="ttdeci">double Evaluate(const VecTypeA &amp;a, const VecTypeB &amp;b) const </div><div class="ttdoc">Evaluation of the Laplacian kernel. </div><div class="ttdef"><b >Definition:</b> <a href="laplacian__kernel_8hpp_source.html#l00071">laplacian_kernel.hpp:71</a></div></div>
 <div class="ttc" id="classmlpack_1_1kernel_1_1LaplacianKernel_html_a399f4327c25c4923ce98dd14f0e579e2"><div class="ttname"><a href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a399f4327c25c4923ce98dd14f0e579e2">mlpack::kernel::LaplacianKernel::Serialize</a></div><div class="ttdeci">void Serialize(Archive &amp;ar, const unsigned int)</div><div class="ttdoc">Serialize the kernel. </div><div class="ttdef"><b >Definition:</b> <a href="laplacian__kernel_8hpp_source.html#l00111">laplacian_kernel.hpp:111</a></div></div>
 <div class="ttc" id="classmlpack_1_1kernel_1_1LaplacianKernel_html_a6968fb3d4d461196394037e79401fd76"><div class="ttname"><a href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a6968fb3d4d461196394037e79401fd76">mlpack::kernel::LaplacianKernel::LaplacianKernel</a></div><div class="ttdeci">LaplacianKernel()</div><div class="ttdoc">Default constructor; sets bandwidth to 1.0. </div><div class="ttdef"><b >Definition:</b> <a href="laplacian__kernel_8hpp_source.html#l00046">laplacian_kernel.hpp:46</a></div></div>
 <div class="ttc" id="classmlpack_1_1kernel_1_1LaplacianKernel_html_af33423c6278fdf7c116ca5580eb10eca"><div class="ttname"><a href="classmlpack_1_1kernel_1_1LaplacianKernel.html#af33423c6278fdf7c116ca5580eb10eca">mlpack::kernel::LaplacianKernel::Bandwidth</a></div><div class="ttdeci">double &amp; Bandwidth()</div><div class="ttdoc">Modify the bandwidth. </div><div class="ttdef"><b >Definition:</b> <a href="laplacian__kernel_8hpp_source.html#l00107">laplacian_kernel.hpp:107</a></div></div>
-<div class="ttc" id="classmlpack_1_1kernel_1_1LaplacianKernel_html_ac84bc5a72ef2c3ee2071e4e79368a4f6"><div class="ttname"><a href="classmlpack_1_1kernel_1_1LaplacianKernel.html#ac84bc5a72ef2c3ee2071e4e79368a4f6">mlpack::kernel::LaplacianKernel::Evaluate</a></div><div class="ttdeci">double Evaluate(const double t) const </div><div class="ttdoc">Evaluation of the Laplacian kernel given the distance between two points. </div><div class="ttdef"><b >Definition:</b> <a href="laplacian__kernel_8hpp_source.html#l00085">laplacian_kernel.hpp:85</a></div></div>
 <div class="ttc" id="core_8hpp_html"><div class="ttname"><a href="core_8hpp.html">core.hpp</a></div><div class="ttdoc">Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu...</div></div>
-<div class="ttc" id="classmlpack_1_1kernel_1_1KernelTraits_html_a6bf58f67ce8d1a1b7366f1b771d87c25"><div class="ttname"><a href="classmlpack_1_1kernel_1_1KernelTraits.html#a6bf58f67ce8d1a1b7366f1b771d87c25">mlpack::kernel::KernelTraits::UsesSquaredDistance</a></div><div class="ttdeci">static const bool UsesSquaredDistance</div><div class="ttdoc">If true, then the kernel include a squared distance, ||x - y||^2 . </div><div class="ttdef"><b >Definition:</b> <a href="kernel__traits_8hpp_source.html#l00048">kernel_traits.hpp:48</a></div></div>
+<div class="ttc" id="classmlpack_1_1kernel_1_1LaplacianKernel_html_a82c70cad7376b8144e8ed485224bd95a"><div class="ttname"><a href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82c70cad7376b8144e8ed485224bd95a">mlpack::kernel::LaplacianKernel::Evaluate</a></div><div class="ttdeci">double Evaluate(const VecTypeA &amp;a, const VecTypeB &amp;b) const</div><div class="ttdoc">Evaluation of the Laplacian kernel. </div><div class="ttdef"><b >Definition:</b> <a href="laplacian__kernel_8hpp_source.html#l00071">laplacian_kernel.hpp:71</a></div></div>
+<div class="ttc" id="classmlpack_1_1kernel_1_1LaplacianKernel_html_adbda9770d08b6ab82d36a530dcb85d29"><div class="ttname"><a href="classmlpack_1_1kernel_1_1LaplacianKernel.html#adbda9770d08b6ab82d36a530dcb85d29">mlpack::kernel::LaplacianKernel::Evaluate</a></div><div class="ttdeci">double Evaluate(const double t) const</div><div class="ttdoc">Evaluation of the Laplacian kernel given the distance between two points. </div><div class="ttdef"><b >Definition:</b> <a href="laplacian__kernel_8hpp_source.html#l00085">laplacian_kernel.hpp:85</a></div></div>
+<div class="ttc" id="classmlpack_1_1kernel_1_1LaplacianKernel_html_af6702d65583fdc2356925d8e13674218"><div class="ttname"><a href="classmlpack_1_1kernel_1_1LaplacianKernel.html#af6702d65583fdc2356925d8e13674218">mlpack::kernel::LaplacianKernel::Bandwidth</a></div><div class="ttdeci">double Bandwidth() const</div><div class="ttdoc">Get the bandwidth. </div><div class="ttdef"><b >Definition:</b> <a href="laplacian__kernel_8hpp_source.html#l00105">laplacian_kernel.hpp:105</a></div></div>
 <div class="ttc" id="classmlpack_1_1kernel_1_1LaplacianKernel_html"><div class="ttname"><a href="classmlpack_1_1kernel_1_1LaplacianKernel.html">mlpack::kernel::LaplacianKernel</a></div><div class="ttdoc">The standard Laplacian kernel. </div><div class="ttdef"><b >Definition:</b> <a href="laplacian__kernel_8hpp_source.html#l00040">laplacian_kernel.hpp:40</a></div></div>
 <div class="ttc" id="classmlpack_1_1kernel_1_1LaplacianKernel_html_a82757c8572fa010b94d3c1501458a4d0"><div class="ttname"><a href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a82757c8572fa010b94d3c1501458a4d0">mlpack::kernel::LaplacianKernel::bandwidth</a></div><div class="ttdeci">double bandwidth</div><div class="ttdoc">Kernel bandwidth. </div><div class="ttdef"><b >Definition:</b> <a href="laplacian__kernel_8hpp_source.html#l00118">laplacian_kernel.hpp:118</a></div></div>
-<div class="ttc" id="classmlpack_1_1kernel_1_1LaplacianKernel_html_a4c7d30c97b0859d0dc12d4be243ec745"><div class="ttname"><a href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a4c7d30c97b0859d0dc12d4be243ec745">mlpack::kernel::LaplacianKernel::Bandwidth</a></div><div class="ttdeci">double Bandwidth() const </div><div class="ttdoc">Get the bandwidth. </div><div class="ttdef"><b >Definition:</b> <a href="laplacian__kernel_8hpp_source.html#l00105">laplacian_kernel.hpp:105</a></div></div>
 <div class="ttc" id="classmlpack_1_1kernel_1_1LaplacianKernel_html_af2d60fd48c94f74db932a0f5adf35982"><div class="ttname"><a href="classmlpack_1_1kernel_1_1LaplacianKernel.html#af2d60fd48c94f74db932a0f5adf35982">mlpack::kernel::LaplacianKernel::LaplacianKernel</a></div><div class="ttdeci">LaplacianKernel(double bandwidth)</div><div class="ttdoc">Construct the Laplacian kernel with a custom bandwidth. </div><div class="ttdef"><b >Definition:</b> <a href="laplacian__kernel_8hpp_source.html#l00054">laplacian_kernel.hpp:54</a></div></div>
-<div class="ttc" id="classmlpack_1_1kernel_1_1KernelTraits_html_a57dad77da8e7a9b8c8c91fd06c091ecf"><div class="ttname"><a href="classmlpack_1_1kernel_1_1KernelTraits.html#a57dad77da8e7a9b8c8c91fd06c091ecf">mlpack::kernel::KernelTraits::IsNormalized</a></div><div class="ttdeci">static const bool IsNormalized</div><div class="ttdoc">If true, then the kernel is normalized: K(x, x) = K(y, y) = 1 for all x. </div><div class="ttdef"><b >Definition:</b> <a href="kernel__traits_8hpp_source.html#l00043">kernel_traits.hpp:43</a></div></div>
+<div class="ttc" id="classmlpack_1_1kernel_1_1LaplacianKernel_html_a13b6cd2e505b510caa40b13491037f38"><div class="ttname"><a href="classmlpack_1_1kernel_1_1LaplacianKernel.html#a13b6cd2e505b510caa40b13491037f38">mlpack::kernel::LaplacianKernel::Gradient</a></div><div class="ttdeci">double Gradient(const double t) const</div><div class="ttdoc">Evaluation of the gradient of the Laplacian kernel given the distance between two points...</div><div class="ttdef"><b >Definition:</b> <a href="laplacian__kernel_8hpp_source.html#l00100">laplacian_kernel.hpp:100</a></div></div>
 <div class="ttc" id="classmlpack_1_1metric_1_1LMetric_html_a36950eea5b7ff69b0d36590f8a795089"><div class="ttname"><a href="classmlpack_1_1metric_1_1LMetric.html#a36950eea5b7ff69b0d36590f8a795089">mlpack::metric::LMetric::Evaluate</a></div><div class="ttdeci">static double Evaluate(const VecTypeA &amp;a, const VecTypeB &amp;b)</div><div class="ttdoc">Computes the distance between two points. </div></div>
 </div></div>
 
 <hr class="footer"></hr><address class="footer"><small >
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"></img>
-</a> 1.8.9.1
+</a> 1.8.13
 </small></address>
+</div>
 </body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
 </html>

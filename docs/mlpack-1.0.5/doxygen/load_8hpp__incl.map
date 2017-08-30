@@ -1,7 +1,7 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="1261,83,1435,111"/>
-<area shape="rect" id="node7" href="$prefixedoutstream_8hpp.html" title="prefixedoutstream.hpp" alt="" coords="753,161,921,189"/>
-<area shape="rect" id="node31" href="$nulloutstream_8hpp.html" title="nulloutstream.hpp" alt="" coords="1257,161,1396,189"/>
-<area shape="rect" id="node22" href="$sfinae__utility_8hpp.html" title="mlpack/core/util/sfinae_utility.hpp" alt="" coords="59,238,291,266"/>
-<area shape="rect" id="node26" href="$string__util_8hpp.html" title="Declares methods that are useful for writing formatting output." alt="" coords="875,238,1091,266"/>
+<map id="/var/www/www.mlpack.org/mlpack&#45;1.0.5/src/mlpack/core/data/load.hpp" name="/var/www/www.mlpack.org/mlpack&#45;1.0.5/src/mlpack/core/data/load.hpp">
+<area shape="rect" id="node2" href="$log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="1075,117,1235,143"/>
+<area shape="rect" id="node4" href="$prefixedoutstream_8hpp.html" title="prefixedoutstream.hpp" alt="" coords="641,199,791,225"/>
+<area shape="rect" id="node14" href="$nulloutstream_8hpp.html" title="nulloutstream.hpp" alt="" coords="1069,199,1195,225"/>
+<area shape="rect" id="node11" href="$sfinae__utility_8hpp.html" title="mlpack/core/util/sfinae\l_utility.hpp" alt="" coords="51,273,205,315"/>
+<area shape="rect" id="node12" href="$string__util_8hpp.html" title="Declares methods that are useful for writing formatting output. " alt="" coords="754,273,905,315"/>
 </map>

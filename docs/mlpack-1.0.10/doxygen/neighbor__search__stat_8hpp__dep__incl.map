@@ -1,5 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$neighbor__search_8hpp.html" title="src/mlpack/methods/neighbor_search/neighbor_search.hpp" alt="" coords="208,83,608,111"/>
-<area shape="rect" id="node5" href="$cf_8hpp.html" title="src/mlpack/methods/cf/cf.hpp" alt="" coords="5,161,213,189"/>
-<area shape="rect" id="node7" href="$typedef_8hpp.html" title="src/mlpack/methods/neighbor_search/typedef.hpp" alt="" coords="237,161,579,189"/>
+<map id="src/mlpack/methods/neighbor_search/neighbor_search_stat.hpp" name="src/mlpack/methods/neighbor_search/neighbor_search_stat.hpp">
+<area shape="rect" id="node2" href="$neighbor__search_8hpp.html" title="src/mlpack/methods\l/neighbor_search/neighbor\l_search.hpp" alt="" coords="179,109,353,165"/>
+<area shape="rect" id="node3" href="$cf_8hpp.html" title="src/mlpack/methods\l/cf/cf.hpp" alt="" coords="5,213,145,255"/>
+<area shape="rect" id="node4" href="$typedef_8hpp.html" title="src/mlpack/methods\l/neighbor_search/typedef.hpp" alt="" coords="169,213,363,255"/>
 </map>

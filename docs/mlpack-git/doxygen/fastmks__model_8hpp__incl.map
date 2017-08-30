@@ -1,0 +1,26 @@
+<map id="src/mlpack/methods/fastmks/fastmks_model.hpp" name="src/mlpack/methods/fastmks/fastmks_model.hpp">
+<area shape="rect" id="node2" href="$prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo. " alt="" coords="1635,295,1771,322"/>
+<area shape="rect" id="node28" href="$fastmks_8hpp.html" title="fastmks.hpp" alt="" coords="1243,109,1337,136"/>
+<area shape="rect" id="node34" href="$kernel__traits_8hpp.html" title="mlpack/core/kernels\l/kernel_traits.hpp" alt="" coords="2445,199,2583,240"/>
+<area shape="rect" id="node35" href="$linear__kernel_8hpp.html" title="mlpack/core/kernels\l/linear_kernel.hpp" alt="" coords="1717,199,1855,240"/>
+<area shape="rect" id="node36" href="$polynomial__kernel_8hpp.html" title="mlpack/core/kernels\l/polynomial_kernel.hpp" alt="" coords="1783,102,1938,143"/>
+<area shape="rect" id="node37" href="$cosine__distance_8hpp.html" title="mlpack/core/kernels\l/cosine_distance.hpp" alt="" coords="2303,102,2448,143"/>
+<area shape="rect" id="node39" href="$gaussian__kernel_8hpp.html" title="mlpack/core/kernels\l/gaussian_kernel.hpp" alt="" coords="2133,102,2279,143"/>
+<area shape="rect" id="node41" href="$epanechnikov__kernel_8hpp.html" title="mlpack/core/kernels\l/epanechnikov_kernel.hpp" alt="" coords="2523,102,2697,143"/>
+<area shape="rect" id="node43" href="$hyperbolic__tangent__kernel_8hpp.html" title="mlpack/core/kernels\l/hyperbolic_tangent\l_kernel.hpp" alt="" coords="743,95,882,151"/>
+<area shape="rect" id="node44" href="$laplacian__kernel_8hpp.html" title="mlpack/core/kernels\l/laplacian_kernel.hpp" alt="" coords="962,102,1106,143"/>
+<area shape="rect" id="node45" href="$pspectrum__string__kernel_8hpp.html" title="mlpack/core/kernels\l/pspectrum_string_kernel.hpp" alt="" coords="2827,199,3020,240"/>
+<area shape="rect" id="node48" href="$spherical__kernel_8hpp.html" title="mlpack/core/kernels\l/spherical_kernel.hpp" alt="" coords="1496,102,1641,143"/>
+<area shape="rect" id="node49" href="$triangular__kernel_8hpp.html" title="mlpack/core/kernels\l/triangular_kernel.hpp" alt="" coords="1962,102,2109,143"/>
+<area shape="rect" id="node18" href="$serialization__shim_8hpp.html" title="mlpack/core/data/serialization\l_shim.hpp" alt="" coords="426,377,621,419"/>
+<area shape="rect" id="node19" href="$serialization__template__version_8hpp.html" title="mlpack/core/data/serialization\l_template_version.hpp" alt="" coords="1238,377,1433,419"/>
+<area shape="rect" id="node21" href="$arma__traits_8hpp.html" title="mlpack/core/util/arma\l_traits.hpp" alt="" coords="1654,377,1801,419"/>
+<area shape="rect" id="node22" href="$arma__config__check_8hpp.html" title="mlpack/core/util/arma\l_config_check.hpp" alt="" coords="1825,377,1971,419"/>
+<area shape="rect" id="node23" href="$log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="2934,385,3094,411"/>
+<area shape="rect" id="node25" href="$timers_8hpp.html" title="mlpack/core/util/timers.hpp" alt="" coords="2475,385,2654,411"/>
+<area shape="rect" id="node27" href="$deprecated_8hpp.html" title="mlpack/core/util/deprecated.hpp" alt="" coords="2079,385,2285,411"/>
+<area shape="rect" id="node29" href="$ip__metric_8hpp.html" title="mlpack/core/metrics\l/ip_metric.hpp" alt="" coords="1220,199,1360,240"/>
+<area shape="rect" id="node30" href="$fastmks__stat_8hpp.html" title="fastmks_stat.hpp" alt="" coords="894,206,1017,233"/>
+<area shape="rect" id="node31" href="$cover__tree_8hpp.html" title="mlpack/core/tree/cover\l_tree.hpp" alt="" coords="1041,199,1195,240"/>
+<area shape="rect" id="node40" href="$lmetric_8hpp.html" title="mlpack/core/metrics\l/lmetric.hpp" alt="" coords="1981,199,2121,240"/>
+</map>

@@ -4,7 +4,7 @@
 <area shape="rect" id="node4" href="$core_8hpp.html" title="Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu..." alt="" coords="2727,273,2867,300"/>
 <area shape="rect" id="node50" href="$save_8hpp.html" title="src/mlpack/core/data\l/save.hpp" alt="" coords="2780,184,2924,225"/>
 <area shape="rect" id="node5" href="$dataset__info_8hpp.html" title="src/mlpack/core/data\l/dataset_info.hpp" alt="" coords="5,355,149,397"/>
-<area shape="rect" id="node6" href="$discrete__distribution_8hpp.html" title="src/mlpack/core/dists\l/discrete_distribution.hpp" alt="" coords="5901,355,6067,397"/>
+<area shape="rect" id="node6" href="$discrete__distribution_8hpp.html" title="src/mlpack/core/dists\l/discrete_distribution.hpp" alt="" coords="5902,355,6069,397"/>
 <area shape="rect" id="node7" href="$gaussian__distribution_8hpp.html" title="src/mlpack/core/dists\l/gaussian_distribution.hpp" alt="" coords="3344,355,3517,397"/>
 <area shape="rect" id="node8" href="$regression__distribution_8hpp.html" title="src/mlpack/core/dists\l/regression_distribution.hpp" alt="" coords="3403,459,3584,501"/>
 <area shape="rect" id="node9" href="$cosine__distance_8hpp.html" title="src/mlpack/core/kernels\l/cosine_distance.hpp" alt="" coords="249,355,410,397"/>
@@ -47,5 +47,5 @@
 <area shape="rect" id="node46" href="$cover__tree_2single__tree__traverser_8hpp.html" title="src/mlpack/core/tree\l/cover_tree/single_tree\l_traverser.hpp" alt="" coords="5600,556,5755,612"/>
 <area shape="rect" id="node47" href="$first__point__is__root_8hpp.html" title="src/mlpack/core/tree\l/cover_tree/first_point\l_is_root.hpp" alt="" coords="5563,348,5711,404"/>
 <area shape="rect" id="node48" href="$cover__tree_2dual__tree__traverser_8hpp.html" title="src/mlpack/core/tree\l/cover_tree/dual_tree\l_traverser.hpp" alt="" coords="5932,556,6076,612"/>
-<area shape="rect" id="node49" href="$rectangle__tree_2dual__tree__traverser_8hpp.html" title="src/mlpack/core/tree\l/rectangle_tree/dual\l_tree_traverser.hpp" alt="" coords="5735,348,5876,404"/>
+<area shape="rect" id="node49" href="$rectangle__tree_2dual__tree__traverser_8hpp.html" title="src/mlpack/core/tree\l/rectangle_tree/dual\l_tree_traverser.hpp" alt="" coords="5736,348,5877,404"/>
 </map>

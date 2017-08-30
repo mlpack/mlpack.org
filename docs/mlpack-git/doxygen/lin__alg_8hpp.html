@@ -1,0 +1,247 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">master</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_44a936ef30fc126706c6284a2fc0c990.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_f7ac9cdfd28b2e882eb44d163e3b98b4.html">core</a></li><li class="navelem"><a class="el" href="dir_c99ddc62a84c9c2eac1febe115accba9.html">math</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle">
+<div class="title">lin_alg.hpp File Reference</div>  </div>
+</div>
+<div class="contents">
+<div class="textblock"><div class="dynheader">
+Include dependency graph for lin_alg.hpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="lin__alg_8hpp__incl.png" border="0" usemap="#src_2mlpack_2core_2math_2lin__alg_8hpp" alt=""></img></div>
+<map name="src_2mlpack_2core_2math_2lin__alg_8hpp" id="src_2mlpack_2core_2math_2lin__alg_8hpp">
+<area shape="rect" id="node2" href="prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo. " alt="" coords="943,95,1079,121"></area>
+<area shape="rect" id="node18" href="serialization__shim_8hpp.html" title="mlpack/core/data/serialization\l_shim.hpp" alt="" coords="981,169,1176,211"></area>
+<area shape="rect" id="node22" href="serialization__template__version_8hpp.html" title="mlpack/core/data/serialization\l_template_version.hpp" alt="" coords="1743,169,1937,211"></area>
+<area shape="rect" id="node24" href="arma__traits_8hpp.html" title="mlpack/core/util/arma\l_traits.hpp" alt="" coords="2159,169,2305,211"></area>
+<area shape="rect" id="node25" href="arma__config__check_8hpp.html" title="mlpack/core/util/arma\l_config_check.hpp" alt="" coords="2329,169,2476,211"></area>
+<area shape="rect" id="node27" href="log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="2500,177,2660,203"></area>
+<area shape="rect" id="node35" href="timers_8hpp.html" title="mlpack/core/util/timers.hpp" alt="" coords="2735,177,2913,203"></area>
+<area shape="rect" id="node38" href="deprecated_8hpp.html" title="mlpack/core/util/deprecated.hpp" alt="" coords="2938,177,3145,203"></area>
+<area shape="rect" id="node19" href="sfinae__utility_8hpp.html" title="mlpack/core/util/sfinae\l_utility.hpp" alt="" coords="1083,259,1237,300"></area>
+<area shape="rect" id="node26" href="arma__config_8hpp.html" title="This is an autogenerated file which contains the configuration of Armadillo at the time mlpack was bu..." alt="" coords="2075,266,2194,293"></area>
+<area shape="rect" id="node30" href="prefixedoutstream_8hpp.html" title="prefixedoutstream.hpp" alt="" coords="2622,266,2773,293"></area>
+<area shape="rect" id="node32" href="nulloutstream_8hpp.html" title="nulloutstream.hpp" alt="" coords="2421,266,2547,293"></area>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="lin__alg_8hpp__dep__incl.png" border="0" usemap="#src_2mlpack_2core_2math_2lin__alg_8hppdep" alt=""></img></div>
+<map name="src_2mlpack_2core_2math_2lin__alg_8hppdep" id="src_2mlpack_2core_2math_2lin__alg_8hppdep">
+<area shape="rect" id="node2" href="sdp_8hpp.html" title="src/mlpack/core/optimizers\l/sdp/sdp.hpp" alt="" coords="167,102,346,143"></area>
+<area shape="rect" id="node7" href="rp__tree__mean__split_8hpp.html" title="src/mlpack/core/tree\l/binary_space_tree/rp\l_tree_mean_split.hpp" alt="" coords="894,95,1041,151"></area>
+<area shape="rect" id="node28" href="core_8hpp.html" title="Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu..." alt="" coords="3056,109,3196,136"></area>
+<area shape="rect" id="node3" href="lrsdp__function_8hpp.html" title="src/mlpack/core/optimizers\l/sdp/lrsdp_function.hpp" alt="" coords="269,206,447,247"></area>
+<area shape="rect" id="node5" href="matrix__completion_8hpp.html" title="src/mlpack/methods\l/matrix_completion/matrix\l_completion.hpp" alt="" coords="5,407,177,463"></area>
+<area shape="rect" id="node6" href="primal__dual_8hpp.html" title="src/mlpack/core/optimizers\l/sdp/primal_dual.hpp" alt="" coords="66,206,245,247"></area>
+<area shape="rect" id="node4" href="lrsdp_8hpp.html" title="src/mlpack/core/optimizers\l/sdp/lrsdp.hpp" alt="" coords="66,310,245,351"></area>
+<area shape="rect" id="node8" href="binary__space__tree_8hpp.html" title="src/mlpack/core/tree\l/binary_space_tree.hpp" alt="" coords="889,206,1046,247"></area>
+<area shape="rect" id="node9" href="binary__space__tree_2binary__space__tree_8hpp.html" title="src/mlpack/core/tree\l/binary_space_tree/binary\l_space_tree.hpp" alt="" coords="658,303,829,359"></area>
+<area shape="rect" id="node12" href="neighbor__search_8hpp.html" title="src/mlpack/methods\l/neighbor_search/neighbor\l_search.hpp" alt="" coords="725,407,900,463"></area>
+<area shape="rect" id="node13" href="dual__tree__kmeans_8hpp.html" title="src/mlpack/methods\l/kmeans/dual_tree_kmeans.hpp" alt="" coords="451,518,657,559"></area>
+<area shape="rect" id="node14" href="ns__model_8hpp.html" title="src/mlpack/methods\l/neighbor_search/ns\l_model.hpp" alt="" coords="903,511,1043,567"></area>
+<area shape="rect" id="node15" href="breadth__first__dual__tree__traverser_8hpp.html" title="src/mlpack/core/tree\l/binary_space_tree/breadth\l_first_dual_tree_traverser.hpp" alt="" coords="1055,303,1250,359"></area>
+<area shape="rect" id="node16" href="core_2tree_2binary__space__tree_2typedef_8hpp.html" title="src/mlpack/core/tree\l/binary_space_tree/typedef.hpp" alt="" coords="1275,310,1479,351"></area>
+<area shape="rect" id="node17" href="dtb_8hpp.html" title="src/mlpack/methods\l/emst/dtb.hpp" alt="" coords="1503,310,1643,351"></area>
+<area shape="rect" id="node18" href="kmeans_8hpp.html" title="src/mlpack/methods\l/kmeans/kmeans.hpp" alt="" coords="2059,310,2206,351"></area>
+<area shape="rect" id="node21" href="pelleg__moore__kmeans_8hpp.html" title="src/mlpack/methods\l/kmeans/pelleg_moore\l_kmeans.hpp" alt="" coords="1831,303,1984,359"></area>
+<area shape="rect" id="node22" href="range__search_8hpp.html" title="src/mlpack/methods\l/range_search/range\l_search.hpp" alt="" coords="1667,303,1807,359"></area>
+<area shape="rect" id="node24" href="rs__model_8hpp.html" title="src/mlpack/methods\l/range_search/rs_model.hpp" alt="" coords="1382,414,1569,455"></area>
+<area shape="rect" id="node25" href="ra__model_8hpp.html" title="src/mlpack/methods\l/rann/ra_model.hpp" alt="" coords="275,518,415,559"></area>
+<area shape="rect" id="node26" href="ra__search_8hpp.html" title="src/mlpack/methods\l/rann/ra_search.hpp" alt="" coords="325,414,465,455"></area>
+<area shape="rect" id="node27" href="ra__query__stat_8hpp.html" title="src/mlpack/methods\l/rann/ra_query_stat.hpp" alt="" coords="320,310,479,351"></area>
+<area shape="rect" id="node10" href="binary__space__tree_2single__tree__traverser_8hpp.html" title="src/mlpack/core/tree\l/binary_space_tree/single\l_tree_traverser.hpp" alt="" coords="925,407,1095,463"></area>
+<area shape="rect" id="node11" href="binary__space__tree_2dual__tree__traverser_8hpp.html" title="src/mlpack/core/tree\l/binary_space_tree/dual\l_tree_traverser.hpp" alt="" coords="541,407,701,463"></area>
+<area shape="rect" id="node19" href="em__fit_8hpp.html" title="src/mlpack/methods\l/gmm/em_fit.hpp" alt="" coords="1971,414,2111,455"></area>
+<area shape="rect" id="node20" href="kmeans__selection_8hpp.html" title="src/mlpack/methods\l/nystroem_method/kmeans\l_selection.hpp" alt="" coords="2135,407,2315,463"></area>
+<area shape="rect" id="node23" href="dbscan_8hpp.html" title="src/mlpack/methods\l/dbscan/dbscan.hpp" alt="" coords="1736,414,1876,455"></area>
+<area shape="rect" id="node29" href="parse__command__line_8hpp.html" title="src/mlpack/bindings\l/cli/parse_command_line.hpp" alt="" coords="4235,310,4425,351"></area>
+<area shape="rect" id="node30" href="print__help_8hpp.html" title="src/mlpack/bindings\l/cli/print_help.hpp" alt="" coords="4259,206,4398,247"></area>
+<area shape="rect" id="node31" href="arma__util_8hpp.html" title="src/mlpack/bindings\l/python/mlpack/arma\l_util.hpp" alt="" coords="4422,199,4566,255"></area>
+<area shape="rect" id="node32" href="print__pyx_8hpp.html" title="src/mlpack/bindings\l/python/print_pyx.hpp" alt="" coords="1838,206,1985,247"></area>
+<area shape="rect" id="node33" href="meta__info__extractor_8hpp.html" title="src/mlpack/core/cv\l/meta_info_extractor.hpp" alt="" coords="3449,206,3616,247"></area>
+<area shape="rect" id="node37" href="accuracy_8hpp.html" title="src/mlpack/core/cv\l/metrics/accuracy.hpp" alt="" coords="2060,206,2211,247"></area>
+<area shape="rect" id="node38" href="f1_8hpp.html" title="src/mlpack/core/cv\l/metrics/f1.hpp" alt="" coords="2235,206,2369,247"></area>
+<area shape="rect" id="node39" href="facilities_8hpp.html" title="src/mlpack/core/cv\l/metrics/facilities.hpp" alt="" coords="2393,206,2539,247"></area>
+<area shape="rect" id="node40" href="mse_8hpp.html" title="src/mlpack/core/cv\l/metrics/mse.hpp" alt="" coords="2563,206,2697,247"></area>
+<area shape="rect" id="node41" href="precision_8hpp.html" title="src/mlpack/core/cv\l/metrics/precision.hpp" alt="" coords="2721,206,2872,247"></area>
+<area shape="rect" id="node42" href="recall_8hpp.html" title="src/mlpack/core/cv\l/metrics/recall.hpp" alt="" coords="2897,206,3030,247"></area>
+<area shape="rect" id="node43" href="load__csv_8hpp.html" title="src/mlpack/core/data\l/load_csv.hpp" alt="" coords="3054,206,3198,247"></area>
+<area shape="rect" id="node44" href="adaboost__model_8hpp.html" title="src/mlpack/methods\l/adaboost/adaboost_model.hpp" alt="" coords="3222,206,3425,247"></area>
+<area shape="rect" id="node45" href="recurrent_8hpp.html" title="src/mlpack/methods\l/ann/layer/recurrent.hpp" alt="" coords="3640,206,3799,247"></area>
+<area shape="rect" id="node47" href="gini__gain_8hpp.html" title="src/mlpack/methods\l/decision_tree/gini\l_gain.hpp" alt="" coords="3823,199,3963,255"></area>
+<area shape="rect" id="node49" href="serialization_8hpp.html" title="src/mlpack/tests/serialization.hpp" alt="" coords="3993,317,4211,344"></area>
+<area shape="rect" id="node50" href="test__tools_8hpp.html" title="src/mlpack/tests/test\l_tools.hpp" alt="" coords="4039,206,4184,247"></area>
+<area shape="rect" id="node34" href="cv__base_8hpp.html" title="src/mlpack/core/cv\l/cv_base.hpp" alt="" coords="3441,310,3574,351"></area>
+<area shape="rect" id="node35" href="k__fold__cv_8hpp.html" title="src/mlpack/core/cv\l/k_fold_cv.hpp" alt="" coords="3349,414,3482,455"></area>
+<area shape="rect" id="node36" href="simple__cv_8hpp.html" title="src/mlpack/core/cv\l/simple_cv.hpp" alt="" coords="3531,414,3665,455"></area>
+<area shape="rect" id="node46" href="layer_8hpp.html" title="src/mlpack/methods\l/ann/layer/layer.hpp" alt="" coords="3649,310,3789,351"></area>
+<area shape="rect" id="node48" href="decision__tree_8hpp.html" title="src/mlpack/methods\l/decision_tree/decision\l_tree.hpp" alt="" coords="3814,303,3969,359"></area>
+</map>
+</div>
+</div>
+<p ><a href="lin__alg_8hpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacemlpack"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack.html">mlpack</a></td></tr>
+<tr class="memdesc:namespacemlpack"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br />Linear algebra utility functions, generally performed on matrices or vectors. </br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacemlpack_1_1math"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1math.html">mlpack::math</a></td></tr>
+<tr class="memdesc:namespacemlpack_1_1math"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br />Miscellaneous math routines. </br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:af20ca29adeac02601e8f4386bda3588e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1math.html#af20ca29adeac02601e8f4386bda3588e">Center</a> (const arma::mat &amp;x, arma::mat &amp;xCentered)</td></tr>
+<tr class="memdesc:af20ca29adeac02601e8f4386bda3588e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a centered matrix, where centering is done by subtracting the sum over the columns (a column vector) from each column of the matrix.  <a href="namespacemlpack_1_1math.html#af20ca29adeac02601e8f4386bda3588e">More...</a><br /></br></td></tr>
+<tr class="separator:af20ca29adeac02601e8f4386bda3588e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33495d8fdb79a9b5783d683cf11b0d6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1math.html#a33495d8fdb79a9b5783d683cf11b0d6b">Orthogonalize</a> (const arma::mat &amp;x, arma::mat &amp;W)</td></tr>
+<tr class="memdesc:a33495d8fdb79a9b5783d683cf11b0d6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Orthogonalize x and return the result in W, using eigendecomposition.  <a href="namespacemlpack_1_1math.html#a33495d8fdb79a9b5783d683cf11b0d6b">More...</a><br /></br></td></tr>
+<tr class="separator:a33495d8fdb79a9b5783d683cf11b0d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a532da68daa876aaa1060fbe54eaa3722"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1math.html#a532da68daa876aaa1060fbe54eaa3722">Orthogonalize</a> (arma::mat &amp;x)</td></tr>
+<tr class="memdesc:a532da68daa876aaa1060fbe54eaa3722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Orthogonalize x in-place.  <a href="namespacemlpack_1_1math.html#a532da68daa876aaa1060fbe54eaa3722">More...</a><br /></br></td></tr>
+<tr class="separator:a532da68daa876aaa1060fbe54eaa3722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27732f0088e81d179a8e6c92c4f9c4b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1math.html#a27732f0088e81d179a8e6c92c4f9c4b8">RandVector</a> (arma::vec &amp;v)</td></tr>
+<tr class="memdesc:a27732f0088e81d179a8e6c92c4f9c4b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrites a dimension-N vector to a random vector on the unit sphere in R^N.  <a href="namespacemlpack_1_1math.html#a27732f0088e81d179a8e6c92c4f9c4b8">More...</a><br /></br></td></tr>
+<tr class="separator:a27732f0088e81d179a8e6c92c4f9c4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac03fe146911a97bef099efc9e99296ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1math.html#ac03fe146911a97bef099efc9e99296ff">RemoveRows</a> (const arma::mat &amp;input, const std::vector&lt; size_t &gt; &amp;rowsToRemove, arma::mat &amp;output)</td></tr>
+<tr class="memdesc:ac03fe146911a97bef099efc9e99296ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a certain set of rows in a matrix while copying to a second matrix.  <a href="namespacemlpack_1_1math.html#ac03fe146911a97bef099efc9e99296ff">More...</a><br /></br></td></tr>
+<tr class="separator:ac03fe146911a97bef099efc9e99296ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a69e6e582ac415528f3a219e5336b83"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">T</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a5a69e6e582ac415528f3a219e5336b83"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1math.html#a5a69e6e582ac415528f3a219e5336b83">Sign</a> (const T x)</td></tr>
+<tr class="memdesc:a5a69e6e582ac415528f3a219e5336b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signum function.  <a href="namespacemlpack_1_1math.html#a5a69e6e582ac415528f3a219e5336b83">More...</a><br /></br></td></tr>
+<tr class="separator:a5a69e6e582ac415528f3a219e5336b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf1d819071707267cdce9c78abd32e2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1math.html#acf1d819071707267cdce9c78abd32e2e">Smat</a> (const arma::vec &amp;input, arma::mat &amp;output)</td></tr>
+<tr class="memdesc:acf1d819071707267cdce9c78abd32e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The inverse of Svec.  <a href="namespacemlpack_1_1math.html#acf1d819071707267cdce9c78abd32e2e">More...</a><br /></br></td></tr>
+<tr class="separator:acf1d819071707267cdce9c78abd32e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76535efa4f447182fed1a2ad789d5340"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1math.html#a76535efa4f447182fed1a2ad789d5340">Svec</a> (const arma::mat &amp;input, arma::vec &amp;output)</td></tr>
+<tr class="memdesc:a76535efa4f447182fed1a2ad789d5340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upper triangular representation of a symmetric matrix, scaled such that, dot(Svec(A), Svec(B)) == dot(A, B) for symmetric A, B.  <a href="namespacemlpack_1_1math.html#a76535efa4f447182fed1a2ad789d5340">More...</a><br /></br></td></tr>
+<tr class="separator:a76535efa4f447182fed1a2ad789d5340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e46372873806bdfef7d596dcc78a5ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1math.html#a2e46372873806bdfef7d596dcc78a5ea">Svec</a> (const arma::sp_mat &amp;input, arma::sp_vec &amp;output)</td></tr>
+<tr class="separator:a2e46372873806bdfef7d596dcc78a5ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630a16e49385717a8fef7d25d0093c37"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1math.html#a630a16e49385717a8fef7d25d0093c37">SvecIndex</a> (size_t i, size_t j, size_t n)</td></tr>
+<tr class="memdesc:a630a16e49385717a8fef7d25d0093c37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the index such that A[i,j] == factr(i, j) * svec(A)[pos(i, j)], where factr(i, j) = sqrt(2) if i != j and 1 otherwise.  <a href="namespacemlpack_1_1math.html#a630a16e49385717a8fef7d25d0093c37">More...</a><br /></br></td></tr>
+<tr class="separator:a630a16e49385717a8fef7d25d0093c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99efc34a8a0f9ed477baf86cb62adb3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1math.html#a99efc34a8a0f9ed477baf86cb62adb3f">SymKronId</a> (const arma::mat &amp;A, arma::mat &amp;op)</td></tr>
+<tr class="memdesc:a99efc34a8a0f9ed477baf86cb62adb3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">If A is a symmetric matrix, then SymKronId returns an operator Op such that.  <a href="namespacemlpack_1_1math.html#a99efc34a8a0f9ed477baf86cb62adb3f">More...</a><br /></br></td></tr>
+<tr class="separator:a99efc34a8a0f9ed477baf86cb62adb3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1afb9b62743ad2c961a4f240d8694e1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1math.html#a1afb9b62743ad2c961a4f240d8694e1e">VectorPower</a> (arma::vec &amp;vec, const double power)</td></tr>
+<tr class="memdesc:a1afb9b62743ad2c961a4f240d8694e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auxiliary function to raise vector elements to a specific power.  <a href="namespacemlpack_1_1math.html#a1afb9b62743ad2c961a4f240d8694e1e">More...</a><br /></br></td></tr>
+<tr class="separator:a1afb9b62743ad2c961a4f240d8694e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af598b11d41b94720546a10a2ac7adb66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1math.html#af598b11d41b94720546a10a2ac7adb66">WhitenUsingEig</a> (const arma::mat &amp;x, arma::mat &amp;xWhitened, arma::mat &amp;whiteningMatrix)</td></tr>
+<tr class="memdesc:af598b11d41b94720546a10a2ac7adb66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whitens a matrix using the eigendecomposition of the covariance matrix.  <a href="namespacemlpack_1_1math.html#af598b11d41b94720546a10a2ac7adb66">More...</a><br /></br></td></tr>
+<tr class="separator:af598b11d41b94720546a10a2ac7adb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9498ec73c0c6b0f151a10b2357a11468"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1math.html#a9498ec73c0c6b0f151a10b2357a11468">WhitenUsingSVD</a> (const arma::mat &amp;x, arma::mat &amp;xWhitened, arma::mat &amp;whiteningMatrix)</td></tr>
+<tr class="memdesc:a9498ec73c0c6b0f151a10b2357a11468"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whitens a matrix using the singular value decomposition of the covariance matrix.  <a href="namespacemlpack_1_1math.html#a9498ec73c0c6b0f151a10b2357a11468">More...</a><br /></br></td></tr>
+<tr class="separator:a9498ec73c0c6b0f151a10b2357a11468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="section author"><dt >Author</dt><dd >Nishant Mehta</dd></dl>
+<p >Linear algebra utilities.</p>
+<p >mlpack is free software; you may redistribute it and/or modify it under the terms of the 3-clause BSD license. You should have received a copy of the 3-clause BSD license along with mlpack. If not, see <a href="http://www.opensource.org/licenses/BSD-3-Clause">http://www.opensource.org/licenses/BSD-3-Clause</a> for more information. </p>
+
+<p class="definition">Definition in file <a class="el" href="lin__alg_8hpp_source.html">lin_alg.hpp</a>.</p>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

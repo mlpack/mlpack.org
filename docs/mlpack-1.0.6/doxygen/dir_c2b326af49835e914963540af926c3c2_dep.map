@@ -1,0 +1,43 @@
+<map id="/var/www/www.mlpack.org/mlpack&#45;1.0.6/src/mlpack/methods" name="/var/www/www.mlpack.org/mlpack&#45;1.0.6/src/mlpack/methods">
+<area shape="rect" id="node2" href="dir_c829f8986474a13475ebfd7bbff7c8ed.html" title="det" alt="" coords="1681,63,1753,111"/>
+<area shape="rect" id="node3" href="dir_d5e47ef96ecadd8e9900db307281d98e.html" title="emst" alt="" coords="631,63,703,111"/>
+<area shape="rect" id="node23" href="dir_e2c719b34f3642791a54c4cf6c16600a.html" title="core" alt="" coords="1881,255,1953,303"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000025_000008.html" title="2" alt="" coords="1863,239,1871,253"/>
+<area shape="rect" id="node4" href="dir_02d190bb38b8be140a7893ce99900c2a.html" title="fastmks" alt="" coords="727,63,799,111"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000026_000008.html" title="3" alt="" coords="1863,239,1871,253"/>
+<area shape="rect" id="node5" href="dir_1fe4e5a56ed4e40f5c066806f49272aa.html" title="gmm" alt="" coords="1151,159,1223,207"/>
+<area shape="rect" id="node8" href="dir_e6a9ecf82b9c224eb017fd94714e8728.html" title="kmeans" alt="" coords="1464,255,1536,303"/>
+<area shape="rect" id="edge15-headlabel" href="dir_000027_000030.html" title="1" alt="" coords="1444,250,1452,265"/>
+<area shape="rect" id="node6" href="dir_4b657cf27a25be31035930ea1cd0dc79.html" title="hmm" alt="" coords="1364,63,1436,111"/>
+<area shape="rect" id="node7" href="dir_b6481078ee2e1836b39be8ede570746d.html" title="kernel_pca" alt="" coords="1015,63,1100,111"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000029_000008.html" title="1" alt="" coords="1864,238,1872,253"/>
+<area shape="rect" id="edge14-headlabel" href="dir_000030_000008.html" title="2" alt="" coords="1859,263,1867,278"/>
+<area shape="rect" id="node9" href="dir_decde5de87350947d32c945329140271.html" title="lars" alt="" coords="108,255,180,303"/>
+<area shape="rect" id="node10" href="dir_bc529d7a0e6182a120848b407690cfa0.html" title="linear_regression" alt="" coords="1124,63,1244,111"/>
+<area shape="rect" id="node11" href="dir_9f6a17e1a1225c7f32bc76920efc39ac.html" title="local_coordinate_coding" alt="" coords="38,63,199,111"/>
+<area shape="rect" id="edge9-headlabel" href="dir_000033_000031.html" title="1" alt="" coords="167,234,175,248"/>
+<area shape="rect" id="node22" href="dir_a663104a5a6efcb089705b4bbca06e66.html" title="sparse_coding" alt="" coords="52,159,159,207"/>
+<area shape="rect" id="edge10-headlabel" href="dir_000033_000045.html" title="3" alt="" coords="116,134,124,149"/>
+<area shape="rect" id="node12" href="dir_11b87451a607cd95391e41cf6aa7ca33.html" title="lsh" alt="" coords="919,63,991,111"/>
+<area shape="rect" id="node16" href="dir_b5de313cb57b812fd19d1945982e8527.html" title="neighbor_search" alt="" coords="1247,159,1364,207"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000034_000038.html" title="1" alt="" coords="1227,142,1235,157"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000034_000008.html" title="1" alt="" coords="1864,239,1872,254"/>
+<area shape="rect" id="node13" href="dir_88a20579982da50beb2dae7b465b3ecb.html" title="mvu" alt="" coords="823,63,895,111"/>
+<area shape="rect" id="node14" href="dir_887def32eec26596e1b56e0a139742cf.html" title="naive_bayes" alt="" coords="223,63,318,111"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000036_000027.html" title="1" alt="" coords="1128,166,1136,181"/>
+<area shape="rect" id="node15" href="dir_4c970876312e4d6b8fa0124f96970876.html" title="nca" alt="" coords="1460,63,1532,111"/>
+<area shape="rect" id="edge11-headlabel" href="dir_000037_000008.html" title="2" alt="" coords="1902,227,1910,242"/>
+<area shape="rect" id="edge12-headlabel" href="dir_000038_000008.html" title="3" alt="" coords="1863,239,1871,253"/>
+<area shape="rect" id="node17" href="dir_50b5cd983f13a6e8d0fed2dd7d35157c.html" title="nmf" alt="" coords="535,63,607,111"/>
+<area shape="rect" id="node18" href="dir_3c0e28aeb1a378ef0b0033d08b71c185.html" title="pca" alt="" coords="439,63,511,111"/>
+<area shape="rect" id="node19" href="dir_4b01bf1f5c1412ef0c4ad97e50b2348d.html" title="radical" alt="" coords="343,63,415,111"/>
+<area shape="rect" id="node20" href="dir_87c43898ee51f7811922e0a8b9942313.html" title="range_search" alt="" coords="1557,63,1657,111"/>
+<area shape="rect" id="edge17-headlabel" href="dir_000043_000008.html" title="2" alt="" coords="1920,229,1928,243"/>
+<area shape="rect" id="node21" href="dir_b2c947b7e06015e34b6599ae27a0b760.html" title="rann" alt="" coords="1268,63,1340,111"/>
+<area shape="rect" id="edge7-headlabel" href="dir_000044_000038.html" title="3" alt="" coords="1309,133,1317,148"/>
+<area shape="rect" id="edge8-headlabel" href="dir_000044_000008.html" title="3" alt="" coords="1876,229,1884,244"/>
+<area shape="rect" id="edge16-headlabel" href="dir_000045_000031.html" title="1" alt="" coords="131,227,139,242"/>
+<area shape="rect" id="edge13-headlabel" href="dir_000008_000027.html" title="1" alt="" coords="1234,208,1242,223"/>
+<area shape="rect" id="clust2" href="dir_c2b326af49835e914963540af926c3c2.html" alt="" coords="27,52,1860,313"/>
+<area shape="rect" id="clust1" href="dir_00e7d4510e5984b2390c681da028c6f7.html" title="mlpack" alt="" coords="16,16,1871,324"/>
+</map>

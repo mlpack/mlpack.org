@@ -1,22 +1,50 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head >
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
-<meta name="generator" content="Doxygen 1.8.9.1"></meta>
-<title >mlpack: mlpack::kernel::ExampleKernel Class Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
-</link>
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
-</link>
-</head>
-<body >
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
 <div id="top">
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody >
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mlpack
    &#160;<span id="projectnumber">2.0.0</span>
    </div>
@@ -26,24 +54,14 @@
 </table>
 </div>
 
-
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
-      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
-      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span >Classes</span></a></li>
-      <li ><a href="files.html"><span >Files</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li ><a href="annotated.html"><span >Class&#160;List</span></a></li>
-      <li ><a href="classes.html"><span >Class&#160;Index</span></a></li>
-      <li ><a href="inherits.html"><span >Class&#160;Hierarchy</span></a></li>
-      <li ><a href="functions.html"><span >Class&#160;Members</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+</script>
+<div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul >
 <li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1kernel.html">kernel</a></li><li class="navelem"><a class="el" href="classmlpack_1_1kernel_1_1ExampleKernel.html">ExampleKernel</a></li>  </ul>
@@ -90,16 +108,15 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p >An example kernel function. </p>
 <p >This is not a useful kernel, but it implements the two functions necessary to satisfy the Kernel policy (so that a class can be used whenever an mlpack method calls for a <code >typename Kernel</code> template parameter.</p>
 <p >All that is necessary is a constructor and an <code ><a class="el" href="classmlpack_1_1kernel_1_1ExampleKernel.html#ab6493b82672c90274e9c0acc1340bf8f" title="Evaluates the kernel function for two given vectors. ">Evaluate()</a></code> function. More methods could be added; for instance, one useful idea is a constructor which takes parameters for a kernel (for instance, the width of the Gaussian for a Gaussian kernel). However, mlpack methods cannot count on these various constructors existing, which is why most methods allow passing an already-instantiated kernel object (and by default the method will construct the kernel with the default constructor). So, for instance,</p>
-<div class="fragment"><div class="line">GaussianKernel k(5.0);</div>
-<div class="line">KernelPCA&lt;GaussianKernel&gt; kpca(dataset, k);</div>
-</div><p >will set up kernel PCA using a Gaussian kernel with a width of 5.0, but</p>
-<div class="fragment"><div class="line">KernelPCA&lt;GaussianKernel&gt; kpca(dataset);</div>
-</div><p >will create the kernel with the default constructor. It is important (but not strictly mandatory) that your default constructor still gives a working kernel.</p>
+<div class="fragment"><div class="line">GaussianKernel k(5.0);</div><div class="line">KernelPCA&lt;GaussianKernel&gt; kpca(dataset, k);</div></div><p >will set up kernel PCA using a Gaussian kernel with a width of 5.0, but</p>
+<div class="fragment"><div class="line">KernelPCA&lt;GaussianKernel&gt; kpca(dataset);</div></div><p >will create the kernel with the default constructor. It is important (but not strictly mandatory) that your default constructor still gives a working kernel.</p>
 <dl class="section note"><dt >Note</dt><dd >Not all kernels require state. For instance, the regular dot product needs no parameters. In that case, no local variables are necessary and <code ><a class="el" href="classmlpack_1_1kernel_1_1ExampleKernel.html#ab6493b82672c90274e9c0acc1340bf8f" title="Evaluates the kernel function for two given vectors. ">Evaluate()</a></code> can (and should) be declared static. However, for greater generalization, mlpack methods expect all kernels to require state and hence must store instantiated kernel functions; this is why a default constructor is necessary.  </dd></dl>
 
-<p >Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00087">87</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00087">87</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aa2ccb2c56b15cdd07f952464e2eeb784"></a>
+<a id="aa2ccb2c56b15cdd07f952464e2eeb784"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ccb2c56b15cdd07f952464e2eeb784">&#9670;&nbsp;</a></span>ExampleKernel()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -123,12 +140,14 @@ Static Public Member Functions</h2></td></tr>
 <p >The default constructor, which takes no parameters. </p>
 <p >Because our simple example kernel has no internal parameters that need to be stored, the constructor does not need to do anything. For a more complex example, see the <a class="el" href="classmlpack_1_1kernel_1_1GaussianKernel.html" title="The standard Gaussian kernel. ">GaussianKernel</a>, which stores an internal parameter. </p>
 
-<p >Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00096">96</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00096">96</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a59c724a6bfaa2678d94ea1fb7280e597"></a>
+<a id="a59c724a6bfaa2678d94ea1fb7280e597"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59c724a6bfaa2678d94ea1fb7280e597">&#9670;&nbsp;</a></span>ConvolutionIntegral()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">VecTypeA</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">VecTypeB</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -179,11 +198,13 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt >Returns</dt><dd >the convolution integral value. </dd></dl>
 
-<p >Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00137">137</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00137">137</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab6493b82672c90274e9c0acc1340bf8f"></a>
+<a id="ab6493b82672c90274e9c0acc1340bf8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6493b82672c90274e9c0acc1340bf8f">&#9670;&nbsp;</a></span>Evaluate()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">VecTypeA</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">VecTypeB</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -234,11 +255,13 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt >Returns</dt><dd >K(a, b). </dd></dl>
 
-<p >Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00112">112</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00112">112</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aced4887ace203b120790584eb0f29efe"></a>
+<a id="aced4887ace203b120790584eb0f29efe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aced4887ace203b120790584eb0f29efe">&#9670;&nbsp;</a></span>Normalizer()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -269,11 +292,13 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt >Returns</dt><dd >the normalization constant. </dd></dl>
 
-<p >Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00150">150</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00150">150</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab2e9908961dcd1510e2e8e26901303b2"></a>
+<a id="ab2e9908961dcd1510e2e8e26901303b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2e9908961dcd1510e2e8e26901303b2">&#9670;&nbsp;</a></span>Serialize()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -309,7 +334,7 @@ Static Public Member Functions</h2></td></tr>
 <p >Serializes the kernel. </p>
 <p >In this case, the kernel has no members, so we do not need to do anything at all. </p>
 
-<p >Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00120">120</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__kernel_8hpp_source.html#l00120">120</a> of file <a class="el" href="example__kernel_8hpp_source.html">example_kernel.hpp</a>.</p>
 
 </div>
 </div>
@@ -321,7 +346,16 @@ Static Public Member Functions</h2></td></tr>
 <hr class="footer"></hr><address class="footer"><small >
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"></img>
-</a> 1.8.9.1
+</a> 1.8.13
 </small></address>
+</div>
 </body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
 </html>

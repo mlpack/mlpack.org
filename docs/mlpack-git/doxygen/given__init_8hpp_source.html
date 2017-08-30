@@ -1,0 +1,116 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">master</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_44a936ef30fc126706c6284a2fc0c990.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_3cfbf900288ec2fe8dd2c2c8482f216e.html">methods</a></li><li class="navelem"><a class="el" href="dir_5d79f627790f2a48f4f1d0c9d0b8c107.html">amf</a></li><li class="navelem"><a class="el" href="dir_874bc73a472bc56857d75119e41021a1.html">init_rules</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">given_init.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="given__init_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef MLPACK_METHODS_AMF_INIT_RULES_GIVEN_INIT_HPP</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define MLPACK_METHODS_AMF_INIT_RULES_GIVEN_INIT_HPP</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="prereqs_8hpp.html">mlpack/prereqs.hpp</a>&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>amf {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1GivenInitialization.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1amf_1_1GivenInitialization.html">GivenInitialization</a></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; <span class="keyword">public</span>:</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="comment">// Empty constructor required for the InitializeRule template.</span></div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1GivenInitialization.html#a53bd9dba6a4228dec311182f3b764f31">   31</a></span>&#160;  <a class="code" href="classmlpack_1_1amf_1_1GivenInitialization.html#a53bd9dba6a4228dec311182f3b764f31">GivenInitialization</a>() { }</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="comment">// Initialize the GivenInitialization object with the given matrices.</span></div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1GivenInitialization.html#a1e16c4be542c7629394a4a6bdf0e30af">   34</a></span>&#160;  <a class="code" href="classmlpack_1_1amf_1_1GivenInitialization.html#a1e16c4be542c7629394a4a6bdf0e30af">GivenInitialization</a>(<span class="keyword">const</span> arma::mat&amp; w, <span class="keyword">const</span> arma::mat&amp; h) : w(w), h(h) { }</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="comment">// Initialize the GivenInitialization object, taking control of the given</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="comment">// matrices.</span></div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1GivenInitialization.html#a46b01fb0c1f3a5cd31013bbdee063866">   38</a></span>&#160;  <a class="code" href="classmlpack_1_1amf_1_1GivenInitialization.html#a46b01fb0c1f3a5cd31013bbdee063866">GivenInitialization</a>(<span class="keyword">const</span> arma::mat&amp;&amp; w, <span class="keyword">const</span> arma::mat&amp;&amp; h) :</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    w(<a class="code" href="namespacestd.html">std</a>::move(w)),</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    h(<a class="code" href="namespacestd.html">std</a>::move(h))</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  { }</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> MatType&gt;</div><div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1GivenInitialization.html#aefa6c01974ec54eab85bd03772816c5c">   52</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1amf_1_1GivenInitialization.html#aefa6c01974ec54eab85bd03772816c5c">Initialize</a>(<span class="keyword">const</span> MatType&amp; <span class="comment">/* V */</span>,</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                         <span class="keyword">const</span> <span class="keywordtype">size_t</span> <span class="comment">/* r */</span>,</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                         arma::mat&amp; W,</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                         arma::mat&amp; H)</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// Initialize to the given matrices.</span></div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    W = w;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    H = h;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Archive&gt;</div><div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classmlpack_1_1amf_1_1GivenInitialization.html#ae187181bfb4ff8601e6385fd4fc4999d">   64</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1amf_1_1GivenInitialization.html#ae187181bfb4ff8601e6385fd4fc4999d">Serialize</a>(Archive&amp; ar, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="comment">/* version */</span>)</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  {</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    ar &amp; <a class="code" href="namespacemlpack_1_1data.html#a785ee98e0070286ef86eeeea85a74018">data::CreateNVP</a>(w, <span class="stringliteral">&quot;w&quot;</span>);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    ar &amp; <a class="code" href="namespacemlpack_1_1data.html#a785ee98e0070286ef86eeeea85a74018">data::CreateNVP</a>(h, <span class="stringliteral">&quot;h&quot;</span>);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; <span class="keyword">private</span>:</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  arma::mat w;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  arma::mat h;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;} <span class="comment">// namespace amf</span></div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;} <span class="comment">// namespace mlpack</span></div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">Linear algebra utility functions, generally performed on matrices or vectors. </div><div class="ttdef"><b >Definition:</b> <a href="add__to__po_8hpp_source.html#l00016">add_to_po.hpp:16</a></div></div>
+<div class="ttc" id="prereqs_8hpp_html"><div class="ttname"><a href="prereqs_8hpp.html">prereqs.hpp</a></div><div class="ttdoc">The core includes that mlpack expects; standard C++ includes and Armadillo. </div></div>
+<div class="ttc" id="namespacemlpack_1_1data_html_a785ee98e0070286ef86eeeea85a74018"><div class="ttname"><a href="namespacemlpack_1_1data.html#a785ee98e0070286ef86eeeea85a74018">mlpack::data::CreateNVP</a></div><div class="ttdeci">FirstShim&lt; T &gt; CreateNVP(T &amp;t, const std::string &amp;name, typename std::enable_if_t&lt; HasSerialize&lt; T &gt;::value &gt; *=0)</div><div class="ttdoc">Call this function to produce a name-value pair; this is similar to BOOST_SERIALIZATION_NVP(), but should be used for types that have a Serialize() function (or contain a type that has a Serialize() function) instead of a serialize() function. </div><div class="ttdef"><b >Definition:</b> <a href="serialization__shim_8hpp_source.html#l00094">serialization_shim.hpp:94</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b >Definition:</b> <a href="prereqs_8hpp_source.html#l00055">prereqs.hpp:55</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1GivenInitialization_html_ae187181bfb4ff8601e6385fd4fc4999d"><div class="ttname"><a href="classmlpack_1_1amf_1_1GivenInitialization.html#ae187181bfb4ff8601e6385fd4fc4999d">mlpack::amf::GivenInitialization::Serialize</a></div><div class="ttdeci">void Serialize(Archive &amp;ar, const unsigned int)</div><div class="ttdoc">Serialize the object (in this case, there is nothing to serialize). </div><div class="ttdef"><b >Definition:</b> <a href="given__init_8hpp_source.html#l00064">given_init.hpp:64</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1GivenInitialization_html"><div class="ttname"><a href="classmlpack_1_1amf_1_1GivenInitialization.html">mlpack::amf::GivenInitialization</a></div><div class="ttdoc">This initialization rule for AMF simply fills the W and H matrices with the matrices given to the con...</div><div class="ttdef"><b >Definition:</b> <a href="given__init_8hpp_source.html#l00027">given_init.hpp:27</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1GivenInitialization_html_aefa6c01974ec54eab85bd03772816c5c"><div class="ttname"><a href="classmlpack_1_1amf_1_1GivenInitialization.html#aefa6c01974ec54eab85bd03772816c5c">mlpack::amf::GivenInitialization::Initialize</a></div><div class="ttdeci">void Initialize(const MatType &amp;, const size_t, arma::mat &amp;W, arma::mat &amp;H)</div><div class="ttdoc">Fill W and H with random uniform noise. </div><div class="ttdef"><b >Definition:</b> <a href="given__init_8hpp_source.html#l00052">given_init.hpp:52</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1GivenInitialization_html_a53bd9dba6a4228dec311182f3b764f31"><div class="ttname"><a href="classmlpack_1_1amf_1_1GivenInitialization.html#a53bd9dba6a4228dec311182f3b764f31">mlpack::amf::GivenInitialization::GivenInitialization</a></div><div class="ttdeci">GivenInitialization()</div><div class="ttdef"><b >Definition:</b> <a href="given__init_8hpp_source.html#l00031">given_init.hpp:31</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1GivenInitialization_html_a46b01fb0c1f3a5cd31013bbdee063866"><div class="ttname"><a href="classmlpack_1_1amf_1_1GivenInitialization.html#a46b01fb0c1f3a5cd31013bbdee063866">mlpack::amf::GivenInitialization::GivenInitialization</a></div><div class="ttdeci">GivenInitialization(const arma::mat &amp;&amp;w, const arma::mat &amp;&amp;h)</div><div class="ttdef"><b >Definition:</b> <a href="given__init_8hpp_source.html#l00038">given_init.hpp:38</a></div></div>
+<div class="ttc" id="classmlpack_1_1amf_1_1GivenInitialization_html_a1e16c4be542c7629394a4a6bdf0e30af"><div class="ttname"><a href="classmlpack_1_1amf_1_1GivenInitialization.html#a1e16c4be542c7629394a4a6bdf0e30af">mlpack::amf::GivenInitialization::GivenInitialization</a></div><div class="ttdeci">GivenInitialization(const arma::mat &amp;w, const arma::mat &amp;h)</div><div class="ttdef"><b >Definition:</b> <a href="given__init_8hpp_source.html#l00034">given_init.hpp:34</a></div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

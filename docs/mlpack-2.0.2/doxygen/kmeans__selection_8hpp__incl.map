@@ -1,6 +1,6 @@
 <map id="src/mlpack/methods/nystroem_method/kmeans_selection.hpp" name="src/mlpack/methods/nystroem_method/kmeans_selection.hpp">
 <area shape="rect" id="node2" href="$core_8hpp.html" title="Include all of the base components required to write MLPACK methods, and the main MLPACK Doxygen docu..." alt="" coords="3005,288,3123,315"/>
-<area shape="rect" id="node45" href="$kmeans_8hpp.html" title="mlpack/methods/kmeans\l/kmeans.hpp" alt="" coords="3352,109,3520,151"/>
+<area shape="rect" id="node45" href="$kmeans_8hpp.html" title="mlpack/methods/kmeans\l/kmeans.hpp" alt="" coords="3353,109,3521,151"/>
 <area shape="rect" id="node3" href="$prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo. " alt="" coords="616,474,752,501"/>
 <area shape="rect" id="node18" href="$arma__traits_8hpp.html" title="mlpack/core/util/arma\l_traits.hpp" alt="" coords="983,370,1129,411"/>
 <area shape="rect" id="node19" href="$log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="3395,474,3555,501"/>
@@ -32,5 +32,5 @@
 <area shape="rect" id="node46" href="$sample__initialization_8hpp.html" title="sample_initialization.hpp" alt="" coords="2878,206,3042,233"/>
 <area shape="rect" id="node47" href="$max__variance__new__cluster_8hpp.html" title="max_variance_new_cluster.hpp" alt="" coords="3067,206,3272,233"/>
 <area shape="rect" id="node48" href="$naive__kmeans_8hpp.html" title="naive_kmeans.hpp" alt="" coords="3296,206,3427,233"/>
-<area shape="rect" id="node49" href="$binary__space__tree_8hpp.html" title="mlpack/core/tree/binary\l_space_tree.hpp" alt="" coords="3598,199,3757,240"/>
+<area shape="rect" id="node49" href="$binary__space__tree_8hpp.html" title="mlpack/core/tree/binary\l_space_tree.hpp" alt="" coords="3599,199,3758,240"/>
 </map>

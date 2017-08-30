@@ -1,22 +1,50 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head >
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
-<meta name="generator" content="Doxygen 1.8.9.1"></meta>
-<title >mlpack: mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt; Class Template Reference</title><link href="tabs.css" rel="stylesheet" type="text/css" />
-</link>
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script><link href="doxygen.css" rel="stylesheet" type="text/css" />
-</link>
-</head>
-<body >
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
 <div id="top">
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody >
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mlpack
    &#160;<span id="projectnumber">2.0.0</span>
    </div>
@@ -26,24 +54,14 @@
 </table>
 </div>
 
-
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li ><a href="index.html"><span >Main&#160;Page</span></a></li>
-      <li ><a href="pages.html"><span >Related&#160;Pages</span></a></li>
-      <li ><a href="namespaces.html"><span >Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span >Classes</span></a></li>
-      <li ><a href="files.html"><span >Files</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li ><a href="annotated.html"><span >Class&#160;List</span></a></li>
-      <li ><a href="classes.html"><span >Class&#160;Index</span></a></li>
-      <li ><a href="inherits.html"><span >Class&#160;Hierarchy</span></a></li>
-      <li ><a href="functions.html"><span >Class&#160;Members</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+</script>
+<div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul >
 <li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1optimization.html">optimization</a></li><li class="navelem"><a class="el" href="classmlpack_1_1optimization_1_1SA.html">SA</a></li>  </ul>
@@ -68,66 +86,66 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2ca61632969fb1051ccf9d488aec3f41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a2ca61632969fb1051ccf9d488aec3f41">SA</a> (FunctionType &amp;<a class="el" href="classmlpack_1_1optimization_1_1SA.html#a63e3c83351af4bc9e7b53c45f0f26fb7">function</a>, CoolingScheduleType &amp;<a class="el" href="classmlpack_1_1optimization_1_1SA.html#a5720990dca1f66e518ed68d81faca18e">coolingSchedule</a>, const size_t <a class="el" href="classmlpack_1_1optimization_1_1SA.html#a169f1210650ef941c1365278612a4b61">maxIterations</a>=1000000, const double initT=10000., const size_t <a class="el" href="classmlpack_1_1optimization_1_1SA.html#a671c770cf908bcbc6a965e80c4c7d667">initMoves</a>=1000, const size_t <a class="el" href="classmlpack_1_1optimization_1_1SA.html#a78a4dbd2f0d93e5ebdf65c2cf9006ab9">moveCtrlSweep</a>=100, const double <a class="el" href="classmlpack_1_1optimization_1_1SA.html#a9f7142c175ad3c2fc37ecf89ba339cad">tolerance</a>=1e-5, const size_t maxToleranceSweep=3, const double maxMoveCoef=20, const double initMoveCoef=0.3, const double gain=0.3)</td></tr>
 <tr class="memdesc:a2ca61632969fb1051ccf9d488aec3f41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the <a class="el" href="classmlpack_1_1optimization_1_1SA.html" title="Simulated Annealing is an stochastic optimization algorithm which is able to deliver near-optimal res...">SA</a> optimizer with the given function and parameters.  <a href="#a2ca61632969fb1051ccf9d488aec3f41">More...</a><br /></br></td></tr>
 <tr class="separator:a2ca61632969fb1051ccf9d488aec3f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae12e0bbacda10e3053623091f8cb1854"><td class="memItemLeft" align="right" valign="top">const FunctionType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#ae12e0bbacda10e3053623091f8cb1854">Function</a> () const </td></tr>
-<tr class="memdesc:ae12e0bbacda10e3053623091f8cb1854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the instantiated function to be optimized.  <a href="#ae12e0bbacda10e3053623091f8cb1854">More...</a><br /></br></td></tr>
-<tr class="separator:ae12e0bbacda10e3053623091f8cb1854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9b5448fc16a57be0ba50addb396697a"><td class="memItemLeft" align="right" valign="top">const FunctionType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#ad9b5448fc16a57be0ba50addb396697a">Function</a> () const</td></tr>
+<tr class="memdesc:ad9b5448fc16a57be0ba50addb396697a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the instantiated function to be optimized.  <a href="#ad9b5448fc16a57be0ba50addb396697a">More...</a><br /></br></td></tr>
+<tr class="separator:ad9b5448fc16a57be0ba50addb396697a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40c103988fc59a1edce6362cf354f651"><td class="memItemLeft" align="right" valign="top">FunctionType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a40c103988fc59a1edce6362cf354f651">Function</a> ()</td></tr>
 <tr class="memdesc:a40c103988fc59a1edce6362cf354f651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the instantiated function.  <a href="#a40c103988fc59a1edce6362cf354f651">More...</a><br /></br></td></tr>
 <tr class="separator:a40c103988fc59a1edce6362cf354f651"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d6f61a4cbb87f1dd18e55d7ea9a3127"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a5d6f61a4cbb87f1dd18e55d7ea9a3127">Gain</a> () const </td></tr>
-<tr class="memdesc:a5d6f61a4cbb87f1dd18e55d7ea9a3127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the gain.  <a href="#a5d6f61a4cbb87f1dd18e55d7ea9a3127">More...</a><br /></br></td></tr>
-<tr class="separator:a5d6f61a4cbb87f1dd18e55d7ea9a3127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33210f4548f459c33881c848e7745597"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a33210f4548f459c33881c848e7745597">Gain</a> () const</td></tr>
+<tr class="memdesc:a33210f4548f459c33881c848e7745597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the gain.  <a href="#a33210f4548f459c33881c848e7745597">More...</a><br /></br></td></tr>
+<tr class="separator:a33210f4548f459c33881c848e7745597"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad33516557c8fd42cb684cfb8a032232f"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#ad33516557c8fd42cb684cfb8a032232f">Gain</a> ()</td></tr>
 <tr class="memdesc:ad33516557c8fd42cb684cfb8a032232f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the gain.  <a href="#ad33516557c8fd42cb684cfb8a032232f">More...</a><br /></br></td></tr>
 <tr class="separator:ad33516557c8fd42cb684cfb8a032232f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34476b8d0f8eeb2392642e9140f266b5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a34476b8d0f8eeb2392642e9140f266b5">InitMoves</a> () const </td></tr>
-<tr class="memdesc:a34476b8d0f8eeb2392642e9140f266b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the initial moves.  <a href="#a34476b8d0f8eeb2392642e9140f266b5">More...</a><br /></br></td></tr>
-<tr class="separator:a34476b8d0f8eeb2392642e9140f266b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c13e53526c074d9222696205b3fc4b4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a9c13e53526c074d9222696205b3fc4b4">InitMoves</a> () const</td></tr>
+<tr class="memdesc:a9c13e53526c074d9222696205b3fc4b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the initial moves.  <a href="#a9c13e53526c074d9222696205b3fc4b4">More...</a><br /></br></td></tr>
+<tr class="separator:a9c13e53526c074d9222696205b3fc4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac42b4a324aac463aaecd9d3003ffe97c"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#ac42b4a324aac463aaecd9d3003ffe97c">InitMoves</a> ()</td></tr>
 <tr class="memdesc:ac42b4a324aac463aaecd9d3003ffe97c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the initial moves.  <a href="#ac42b4a324aac463aaecd9d3003ffe97c">More...</a><br /></br></td></tr>
 <tr class="separator:ac42b4a324aac463aaecd9d3003ffe97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0db130af9740a8d6e7f11b2693888fc"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#af0db130af9740a8d6e7f11b2693888fc">MaxIterations</a> () const </td></tr>
-<tr class="memdesc:af0db130af9740a8d6e7f11b2693888fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of iterations.  <a href="#af0db130af9740a8d6e7f11b2693888fc">More...</a><br /></br></td></tr>
-<tr class="separator:af0db130af9740a8d6e7f11b2693888fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a75e977ce85f5a990187b3bd49614da"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a2a75e977ce85f5a990187b3bd49614da">MaxIterations</a> () const</td></tr>
+<tr class="memdesc:a2a75e977ce85f5a990187b3bd49614da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of iterations.  <a href="#a2a75e977ce85f5a990187b3bd49614da">More...</a><br /></br></td></tr>
+<tr class="separator:a2a75e977ce85f5a990187b3bd49614da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba854b79ce23e8ca848e0059f07baea2"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#aba854b79ce23e8ca848e0059f07baea2">MaxIterations</a> ()</td></tr>
 <tr class="memdesc:aba854b79ce23e8ca848e0059f07baea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the maximum number of iterations.  <a href="#aba854b79ce23e8ca848e0059f07baea2">More...</a><br /></br></td></tr>
 <tr class="separator:aba854b79ce23e8ca848e0059f07baea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3296ad3e7ae1cadac0f3460b9c376f9f"><td class="memItemLeft" align="right" valign="top">arma::mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a3296ad3e7ae1cadac0f3460b9c376f9f">MaxMove</a> () const </td></tr>
-<tr class="memdesc:a3296ad3e7ae1cadac0f3460b9c376f9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum move size of each parameter.  <a href="#a3296ad3e7ae1cadac0f3460b9c376f9f">More...</a><br /></br></td></tr>
-<tr class="separator:a3296ad3e7ae1cadac0f3460b9c376f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ff5d65b255966cfeb06c48dedd56900"><td class="memItemLeft" align="right" valign="top">arma::mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a1ff5d65b255966cfeb06c48dedd56900">MaxMove</a> () const</td></tr>
+<tr class="memdesc:a1ff5d65b255966cfeb06c48dedd56900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum move size of each parameter.  <a href="#a1ff5d65b255966cfeb06c48dedd56900">More...</a><br /></br></td></tr>
+<tr class="separator:a1ff5d65b255966cfeb06c48dedd56900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83b0d63c4940b266f7a629c36533d7a6"><td class="memItemLeft" align="right" valign="top">arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a83b0d63c4940b266f7a629c36533d7a6">MaxMove</a> ()</td></tr>
 <tr class="memdesc:a83b0d63c4940b266f7a629c36533d7a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the maximum move size of each parameter.  <a href="#a83b0d63c4940b266f7a629c36533d7a6">More...</a><br /></br></td></tr>
 <tr class="separator:a83b0d63c4940b266f7a629c36533d7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41371fc54ac1dcd9162a3bd99000fbb5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a41371fc54ac1dcd9162a3bd99000fbb5">MaxToleranceSweep</a> () const </td></tr>
-<tr class="memdesc:a41371fc54ac1dcd9162a3bd99000fbb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maxToleranceSweep.  <a href="#a41371fc54ac1dcd9162a3bd99000fbb5">More...</a><br /></br></td></tr>
-<tr class="separator:a41371fc54ac1dcd9162a3bd99000fbb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7c0d052ebe3b6c16ca6b5661419781c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#ad7c0d052ebe3b6c16ca6b5661419781c">MaxToleranceSweep</a> () const</td></tr>
+<tr class="memdesc:ad7c0d052ebe3b6c16ca6b5661419781c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maxToleranceSweep.  <a href="#ad7c0d052ebe3b6c16ca6b5661419781c">More...</a><br /></br></td></tr>
+<tr class="separator:ad7c0d052ebe3b6c16ca6b5661419781c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0f04c9db4ef72fa884dbd8bb3287091"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#af0f04c9db4ef72fa884dbd8bb3287091">MaxToleranceSweep</a> ()</td></tr>
 <tr class="memdesc:af0f04c9db4ef72fa884dbd8bb3287091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the maxToleranceSweep.  <a href="#af0f04c9db4ef72fa884dbd8bb3287091">More...</a><br /></br></td></tr>
 <tr class="separator:af0f04c9db4ef72fa884dbd8bb3287091"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0b9c35eaab0c3de53bd72cd5ba428b8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#ab0b9c35eaab0c3de53bd72cd5ba428b8">MoveCtrlSweep</a> () const </td></tr>
-<tr class="memdesc:ab0b9c35eaab0c3de53bd72cd5ba428b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sweeps per move control.  <a href="#ab0b9c35eaab0c3de53bd72cd5ba428b8">More...</a><br /></br></td></tr>
-<tr class="separator:ab0b9c35eaab0c3de53bd72cd5ba428b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31cd878c053c405f24bb4e499c2d4b6a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a31cd878c053c405f24bb4e499c2d4b6a">MoveCtrlSweep</a> () const</td></tr>
+<tr class="memdesc:a31cd878c053c405f24bb4e499c2d4b6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sweeps per move control.  <a href="#a31cd878c053c405f24bb4e499c2d4b6a">More...</a><br /></br></td></tr>
+<tr class="separator:a31cd878c053c405f24bb4e499c2d4b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6127a6347a81512148f48ac765fbad37"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a6127a6347a81512148f48ac765fbad37">MoveCtrlSweep</a> ()</td></tr>
 <tr class="memdesc:a6127a6347a81512148f48ac765fbad37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify sweeps per move control.  <a href="#a6127a6347a81512148f48ac765fbad37">More...</a><br /></br></td></tr>
 <tr class="separator:a6127a6347a81512148f48ac765fbad37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac503f379aa1037e0fd0ce31da5d4ec45"><td class="memItemLeft" align="right" valign="top">arma::mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#ac503f379aa1037e0fd0ce31da5d4ec45">MoveSize</a> () const </td></tr>
-<tr class="memdesc:ac503f379aa1037e0fd0ce31da5d4ec45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get move size of each parameter.  <a href="#ac503f379aa1037e0fd0ce31da5d4ec45">More...</a><br /></br></td></tr>
-<tr class="separator:ac503f379aa1037e0fd0ce31da5d4ec45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c6f439a6114dd64cea1f505448586a5"><td class="memItemLeft" align="right" valign="top">arma::mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a2c6f439a6114dd64cea1f505448586a5">MoveSize</a> () const</td></tr>
+<tr class="memdesc:a2c6f439a6114dd64cea1f505448586a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get move size of each parameter.  <a href="#a2c6f439a6114dd64cea1f505448586a5">More...</a><br /></br></td></tr>
+<tr class="separator:a2c6f439a6114dd64cea1f505448586a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82c2d5c36d2dea7aa249c2cb754beff0"><td class="memItemLeft" align="right" valign="top">arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a82c2d5c36d2dea7aa249c2cb754beff0">MoveSize</a> ()</td></tr>
 <tr class="memdesc:a82c2d5c36d2dea7aa249c2cb754beff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify move size of each parameter.  <a href="#a82c2d5c36d2dea7aa249c2cb754beff0">More...</a><br /></br></td></tr>
 <tr class="separator:a82c2d5c36d2dea7aa249c2cb754beff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07611d66e8b7539c381fc1009af0d429"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a07611d66e8b7539c381fc1009af0d429">Optimize</a> (arma::mat &amp;iterate)</td></tr>
 <tr class="memdesc:a07611d66e8b7539c381fc1009af0d429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimize the given function using simulated annealing.  <a href="#a07611d66e8b7539c381fc1009af0d429">More...</a><br /></br></td></tr>
 <tr class="separator:a07611d66e8b7539c381fc1009af0d429"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ed3b9c3a5790ca696f18c1a60cec130"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a9ed3b9c3a5790ca696f18c1a60cec130">Temperature</a> () const </td></tr>
-<tr class="memdesc:a9ed3b9c3a5790ca696f18c1a60cec130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the temperature.  <a href="#a9ed3b9c3a5790ca696f18c1a60cec130">More...</a><br /></br></td></tr>
-<tr class="separator:a9ed3b9c3a5790ca696f18c1a60cec130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a515ea7887041286db6eef403ab87a824"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a515ea7887041286db6eef403ab87a824">Temperature</a> () const</td></tr>
+<tr class="memdesc:a515ea7887041286db6eef403ab87a824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the temperature.  <a href="#a515ea7887041286db6eef403ab87a824">More...</a><br /></br></td></tr>
+<tr class="separator:a515ea7887041286db6eef403ab87a824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80ab0c7b3b0906fcc5ab074065e838a3"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a80ab0c7b3b0906fcc5ab074065e838a3">Temperature</a> ()</td></tr>
 <tr class="memdesc:a80ab0c7b3b0906fcc5ab074065e838a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the temperature.  <a href="#a80ab0c7b3b0906fcc5ab074065e838a3">More...</a><br /></br></td></tr>
 <tr class="separator:a80ab0c7b3b0906fcc5ab074065e838a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a359d47d27aee0ffd4a668d02c2613ae4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a359d47d27aee0ffd4a668d02c2613ae4">Tolerance</a> () const </td></tr>
-<tr class="memdesc:a359d47d27aee0ffd4a668d02c2613ae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the tolerance.  <a href="#a359d47d27aee0ffd4a668d02c2613ae4">More...</a><br /></br></td></tr>
-<tr class="separator:a359d47d27aee0ffd4a668d02c2613ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf06e2b64ca24ab07722a9ef79fd0feb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#acf06e2b64ca24ab07722a9ef79fd0feb">Tolerance</a> () const</td></tr>
+<tr class="memdesc:acf06e2b64ca24ab07722a9ef79fd0feb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the tolerance.  <a href="#acf06e2b64ca24ab07722a9ef79fd0feb">More...</a><br /></br></td></tr>
+<tr class="separator:acf06e2b64ca24ab07722a9ef79fd0feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a924d5dd42245401769b2d6e3e797b721"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1SA.html#a924d5dd42245401769b2d6e3e797b721">Tolerance</a> ()</td></tr>
 <tr class="memdesc:a924d5dd42245401769b2d6e3e797b721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the tolerance.  <a href="#a924d5dd42245401769b2d6e3e797b721">More...</a><br /></br></td></tr>
 <tr class="separator:a924d5dd42245401769b2d6e3e797b721"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,9 +217,11 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
   </dd>
 </dl>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00075">75</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00075">75</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2ca61632969fb1051ccf9d488aec3f41"></a>
+<a id="a2ca61632969fb1051ccf9d488aec3f41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ca61632969fb1051ccf9d488aec3f41">&#9670;&nbsp;</a></span>SA()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -301,7 +321,9 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ae12e0bbacda10e3053623091f8cb1854"></a>
+<a id="ad9b5448fc16a57be0ba50addb396697a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9b5448fc16a57be0ba50addb396697a">&#9670;&nbsp;</a></span>Function() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -325,11 +347,13 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Get the instantiated function to be optimized. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00117">117</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00117">117</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a40c103988fc59a1edce6362cf354f651"></a>
+<a id="a40c103988fc59a1edce6362cf354f651"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40c103988fc59a1edce6362cf354f651">&#9670;&nbsp;</a></span>Function() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -353,11 +377,13 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Modify the instantiated function. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00119">119</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00119">119</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5d6f61a4cbb87f1dd18e55d7ea9a3127"></a>
+<a id="a33210f4548f459c33881c848e7745597"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33210f4548f459c33881c848e7745597">&#9670;&nbsp;</a></span>Gain() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -381,13 +407,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Get the gain. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00147">147</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00147">147</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >References <a class="el" href="sa_8hpp_source.html#l00184">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::gain</a>.</p>
+<p class="reference">References <a class="el" href="sa_8hpp_source.html#l00184">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::gain</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad33516557c8fd42cb684cfb8a032232f"></a>
+<a id="ad33516557c8fd42cb684cfb8a032232f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad33516557c8fd42cb684cfb8a032232f">&#9670;&nbsp;</a></span>Gain() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -411,13 +439,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Modify the gain. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00149">149</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00149">149</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >References <a class="el" href="sa_8hpp_source.html#l00184">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::gain</a>.</p>
+<p class="reference">References <a class="el" href="sa_8hpp_source.html#l00184">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::gain</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa775231810898c9e26d04a6645bda66d"></a>
+<a id="aa775231810898c9e26d04a6645bda66d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa775231810898c9e26d04a6645bda66d">&#9670;&nbsp;</a></span>GenerateMove()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -483,7 +513,9 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 </div>
 </div>
-<a class="anchor" id="a34476b8d0f8eeb2392642e9140f266b5"></a>
+<a id="a9c13e53526c074d9222696205b3fc4b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c13e53526c074d9222696205b3fc4b4">&#9670;&nbsp;</a></span>InitMoves() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -507,13 +539,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Get the initial moves. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00127">127</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00127">127</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >References <a class="el" href="sa_8hpp_source.html#l00176">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::initMoves</a>.</p>
+<p class="reference">References <a class="el" href="sa_8hpp_source.html#l00176">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::initMoves</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac42b4a324aac463aaecd9d3003ffe97c"></a>
+<a id="ac42b4a324aac463aaecd9d3003ffe97c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac42b4a324aac463aaecd9d3003ffe97c">&#9670;&nbsp;</a></span>InitMoves() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -537,13 +571,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Modify the initial moves. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00129">129</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00129">129</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >References <a class="el" href="sa_8hpp_source.html#l00176">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::initMoves</a>.</p>
+<p class="reference">References <a class="el" href="sa_8hpp_source.html#l00176">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::initMoves</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af0db130af9740a8d6e7f11b2693888fc"></a>
+<a id="a2a75e977ce85f5a990187b3bd49614da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a75e977ce85f5a990187b3bd49614da">&#9670;&nbsp;</a></span>MaxIterations() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -567,13 +603,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Get the maximum number of iterations. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00152">152</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00152">152</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >References <a class="el" href="sa_8hpp_source.html#l00172">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::maxIterations</a>.</p>
+<p class="reference">References <a class="el" href="sa_8hpp_source.html#l00172">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::maxIterations</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aba854b79ce23e8ca848e0059f07baea2"></a>
+<a id="aba854b79ce23e8ca848e0059f07baea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba854b79ce23e8ca848e0059f07baea2">&#9670;&nbsp;</a></span>MaxIterations() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -597,13 +635,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Modify the maximum number of iterations. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00154">154</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00154">154</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >References <a class="el" href="sa_8hpp_source.html#l00172">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::maxIterations</a>.</p>
+<p class="reference">References <a class="el" href="sa_8hpp_source.html#l00172">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::maxIterations</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a3296ad3e7ae1cadac0f3460b9c376f9f"></a>
+<a id="a1ff5d65b255966cfeb06c48dedd56900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ff5d65b255966cfeb06c48dedd56900">&#9670;&nbsp;</a></span>MaxMove() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -627,13 +667,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Get the maximum move size of each parameter. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00157">157</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00157">157</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >References <a class="el" href="sa_8hpp_source.html#l00187">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::maxMove</a>.</p>
+<p class="reference">References <a class="el" href="sa_8hpp_source.html#l00187">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::maxMove</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a83b0d63c4940b266f7a629c36533d7a6"></a>
+<a id="a83b0d63c4940b266f7a629c36533d7a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83b0d63c4940b266f7a629c36533d7a6">&#9670;&nbsp;</a></span>MaxMove() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -657,13 +699,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Modify the maximum move size of each parameter. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00159">159</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00159">159</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >References <a class="el" href="sa_8hpp_source.html#l00187">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::maxMove</a>.</p>
+<p class="reference">References <a class="el" href="sa_8hpp_source.html#l00187">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::maxMove</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a41371fc54ac1dcd9162a3bd99000fbb5"></a>
+<a id="ad7c0d052ebe3b6c16ca6b5661419781c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7c0d052ebe3b6c16ca6b5661419781c">&#9670;&nbsp;</a></span>MaxToleranceSweep() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -687,13 +731,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Get the maxToleranceSweep. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00142">142</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00142">142</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >References <a class="el" href="sa_8hpp_source.html#l00182">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::maxToleranceSweep</a>.</p>
+<p class="reference">References <a class="el" href="sa_8hpp_source.html#l00182">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::maxToleranceSweep</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af0f04c9db4ef72fa884dbd8bb3287091"></a>
+<a id="af0f04c9db4ef72fa884dbd8bb3287091"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0f04c9db4ef72fa884dbd8bb3287091">&#9670;&nbsp;</a></span>MaxToleranceSweep() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -717,13 +763,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Modify the maxToleranceSweep. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00144">144</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00144">144</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >References <a class="el" href="sa_8hpp_source.html#l00182">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::maxToleranceSweep</a>.</p>
+<p class="reference">References <a class="el" href="sa_8hpp_source.html#l00182">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::maxToleranceSweep</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae5a4321e8048dc36ecbc173de5a54a11"></a>
+<a id="ae5a4321e8048dc36ecbc173de5a54a11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5a4321e8048dc36ecbc173de5a54a11">&#9670;&nbsp;</a></span>MoveControl()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -770,7 +818,9 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 </div>
 </div>
-<a class="anchor" id="ab0b9c35eaab0c3de53bd72cd5ba428b8"></a>
+<a id="a31cd878c053c405f24bb4e499c2d4b6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31cd878c053c405f24bb4e499c2d4b6a">&#9670;&nbsp;</a></span>MoveCtrlSweep() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -794,13 +844,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Get sweeps per move control. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00132">132</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00132">132</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >References <a class="el" href="sa_8hpp_source.html#l00178">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::moveCtrlSweep</a>.</p>
+<p class="reference">References <a class="el" href="sa_8hpp_source.html#l00178">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::moveCtrlSweep</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a6127a6347a81512148f48ac765fbad37"></a>
+<a id="a6127a6347a81512148f48ac765fbad37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6127a6347a81512148f48ac765fbad37">&#9670;&nbsp;</a></span>MoveCtrlSweep() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -824,13 +876,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Modify sweeps per move control. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00134">134</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00134">134</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >References <a class="el" href="sa_8hpp_source.html#l00178">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::moveCtrlSweep</a>.</p>
+<p class="reference">References <a class="el" href="sa_8hpp_source.html#l00178">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::moveCtrlSweep</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac503f379aa1037e0fd0ce31da5d4ec45"></a>
+<a id="a2c6f439a6114dd64cea1f505448586a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c6f439a6114dd64cea1f505448586a5">&#9670;&nbsp;</a></span>MoveSize() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -854,13 +908,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Get move size of each parameter. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00162">162</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00162">162</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >References <a class="el" href="sa_8hpp_source.html#l00189">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::moveSize</a>.</p>
+<p class="reference">References <a class="el" href="sa_8hpp_source.html#l00189">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::moveSize</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a82c2d5c36d2dea7aa249c2cb754beff0"></a>
+<a id="a82c2d5c36d2dea7aa249c2cb754beff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82c2d5c36d2dea7aa249c2cb754beff0">&#9670;&nbsp;</a></span>MoveSize() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -884,13 +940,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Modify move size of each parameter. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00164">164</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00164">164</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >References <a class="el" href="sa_8hpp_source.html#l00189">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::moveSize</a>.</p>
+<p class="reference">References <a class="el" href="sa_8hpp_source.html#l00189">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::moveSize</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a07611d66e8b7539c381fc1009af0d429"></a>
+<a id="a07611d66e8b7539c381fc1009af0d429"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07611d66e8b7539c381fc1009af0d429">&#9670;&nbsp;</a></span>Optimize()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -917,7 +975,9 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 </div>
 </div>
-<a class="anchor" id="a9ed3b9c3a5790ca696f18c1a60cec130"></a>
+<a id="a515ea7887041286db6eef403ab87a824"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a515ea7887041286db6eef403ab87a824">&#9670;&nbsp;</a></span>Temperature() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -941,13 +1001,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Get the temperature. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00122">122</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00122">122</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >References <a class="el" href="sa_8hpp_source.html#l00174">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::temperature</a>.</p>
+<p class="reference">References <a class="el" href="sa_8hpp_source.html#l00174">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::temperature</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a80ab0c7b3b0906fcc5ab074065e838a3"></a>
+<a id="a80ab0c7b3b0906fcc5ab074065e838a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80ab0c7b3b0906fcc5ab074065e838a3">&#9670;&nbsp;</a></span>Temperature() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -971,13 +1033,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Modify the temperature. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00124">124</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00124">124</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >References <a class="el" href="sa_8hpp_source.html#l00174">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::temperature</a>.</p>
+<p class="reference">References <a class="el" href="sa_8hpp_source.html#l00174">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::temperature</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a359d47d27aee0ffd4a668d02c2613ae4"></a>
+<a id="acf06e2b64ca24ab07722a9ef79fd0feb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf06e2b64ca24ab07722a9ef79fd0feb">&#9670;&nbsp;</a></span>Tolerance() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -1001,13 +1065,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Get the tolerance. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00137">137</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00137">137</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >References <a class="el" href="sa_8hpp_source.html#l00180">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::tolerance</a>.</p>
+<p class="reference">References <a class="el" href="sa_8hpp_source.html#l00180">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::tolerance</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a924d5dd42245401769b2d6e3e797b721"></a>
+<a id="a924d5dd42245401769b2d6e3e797b721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a924d5dd42245401769b2d6e3e797b721">&#9670;&nbsp;</a></span>Tolerance() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -1031,14 +1097,16 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Modify the tolerance. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00139">139</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00139">139</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >References <a class="el" href="sa_8hpp_source.html#l00180">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::tolerance</a>.</p>
+<p class="reference">References <a class="el" href="sa_8hpp_source.html#l00180">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::tolerance</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a5720990dca1f66e518ed68d81faca18e"></a>
+<a id="a5720990dca1f66e518ed68d81faca18e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5720990dca1f66e518ed68d81faca18e">&#9670;&nbsp;</a></span>coolingSchedule</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -1059,11 +1127,13 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >The cooling schedule being used. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00170">170</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00170">170</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a63e3c83351af4bc9e7b53c45f0f26fb7"></a>
+<a id="a63e3c83351af4bc9e7b53c45f0f26fb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63e3c83351af4bc9e7b53c45f0f26fb7">&#9670;&nbsp;</a></span>function</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -1084,11 +1154,13 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >The function to be optimized. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00168">168</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00168">168</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae42e1095aa711a40246f7650a731b5fd"></a>
+<a id="ae42e1095aa711a40246f7650a731b5fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae42e1095aa711a40246f7650a731b5fd">&#9670;&nbsp;</a></span>gain</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -1109,13 +1181,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Proportional control in feedback move control. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00184">184</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00184">184</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="sa_8hpp_source.html#l00147">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::Gain()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sa_8hpp_source.html#l00147">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::Gain()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a671c770cf908bcbc6a965e80c4c7d667"></a>
+<a id="a671c770cf908bcbc6a965e80c4c7d667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a671c770cf908bcbc6a965e80c4c7d667">&#9670;&nbsp;</a></span>initMoves</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -1136,13 +1210,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >The number of initial moves before reducing the temperature. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00176">176</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00176">176</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="sa_8hpp_source.html#l00127">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::InitMoves()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sa_8hpp_source.html#l00127">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::InitMoves()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a169f1210650ef941c1365278612a4b61"></a>
+<a id="a169f1210650ef941c1365278612a4b61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a169f1210650ef941c1365278612a4b61">&#9670;&nbsp;</a></span>maxIterations</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -1163,13 +1239,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >The maximum number of iterations. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00172">172</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00172">172</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="sa_8hpp_source.html#l00152">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::MaxIterations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sa_8hpp_source.html#l00152">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::MaxIterations()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab01cb1116e883d40eda68c968740a9be"></a>
+<a id="ab01cb1116e883d40eda68c968740a9be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab01cb1116e883d40eda68c968740a9be">&#9670;&nbsp;</a></span>maxMove</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -1190,13 +1268,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Maximum move size of each parameter. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00187">187</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00187">187</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="sa_8hpp_source.html#l00157">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::MaxMove()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sa_8hpp_source.html#l00157">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::MaxMove()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="afa4dd0d6bfc54e5075c5a08cf41a4312"></a>
+<a id="afa4dd0d6bfc54e5075c5a08cf41a4312"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa4dd0d6bfc54e5075c5a08cf41a4312">&#9670;&nbsp;</a></span>maxToleranceSweep</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -1217,13 +1297,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Number of sweeps in tolerance before system is considered frozen. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00182">182</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00182">182</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="sa_8hpp_source.html#l00142">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::MaxToleranceSweep()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sa_8hpp_source.html#l00142">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::MaxToleranceSweep()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a78a4dbd2f0d93e5ebdf65c2cf9006ab9"></a>
+<a id="a78a4dbd2f0d93e5ebdf65c2cf9006ab9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78a4dbd2f0d93e5ebdf65c2cf9006ab9">&#9670;&nbsp;</a></span>moveCtrlSweep</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -1244,13 +1326,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >The number of sweeps before a <a class="el" href="classmlpack_1_1optimization_1_1SA.html#ae5a4321e8048dc36ecbc173de5a54a11" title="MoveControl() uses a proportional feedback control to determine the size parameter to pass to the mov...">MoveControl()</a> call. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00178">178</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00178">178</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="sa_8hpp_source.html#l00132">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::MoveCtrlSweep()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sa_8hpp_source.html#l00132">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::MoveCtrlSweep()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a93f6721d1e636414a6f9602d4ebf6741"></a>
+<a id="a93f6721d1e636414a6f9602d4ebf6741"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93f6721d1e636414a6f9602d4ebf6741">&#9670;&nbsp;</a></span>moveSize</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -1271,13 +1355,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Move size of each parameter. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00189">189</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00189">189</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="sa_8hpp_source.html#l00162">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::MoveSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sa_8hpp_source.html#l00162">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::MoveSize()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1295a33ebdeebedc19f58850822204a5"></a>
+<a id="a1295a33ebdeebedc19f58850822204a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1295a33ebdeebedc19f58850822204a5">&#9670;&nbsp;</a></span>temperature</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -1298,13 +1384,15 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >The current temperature. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00174">174</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00174">174</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="sa_8hpp_source.html#l00122">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::Temperature()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sa_8hpp_source.html#l00122">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::Temperature()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9f7142c175ad3c2fc37ecf89ba339cad"></a>
+<a id="a9f7142c175ad3c2fc37ecf89ba339cad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f7142c175ad3c2fc37ecf89ba339cad">&#9670;&nbsp;</a></span>tolerance</h2>
+
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">CoolingScheduleType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">ExponentialSchedule</div></div><div class="close_bracket">&gt;</div></div></div></div></div>
@@ -1325,9 +1413,9 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 
 <p >Tolerance for convergence. </p>
 
-<p >Definition at line <a class="el" href="sa_8hpp_source.html#l00180">180</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sa_8hpp_source.html#l00180">180</a> of file <a class="el" href="sa_8hpp_source.html">sa.hpp</a>.</p>
 
-<p >Referenced by <a class="el" href="sa_8hpp_source.html#l00137">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::Tolerance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sa_8hpp_source.html#l00137">mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;::Tolerance()</a>.</p>
 
 </div>
 </div>
@@ -1339,7 +1427,16 @@ class mlpack::optimization::SA&lt; FunctionType, CoolingScheduleType &gt;</h3>
 <hr class="footer"></hr><address class="footer"><small >
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"></img>
-</a> 1.8.9.1
+</a> 1.8.13
 </small></address>
+</div>
 </body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
 </html>

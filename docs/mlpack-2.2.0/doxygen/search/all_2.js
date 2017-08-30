@@ -46,6 +46,7 @@ var searchData=
   ['applykernelmatrix',['ApplyKernelMatrix',['../classmlpack_1_1kpca_1_1NaiveKernelRule.html#acb736987f865d1fe8cadc08049abd856',1,'mlpack::kpca::NaiveKernelRule::ApplyKernelMatrix()'],['../classmlpack_1_1kpca_1_1NystroemKernelRule.html#a91368ed56c796059f447f0d552852cc3',1,'mlpack::kpca::NystroemKernelRule::ApplyKernelMatrix()']]],
   ['approx_5fkfn_2etxt',['approx_kfn.txt',['../approx__kfn_8txt.html',1,'']]],
   ['ar',['ar',['../classmlpack_1_1range_1_1SerializeVisitor.html#abaea733848b82bb4d32ee8a8e6f24121',1,'mlpack::range::SerializeVisitor']]],
+  ['arma_5fconfig_2ehpp',['arma_config.hpp',['../arma__config_8hpp.html',1,'']]],
   ['arma_5fconfig_5fcheck_2ehpp',['arma_config_check.hpp',['../arma__config__check_8hpp.html',1,'']]],
   ['arma_5ftraits_2ehpp',['arma_traits.hpp',['../arma__traits_8hpp.html',1,'']]],
   ['armasvdfactorizer',['ArmaSVDFactorizer',['../namespacemlpack_1_1cf.html#a637ed740dd32ebd5c85addbc144d0865',1,'mlpack::cf']]],

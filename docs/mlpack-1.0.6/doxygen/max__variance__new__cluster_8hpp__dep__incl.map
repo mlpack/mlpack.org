@@ -1,5 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$kmeans_8hpp.html" title="src/mlpack/methods/kmeans/kmeans.hpp" alt="" coords="64,83,355,111"/>
-<area shape="rect" id="node5" href="$em__fit_8hpp.html" title="src/mlpack/methods/gmm/em_fit.hpp" alt="" coords="79,161,340,189"/>
-<area shape="rect" id="node7" href="$gmm_8hpp.html" title="src/mlpack/methods/gmm/gmm.hpp" alt="" coords="81,238,337,266"/>
+<map id="/var/www/www.mlpack.org/mlpack&#45;1.0.6/src/mlpack/methods/kmeans/max_variance_new_cluster.hpp" name="/var/www/www.mlpack.org/mlpack&#45;1.0.6/src/mlpack/methods/kmeans/max_variance_new_cluster.hpp">
+<area shape="rect" id="node2" href="$kmeans_8hpp.html" title="/var/www/www.mlpack.org\l/mlpack&#45;1.0.6/src/mlpack\l/methods/kmeans/kmeans.hpp" alt="" coords="10,124,211,180"/>
+<area shape="rect" id="node3" href="$em__fit_8hpp.html" title="/var/www/www.mlpack.org\l/mlpack&#45;1.0.6/src/mlpack\l/methods/gmm/em_fit.hpp" alt="" coords="21,228,201,284"/>
+<area shape="rect" id="node4" href="$gmm_8hpp.html" title="/var/www/www.mlpack.org\l/mlpack&#45;1.0.6/src/mlpack\l/methods/gmm/gmm.hpp" alt="" coords="21,332,201,388"/>
 </map>

@@ -1,10 +1,10 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$ballbound_8hpp.html" title="Bounds that are useful for binary space partitioning trees." alt="" coords="338,83,583,111"/>
-<area shape="rect" id="node5" href="$bounds_8hpp.html" title="Bounds that are useful for binary space partitioning trees." alt="" coords="374,161,606,189"/>
-<area shape="rect" id="node7" href="$dtb_8hpp.html" title="src/mlpack/methods/emst/dtb.hpp" alt="" coords="23,238,266,266"/>
-<area shape="rect" id="node9" href="$neighbor__search_8hpp.html" title="src/mlpack/methods/neighbor_search/neighbor_search.hpp" alt="" coords="290,238,690,266"/>
-<area shape="rect" id="node11" href="$typedef_8hpp.html" title="src/mlpack/methods/neighbor_search/typedef.hpp" alt="" coords="319,315,661,343"/>
-<area shape="rect" id="node14" href="$range__search_8hpp.html" title="src/mlpack/methods/range_search/range_search.hpp" alt="" coords="714,238,1077,266"/>
-<area shape="rect" id="node18" href="$kmeans_8hpp.html" title="src/mlpack/methods/kmeans/kmeans.hpp" alt="" coords="709,83,999,111"/>
-<area shape="rect" id="node20" href="$nca_8hpp.html" title="src/mlpack/methods/nca/nca.hpp" alt="" coords="1023,83,1258,111"/>
+<map id="src/mlpack/core/metrics/lmetric.hpp" name="src/mlpack/core/metrics/lmetric.hpp">
+<area shape="rect" id="node2" href="$ballbound_8hpp.html" title="Bounds that are useful for binary space partitioning trees. " alt="" coords="201,95,342,136"/>
+<area shape="rect" id="node3" href="$bounds_8hpp.html" title="Bounds that are useful for binary space partitioning trees. " alt="" coords="208,184,349,225"/>
+<area shape="rect" id="node4" href="$dtb_8hpp.html" title="src/mlpack/methods\l/emst/dtb.hpp" alt="" coords="27,281,167,322"/>
+<area shape="rect" id="node5" href="$neighbor__search_8hpp.html" title="src/mlpack/methods\l/neighbor_search/neighbor\l_search.hpp" alt="" coords="191,273,366,329"/>
+<area shape="rect" id="node6" href="$typedef_8hpp.html" title="src/mlpack/methods\l/neighbor_search/typedef.hpp" alt="" coords="182,377,375,419"/>
+<area shape="rect" id="node7" href="$range__search_8hpp.html" title="src/mlpack/methods\l/range_search/range\l_search.hpp" alt="" coords="390,273,530,329"/>
+<area shape="rect" id="node8" href="$kmeans_8hpp.html" title="src/mlpack/methods\l/kmeans/kmeans.hpp" alt="" coords="468,95,614,136"/>
+<area shape="rect" id="node9" href="$nca_8hpp.html" title="src/mlpack/methods\l/nca/nca.hpp" alt="" coords="639,95,779,136"/>
 </map>

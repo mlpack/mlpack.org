@@ -8,6 +8,10 @@ algorithm">
 library">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <title>mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="doxygen/jquery.js"></script>
+<script type="text/javascript" src="doxygen/dynsections.js"></script>
+<script type="text/javascript" src="doxygen/search/searchdata.js"></script>
+<script type="text/javascript" src="doxygen/search/search.js"></script>
 </head>
 <link rel="stylesheet" href="../../style.css">
 <link rel="stylesheet" href="../doxygen18.css">
@@ -52,23 +56,27 @@ href="https://github.com/mlpack/mlpack">github</a></div>
   }
   else
   {
-     /* Load file and change some things around so we wrap it right. */
-     $patterns = array();
-     $replacements = array();
+    /* Load file and change some things around so we wrap it right. */
+    $patterns = array();
+    $replacements = array();
 
-     $patterns[0] = '/href="([^#][^:"]*)"/';
-     $replacements[0] = 'href="doxygen.php?doc=\\1"';
+    $patterns[0] = '/href="([^#][^:"]*)"/';
+    $replacements[0] = 'href="doxygen.php?doc=\\1"';
 
-     $patterns[1] = '/MLPACK/';
-     $replacements[1] = 'mlpack';
+    $patterns[1] = '/MLPACK/';
+    $replacements[1] = 'mlpack';
 
-     // For images.
-     $patterns[2] = '/(<img[^>]*src)="([^"]*)"/';
-     $replacements[2] = '\\1="doxygen/\\2"';
+    // For images.
+    $patterns[2] = '/(<img[^>]*src)="([^"]*)"/';
+    $replacements[2] = '\\1="doxygen/\\2"';
 
-     // Remove doxygen stylesheets.
-     $patterns[3] = '/<link href="[^"]*" rel="stylesheet" type="text\/css"[ ]*\/>/';
-     $replacements[3] = '';
+    // Remove doxygen stylesheets.
+    $patterns[3] = '/<link href="[^"]*" rel="stylesheet" type="text\/css"[ ]*\/>/';
+    $replacements[3] = '';
+
+    // Update javascript locations.
+    //$patterns[4] = '/<script type="text\/javascript" src="([^"]*)">/';
+    //$replacements[4] = '<script type="text/javascript" src="doxygen/\\1">';
 
      print preg_replace($patterns, $replacements, file_get_contents('doxygen/' . $page));
    }

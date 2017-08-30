@@ -341,10 +341,6 @@ dl.return dd {
   margin-bottom: 0.5em;
 }
 
-#titlearea {
-  display: none;
-}
-
 .fragment .preprocessor {
   color: #ff00ff;
 }

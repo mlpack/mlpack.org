@@ -1,0 +1,210 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+</head><link rel="stylesheet" href="../../../style.css" /></link><link rel="stylesheet" href="../../style-man.css" /></link><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" /></link>
+
+
+
+<body ><br /></br>
+
+
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext manpage">
+
+<h1 align="center">mlpack_decision_tree</h1>
+
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_decision_tree</font>
+- decision tree</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_decision_tree</font>
+[<font class="code">-h</font>] [<font class="code">-v</font>]</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p class="closemargin first">Train and
+evaluate using a decision tree. Given a dataset containing
+numeric features and associated labels for each point in the
+dataset, this program can train a decision tree on that
+data.</p>
+
+<p class="closemargin first">The training
+file and associated labels are specified with the
+&rsquo;<font class="code">--training_file</font> (<font class="code">-t</font>)&rsquo; and
+&rsquo;<font class="code">--labels_file</font> (<font class="code">-l</font>)&rsquo; parameters,
+respectively. The labels should be in the range [0,
+num_classes - 1]. Optionally, if &rsquo;<font class="code">--labels_file</font>
+(<font class="code">-l</font>)&rsquo; is not specified, the labels are assumed
+to be the last dimension of the training dataset.</p>
+
+<p class="closemargin first">When a model is
+trained, the &rsquo;<font class="code">--output_model_file</font>
+(<font class="code">-M</font>)&rsquo; output parameter may be used to save the
+trained model. A model may be loaded for predictions with
+the &rsquo;<font class="code">--input_model_file</font>
+(<font class="code">-m</font>)&rsquo;&rsquo; parameter. The
+&rsquo;<font class="code">--input_model_file</font> (<font class="code">-m</font>)&rsquo;
+parameter may not be specified when the
+&rsquo;<font class="code">--training_file</font> (<font class="code">-t</font>)&rsquo; parameter
+is specified. The &rsquo;<font class="code">--minimum_leaf_size</font>
+(<font class="code">-n</font>)&rsquo; parameter specifies the minimum number of
+training points that must fall into each leaf for it to be
+split. If &rsquo;<font class="code">--print_training_error</font>
+(<font class="code">-e</font>)&rsquo; is specified, the training error will be
+printed.</p>
+
+<p class="closemargin first">Test data may
+be specified with the &rsquo;<font class="code">--test_file</font>
+(<font class="code">-T</font>)&rsquo; parameter, and if performance numbers are
+desired for that test set, labels may be specified with the
+&rsquo;<font class="code">--test_labels_file</font> (<font class="code">-L</font>)&rsquo;
+parameter. Predictions for each test point may be saved via
+the &rsquo;<font class="code">--predictions_file</font> (<font class="code">-p</font>)&rsquo;
+output parameter. Class probabilities for each prediction
+may be saved with the &rsquo;<font class="code">--probabilities_file</font>
+(<font class="code">-P</font>)&rsquo; output parameter.</p>
+
+<p class="closemargin first">For example, to
+train a decision tree with a minimum leaf size of 20 on the
+dataset contained in &rsquo;data.csv&rsquo; with labels
+&rsquo;labels.csv&rsquo;, saving the output model to
+&rsquo;tree.bin&rsquo; and printing the training error, one
+could call</p>
+
+<p class="closemargin first">$ decision_tree
+<font class="code">--training_file</font> data.csv <font class="code">--labels_file</font>
+labels.csv <font class="code">--output_model_file</font> tree.bin
+<font class="code">--minimum_leaf_size</font> 20
+<font class="code">--print_training_error</font></p>
+
+<p class="closemargin first">Then, to use
+that model to classify points in &rsquo;test_set.csv&rsquo;
+and print the test error given the labels
+&rsquo;test_labels.csv&rsquo; using that model, while saving
+the predictions for each point to
+&rsquo;predictions.csv&rsquo;, one could call</p>
+
+<p class="closemargin first">$ decision_tree
+<font class="code">--input_model_file</font> tree.bin <font class="code">--test_file</font>
+test_set.csv <font class="code">--test_labels_file</font> test_labels.csv
+<font class="code">--predictions_file</font> predictions.csv</p>
+
+<h2>OPTIONAL INPUT OPTIONS
+<a name="OPTIONAL INPUT OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--help (-h)
+[bool]</font></p>
+
+<p class="farmargin">Default help info.</p>
+
+<p class="closemargin"><font class="code">--info [string]</font></p>
+
+<p class="farmargin">Get help on a specific module
+or option. Default value &rsquo;&rsquo;.
+<font class="code">--input_model_file</font> (<font class="code">-m</font>) [string] Pre-trained
+decision tree, to be used with test points. Default value
+&rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--labels_file (-l)
+[string]</font></p>
+
+<p class="farmargin">Training labels. Default value
+&rsquo;&rsquo;. <font class="code">--minimum_leaf_size</font> (<font class="code">-n</font>) [int]
+Minimum number of points in a leaf. Default value 20.
+<font class="code">--print_training_error</font> (<font class="code">-e</font>) [bool] Print the
+training error.</p>
+
+<p class="closemargin"><font class="code">--test_file (-T)
+[string]</font></p>
+
+<p class="farmargin">Matrix of test points. Default
+value &rsquo;&rsquo;. <font class="code">--test_labels_file</font> (<font class="code">-L</font>)
+[string] Test point labels, if accuracy calculation is
+desired. Default value &rsquo;&rsquo;.
+<font class="code">--training_file</font> (<font class="code">-t</font>) [string] Matrix of
+training points. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--verbose (-v)
+[bool]</font></p>
+
+<p class="farmargin">Display informational messages
+and the full list of parameters and timers at the end of
+execution.</p>
+
+<p class="closemargin"><font class="code">--version (-V)
+[bool]</font></p>
+
+<p class="farmargin">Display the version of mlpack.
+<font class="code">--weights_file</font> (<font class="code">-w</font>) [string] The weight of
+labels Default value &rsquo;&rsquo;.</p>
+
+<h2>OPTIONAL OUTPUT OPTIONS
+<a name="OPTIONAL OUTPUT OPTIONS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">--output_model_file</font>
+(<font class="code">-M</font>) [string] Output for trained decision tree.
+Default value &rsquo;&rsquo;. <font class="code">--predictions_file</font>
+(<font class="code">-p</font>) [string] Class predictions for each test point.
+Default value &rsquo;&rsquo;. <font class="code">--probabilities_file</font>
+(<font class="code">-P</font>) [string] Class probabilities for each test
+point. Default value &rsquo;&rsquo;.</p>
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<p class="closemargin first">For further
+information, including relevant papers, citations, and
+theory, For further information, including relevant papers,
+citations, and theory, consult the documentation found at
+http://www.mlpack.org or included with your consult the
+documentation found at http://www.mlpack.org or included
+with your DISTRIBUTION OF MLPACK. DISTRIBUTION OF
+MLPACK.</p>
+</div></body></html>

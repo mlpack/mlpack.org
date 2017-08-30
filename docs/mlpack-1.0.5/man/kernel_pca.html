@@ -1,37 +1,34 @@
-<html>
-<head>
-<!-- probably could use more keywords -->
+<html >
+<head >
+
 <meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
 <meta name="description" content="mlpack: a scalable c++ machine learning library">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>mlpack: a scalable c++ machine learning library</title>
-</head>
-<link rel="stylesheet" href="../../../style.css">
-<link rel="stylesheet" href="../../style-man.css">
-<link href='http://fonts.googleapis.com/css?family=Maven+Pro:500'
-rel='stylesheet' type='text/css'>
-<body>
-<!-- very simple table with as few words as possible -->
-<br>
+<title >mlpack: a scalable c++ machine learning library</title>
+</head><link rel="stylesheet" href="../../../style.css" /></link><link rel="stylesheet" href="../../style-man.css" /></link><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" /></link>
+
+
+
+<body ><br /></br>
+
+
 <div class="titlebar">
    <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
 </div>
-<center>
+<center >
 <div class="mlnavbar">
   <div class="navcontainer">
    <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
    <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
    <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
    <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
-   <div class="mlnavitem" name="mlnavbugs"><a
-href="https://github.com/mlpack/mlpack">github</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
   </div>
 </div>
 </center>
 <div class="separator"></div>
-<center>
+<center >
 <div class="mainsection smallertext manpage">
-
 
 <h1 align="center">kernel_pca</h1>
 
@@ -95,7 +92,7 @@ that are supported are listed below:</p>
 ">
 
 
-<p>&quot;linear&quot;: the standard linear dot product
+<p>&rsquo;linear&rsquo;: the standard linear dot product
 (same as normal PCA): <font class="code">K</font>(x, y) = x^T y</p></td></tr>
 <tr valign="top" align="left">
 <td width="22
@@ -111,7 +108,7 @@ that are supported are listed below:</p>
 ">
 
 
-<p>&quot;gaussian&quot;: a Gaussian kernel; requires
+<p>&rsquo;gaussian&rsquo;: a Gaussian kernel; requires
 bandwidth: <font class="code">K</font>(x, y) = <font class="code">exp</font>(-(|| x - y || ^ 2) /
 (2 * (bandwidth ^ 2)))</p></td></tr>
 <tr valign="top" align="left">
@@ -128,7 +125,7 @@ bandwidth: <font class="code">K</font>(x, y) = <font class="code">exp</font>(-(|
 ">
 
 
-<p>&quot;polynomial&quot;: polynomial kernel; requires
+<p>&rsquo;polynomial&rsquo;: polynomial kernel; requires
 offset and degree: <font class="code">K</font>(x, y) = (x^T y + offset) ^
 degree</p> </td></tr>
 <tr valign="top" align="left">
@@ -145,9 +142,9 @@ degree</p> </td></tr>
 ">
 
 
-<p>&quot;hyptan&quot;: hyperbolic tangent kernel; requires
-scale and offset: <font class="code">K</font>(x, y) = <font class="code">tanh</font>(scale * (x^T
-y) + offset)</p></td></tr>
+<p>&rsquo;hyptan&rsquo;: hyperbolic tangent kernel;
+requires scale and offset: <font class="code">K</font>(x, y) =
+<font class="code">tanh</font>(scale * (x^T y) + offset)</p></td></tr>
 <tr valign="top" align="left">
 <td width="22
 "></td>
@@ -162,7 +159,7 @@ y) + offset)</p></td></tr>
 ">
 
 
-<p>&quot;laplacian&quot;: Laplacian kernel; requires
+<p>&rsquo;laplacian&rsquo;: Laplacian kernel; requires
 bandwidth: <font class="code">K</font>(x, y) = <font class="code">exp</font>(-(|| x - y ||) /
 bandwidth)</p> </td></tr>
 <tr valign="top" align="left">
@@ -179,8 +176,8 @@ bandwidth)</p> </td></tr>
 ">
 
 
-<p>&quot;cosine&quot;: cosine distance: <font class="code">K</font>(x, y) = 1
-- (x^T y) / (|| x || * || y ||)</p></td></tr>
+<p>&rsquo;cosine&rsquo;: cosine distance: <font class="code">K</font>(x, y) =
+1 - (x^T y) / (|| x || * || y ||)</p></td></tr>
 </table>
 
 <p class="closemargin first">The parameters

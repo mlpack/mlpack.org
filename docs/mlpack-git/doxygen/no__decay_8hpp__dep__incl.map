@@ -1,5 +1,0 @@
-<map id="src/mlpack/core/optimizers/minibatch_sgd/decay_policies/no_decay.hpp" name="src/mlpack/core/optimizers/minibatch_sgd/decay_policies/no_decay.hpp">
-<area shape="rect" id="node2" href="$minibatch__sgd_8hpp.html" title="src/mlpack/core/optimizers\l/minibatch_sgd/minibatch\l_sgd.hpp" alt="" coords="107,109,285,165"/>
-<area shape="rect" id="node3" href="$sgdr_8hpp.html" title="src/mlpack/core/optimizers\l/sgdr/sgdr.hpp" alt="" coords="5,213,184,255"/>
-<area shape="rect" id="node4" href="$snapshot__sgdr_8hpp.html" title="src/mlpack/core/optimizers\l/sgdr/snapshot_sgdr.hpp" alt="" coords="208,213,387,255"/>
-</map>

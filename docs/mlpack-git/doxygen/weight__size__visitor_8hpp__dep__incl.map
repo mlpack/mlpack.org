@@ -1,8 +1,0 @@
-<map id="src/mlpack/methods/ann/visitor/weight_size_visitor.hpp" name="src/mlpack/methods/ann/visitor/weight_size_visitor.hpp">
-<area shape="rect" id="node2" href="$ffn_8hpp.html" title="src/mlpack/methods\l/ann/ffn.hpp" alt="" coords="5,213,145,255"/>
-<area shape="rect" id="node3" href="$network__init_8hpp.html" title="src/mlpack/methods\l/ann/init_rules/network\l_init.hpp" alt="" coords="113,109,267,165"/>
-<area shape="rect" id="node5" href="$recurrent_8hpp.html" title="src/mlpack/methods\l/ann/layer/recurrent.hpp" alt="" coords="291,117,449,158"/>
-<area shape="rect" id="node7" href="$recurrent__attention_8hpp.html" title="src/mlpack/methods\l/ann/layer/recurrent\l_attention.hpp" alt="" coords="473,109,613,165"/>
-<area shape="rect" id="node4" href="$rnn_8hpp.html" title="src/mlpack/methods\l/ann/rnn.hpp" alt="" coords="169,213,309,255"/>
-<area shape="rect" id="node6" href="$layer_8hpp.html" title="src/mlpack/methods\l/ann/layer/layer.hpp" alt="" coords="403,213,543,255"/>
-</map>

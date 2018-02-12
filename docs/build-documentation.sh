@@ -58,6 +58,9 @@ mv $docdir/doxygen $docdir/doxygen-old;
 mv $srcdir/build/doc/html $docdir/doxygen;
 rm -rf $docdir/doxygen-old;
 
+# Now add the author tags to the generated tutorials.
+python $doxygensrcdir/tutorial_author_annotator.py $docdir/*/tutorials/ $docdir/doxygen/
+
 # Copy the man page results to the right directory.
 rm -rf $docdir/man/*
 cp share/man/*.gz $docdir/man/

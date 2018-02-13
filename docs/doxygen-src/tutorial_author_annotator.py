@@ -15,7 +15,7 @@ doxygenTutorialPath = sys.argv[2]
 if doxygenTutorialPath[-1] != "/":
   doxygenTutorialPath += "/"
 
-authorHTML='''<span class="mlabel" style="border: 0px solid #333333;">
+authorHTML='''<span class="mlabel" id="author" style="border: 0px solid #333333;">
     <a href="%(info)s" style="color:#ffffff !important">%(author)s</a>
     </span>'''
 

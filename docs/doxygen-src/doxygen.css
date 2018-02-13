@@ -792,6 +792,10 @@ span.mlabel {
 	vertical-align: middle;
 }
 
+span#author {
+  font-size: 9pt;
+}
+
 
 
 /* @end */

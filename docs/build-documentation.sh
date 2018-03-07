@@ -61,6 +61,9 @@ rm -rf $docdir/doxygen-old;
 # Now add the author tags to the generated tutorials.
 python $doxygensrcdir/tutorial_author_annotator.py $docdir/*/tutorials/ $docdir/doxygen/
 
+# Now add the visualization to the optimizer tutorial.
+python $doxygensrcdir/optimizer_visualization_annotator.py $docdir/doxygen/optimizertutorial.html
+
 # Copy the man page results to the right directory.
 rm -rf $docdir/man/*
 cp share/man/*.gz $docdir/man/

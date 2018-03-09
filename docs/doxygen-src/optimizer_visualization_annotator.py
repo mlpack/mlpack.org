@@ -19,6 +19,7 @@ jsAddition = '''
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/optimizer-visualization-style.css"/>
 '''
 
 visPattern = "</p>"

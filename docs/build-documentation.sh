@@ -59,7 +59,7 @@ mv $srcdir/build/doc/html $docdir/doxygen;
 rm -rf $docdir/doxygen-old;
 
 # Now add the author tags to the generated tutorials.
-python $doxygensrcdir/tutorial_author_annotator.py $docdir/*/tutorials/ $docdir/doxygen/
+python $doxygensrcdir/tutorial_author_annotator.py $srcdir/doc/tutorials/ $docdir/doxygen/
 
 # Now add the visualization to the optimizer tutorial.
 python $doxygensrcdir/optimizer_visualization_annotator.py $docdir/doxygen/optimizertutorial.html

@@ -71,3 +71,8 @@ cd $docdir/man/
 
 gunzip *.gz
 ../../generate-man-html.sh # Rebuild html.
+
+# For new versions (only git for now) build the Python documentation.
+if [ "$1" == "mlpack-git" ]; then
+  ../../generate-python-html.sh
+fi

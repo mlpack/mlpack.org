@@ -1,0 +1,86 @@
+/* style specific to manpages */
+.pythonpage h2 {
+  text-transform: lowercase;
+  border-top: 15px solid #101010;
+  font-size: 150%;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 0.75em;
+}
+
+.pythonpage h1 {
+  border: none;
+  color: #ffffff;
+  border-bottom: 15px solid #111111;
+  padding-bottom: 15px;
+}
+
+.pythonpage .code {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.pythonpage .codetype {
+  font-size: 75%;
+  color: #eab72c;
+}
+
+.pythonpage li {
+  font-size: 100%;
+  margin-bottom: 10px;
+}
+
+.pythonpage .required {
+  font-size: 75%;
+  font-weight: bold;
+  color: #bb2222;
+}
+
+.pythonpage .titlecode {
+  font-size: 200%;
+  display: block;
+  color: #eab72c;
+  font-family: monospace;
+  margin-top: 1em;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.pythonpage .titlebold {
+  font-size: 125%;
+  display: block;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-bottom: 15px solid #111111;
+  line-height: 1em;
+  padding-bottom: 10px;
+  color: #ffffff;
+}
+
+.pythonpage .importcode {
+  font-family: monospace;
+  color: #ffffff;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 100px;
+  margin-right: 100px;
+  background: #111111;
+  padding: 5px;
+  border: 5px solid #666666;
+  font-weight: bold;
+}
+
+.pythonpage .codeblock {
+  background: #111111;
+  margin-left: 30px;
+  margin-right: 30px;
+  border: 5px solid #666666;
+  padding: 5px;
+}
+
+.pythonpage .codeblock .code {
+  font-family: monospace;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 90%;
+}

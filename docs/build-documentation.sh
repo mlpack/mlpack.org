@@ -74,5 +74,5 @@ gunzip *.gz
 
 # For new versions (only git for now) build the Python documentation.
 if [ "$1" == "mlpack-git" ]; then
-  ../../generate-python-html.sh
+  ../../generate-python-html.sh git
 fi

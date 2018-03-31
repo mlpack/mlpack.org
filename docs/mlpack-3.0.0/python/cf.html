@@ -1,0 +1,67 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+</head><link rel="stylesheet" href="../../../style.css" /></link><link rel="stylesheet" href="../../style-python.css" /></link><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" /></link>
+
+
+
+<body ><br /></br>
+
+
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext pythonpage">
+<h1><center>mlpack.cf</center></h1>
+<font class="titlecode">cf(...)</font><br />
+<font class="titlebold">Collaborative Filtering</font>
+<p class="importcode">&gt;&gt;&gt; from mlpack import cf</p><p>This program performs collaborative filtering (CF) on the given dataset. Given a list of user, item and preferences (the <font class="code">'training'</font> parameter), the program will perform a matrix decomposition and then can perform a series of actions related to collaborative filtering.  Alternately, the program can load an existing saved CF model with the <font class="code">'input_model'</font> parameter and then use that model to provide recommendations or predict values.</p>
+</p>
+<p>The input matrix should be a 3-dimensional matrix of ratings, where the first dimension is the user, the second dimension is the item, and the third dimension is that user'</font>s rating of that item.  Both the users and items should be numeric indices, not names. The indices are assumed to start from 0.</p>
+</p>
+<p>A set of query users for which recommendations can be generated may be specified with the <font class="code">'query'</font> parameter; alternately, recommendations may be generated for every user in the dataset by specifying the <font class="code">'all_user_recommendations'</font> parameter.  In addition, the number of recommendations per user to generate can be specified with the <font class="code">'recommendations'</font> parameter, and the number of similar users (the size of the neighborhood)  to be considered when generating recommendations can be specified with the <font class="code">'neighborhood'</font> parameter.</p>
+</p>
+<p>For performing the matrix decomposition, the following optimization algorithms can be specified via the <font class="code">'algorithm'</font> parameter: </p>
+<p> - <font class="code">'RegSVD'</font> -- Regularized SVD using a SGD optimizer</p>
+<p> - <font class="code">'NMF'</font> -- Non-negative matrix factorization with alternating least squares update rules</p>
+<p> - <font class="code">'BatchSVD'</font> -- SVD batch learning</p>
+<p> - <font class="code">'SVDIncompleteIncremental'</font> -- SVD incomplete incremental learning</p>
+<p> - <font class="code">'SVDCompleteIncremental'</font> -- SVD complete incremental learning</p>
+</p>
+<p>A trained model may be saved to with the <font class="code">'output_model'</font> output parameter.</p>
+</p>
+<p>To train a CF model on a dataset <font class="code">'training_set'</font> using NMF for decomposition and saving the trained model to <font class="code">'model'</font>, one could call: </p>
+</p>
+<p class="codeblock"><font class="code">&gt;&gt;&gt; cf(training=training_set, algorithm='NMF')<br />
+&gt;&gt;&gt; model = output['output_model']</font></p>
+</p>
+<p>Then, to use this model to generate recommendations for the list of users in the query set <font class="code">'users'</font>, storing 5 recommendations in <font class="code">'recommendations'</font>, one could call </p>
+</p>
+<p class="codeblock"><font class="code">&gt;&gt;&gt; cf(input_model=model, query=users, recommendations=5)<br />
+&gt;&gt;&gt; recommendations = output['output']</font></p><h2>input options</h2>
+<ul>
+<li><font class="code">algorithm</font> <font class="codetype">(string)</font>: Algorithm used for matrix factorization.  Default value NMF.</li><li><font class="code">all_user_recommendations</font> <font class="codetype">(bool)</font>: Generate recommendations for all users.</li><li><font class="code">copy_all_inputs</font> <font class="codetype">(bool)</font>: If specified, all input parameters will be deep copied before the method is run.  This is useful for debugging problems where the input parameters are being modified by the algorithm, but can slow down the code.</li><li><font class="code">input_model</font> <font class="codetype">(mlpack.CFType)</font>: Trained CF model to load.</li><li><font class="code">iteration_only_termination</font> <font class="codetype">(bool)</font>: Terminate only when the maximum number of iterations is reached.</li><li><font class="code">max_iterations</font> <font class="codetype">(int)</font>: Maximum number of iterations. If set to zero, there is no limit on the number of iterations.  Default value 1000.</li><li><font class="code">min_residue</font> <font class="codetype">(float)</font>: Residue required to terminate the factorization (lower values generally mean better fits).  Default value 1e-05.</li><li><font class="code">neighborhood</font> <font class="codetype">(int)</font>: Size of the neighborhood of similar users to consider for each query user.  Default value 5.</li><li><font class="code">query</font> <font class="codetype">(numpy matrix or arraylike, int/long dtype)</font>: List of query users for which recommendations should be generated.</li><li><font class="code">rank</font> <font class="codetype">(int)</font>: Rank of decomposed matrices (if 0, a heuristic is used to estimate the rank).  Default value 0.</li><li><font class="code">recommendations</font> <font class="codetype">(int)</font>: Number of recommendations to generate for each query user.  Default value 5.</li><li><font class="code">seed</font> <font class="codetype">(int)</font>: Set the random seed (0 uses std::time(NULL)).  Default value 0.</li><li><font class="code">test</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: Test set to calculate RMSE on.</li><li><font class="code">training</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: Input dataset to perform CF on.</li><li><font class="code">verbose</font> <font class="codetype">(bool)</font>: Display informational messages and the full list of parameters and timers at the end of execution.</li></ul>
+<h2>output options</h2>
+<p>The return value from the binding is a dict containing the following elements:</p>
+<ul><li><font class="code">output</font> <font class="codetype">(numpy matrix, int dtype)</font>: Matrix that will store output recommendations.</li><li><font class="code">output_model</font> <font class="codetype">(mlpack.CFType)</font>: Output for trained CF model.</li><ul>
+</ul>
+</div>
+</body>
+</html>

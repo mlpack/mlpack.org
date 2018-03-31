@@ -1,0 +1,255 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+</head><link rel="stylesheet" href="../../../style.css" /></link><link rel="stylesheet" href="../../style-man.css" /></link><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" /></link>
+
+
+
+<body ><br /></br>
+
+
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext manpage">
+
+<h1 align="center">mlpack_nmf</h1>
+
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_nmf</font>
+- non-negative matrix factorization</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_nmf</font>
+[<font class="code">-h</font>] [<font class="code">-v</font>]</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p class="closemargin first">This program
+performs non-negative matrix factorization on the given
+dataset, storing the resulting decomposed matrices in the
+specified files. For an input dataset V, NMF decomposes V
+into two matrices W and H such that</p>
+
+<p class="closemargin first">V = W * H</p>
+
+<p class="closemargin first">where all
+elements in W and H are non-negative. If V is of size (n x
+m), then W will be of size (n x r) and H will be of size (r
+x m), where r is the rank of the factorization (specified by
+the &rsquo;<font class="code">--rank</font> (<font class="code">-r</font>)&rsquo; parameter).</p>
+
+<p class="closemargin first">Optionally, the
+desired update rules for each NMF iteration can be chosen
+from the following list:</p>
+
+<table width="100
+" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="22
+"></td>
+<td width="1
+">
+
+
+<p>&bull;</p></td>
+<td width="3
+"></td>
+<td width="74
+">
+
+
+<p>multdist: multiplicative distance-based update rules
+(Lee and Seung 1999)</p></td></tr>
+<tr valign="top" align="left">
+<td width="22
+"></td>
+<td width="1
+">
+
+
+<p>&bull;</p></td>
+<td width="3
+"></td>
+<td width="74
+">
+
+
+<p>multdiv: multiplicative divergence-based update rules
+(Lee and Seung 1999)</p></td></tr>
+<tr valign="top" align="left">
+<td width="22
+"></td>
+<td width="1
+">
+
+
+<p>&bull;</p></td>
+<td width="3
+"></td>
+<td width="74
+">
+
+
+<p>als: alternating least squares update rules (Paatero and
+Tapper 1994)</p></td></tr>
+</table>
+
+<p class="closemargin first">The maximum
+number of iterations is specified with
+&rsquo;<font class="code">--max_iterations</font> (<font class="code">-m</font>)&rsquo;, and the
+minimum residue required for algorithm termination is
+specified with the &rsquo;<font class="code">--min_residue</font>
+(<font class="code">-e</font>)&rsquo; parameter.</p>
+
+<p class="closemargin first">For example, to
+run NMF on the input matrix &rsquo;V.csv&rsquo; using the
+&rsquo;multdist&rsquo; update rules with a rank-10
+decomposition and storing the decomposed matrices into
+&rsquo;W.csv&rsquo; and &rsquo;H.csv&rsquo;, the following
+command could be used:</p>
+
+<p class="closemargin first">$ nmf
+<font class="code">--input_file</font> V.csv <font class="code">--w_file</font> W.csv
+<font class="code">--h_file</font> H.csv <font class="code">--rank</font> 10 <font class="code">--update_rules</font>
+multdist</p>
+
+<h2>REQUIRED INPUT OPTIONS
+<a name="REQUIRED INPUT OPTIONS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">--input_file
+(-i) [string]</font></p>
+
+<p class="farmargin">Input dataset to perform NMF
+on.</p>
+
+<p class="closemargin"><font class="code">--rank (-r) [int]</font></p>
+
+<p class="farmargin">Rank of the factorization.</p>
+
+<h2>OPTIONAL INPUT OPTIONS
+<a name="OPTIONAL INPUT OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--help (-h)
+[bool]</font></p>
+
+<p class="farmargin">Default help info.</p>
+
+<p class="closemargin"><font class="code">--info [string]</font></p>
+
+<p class="farmargin">Get help on a specific module
+or option. Default value &rsquo;&rsquo;.
+<font class="code">--initial_h_file</font> (<font class="code">-q</font>) [string] Initial H
+matrix. Default value &rsquo;&rsquo;.
+<font class="code">--initial_w_file</font> (<font class="code">-p</font>) [string] Initial W
+matrix. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--max_iterations (-m)
+[int]</font></p>
+
+<p class="farmargin">Number of iterations before NMF
+terminates (0 runs until convergence. Default value
+10000.</p>
+
+<p class="closemargin"><font class="code">--min_residue (-e)
+[double]</font></p>
+
+<p class="farmargin">The minimum root mean square
+residue allowed for each iteration, below which the program
+terminates. Default value 1e-05.</p>
+
+<p class="closemargin"><font class="code">--seed (-s) [int]</font></p>
+
+<p class="farmargin">Random seed. If 0,
+&rsquo;std::time(NULL)&rsquo; is used. Default value 0.
+<font class="code">--update_rules</font> (<font class="code">-u</font>) [string] Update rules for
+each iteration; ( multdist | multdiv | als ). Default value
+&rsquo;multdist&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--verbose (-v)
+[bool]</font></p>
+
+<p class="farmargin">Display informational messages
+and the full list of parameters and timers at the end of
+execution.</p>
+
+<p class="closemargin"><font class="code">--version (-V)
+[bool]</font></p>
+
+<p class="farmargin">Display the version of
+mlpack.</p>
+
+<h2>OPTIONAL OUTPUT OPTIONS
+<a name="OPTIONAL OUTPUT OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--h_file
+(-H) [string]</font></p>
+
+<p class="farmargin">Matrix to save the calculated H
+to. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--w_file (-W)
+[string]</font></p>
+
+<p class="farmargin">Matrix to save the calculated W
+to. Default value &rsquo;&rsquo;.</p>
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<p class="closemargin first">For further
+information, including relevant papers, citations, and
+theory, For further information, including relevant papers,
+citations, and theory, consult the documentation found at
+http://www.mlpack.org or included with your consult the
+documentation found at http://www.mlpack.org or included
+with your DISTRIBUTION OF MLPACK. DISTRIBUTION OF
+MLPACK.</p>
+</div></body></html>

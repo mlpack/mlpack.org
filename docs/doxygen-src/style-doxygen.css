@@ -430,3 +430,8 @@ h3
   margin: 0;
   padding: 0;
 }
+
+li code a
+{
+  font-size: 85%;
+}

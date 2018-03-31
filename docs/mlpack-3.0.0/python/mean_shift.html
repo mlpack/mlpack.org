@@ -1,0 +1,53 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+</head><link rel="stylesheet" href="../../../style.css" /></link><link rel="stylesheet" href="../../style-python.css" /></link><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" /></link>
+
+
+
+<body ><br /></br>
+
+
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext pythonpage">
+<h1><center>mlpack.mean_shift</center></h1>
+<font class="titlecode">mean_shift(...)</font><br />
+<font class="titlebold">Mean Shift Clustering</font>
+<p class="importcode">&gt;&gt;&gt; from mlpack import mean_shift</p><p>This program performs mean shift clustering on the given dataset, storing the learned cluster assignments either as a column of labels in the input dataset or separately.</p>
+</p>
+<p>The input dataset should be specified with the <font class="code">'input'</font> parameter, and the radius used for search can be specified with the <font class="code">'radius'</font> parameter.  The maximum number of iterations before algorithm termination is controlled with the <font class="code">'max_iterations'</font> parameter.</p>
+</p>
+<p>The output labels may be saved with the <font class="code">'output'</font> output parameter and the centroids of each cluster may be saved with the <font class="code">'centroid'</font> output parameter.</p>
+</p>
+<p>For example, to run mean shift clustering on the dataset <font class="code">'data'</font> and store the centroids to <font class="code">'centroids'</font>, the following command may be used: </p>
+</p>
+<p class="codeblock"><font class="code">&gt;&gt;&gt; mean_shift(input=data)<br />
+&gt;&gt;&gt; centroids = output['centroid']</font></p><h2>input options</h2>
+<ul>
+<li><font class="code">input</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: <font class="required">[required]</font> Input dataset to perform clustering on.</li><li><font class="code">copy_all_inputs</font> <font class="codetype">(bool)</font>: If specified, all input parameters will be deep copied before the method is run.  This is useful for debugging problems where the input parameters are being modified by the algorithm, but can slow down the code.</li><li><font class="code">force_convergence</font> <font class="codetype">(bool)</font>: If specified, the mean shift algorithm will continue running regardless of max_iterations until the clusters converge.</li><li><font class="code">in_place</font> <font class="codetype">(bool)</font>: If specified, a column containing the learned cluster assignments will be added to the input dataset file.  In this case, --output_file is overridden.  (Do not use with Python.)</li><li><font class="code">labels_only</font> <font class="codetype">(bool)</font>: If specified, only the output labels will be written to the file specified by --output_file.</li><li><font class="code">max_iterations</font> <font class="codetype">(int)</font>: Maximum number of iterations before mean shift terminates.  Default value 1000.</li><li><font class="code">radius</font> <font class="codetype">(float)</font>: If the distance between two centroids is less than the given radius, one will be removed.  A radius of 0 or less means an estimate will be calculated and used for the radius.  Default value 0.</li><li><font class="code">verbose</font> <font class="codetype">(bool)</font>: Display informational messages and the full list of parameters and timers at the end of execution.</li></ul>
+<h2>output options</h2>
+<p>The return value from the binding is a dict containing the following elements:</p>
+<ul><li><font class="code">centroid</font> <font class="codetype">(numpy matrix, float dtype)</font>: If specified, the centroids of each cluster will be written to the given matrix.</li><li><font class="code">output</font> <font class="codetype">(numpy matrix, float dtype)</font>: Matrix to write output labels or labeled data to.</li><ul>
+</ul>
+</div>
+</body>
+</html>

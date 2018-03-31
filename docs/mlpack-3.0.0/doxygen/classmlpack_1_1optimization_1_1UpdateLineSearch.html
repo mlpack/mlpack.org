@@ -1,0 +1,384 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">3.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1optimization.html">optimization</a></li><li class="navelem"><a class="el" href="classmlpack_1_1optimization_1_1UpdateLineSearch.html">UpdateLineSearch</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classmlpack_1_1optimization_1_1UpdateLineSearch-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">UpdateLineSearch Class Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >Use line search in the update step for <a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html" title="Frank-Wolfe is a technique to minimize a continuously differentiable convex function  over a compact ...">FrankWolfe</a> algorithm.  
+ <a href="classmlpack_1_1optimization_1_1UpdateLineSearch.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ada7ac837dee2bd132af2f5e333456df0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1UpdateLineSearch.html#ada7ac837dee2bd132af2f5e333456df0">UpdateLineSearch</a> (const size_t maxIterations=100000, const double tolerance=1e-5)</td></tr>
+<tr class="memdesc:ada7ac837dee2bd132af2f5e333456df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the line search update rule.  <a href="#ada7ac837dee2bd132af2f5e333456df0">More...</a><br /></br></td></tr>
+<tr class="separator:ada7ac837dee2bd132af2f5e333456df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a420770944a5b0c7a852c4ec372c4a2d1"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1UpdateLineSearch.html#a420770944a5b0c7a852c4ec372c4a2d1">MaxIterations</a> () const</td></tr>
+<tr class="memdesc:a420770944a5b0c7a852c4ec372c4a2d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of iterations (0 indicates no limit).  <a href="#a420770944a5b0c7a852c4ec372c4a2d1">More...</a><br /></br></td></tr>
+<tr class="separator:a420770944a5b0c7a852c4ec372c4a2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda675ab4ab86b95c92bc33bc391a61b"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1UpdateLineSearch.html#acda675ab4ab86b95c92bc33bc391a61b">MaxIterations</a> ()</td></tr>
+<tr class="memdesc:acda675ab4ab86b95c92bc33bc391a61b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the maximum number of iterations (0 indicates no limit).  <a href="#acda675ab4ab86b95c92bc33bc391a61b">More...</a><br /></br></td></tr>
+<tr class="separator:acda675ab4ab86b95c92bc33bc391a61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b5af5c1a84c507cbaa7f999ea5a4fda"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1UpdateLineSearch.html#a7b5af5c1a84c507cbaa7f999ea5a4fda">Tolerance</a> () const</td></tr>
+<tr class="memdesc:a7b5af5c1a84c507cbaa7f999ea5a4fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the tolerance for termination.  <a href="#a7b5af5c1a84c507cbaa7f999ea5a4fda">More...</a><br /></br></td></tr>
+<tr class="separator:a7b5af5c1a84c507cbaa7f999ea5a4fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9fac84af16250f5a3689692e8f2173"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1UpdateLineSearch.html#a3d9fac84af16250f5a3689692e8f2173">Tolerance</a> ()</td></tr>
+<tr class="memdesc:a3d9fac84af16250f5a3689692e8f2173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the tolerance for termination.  <a href="#a3d9fac84af16250f5a3689692e8f2173">More...</a><br /></br></td></tr>
+<tr class="separator:a3d9fac84af16250f5a3689692e8f2173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46707fdf139822aeabc6cf848b455aaf"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a46707fdf139822aeabc6cf848b455aaf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1UpdateLineSearch.html#a46707fdf139822aeabc6cf848b455aaf">Update</a> (FunctionType &amp;function, const arma::mat &amp;oldCoords, const arma::mat &amp;s, arma::mat &amp;newCoords, const size_t)</td></tr>
+<tr class="memdesc:a46707fdf139822aeabc6cf848b455aaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update rule for <a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html" title="Frank-Wolfe is a technique to minimize a continuously differentiable convex function  over a compact ...">FrankWolfe</a>, optimize with line search using secant method.  <a href="#a46707fdf139822aeabc6cf848b455aaf">More...</a><br /></br></td></tr>
+<tr class="separator:a46707fdf139822aeabc6cf848b455aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Use line search in the update step for <a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html" title="Frank-Wolfe is a technique to minimize a continuously differentiable convex function  over a compact ...">FrankWolfe</a> algorithm. </p>
+<p >That is, take <img class="formulaInl" alt="$ \gamma = arg\min_{\gamma\in [0, 1]} f((1-\gamma)x + \gamma s) $" src="form_90.png"></img>. The update rule would be: </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[ x_{k+1} = (1-\gamma) x_k + \gamma s \]" src="form_87.png"></img>
+</p>
+ 
+<p class="definition">Definition at line <a class="el" href="update__linesearch_8hpp_source.html#l00031">31</a> of file <a class="el" href="update__linesearch_8hpp_source.html">update_linesearch.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ada7ac837dee2bd132af2f5e333456df0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada7ac837dee2bd132af2f5e333456df0">&#9670;&nbsp;</a></span>UpdateLineSearch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1optimization_1_1UpdateLineSearch.html">UpdateLineSearch</a> </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >maxIterations</em> = <code >100000</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >tolerance</em> = <code >1e-5</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Construct the line search update rule. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">maxIter</td><td >Max number of iterations in line search. </td></tr>
+    <tr ><td class="paramname">tolerance</td><td >Tolerance for termination of line search. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="update__linesearch_8hpp_source.html#l00040">40</a> of file <a class="el" href="update__linesearch_8hpp_source.html">update_linesearch.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a420770944a5b0c7a852c4ec372c4a2d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a420770944a5b0c7a852c4ec372c4a2d1">&#9670;&nbsp;</a></span>MaxIterations() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t MaxIterations </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the maximum number of iterations (0 indicates no limit). </p>
+
+<p class="definition">Definition at line <a class="el" href="update__linesearch_8hpp_source.html#l00089">89</a> of file <a class="el" href="update__linesearch_8hpp_source.html">update_linesearch.hpp</a>.</p>
+
+</div>
+</div>
+<a id="acda675ab4ab86b95c92bc33bc391a61b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acda675ab4ab86b95c92bc33bc391a61b">&#9670;&nbsp;</a></span>MaxIterations() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; MaxIterations </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the maximum number of iterations (0 indicates no limit). </p>
+
+<p class="definition">Definition at line <a class="el" href="update__linesearch_8hpp_source.html#l00091">91</a> of file <a class="el" href="update__linesearch_8hpp_source.html">update_linesearch.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a7b5af5c1a84c507cbaa7f999ea5a4fda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b5af5c1a84c507cbaa7f999ea5a4fda">&#9670;&nbsp;</a></span>Tolerance() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Tolerance </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the tolerance for termination. </p>
+
+<p class="definition">Definition at line <a class="el" href="update__linesearch_8hpp_source.html#l00084">84</a> of file <a class="el" href="update__linesearch_8hpp_source.html">update_linesearch.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a3d9fac84af16250f5a3689692e8f2173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d9fac84af16250f5a3689692e8f2173">&#9670;&nbsp;</a></span>Tolerance() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double&amp; Tolerance </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the tolerance for termination. </p>
+
+<p class="definition">Definition at line <a class="el" href="update__linesearch_8hpp_source.html#l00086">86</a> of file <a class="el" href="update__linesearch_8hpp_source.html">update_linesearch.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a46707fdf139822aeabc6cf848b455aaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46707fdf139822aeabc6cf848b455aaf">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Update </td>
+          <td >(</td>
+          <td class="paramtype">FunctionType &amp;&#160;</td>
+          <td class="paramname"><em >function</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >oldCoords</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >s</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >newCoords</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Update rule for <a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html" title="Frank-Wolfe is a technique to minimize a continuously differentiable convex function  over a compact ...">FrankWolfe</a>, optimize with line search using secant method. </p>
+<p >FunctionType template parameters are required. This class must implement the following functions:</p>
+<p >FunctionType:</p>
+<p >double Evaluate(const arma::mat&amp; coordinates); Evaluation of the function at specific coordinates.</p>
+<p >void Gradient(const arma::mat&amp; coordinates, arma::mat&amp; gradient); Solve the gradient of the function at specific coordinate, returned in gradient.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">function</td><td >function to be optimized, </td></tr>
+    <tr ><td class="paramname">oldCoords</td><td >previous solution coordinates, one end of line search. </td></tr>
+    <tr ><td class="paramname">s</td><td >current linear_constr_solution result, the other end point of line search. </td></tr>
+    <tr ><td class="paramname">newCoords</td><td >output new solution coords. </td></tr>
+    <tr ><td class="paramname">numIter</td><td >current iteration number, not used here. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="update__linesearch_8hpp_source.html#l00070">70</a> of file <a class="el" href="update__linesearch_8hpp_source.html">update_linesearch.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="classmlpack_1_1optimization_1_1LineSearch.html#a171bae8758d4096625227331a9473499">LineSearch::Optimize()</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/core/optimizers/fw/<a class="el" href="update__linesearch_8hpp_source.html">update_linesearch.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

@@ -1,0 +1,511 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">3.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1optimization.html">optimization</a></li><li class="navelem"><a class="el" href="classmlpack_1_1optimization_1_1Atoms.html">Atoms</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classmlpack_1_1optimization_1_1Atoms-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">Atoms Class Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >Class to hold the information and operations of current atoms in the soluton space.  
+ <a href="classmlpack_1_1optimization_1_1Atoms.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:accf931c0350b6da7e14d922902764eb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1Atoms.html#accf931c0350b6da7e14d922902764eb1">Atoms</a> ()</td></tr>
+<tr class="separator:accf931c0350b6da7e14d922902764eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a830034b2d5be26b27ff29ad291e3b5cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1Atoms.html#a830034b2d5be26b27ff29ad291e3b5cf">AddAtom</a> (const arma::vec &amp;v, <a class="el" href="classmlpack_1_1optimization_1_1FuncSq.html">FuncSq</a> &amp;function, const double c=0)</td></tr>
+<tr class="memdesc:a830034b2d5be26b27ff29ad291e3b5cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add atom into the solution space.  <a href="#a830034b2d5be26b27ff29ad291e3b5cf">More...</a><br /></br></td></tr>
+<tr class="separator:a830034b2d5be26b27ff29ad291e3b5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a7099649ba3a885bbabc0ca8471ab9b"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1Atoms.html#a8a7099649ba3a885bbabc0ca8471ab9b">CurrentAtoms</a> () const</td></tr>
+<tr class="memdesc:a8a7099649ba3a885bbabc0ca8471ab9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current atoms.  <a href="#a8a7099649ba3a885bbabc0ca8471ab9b">More...</a><br /></br></td></tr>
+<tr class="separator:a8a7099649ba3a885bbabc0ca8471ab9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdc69f047594e76126bfe9d25c108c90"><td class="memItemLeft" align="right" valign="top">arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1Atoms.html#afdc69f047594e76126bfe9d25c108c90">CurrentAtoms</a> ()</td></tr>
+<tr class="memdesc:afdc69f047594e76126bfe9d25c108c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the current atoms.  <a href="#afdc69f047594e76126bfe9d25c108c90">More...</a><br /></br></td></tr>
+<tr class="separator:afdc69f047594e76126bfe9d25c108c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab460469896e20e4da91ca01d0c7fb914"><td class="memItemLeft" align="right" valign="top">const arma::vec &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1Atoms.html#ab460469896e20e4da91ca01d0c7fb914">CurrentCoeffs</a> () const</td></tr>
+<tr class="memdesc:ab460469896e20e4da91ca01d0c7fb914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current atom coefficients.  <a href="#ab460469896e20e4da91ca01d0c7fb914">More...</a><br /></br></td></tr>
+<tr class="separator:ab460469896e20e4da91ca01d0c7fb914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac69a263a7df80d73b8babd25afaccfd6"><td class="memItemLeft" align="right" valign="top">arma::vec &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1Atoms.html#ac69a263a7df80d73b8babd25afaccfd6">CurrentCoeffs</a> ()</td></tr>
+<tr class="memdesc:ac69a263a7df80d73b8babd25afaccfd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the current atom coefficients.  <a href="#ac69a263a7df80d73b8babd25afaccfd6">More...</a><br /></br></td></tr>
+<tr class="separator:ac69a263a7df80d73b8babd25afaccfd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e2e9086214a26662936c4b80b24b0e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1Atoms.html#a0e2e9086214a26662936c4b80b24b0e4">ProjectedGradientEnhancement</a> (<a class="el" href="classmlpack_1_1optimization_1_1FuncSq.html">FuncSq</a> &amp;function, double tau, double stepSize, size_t maxIteration=100, double tolerance=1e-3)</td></tr>
+<tr class="memdesc:a0e2e9086214a26662936c4b80b24b0e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enhance the solution in the convex hull of current atoms with atom norm constraint tau.  <a href="#a0e2e9086214a26662936c4b80b24b0e4">More...</a><br /></br></td></tr>
+<tr class="separator:a0e2e9086214a26662936c4b80b24b0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a993f1fb0840a8841818528900691385a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1Atoms.html#a993f1fb0840a8841818528900691385a">PruneSupport</a> (const double F, <a class="el" href="classmlpack_1_1optimization_1_1FuncSq.html">FuncSq</a> &amp;function)</td></tr>
+<tr class="memdesc:a993f1fb0840a8841818528900691385a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prune the support, delete previous atoms if they don't contribute much.  <a href="#a993f1fb0840a8841818528900691385a">More...</a><br /></br></td></tr>
+<tr class="separator:a993f1fb0840a8841818528900691385a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a718022eff75a138b1fbb9ad0fb6362"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1Atoms.html#a6a718022eff75a138b1fbb9ad0fb6362">RecoverVector</a> (arma::mat &amp;x)</td></tr>
+<tr class="memdesc:a6a718022eff75a138b1fbb9ad0fb6362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recover the solution coordinate from the coefficients of current atoms.  <a href="#a6a718022eff75a138b1fbb9ad0fb6362">More...</a><br /></br></td></tr>
+<tr class="separator:a6a718022eff75a138b1fbb9ad0fb6362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class to hold the information and operations of current atoms in the soluton space. </p>
+
+<p class="definition">Definition at line <a class="el" href="atoms_8hpp_source.html#l00025">25</a> of file <a class="el" href="atoms_8hpp_source.html">atoms.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="accf931c0350b6da7e14d922902764eb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accf931c0350b6da7e14d922902764eb1">&#9670;&nbsp;</a></span>Atoms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1optimization_1_1Atoms.html">Atoms</a> </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="atoms_8hpp_source.html#l00028">28</a> of file <a class="el" href="atoms_8hpp_source.html">atoms.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a830034b2d5be26b27ff29ad291e3b5cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a830034b2d5be26b27ff29ad291e3b5cf">&#9670;&nbsp;</a></span>AddAtom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void AddAtom </td>
+          <td >(</td>
+          <td class="paramtype">const arma::vec &amp;&#160;</td>
+          <td class="paramname"><em >v</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype"><a class="el" href="classmlpack_1_1optimization_1_1FuncSq.html">FuncSq</a> &amp;&#160;</td>
+          <td class="paramname"><em >function</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >c</em> = <code >0</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Add atom into the solution space. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">v</td><td >new atom to be added. </td></tr>
+    <tr ><td class="paramname">c</td><td >coefficient of the new atom. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="atoms_8hpp_source.html#l00036">36</a> of file <a class="el" href="atoms_8hpp_source.html">atoms.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="atoms_8hpp_source.html#l00203">Atoms::CurrentAtoms()</a>, and <a class="el" href="atoms_8hpp_source.html#l00198">Atoms::CurrentCoeffs()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="update__span_8hpp_source.html#l00050">UpdateSpan::Update()</a>, and <a class="el" href="update__full__correction_8hpp_source.html#l00060">UpdateFullCorrection::Update()</a>.</p>
+
+</div>
+</div>
+<a id="a8a7099649ba3a885bbabc0ca8471ab9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a7099649ba3a885bbabc0ca8471ab9b">&#9670;&nbsp;</a></span>CurrentAtoms() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::mat&amp; CurrentAtoms </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the current atoms. </p>
+
+<p class="definition">Definition at line <a class="el" href="atoms_8hpp_source.html#l00203">203</a> of file <a class="el" href="atoms_8hpp_source.html">atoms.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="atoms_8hpp_source.html#l00036">Atoms::AddAtom()</a>, and <a class="el" href="update__span_8hpp_source.html#l00050">UpdateSpan::Update()</a>.</p>
+
+</div>
+</div>
+<a id="afdc69f047594e76126bfe9d25c108c90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdc69f047594e76126bfe9d25c108c90">&#9670;&nbsp;</a></span>CurrentAtoms() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">arma::mat&amp; CurrentAtoms </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the current atoms. </p>
+
+<p class="definition">Definition at line <a class="el" href="atoms_8hpp_source.html#l00205">205</a> of file <a class="el" href="atoms_8hpp_source.html">atoms.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ab460469896e20e4da91ca01d0c7fb914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab460469896e20e4da91ca01d0c7fb914">&#9670;&nbsp;</a></span>CurrentCoeffs() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::vec&amp; CurrentCoeffs </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the current atom coefficients. </p>
+
+<p class="definition">Definition at line <a class="el" href="atoms_8hpp_source.html#l00198">198</a> of file <a class="el" href="atoms_8hpp_source.html">atoms.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="atoms_8hpp_source.html#l00036">Atoms::AddAtom()</a>, <a class="el" href="update__span_8hpp_source.html#l00050">UpdateSpan::Update()</a>, and <a class="el" href="update__full__correction_8hpp_source.html#l00060">UpdateFullCorrection::Update()</a>.</p>
+
+</div>
+</div>
+<a id="ac69a263a7df80d73b8babd25afaccfd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac69a263a7df80d73b8babd25afaccfd6">&#9670;&nbsp;</a></span>CurrentCoeffs() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">arma::vec&amp; CurrentCoeffs </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the current atom coefficients. </p>
+
+<p class="definition">Definition at line <a class="el" href="atoms_8hpp_source.html#l00200">200</a> of file <a class="el" href="atoms_8hpp_source.html">atoms.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0e2e9086214a26662936c4b80b24b0e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e2e9086214a26662936c4b80b24b0e4">&#9670;&nbsp;</a></span>ProjectedGradientEnhancement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void ProjectedGradientEnhancement </td>
+          <td >(</td>
+          <td class="paramtype"><a class="el" href="classmlpack_1_1optimization_1_1FuncSq.html">FuncSq</a> &amp;&#160;</td>
+          <td class="paramname"><em >function</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em >tau</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em >stepSize</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em >maxIteration</em> = <code >100</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em >tolerance</em> = <code >1e-3</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Enhance the solution in the convex hull of current atoms with atom norm constraint tau. </p>
+<p >Used in <a class="el" href="classmlpack_1_1optimization_1_1UpdateFullCorrection.html" title="Full correction approach to update the solution. ">UpdateFullCorrection</a> class for update step.</p>
+<p >Minimize the function in the atom domain defined by current atoms, where the solution still need to have atom norm (defined by current atoms) less than or equal to tau. We use projected gradient method to solve it, see the "Enhancement step" of the following paper: </p><div class="fragment"><div class="line">@article{RaoShaWri:2015Forward--backward,</div><div class="line">   Author = {Rao, Nikhil and Shah, Parikshit and Wright, Stephen},</div><div class="line">   Journal = {IEEE Transactions on Signal Processing},</div><div class="line">   Number = {21},</div><div class="line">   Pages = {5798--5811},</div><div class="line">   Publisher = {IEEE},</div><div class="line">   Title = {Forward--backward greedy algorithms <span class="keywordflow">for</span> atomic norm <a class="code" href="det_8txt.html#a9cca165c3a05514453c6f5a747aa57ca">regularization</a>},</div><div class="line">   Volume = {63},</div><div class="line">   Year = {2015}</div><div class="line">}</div></div><dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">function</td><td >function to be minimized. </td></tr>
+    <tr ><td class="paramname">tau</td><td >atom norm constraint. </td></tr>
+    <tr ><td class="paramname">stepSize</td><td >step size for projected gradient method. </td></tr>
+    <tr ><td class="paramname">maxIteration</td><td >maximum iteration number. </td></tr>
+    <tr ><td class="paramname">tolerance</td><td >tolerance for projected gradient method. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="atoms_8hpp_source.html#l00165">165</a> of file <a class="el" href="atoms_8hpp_source.html">atoms.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="classmlpack_1_1optimization_1_1Proximal.html#a78894f02df481da25316b4279ed3ca3f">Proximal::ProjectToL1Ball()</a>, and <a class="el" href="atoms_8hpp_source.html#l00061">Atoms::RecoverVector()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="update__full__correction_8hpp_source.html#l00060">UpdateFullCorrection::Update()</a>.</p>
+
+</div>
+</div>
+<a id="a993f1fb0840a8841818528900691385a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a993f1fb0840a8841818528900691385a">&#9670;&nbsp;</a></span>PruneSupport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void PruneSupport </td>
+          <td >(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >F</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype"><a class="el" href="classmlpack_1_1optimization_1_1FuncSq.html">FuncSq</a> &amp;&#160;</td>
+          <td class="paramname"><em >function</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Prune the support, delete previous atoms if they don't contribute much. </p>
+<p >See Algorithm 2 of paper: </p><div class="fragment"><div class="line">@article{RaoShaWri:2015Forward--backward,</div><div class="line">   Author = {Rao, Nikhil and Shah, Parikshit and Wright, Stephen},</div><div class="line">   Journal = {IEEE Transactions on Signal Processing},</div><div class="line">   Number = {21},</div><div class="line">   Pages = {5798--5811},</div><div class="line">   Publisher = {IEEE},</div><div class="line">   Title = {Forward--backward greedy algorithms <span class="keywordflow">for</span> atomic norm <a class="code" href="det_8txt.html#a9cca165c3a05514453c6f5a747aa57ca">regularization</a>},</div><div class="line">   Volume = {63},</div><div class="line">   Year = {2015}</div><div class="line">}</div></div><dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">F</td><td >thresholding number. </td></tr>
+    <tr ><td class="paramname">function</td><td >function to be optimized. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="atoms_8hpp_source.html#l00085">85</a> of file <a class="el" href="atoms_8hpp_source.html">atoms.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="atoms_8hpp_source.html#l00061">Atoms::RecoverVector()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="update__span_8hpp_source.html#l00050">UpdateSpan::Update()</a>.</p>
+
+</div>
+</div>
+<a id="a6a718022eff75a138b1fbb9ad0fb6362"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a718022eff75a138b1fbb9ad0fb6362">&#9670;&nbsp;</a></span>RecoverVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void RecoverVector </td>
+          <td >(</td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >x</em></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Recover the solution coordinate from the coefficients of current atoms. </p>
+
+<p class="definition">Definition at line <a class="el" href="atoms_8hpp_source.html#l00061">61</a> of file <a class="el" href="atoms_8hpp_source.html">atoms.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="atoms_8hpp_source.html#l00165">Atoms::ProjectedGradientEnhancement()</a>, <a class="el" href="atoms_8hpp_source.html#l00085">Atoms::PruneSupport()</a>, <a class="el" href="update__span_8hpp_source.html#l00050">UpdateSpan::Update()</a>, and <a class="el" href="update__full__correction_8hpp_source.html#l00060">UpdateFullCorrection::Update()</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/core/optimizers/fw/<a class="el" href="atoms_8hpp_source.html">atoms.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

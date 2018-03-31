@@ -1,0 +1,712 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">3.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1optimization.html">optimization</a></li><li class="navelem"><a class="el" href="classmlpack_1_1optimization_1_1CMAES.html">CMAES</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classmlpack_1_1optimization_1_1CMAES-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">CMAES&lt; SelectionPolicyType &gt; Class Template Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >CMA-ES - Covariance Matrix Adaptation Evolution Strategy is s a stochastic search algorithm.  
+ <a href="classmlpack_1_1optimization_1_1CMAES.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a576e62fe11cb223dad6957b27cb08a71"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1CMAES.html#a576e62fe11cb223dad6957b27cb08a71">CMAES</a> (const size_t lambda=0, const double lowerBound=-10, const double upperBound=10, const size_t batchSize=32, const size_t maxIterations=1000, const double tolerance=1e-5, const SelectionPolicyType &amp;selectionPolicy=SelectionPolicyType())</td></tr>
+<tr class="memdesc:a576e62fe11cb223dad6957b27cb08a71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the CMA-ES optimizer with the given function and parameters.  <a href="#a576e62fe11cb223dad6957b27cb08a71">More...</a><br /></br></td></tr>
+<tr class="separator:a576e62fe11cb223dad6957b27cb08a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fc05cec06f55eb3c79d7f3f2fc197c5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1CMAES.html#a7fc05cec06f55eb3c79d7f3f2fc197c5">BatchSize</a> () const</td></tr>
+<tr class="memdesc:a7fc05cec06f55eb3c79d7f3f2fc197c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the batch size.  <a href="#a7fc05cec06f55eb3c79d7f3f2fc197c5">More...</a><br /></br></td></tr>
+<tr class="separator:a7fc05cec06f55eb3c79d7f3f2fc197c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe6fa63561dedf6d88b7076d174e818f"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1CMAES.html#abe6fa63561dedf6d88b7076d174e818f">BatchSize</a> ()</td></tr>
+<tr class="memdesc:abe6fa63561dedf6d88b7076d174e818f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the batch size.  <a href="#abe6fa63561dedf6d88b7076d174e818f">More...</a><br /></br></td></tr>
+<tr class="separator:abe6fa63561dedf6d88b7076d174e818f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa685759f5922c85cfd4324b013452acc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1CMAES.html#aa685759f5922c85cfd4324b013452acc">LowerBound</a> () const</td></tr>
+<tr class="memdesc:aa685759f5922c85cfd4324b013452acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the lower bound of decision variables.  <a href="#aa685759f5922c85cfd4324b013452acc">More...</a><br /></br></td></tr>
+<tr class="separator:aa685759f5922c85cfd4324b013452acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07dfef5c510f360a388ea83388f6dc9e"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1CMAES.html#a07dfef5c510f360a388ea83388f6dc9e">LowerBound</a> ()</td></tr>
+<tr class="memdesc:a07dfef5c510f360a388ea83388f6dc9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the lower bound of decision variables.  <a href="#a07dfef5c510f360a388ea83388f6dc9e">More...</a><br /></br></td></tr>
+<tr class="separator:a07dfef5c510f360a388ea83388f6dc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a420770944a5b0c7a852c4ec372c4a2d1"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1CMAES.html#a420770944a5b0c7a852c4ec372c4a2d1">MaxIterations</a> () const</td></tr>
+<tr class="memdesc:a420770944a5b0c7a852c4ec372c4a2d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of iterations (0 indicates no limit).  <a href="#a420770944a5b0c7a852c4ec372c4a2d1">More...</a><br /></br></td></tr>
+<tr class="separator:a420770944a5b0c7a852c4ec372c4a2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda675ab4ab86b95c92bc33bc391a61b"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1CMAES.html#acda675ab4ab86b95c92bc33bc391a61b">MaxIterations</a> ()</td></tr>
+<tr class="memdesc:acda675ab4ab86b95c92bc33bc391a61b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the maximum number of iterations (0 indicates no limit).  <a href="#acda675ab4ab86b95c92bc33bc391a61b">More...</a><br /></br></td></tr>
+<tr class="separator:acda675ab4ab86b95c92bc33bc391a61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99a6cd3d7b60bad439f79f99ec0118a7"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">DecomposableFunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a99a6cd3d7b60bad439f79f99ec0118a7"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1CMAES.html#a99a6cd3d7b60bad439f79f99ec0118a7">Optimize</a> (DecomposableFunctionType &amp;function, arma::mat &amp;iterate)</td></tr>
+<tr class="memdesc:a99a6cd3d7b60bad439f79f99ec0118a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimize the given function using CMA-ES.  <a href="#a99a6cd3d7b60bad439f79f99ec0118a7">More...</a><br /></br></td></tr>
+<tr class="separator:a99a6cd3d7b60bad439f79f99ec0118a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96203cffd8de592bd718b888373cfa25"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1CMAES.html#a96203cffd8de592bd718b888373cfa25">PopulationSize</a> () const</td></tr>
+<tr class="memdesc:a96203cffd8de592bd718b888373cfa25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the step size.  <a href="#a96203cffd8de592bd718b888373cfa25">More...</a><br /></br></td></tr>
+<tr class="separator:a96203cffd8de592bd718b888373cfa25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff4293541f1bcd1d387415788a40e745"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1CMAES.html#aff4293541f1bcd1d387415788a40e745">PopulationSize</a> ()</td></tr>
+<tr class="memdesc:aff4293541f1bcd1d387415788a40e745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the step size.  <a href="#aff4293541f1bcd1d387415788a40e745">More...</a><br /></br></td></tr>
+<tr class="separator:aff4293541f1bcd1d387415788a40e745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdc791e1d33662ea42e79f5539c20ef5"><td class="memItemLeft" align="right" valign="top">const SelectionPolicyType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1CMAES.html#acdc791e1d33662ea42e79f5539c20ef5">SelectionPolicy</a> () const</td></tr>
+<tr class="memdesc:acdc791e1d33662ea42e79f5539c20ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the selection policy.  <a href="#acdc791e1d33662ea42e79f5539c20ef5">More...</a><br /></br></td></tr>
+<tr class="separator:acdc791e1d33662ea42e79f5539c20ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcf253f7770a44fda1fbd3d6b146dbed"><td class="memItemLeft" align="right" valign="top">SelectionPolicyType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1CMAES.html#abcf253f7770a44fda1fbd3d6b146dbed">SelectionPolicy</a> ()</td></tr>
+<tr class="memdesc:abcf253f7770a44fda1fbd3d6b146dbed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the selection policy.  <a href="#abcf253f7770a44fda1fbd3d6b146dbed">More...</a><br /></br></td></tr>
+<tr class="separator:abcf253f7770a44fda1fbd3d6b146dbed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b5af5c1a84c507cbaa7f999ea5a4fda"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1CMAES.html#a7b5af5c1a84c507cbaa7f999ea5a4fda">Tolerance</a> () const</td></tr>
+<tr class="memdesc:a7b5af5c1a84c507cbaa7f999ea5a4fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the tolerance for termination.  <a href="#a7b5af5c1a84c507cbaa7f999ea5a4fda">More...</a><br /></br></td></tr>
+<tr class="separator:a7b5af5c1a84c507cbaa7f999ea5a4fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9fac84af16250f5a3689692e8f2173"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1CMAES.html#a3d9fac84af16250f5a3689692e8f2173">Tolerance</a> ()</td></tr>
+<tr class="memdesc:a3d9fac84af16250f5a3689692e8f2173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the tolerance for termination.  <a href="#a3d9fac84af16250f5a3689692e8f2173">More...</a><br /></br></td></tr>
+<tr class="separator:a3d9fac84af16250f5a3689692e8f2173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b4b0b81a682ae9cb8d5279e149d0711"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1CMAES.html#a7b4b0b81a682ae9cb8d5279e149d0711">UpperBound</a> () const</td></tr>
+<tr class="memdesc:a7b4b0b81a682ae9cb8d5279e149d0711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the upper bound of decision variables.  <a href="#a7b4b0b81a682ae9cb8d5279e149d0711">More...</a><br /></br></td></tr>
+<tr class="separator:a7b4b0b81a682ae9cb8d5279e149d0711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ca22dd7e7fef0daedaf688ff37b5d05"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1CMAES.html#a8ca22dd7e7fef0daedaf688ff37b5d05">UpperBound</a> ()</td></tr>
+<tr class="memdesc:a8ca22dd7e7fef0daedaf688ff37b5d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the upper bound of decision variables.  <a href="#a8ca22dd7e7fef0daedaf688ff37b5d05">More...</a><br /></br></td></tr>
+<tr class="separator:a8ca22dd7e7fef0daedaf688ff37b5d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3 ><br /><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">SelectionPolicyType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">FullSelection</div></div><div class="close_bracket">&gt;</div></div></div></div></br>
+class mlpack::optimization::CMAES&lt; SelectionPolicyType &gt;</h3>
+
+<p >CMA-ES - Covariance Matrix Adaptation Evolution Strategy is s a stochastic search algorithm. </p>
+<p >CMA-ES is a second order approach estimating a positive definite matrix within an iterative procedure using the covariance matrix.</p>
+<p >For more information, please refer to:</p>
+<div class="fragment"><div class="line">@article{Hansen2001</div><div class="line">  author    = {Hansen, Nikolaus and Ostermeier, Andreas},</div><div class="line">  title     = {Completely Derandomized Self-Adaptation in Evolution</div><div class="line">               Strategies},</div><div class="line">  journal   = {Evol. Comput.},</div><div class="line">  volume    = {9},</div><div class="line">  number    = {2},</div><div class="line">  year      = {2001},</div><div class="line">  pages     = {159--195},</div><div class="line">  publisher = {MIT Press},</div><div class="line">}</div></div><p >For CMA-ES to work, the class must implement the following function:</p>
+<p >size_t NumFunctions(); double Evaluate(const arma::mat&amp; coordinates, const size_t i); void Gradient(const arma::mat&amp; coordinates, const size_t i, arma::mat&amp; gradient);</p>
+<p >NumFunctions() should return the number of functions ( <img class="formulaInl" alt="$n$" src="form_48.png"></img>), and in the other two functions, the parameter i refers to which individual function (or gradient) is being evaluated. So, for the case of a data-dependent function, such as NCA (see <a class="el" href="classmlpack_1_1nca_1_1NCA.html" title="An implementation of Neighborhood Components Analysis, both a linear dimensionality reduction techniq...">mlpack::nca::NCA</a>), NumFunctions() should return the number of points in the dataset, and Evaluate(coordinates, 0) will evaluate the objective function on the first point in the dataset (presumably, the dataset is held internally in the DecomposableFunctionType).</p>
+<dl class="tparams"><dt >Template Parameters</dt><dd >
+  <table class="tparams">
+    <tr ><td class="paramname">SelectionPolicy</td><td >The selection strategy used for the evaluation step. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="cmaes_8hpp_source.html#l00066">66</a> of file <a class="el" href="cmaes_8hpp_source.html">cmaes.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a576e62fe11cb223dad6957b27cb08a71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a576e62fe11cb223dad6957b27cb08a71">&#9670;&nbsp;</a></span>CMAES()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1optimization_1_1CMAES.html">CMAES</a> </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >lambda</em> = <code >0</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >lowerBound</em> = <code >-10</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >upperBound</em> = <code >10</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >batchSize</em> = <code >32</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >maxIterations</em> = <code >1000</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >tolerance</em> = <code >1e-5</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const SelectionPolicyType &amp;&#160;</td>
+          <td class="paramname"><em >selectionPolicy</em> = <code >SelectionPolicyType()</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Construct the CMA-ES optimizer with the given function and parameters. </p>
+<p >The defaults here are not necessarily good for the given problem, so it is suggested that the values used be tailored to the task at hand. The maximum number of iterations refers to the maximum number of points that are processed (i.e., one iteration equals one point; one iteration does not equal one pass over the dataset).</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">lambda</td><td >The population size (0 use the default size). </td></tr>
+    <tr ><td class="paramname">lowerBound</td><td >Lower bound of decision variables. </td></tr>
+    <tr ><td class="paramname">upperBound</td><td >Upper bound of decision variables. </td></tr>
+    <tr ><td class="paramname">batchSize</td><td >Batch size to use for the objective calculation. </td></tr>
+    <tr ><td class="paramname">maxIterations</td><td >Maximum number of iterations allowed (0 means no limit). </td></tr>
+    <tr ><td class="paramname">tolerance</td><td >Maximum absolute tolerance to terminate algorithm. </td></tr>
+    <tr ><td class="paramname">selectionPolicy</td><td >Instantiated selection policy used to calculate the objective. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7fc05cec06f55eb3c79d7f3f2fc197c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc05cec06f55eb3c79d7f3f2fc197c5">&#9670;&nbsp;</a></span>BatchSize() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t BatchSize </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the batch size. </p>
+
+<p class="definition">Definition at line <a class="el" href="cmaes_8hpp_source.html#l00124">124</a> of file <a class="el" href="cmaes_8hpp_source.html">cmaes.hpp</a>.</p>
+
+</div>
+</div>
+<a id="abe6fa63561dedf6d88b7076d174e818f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe6fa63561dedf6d88b7076d174e818f">&#9670;&nbsp;</a></span>BatchSize() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; BatchSize </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the batch size. </p>
+
+<p class="definition">Definition at line <a class="el" href="cmaes_8hpp_source.html#l00126">126</a> of file <a class="el" href="cmaes_8hpp_source.html">cmaes.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa685759f5922c85cfd4324b013452acc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa685759f5922c85cfd4324b013452acc">&#9670;&nbsp;</a></span>LowerBound() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double LowerBound </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the lower bound of decision variables. </p>
+
+<p class="definition">Definition at line <a class="el" href="cmaes_8hpp_source.html#l00114">114</a> of file <a class="el" href="cmaes_8hpp_source.html">cmaes.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a07dfef5c510f360a388ea83388f6dc9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07dfef5c510f360a388ea83388f6dc9e">&#9670;&nbsp;</a></span>LowerBound() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double&amp; LowerBound </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the lower bound of decision variables. </p>
+
+<p class="definition">Definition at line <a class="el" href="cmaes_8hpp_source.html#l00116">116</a> of file <a class="el" href="cmaes_8hpp_source.html">cmaes.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a420770944a5b0c7a852c4ec372c4a2d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a420770944a5b0c7a852c4ec372c4a2d1">&#9670;&nbsp;</a></span>MaxIterations() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t MaxIterations </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the maximum number of iterations (0 indicates no limit). </p>
+
+<p class="definition">Definition at line <a class="el" href="cmaes_8hpp_source.html#l00129">129</a> of file <a class="el" href="cmaes_8hpp_source.html">cmaes.hpp</a>.</p>
+
+</div>
+</div>
+<a id="acda675ab4ab86b95c92bc33bc391a61b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acda675ab4ab86b95c92bc33bc391a61b">&#9670;&nbsp;</a></span>MaxIterations() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; MaxIterations </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the maximum number of iterations (0 indicates no limit). </p>
+
+<p class="definition">Definition at line <a class="el" href="cmaes_8hpp_source.html#l00131">131</a> of file <a class="el" href="cmaes_8hpp_source.html">cmaes.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a99a6cd3d7b60bad439f79f99ec0118a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99a6cd3d7b60bad439f79f99ec0118a7">&#9670;&nbsp;</a></span>Optimize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Optimize </td>
+          <td >(</td>
+          <td class="paramtype">DecomposableFunctionType &amp;&#160;</td>
+          <td class="paramname"><em >function</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >iterate</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Optimize the given function using CMA-ES. </p>
+<p >The given starting point will be modified to store the finishing point of the algorithm, and the final objective value is returned.</p>
+<dl class="tparams"><dt >Template Parameters</dt><dd >
+  <table class="tparams">
+    <tr ><td class="paramname">DecomposableFunctionType</td><td >Type of the function to be optimized. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">function</td><td ><a class="el" href="classmlpack_1_1optimization_1_1Function.html" title="The Function class is a wrapper class for any FunctionType that will add any possible derived methods...">Function</a> to optimize. </td></tr>
+    <tr ><td class="paramname">iterate</td><td >Starting point (will be modified). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt >Returns</dt><dd >Objective value of the final point. </dd></dl>
+
+</div>
+</div>
+<a id="a96203cffd8de592bd718b888373cfa25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96203cffd8de592bd718b888373cfa25">&#9670;&nbsp;</a></span>PopulationSize() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t PopulationSize </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the step size. </p>
+
+<p class="definition">Definition at line <a class="el" href="cmaes_8hpp_source.html#l00109">109</a> of file <a class="el" href="cmaes_8hpp_source.html">cmaes.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aff4293541f1bcd1d387415788a40e745"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff4293541f1bcd1d387415788a40e745">&#9670;&nbsp;</a></span>PopulationSize() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; PopulationSize </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the step size. </p>
+
+<p class="definition">Definition at line <a class="el" href="cmaes_8hpp_source.html#l00111">111</a> of file <a class="el" href="cmaes_8hpp_source.html">cmaes.hpp</a>.</p>
+
+</div>
+</div>
+<a id="acdc791e1d33662ea42e79f5539c20ef5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdc791e1d33662ea42e79f5539c20ef5">&#9670;&nbsp;</a></span>SelectionPolicy() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const SelectionPolicyType&amp; SelectionPolicy </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the selection policy. </p>
+
+<p class="definition">Definition at line <a class="el" href="cmaes_8hpp_source.html#l00139">139</a> of file <a class="el" href="cmaes_8hpp_source.html">cmaes.hpp</a>.</p>
+
+</div>
+</div>
+<a id="abcf253f7770a44fda1fbd3d6b146dbed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcf253f7770a44fda1fbd3d6b146dbed">&#9670;&nbsp;</a></span>SelectionPolicy() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">SelectionPolicyType&amp; SelectionPolicy </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the selection policy. </p>
+
+<p class="definition">Definition at line <a class="el" href="cmaes_8hpp_source.html#l00141">141</a> of file <a class="el" href="cmaes_8hpp_source.html">cmaes.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a7b5af5c1a84c507cbaa7f999ea5a4fda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b5af5c1a84c507cbaa7f999ea5a4fda">&#9670;&nbsp;</a></span>Tolerance() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Tolerance </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the tolerance for termination. </p>
+
+<p class="definition">Definition at line <a class="el" href="cmaes_8hpp_source.html#l00134">134</a> of file <a class="el" href="cmaes_8hpp_source.html">cmaes.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a3d9fac84af16250f5a3689692e8f2173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d9fac84af16250f5a3689692e8f2173">&#9670;&nbsp;</a></span>Tolerance() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double&amp; Tolerance </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the tolerance for termination. </p>
+
+<p class="definition">Definition at line <a class="el" href="cmaes_8hpp_source.html#l00136">136</a> of file <a class="el" href="cmaes_8hpp_source.html">cmaes.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a7b4b0b81a682ae9cb8d5279e149d0711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b4b0b81a682ae9cb8d5279e149d0711">&#9670;&nbsp;</a></span>UpperBound() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double UpperBound </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the upper bound of decision variables. </p>
+
+<p class="definition">Definition at line <a class="el" href="cmaes_8hpp_source.html#l00119">119</a> of file <a class="el" href="cmaes_8hpp_source.html">cmaes.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a8ca22dd7e7fef0daedaf688ff37b5d05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ca22dd7e7fef0daedaf688ff37b5d05">&#9670;&nbsp;</a></span>UpperBound() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double&amp; UpperBound </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the upper bound of decision variables. </p>
+
+<p class="definition">Definition at line <a class="el" href="cmaes_8hpp_source.html#l00121">121</a> of file <a class="el" href="cmaes_8hpp_source.html">cmaes.hpp</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/core/optimizers/cmaes/<a class="el" href="cmaes_8hpp_source.html">cmaes.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

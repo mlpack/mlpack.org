@@ -1,0 +1,201 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+</head><link rel="stylesheet" href="../../../style.css" /></link><link rel="stylesheet" href="../../style-man.css" /></link><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" /></link>
+
+
+
+<body ><br /></br>
+
+
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext manpage">
+
+<h1 align="center">mlpack_preprocess_split</h1>
+
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_preprocess_split</font>
+- split data</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_preprocess_split</font>
+[<font class="code">-h</font>] [<font class="code">-v</font>]</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p class="closemargin first">This utility
+takes a dataset and optionally labels and splits them into a
+training set and a test set. Before the split, the points in
+the dataset are randomly reordered. The percentage of the
+dataset to be used as the test set can be specified with the
+&rsquo;<font class="code">--test_ratio</font> (<font class="code">-r</font>)&rsquo; parameter; the
+default is 0.2 (20
+).</p>
+
+<p class="closemargin first">The output
+training and test matrices may be saved with the
+&rsquo;<font class="code">--training_file</font> (<font class="code">-t</font>)&rsquo; and
+&rsquo;<font class="code">--test_file</font> (<font class="code">-T</font>)&rsquo; output
+parameters.</p>
+
+<p class="closemargin first">Optionally,
+labels can be also be split along with the data by
+specifying the &rsquo;<font class="code">--input_labels_file</font>
+(<font class="code">-I</font>)&rsquo; parameter. Splitting labels works the
+same way as splitting the data. The output training and test
+labels may be saved with the
+&rsquo;<font class="code">--training_labels_file</font> (<font class="code">-l</font>)&rsquo; and
+&rsquo;<font class="code">--test_labels_file</font> (<font class="code">-L</font>)&rsquo; output
+parameters, respectively.</p>
+
+<p class="closemargin first">So, a simple
+example where we want to split the dataset
+&rsquo;X.csv&rsquo; into &rsquo;X_train.csv&rsquo; and
+&rsquo;X_test.csv&rsquo; with 60
+ of the data in the
+training set and 40
+ of the dataset in the test set, we
+could run</p>
+
+<p class="closemargin first">$
+preprocess_split <font class="code">--input_file</font> X.csv
+<font class="code">--training_file</font> X_train.csv <font class="code">--test_file</font>
+X_test.csv <font class="code">--test_ratio</font> 0.4</p>
+
+<p class="closemargin first">If we had a
+dataset &rsquo;X.csv&rsquo; and associated labels
+&rsquo;y.csv&rsquo;, and we wanted to split these into
+&rsquo;X_train.csv&rsquo;, &rsquo;y_train.csv&rsquo;,
+&rsquo;X_test.csv&rsquo;, and &rsquo;y_test.csv&rsquo;, with
+30
+ of the data in the test set, we could run</p>
+
+<p class="closemargin first">$
+preprocess_split <font class="code">--input_file</font> X.csv
+<font class="code">--input_labels_file</font> y.csv <font class="code">--test_ratio</font> 0.3
+<font class="code">--training_file</font> X_train.csv
+<font class="code">--training_labels_file</font> y_train.csv <font class="code">--test_file</font>
+X_test.csv <font class="code">--test_labels_file</font> y_test.csv</p>
+
+<h2>REQUIRED INPUT OPTIONS
+<a name="REQUIRED INPUT OPTIONS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">--input_file
+(-i) [string]</font></p>
+
+<p class="farmargin">Matrix containing data.</p>
+
+<h2>OPTIONAL INPUT OPTIONS
+<a name="OPTIONAL INPUT OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--help (-h)
+[bool]</font></p>
+
+<p class="farmargin">Default help info.</p>
+
+<p class="closemargin"><font class="code">--info [string]</font></p>
+
+<p class="farmargin">Get help on a specific module
+or option. Default value &rsquo;&rsquo;.
+<font class="code">--input_labels_file</font> (<font class="code">-I</font>) [string] Matrix
+containing labels. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--seed (-s) [int]</font></p>
+
+<p class="farmargin">Random seed (0 for
+<font class="code">std::time</font>(NULL)). Default value 0.</p>
+
+<p class="closemargin"><font class="code">--test_ratio (-r)
+[double]</font></p>
+
+<p class="farmargin">Ratio of test set; if not
+set,the ratio defaults to 0.2 Default value 0.2.</p>
+
+<p class="closemargin"><font class="code">--verbose (-v)
+[bool]</font></p>
+
+<p class="farmargin">Display informational messages
+and the full list of parameters and timers at the end of
+execution.</p>
+
+<p class="closemargin"><font class="code">--version (-V)
+[bool]</font></p>
+
+<p class="farmargin">Display the version of
+mlpack.</p>
+
+<h2>OPTIONAL OUTPUT OPTIONS
+<a name="OPTIONAL OUTPUT OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--test_file
+(-T) [string]</font></p>
+
+<p class="farmargin">Matrix to save test data to.
+Default value &rsquo;&rsquo;. <font class="code">--test_labels_file</font>
+(<font class="code">-L</font>) [string] Matrix to save test labels to. Default
+value &rsquo;&rsquo;. <font class="code">--training_file</font> (<font class="code">-t</font>)
+[string] Matrix to save training data to. Default value
+&rsquo;&rsquo;. <font class="code">--training_labels_file</font> (<font class="code">-l</font>)
+[string] Matrix to save train labels to. Default value
+&rsquo;&rsquo;.</p>
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<p class="closemargin first">For further
+information, including relevant papers, citations, and
+theory, For further information, including relevant papers,
+citations, and theory, consult the documentation found at
+http://www.mlpack.org or included with your consult the
+documentation found at http://www.mlpack.org or included
+with your DISTRIBUTION OF MLPACK. DISTRIBUTION OF
+MLPACK.</p>
+</div></body></html>

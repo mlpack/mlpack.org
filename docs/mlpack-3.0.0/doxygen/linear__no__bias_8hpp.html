@@ -1,0 +1,175 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">3.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_44a936ef30fc126706c6284a2fc0c990.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_3cfbf900288ec2fe8dd2c2c8482f216e.html">methods</a></li><li class="navelem"><a class="el" href="dir_04cdefcc9a97fb221ee3f2d7fb8aab76.html">ann</a></li><li class="navelem"><a class="el" href="dir_104798ce316d01262d69b00f4c94ed15.html">layer</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
+  <div class="headertitle">
+<div class="title">linear_no_bias.hpp File Reference</div>  </div>
+</div>
+<div class="contents">
+<div class="textblock"><div class="dynheader">
+Include dependency graph for linear_no_bias.hpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="linear__no__bias_8hpp__incl.png" border="0" usemap="#src_2mlpack_2methods_2ann_2layer_2linear__no__bias_8hpp" alt=""></img></div>
+<map name="src_2mlpack_2methods_2ann_2layer_2linear__no__bias_8hpp" id="src_2mlpack_2methods_2ann_2layer_2linear__no__bias_8hpp">
+<area shape="rect" id="node2" href="prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo. " alt="" coords="1920,288,2056,315"></area>
+<area shape="rect" id="node25" href="layer__types_8hpp.html" title="layer_types.hpp" alt="" coords="1930,109,2045,136"></area>
+<area shape="rect" id="node17" href="has__serialize_8hpp.html" title="mlpack/core/data/has\l_serialize.hpp" alt="" coords="2449,363,2596,404"></area>
+<area shape="rect" id="node18" href="serialization__template__version_8hpp.html" title="mlpack/core/data/serialization\l_template_version.hpp" alt="" coords="2620,363,2814,404"></area>
+<area shape="rect" id="node20" href="arma__traits_8hpp.html" title="mlpack/core/util/arma\l_traits.hpp" alt="" coords="3036,363,3182,404"></area>
+<area shape="rect" id="node21" href="arma__config__check_8hpp.html" title="mlpack/core/util/arma\l_config_check.hpp" alt="" coords="3206,363,3353,404"></area>
+<area shape="rect" id="node22" href="log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="3377,370,3537,397"></area>
+<area shape="rect" id="node23" href="timers_8hpp.html" title="mlpack/core/util/timers.hpp" alt="" coords="3561,370,3740,397"></area>
+<area shape="rect" id="node24" href="deprecated_8hpp.html" title="mlpack/core/util/deprecated.hpp" alt="" coords="3764,370,3971,397"></area>
+<area shape="rect" id="node27" href="layer_2add_8hpp.html" title="mlpack/methods/ann\l/layer/add.hpp" alt="" coords="178,191,320,233"></area>
+<area shape="rect" id="node28" href="base__layer_8hpp.html" title="mlpack/methods/ann\l/layer/base_layer.hpp" alt="" coords="345,191,492,233"></area>
+<area shape="rect" id="node29" href="batch__norm_8hpp.html" title="mlpack/methods/ann\l/layer/batch_norm.hpp" alt="" coords="516,191,667,233"></area>
+<area shape="rect" id="node30" href="bilinear__interpolation_8hpp.html" title="mlpack/methods/ann\l/layer/bilinear_interpolation.hpp" alt="" coords="691,191,892,233"></area>
+<area shape="rect" id="node31" href="constant_8hpp.html" title="mlpack/methods/ann\l/layer/constant.hpp" alt="" coords="916,191,1059,233"></area>
+<area shape="rect" id="node32" href="cross__entropy__error_8hpp.html" title="mlpack/methods/ann\l/layer/cross_entropy\l_error.hpp" alt="" coords="1083,184,1226,240"></area>
+<area shape="rect" id="node33" href="dropout_8hpp.html" title="mlpack/methods/ann\l/layer/dropout.hpp" alt="" coords="1250,191,1392,233"></area>
+<area shape="rect" id="node34" href="elu_8hpp.html" title="mlpack/methods/ann\l/layer/elu.hpp" alt="" coords="1416,191,1559,233"></area>
+<area shape="rect" id="node35" href="hard__tanh_8hpp.html" title="mlpack/methods/ann\l/layer/hard_tanh.hpp" alt="" coords="1583,191,1726,233"></area>
+<area shape="rect" id="node36" href="join_8hpp.html" title="mlpack/methods/ann\l/layer/join.hpp" alt="" coords="1750,191,1892,233"></area>
+<area shape="rect" id="node37" href="leaky__relu_8hpp.html" title="mlpack/methods/ann\l/layer/leaky_relu.hpp" alt="" coords="1916,191,2059,233"></area>
+<area shape="rect" id="node38" href="log__softmax_8hpp.html" title="mlpack/methods/ann\l/layer/log_softmax.hpp" alt="" coords="2084,191,2238,233"></area>
+<area shape="rect" id="node39" href="lookup_8hpp.html" title="mlpack/methods/ann\l/layer/lookup.hpp" alt="" coords="2263,191,2406,233"></area>
+<area shape="rect" id="node40" href="mean__squared__error_8hpp.html" title="mlpack/methods/ann\l/layer/mean_squared\l_error.hpp" alt="" coords="2430,184,2572,240"></area>
+<area shape="rect" id="node41" href="multiply__constant_8hpp.html" title="mlpack/methods/ann\l/layer/multiply_constant.hpp" alt="" coords="2596,191,2782,233"></area>
+<area shape="rect" id="node42" href="negative__log__likelihood_8hpp.html" title="mlpack/methods/ann\l/layer/negative_log\l_likelihood.hpp" alt="" coords="2806,184,2948,240"></area>
+<area shape="rect" id="node43" href="max__pooling_8hpp.html" title="mlpack/methods/ann\l/layer/max_pooling.hpp" alt="" coords="2972,191,3128,233"></area>
+<area shape="rect" id="node44" href="mean__pooling_8hpp.html" title="mlpack/methods/ann\l/layer/mean_pooling.hpp" alt="" coords="3153,191,3316,233"></area>
+<area shape="rect" id="node45" href="parametric__relu_8hpp.html" title="mlpack/methods/ann\l/layer/parametric_relu.hpp" alt="" coords="3340,191,3512,233"></area>
+<area shape="rect" id="node46" href="reinforce__normal_8hpp.html" title="mlpack/methods/ann\l/layer/reinforce_normal.hpp" alt="" coords="3537,191,3716,233"></area>
+<area shape="rect" id="node47" href="sigmoid__cross__entropy__error_8hpp.html" title="mlpack/methods/ann\l/layer/sigmoid_cross\l_entropy_error.hpp" alt="" coords="3740,184,3883,240"></area>
+<area shape="rect" id="node48" href="select_8hpp.html" title="mlpack/methods/ann\l/layer/select.hpp" alt="" coords="3907,191,4050,233"></area>
+<area shape="rect" id="node49" href="border__modes_8hpp.html" title="mlpack/methods/ann\l/convolution_rules/border\l_modes.hpp" alt="" coords="4074,184,4240,240"></area>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="linear__no__bias_8hpp__dep__incl.png" border="0" usemap="#src_2mlpack_2methods_2ann_2layer_2linear__no__bias_8hppdep" alt=""></img></div>
+<map name="src_2mlpack_2methods_2ann_2layer_2linear__no__bias_8hppdep" id="src_2mlpack_2methods_2ann_2layer_2linear__no__bias_8hppdep">
+<area shape="rect" id="node2" href="layer_8hpp.html" title="src/mlpack/methods\l/ann/layer/layer.hpp" alt="" coords="19,109,159,151"></area>
+<area shape="rect" id="node3" href="custom__layer_8hpp.html" title="src/mlpack/tests/custom\l_layer.hpp" alt="" coords="5,199,172,240"></area>
+</map>
+</div>
+</div>
+<p ><a href="linear__no__bias_8hpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1LinearNoBias.html">LinearNoBias&lt; InputDataType, OutputDataType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the <a class="el" href="classmlpack_1_1ann_1_1LinearNoBias.html" title="Implementation of the LinearNoBias class. ">LinearNoBias</a> class.  <a href="classmlpack_1_1ann_1_1LinearNoBias.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacemlpack"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack.html">mlpack</a></td></tr>
+<tr class="memdesc:namespacemlpack"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br />.hpp </br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacemlpack_1_1ann"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1ann.html">mlpack::ann</a></td></tr>
+<tr class="memdesc:namespacemlpack_1_1ann"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br />Artificial Neural Network. </br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

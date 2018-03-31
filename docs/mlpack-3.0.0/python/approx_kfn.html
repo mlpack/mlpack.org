@@ -1,0 +1,71 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+</head><link rel="stylesheet" href="../../../style.css" /></link><link rel="stylesheet" href="../../style-python.css" /></link><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" /></link>
+
+
+
+<body ><br /></br>
+
+
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext pythonpage">
+<h1><center>mlpack.approx_kfn</center></h1>
+<font class="titlecode">approx_kfn(...)</font><br />
+<font class="titlebold">Approximate furthest neighbor search</font>
+<p class="importcode">&gt;&gt;&gt; from mlpack import approx_kfn</p><p>This program implements two strategies for furthest neighbor search. These strategies are:</p>
+</p>
+<p> - The <font class="code">'qdafn'</font> algorithm from "Approximate Furthest Neighbor in High Dimensions" by R. Pagh, F. Silvestri, J. Sivertsen, and M. Skala, in Similarity Search and Applications 2015 (SISAP).</p>
+<p> - The <font class="code">'DrusillaSelect'</font> algorithm from "Fast approximate furthest neighbors with data-dependent candidate selection", by R.R. Curtin and A.B. Gardner, in Similarity Search and Applications 2016 (SISAP).</p>
+</p>
+<p>These two strategies give approximate results for the furthest neighbor search problem and can be used as fast replacements for other furthest neighbor techniques such as those found in the mlpack_kfn program.  Note that typically, the <font class="code">'ds'</font> algorithm requires far fewer tables and projections than the <font class="code">'qdafn'</font> algorithm.</p>
+</p>
+<p>Specify a reference set (set to search in) with <font class="code">'reference'</font>, specify a query set with <font class="code">'query'</font>, and specify algorithm parameters with <font class="code">'num_tables'</font> and <font class="code">'num_projections'</font> (or don'</font>t and defaults will be used).  The algorithm to be used (either <font class="code">'ds'</font>---the default---or <font class="code">'qdafn'</font>)  may be specified with <font class="code">'algorithm'</font>.  Also specify the number of neighbors to search for with <font class="code">'k'</font>.</p>
+</p>
+<p>If no query set is specified, the reference set will be used as the query set.  The <font class="code">'output_model'</font> output parameter may be used to store the built model, and an input model may be loaded instead of specifying a reference set with the <font class="code">'input_model'</font> option.</p>
+</p>
+<p>Results for each query point can be stored with the <font class="code">'neighbors'</font> and <font class="code">'distances'</font> output parameters.  Each row of these output matrices holds the k distances or neighbor indices for each query point.</p>
+</p>
+<p>For example, to find the 5 approximate furthest neighbors with <font class="code">'reference_set'</font> as the reference set and <font class="code">'query_set'</font> as the query set using DrusillaSelect, storing the furthest neighbor indices to <font class="code">'neighbors'</font> and the furthest neighbor distances to <font class="code">'distances'</font>, one could call</p>
+</p>
+<p class="codeblock"><font class="code">&gt;&gt;&gt; approx_kfn(query=query_set, reference=reference_set, k=5, algorithm='ds')<br />
+&gt;&gt;&gt; neighbors = output['neighbors']<br />
+&gt;&gt;&gt; distances = output['distances']</font></p>
+</p>
+<p>and to perform approximate all-furthest-neighbors search with k=1 on the set <font class="code">'data'</font> storing only the furthest neighbor distances to <font class="code">'distances'</font>, one could call</p>
+</p>
+<p class="codeblock"><font class="code">&gt;&gt;&gt; approx_kfn(reference=reference_set, k=1)<br />
+&gt;&gt;&gt; distances = output['distances']</font></p>
+</p>
+<p>A trained model can be re-used.  If a model has been previously saved to <font class="code">'model'</font>, then we may find 3 approximate furthest neighbors on a query set <font class="code">'new_query_set'</font> using that model and store the furthest neighbor indices into <font class="code">'neighbors'</font> by calling</p>
+</p>
+<p class="codeblock"><font class="code">&gt;&gt;&gt; approx_kfn(input_model=model, query=new_query_set, k=3)<br />
+&gt;&gt;&gt; neighbors = output['neighbors']</font></p><h2>input options</h2>
+<ul>
+<li><font class="code">algorithm</font> <font class="codetype">(string)</font>: Algorithm to use: 'ds' or 'qdafn'.  Default value ds.</li><li><font class="code">calculate_error</font> <font class="codetype">(bool)</font>: If set, calculate the average distance error for the first furthest neighbor only.</li><li><font class="code">copy_all_inputs</font> <font class="codetype">(bool)</font>: If specified, all input parameters will be deep copied before the method is run.  This is useful for debugging problems where the input parameters are being modified by the algorithm, but can slow down the code.</li><li><font class="code">exact_distances</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: Matrix containing exact distances to furthest neighbors; this can be used to avoid explicit calculation when --calculate_error is set.</li><li><font class="code">input_model</font> <font class="codetype">(mlpack.ApproxKFNModelType)</font>: File containing input model.</li><li><font class="code">k</font> <font class="codetype">(int)</font>: Number of furthest neighbors to search for.  Default value 0.</li><li><font class="code">num_projections</font> <font class="codetype">(int)</font>: Number of projections to use in each hash table.  Default value 5.</li><li><font class="code">num_tables</font> <font class="codetype">(int)</font>: Number of hash tables to use.  Default value 5.</li><li><font class="code">query</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: Matrix containing query points.</li><li><font class="code">reference</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: Matrix containing the reference dataset.</li><li><font class="code">verbose</font> <font class="codetype">(bool)</font>: Display informational messages and the full list of parameters and timers at the end of execution.</li></ul>
+<h2>output options</h2>
+<p>The return value from the binding is a dict containing the following elements:</p>
+<ul><li><font class="code">distances</font> <font class="codetype">(numpy matrix, float dtype)</font>: Matrix to save furthest neighbor distances to.</li><li><font class="code">neighbors</font> <font class="codetype">(numpy matrix, int dtype)</font>: Matrix to save neighbor indices to.</li><li><font class="code">output_model</font> <font class="codetype">(mlpack.ApproxKFNModelType)</font>: File to save output model to.</li><ul>
+</ul>
+</div>
+</body>
+</html>

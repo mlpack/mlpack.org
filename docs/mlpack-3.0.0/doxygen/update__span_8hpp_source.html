@@ -1,0 +1,120 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">3.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_44a936ef30fc126706c6284a2fc0c990.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_f7ac9cdfd28b2e882eb44d163e3b98b4.html">core</a></li><li class="navelem"><a class="el" href="dir_c92267e6eea9957c44bb2efde721ca22.html">optimizers</a></li><li class="navelem"><a class="el" href="dir_556589a2fcb2dc7d96ee444ee4cb5b44.html">fw</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">update_span.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="update__span_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef MLPACK_CORE_OPTIMIZERS_FW_UPDATE_SPAN_HPP</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define MLPACK_CORE_OPTIMIZERS_FW_UPDATE_SPAN_HPP</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="prereqs_8hpp.html">mlpack/prereqs.hpp</a>&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="func__sq_8hpp.html">func_sq.hpp</a>&quot;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="atoms_8hpp.html">atoms.hpp</a>&quot;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>optimization {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1UpdateSpan.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1optimization_1_1UpdateSpan.html">UpdateSpan</a></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; <span class="keyword">public</span>:</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1UpdateSpan.html#a90b102ff5f176e675cc1428cf0047852">   37</a></span>&#160;  <a class="code" href="classmlpack_1_1optimization_1_1UpdateSpan.html#a90b102ff5f176e675cc1428cf0047852">UpdateSpan</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> isPrune = <span class="keyword">false</span>) : isPrune(isPrune)</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  { <span class="comment">/* Do nothing. */</span> }</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classmlpack_1_1optimization_1_1UpdateSpan.html#a4316657f833573c2e82a0689b6f83aea">   50</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1optimization_1_1UpdateSpan.html#a4316657f833573c2e82a0689b6f83aea">Update</a>(<a class="code" href="classmlpack_1_1optimization_1_1FuncSq.html">FuncSq</a>&amp; <span class="keyword">function</span>,</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;              <span class="keyword">const</span> arma::mat&amp; oldCoords,</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;              <span class="keyword">const</span> arma::mat&amp; s,</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;              arma::mat&amp; newCoords,</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;              <span class="keyword">const</span> <span class="keywordtype">size_t</span> <span class="comment">/* numIter */</span>)</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  {</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// Add new atom into soluton space.</span></div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    atoms.<a class="code" href="classmlpack_1_1optimization_1_1Atoms.html#a830034b2d5be26b27ff29ad291e3b5cf">AddAtom</a>(s, <span class="keyword">function</span>);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// Reoptimize the solution in the current space.</span></div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    arma::vec b = <span class="keyword">function</span>.Vectorb();</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    atoms.<a class="code" href="classmlpack_1_1optimization_1_1Atoms.html#ab460469896e20e4da91ca01d0c7fb914">CurrentCoeffs</a>() = solve(<span class="keyword">function</span>.MatrixA() * atoms.<a class="code" href="classmlpack_1_1optimization_1_1Atoms.html#a8a7099649ba3a885bbabc0ca8471ab9b">CurrentAtoms</a>(), b);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// x has coords of only the current atoms, recover the solution</span></div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// to the original size.</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    atoms.<a class="code" href="classmlpack_1_1optimization_1_1Atoms.html#a6a718022eff75a138b1fbb9ad0fb6362">RecoverVector</a>(newCoords);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// Prune the support.</span></div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> (isPrune)</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordtype">double</span> oldF = <span class="keyword">function</span>.Evaluate(oldCoords);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordtype">double</span> F = 0.25 * oldF + 0.75 * <span class="keyword">function</span>.Evaluate(newCoords);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      atoms.<a class="code" href="classmlpack_1_1optimization_1_1Atoms.html#a993f1fb0840a8841818528900691385a">PruneSupport</a>(F, <span class="keyword">function</span>);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      atoms.<a class="code" href="classmlpack_1_1optimization_1_1Atoms.html#a6a718022eff75a138b1fbb9ad0fb6362">RecoverVector</a>(newCoords);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; <span class="keyword">private</span>:</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="classmlpack_1_1optimization_1_1Atoms.html">Atoms</a> atoms;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">bool</span> isPrune;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}; <span class="comment">// class UpdateSpan</span></div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;} <span class="comment">// namespace optimization</span></div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;} <span class="comment">// namespace mlpack</span></div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classmlpack_1_1optimization_1_1UpdateSpan_html_a90b102ff5f176e675cc1428cf0047852"><div class="ttname"><a href="classmlpack_1_1optimization_1_1UpdateSpan.html#a90b102ff5f176e675cc1428cf0047852">mlpack::optimization::UpdateSpan::UpdateSpan</a></div><div class="ttdeci">UpdateSpan(const bool isPrune=false)</div><div class="ttdoc">Construct the span update rule. </div><div class="ttdef"><b >Definition:</b> <a href="update__span_8hpp_source.html#l00037">update_span.hpp:37</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1FuncSq_html"><div class="ttname"><a href="classmlpack_1_1optimization_1_1FuncSq.html">mlpack::optimization::FuncSq</a></div><div class="ttdoc">Square loss function . </div><div class="ttdef"><b >Definition:</b> <a href="func__sq_8hpp_source.html#l00025">func_sq.hpp:25</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1Atoms_html"><div class="ttname"><a href="classmlpack_1_1optimization_1_1Atoms.html">mlpack::optimization::Atoms</a></div><div class="ttdoc">Class to hold the information and operations of current atoms in the soluton space. </div><div class="ttdef"><b >Definition:</b> <a href="atoms_8hpp_source.html#l00025">atoms.hpp:25</a></div></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">.hpp </div><div class="ttdef"><b >Definition:</b> <a href="add__to__po_8hpp_source.html#l00021">add_to_po.hpp:21</a></div></div>
+<div class="ttc" id="prereqs_8hpp_html"><div class="ttname"><a href="prereqs_8hpp.html">prereqs.hpp</a></div><div class="ttdoc">The core includes that mlpack expects; standard C++ includes and Armadillo. </div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1Atoms_html_ab460469896e20e4da91ca01d0c7fb914"><div class="ttname"><a href="classmlpack_1_1optimization_1_1Atoms.html#ab460469896e20e4da91ca01d0c7fb914">mlpack::optimization::Atoms::CurrentCoeffs</a></div><div class="ttdeci">const arma::vec &amp; CurrentCoeffs() const</div><div class="ttdoc">Get the current atom coefficients. </div><div class="ttdef"><b >Definition:</b> <a href="atoms_8hpp_source.html#l00198">atoms.hpp:198</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1Atoms_html_a6a718022eff75a138b1fbb9ad0fb6362"><div class="ttname"><a href="classmlpack_1_1optimization_1_1Atoms.html#a6a718022eff75a138b1fbb9ad0fb6362">mlpack::optimization::Atoms::RecoverVector</a></div><div class="ttdeci">void RecoverVector(arma::mat &amp;x)</div><div class="ttdoc">Recover the solution coordinate from the coefficients of current atoms. </div><div class="ttdef"><b >Definition:</b> <a href="atoms_8hpp_source.html#l00061">atoms.hpp:61</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1UpdateSpan_html_a4316657f833573c2e82a0689b6f83aea"><div class="ttname"><a href="classmlpack_1_1optimization_1_1UpdateSpan.html#a4316657f833573c2e82a0689b6f83aea">mlpack::optimization::UpdateSpan::Update</a></div><div class="ttdeci">void Update(FuncSq &amp;function, const arma::mat &amp;oldCoords, const arma::mat &amp;s, arma::mat &amp;newCoords, const size_t)</div><div class="ttdoc">Update rule for FrankWolfe, reoptimize in the span of current solution space. </div><div class="ttdef"><b >Definition:</b> <a href="update__span_8hpp_source.html#l00050">update_span.hpp:50</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1Atoms_html_a993f1fb0840a8841818528900691385a"><div class="ttname"><a href="classmlpack_1_1optimization_1_1Atoms.html#a993f1fb0840a8841818528900691385a">mlpack::optimization::Atoms::PruneSupport</a></div><div class="ttdeci">void PruneSupport(const double F, FuncSq &amp;function)</div><div class="ttdoc">Prune the support, delete previous atoms if they don&amp;#39;t contribute much. </div><div class="ttdef"><b >Definition:</b> <a href="atoms_8hpp_source.html#l00085">atoms.hpp:85</a></div></div>
+<div class="ttc" id="atoms_8hpp_html"><div class="ttname"><a href="atoms_8hpp.html">atoms.hpp</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1Atoms_html_a830034b2d5be26b27ff29ad291e3b5cf"><div class="ttname"><a href="classmlpack_1_1optimization_1_1Atoms.html#a830034b2d5be26b27ff29ad291e3b5cf">mlpack::optimization::Atoms::AddAtom</a></div><div class="ttdeci">void AddAtom(const arma::vec &amp;v, FuncSq &amp;function, const double c=0)</div><div class="ttdoc">Add atom into the solution space. </div><div class="ttdef"><b >Definition:</b> <a href="atoms_8hpp_source.html#l00036">atoms.hpp:36</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1Atoms_html_a8a7099649ba3a885bbabc0ca8471ab9b"><div class="ttname"><a href="classmlpack_1_1optimization_1_1Atoms.html#a8a7099649ba3a885bbabc0ca8471ab9b">mlpack::optimization::Atoms::CurrentAtoms</a></div><div class="ttdeci">const arma::mat &amp; CurrentAtoms() const</div><div class="ttdoc">Get the current atoms. </div><div class="ttdef"><b >Definition:</b> <a href="atoms_8hpp_source.html#l00203">atoms.hpp:203</a></div></div>
+<div class="ttc" id="func__sq_8hpp_html"><div class="ttname"><a href="func__sq_8hpp.html">func_sq.hpp</a></div></div>
+<div class="ttc" id="classmlpack_1_1optimization_1_1UpdateSpan_html"><div class="ttname"><a href="classmlpack_1_1optimization_1_1UpdateSpan.html">mlpack::optimization::UpdateSpan</a></div><div class="ttdoc">Recalculate the optimal solution in the span of all previous solution space, used as update step for ...</div><div class="ttdef"><b >Definition:</b> <a href="update__span_8hpp_source.html#l00029">update_span.hpp:29</a></div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

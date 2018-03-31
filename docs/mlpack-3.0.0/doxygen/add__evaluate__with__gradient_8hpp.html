@@ -1,0 +1,193 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">3.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_44a936ef30fc126706c6284a2fc0c990.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_f7ac9cdfd28b2e882eb44d163e3b98b4.html">core</a></li><li class="navelem"><a class="el" href="dir_c92267e6eea9957c44bb2efde721ca22.html">optimizers</a></li><li class="navelem"><a class="el" href="dir_e8b6ecf762e018bf924207371a26c721.html">function</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
+  <div class="headertitle">
+<div class="title">add_evaluate_with_gradient.hpp File Reference</div>  </div>
+</div>
+<div class="contents">
+<div class="textblock"><div class="dynheader">
+Include dependency graph for add_evaluate_with_gradient.hpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="add__evaluate__with__gradient_8hpp__incl.png" border="0" usemap="#src_2mlpack_2core_2optimizers_2function_2add__evaluate__with__gradient_8hpp" alt=""></img></div>
+<map name="src_2mlpack_2core_2optimizers_2function_2add__evaluate__with__gradient_8hpp" id="src_2mlpack_2core_2optimizers_2function_2add__evaluate__with__gradient_8hpp">
+<area shape="rect" id="node2" href="prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo. " alt="" coords="1150,184,1286,211"></area>
+<area shape="rect" id="node18" href="sfinae__utility_8hpp.html" title="mlpack/core/util/sfinae\l_utility.hpp" alt="" coords="5,348,159,389"></area>
+<area shape="rect" id="node42" href="optimizers_2function_2traits_8hpp.html" title="traits.hpp" alt="" coords="600,109,676,136"></area>
+<area shape="rect" id="node17" href="has__serialize_8hpp.html" title="mlpack/core/data/has\l_serialize.hpp" alt="" coords="146,259,293,300"></area>
+<area shape="rect" id="node21" href="serialization__template__version_8hpp.html" title="mlpack/core/data/serialization\l_template_version.hpp" alt="" coords="1350,259,1545,300"></area>
+<area shape="rect" id="node23" href="arma__traits_8hpp.html" title="mlpack/core/util/arma\l_traits.hpp" alt="" coords="1766,259,1913,300"></area>
+<area shape="rect" id="node24" href="arma__config__check_8hpp.html" title="mlpack/core/util/arma\l_config_check.hpp" alt="" coords="1937,259,2083,300"></area>
+<area shape="rect" id="node26" href="log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="2361,266,2521,293"></area>
+<area shape="rect" id="node34" href="timers_8hpp.html" title="mlpack/core/util/timers.hpp" alt="" coords="2107,266,2286,293"></area>
+<area shape="rect" id="node41" href="deprecated_8hpp.html" title="mlpack/core/util/deprecated.hpp" alt="" coords="2545,266,2752,293"></area>
+<area shape="rect" id="node25" href="arma__config_8hpp.html" title="This is an autogenerated file which contains the configuration of Armadillo at the time mlpack was bu..." alt="" coords="1695,355,1813,382"></area>
+<area shape="rect" id="node29" href="prefixedoutstream_8hpp.html" title="prefixedoutstream.hpp" alt="" coords="2883,355,3033,382"></area>
+<area shape="rect" id="node31" href="nulloutstream_8hpp.html" title="nulloutstream.hpp" alt="" coords="2665,355,2790,382"></area>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="add__evaluate__with__gradient_8hpp__dep__incl.png" border="0" usemap="#src_2mlpack_2core_2optimizers_2function_2add__evaluate__with__gradient_8hppdep" alt=""></img></div>
+<map name="src_2mlpack_2core_2optimizers_2function_2add__evaluate__with__gradient_8hppdep" id="src_2mlpack_2core_2optimizers_2function_2add__evaluate__with__gradient_8hppdep">
+<area shape="rect" id="node2" href="function_8hpp.html" title="src/mlpack/core/optimizers\l/function.hpp" alt="" coords="365,109,544,151"></area>
+<area shape="rect" id="node3" href="lbfgs_8hpp.html" title="src/mlpack/core/optimizers\l/lbfgs/lbfgs.hpp" alt="" coords="365,199,544,240"></area>
+<area shape="rect" id="node4" href="aug__lagrangian_8hpp.html" title="src/mlpack/core/optimizers\l/aug_lagrangian/aug_lagrangian.hpp" alt="" coords="28,295,257,337"></area>
+<area shape="rect" id="node8" href="logistic__regression_8hpp.html" title="src/mlpack/methods\l/logistic_regression\l/logistic_regression.hpp" alt="" coords="282,288,441,344"></area>
+<area shape="rect" id="node10" href="softmax__regression_8hpp.html" title="src/mlpack/methods\l/softmax_regression\l/softmax_regression.hpp" alt="" coords="465,288,631,344"></area>
+<area shape="rect" id="node11" href="sparse__autoencoder_8hpp.html" title="src/mlpack/methods\l/sparse_autoencoder\l/sparse_autoencoder.hpp" alt="" coords="655,288,823,344"></area>
+<area shape="rect" id="node5" href="lrsdp_8hpp.html" title="src/mlpack/core/optimizers\l/sdp/lrsdp.hpp" alt="" coords="5,481,184,523"></area>
+<area shape="rect" id="node7" href="lrsdp__function_8hpp.html" title="src/mlpack/core/optimizers\l/sdp/lrsdp_function.hpp" alt="" coords="69,392,248,433"></area>
+<area shape="rect" id="node6" href="matrix__completion_8hpp.html" title="src/mlpack/methods\l/matrix_completion/matrix\l_completion.hpp" alt="" coords="9,571,181,627"></area>
+<area shape="rect" id="node9" href="test__function__tools_8hpp.html" title="src/mlpack/tests/test\l_function_tools.hpp" alt="" coords="289,392,434,433"></area>
+</map>
+</div>
+</div>
+<p ><a href="add__evaluate__with__gradient_8hpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1AddEvaluateWithGradient.html">AddEvaluateWithGradient&lt; FunctionType, HasEvaluateGradient, HasEvaluateWithGradient &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classmlpack_1_1optimization_1_1AddEvaluateWithGradient.html" title="The AddEvaluateWithGradient mixin class will provide an EvaluateWithGradient() method if the given Fu...">AddEvaluateWithGradient</a> mixin class will provide an <a class="el" href="classmlpack_1_1optimization_1_1AddEvaluateWithGradient.html#a6e4b66f14de06dbed4277c8362a220b9">EvaluateWithGradient()</a> method if the given FunctionType has both Evaluate() and Gradient(), or it will provide nothing otherwise.  <a href="classmlpack_1_1optimization_1_1AddEvaluateWithGradient.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1AddEvaluateWithGradient_3_01FunctionType_00_01HasEvaluateGradient_00_01true_01_4.html">AddEvaluateWithGradient&lt; FunctionType, HasEvaluateGradient, true &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reflect the existing <a class="el" href="classmlpack_1_1optimization_1_1AddEvaluateWithGradient_3_01FunctionType_00_01HasEvaluateGradient_00_01true_01_4.html#a84a35c02e61e6affb74cadce9b0ea646">EvaluateWithGradient()</a>.  <a href="classmlpack_1_1optimization_1_1AddEvaluateWithGradient_3_01FunctionType_00_01HasEvaluateGradient_00_01true_01_4.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1AddEvaluateWithGradient_3_01FunctionType_00_01true_00_01false_01_4.html">AddEvaluateWithGradient&lt; FunctionType, true, false &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the FunctionType has Evaluate() and Gradient(), provide <a class="el" href="classmlpack_1_1optimization_1_1AddEvaluateWithGradient_3_01FunctionType_00_01true_00_01false_01_4.html#a84a35c02e61e6affb74cadce9b0ea646" title="Return both the evaluated objective function and its gradient, storing the gradient in the given matr...">EvaluateWithGradient()</a>.  <a href="classmlpack_1_1optimization_1_1AddEvaluateWithGradient_3_01FunctionType_00_01true_00_01false_01_4.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1AddEvaluateWithGradientConst.html">AddEvaluateWithGradientConst&lt; FunctionType, HasEvaluateGradient, HasEvaluateWithGradient &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classmlpack_1_1optimization_1_1AddEvaluateWithGradient.html" title="The AddEvaluateWithGradient mixin class will provide an EvaluateWithGradient() method if the given Fu...">AddEvaluateWithGradient</a> mixin class will provide an EvaluateWithGradient() const method if the given FunctionType has both Evaluate() const and Gradient() const, or it will provide nothing otherwise.  <a href="classmlpack_1_1optimization_1_1AddEvaluateWithGradientConst.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1AddEvaluateWithGradientConst_3_01FunctionType_00_01HasEvaluateGradient_00_01true_01_4.html">AddEvaluateWithGradientConst&lt; FunctionType, HasEvaluateGradient, true &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reflect the existing <a class="el" href="classmlpack_1_1optimization_1_1AddEvaluateWithGradientConst_3_01FunctionType_00_01HasEvaluateGradient_00_01true_01_4.html#a4d5743de3cb045a26f36e4a7dbdecb2a">EvaluateWithGradient()</a>.  <a href="classmlpack_1_1optimization_1_1AddEvaluateWithGradientConst_3_01FunctionType_00_01HasEvaluateGradient_00_01true_01_4.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1AddEvaluateWithGradientConst_3_01FunctionType_00_01true_00_01false_01_4.html">AddEvaluateWithGradientConst&lt; FunctionType, true, false &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the FunctionType has Evaluate() const and Gradient() const, provide EvaluateWithGradient() const.  <a href="classmlpack_1_1optimization_1_1AddEvaluateWithGradientConst_3_01FunctionType_00_01true_00_01false_01_4.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1AddEvaluateWithGradientStatic.html">AddEvaluateWithGradientStatic&lt; FunctionType, HasEvaluateGradient, HasEvaluateWithGradient &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classmlpack_1_1optimization_1_1AddEvaluateWithGradientStatic.html" title="The AddEvaluateWithGradientStatic mixin class will provide a static EvaluateWithGradient() method if ...">AddEvaluateWithGradientStatic</a> mixin class will provide a static <a class="el" href="classmlpack_1_1optimization_1_1AddEvaluateWithGradientStatic.html#a85ab974f89e61e95f33e92f8967bdc1e">EvaluateWithGradient()</a> method if the given FunctionType has both static Evaluate() and static Gradient(), or it will provide nothing otherwise.  <a href="classmlpack_1_1optimization_1_1AddEvaluateWithGradientStatic.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1AddEvaluateWithGradientStatic_3_01FunctionType_00_01HasEvaluateGradient_00_01true_01_4.html">AddEvaluateWithGradientStatic&lt; FunctionType, HasEvaluateGradient, true &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reflect the existing <a class="el" href="classmlpack_1_1optimization_1_1AddEvaluateWithGradientStatic_3_01FunctionType_00_01HasEvaluateGradient_00_01true_01_4.html#a3c127d36c16993b99309eaeb671709a8">EvaluateWithGradient()</a>.  <a href="classmlpack_1_1optimization_1_1AddEvaluateWithGradientStatic_3_01FunctionType_00_01HasEvaluateGradient_00_01true_01_4.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1AddEvaluateWithGradientStatic_3_01FunctionType_00_01true_00_01false_01_4.html">AddEvaluateWithGradientStatic&lt; FunctionType, true, false &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the FunctionType has static Evaluate() and static Gradient(), provide static <a class="el" href="classmlpack_1_1optimization_1_1AddEvaluateWithGradientStatic_3_01FunctionType_00_01true_00_01false_01_4.html#a3c127d36c16993b99309eaeb671709a8" title="Return both the evaluated objective function and its gradient, storing the gradient in the given matr...">EvaluateWithGradient()</a>.  <a href="classmlpack_1_1optimization_1_1AddEvaluateWithGradientStatic_3_01FunctionType_00_01true_00_01false_01_4.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacemlpack"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack.html">mlpack</a></td></tr>
+<tr class="memdesc:namespacemlpack"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br />.hpp </br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacemlpack_1_1optimization"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization.html">mlpack::optimization</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="section author"><dt >Author</dt><dd >Ryan Curtin</dd></dl>
+<p >This file defines a mixin for the Function class that will ensure that the EvaluateWithGradient() function is available if possible.</p>
+<p >mlpack is free software; you may redistribute it and/or modify it under the terms of the 3-clause BSD license. You should have received a copy of the 3-clause BSD license along with mlpack. If not, see <a href="http://www.opensource.org/licenses/BSD-3-Clause">http://www.opensource.org/licenses/BSD-3-Clause</a> for more information. </p>
+
+<p class="definition">Definition in file <a class="el" href="add__evaluate__with__gradient_8hpp_source.html">add_evaluate_with_gradient.hpp</a>.</p>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

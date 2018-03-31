@@ -1,0 +1,49 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+</head><link rel="stylesheet" href="../../../style.css" /></link><link rel="stylesheet" href="../../style-python.css" /></link><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" /></link>
+
+
+
+<body ><br /></br>
+
+
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext pythonpage">
+<h1><center>mlpack.gmm_probability</center></h1>
+<font class="titlecode">gmm_probability(...)</font><br />
+<font class="titlebold">GMM Probability Calculator</font>
+<p class="importcode">&gt;&gt;&gt; from mlpack import gmm_probability</p><p>This program calculates the probability that given points came from a given GMM (that is, P(X | gmm)).  The GMM is specified with the <font class="code">'input_model'</font> parameter, and the points are specified with the <font class="code">'input'</font> parameter.  The output probabilities may be saved via the <font class="code">'output'</font> output parameter.</p>
+</p>
+<p>So, for example, to calculate the probabilities of each point in <font class="code">'points'</font> coming from the pre-trained GMM <font class="code">'gmm'</font>, while storing those probabilities in <font class="code">'probs'</font>, the following command could be used:</p>
+</p>
+<p class="codeblock"><font class="code">&gt;&gt;&gt; gmm_probability(input_model=gmm, input=points)<br />
+&gt;&gt;&gt; probs = output['output']</font></p><h2>input options</h2>
+<ul>
+<li><font class="code">input</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: <font class="required">[required]</font> Input matrix to calculate probabilities of.</li><li><font class="code">input_model</font> <font class="codetype">(mlpack.GMMType)</font>: <font class="required">[required]</font> Input GMM to use as model.</li><li><font class="code">copy_all_inputs</font> <font class="codetype">(bool)</font>: If specified, all input parameters will be deep copied before the method is run.  This is useful for debugging problems where the input parameters are being modified by the algorithm, but can slow down the code.</li><li><font class="code">verbose</font> <font class="codetype">(bool)</font>: Display informational messages and the full list of parameters and timers at the end of execution.</li></ul>
+<h2>output options</h2>
+<p>The return value from the binding is a dict containing the following elements:</p>
+<ul><li><font class="code">output</font> <font class="codetype">(numpy matrix, float dtype)</font>: Matrix to store calculated probabilities in.</li><ul>
+</ul>
+</div>
+</body>
+</html>

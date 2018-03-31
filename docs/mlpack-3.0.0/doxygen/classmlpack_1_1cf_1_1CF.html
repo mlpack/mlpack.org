@@ -1,0 +1,854 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">3.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1cf.html">cf</a></li><li class="navelem"><a class="el" href="classmlpack_1_1cf_1_1CF.html">CF</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="classmlpack_1_1cf_1_1CF-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">CF Class Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >This class implements Collaborative Filtering (<a class="el" href="classmlpack_1_1cf_1_1CF.html" title="This class implements Collaborative Filtering (CF). ">CF</a>).  
+ <a href="classmlpack_1_1cf_1_1CF.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3936da08e3e4189b4b9bfc74ce35480f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a3936da08e3e4189b4b9bfc74ce35480f">CF</a> (const size_t numUsersForSimilarity=5, const size_t rank=0)</td></tr>
+<tr class="memdesc:a3936da08e3e4189b4b9bfc74ce35480f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the <a class="el" href="classmlpack_1_1cf_1_1CF.html" title="This class implements Collaborative Filtering (CF). ">CF</a> object without performing any factorization.  <a href="#a3936da08e3e4189b4b9bfc74ce35480f">More...</a><br /></br></td></tr>
+<tr class="separator:a3936da08e3e4189b4b9bfc74ce35480f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95df213233731a3df5fd5f404a8aa52b"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FactorizerType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">amf::NMFALSFactorizer</div></div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a95df213233731a3df5fd5f404a8aa52b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a95df213233731a3df5fd5f404a8aa52b">CF</a> (const arma::mat &amp;data, FactorizerType factorizer=FactorizerType(), const size_t numUsersForSimilarity=5, const size_t rank=0)</td></tr>
+<tr class="memdesc:a95df213233731a3df5fd5f404a8aa52b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the <a class="el" href="classmlpack_1_1cf_1_1CF.html" title="This class implements Collaborative Filtering (CF). ">CF</a> object using an instantiated factorizer, immediately factorizing the given data to create a model.  <a href="#a95df213233731a3df5fd5f404a8aa52b">More...</a><br /></br></td></tr>
+<tr class="separator:a95df213233731a3df5fd5f404a8aa52b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d35fb551c2bf475c40c83738b7e800b"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FactorizerType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">amf::NMFALSFactorizer</div></div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a2d35fb551c2bf475c40c83738b7e800b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a2d35fb551c2bf475c40c83738b7e800b">CF</a> (const arma::sp_mat &amp;data, FactorizerType factorizer=FactorizerType(), const size_t numUsersForSimilarity=5, const size_t rank=0, const typename <a class="el" href="namespacestd.html#a93e9cb7fadbcfaa2afb5b94058b8e34c">std::enable_if_t</a>&lt; !<a class="el" href="structmlpack_1_1cf_1_1FactorizerTraits.html">FactorizerTraits</a>&lt; FactorizerType &gt;::UsesCoordinateList &gt; *=0)</td></tr>
+<tr class="memdesc:a2d35fb551c2bf475c40c83738b7e800b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the <a class="el" href="classmlpack_1_1cf_1_1CF.html" title="This class implements Collaborative Filtering (CF). ">CF</a> object using an instantiated factorizer, immediately factorizing the given data to create a model.  <a href="#a2d35fb551c2bf475c40c83738b7e800b">More...</a><br /></br></td></tr>
+<tr class="separator:a2d35fb551c2bf475c40c83738b7e800b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b45ccc1241c683ffaaf1be745b438d0"><td class="memItemLeft" align="right" valign="top">const arma::sp_mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a9b45ccc1241c683ffaaf1be745b438d0">CleanedData</a> () const</td></tr>
+<tr class="memdesc:a9b45ccc1241c683ffaaf1be745b438d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the cleaned data matrix.  <a href="#a9b45ccc1241c683ffaaf1be745b438d0">More...</a><br /></br></td></tr>
+<tr class="separator:a9b45ccc1241c683ffaaf1be745b438d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ebe43cb2a89c6695364390c75a87092"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a0ebe43cb2a89c6695364390c75a87092">GetRecommendations</a> (const size_t numRecs, arma::Mat&lt; size_t &gt; &amp;recommendations)</td></tr>
+<tr class="memdesc:a0ebe43cb2a89c6695364390c75a87092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the given number of recommendations for all users.  <a href="#a0ebe43cb2a89c6695364390c75a87092">More...</a><br /></br></td></tr>
+<tr class="separator:a0ebe43cb2a89c6695364390c75a87092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a407bfd2496fccf3e3ab7410e10e598b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a407bfd2496fccf3e3ab7410e10e598b9">GetRecommendations</a> (const size_t numRecs, arma::Mat&lt; size_t &gt; &amp;recommendations, const arma::Col&lt; size_t &gt; &amp;users)</td></tr>
+<tr class="memdesc:a407bfd2496fccf3e3ab7410e10e598b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the given number of recommendations for the specified users.  <a href="#a407bfd2496fccf3e3ab7410e10e598b9">More...</a><br /></br></td></tr>
+<tr class="separator:a407bfd2496fccf3e3ab7410e10e598b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71e6a6119b9efde17f4112c6d82d9233"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a71e6a6119b9efde17f4112c6d82d9233">H</a> () const</td></tr>
+<tr class="memdesc:a71e6a6119b9efde17f4112c6d82d9233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Item Matrix.  <a href="#a71e6a6119b9efde17f4112c6d82d9233">More...</a><br /></br></td></tr>
+<tr class="separator:a71e6a6119b9efde17f4112c6d82d9233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab907e6b81f7b38e654d185077603466f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#ab907e6b81f7b38e654d185077603466f">NumUsersForSimilarity</a> (const size_t num)</td></tr>
+<tr class="memdesc:ab907e6b81f7b38e654d185077603466f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets number of users for calculating similarity.  <a href="#ab907e6b81f7b38e654d185077603466f">More...</a><br /></br></td></tr>
+<tr class="separator:ab907e6b81f7b38e654d185077603466f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90464e33b6300c307c7d4741f3c5f791"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a90464e33b6300c307c7d4741f3c5f791">NumUsersForSimilarity</a> () const</td></tr>
+<tr class="memdesc:a90464e33b6300c307c7d4741f3c5f791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets number of users for calculating similarity.  <a href="#a90464e33b6300c307c7d4741f3c5f791">More...</a><br /></br></td></tr>
+<tr class="separator:a90464e33b6300c307c7d4741f3c5f791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a511dc5b88d56e4d504250ceae0a4cc31"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a511dc5b88d56e4d504250ceae0a4cc31">Predict</a> (const size_t user, const size_t item) const</td></tr>
+<tr class="memdesc:a511dc5b88d56e4d504250ceae0a4cc31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Predict the rating of an item by a particular user.  <a href="#a511dc5b88d56e4d504250ceae0a4cc31">More...</a><br /></br></td></tr>
+<tr class="separator:a511dc5b88d56e4d504250ceae0a4cc31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd41f4cdaf06f667c516de43cf55b3da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#acd41f4cdaf06f667c516de43cf55b3da">Predict</a> (const arma::Mat&lt; size_t &gt; &amp;combinations, arma::vec &amp;predictions) const</td></tr>
+<tr class="memdesc:acd41f4cdaf06f667c516de43cf55b3da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Predict ratings for each user-item combination in the given coordinate list matrix.  <a href="#acd41f4cdaf06f667c516de43cf55b3da">More...</a><br /></br></td></tr>
+<tr class="separator:acd41f4cdaf06f667c516de43cf55b3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6abdfd96dee1459e1640a6d6e1d1eec4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a6abdfd96dee1459e1640a6d6e1d1eec4">Rank</a> (const size_t rankValue)</td></tr>
+<tr class="memdesc:a6abdfd96dee1459e1640a6d6e1d1eec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets rank parameter for matrix factorization.  <a href="#a6abdfd96dee1459e1640a6d6e1d1eec4">More...</a><br /></br></td></tr>
+<tr class="separator:a6abdfd96dee1459e1640a6d6e1d1eec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe1447c5e7fa184cbf19ced57a50b7b6"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#afe1447c5e7fa184cbf19ced57a50b7b6">Rank</a> () const</td></tr>
+<tr class="memdesc:afe1447c5e7fa184cbf19ced57a50b7b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets rank parameter for matrix factorization.  <a href="#afe1447c5e7fa184cbf19ced57a50b7b6">More...</a><br /></br></td></tr>
+<tr class="separator:afe1447c5e7fa184cbf19ced57a50b7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0dd9205158ccf7bcfcd8ff81f79c927"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:af0dd9205158ccf7bcfcd8ff81f79c927"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#af0dd9205158ccf7bcfcd8ff81f79c927">serialize</a> (Archive &amp;ar, const unsigned int)</td></tr>
+<tr class="memdesc:af0dd9205158ccf7bcfcd8ff81f79c927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the <a class="el" href="classmlpack_1_1cf_1_1CF.html" title="This class implements Collaborative Filtering (CF). ">CF</a> model to the given archive.  <a href="#af0dd9205158ccf7bcfcd8ff81f79c927">More...</a><br /></br></td></tr>
+<tr class="separator:af0dd9205158ccf7bcfcd8ff81f79c927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb1a8bf644f064e7159d29bcbe585c3e"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FactorizerType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">amf::NMFALSFactorizer</div></div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:aeb1a8bf644f064e7159d29bcbe585c3e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#aeb1a8bf644f064e7159d29bcbe585c3e">Train</a> (const arma::mat &amp;data, FactorizerType factorizer=FactorizerType())</td></tr>
+<tr class="memdesc:aeb1a8bf644f064e7159d29bcbe585c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Train the <a class="el" href="classmlpack_1_1cf_1_1CF.html" title="This class implements Collaborative Filtering (CF). ">CF</a> model (i.e.  <a href="#aeb1a8bf644f064e7159d29bcbe585c3e">More...</a><br /></br></td></tr>
+<tr class="separator:aeb1a8bf644f064e7159d29bcbe585c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc3d05a3e912aadef13d01a7e2ef54d5"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FactorizerType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">amf::NMFALSFactorizer</div></div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:acc3d05a3e912aadef13d01a7e2ef54d5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#acc3d05a3e912aadef13d01a7e2ef54d5">Train</a> (const arma::sp_mat &amp;data, FactorizerType factorizer=FactorizerType(), const typename <a class="el" href="namespacestd.html#a93e9cb7fadbcfaa2afb5b94058b8e34c">std::enable_if_t</a>&lt; !<a class="el" href="structmlpack_1_1cf_1_1FactorizerTraits.html">FactorizerTraits</a>&lt; FactorizerType &gt;::UsesCoordinateList &gt; *=0)</td></tr>
+<tr class="memdesc:acc3d05a3e912aadef13d01a7e2ef54d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Train the <a class="el" href="classmlpack_1_1cf_1_1CF.html" title="This class implements Collaborative Filtering (CF). ">CF</a> model (i.e.  <a href="#acc3d05a3e912aadef13d01a7e2ef54d5">More...</a><br /></br></td></tr>
+<tr class="separator:acc3d05a3e912aadef13d01a7e2ef54d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f733dde66e23287758de984b5151e36"><td class="memItemLeft" align="right" valign="top">const arma::mat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a0f733dde66e23287758de984b5151e36">W</a> () const</td></tr>
+<tr class="memdesc:a0f733dde66e23287758de984b5151e36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the User Matrix.  <a href="#a0f733dde66e23287758de984b5151e36">More...</a><br /></br></td></tr>
+<tr class="separator:a0f733dde66e23287758de984b5151e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a6606a419e5db3e8218a4f0c6b1c81258"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1cf_1_1CF.html#a6606a419e5db3e8218a4f0c6b1c81258">CleanData</a> (const arma::mat &amp;data, arma::sp_mat &amp;cleanedData)</td></tr>
+<tr class="memdesc:a6606a419e5db3e8218a4f0c6b1c81258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the User, Item, Value Matrix to User-Item Table.  <a href="#a6606a419e5db3e8218a4f0c6b1c81258">More...</a><br /></br></td></tr>
+<tr class="separator:a6606a419e5db3e8218a4f0c6b1c81258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This class implements Collaborative Filtering (<a class="el" href="classmlpack_1_1cf_1_1CF.html" title="This class implements Collaborative Filtering (CF). ">CF</a>). </p>
+<p >This implementation presently supports Alternating Least Squares (ALS) for collaborative filtering.</p>
+<p >A simple example of how to run Collaborative Filtering is shown below.</p>
+<div class="fragment"><div class="line"><span class="keyword">extern</span> arma::mat data; <span class="comment">// (user, item, rating) table</span></div><div class="line"><span class="keyword">extern</span> arma::Col&lt;size_t&gt; users; <span class="comment">// users seeking recommendations</span></div><div class="line">arma::Mat&lt;size_t&gt; recommendations; <span class="comment">// Recommendations</span></div><div class="line"></div><div class="line"><a class="code" href="classmlpack_1_1cf_1_1CF.html#a3936da08e3e4189b4b9bfc74ce35480f">CF</a> cf(data); <span class="comment">// Default options.</span></div><div class="line"></div><div class="line"><span class="comment">// Generate 10 recommendations for all users.</span></div><div class="line">cf.GetRecommendations(10, recommendations);</div><div class="line"></div><div class="line"><span class="comment">// Generate 10 recommendations for specified users.</span></div><div class="line">cf.GetRecommendations(10, recommendations, users);</div></div><p >The data matrix is a (user, item, rating) table. Each column in the matrix should have three rows. The first represents the user; the second represents the item; and the third represents the rating. The user and item, while they are in a matrix that holds doubles, should hold integer (or size_t) values. The user and item indices are assumed to start at 0.</p>
+<dl class="tparams"><dt >Template Parameters</dt><dd >
+  <table class="tparams">
+    <tr ><td class="paramname">FactorizerType</td><td >The type of matrix factorization to use to decompose the rating matrix (a W and H matrix). This must implement the method Apply(arma::sp_mat&amp; data, size_t rank, arma::mat&amp; W, arma::mat&amp; H). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="cf_8hpp_source.html#l00080">80</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3936da08e3e4189b4b9bfc74ce35480f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3936da08e3e4189b4b9bfc74ce35480f">&#9670;&nbsp;</a></span>CF() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1cf_1_1CF.html">CF</a> </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >numUsersForSimilarity</em> = <code >5</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >rank</em> = <code >0</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Initialize the <a class="el" href="classmlpack_1_1cf_1_1CF.html" title="This class implements Collaborative Filtering (CF). ">CF</a> object without performing any factorization. </p>
+<p >Be sure to call <a class="el" href="classmlpack_1_1cf_1_1CF.html#aeb1a8bf644f064e7159d29bcbe585c3e" title="Train the CF model (i.e. ">Train()</a> before calling <a class="el" href="classmlpack_1_1cf_1_1CF.html#a0ebe43cb2a89c6695364390c75a87092" title="Generates the given number of recommendations for all users. ">GetRecommendations()</a> or any other functions! </p>
+
+</div>
+</div>
+<a id="a95df213233731a3df5fd5f404a8aa52b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95df213233731a3df5fd5f404a8aa52b">&#9670;&nbsp;</a></span>CF() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1cf_1_1CF.html">CF</a> </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >data</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">FactorizerType&#160;</td>
+          <td class="paramname"><em >factorizer</em> = <code >FactorizerType()</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >numUsersForSimilarity</em> = <code >5</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >rank</em> = <code >0</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Initialize the <a class="el" href="classmlpack_1_1cf_1_1CF.html" title="This class implements Collaborative Filtering (CF). ">CF</a> object using an instantiated factorizer, immediately factorizing the given data to create a model. </p>
+<p >There are parameters that can be set; default values are provided for each of them. If the rank is left unset (or is set to 0), a simple density-based heuristic will be used to choose a rank.</p>
+<p >The provided dataset should be a coordinate list; that is, a 3-row matrix where each column corresponds to a (user, item, rating) entry in the matrix.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">data</td><td >Data matrix: coordinate list or dense matrix. </td></tr>
+    <tr ><td class="paramname">factorizer</td><td >Instantiated factorizer object. </td></tr>
+    <tr ><td class="paramname">numUsersForSimilarity</td><td >Size of the neighborhood. </td></tr>
+    <tr ><td class="paramname">rank</td><td >Rank parameter for matrix factorization. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2d35fb551c2bf475c40c83738b7e800b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d35fb551c2bf475c40c83738b7e800b">&#9670;&nbsp;</a></span>CF() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1cf_1_1CF.html">CF</a> </td>
+          <td >(</td>
+          <td class="paramtype">const arma::sp_mat &amp;&#160;</td>
+          <td class="paramname"><em >data</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">FactorizerType&#160;</td>
+          <td class="paramname"><em >factorizer</em> = <code >FactorizerType()</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >numUsersForSimilarity</em> = <code >5</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >rank</em> = <code >0</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const typename <a class="el" href="namespacestd.html#a93e9cb7fadbcfaa2afb5b94058b8e34c">std::enable_if_t</a>&lt; !<a class="el" href="structmlpack_1_1cf_1_1FactorizerTraits.html">FactorizerTraits</a>&lt; FactorizerType &gt;::UsesCoordinateList &gt; *&#160;</td>
+          <td class="paramname"> = <code >0</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Initialize the <a class="el" href="classmlpack_1_1cf_1_1CF.html" title="This class implements Collaborative Filtering (CF). ">CF</a> object using an instantiated factorizer, immediately factorizing the given data to create a model. </p>
+<p >There are parameters that can be set; default values are provided for each of them. If the rank is left unset (or is set to 0), a simple density-based heuristic will be used to choose a rank. Data will be considered in the format of items vs. users and will be passed directly to the factorizer without cleaning. This overload of the constructor will only be available if the factorizer does not use a coordinate list (i.e. if UsesCoordinateList is false).</p>
+<p >The U and T template parameters are for SFINAE, so that this overload is only available when the FactorizerType uses a coordinate list.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">data</td><td >Sparse matrix data. </td></tr>
+    <tr ><td class="paramname">factorizer</td><td >Instantiated factorizer object. </td></tr>
+    <tr ><td class="paramname">numUsersForSimilarity</td><td >Size of the neighborhood. </td></tr>
+    <tr ><td class="paramname">rank</td><td >Rank parameter for matrix factorization. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6606a419e5db3e8218a4f0c6b1c81258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6606a419e5db3e8218a4f0c6b1c81258">&#9670;&nbsp;</a></span>CleanData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">static void CleanData </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >data</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::sp_mat &amp;&#160;</td>
+          <td class="paramname"><em >cleanedData</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Converts the User, Item, Value Matrix to User-Item Table. </p>
+
+</div>
+</div>
+<a id="a9b45ccc1241c683ffaaf1be745b438d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b45ccc1241c683ffaaf1be745b438d0">&#9670;&nbsp;</a></span>CleanedData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::sp_mat&amp; CleanedData </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the cleaned data matrix. </p>
+
+<p class="definition">Definition at line <a class="el" href="cf_8hpp_source.html#l00199">199</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0ebe43cb2a89c6695364390c75a87092"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ebe43cb2a89c6695364390c75a87092">&#9670;&nbsp;</a></span>GetRecommendations() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void GetRecommendations </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >numRecs</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::Mat&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >recommendations</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Generates the given number of recommendations for all users. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">numRecs</td><td >Number of Recommendations </td></tr>
+    <tr ><td class="paramname">recommendations</td><td >Matrix to save recommendations into. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a407bfd2496fccf3e3ab7410e10e598b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a407bfd2496fccf3e3ab7410e10e598b9">&#9670;&nbsp;</a></span>GetRecommendations() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void GetRecommendations </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >numRecs</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::Mat&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >recommendations</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const arma::Col&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >users</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Generates the given number of recommendations for the specified users. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">numRecs</td><td >Number of Recommendations </td></tr>
+    <tr ><td class="paramname">recommendations</td><td >Matrix to save recommendations </td></tr>
+    <tr ><td class="paramname">users</td><td >Users for which recommendations are to be generated </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a71e6a6119b9efde17f4112c6d82d9233"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71e6a6119b9efde17f4112c6d82d9233">&#9670;&nbsp;</a></span>H()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::mat&amp; H </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the Item Matrix. </p>
+
+<p class="definition">Definition at line <a class="el" href="cf_8hpp_source.html#l00197">197</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ab907e6b81f7b38e654d185077603466f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab907e6b81f7b38e654d185077603466f">&#9670;&nbsp;</a></span>NumUsersForSimilarity() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void NumUsersForSimilarity </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >num</em></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Sets number of users for calculating similarity. </p>
+
+<p class="definition">Definition at line <a class="el" href="cf_8hpp_source.html#l00165">165</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="log_8hpp_source.html#l00087">Log::Warn</a>.</p>
+
+</div>
+</div>
+<a id="a90464e33b6300c307c7d4741f3c5f791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90464e33b6300c307c7d4741f3c5f791">&#9670;&nbsp;</a></span>NumUsersForSimilarity() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t NumUsersForSimilarity </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Gets number of users for calculating similarity. </p>
+
+<p class="definition">Definition at line <a class="el" href="cf_8hpp_source.html#l00177">177</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a511dc5b88d56e4d504250ceae0a4cc31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a511dc5b88d56e4d504250ceae0a4cc31">&#9670;&nbsp;</a></span>Predict() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Predict </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >user</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >item</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Predict the rating of an item by a particular user. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">user</td><td >User to predict for. </td></tr>
+    <tr ><td class="paramname">item</td><td >Item to predict for. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acd41f4cdaf06f667c516de43cf55b3da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd41f4cdaf06f667c516de43cf55b3da">&#9670;&nbsp;</a></span>Predict() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Predict </td>
+          <td >(</td>
+          <td class="paramtype">const arma::Mat&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em >combinations</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::vec &amp;&#160;</td>
+          <td class="paramname"><em >predictions</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Predict ratings for each user-item combination in the given coordinate list matrix. </p>
+<p >The matrix 'combinations' should have two rows and number of columns equal to the number of desired predictions. The first element of each column corresponds to the user index, and the second element of each column corresponds to the item index. The output vector 'predictions' will have length equal to combinations.n_cols, and predictions[i] will be equal to the prediction for the user/item combination in combinations.col(i).</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">combinations</td><td >User/item combinations to predict. </td></tr>
+    <tr ><td class="paramname">predictions</td><td >Predicted ratings for each user/item combination. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6abdfd96dee1459e1640a6d6e1d1eec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6abdfd96dee1459e1640a6d6e1d1eec4">&#9670;&nbsp;</a></span>Rank() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Rank </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >rankValue</em></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Sets rank parameter for matrix factorization. </p>
+
+<p class="definition">Definition at line <a class="el" href="cf_8hpp_source.html#l00183">183</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
+
+</div>
+</div>
+<a id="afe1447c5e7fa184cbf19ced57a50b7b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe1447c5e7fa184cbf19ced57a50b7b6">&#9670;&nbsp;</a></span>Rank() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t Rank </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Gets rank parameter for matrix factorization. </p>
+
+<p class="definition">Definition at line <a class="el" href="cf_8hpp_source.html#l00189">189</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af0dd9205158ccf7bcfcd8ff81f79c927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0dd9205158ccf7bcfcd8ff81f79c927">&#9670;&nbsp;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void serialize </td>
+          <td >(</td>
+          <td class="paramtype">Archive &amp;&#160;</td>
+          <td class="paramname"><em >ar</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em >int</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Serialize the <a class="el" href="classmlpack_1_1cf_1_1CF.html" title="This class implements Collaborative Filtering (CF). ">CF</a> model to the given archive. </p>
+
+</div>
+</div>
+<a id="aeb1a8bf644f064e7159d29bcbe585c3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb1a8bf644f064e7159d29bcbe585c3e">&#9670;&nbsp;</a></span>Train() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Train </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >data</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">FactorizerType&#160;</td>
+          <td class="paramname"><em >factorizer</em> = <code >FactorizerType()</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Train the <a class="el" href="classmlpack_1_1cf_1_1CF.html" title="This class implements Collaborative Filtering (CF). ">CF</a> model (i.e. </p>
+<p >factorize the input matrix) using the parameters that have already been set for the model (specifically, the rank parameter), and optionally, using the given FactorizerType.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">data</td><td >Input dataset; coordinate list or dense matrix. </td></tr>
+    <tr ><td class="paramname">factorizer</td><td >Instantiated factorizer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acc3d05a3e912aadef13d01a7e2ef54d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc3d05a3e912aadef13d01a7e2ef54d5">&#9670;&nbsp;</a></span>Train() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Train </td>
+          <td >(</td>
+          <td class="paramtype">const arma::sp_mat &amp;&#160;</td>
+          <td class="paramname"><em >data</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">FactorizerType&#160;</td>
+          <td class="paramname"><em >factorizer</em> = <code >FactorizerType()</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const typename <a class="el" href="namespacestd.html#a93e9cb7fadbcfaa2afb5b94058b8e34c">std::enable_if_t</a>&lt; !<a class="el" href="structmlpack_1_1cf_1_1FactorizerTraits.html">FactorizerTraits</a>&lt; FactorizerType &gt;::UsesCoordinateList &gt; *&#160;</td>
+          <td class="paramname"> = <code >0</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Train the <a class="el" href="classmlpack_1_1cf_1_1CF.html" title="This class implements Collaborative Filtering (CF). ">CF</a> model (i.e. </p>
+<p >factorize the input matrix) using the parameters that have already been set for the model (specifically, the rank parameter), and optionally, using the given FactorizerType.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">data</td><td >Sparse matrix data. </td></tr>
+    <tr ><td class="paramname">factorizer</td><td >Instantiated factorizer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0f733dde66e23287758de984b5151e36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f733dde66e23287758de984b5151e36">&#9670;&nbsp;</a></span>W()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const arma::mat&amp; W </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the User Matrix. </p>
+
+<p class="definition">Definition at line <a class="el" href="cf_8hpp_source.html#l00195">195</a> of file <a class="el" href="cf_8hpp_source.html">cf.hpp</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/methods/cf/<a class="el" href="cf_8hpp_source.html">cf.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

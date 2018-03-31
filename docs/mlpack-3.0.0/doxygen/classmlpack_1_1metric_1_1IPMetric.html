@@ -1,0 +1,367 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">3.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1metric.html">metric</a></li><li class="navelem"><a class="el" href="classmlpack_1_1metric_1_1IPMetric.html">IPMetric</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classmlpack_1_1metric_1_1IPMetric-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">IPMetric&lt; KernelType &gt; Class Template Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >The inner product metric, <a class="el" href="classmlpack_1_1metric_1_1IPMetric.html" title="The inner product metric, IPMetric, takes a given Mercer kernel (KernelType), and when Evaluate() is ...">IPMetric</a>, takes a given Mercer kernel (KernelType), and when <a class="el" href="classmlpack_1_1metric_1_1IPMetric.html#a55e03560fb8c7923de4a43df9a265437" title="Evaluate the metric. ">Evaluate()</a> is called, returns the distance between the two points in kernel space:  
+ <a href="classmlpack_1_1metric_1_1IPMetric.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for IPMetric&lt; KernelType &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmlpack_1_1metric_1_1IPMetric__inherit__graph.png" border="0" usemap="#IPMetric_3_01KernelType_01_4_inherit__map" alt="Inheritance graph"></img></div>
+<map name="IPMetric_3_01KernelType_01_4_inherit__map" id="IPMetric_3_01KernelType_01_4_inherit__map">
+<area shape="rect" id="node2" href="classmlpack_1_1metric_1_1IPMetric.html" title="IPMetric\&lt; mlpack::kernel\l::GaussianKernel \&gt;" alt="" coords="417,26,585,67"></area>
+<area shape="rect" id="node3" href="classmlpack_1_1metric_1_1IPMetric.html" title="IPMetric\&lt; mlpack::kernel\l::TriangularKernel \&gt;" alt="" coords="417,91,585,133"></area>
+<area shape="rect" id="node4" href="classmlpack_1_1metric_1_1IPMetric.html" title="IPMetric\&lt; mlpack::kernel\l::EpanechnikovKernel \&gt;" alt="" coords="417,157,585,198"></area>
+<area shape="rect" id="node5" href="classmlpack_1_1metric_1_1IPMetric.html" title="IPMetric\&lt; mlpack::kernel\l::HyperbolicTangentKernel \&gt;" alt="" coords="407,222,595,263"></area>
+<area shape="rect" id="node6" href="classmlpack_1_1metric_1_1IPMetric.html" title="IPMetric\&lt; mlpack::kernel\l::PolynomialKernel \&gt;" alt="" coords="417,287,585,329"></area>
+<area shape="rect" id="node7" href="classmlpack_1_1metric_1_1IPMetric.html" title="IPMetric\&lt; mlpack::kernel\l::LinearKernel \&gt;" alt="" coords="417,353,585,394"></area>
+<area shape="rect" id="node8" href="classmlpack_1_1metric_1_1IPMetric.html" title="IPMetric\&lt; mlpack::kernel\l::CosineDistance \&gt;" alt="" coords="417,418,585,459"></area>
+</map>
+<center ><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0774938d01373c8d5aaeebfc930c4e3d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1metric_1_1IPMetric.html#a0774938d01373c8d5aaeebfc930c4e3d">IPMetric</a> ()</td></tr>
+<tr class="memdesc:a0774938d01373c8d5aaeebfc930c4e3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the <a class="el" href="classmlpack_1_1metric_1_1IPMetric.html" title="The inner product metric, IPMetric, takes a given Mercer kernel (KernelType), and when Evaluate() is ...">IPMetric</a> without an instantiated kernel.  <a href="#a0774938d01373c8d5aaeebfc930c4e3d">More...</a><br /></br></td></tr>
+<tr class="separator:a0774938d01373c8d5aaeebfc930c4e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83bc1993b4d2626112ba0169e8fdd5b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1metric_1_1IPMetric.html#a83bc1993b4d2626112ba0169e8fdd5b9">IPMetric</a> (KernelType &amp;kernel)</td></tr>
+<tr class="memdesc:a83bc1993b4d2626112ba0169e8fdd5b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the <a class="el" href="classmlpack_1_1metric_1_1IPMetric.html" title="The inner product metric, IPMetric, takes a given Mercer kernel (KernelType), and when Evaluate() is ...">IPMetric</a> with an instantiated kernel.  <a href="#a83bc1993b4d2626112ba0169e8fdd5b9">More...</a><br /></br></td></tr>
+<tr class="separator:a83bc1993b4d2626112ba0169e8fdd5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb6ac7e7c6b1cdeffaccfa96b5573c99"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1metric_1_1IPMetric.html#acb6ac7e7c6b1cdeffaccfa96b5573c99">~IPMetric</a> ()</td></tr>
+<tr class="memdesc:acb6ac7e7c6b1cdeffaccfa96b5573c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the <a class="el" href="classmlpack_1_1metric_1_1IPMetric.html" title="The inner product metric, IPMetric, takes a given Mercer kernel (KernelType), and when Evaluate() is ...">IPMetric</a> object.  <a href="#acb6ac7e7c6b1cdeffaccfa96b5573c99">More...</a><br /></br></td></tr>
+<tr class="separator:acb6ac7e7c6b1cdeffaccfa96b5573c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55e03560fb8c7923de4a43df9a265437"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">VecTypeA</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">VecTypeB</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a55e03560fb8c7923de4a43df9a265437"><td class="memTemplItemLeft" align="right" valign="top">VecTypeA::elem_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1metric_1_1IPMetric.html#a55e03560fb8c7923de4a43df9a265437">Evaluate</a> (const VecTypeA &amp;a, const VecTypeB &amp;b)</td></tr>
+<tr class="memdesc:a55e03560fb8c7923de4a43df9a265437"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the metric.  <a href="#a55e03560fb8c7923de4a43df9a265437">More...</a><br /></br></td></tr>
+<tr class="separator:a55e03560fb8c7923de4a43df9a265437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a917492b75cc17298bc58c3d28e2944fb"><td class="memItemLeft" align="right" valign="top">const KernelType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1metric_1_1IPMetric.html#a917492b75cc17298bc58c3d28e2944fb">Kernel</a> () const</td></tr>
+<tr class="memdesc:a917492b75cc17298bc58c3d28e2944fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the kernel.  <a href="#a917492b75cc17298bc58c3d28e2944fb">More...</a><br /></br></td></tr>
+<tr class="separator:a917492b75cc17298bc58c3d28e2944fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8d1bedeac8344d80e50d819790a117a"><td class="memItemLeft" align="right" valign="top">KernelType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1metric_1_1IPMetric.html#ab8d1bedeac8344d80e50d819790a117a">Kernel</a> ()</td></tr>
+<tr class="memdesc:ab8d1bedeac8344d80e50d819790a117a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the kernel.  <a href="#ab8d1bedeac8344d80e50d819790a117a">More...</a><br /></br></td></tr>
+<tr class="separator:ab8d1bedeac8344d80e50d819790a117a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e832cb064e3b7ca978d8e5911cf700"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a68e832cb064e3b7ca978d8e5911cf700"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1metric_1_1IPMetric.html#a68e832cb064e3b7ca978d8e5911cf700">serialize</a> (Archive &amp;ar, const unsigned int version)</td></tr>
+<tr class="memdesc:a68e832cb064e3b7ca978d8e5911cf700"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the metric.  <a href="#a68e832cb064e3b7ca978d8e5911cf700">More...</a><br /></br></td></tr>
+<tr class="separator:a68e832cb064e3b7ca978d8e5911cf700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3 ><br /><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">KernelType</div><div class="close_bracket">&gt;</div></div></div></div></br>
+class mlpack::metric::IPMetric&lt; KernelType &gt;</h3>
+
+<p >The inner product metric, <a class="el" href="classmlpack_1_1metric_1_1IPMetric.html" title="The inner product metric, IPMetric, takes a given Mercer kernel (KernelType), and when Evaluate() is ...">IPMetric</a>, takes a given Mercer kernel (KernelType), and when <a class="el" href="classmlpack_1_1metric_1_1IPMetric.html#a55e03560fb8c7923de4a43df9a265437" title="Evaluate the metric. ">Evaluate()</a> is called, returns the distance between the two points in kernel space: </p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[ d(x, y) = \sqrt{ K(x, x) + K(y, y) - 2K(x, y) }. \]" src="form_39.png"></img>
+</p>
+<dl class="tparams"><dt >Template Parameters</dt><dd >
+  <table class="tparams">
+    <tr ><td class="paramname">KernelType</td><td >Type of Kernel to use. This must be a Mercer kernel (positive definite), otherwise the metric may not be valid. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ip__metric_8hpp_source.html#l00032">32</a> of file <a class="el" href="ip__metric_8hpp_source.html">ip_metric.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0774938d01373c8d5aaeebfc930c4e3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0774938d01373c8d5aaeebfc930c4e3d">&#9670;&nbsp;</a></span>IPMetric() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1metric_1_1IPMetric.html">IPMetric</a> </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Create the <a class="el" href="classmlpack_1_1metric_1_1IPMetric.html" title="The inner product metric, IPMetric, takes a given Mercer kernel (KernelType), and when Evaluate() is ...">IPMetric</a> without an instantiated kernel. </p>
+
+</div>
+</div>
+<a id="a83bc1993b4d2626112ba0169e8fdd5b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83bc1993b4d2626112ba0169e8fdd5b9">&#9670;&nbsp;</a></span>IPMetric() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1metric_1_1IPMetric.html">IPMetric</a> </td>
+          <td >(</td>
+          <td class="paramtype">KernelType &amp;&#160;</td>
+          <td class="paramname"><em >kernel</em></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Create the <a class="el" href="classmlpack_1_1metric_1_1IPMetric.html" title="The inner product metric, IPMetric, takes a given Mercer kernel (KernelType), and when Evaluate() is ...">IPMetric</a> with an instantiated kernel. </p>
+
+</div>
+</div>
+<a id="acb6ac7e7c6b1cdeffaccfa96b5573c99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb6ac7e7c6b1cdeffaccfa96b5573c99">&#9670;&nbsp;</a></span>~IPMetric()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">~<a class="el" href="classmlpack_1_1metric_1_1IPMetric.html">IPMetric</a> </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Destroy the <a class="el" href="classmlpack_1_1metric_1_1IPMetric.html" title="The inner product metric, IPMetric, takes a given Mercer kernel (KernelType), and when Evaluate() is ...">IPMetric</a> object. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a55e03560fb8c7923de4a43df9a265437"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55e03560fb8c7923de4a43df9a265437">&#9670;&nbsp;</a></span>Evaluate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">VecTypeA::elem_type Evaluate </td>
+          <td >(</td>
+          <td class="paramtype">const VecTypeA &amp;&#160;</td>
+          <td class="paramname"><em >a</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const VecTypeB &amp;&#160;</td>
+          <td class="paramname"><em >b</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Evaluate the metric. </p>
+<dl class="tparams"><dt >Template Parameters</dt><dd >
+  <table class="tparams">
+    <tr ><td class="paramname">VecTypeA</td><td >Type of first vector. </td></tr>
+    <tr ><td class="paramname">VecTypeB</td><td >Type of second vector. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">a</td><td >First vector. </td></tr>
+    <tr ><td class="paramname">b</td><td >Second vector. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt >Returns</dt><dd >Distance between the two points in kernel space. </dd></dl>
+
+</div>
+</div>
+<a id="a917492b75cc17298bc58c3d28e2944fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a917492b75cc17298bc58c3d28e2944fb">&#9670;&nbsp;</a></span>Kernel() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const KernelType&amp; Kernel </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the kernel. </p>
+
+<p class="definition">Definition at line <a class="el" href="ip__metric_8hpp_source.html#l00057">57</a> of file <a class="el" href="ip__metric_8hpp_source.html">ip_metric.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ab8d1bedeac8344d80e50d819790a117a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8d1bedeac8344d80e50d819790a117a">&#9670;&nbsp;</a></span>Kernel() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">KernelType&amp; Kernel </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the kernel. </p>
+
+<p class="definition">Definition at line <a class="el" href="ip__metric_8hpp_source.html#l00059">59</a> of file <a class="el" href="ip__metric_8hpp_source.html">ip_metric.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a68e832cb064e3b7ca978d8e5911cf700"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68e832cb064e3b7ca978d8e5911cf700">&#9670;&nbsp;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void serialize </td>
+          <td >(</td>
+          <td class="paramtype">Archive &amp;&#160;</td>
+          <td class="paramname"><em >ar</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em >version</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Serialize the metric. </p>
+
+<p class="reference">Referenced by <a class="el" href="ip__metric_8hpp_source.html#l00059">IPMetric&lt; mlpack::kernel::CosineDistance &gt;::Kernel()</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/core/metrics/<a class="el" href="ip__metric_8hpp_source.html">ip_metric.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

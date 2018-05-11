@@ -1,0 +1,50 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a fast, flexible c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a fast, flexible c++ machine learning library</title>
+</head><link rel="stylesheet" href="../../../style.css" /></link><link rel="stylesheet" href="../../style-python.css" /></link><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" /></link>
+
+
+
+<body ><br /></br>
+
+
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext pythonpage">
+<h1><center>mlpack.det</center></h1>
+<font class="titlecode">det(...)</font><br />
+<font class="titlebold">Density Estimation With Density Estimation Trees</font>
+<p class="importcode">&gt;&gt;&gt; from mlpack import det</p><p>This program performs a number of functions related to Density Estimation Trees.  The optimal Density Estimation Tree (DET) can be trained on a set of data (specified by <font class="code">'training'</font>) using cross-validation (with number of folds specified with the <font class="code">'folds'</font> parameter).  This trained density estimation tree may then be saved with the <font class="code">'output_model'</font> output parameter.</p>
+</p>
+<p>The variable importances (that is, the feature importance values for each dimension) may be saved with the <font class="code">'vi'</font> output parameter, and the density estimates for each training point may be saved with the <font class="code">'training_set_estimates'</font> output parameter.</p>
+</p>
+<p>Enabling path printing for each node outputs the path from the root node to a leaf for each entry in the test set, or training set (if a test set is not provided).  Strings like <font class="code">'LRLRLR'</font> (indicating that traversal went to the left child, then the right child, then the left child, and so forth) will be output. If <font class="code">'lr-id'</font> or <font class="code">'id-lr'</font> are given as the <font class="code">'path_format'</font> parameter, then the ID (tag) of every node along the path will be printed after or before the L or R character indicating the direction of traversal, respectively.</p>
+</p>
+<p>This program also can provide density estimates for a set of test points, specified in the <font class="code">'test'</font> parameter.  The density estimation tree used for this task will be the tree that was trained on the given training points, or a tree given as the parameter <font class="code">'input_model'</font>.  The density estimates for the test points may be saved using the <font class="code">'test_set_estimates'</font> output parameter.</p><h2>input options</h2>
+<ul>
+<li><font class="code">copy_all_inputs</font> <font class="codetype">(bool)</font>: If specified, all input parameters will be deep copied before the method is run.  This is useful for debugging problems where the input parameters are being modified by the algorithm, but can slow down the code.</li><li><font class="code">folds</font> <font class="codetype">(int)</font>: The number of folds of cross-validation to perform for the estimation (0 is LOOCV)  Default value 10.</li><li><font class="code">input_model</font> <font class="codetype">(mlpack.DTreeType)</font>: Trained density estimation tree to load.</li><li><font class="code">max_leaf_size</font> <font class="codetype">(int)</font>: The maximum size of a leaf in the unpruned, fully grown DET.  Default value 10.</li><li><font class="code">min_leaf_size</font> <font class="codetype">(int)</font>: The minimum size of a leaf in the unpruned, fully grown DET.  Default value 5.</li><li><font class="code">path_format</font> <font class="codetype">(string)</font>: The format of path printing: 'lr', 'id-lr', or 'lr-id'.  Default value lr.</li><li><font class="code">skip_pruning</font> <font class="codetype">(bool)</font>: Whether to bypass the pruning process and output the unpruned tree only.</li><li><font class="code">test</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: A set of test points to estimate the density of.</li><li><font class="code">training</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: The data set on which to build a density estimation tree.</li><li><font class="code">verbose</font> <font class="codetype">(bool)</font>: Display informational messages and the full list of parameters and timers at the end of execution.</li></ul>
+<h2>output options</h2>
+<p>The return value from the binding is a dict containing the following elements:</p>
+<ul><li><font class="code">output_model</font> <font class="codetype">(mlpack.DTreeType)</font>: Output to save trained density estimation tree to.</li><li><font class="code">tag_counters_file</font> <font class="codetype">(string)</font>: The file to output the number of points that went to each leaf.</li><li><font class="code">tag_file</font> <font class="codetype">(string)</font>: The file to output the tags (and possibly paths) for each sample in the test set.</li><li><font class="code">test_set_estimates</font> <font class="codetype">(numpy matrix, float dtype)</font>: The output estimates on the test set from the final optimally pruned tree.</li><li><font class="code">training_set_estimates</font> <font class="codetype">(numpy matrix, float dtype)</font>: The output density estimates on the training set from the final optimally pruned tree.</li><li><font class="code">vi</font> <font class="codetype">(numpy matrix, float dtype)</font>: The output variable importance values for each feature.</li><ul>
+</ul>
+</div>
+</body>
+</html>

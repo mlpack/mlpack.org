@@ -1,0 +1,64 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a fast, flexible c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a fast, flexible c++ machine learning library</title>
+</head><link rel="stylesheet" href="../../../style.css" /></link><link rel="stylesheet" href="../../style-python.css" /></link><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" /></link>
+
+
+
+<body ><br /></br>
+
+
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext pythonpage">
+<h1><center>mlpack.linear_regression</center></h1>
+<font class="titlecode">linear_regression(...)</font><br />
+<font class="titlebold">Simple Linear Regression and Prediction</font>
+<p class="importcode">&gt;&gt;&gt; from mlpack import linear_regression</p><p>An implementation of simple linear regression and simple ridge regression using ordinary least squares. This solves the problem</p>
+</p>
+<p>  y = X * b + e</p>
+</p>
+<p>where X (specified by <font class="code">'training'</font>) and y (specified either as the last column of the input matrix <font class="code">'training'</font> or via the <font class="code">'training_responses'</font> parameter) are known and b is the desired variable.  If the covariance matrix (X'</font>X) is not invertible, or if the solution is overdetermined, then specify a Tikhonov regularization constant (with <font class="code">'lambda_'</font>) greater than 0, which will regularize the covariance matrix to make it invertible.  The calculated b may be saved with the <font class="code">'output_predictions'</font> output parameter.</p>
+</p>
+<p>Optionally, the calculated value of b is used to predict the responses for another matrix X'</font> (specified by the <font class="code">'test'</font> parameter):</p>
+</p>
+<p>   y'</font> = X'</font> * b</p>
+</p>
+<p>and the predicted responses y'</font> may be saved with the <font class="code">'output_predictions'</font> output parameter.  This type of regression is related to least-angle regression, which mlpack implements as the <font class="code">'lars'</font> program.</p>
+</p>
+<p>For example, to run a linear regression on the dataset <font class="code">'X'</font> with responses <font class="code">'y'</font>, saving the trained model to <font class="code">'lr_model'</font>, the following command could be used:</p>
+</p>
+<p class="codeblock"><font class="code">&gt;&gt;&gt; linear_regression(training=X, training_responses=y)<br />
+&gt;&gt;&gt; lr_model = output['output_model']</font></p>
+</p>
+<p>Then, to use <font class="code">'lr_model'</font> to predict responses for a test set <font class="code">'X_test'</font>, saving the predictions to <font class="code">'X_test_responses'</font>, the following command could be used:</p>
+</p>
+<p class="codeblock"><font class="code">&gt;&gt;&gt; linear_regression(input_model=lr_model, test=X_test)<br />
+&gt;&gt;&gt; X_test_responses = output['output_predictions']</font></p><h2>input options</h2>
+<ul>
+<li><font class="code">copy_all_inputs</font> <font class="codetype">(bool)</font>: If specified, all input parameters will be deep copied before the method is run.  This is useful for debugging problems where the input parameters are being modified by the algorithm, but can slow down the code.</li><li><font class="code">input_model</font> <font class="codetype">(mlpack.LinearRegressionType)</font>: Existing LinearRegression model to use.</li><li><font class="code">lambda_</font> <font class="codetype">(float)</font>: Tikhonov regularization for ridge regression.  If 0, the method reduces to linear regression.  Default value 0.</li><li><font class="code">test</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: Matrix containing X' (test regressors).</li><li><font class="code">training</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: Matrix containing training set X (regressors).</li><li><font class="code">training_responses</font> <font class="codetype">(numpy vector or array, float dtype)</font>: Optional vector containing y (responses). If not given, the responses are assumed to be the last row of the input file.</li><li><font class="code">verbose</font> <font class="codetype">(bool)</font>: Display informational messages and the full list of parameters and timers at the end of execution.</li></ul>
+<h2>output options</h2>
+<p>The return value from the binding is a dict containing the following elements:</p>
+<ul><li><font class="code">output_model</font> <font class="codetype">(mlpack.LinearRegressionType)</font>: Output LinearRegression model.</li><li><font class="code">output_predictions</font> <font class="codetype">(numpy vector, float dtype)</font>: If --test_file is specified, this matrix is where the predicted responses will be saved.</li><ul>
+</ul>
+</div>
+</body>
+</html>

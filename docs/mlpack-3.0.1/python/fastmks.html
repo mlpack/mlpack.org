@@ -1,0 +1,54 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a fast, flexible c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a fast, flexible c++ machine learning library</title>
+</head><link rel="stylesheet" href="../../../style.css" /></link><link rel="stylesheet" href="../../style-python.css" /></link><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" /></link>
+
+
+
+<body ><br /></br>
+
+
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext pythonpage">
+<h1><center>mlpack.fastmks</center></h1>
+<font class="titlecode">fastmks(...)</font><br />
+<font class="titlebold">FastMKS (Fast Max-Kernel Search)</font>
+<p class="importcode">&gt;&gt;&gt; from mlpack import fastmks</p><p>This program will find the k maximum kernels of a set of points, using a query set and a reference set (which can optionally be the same set). More specifically, for each point in the query set, the k points in the reference set with maximum kernel evaluations are found.  The kernel function used is specified with the <font class="code">'kernel'</font> parameter.</p>
+</p>
+<p>For example, the following command will calculate, for each point in the query set <font class="code">'query'</font>, the five points in the reference set <font class="code">'reference'</font> with maximum kernel evaluation using the linear kernel.  The kernel evaluations may be saved with the  <font class="code">'kernels'</font> output parameter and the indices may be saved with the <font class="code">'indices'</font> output parameter.</p>
+</p>
+<p class="codeblock"><font class="code">&gt;&gt;&gt; fastmks(k=5, reference=reference, query=query, kernel='linear')<br />
+&gt;&gt;&gt; indices = output['indices']<br />
+&gt;&gt;&gt; kernels = output['kernels']</font></p>
+</p>
+<p>The output matrices are organized such that row i and column j in the indices matrix corresponds to the index of the point in the reference set that has j'</font>th largest kernel evaluation with the point in the query set with index i.  Row i and column j in the kernels matrix corresponds to the kernel evaluation between those two points.</p>
+</p>
+<p>This program performs FastMKS using a cover tree.  The base used to build the cover tree can be specified with the <font class="code">'base'</font> parameter.</p><h2>input options</h2>
+<ul>
+<li><font class="code">bandwidth</font> <font class="codetype">(float)</font>: Bandwidth (for Gaussian, Epanechnikov, and triangular kernels).  Default value 1.</li><li><font class="code">base</font> <font class="codetype">(float)</font>: Base to use during cover tree construction.  Default value 2.</li><li><font class="code">copy_all_inputs</font> <font class="codetype">(bool)</font>: If specified, all input parameters will be deep copied before the method is run.  This is useful for debugging problems where the input parameters are being modified by the algorithm, but can slow down the code.</li><li><font class="code">degree</font> <font class="codetype">(float)</font>: Degree of polynomial kernel.  Default value 2.</li><li><font class="code">input_model</font> <font class="codetype">(mlpack.FastMKSModelType)</font>: Input FastMKS model to use.</li><li><font class="code">k</font> <font class="codetype">(int)</font>: Number of maximum kernels to find.  Default value 0.</li><li><font class="code">kernel</font> <font class="codetype">(string)</font>: Kernel type to use: 'linear', 'polynomial', 'cosine', 'gaussian', 'epanechnikov', 'triangular', 'hyptan'.  Default value linear.</li><li><font class="code">naive</font> <font class="codetype">(bool)</font>: If true, O(n^2) naive mode is used for computation.</li><li><font class="code">offset</font> <font class="codetype">(float)</font>: Offset of kernel (for polynomial and hyptan kernels).  Default value 0.</li><li><font class="code">query</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: The query dataset.</li><li><font class="code">reference</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: The reference dataset.</li><li><font class="code">scale</font> <font class="codetype">(float)</font>: Scale of kernel (for hyptan kernel).  Default value 1.</li><li><font class="code">single</font> <font class="codetype">(bool)</font>: If true, single-tree search is used (as opposed to dual-tree search.</li><li><font class="code">verbose</font> <font class="codetype">(bool)</font>: Display informational messages and the full list of parameters and timers at the end of execution.</li></ul>
+<h2>output options</h2>
+<p>The return value from the binding is a dict containing the following elements:</p>
+<ul><li><font class="code">indices</font> <font class="codetype">(numpy matrix, int dtype)</font>: Output matrix of indices.</li><li><font class="code">kernels</font> <font class="codetype">(numpy matrix, float dtype)</font>: Output matrix of kernels.</li><li><font class="code">output_model</font> <font class="codetype">(mlpack.FastMKSModelType)</font>: Output for FastMKS model.</li><ul>
+</ul>
+</div>
+</body>
+</html>

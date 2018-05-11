@@ -1,0 +1,64 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a fast, flexible c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a fast, flexible c++ machine learning library</title>
+</head><link rel="stylesheet" href="../../../style.css" /></link><link rel="stylesheet" href="../../style-python.css" /></link><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" /></link>
+
+
+
+<body ><br /></br>
+
+
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext pythonpage">
+<h1><center>mlpack.kmeans</center></h1>
+<font class="titlecode">kmeans(...)</font><br />
+<font class="titlebold">K-Means Clustering</font>
+<p class="importcode">&gt;&gt;&gt; from mlpack import kmeans</p><p>This program performs K-Means clustering on the given dataset.  It can return the learned cluster assignments, and the centroids of the clusters.  Empty clusters are not allowed by default; when a cluster becomes empty, the point furthest from the centroid of the cluster with maximum variance is taken to fill that cluster.</p>
+</p>
+<p>Optionally, the Bradley and Fayyad approach ("Refining initial points for k-means clustering", 1998) can be used to select initial points by specifying the <font class="code">'refined_start'</font> parameter.  This approach works by taking random samplings of the dataset; to specify the number of samplings, the <font class="code">'samplings'</font> parameter is used, and to specify the percentage of the dataset to be used in each sample, the <font class="code">'percentage'</font> parameter is used (it should be a value between 0.0 and 1.0).</p>
+</p>
+<p>There are several options available for the algorithm used for each Lloyd iteration, specified with the <font class="code">'algorithm'</font>  option.  The standard O(kN) approach can be used ('</font>naive'</font>).  Other options include the Pelleg-Moore tree-based algorithm ('</font>pelleg-moore'</font>), Elkan'</font>s triangle-inequality based algorithm ('</font>elkan'</font>), Hamerly'</font>s modification to Elkan'</font>s algorithm ('</font>hamerly'</font>), the dual-tree k-means algorithm ('</font>dualtree'</font>), and the dual-tree k-means algorithm using the cover tree ('</font>dualtree-covertree'</font>).</p>
+</p>
+<p>The behavior for when an empty cluster is encountered can be modified with the <font class="code">'allow_empty_clusters'</font> option.  When this option is specified and there is a cluster owning no points at the end of an iteration, that cluster'</font>s centroid will simply remain in its position from the previous iteration. If the <font class="code">'kill_empty_clusters'</font> option is specified, then when a cluster owns no points at the end of an iteration, the cluster centroid is simply filled with DBL_MAX, killing it and effectively reducing k for the rest of the computation.  Note that the default option when neither empty cluster option is specified can be time-consuming to calculate; therefore, specifying either of these parameters will often accelerate runtime.</p>
+</p>
+<p>Initial clustering assignments may be specified using the <font class="code">'initial_centroids'</font> parameter, and the maximum number of iterations may be specified with the <font class="code">'max_iterations'</font> parameter.</p>
+</p>
+<p>As an example, to use Hamerly'</font>s algorithm to perform k-means clustering with k=10 on the dataset <font class="code">'data'</font>, saving the centroids to <font class="code">'centroids'</font> and the assignments for each point to <font class="code">'assignments'</font>, the following command could be used:</p>
+</p>
+<p class="codeblock"><font class="code">&gt;&gt;&gt; kmeans(input=data, clusters=10)<br />
+&gt;&gt;&gt; assignments = output['output']<br />
+&gt;&gt;&gt; centroids = output['centroid']</font></p>
+</p>
+<p>To run k-means on that same dataset with initial centroids specified in <font class="code">'initial'</font> with a maximum of 500 iterations, storing the output centroids in <font class="code">'final'</font> the following command may be used:</p>
+</p>
+<p class="codeblock"><font class="code">&gt;&gt;&gt; kmeans(input=data, initial_centroids=initial, clusters=10,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  max_iterations=500)<br />
+&gt;&gt;&gt; final = output['centroid']</font></p><h2>input options</h2>
+<ul>
+<li><font class="code">clusters</font> <font class="codetype">(int)</font>: <font class="required">[required]</font> Number of clusters to find (0 autodetects from initial centroids).  Default value 0.</li><li><font class="code">input</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: <font class="required">[required]</font> Input dataset to perform clustering on.</li><li><font class="code">algorithm</font> <font class="codetype">(string)</font>: Algorithm to use for the Lloyd iteration ('naive', 'pelleg-moore', 'elkan', 'hamerly', 'dualtree', or 'dualtree-covertree').  Default value naive.</li><li><font class="code">allow_empty_clusters</font> <font class="codetype">(bool)</font>: Allow empty clusters to be persist.</li><li><font class="code">copy_all_inputs</font> <font class="codetype">(bool)</font>: If specified, all input parameters will be deep copied before the method is run.  This is useful for debugging problems where the input parameters are being modified by the algorithm, but can slow down the code.</li><li><font class="code">in_place</font> <font class="codetype">(bool)</font>: If specified, a column containing the learned cluster assignments will be added to the input dataset file.  In this case, --output_file is overridden. (Do not use in Python.)</li><li><font class="code">initial_centroids</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: Start with the specified initial centroids.</li><li><font class="code">kill_empty_clusters</font> <font class="codetype">(bool)</font>: Remove empty clusters when they occur.</li><li><font class="code">labels_only</font> <font class="codetype">(bool)</font>: Only output labels into output file.</li><li><font class="code">max_iterations</font> <font class="codetype">(int)</font>: Maximum number of iterations before k-means terminates.  Default value 1000.</li><li><font class="code">percentage</font> <font class="codetype">(float)</font>: Percentage of dataset to use for each refined start sampling (use when --refined_start is specified).  Default value 0.02.</li><li><font class="code">refined_start</font> <font class="codetype">(bool)</font>: Use the refined initial point strategy by Bradley and Fayyad to choose initial points.</li><li><font class="code">samplings</font> <font class="codetype">(int)</font>: Number of samplings to perform for refined start (use when --refined_start is specified).  Default value 100.</li><li><font class="code">seed</font> <font class="codetype">(int)</font>: Random seed.  If 0, 'std::time(NULL)' is used.  Default value 0.</li><li><font class="code">verbose</font> <font class="codetype">(bool)</font>: Display informational messages and the full list of parameters and timers at the end of execution.</li></ul>
+<h2>output options</h2>
+<p>The return value from the binding is a dict containing the following elements:</p>
+<ul><li><font class="code">centroid</font> <font class="codetype">(numpy matrix, float dtype)</font>: If specified, the centroids of each cluster will  be written to the given file.</li><li><font class="code">output</font> <font class="codetype">(numpy matrix, float dtype)</font>: Matrix to store output labels or labeled data to.</li><ul>
+</ul>
+</div>
+</body>
+</html>

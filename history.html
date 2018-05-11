@@ -4,10 +4,10 @@
 <meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
 learning, data mining, classification, regression, tree-based methods, dual-tree
 algorithm">
-<meta name="description" content="mlpack: a scalable c++ machine learning
+<meta name="description" content="mlpack: a fast, flexible machine learning
 library">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>mlpack: a scalable c++ machine learning library</title>
+<title>mlpack: a fast, flexible machine learning library</title>
 </head>
 <link rel="stylesheet" href="style.css">
 <link href='http://fonts.googleapis.com/css?family=Maven+Pro:500'
@@ -37,6 +37,39 @@ href="https://github.com/mlpack/mlpack">github</a></div>
 <div class="mainsection smallertext">
 <center><h2><font class="whitebold">history and
 news</font></h2></center><br>
+<font class="whitebold">may 10th, 2018</font> -- <a
+href="http://www.mlpack.org/files/mlpack-3.0.1.tar.gz">mlpack 3.0.1</a><br>
+<ul>
+<li>Fix intermittently failing tests (<a
+href="https://github.com/mlpack/mlpack/pull/1387">#1387</a>).</li>
+<li>Add Big-Batch SGD (BBSGD) optimizer in
+<tt>src/mlpack/core/optimizers/bigbatch_sgd</tt> (<a
+href="https://github.com/mlpack/mlpack/pull/1131">#1131</a>).</li>
+<li>Fix simple compiler warnings (<a
+href="https://github.com/mlpack/mlpack/pull/1380">#1380</a>, <a
+href="https://github.com/mlpack/mlpack/pull/1373">#1373</a>).</li>
+<li>Simplify <tt>NeighborSearch</tt> constructor and <tt>Train()</tt> overloads
+(<a href="https://github.com/mlpack/mlpack/pull/1378">#1378</a>).</li>
+<li>Add warning for OpenMP setting differences (<a
+href="https://github.com/mlpack/mlpack/issues/1358">#1358</a>/<a
+href="https://github.com/mlpack/mlpack/pull/1382">#1382</a>).  When mlpack is
+compiled with OpenMP but another application linking against mlpack is not (or
+vice versa), a compilation warning will now be issued.</li>
+<li>Restructured loss functions in <tt>src/mlpack/methods/ann/</tt> (<a
+href="https://github.com/mlpack/mlpack/pull/1365">#1365</a>).</li>
+<li>Add environments for reinforcement learning tests (<a
+href="https://github.com/mlpack/mlpack/pull/1368">#1368</a>, <a
+href="https://github.com/mlpack/mlpack/pull/1370">#1370</a>, <a
+href="https://github.com/mlpack/mlpack/pull/1329">#1329</a>).</li>
+<li>Allow single outputs for multiple timestep inputs for recurrent neural
+networks (<a href="https://github.com/mlpack/mlpack/pull/1348">#1348</a>).</li>
+<li>Neural networks: add He and LeCun normal initializations (<a
+href="https://github.com/mlpack/mlpack/pull/1342">#1342</a>), add FReLU and SELU
+activation functions (<a
+href="https://github.com/mlpack/mlpack/pull/1346">#1346</a>, <a
+href="https://github.com/mlpack/mlpack/pull/1341">#1341</a>), add alpha-dropout
+(<a href="https://github.com/mlpack/mlpack/pull/1349">#1349</a>).</li>
+</ul>
 <font class="whitebold">mar. 30th, 2018</font> -- <a
 href="http://www.mlpack.org/files/mlpack-3.0.0.tar.gz">mlpack 3.0.0</a><br>
 <ul>

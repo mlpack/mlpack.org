@@ -90,7 +90,11 @@ Introduction</h1>
 Installing mlpack</h1>
 <p >(This section will be simplified when mlpack is available in PyPI or conda.)</p>
 <p >Installing the mlpack bindings for Python is straightforward. First we have to install the dependencies (the code below is for Ubuntu), then we can build and install mlpack. You can copy-paste the commands into your shell.</p>
-<div class="fragment"><div class="line">sudo apt-get install libboost-all-dev g++ cmake libarmadillo-dev python-pip wget</div><div class="line">sudo pip install cython setuptools distutils numpy pandas</div><div class="line">wget http://www.mlpack.org/files/mlpack-3.0.0.tar.gz</div><div class="line">tar -xvzpf mlpack-3.0.0.tar.gz</div><div class="line">mkdir -p mlpack-3.0.0/build/ &amp;&amp; cd mlpack-3.0.0/build/</div><div class="line">cmake ../ &amp;&amp; make -j4 &amp;&amp; sudo make install</div></div><h1 ><a class="anchor" id="python_quickstart_example"></a>
+<div class="fragment"><div class="line">sudo apt-get install libboost-all-dev g++ cmake libarmadillo-dev python-pip wget</div><div class="line">sudo pip install cython setuptools distutils numpy pandas</div><div class="line">wget http://www.mlpack.org/files/mlpack-3.0.0.tar.gz</div><div class="line">tar -xvzpf mlpack-3.0.0.tar.gz</div><div class="line">mkdir -p mlpack-3.0.0/build/ &amp;&amp; cd mlpack-3.0.0/build/</div><div class="line">cmake ../ &amp;&amp; make -j4 &amp;&amp; sudo make install</div></div>
+<p >You can also use the mlpack Docker image on Dockerhub, which has all the
+Python bindings pre-installed:</p>
+<div class="fragment"><div class="line">docker run -it mlpack/mlpack /bin/bash</div></div>
+<h1 ><a class="anchor" id="python_quickstart_example"></a>
 Simple mlpack quickstart example</h1>
 <p >As a really simple example of how to use mlpack from Python, let's do some simple classification on a subset of the standard machine learning <code >covertype</code> dataset. We'll first split the dataset into a training set and a testing set, then we'll train an mlpack random forest on the training data, and finally we'll print the accuracy of the random forest on the test dataset.</p>
 <p >You can copy-paste this code directly into Python to run it.</p>

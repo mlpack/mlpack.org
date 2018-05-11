@@ -1,0 +1,697 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">3.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1rl.html">rl</a></li><li class="navelem"><a class="el" href="classmlpack_1_1rl_1_1Acrobat.html">Acrobat</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classmlpack_1_1rl_1_1Acrobat-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">Acrobat Class Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >Implementation of <a class="el" href="classmlpack_1_1rl_1_1Acrobat.html" title="Implementation of Acrobat game. ">Acrobat</a> game.  
+ <a href="classmlpack_1_1rl_1_1Acrobat.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1rl_1_1Acrobat_1_1State.html">State</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a8bb1ef53467e4f61410d12822d922498"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1rl_1_1Acrobat.html#a8bb1ef53467e4f61410d12822d922498">Action</a><br /> { </br>
+&#160;&#160;<a class="el" href="classmlpack_1_1rl_1_1Acrobat.html#a8bb1ef53467e4f61410d12822d922498af6e2c4a274a7061460fc52bb0e8d92dd">negativeTorque</a><br />, 
+</br>
+&#160;&#160;<a class="el" href="classmlpack_1_1rl_1_1Acrobat.html#a8bb1ef53467e4f61410d12822d922498a88b15afa5c5e7a209c85650230e11752">zeroTorque</a><br />, 
+</br>
+&#160;&#160;<a class="el" href="classmlpack_1_1rl_1_1Acrobat.html#a8bb1ef53467e4f61410d12822d922498a4e74e4f919288406e2c194abe8873de8">positiveTorque</a><br />, 
+</br>
+&#160;&#160;<a class="el" href="classmlpack_1_1rl_1_1Acrobat.html#a8bb1ef53467e4f61410d12822d922498a052a2b4924452fb4a73f2cb52b6e9d41">size</a><br />
+</br>
+ }</td></tr>
+<tr class="separator:a8bb1ef53467e4f61410d12822d922498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae2675a8ce4db2aa4bae09ffcb0a1db93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1rl_1_1Acrobat.html#ae2675a8ce4db2aa4bae09ffcb0a1db93">Acrobat</a> (const double gravity=9.81, const double linkLength1=1.0, const double linkLength2=1.0, const double linkMass1=1.0, const double linkMass2=1.0, const double linkCom1=0.5, const double linkCom2=0.5, const double linkMoi=1.0, const double maxVel1=4 *<a class="el" href="prereqs_8hpp.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a>, const double maxVel2=9 *<a class="el" href="prereqs_8hpp.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a>, const double dt=0.2, const double doneReward=0)</td></tr>
+<tr class="memdesc:ae2675a8ce4db2aa4bae09ffcb0a1db93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classmlpack_1_1rl_1_1Acrobat.html" title="Implementation of Acrobat game. ">Acrobat</a> instance using the given constants.  <a href="#ae2675a8ce4db2aa4bae09ffcb0a1db93">More...</a><br /></br></td></tr>
+<tr class="separator:ae2675a8ce4db2aa4bae09ffcb0a1db93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a781c862b1afe7d673da7025f0b2a244c"><td class="memItemLeft" align="right" valign="top">arma::colvec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1rl_1_1Acrobat.html#a781c862b1afe7d673da7025f0b2a244c">Dsdt</a> (arma::colvec state, const double torque) const</td></tr>
+<tr class="memdesc:a781c862b1afe7d673da7025f0b2a244c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the ordinary differential equations required for estimation of nextState through RK4 method.  <a href="#a781c862b1afe7d673da7025f0b2a244c">More...</a><br /></br></td></tr>
+<tr class="separator:a781c862b1afe7d673da7025f0b2a244c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac96d4b000fe9d0aaca03285b8cecccc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmlpack_1_1rl_1_1Acrobat_1_1State.html">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1rl_1_1Acrobat.html#ac96d4b000fe9d0aaca03285b8cecccc7">InitialSample</a> () const</td></tr>
+<tr class="memdesc:ac96d4b000fe9d0aaca03285b8cecccc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function does random initialization of state space.  <a href="#ac96d4b000fe9d0aaca03285b8cecccc7">More...</a><br /></br></td></tr>
+<tr class="separator:ac96d4b000fe9d0aaca03285b8cecccc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd056133dfd315e4bf45c408f99326f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1rl_1_1Acrobat.html#a7fd056133dfd315e4bf45c408f99326f">IsTerminal</a> (const <a class="el" href="classmlpack_1_1rl_1_1Acrobat_1_1State.html">State</a> &amp;state) const</td></tr>
+<tr class="memdesc:a7fd056133dfd315e4bf45c408f99326f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function checks if the acrobat has reached the terminal state.  <a href="#a7fd056133dfd315e4bf45c408f99326f">More...</a><br /></br></td></tr>
+<tr class="separator:a7fd056133dfd315e4bf45c408f99326f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae09ec5b585b264b14d2831e689021a5e"><td class="memItemLeft" align="right" valign="top">arma::colvec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1rl_1_1Acrobat.html#ae09ec5b585b264b14d2831e689021a5e">Rk4</a> (const arma::colvec state, const double torque) const</td></tr>
+<tr class="memdesc:ae09ec5b585b264b14d2831e689021a5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function calls the RK4 iterative method to estimate the next state based on given ordinary differential equation.  <a href="#ae09ec5b585b264b14d2831e689021a5e">More...</a><br /></br></td></tr>
+<tr class="separator:ae09ec5b585b264b14d2831e689021a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a441f6bb9b9cb9b6da32e0c46c1b9aeb9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1rl_1_1Acrobat.html#a441f6bb9b9cb9b6da32e0c46c1b9aeb9">Sample</a> (const <a class="el" href="classmlpack_1_1rl_1_1Acrobat_1_1State.html">State</a> &amp;state, const <a class="el" href="classmlpack_1_1rl_1_1Acrobat.html#a8bb1ef53467e4f61410d12822d922498">Action</a> &amp;action, <a class="el" href="classmlpack_1_1rl_1_1Acrobat_1_1State.html">State</a> &amp;nextState) const</td></tr>
+<tr class="memdesc:a441f6bb9b9cb9b6da32e0c46c1b9aeb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamics of the <a class="el" href="classmlpack_1_1rl_1_1Acrobat.html" title="Implementation of Acrobat game. ">Acrobat</a> System.  <a href="#a441f6bb9b9cb9b6da32e0c46c1b9aeb9">More...</a><br /></br></td></tr>
+<tr class="separator:a441f6bb9b9cb9b6da32e0c46c1b9aeb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f40fc6d96bb0c29ae00db3551eb76a8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1rl_1_1Acrobat.html#a3f40fc6d96bb0c29ae00db3551eb76a8">Sample</a> (const <a class="el" href="classmlpack_1_1rl_1_1Acrobat_1_1State.html">State</a> &amp;state, const <a class="el" href="classmlpack_1_1rl_1_1Acrobat.html#a8bb1ef53467e4f61410d12822d922498">Action</a> &amp;action) const</td></tr>
+<tr class="memdesc:a3f40fc6d96bb0c29ae00db3551eb76a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamics of the <a class="el" href="classmlpack_1_1rl_1_1Acrobat.html" title="Implementation of Acrobat game. ">Acrobat</a> System.  <a href="#a3f40fc6d96bb0c29ae00db3551eb76a8">More...</a><br /></br></td></tr>
+<tr class="separator:a3f40fc6d96bb0c29ae00db3551eb76a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae12a0a80a61e21f6e1b722f4ad7d0b81"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1rl_1_1Acrobat.html#ae12a0a80a61e21f6e1b722f4ad7d0b81">Torque</a> (const <a class="el" href="classmlpack_1_1rl_1_1Acrobat.html#a8bb1ef53467e4f61410d12822d922498">Action</a> &amp;action) const</td></tr>
+<tr class="memdesc:ae12a0a80a61e21f6e1b722f4ad7d0b81"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function calculates the torque for a particular action.  <a href="#ae12a0a80a61e21f6e1b722f4ad7d0b81">More...</a><br /></br></td></tr>
+<tr class="separator:ae12a0a80a61e21f6e1b722f4ad7d0b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f977aba34c92e5f5f9249d8738ec85a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1rl_1_1Acrobat.html#a9f977aba34c92e5f5f9249d8738ec85a">Wrap</a> (double value, const double minimum, const double maximum) const</td></tr>
+<tr class="memdesc:a9f977aba34c92e5f5f9249d8738ec85a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrap funtion is required to truncate the angle value from -180 to 180.  <a href="#a9f977aba34c92e5f5f9249d8738ec85a">More...</a><br /></br></td></tr>
+<tr class="separator:a9f977aba34c92e5f5f9249d8738ec85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Implementation of <a class="el" href="classmlpack_1_1rl_1_1Acrobat.html" title="Implementation of Acrobat game. ">Acrobat</a> game. </p>
+<p >Acrobot is a 2-link pendulum with only the second joint actuated. Intitially, both links point downwards. The goal is to swing the end-effector at a height at least the length of one link above the base. Both links can swing freely and can pass by each other, i.e., they don't collide when they have the same angle. </p>
+
+<p class="definition">Definition at line <a class="el" href="acrobat_8hpp_source.html#l00028">28</a> of file <a class="el" href="acrobat_8hpp_source.html">acrobat.hpp</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a8bb1ef53467e4f61410d12822d922498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bb1ef53467e4f61410d12822d922498">&#9670;&nbsp;</a></span>Action</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">enum <a class="el" href="classmlpack_1_1rl_1_1Acrobat.html#a8bb1ef53467e4f61410d12822d922498">Action</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr ><th colspan="2">Enumerator</th></tr><tr ><td class="fieldname"><a id="a8bb1ef53467e4f61410d12822d922498af6e2c4a274a7061460fc52bb0e8d92dd"></a>negativeTorque&#160;</td><td class="fielddoc"></td></tr>
+<tr ><td class="fieldname"><a id="a8bb1ef53467e4f61410d12822d922498a88b15afa5c5e7a209c85650230e11752"></a>zeroTorque&#160;</td><td class="fielddoc"></td></tr>
+<tr ><td class="fieldname"><a id="a8bb1ef53467e4f61410d12822d922498a4e74e4f919288406e2c194abe8873de8"></a>positiveTorque&#160;</td><td class="fielddoc"></td></tr>
+<tr ><td class="fieldname"><a id="a8bb1ef53467e4f61410d12822d922498a052a2b4924452fb4a73f2cb52b6e9d41"></a>size&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="acrobat_8hpp_source.html#l00088">88</a> of file <a class="el" href="acrobat_8hpp_source.html">acrobat.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae2675a8ce4db2aa4bae09ffcb0a1db93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2675a8ce4db2aa4bae09ffcb0a1db93">&#9670;&nbsp;</a></span>Acrobat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1rl_1_1Acrobat.html">Acrobat</a> </td>
+          <td >(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >gravity</em> = <code >9.81</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >linkLength1</em> = <code >1.0</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >linkLength2</em> = <code >1.0</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >linkMass1</em> = <code >1.0</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >linkMass2</em> = <code >1.0</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >linkCom1</em> = <code >0.5</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >linkCom2</em> = <code >0.5</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >linkMoi</em> = <code >1.0</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >maxVel1</em> = <code >4&#160;*&#160;<a class="el" href="prereqs_8hpp.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a></code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >maxVel2</em> = <code >9&#160;*&#160;<a class="el" href="prereqs_8hpp.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a></code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >dt</em> = <code >0.2</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >doneReward</em> = <code >0</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Construct a <a class="el" href="classmlpack_1_1rl_1_1Acrobat.html" title="Implementation of Acrobat game. ">Acrobat</a> instance using the given constants. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">gravity</td><td >The gravity parameter. </td></tr>
+    <tr ><td class="paramname">linkLength1</td><td >The length of link 1. </td></tr>
+    <tr ><td class="paramname">linkLength2</td><td >The length of link 2. </td></tr>
+    <tr ><td class="paramname">linkMass1</td><td >The mass of link 1. </td></tr>
+    <tr ><td class="paramname">linkMass2</td><td >The mass of link 2. </td></tr>
+    <tr ><td class="paramname">linkCom1</td><td >The position of the center of mass of link 1. </td></tr>
+    <tr ><td class="paramname">linkCom2</td><td >The position of the center of mass of link 2. </td></tr>
+    <tr ><td class="paramname">linkMoi</td><td >The moments of inertia for both link. </td></tr>
+    <tr ><td class="paramname">maxVel1</td><td >The max angular velocity of link1. </td></tr>
+    <tr ><td class="paramname">maxVel2</td><td >The max angular velocity of link2. </td></tr>
+    <tr ><td class="paramname">dt</td><td >The differential value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="acrobat_8hpp_source.html#l00113">113</a> of file <a class="el" href="acrobat_8hpp_source.html">acrobat.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a781c862b1afe7d673da7025f0b2a244c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a781c862b1afe7d673da7025f0b2a244c">&#9670;&nbsp;</a></span>Dsdt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">arma::colvec Dsdt </td>
+          <td >(</td>
+          <td class="paramtype">arma::colvec&#160;</td>
+          <td class="paramname"><em >state</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >torque</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >This is the ordinary differential equations required for estimation of nextState through RK4 method. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">state</td><td >Current <a class="el" href="classmlpack_1_1rl_1_1Acrobat_1_1State.html">State</a>. </td></tr>
+    <tr ><td class="paramname">torque</td><td >The torque Applied. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="acrobat_8hpp_source.html#l00218">218</a> of file <a class="el" href="acrobat_8hpp_source.html">acrobat.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="prereqs_8hpp_source.html#l00039">M_PI</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="acrobat_8hpp_source.html#l00305">Acrobat::Rk4()</a>.</p>
+
+</div>
+</div>
+<a id="ac96d4b000fe9d0aaca03285b8cecccc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac96d4b000fe9d0aaca03285b8cecccc7">&#9670;&nbsp;</a></span>InitialSample()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1rl_1_1Acrobat_1_1State.html">State</a> InitialSample </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >This function does random initialization of state space. </p>
+
+<p class="definition">Definition at line <a class="el" href="acrobat_8hpp_source.html#l00195">195</a> of file <a class="el" href="acrobat_8hpp_source.html">acrobat.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="acrobat_8hpp_source.html#l00041">Acrobat::State::State()</a>.</p>
+
+</div>
+</div>
+<a id="a7fd056133dfd315e4bf45c408f99326f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fd056133dfd315e4bf45c408f99326f">&#9670;&nbsp;</a></span>IsTerminal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">bool IsTerminal </td>
+          <td >(</td>
+          <td class="paramtype">const <a class="el" href="classmlpack_1_1rl_1_1Acrobat_1_1State.html">State</a> &amp;&#160;</td>
+          <td class="paramname"><em >state</em></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >This function checks if the acrobat has reached the terminal state. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">state</td><td >The current <a class="el" href="classmlpack_1_1rl_1_1Acrobat_1_1State.html">State</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="acrobat_8hpp_source.html#l00205">205</a> of file <a class="el" href="acrobat_8hpp_source.html">acrobat.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="acrobat_8hpp_source.html#l00055">Acrobat::State::Theta1()</a>, and <a class="el" href="acrobat_8hpp_source.html#l00060">Acrobat::State::Theta2()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="acrobat_8hpp_source.html#l00148">Acrobat::Sample()</a>.</p>
+
+</div>
+</div>
+<a id="ae09ec5b585b264b14d2831e689021a5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae09ec5b585b264b14d2831e689021a5e">&#9670;&nbsp;</a></span>Rk4()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">arma::colvec Rk4 </td>
+          <td >(</td>
+          <td class="paramtype">const arma::colvec&#160;</td>
+          <td class="paramname"><em >state</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >torque</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >This function calls the RK4 iterative method to estimate the next state based on given ordinary differential equation. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">state</td><td >The current <a class="el" href="classmlpack_1_1rl_1_1Acrobat_1_1State.html">State</a>. </td></tr>
+    <tr ><td class="paramname">torque</td><td >The torque applied. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="acrobat_8hpp_source.html#l00305">305</a> of file <a class="el" href="acrobat_8hpp_source.html">acrobat.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="acrobat_8hpp_source.html#l00218">Acrobat::Dsdt()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="acrobat_8hpp_source.html#l00148">Acrobat::Sample()</a>.</p>
+
+</div>
+</div>
+<a id="a441f6bb9b9cb9b6da32e0c46c1b9aeb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a441f6bb9b9cb9b6da32e0c46c1b9aeb9">&#9670;&nbsp;</a></span>Sample() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Sample </td>
+          <td >(</td>
+          <td class="paramtype">const <a class="el" href="classmlpack_1_1rl_1_1Acrobat_1_1State.html">State</a> &amp;&#160;</td>
+          <td class="paramname"><em >state</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const <a class="el" href="classmlpack_1_1rl_1_1Acrobat.html#a8bb1ef53467e4f61410d12822d922498">Action</a> &amp;&#160;</td>
+          <td class="paramname"><em >action</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype"><a class="el" href="classmlpack_1_1rl_1_1Acrobat_1_1State.html">State</a> &amp;&#160;</td>
+          <td class="paramname"><em >nextState</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Dynamics of the <a class="el" href="classmlpack_1_1rl_1_1Acrobat.html" title="Implementation of Acrobat game. ">Acrobat</a> System. </p>
+<p >To get reward and next state based on current state and current action. Always return -1 reward.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">state</td><td >The current <a class="el" href="classmlpack_1_1rl_1_1Acrobat_1_1State.html">State</a>. </td></tr>
+    <tr ><td class="paramname">action</td><td >The action taken. </td></tr>
+    <tr ><td class="paramname">nextState</td><td >The next state. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt >Returns</dt><dd >reward, it's always -1.0. </dd></dl>
+<p >The value of angular velocity is bounded in min and max value.</p>
+<p >If the acrobat reaches a terminal state, it should be given a positive reward. This will ensure that the agent learns the goal of the game.</p>
+
+<p class="definition">Definition at line <a class="el" href="acrobat_8hpp_source.html#l00148">148</a> of file <a class="el" href="acrobat_8hpp_source.html">acrobat.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="acrobat_8hpp_source.html#l00065">Acrobat::State::AngularVelocity1()</a>, <a class="el" href="acrobat_8hpp_source.html#l00070">Acrobat::State::AngularVelocity2()</a>, <a class="el" href="acrobat_8hpp_source.html#l00205">Acrobat::IsTerminal()</a>, <a class="el" href="prereqs_8hpp_source.html#l00039">M_PI</a>, <a class="el" href="acrobat_8hpp_source.html#l00305">Acrobat::Rk4()</a>, <a class="el" href="acrobat_8hpp_source.html#l00055">Acrobat::State::Theta1()</a>, <a class="el" href="acrobat_8hpp_source.html#l00060">Acrobat::State::Theta2()</a>, <a class="el" href="acrobat_8hpp_source.html#l00291">Acrobat::Torque()</a>, and <a class="el" href="acrobat_8hpp_source.html#l00267">Acrobat::Wrap()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="acrobat_8hpp_source.html#l00186">Acrobat::Sample()</a>.</p>
+
+</div>
+</div>
+<a id="a3f40fc6d96bb0c29ae00db3551eb76a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f40fc6d96bb0c29ae00db3551eb76a8">&#9670;&nbsp;</a></span>Sample() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Sample </td>
+          <td >(</td>
+          <td class="paramtype">const <a class="el" href="classmlpack_1_1rl_1_1Acrobat_1_1State.html">State</a> &amp;&#160;</td>
+          <td class="paramname"><em >state</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const <a class="el" href="classmlpack_1_1rl_1_1Acrobat.html#a8bb1ef53467e4f61410d12822d922498">Action</a> &amp;&#160;</td>
+          <td class="paramname"><em >action</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Dynamics of the <a class="el" href="classmlpack_1_1rl_1_1Acrobat.html" title="Implementation of Acrobat game. ">Acrobat</a> System. </p>
+<p >To get reward and next state based on current state and current action. This function calls the Sample function to estimate the next state return reward for taking a particular action.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">state</td><td >The current <a class="el" href="classmlpack_1_1rl_1_1Acrobat_1_1State.html">State</a>. </td></tr>
+    <tr ><td class="paramname">action</td><td >The action taken. </td></tr>
+    <tr ><td class="paramname">nextState</td><td >The next state. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="acrobat_8hpp_source.html#l00186">186</a> of file <a class="el" href="acrobat_8hpp_source.html">acrobat.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="acrobat_8hpp_source.html#l00148">Acrobat::Sample()</a>.</p>
+
+</div>
+</div>
+<a id="ae12a0a80a61e21f6e1b722f4ad7d0b81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae12a0a80a61e21f6e1b722f4ad7d0b81">&#9670;&nbsp;</a></span>Torque()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Torque </td>
+          <td >(</td>
+          <td class="paramtype">const <a class="el" href="classmlpack_1_1rl_1_1Acrobat.html#a8bb1ef53467e4f61410d12822d922498">Action</a> &amp;&#160;</td>
+          <td class="paramname"><em >action</em></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >This function calculates the torque for a particular action. </p>
+<p >0 : negative torque, 1 : zero torque, 2 : positive torque.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">Action</td><td >action taken. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="acrobat_8hpp_source.html#l00291">291</a> of file <a class="el" href="acrobat_8hpp_source.html">acrobat.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="random_8hpp_source.html#l00071">mlpack::math::Random()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="acrobat_8hpp_source.html#l00148">Acrobat::Sample()</a>.</p>
+
+</div>
+</div>
+<a id="a9f977aba34c92e5f5f9249d8738ec85a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f977aba34c92e5f5f9249d8738ec85a">&#9670;&nbsp;</a></span>Wrap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Wrap </td>
+          <td >(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em >value</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >minimum</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >maximum</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Wrap funtion is required to truncate the angle value from -180 to 180. </p>
+<p >This function will make sure that value will always be between minimum to maximum.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">value</td><td >Scalar value to wrap. </td></tr>
+    <tr ><td class="paramname">minimum</td><td >Minimum range of wrap. </td></tr>
+    <tr ><td class="paramname">maximum</td><td >Maximum range of wrap. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="acrobat_8hpp_source.html#l00267">267</a> of file <a class="el" href="acrobat_8hpp_source.html">acrobat.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="acrobat_8hpp_source.html#l00148">Acrobat::Sample()</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/methods/reinforcement_learning/environment/<a class="el" href="acrobat_8hpp_source.html">acrobat.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

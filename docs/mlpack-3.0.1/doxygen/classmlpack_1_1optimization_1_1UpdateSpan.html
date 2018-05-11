@@ -1,0 +1,239 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">3.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1optimization.html">optimization</a></li><li class="navelem"><a class="el" href="classmlpack_1_1optimization_1_1UpdateSpan.html">UpdateSpan</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classmlpack_1_1optimization_1_1UpdateSpan-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">UpdateSpan Class Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >Recalculate the optimal solution in the span of all previous solution space, used as update step for <a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html" title="Frank-Wolfe is a technique to minimize a continuously differentiable convex function  over a compact ...">FrankWolfe</a> algorithm.  
+ <a href="classmlpack_1_1optimization_1_1UpdateSpan.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a90b102ff5f176e675cc1428cf0047852"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1UpdateSpan.html#a90b102ff5f176e675cc1428cf0047852">UpdateSpan</a> (const bool isPrune=false)</td></tr>
+<tr class="memdesc:a90b102ff5f176e675cc1428cf0047852"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the span update rule.  <a href="#a90b102ff5f176e675cc1428cf0047852">More...</a><br /></br></td></tr>
+<tr class="separator:a90b102ff5f176e675cc1428cf0047852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4316657f833573c2e82a0689b6f83aea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1UpdateSpan.html#a4316657f833573c2e82a0689b6f83aea">Update</a> (<a class="el" href="classmlpack_1_1optimization_1_1FuncSq.html">FuncSq</a> &amp;function, const arma::mat &amp;oldCoords, const arma::mat &amp;s, arma::mat &amp;newCoords, const size_t)</td></tr>
+<tr class="memdesc:a4316657f833573c2e82a0689b6f83aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update rule for <a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html" title="Frank-Wolfe is a technique to minimize a continuously differentiable convex function  over a compact ...">FrankWolfe</a>, reoptimize in the span of current solution space.  <a href="#a4316657f833573c2e82a0689b6f83aea">More...</a><br /></br></td></tr>
+<tr class="separator:a4316657f833573c2e82a0689b6f83aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Recalculate the optimal solution in the span of all previous solution space, used as update step for <a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html" title="Frank-Wolfe is a technique to minimize a continuously differentiable convex function  over a compact ...">FrankWolfe</a> algorithm. </p>
+<p >Currently only works for function in <a class="el" href="classmlpack_1_1optimization_1_1FuncSq.html" title="Square loss function . ">FuncSq</a> class. </p>
+
+<p class="definition">Definition at line <a class="el" href="update__span_8hpp_source.html#l00029">29</a> of file <a class="el" href="update__span_8hpp_source.html">update_span.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a90b102ff5f176e675cc1428cf0047852"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90b102ff5f176e675cc1428cf0047852">&#9670;&nbsp;</a></span>UpdateSpan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1optimization_1_1UpdateSpan.html">UpdateSpan</a> </td>
+          <td >(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em >isPrune</em> = <code >false</code></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Construct the span update rule. </p>
+<p >The function to be optimized is input here.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">function</td><td ><a class="el" href="classmlpack_1_1optimization_1_1Function.html" title="The Function class is a wrapper class for any FunctionType that will add any possible derived methods...">Function</a> to be optimized in <a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html" title="Frank-Wolfe is a technique to minimize a continuously differentiable convex function  over a compact ...">FrankWolfe</a> algorithm. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="update__span_8hpp_source.html#l00037">37</a> of file <a class="el" href="update__span_8hpp_source.html">update_span.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4316657f833573c2e82a0689b6f83aea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4316657f833573c2e82a0689b6f83aea">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Update </td>
+          <td >(</td>
+          <td class="paramtype"><a class="el" href="classmlpack_1_1optimization_1_1FuncSq.html">FuncSq</a> &amp;&#160;</td>
+          <td class="paramname"><em >function</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >oldCoords</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >s</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >newCoords</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Update rule for <a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html" title="Frank-Wolfe is a technique to minimize a continuously differentiable convex function  over a compact ...">FrankWolfe</a>, reoptimize in the span of current solution space. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">function</td><td >function to be optimized. </td></tr>
+    <tr ><td class="paramname">oldCoords</td><td >previous solution coords. </td></tr>
+    <tr ><td class="paramname">s</td><td >current linearConstrSolution result. </td></tr>
+    <tr ><td class="paramname">newCoords</td><td >output new solution coords. </td></tr>
+    <tr ><td class="paramname">numIter</td><td >current iteration number. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="update__span_8hpp_source.html#l00050">50</a> of file <a class="el" href="update__span_8hpp_source.html">update_span.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="atoms_8hpp_source.html#l00036">Atoms::AddAtom()</a>, <a class="el" href="atoms_8hpp_source.html#l00203">Atoms::CurrentAtoms()</a>, <a class="el" href="atoms_8hpp_source.html#l00198">Atoms::CurrentCoeffs()</a>, <a class="el" href="atoms_8hpp_source.html#l00085">Atoms::PruneSupport()</a>, and <a class="el" href="atoms_8hpp_source.html#l00061">Atoms::RecoverVector()</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/core/optimizers/fw/<a class="el" href="update__span_8hpp_source.html">update_span.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

@@ -1,0 +1,60 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a fast, flexible c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a fast, flexible c++ machine learning library</title>
+</head><link rel="stylesheet" href="../../../style.css" /></link><link rel="stylesheet" href="../../style-python.css" /></link><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" /></link>
+
+
+
+<body ><br /></br>
+
+
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext pythonpage">
+<h1><center>mlpack.adaboost</center></h1>
+<font class="titlecode">adaboost(...)</font><br />
+<font class="titlebold">AdaBoost</font>
+<p class="importcode">&gt;&gt;&gt; from mlpack import adaboost</p><p>This program implements the AdaBoost (or Adaptive Boosting) algorithm. The variant of AdaBoost implemented here is AdaBoost.MH. It uses a weak learner, either decision stumps or perceptrons, and over many iterations, creates a strong learner that is a weighted ensemble of weak learners. It runs these iterations until a tolerance value is crossed for change in the value of the weighted training error.</p>
+</p>
+<p>For more information about the algorithm, see the paper "Improved Boosting Algorithms Using Confidence-Rated Predictions", by R.E. Schapire and Y. Singer.</p>
+</p>
+<p>This program allows training of an AdaBoost model, and then application of that model to a test dataset.  To train a model, a dataset must be passed with the <font class="code">'training'</font> option.  Labels can be given with the <font class="code">'labels'</font> option; if no labels are specified, the labels will be assumed to be the last column of the input dataset.  Alternately, an AdaBoost model may be loaded with the <font class="code">'input_model'</font> option.</p>
+</p>
+<p>Once a model is trained or loaded, it may be used to provide class predictions for a given test dataset.  A test dataset may be specified with the <font class="code">'test'</font> parameter.  The predicted classes for each point in the test dataset are output to the <font class="code">'output'</font> output parameter.  The AdaBoost model itself is output to the <font class="code">'output_model'</font>output parameter.</p>
+</p>
+<p>For example, to run AdaBoost on an input dataset <font class="code">'data'</font> with perceptrons as the weak learner type, storing the trained model in <font class="code">'model'</font>, one could use the following command: </p>
+</p>
+<p class="codeblock"><font class="code">&gt;&gt;&gt; adaboost(training=data, weak_learner='perceptron')<br />
+&gt;&gt;&gt; model = output['output']</font></p>
+</p>
+<p>Similarly, an already-trained model in <font class="code">'model'</font> can be used to provide class predictions from test data <font class="code">'test_data'</font> and store the output in <font class="code">'predictions'</font> with the following command: </p>
+</p>
+<p class="codeblock"><font class="code">&gt;&gt;&gt; adaboost(input_model=model, test=test_data)<br />
+&gt;&gt;&gt; predictions = output['output']</font></p><h2>input options</h2>
+<ul>
+<li><font class="code">copy_all_inputs</font> <font class="codetype">(bool)</font>: If specified, all input parameters will be deep copied before the method is run.  This is useful for debugging problems where the input parameters are being modified by the algorithm, but can slow down the code.</li><li><font class="code">input_model</font> <font class="codetype">(mlpack.AdaBoostModelType)</font>: Input AdaBoost model.</li><li><font class="code">iterations</font> <font class="codetype">(int)</font>: The maximum number of boosting iterations to be run (0 will run until convergence.)  Default value 1000.</li><li><font class="code">labels</font> <font class="codetype">(numpy vector or array, int/long dtype)</font>: Labels for the training set.</li><li><font class="code">test</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: Test dataset.</li><li><font class="code">tolerance</font> <font class="codetype">(float)</font>: The tolerance for change in values of the weighted error during training.  Default value 1e-10.</li><li><font class="code">training</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: Dataset for training AdaBoost.</li><li><font class="code">verbose</font> <font class="codetype">(bool)</font>: Display informational messages and the full list of parameters and timers at the end of execution.</li><li><font class="code">weak_learner</font> <font class="codetype">(string)</font>: The type of weak learner to use: 'decision_stump', or 'perceptron'.  Default value decision_stump.</li></ul>
+<h2>output options</h2>
+<p>The return value from the binding is a dict containing the following elements:</p>
+<ul><li><font class="code">output</font> <font class="codetype">(numpy vector, int dtype)</font>: Predicted labels for the test set.</li><li><font class="code">output_model</font> <font class="codetype">(mlpack.AdaBoostModelType)</font>: Output trained AdaBoost model.</li><ul>
+</ul>
+</div>
+</body>
+</html>

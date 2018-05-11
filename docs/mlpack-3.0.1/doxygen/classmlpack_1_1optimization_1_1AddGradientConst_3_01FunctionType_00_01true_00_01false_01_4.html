@@ -1,0 +1,179 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">3.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1optimization.html">optimization</a></li><li class="navelem"><a class="el" href="classmlpack_1_1optimization_1_1AddGradientConst_3_01FunctionType_00_01true_00_01false_01_4.html">AddGradientConst&lt; FunctionType, true, false &gt;</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classmlpack_1_1optimization_1_1AddGradientConst_3_01FunctionType_00_01true_00_01false_01_4-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">AddGradientConst&lt; FunctionType, true, false &gt; Class Template Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >If we have EvaluateWithGradient() but no existing <a class="el" href="classmlpack_1_1optimization_1_1AddGradientConst_3_01FunctionType_00_01true_00_01false_01_4.html#a10d32cb3f4599281f55ccfb20cfbc4be" title="Calculate the gradient and store it in the given matrix. ">Gradient()</a>, add a <a class="el" href="classmlpack_1_1optimization_1_1AddGradientConst_3_01FunctionType_00_01true_00_01false_01_4.html#a10d32cb3f4599281f55ccfb20cfbc4be" title="Calculate the gradient and store it in the given matrix. ">Gradient()</a> without a using directive to make the base <a class="el" href="classmlpack_1_1optimization_1_1AddGradientConst_3_01FunctionType_00_01true_00_01false_01_4.html#a10d32cb3f4599281f55ccfb20cfbc4be" title="Calculate the gradient and store it in the given matrix. ">Gradient()</a> accessible.  
+ <a href="classmlpack_1_1optimization_1_1AddGradientConst_3_01FunctionType_00_01true_00_01false_01_4.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a10d32cb3f4599281f55ccfb20cfbc4be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1AddGradientConst_3_01FunctionType_00_01true_00_01false_01_4.html#a10d32cb3f4599281f55ccfb20cfbc4be">Gradient</a> (const arma::mat &amp;coordinates, arma::mat &amp;gradient) const</td></tr>
+<tr class="memdesc:a10d32cb3f4599281f55ccfb20cfbc4be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the gradient and store it in the given matrix.  <a href="#a10d32cb3f4599281f55ccfb20cfbc4be">More...</a><br /></br></td></tr>
+<tr class="separator:a10d32cb3f4599281f55ccfb20cfbc4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3 ><br /><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></br>
+class mlpack::optimization::AddGradientConst&lt; FunctionType, true, false &gt;</h3>
+
+<p >If we have EvaluateWithGradient() but no existing <a class="el" href="classmlpack_1_1optimization_1_1AddGradientConst_3_01FunctionType_00_01true_00_01false_01_4.html#a10d32cb3f4599281f55ccfb20cfbc4be" title="Calculate the gradient and store it in the given matrix. ">Gradient()</a>, add a <a class="el" href="classmlpack_1_1optimization_1_1AddGradientConst_3_01FunctionType_00_01true_00_01false_01_4.html#a10d32cb3f4599281f55ccfb20cfbc4be" title="Calculate the gradient and store it in the given matrix. ">Gradient()</a> without a using directive to make the base <a class="el" href="classmlpack_1_1optimization_1_1AddGradientConst_3_01FunctionType_00_01true_00_01false_01_4.html#a10d32cb3f4599281f55ccfb20cfbc4be" title="Calculate the gradient and store it in the given matrix. ">Gradient()</a> accessible. </p>
+
+<p class="definition">Definition at line <a class="el" href="add__gradient_8hpp_source.html#l00114">114</a> of file <a class="el" href="add__gradient_8hpp_source.html">add_gradient.hpp</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a10d32cb3f4599281f55ccfb20cfbc4be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10d32cb3f4599281f55ccfb20cfbc4be">&#9670;&nbsp;</a></span>Gradient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Gradient </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >coordinates</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >gradient</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Calculate the gradient and store it in the given matrix. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">coordinates</td><td >Coordinates to evaluate the function at. </td></tr>
+    <tr ><td class="paramname">gradient</td><td >Matrix to store the gradient into. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="add__gradient_8hpp_source.html#l00123">123</a> of file <a class="el" href="add__gradient_8hpp_source.html">add_gradient.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="classmlpack_1_1optimization_1_1AddDecomposableEvaluateWithGradientStatic.html#a83d9060e7a957ce8f17b4a922352fdd8">AddDecomposableEvaluateWithGradientStatic&lt; FunctionType, HasDecomposableEvaluateGradient, HasDecomposableEvaluateWithGradient &gt;::EvaluateWithGradient()</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/core/optimizers/function/<a class="el" href="add__gradient_8hpp_source.html">add_gradient.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

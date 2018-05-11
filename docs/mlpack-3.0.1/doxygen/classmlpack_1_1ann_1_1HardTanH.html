@@ -1,0 +1,627 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">3.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1ann.html">ann</a></li><li class="navelem"><a class="el" href="classmlpack_1_1ann_1_1HardTanH.html">HardTanH</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classmlpack_1_1ann_1_1HardTanH-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">HardTanH&lt; InputDataType, OutputDataType &gt; Class Template Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >The Hard Tanh activation function, defined by.  
+ <a href="classmlpack_1_1ann_1_1HardTanH.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a100d6ec0add89f1443eb3a5c5497a82b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1HardTanH.html#a100d6ec0add89f1443eb3a5c5497a82b">HardTanH</a> (const double maxValue=1, const double minValue=-1)</td></tr>
+<tr class="memdesc:a100d6ec0add89f1443eb3a5c5497a82b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the <a class="el" href="classmlpack_1_1ann_1_1HardTanH.html" title="The Hard Tanh activation function, defined by. ">HardTanH</a> object using the specified parameters.  <a href="#a100d6ec0add89f1443eb3a5c5497a82b">More...</a><br /></br></td></tr>
+<tr class="separator:a100d6ec0add89f1443eb3a5c5497a82b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa525317fe70e10a294d68ded21e1235e"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">DataType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:aa525317fe70e10a294d68ded21e1235e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1HardTanH.html#aa525317fe70e10a294d68ded21e1235e">Backward</a> (const DataType &amp;&amp;input, DataType &amp;&amp;gy, DataType &amp;&amp;g)</td></tr>
+<tr class="memdesc:aa525317fe70e10a294d68ded21e1235e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ordinary feed backward pass of a neural network, calculating the function f(x) by propagating x backwards through f.  <a href="#aa525317fe70e10a294d68ded21e1235e">More...</a><br /></br></td></tr>
+<tr class="separator:aa525317fe70e10a294d68ded21e1235e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a797f7edb44dd081e5e2b3cc316eef6bd"><td class="memItemLeft" align="right" valign="top">OutputDataType const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1HardTanH.html#a797f7edb44dd081e5e2b3cc316eef6bd">Delta</a> () const</td></tr>
+<tr class="memdesc:a797f7edb44dd081e5e2b3cc316eef6bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the delta.  <a href="#a797f7edb44dd081e5e2b3cc316eef6bd">More...</a><br /></br></td></tr>
+<tr class="separator:a797f7edb44dd081e5e2b3cc316eef6bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6601342d560219ce951d554e69e5e87"><td class="memItemLeft" align="right" valign="top">OutputDataType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1HardTanH.html#ad6601342d560219ce951d554e69e5e87">Delta</a> ()</td></tr>
+<tr class="memdesc:ad6601342d560219ce951d554e69e5e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the delta.  <a href="#ad6601342d560219ce951d554e69e5e87">More...</a><br /></br></td></tr>
+<tr class="separator:ad6601342d560219ce951d554e69e5e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a234b883e3238eaeab2c3cb51686ade"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">InputType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">OutputType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a2a234b883e3238eaeab2c3cb51686ade"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1HardTanH.html#a2a234b883e3238eaeab2c3cb51686ade">Forward</a> (const InputType &amp;&amp;input, OutputType &amp;&amp;output)</td></tr>
+<tr class="memdesc:a2a234b883e3238eaeab2c3cb51686ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ordinary feed forward pass of a neural network, evaluating the function f(x) by propagating the activity forward through f.  <a href="#a2a234b883e3238eaeab2c3cb51686ade">More...</a><br /></br></td></tr>
+<tr class="separator:a2a234b883e3238eaeab2c3cb51686ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaffd593b3ab627f8b5aae2a1f53634b0"><td class="memItemLeft" align="right" valign="top">InputDataType const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1HardTanH.html#aaffd593b3ab627f8b5aae2a1f53634b0">InputParameter</a> () const</td></tr>
+<tr class="memdesc:aaffd593b3ab627f8b5aae2a1f53634b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the input parameter.  <a href="#aaffd593b3ab627f8b5aae2a1f53634b0">More...</a><br /></br></td></tr>
+<tr class="separator:aaffd593b3ab627f8b5aae2a1f53634b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a063c3b1053c7979a7dd2e7bbd2bf1f8a"><td class="memItemLeft" align="right" valign="top">InputDataType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1HardTanH.html#a063c3b1053c7979a7dd2e7bbd2bf1f8a">InputParameter</a> ()</td></tr>
+<tr class="memdesc:a063c3b1053c7979a7dd2e7bbd2bf1f8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the input parameter.  <a href="#a063c3b1053c7979a7dd2e7bbd2bf1f8a">More...</a><br /></br></td></tr>
+<tr class="separator:a063c3b1053c7979a7dd2e7bbd2bf1f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a623a4714a5eebaa93e608d60dcf06e27"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1HardTanH.html#a623a4714a5eebaa93e608d60dcf06e27">MaxValue</a> () const</td></tr>
+<tr class="memdesc:a623a4714a5eebaa93e608d60dcf06e27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum value.  <a href="#a623a4714a5eebaa93e608d60dcf06e27">More...</a><br /></br></td></tr>
+<tr class="separator:a623a4714a5eebaa93e608d60dcf06e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb2395e0938ffd53260ec80fe4a3fd29"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1HardTanH.html#afb2395e0938ffd53260ec80fe4a3fd29">MaxValue</a> ()</td></tr>
+<tr class="memdesc:afb2395e0938ffd53260ec80fe4a3fd29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the maximum value.  <a href="#afb2395e0938ffd53260ec80fe4a3fd29">More...</a><br /></br></td></tr>
+<tr class="separator:afb2395e0938ffd53260ec80fe4a3fd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4704bc5118b3361e1fee1fec6cf29090"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1HardTanH.html#a4704bc5118b3361e1fee1fec6cf29090">MinValue</a> () const</td></tr>
+<tr class="memdesc:a4704bc5118b3361e1fee1fec6cf29090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the minimum value.  <a href="#a4704bc5118b3361e1fee1fec6cf29090">More...</a><br /></br></td></tr>
+<tr class="separator:a4704bc5118b3361e1fee1fec6cf29090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f44631970deafe05a5c6d3de3f71da0"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1HardTanH.html#a3f44631970deafe05a5c6d3de3f71da0">MinValue</a> ()</td></tr>
+<tr class="memdesc:a3f44631970deafe05a5c6d3de3f71da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the minimum value.  <a href="#a3f44631970deafe05a5c6d3de3f71da0">More...</a><br /></br></td></tr>
+<tr class="separator:a3f44631970deafe05a5c6d3de3f71da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ee21c2a36e5abad1e7a9d5dd00849f9"><td class="memItemLeft" align="right" valign="top">OutputDataType const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1HardTanH.html#a0ee21c2a36e5abad1e7a9d5dd00849f9">OutputParameter</a> () const</td></tr>
+<tr class="memdesc:a0ee21c2a36e5abad1e7a9d5dd00849f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the output parameter.  <a href="#a0ee21c2a36e5abad1e7a9d5dd00849f9">More...</a><br /></br></td></tr>
+<tr class="separator:a0ee21c2a36e5abad1e7a9d5dd00849f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d5f745f02c709625a4ee0907f004a5"><td class="memItemLeft" align="right" valign="top">OutputDataType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1HardTanH.html#a21d5f745f02c709625a4ee0907f004a5">OutputParameter</a> ()</td></tr>
+<tr class="memdesc:a21d5f745f02c709625a4ee0907f004a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the output parameter.  <a href="#a21d5f745f02c709625a4ee0907f004a5">More...</a><br /></br></td></tr>
+<tr class="separator:a21d5f745f02c709625a4ee0907f004a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0dd9205158ccf7bcfcd8ff81f79c927"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:af0dd9205158ccf7bcfcd8ff81f79c927"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1HardTanH.html#af0dd9205158ccf7bcfcd8ff81f79c927">serialize</a> (Archive &amp;ar, const unsigned int)</td></tr>
+<tr class="memdesc:af0dd9205158ccf7bcfcd8ff81f79c927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the layer.  <a href="#af0dd9205158ccf7bcfcd8ff81f79c927">More...</a><br /></br></td></tr>
+<tr class="separator:af0dd9205158ccf7bcfcd8ff81f79c927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3 ><br /><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">InputDataType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">arma::mat</div></div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">OutputDataType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">arma::mat</div></div><div class="close_bracket">&gt;</div></div></div></div></br>
+class mlpack::ann::HardTanH&lt; InputDataType, OutputDataType &gt;</h3>
+
+<p >The Hard Tanh activation function, defined by. </p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\begin{eqnarray*} f(x) &amp;=&amp; \left\{ \begin{array}{lr} max &amp; : x &gt; maxValue \\ min &amp; : x \le minValue \\ x &amp; : otherwise \end{array} \right. \\ f&apos;(x) &amp;=&amp; \left\{ \begin{array}{lr} 0 &amp; : x &gt; maxValue \\ 0 &amp; : x \le minValue \\ 1 &amp; : otherwise \end{array} \right. \end{eqnarray*}" src="form_151.png"></img>
+</p>
+<dl class="tparams"><dt >Template Parameters</dt><dd >
+  <table class="tparams">
+    <tr ><td class="paramname">InputDataType</td><td >Type of the input data (arma::colvec, arma::mat, arma::sp_mat or arma::cube). </td></tr>
+    <tr ><td class="paramname">OutputDataType</td><td >Type of the output data (arma::colvec, arma::mat, arma::sp_mat or arma::cube). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="hard__tanh_8hpp_source.html#l00049">49</a> of file <a class="el" href="hard__tanh_8hpp_source.html">hard_tanh.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a100d6ec0add89f1443eb3a5c5497a82b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a100d6ec0add89f1443eb3a5c5497a82b">&#9670;&nbsp;</a></span>HardTanH()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1ann_1_1HardTanH.html">HardTanH</a> </td>
+          <td >(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >maxValue</em> = <code >1</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >minValue</em> = <code >-1</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Create the <a class="el" href="classmlpack_1_1ann_1_1HardTanH.html" title="The Hard Tanh activation function, defined by. ">HardTanH</a> object using the specified parameters. </p>
+<p >The range of the linear region can be adjusted by specifying the maxValue and minValue. Default (maxValue = 1, minValue = -1).</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">maxValue</td><td >Range of the linear region maximum value. </td></tr>
+    <tr ><td class="paramname">minValue</td><td >Range of the linear region minimum value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa525317fe70e10a294d68ded21e1235e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa525317fe70e10a294d68ded21e1235e">&#9670;&nbsp;</a></span>Backward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Backward </td>
+          <td >(</td>
+          <td class="paramtype">const DataType &amp;&amp;&#160;</td>
+          <td class="paramname"><em >input</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">DataType &amp;&amp;&#160;</td>
+          <td class="paramname"><em >gy</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">DataType &amp;&amp;&#160;</td>
+          <td class="paramname"><em >g</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Ordinary feed backward pass of a neural network, calculating the function f(x) by propagating x backwards through f. </p>
+<p >Using the results from the feed forward pass.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">input</td><td >The propagated input activation. </td></tr>
+    <tr ><td class="paramname">gy</td><td >The backpropagated error. </td></tr>
+    <tr ><td class="paramname">g</td><td >The calculated gradient. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a797f7edb44dd081e5e2b3cc316eef6bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a797f7edb44dd081e5e2b3cc316eef6bd">&#9670;&nbsp;</a></span>Delta() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">OutputDataType const&amp; Delta </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the delta. </p>
+
+<p class="definition">Definition at line <a class="el" href="hard__tanh_8hpp_source.html#l00097">97</a> of file <a class="el" href="hard__tanh_8hpp_source.html">hard_tanh.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad6601342d560219ce951d554e69e5e87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6601342d560219ce951d554e69e5e87">&#9670;&nbsp;</a></span>Delta() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">OutputDataType&amp; Delta </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the delta. </p>
+
+<p class="definition">Definition at line <a class="el" href="hard__tanh_8hpp_source.html#l00099">99</a> of file <a class="el" href="hard__tanh_8hpp_source.html">hard_tanh.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a2a234b883e3238eaeab2c3cb51686ade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a234b883e3238eaeab2c3cb51686ade">&#9670;&nbsp;</a></span>Forward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Forward </td>
+          <td >(</td>
+          <td class="paramtype">const InputType &amp;&amp;&#160;</td>
+          <td class="paramname"><em >input</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">OutputType &amp;&amp;&#160;</td>
+          <td class="paramname"><em >output</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Ordinary feed forward pass of a neural network, evaluating the function f(x) by propagating the activity forward through f. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">input</td><td >Input data used for evaluating the specified function. </td></tr>
+    <tr ><td class="paramname">output</td><td >Resulting output activation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaffd593b3ab627f8b5aae2a1f53634b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaffd593b3ab627f8b5aae2a1f53634b0">&#9670;&nbsp;</a></span>InputParameter() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">InputDataType const&amp; InputParameter </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the input parameter. </p>
+
+<p class="definition">Definition at line <a class="el" href="hard__tanh_8hpp_source.html#l00087">87</a> of file <a class="el" href="hard__tanh_8hpp_source.html">hard_tanh.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a063c3b1053c7979a7dd2e7bbd2bf1f8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a063c3b1053c7979a7dd2e7bbd2bf1f8a">&#9670;&nbsp;</a></span>InputParameter() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">InputDataType&amp; InputParameter </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the input parameter. </p>
+
+<p class="definition">Definition at line <a class="el" href="hard__tanh_8hpp_source.html#l00089">89</a> of file <a class="el" href="hard__tanh_8hpp_source.html">hard_tanh.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a623a4714a5eebaa93e608d60dcf06e27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a623a4714a5eebaa93e608d60dcf06e27">&#9670;&nbsp;</a></span>MaxValue() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double const&amp; MaxValue </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the maximum value. </p>
+
+<p class="definition">Definition at line <a class="el" href="hard__tanh_8hpp_source.html#l00102">102</a> of file <a class="el" href="hard__tanh_8hpp_source.html">hard_tanh.hpp</a>.</p>
+
+</div>
+</div>
+<a id="afb2395e0938ffd53260ec80fe4a3fd29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb2395e0938ffd53260ec80fe4a3fd29">&#9670;&nbsp;</a></span>MaxValue() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double&amp; MaxValue </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the maximum value. </p>
+
+<p class="definition">Definition at line <a class="el" href="hard__tanh_8hpp_source.html#l00104">104</a> of file <a class="el" href="hard__tanh_8hpp_source.html">hard_tanh.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a4704bc5118b3361e1fee1fec6cf29090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4704bc5118b3361e1fee1fec6cf29090">&#9670;&nbsp;</a></span>MinValue() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double const&amp; MinValue </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the minimum value. </p>
+
+<p class="definition">Definition at line <a class="el" href="hard__tanh_8hpp_source.html#l00107">107</a> of file <a class="el" href="hard__tanh_8hpp_source.html">hard_tanh.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a3f44631970deafe05a5c6d3de3f71da0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f44631970deafe05a5c6d3de3f71da0">&#9670;&nbsp;</a></span>MinValue() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double&amp; MinValue </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the minimum value. </p>
+
+<p class="definition">Definition at line <a class="el" href="hard__tanh_8hpp_source.html#l00109">109</a> of file <a class="el" href="hard__tanh_8hpp_source.html">hard_tanh.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="classmlpack_1_1ann_1_1HardTanH.html#af0dd9205158ccf7bcfcd8ff81f79c927">HardTanH&lt; InputDataType, OutputDataType &gt;::serialize()</a>.</p>
+
+</div>
+</div>
+<a id="a0ee21c2a36e5abad1e7a9d5dd00849f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ee21c2a36e5abad1e7a9d5dd00849f9">&#9670;&nbsp;</a></span>OutputParameter() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">OutputDataType const&amp; OutputParameter </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the output parameter. </p>
+
+<p class="definition">Definition at line <a class="el" href="hard__tanh_8hpp_source.html#l00092">92</a> of file <a class="el" href="hard__tanh_8hpp_source.html">hard_tanh.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a21d5f745f02c709625a4ee0907f004a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21d5f745f02c709625a4ee0907f004a5">&#9670;&nbsp;</a></span>OutputParameter() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">OutputDataType&amp; OutputParameter </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the output parameter. </p>
+
+<p class="definition">Definition at line <a class="el" href="hard__tanh_8hpp_source.html#l00094">94</a> of file <a class="el" href="hard__tanh_8hpp_source.html">hard_tanh.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af0dd9205158ccf7bcfcd8ff81f79c927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0dd9205158ccf7bcfcd8ff81f79c927">&#9670;&nbsp;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void serialize </td>
+          <td >(</td>
+          <td class="paramtype">Archive &amp;&#160;</td>
+          <td class="paramname"><em >ar</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em >int</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Serialize the layer. </p>
+
+<p class="reference">Referenced by <a class="el" href="hard__tanh_8hpp_source.html#l00109">HardTanH&lt; InputDataType, OutputDataType &gt;::MinValue()</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/methods/ann/layer/<a class="el" href="hard__tanh_8hpp_source.html">hard_tanh.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

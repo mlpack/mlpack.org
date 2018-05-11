@@ -1,0 +1,332 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">3.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1optimization.html">optimization</a></li><li class="navelem"><a class="el" href="classmlpack_1_1optimization_1_1NesterovMomentumUpdate.html">NesterovMomentumUpdate</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classmlpack_1_1optimization_1_1NesterovMomentumUpdate-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">NesterovMomentumUpdate Class Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >Nesterov Momentum update policy for Stochastic Gradient Descent (<a class="el" href="classmlpack_1_1optimization_1_1SGD.html" title="Stochastic Gradient Descent is a technique for minimizing a function which can be expressed as a sum ...">SGD</a>).  
+ <a href="classmlpack_1_1optimization_1_1NesterovMomentumUpdate.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:abd479da8df43074c0e339aa2e42259e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1NesterovMomentumUpdate.html#abd479da8df43074c0e339aa2e42259e4">NesterovMomentumUpdate</a> (const double momentum=0.5)</td></tr>
+<tr class="memdesc:abd479da8df43074c0e339aa2e42259e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the Nesterov Momentum update policy with the given parameters.  <a href="#abd479da8df43074c0e339aa2e42259e4">More...</a><br /></br></td></tr>
+<tr class="separator:abd479da8df43074c0e339aa2e42259e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84079312fbb390a3a3b6033fbf76cb24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1NesterovMomentumUpdate.html#a84079312fbb390a3a3b6033fbf76cb24">Initialize</a> (const size_t rows, const size_t cols)</td></tr>
+<tr class="memdesc:a84079312fbb390a3a3b6033fbf76cb24"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Initialize method is called by <a class="el" href="classmlpack_1_1optimization_1_1SGD.html" title="Stochastic Gradient Descent is a technique for minimizing a function which can be expressed as a sum ...">SGD</a> Optimizer method before the start of the iteration update process.  <a href="#a84079312fbb390a3a3b6033fbf76cb24">More...</a><br /></br></td></tr>
+<tr class="separator:a84079312fbb390a3a3b6033fbf76cb24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47bdc16d2d5d5514d9711eae8938fd35"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1NesterovMomentumUpdate.html#a47bdc16d2d5d5514d9711eae8938fd35">Momentum</a> () const</td></tr>
+<tr class="memdesc:a47bdc16d2d5d5514d9711eae8938fd35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value used to initialize the momentum coefficient.  <a href="#a47bdc16d2d5d5514d9711eae8938fd35">More...</a><br /></br></td></tr>
+<tr class="separator:a47bdc16d2d5d5514d9711eae8938fd35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a9b0ff31fe942a865a0daa1eacca72c"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1NesterovMomentumUpdate.html#a4a9b0ff31fe942a865a0daa1eacca72c">Momentum</a> ()</td></tr>
+<tr class="memdesc:a4a9b0ff31fe942a865a0daa1eacca72c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the value used to initialize the momentum coefficient.  <a href="#a4a9b0ff31fe942a865a0daa1eacca72c">More...</a><br /></br></td></tr>
+<tr class="separator:a4a9b0ff31fe942a865a0daa1eacca72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f56acfecef50b84bad6f4183c89ff0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1NesterovMomentumUpdate.html#a66f56acfecef50b84bad6f4183c89ff0">Update</a> (arma::mat &amp;iterate, const double stepSize, const arma::mat &amp;gradient)</td></tr>
+<tr class="memdesc:a66f56acfecef50b84bad6f4183c89ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update step for <a class="el" href="classmlpack_1_1optimization_1_1SGD.html" title="Stochastic Gradient Descent is a technique for minimizing a function which can be expressed as a sum ...">SGD</a>.  <a href="#a66f56acfecef50b84bad6f4183c89ff0">More...</a><br /></br></td></tr>
+<tr class="separator:a66f56acfecef50b84bad6f4183c89ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Nesterov Momentum update policy for Stochastic Gradient Descent (<a class="el" href="classmlpack_1_1optimization_1_1SGD.html" title="Stochastic Gradient Descent is a technique for minimizing a function which can be expressed as a sum ...">SGD</a>). </p>
+<p >Learning with <a class="el" href="classmlpack_1_1optimization_1_1SGD.html" title="Stochastic Gradient Descent is a technique for minimizing a function which can be expressed as a sum ...">SGD</a> can be slow. Applying Standard momentum can accelerate the rate of convergence. Nesterov Momentum application can accelerate the rate of convergence to O(1/k^2).</p>
+<div class="fragment"><div class="line">@techreport{Nesterov1983,</div><div class="line">  title       = {A Method Of Solving A Convex Programming Problem With </div><div class="line">                 Convergence Rate O(1/K^2)},</div><div class="line">  author      = {Yuri Nesterov},</div><div class="line">  institution = {Soviet Math. Dokl.},</div><div class="line">  volume      = {27},</div><div class="line">  year        = {1983},</div><div class="line">}</div></div> 
+<p class="definition">Definition at line <a class="el" href="nesterov__momentum__update_8hpp_source.html#l00038">38</a> of file <a class="el" href="nesterov__momentum__update_8hpp_source.html">nesterov_momentum_update.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="abd479da8df43074c0e339aa2e42259e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd479da8df43074c0e339aa2e42259e4">&#9670;&nbsp;</a></span>NesterovMomentumUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1optimization_1_1NesterovMomentumUpdate.html">NesterovMomentumUpdate</a> </td>
+          <td >(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >momentum</em> = <code >0.5</code></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Construct the Nesterov Momentum update policy with the given parameters. </p>
+
+<p class="definition">Definition at line <a class="el" href="nesterov__momentum__update_8hpp_source.html#l00045">45</a> of file <a class="el" href="nesterov__momentum__update_8hpp_source.html">nesterov_momentum_update.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a84079312fbb390a3a3b6033fbf76cb24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84079312fbb390a3a3b6033fbf76cb24">&#9670;&nbsp;</a></span>Initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Initialize </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >rows</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >cols</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >The Initialize method is called by <a class="el" href="classmlpack_1_1optimization_1_1SGD.html" title="Stochastic Gradient Descent is a technique for minimizing a function which can be expressed as a sum ...">SGD</a> Optimizer method before the start of the iteration update process. </p>
+<p >In the momentum update policy the velocity matrix is initialized to the zeros matrix with the same size as the gradient matrix (see mlpack::optimization::SGD::Optimizer )</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">rows</td><td >Number of rows in the gradient matrix. </td></tr>
+    <tr ><td class="paramname">cols</td><td >Number of columns in the gradient matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="nesterov__momentum__update_8hpp_source.html#l00060">60</a> of file <a class="el" href="nesterov__momentum__update_8hpp_source.html">nesterov_momentum_update.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a47bdc16d2d5d5514d9711eae8938fd35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47bdc16d2d5d5514d9711eae8938fd35">&#9670;&nbsp;</a></span>Momentum() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Momentum </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the value used to initialize the momentum coefficient. </p>
+
+<p class="definition">Definition at line <a class="el" href="nesterov__momentum__update_8hpp_source.html#l00085">85</a> of file <a class="el" href="nesterov__momentum__update_8hpp_source.html">nesterov_momentum_update.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a4a9b0ff31fe942a865a0daa1eacca72c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a9b0ff31fe942a865a0daa1eacca72c">&#9670;&nbsp;</a></span>Momentum() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double&amp; Momentum </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the value used to initialize the momentum coefficient. </p>
+
+<p class="definition">Definition at line <a class="el" href="nesterov__momentum__update_8hpp_source.html#l00087">87</a> of file <a class="el" href="nesterov__momentum__update_8hpp_source.html">nesterov_momentum_update.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a66f56acfecef50b84bad6f4183c89ff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66f56acfecef50b84bad6f4183c89ff0">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Update </td>
+          <td >(</td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >iterate</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >stepSize</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >gradient</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Update step for <a class="el" href="classmlpack_1_1optimization_1_1SGD.html" title="Stochastic Gradient Descent is a technique for minimizing a function which can be expressed as a sum ...">SGD</a>. </p>
+<p >The momentum term makes the convergence faster on the way as momentum term increases for dimensions pointing in the same direction and reduces updates for dimensions whose gradients change directions.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">iterate</td><td >Parameters that minimize the function. </td></tr>
+    <tr ><td class="paramname">stepSize</td><td >Step size to be used for the given iteration. </td></tr>
+    <tr ><td class="paramname">gradient</td><td >The gradient matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="nesterov__momentum__update_8hpp_source.html#l00075">75</a> of file <a class="el" href="nesterov__momentum__update_8hpp_source.html">nesterov_momentum_update.hpp</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/core/optimizers/sgd/update_policies/<a class="el" href="nesterov__momentum__update_8hpp_source.html">nesterov_momentum_update.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

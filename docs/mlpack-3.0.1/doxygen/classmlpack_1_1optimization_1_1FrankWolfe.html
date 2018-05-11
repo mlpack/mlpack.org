@@ -1,0 +1,516 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">3.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1optimization.html">optimization</a></li><li class="navelem"><a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html">FrankWolfe</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classmlpack_1_1optimization_1_1FrankWolfe-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">FrankWolfe&lt; LinearConstrSolverType, UpdateRuleType &gt; Class Template Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >Frank-Wolfe is a technique to minimize a continuously differentiable convex function <img class="formulaInl" alt="$ f $" src="form_77.png"></img> over a compact convex subset <img class="formulaInl" alt="$ D $" src="form_62.png"></img> of a vector space.  
+ <a href="classmlpack_1_1optimization_1_1FrankWolfe.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a14f6aeb6e425c4e16ed1ecaecbce5d08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html#a14f6aeb6e425c4e16ed1ecaecbce5d08">FrankWolfe</a> (const LinearConstrSolverType linearConstrSolver, const UpdateRuleType updateRule, const size_t maxIterations=100000, const double tolerance=1e-10)</td></tr>
+<tr class="memdesc:a14f6aeb6e425c4e16ed1ecaecbce5d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the Frank-Wolfe optimizer with the given function and parameters.  <a href="#a14f6aeb6e425c4e16ed1ecaecbce5d08">More...</a><br /></br></td></tr>
+<tr class="separator:a14f6aeb6e425c4e16ed1ecaecbce5d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff1de8131b68bdbbc3dfb2cb9973a1d"><td class="memItemLeft" align="right" valign="top">const LinearConstrSolverType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html#abff1de8131b68bdbbc3dfb2cb9973a1d">LinearConstrSolver</a> () const</td></tr>
+<tr class="memdesc:abff1de8131b68bdbbc3dfb2cb9973a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the linear constrained solver.  <a href="#abff1de8131b68bdbbc3dfb2cb9973a1d">More...</a><br /></br></td></tr>
+<tr class="separator:abff1de8131b68bdbbc3dfb2cb9973a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2700e60b9778899c16ac5c09fe42dc5a"><td class="memItemLeft" align="right" valign="top">LinearConstrSolverType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html#a2700e60b9778899c16ac5c09fe42dc5a">LinearConstrSolver</a> ()</td></tr>
+<tr class="memdesc:a2700e60b9778899c16ac5c09fe42dc5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the linear constrained solver.  <a href="#a2700e60b9778899c16ac5c09fe42dc5a">More...</a><br /></br></td></tr>
+<tr class="separator:a2700e60b9778899c16ac5c09fe42dc5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a420770944a5b0c7a852c4ec372c4a2d1"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html#a420770944a5b0c7a852c4ec372c4a2d1">MaxIterations</a> () const</td></tr>
+<tr class="memdesc:a420770944a5b0c7a852c4ec372c4a2d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of iterations (0 indicates no limit).  <a href="#a420770944a5b0c7a852c4ec372c4a2d1">More...</a><br /></br></td></tr>
+<tr class="separator:a420770944a5b0c7a852c4ec372c4a2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda675ab4ab86b95c92bc33bc391a61b"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html#acda675ab4ab86b95c92bc33bc391a61b">MaxIterations</a> ()</td></tr>
+<tr class="memdesc:acda675ab4ab86b95c92bc33bc391a61b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the maximum number of iterations (0 indicates no limit).  <a href="#acda675ab4ab86b95c92bc33bc391a61b">More...</a><br /></br></td></tr>
+<tr class="separator:acda675ab4ab86b95c92bc33bc391a61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa87fd82bd4d8e6c35d23b2feaa3f9d99"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:aa87fd82bd4d8e6c35d23b2feaa3f9d99"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html#aa87fd82bd4d8e6c35d23b2feaa3f9d99">Optimize</a> (FunctionType &amp;function, arma::mat &amp;iterate)</td></tr>
+<tr class="memdesc:aa87fd82bd4d8e6c35d23b2feaa3f9d99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimize the given function using <a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html" title="Frank-Wolfe is a technique to minimize a continuously differentiable convex function  over a compact ...">FrankWolfe</a>.  <a href="#aa87fd82bd4d8e6c35d23b2feaa3f9d99">More...</a><br /></br></td></tr>
+<tr class="separator:aa87fd82bd4d8e6c35d23b2feaa3f9d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b5af5c1a84c507cbaa7f999ea5a4fda"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html#a7b5af5c1a84c507cbaa7f999ea5a4fda">Tolerance</a> () const</td></tr>
+<tr class="memdesc:a7b5af5c1a84c507cbaa7f999ea5a4fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the tolerance for termination.  <a href="#a7b5af5c1a84c507cbaa7f999ea5a4fda">More...</a><br /></br></td></tr>
+<tr class="separator:a7b5af5c1a84c507cbaa7f999ea5a4fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9fac84af16250f5a3689692e8f2173"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html#a3d9fac84af16250f5a3689692e8f2173">Tolerance</a> ()</td></tr>
+<tr class="memdesc:a3d9fac84af16250f5a3689692e8f2173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the tolerance for termination.  <a href="#a3d9fac84af16250f5a3689692e8f2173">More...</a><br /></br></td></tr>
+<tr class="separator:a3d9fac84af16250f5a3689692e8f2173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10923db2d1997239a019ac7117f04d1a"><td class="memItemLeft" align="right" valign="top">const UpdateRuleType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html#a10923db2d1997239a019ac7117f04d1a">UpdateRule</a> () const</td></tr>
+<tr class="memdesc:a10923db2d1997239a019ac7117f04d1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the update rule.  <a href="#a10923db2d1997239a019ac7117f04d1a">More...</a><br /></br></td></tr>
+<tr class="separator:a10923db2d1997239a019ac7117f04d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a999d2793d8be4d6776fa667c9958fdd0"><td class="memItemLeft" align="right" valign="top">UpdateRuleType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html#a999d2793d8be4d6776fa667c9958fdd0">UpdateRule</a> ()</td></tr>
+<tr class="memdesc:a999d2793d8be4d6776fa667c9958fdd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the update rule.  <a href="#a999d2793d8be4d6776fa667c9958fdd0">More...</a><br /></br></td></tr>
+<tr class="separator:a999d2793d8be4d6776fa667c9958fdd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3 ><br /><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">LinearConstrSolverType</div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">UpdateRuleType</div><div class="close_bracket">&gt;</div></div></div></div></br>
+class mlpack::optimization::FrankWolfe&lt; LinearConstrSolverType, UpdateRuleType &gt;</h3>
+
+<p >Frank-Wolfe is a technique to minimize a continuously differentiable convex function <img class="formulaInl" alt="$ f $" src="form_77.png"></img> over a compact convex subset <img class="formulaInl" alt="$ D $" src="form_62.png"></img> of a vector space. </p>
+<p >It is also known as conditional gradient method.</p>
+<p >To find minimum of a function using Frank-Wolfe in each iteration <img class="formulaInl" alt="$ k $" src="form_78.png"></img>:</p><ol type="1">
+<li >One optimize the linearized constrained problem, using LinearConstrSolver: <p class="formulaDsp">
+<img class="formulaDsp" alt="\[ s_k:= arg\min_{s\in D} &lt;s_k, \nabla f(x_k)&gt; \]" src="form_79.png"></img>
+</p>
+</li>
+<li >Update <img class="formulaInl" alt="$ x $" src="form_22.png"></img> using UpdateRule: <p class="formulaDsp">
+<img class="formulaDsp" alt="\[ x_{k+1} := (1-\gamma) x_k + \gamma s_k \]" src="form_80.png"></img>
+</p>
+ for some <img class="formulaInl" alt="$ \gamma \in (0, 1) $" src="form_81.png"></img>, or use Fully-Corrective Variant: <p class="formulaDsp">
+<img class="formulaDsp" alt="\[ x_{k+1}:= arg\min_{x\in conv(s_0, \cdots, s_k)} f(x) \]" src="form_82.png"></img>
+</p>
+</li>
+</ol>
+<p >The algorithm continues until <img class="formulaInl" alt="$ k $" src="form_78.png"></img> reaches the maximum number of iterations, or when the duality gap is bounded by a certain tolerance <img class="formulaInl" alt="$ \epsilon $" src="form_56.png"></img>. That is,</p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[ g(x):= \max_{s\in D} &lt;x-s, \nabla f(x)&gt; \quad \leq \epsilon, \]" src="form_83.png"></img>
+</p>
+<p >we also know that <img class="formulaInl" alt="$ g(x) \geq f(x) - f(x^*) $" src="form_84.png"></img>, where <img class="formulaInl" alt="$ x^* $" src="form_85.png"></img> is the optimal solution.</p>
+<p >The parameter <img class="formulaInl" alt="$ \epsilon $" src="form_56.png"></img> is specified by the tolerance parameter to the constructor.</p>
+<p >For <a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html" title="Frank-Wolfe is a technique to minimize a continuously differentiable convex function  over a compact ...">FrankWolfe</a> to work, LinearConstrSolverType and UpdateRuleType template parameters are required. These classes must implement the following functions:</p>
+<p >LinearConstrSolverType:</p>
+<p >void Optimize(const arma::mat&amp; gradient, arma::mat&amp; s);</p>
+<p >UpdateRuleType:</p>
+<p >void Update(const arma::mat&amp; old_coords, const arma::mat&amp; s, arma::mat&amp; new_coords, const size_t num_iter);</p>
+<dl class="tparams"><dt >Template Parameters</dt><dd >
+  <table class="tparams">
+    <tr ><td class="paramname">LinearConstrSolverType</td><td >Solver for the linear constrained problem. </td></tr>
+    <tr ><td class="paramname">UpdateRuleType</td><td >Rule to update the solution in each iteration. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="frank__wolfe_8hpp_source.html#l00081">81</a> of file <a class="el" href="frank__wolfe_8hpp_source.html">frank_wolfe.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a14f6aeb6e425c4e16ed1ecaecbce5d08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14f6aeb6e425c4e16ed1ecaecbce5d08">&#9670;&nbsp;</a></span>FrankWolfe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html">FrankWolfe</a> </td>
+          <td >(</td>
+          <td class="paramtype">const LinearConstrSolverType&#160;</td>
+          <td class="paramname"><em >linearConstrSolver</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const UpdateRuleType&#160;</td>
+          <td class="paramname"><em >updateRule</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >maxIterations</em> = <code >100000</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em >tolerance</em> = <code >1e-10</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Construct the Frank-Wolfe optimizer with the given function and parameters. </p>
+<p >Notice that the constraint domain <img class="formulaInl" alt="$ D $" src="form_62.png"></img> is input at the initialization of linear_constr_solver, the function to be optimized is stored in update_rule.</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">linearConstrSolver</td><td >Solver for linear constrained problem. </td></tr>
+    <tr ><td class="paramname">updateRule</td><td >Rule for updating solution in each iteration. </td></tr>
+    <tr ><td class="paramname">maxIterations</td><td >Maximum number of iterations allowed (0 means no limit). </td></tr>
+    <tr ><td class="paramname">tolerance</td><td >Maximum absolute tolerance to terminate algorithm. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="abff1de8131b68bdbbc3dfb2cb9973a1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abff1de8131b68bdbbc3dfb2cb9973a1d">&#9670;&nbsp;</a></span>LinearConstrSolver() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const LinearConstrSolverType&amp; LinearConstrSolver </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the linear constrained solver. </p>
+
+<p class="definition">Definition at line <a class="el" href="frank__wolfe_8hpp_source.html#l00121">121</a> of file <a class="el" href="frank__wolfe_8hpp_source.html">frank_wolfe.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a2700e60b9778899c16ac5c09fe42dc5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2700e60b9778899c16ac5c09fe42dc5a">&#9670;&nbsp;</a></span>LinearConstrSolver() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">LinearConstrSolverType&amp; LinearConstrSolver </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the linear constrained solver. </p>
+
+<p class="definition">Definition at line <a class="el" href="frank__wolfe_8hpp_source.html#l00124">124</a> of file <a class="el" href="frank__wolfe_8hpp_source.html">frank_wolfe.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a420770944a5b0c7a852c4ec372c4a2d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a420770944a5b0c7a852c4ec372c4a2d1">&#9670;&nbsp;</a></span>MaxIterations() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t MaxIterations </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the maximum number of iterations (0 indicates no limit). </p>
+
+<p class="definition">Definition at line <a class="el" href="frank__wolfe_8hpp_source.html#l00132">132</a> of file <a class="el" href="frank__wolfe_8hpp_source.html">frank_wolfe.hpp</a>.</p>
+
+</div>
+</div>
+<a id="acda675ab4ab86b95c92bc33bc391a61b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acda675ab4ab86b95c92bc33bc391a61b">&#9670;&nbsp;</a></span>MaxIterations() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; MaxIterations </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the maximum number of iterations (0 indicates no limit). </p>
+
+<p class="definition">Definition at line <a class="el" href="frank__wolfe_8hpp_source.html#l00134">134</a> of file <a class="el" href="frank__wolfe_8hpp_source.html">frank_wolfe.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa87fd82bd4d8e6c35d23b2feaa3f9d99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa87fd82bd4d8e6c35d23b2feaa3f9d99">&#9670;&nbsp;</a></span>Optimize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Optimize </td>
+          <td >(</td>
+          <td class="paramtype">FunctionType &amp;&#160;</td>
+          <td class="paramname"><em >function</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >iterate</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Optimize the given function using <a class="el" href="classmlpack_1_1optimization_1_1FrankWolfe.html" title="Frank-Wolfe is a technique to minimize a continuously differentiable convex function  over a compact ...">FrankWolfe</a>. </p>
+<p >The given starting point will be modified to store the finishing point of the algorithm, the final objective value is returned.</p>
+<p >FunctionType template class must provide the following functions:</p>
+<p >double Evaluate(const arma::mat&amp; coordinates); void Gradient(const arma::mat&amp; coordinates, arma::mat&amp; gradient);</p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">function</td><td ><a class="el" href="classmlpack_1_1optimization_1_1Function.html" title="The Function class is a wrapper class for any FunctionType that will add any possible derived methods...">Function</a> to be optimized. </td></tr>
+    <tr ><td class="paramname">iterate</td><td >Input with starting point, and will be modified to save the output optimial solution coordinates. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt >Returns</dt><dd >Objective value at the final solution. </dd></dl>
+
+</div>
+</div>
+<a id="a7b5af5c1a84c507cbaa7f999ea5a4fda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b5af5c1a84c507cbaa7f999ea5a4fda">&#9670;&nbsp;</a></span>Tolerance() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double Tolerance </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the tolerance for termination. </p>
+
+<p class="definition">Definition at line <a class="el" href="frank__wolfe_8hpp_source.html#l00137">137</a> of file <a class="el" href="frank__wolfe_8hpp_source.html">frank_wolfe.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a3d9fac84af16250f5a3689692e8f2173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d9fac84af16250f5a3689692e8f2173">&#9670;&nbsp;</a></span>Tolerance() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">double&amp; Tolerance </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the tolerance for termination. </p>
+
+<p class="definition">Definition at line <a class="el" href="frank__wolfe_8hpp_source.html#l00139">139</a> of file <a class="el" href="frank__wolfe_8hpp_source.html">frank_wolfe.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a10923db2d1997239a019ac7117f04d1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10923db2d1997239a019ac7117f04d1a">&#9670;&nbsp;</a></span>UpdateRule() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">const UpdateRuleType&amp; UpdateRule </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the update rule. </p>
+
+<p class="definition">Definition at line <a class="el" href="frank__wolfe_8hpp_source.html#l00127">127</a> of file <a class="el" href="frank__wolfe_8hpp_source.html">frank_wolfe.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a999d2793d8be4d6776fa667c9958fdd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a999d2793d8be4d6776fa667c9958fdd0">&#9670;&nbsp;</a></span>UpdateRule() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">UpdateRuleType&amp; UpdateRule </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the update rule. </p>
+
+<p class="definition">Definition at line <a class="el" href="frank__wolfe_8hpp_source.html#l00129">129</a> of file <a class="el" href="frank__wolfe_8hpp_source.html">frank_wolfe.hpp</a>.</p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/core/optimizers/fw/<a class="el" href="frank__wolfe_8hpp_source.html">frank_wolfe.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

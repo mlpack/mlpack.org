@@ -1,0 +1,74 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a fast, flexible c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a fast, flexible c++ machine learning library</title>
+</head><link rel="stylesheet" href="../../../style.css" /></link><link rel="stylesheet" href="../../style-python.css" /></link><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" /></link>
+
+
+
+<body ><br /></br>
+
+
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext pythonpage">
+<h1><center>mlpack.lars</center></h1>
+<font class="titlecode">lars(...)</font><br />
+<font class="titlebold">LARS</font>
+<p class="importcode">&gt;&gt;&gt; from mlpack import lars</p><p>An implementation of LARS: Least Angle Regression (Stagewise/laSso).  This is a stage-wise homotopy-based algorithm for L1-regularized linear regression (LASSO) and L1+L2-regularized linear regression (Elastic Net).</p>
+</p>
+<p>This program is able to train a LARS/LASSO/Elastic Net model or load a model from file, output regression predictions for a test set, and save the trained model to a file.  The LARS algorithm is described in more detail below:</p>
+</p>
+<p>Let X be a matrix where each row is a point and each column is a dimension, and let y be a vector of targets.</p>
+</p>
+<p>The Elastic Net problem is to solve</p>
+</p>
+<p>  min_beta 0.5 || X * beta - y ||_2^2 + lambda_1 ||beta||_1 +</p>
+<p>      0.5 lambda_2 ||beta||_2^2</p>
+</p>
+<p>If lambda1 &gt; 0 and lambda2 = 0, the problem is the LASSO.</p>
+<p>If lambda1 &gt; 0 and lambda2 &gt; 0, the problem is the Elastic Net.</p>
+<p>If lambda1 = 0 and lambda2 &gt; 0, the problem is ridge regression.</p>
+<p>If lambda1 = 0 and lambda2 = 0, the problem is unregularized linear regression.</p>
+</p>
+<p>For efficiency reasons, it is not recommended to use this algorithm with <font class="code">'lambda1'</font> = 0.  In that case, use the <font class="code">'linear_regression'</font> program, which implements both unregularized linear regression and ridge regression.</p>
+</p>
+<p>To train a LARS/LASSO/Elastic Net model, the <font class="code">'input'</font> and <font class="code">'responses'</font> parameters must be given.  The <font class="code">'lambda1'</font>, <font class="code">'lambda2'</font>, and <font class="code">'use_cholesky'</font> parameters control the training options.  A trained model can be saved with the <font class="code">'output_model'</font>.  If no training is desired at all, a model can be passed via the <font class="code">'input_model'</font> parameter.</p>
+</p>
+<p>The program can also provide predictions for test data using either the trained model or the given input model.  Test points can be specified with the <font class="code">'test'</font> parameter.  Predicted responses to the test points can be saved with the <font class="code">'output_predictions'</font> output parameter.</p>
+</p>
+<p>For example, the following command trains a model on the data <font class="code">'data'</font> and responses <font class="code">'responses'</font> with lambda1 set to 0.4 and lambda2 set to 0 (so, LASSO is being solved), and then the model is saved to <font class="code">'lasso_model'</font>:</p>
+</p>
+<p class="codeblock"><font class="code">&gt;&gt;&gt; lars(input=data, responses=responses, lambda1=0.4, lambda2=0)<br />
+&gt;&gt;&gt; lasso_model = output['output_model']</font></p>
+</p>
+<p>The following command uses the <font class="code">'lasso_model'</font> to provide predicted responses for the data <font class="code">'test'</font> and save those responses to <font class="code">'test_predictions'</font>: </p>
+</p>
+<p class="codeblock"><font class="code">&gt;&gt;&gt; lars(input_model=lasso_model, test=test)<br />
+&gt;&gt;&gt; test_predictions = output['output_predictions']</font></p><h2>input options</h2>
+<ul>
+<li><font class="code">copy_all_inputs</font> <font class="codetype">(bool)</font>: If specified, all input parameters will be deep copied before the method is run.  This is useful for debugging problems where the input parameters are being modified by the algorithm, but can slow down the code.</li><li><font class="code">input</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: Matrix of covariates (X).</li><li><font class="code">input_model</font> <font class="codetype">(mlpack.LARSType)</font>: Trained LARS model to use.</li><li><font class="code">lambda1</font> <font class="codetype">(float)</font>: Regularization parameter for l1-norm penalty.  Default value 0.</li><li><font class="code">lambda2</font> <font class="codetype">(float)</font>: Regularization parameter for l2-norm penalty.  Default value 0.</li><li><font class="code">responses</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: Matrix of responses/observations (y).</li><li><font class="code">test</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: Matrix containing points to regress on (test points).</li><li><font class="code">use_cholesky</font> <font class="codetype">(bool)</font>: Use Cholesky decomposition during computation rather than explicitly computing the full Gram matrix.</li><li><font class="code">verbose</font> <font class="codetype">(bool)</font>: Display informational messages and the full list of parameters and timers at the end of execution.</li></ul>
+<h2>output options</h2>
+<p>The return value from the binding is a dict containing the following elements:</p>
+<ul><li><font class="code">output_model</font> <font class="codetype">(mlpack.LARSType)</font>: Output LARS model.</li><li><font class="code">output_predictions</font> <font class="codetype">(numpy matrix, float dtype)</font>: If --test_file is specified, this file is where the predicted responses will be saved.</li><ul>
+</ul>
+</div>
+</body>
+</html>

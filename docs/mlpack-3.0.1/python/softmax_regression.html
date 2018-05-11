@@ -1,0 +1,60 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a fast, flexible c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a fast, flexible c++ machine learning library</title>
+</head><link rel="stylesheet" href="../../../style.css" /></link><link rel="stylesheet" href="../../style-python.css" /></link><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" /></link>
+
+
+
+<body ><br /></br>
+
+
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext pythonpage">
+<h1><center>mlpack.softmax_regression</center></h1>
+<font class="titlecode">softmax_regression(...)</font><br />
+<font class="titlebold">Softmax Regression</font>
+<p class="importcode">&gt;&gt;&gt; from mlpack import softmax_regression</p><p>This program performs softmax regression, a generalization of logistic regression to the multiclass case, and has support for L2 regularization.  The program is able to train a model, load an existing model, and give predictions (and optionally their accuracy) for test data.</p>
+</p>
+<p>Training a softmax regression model is done by giving a file of training points with the <font class="code">'training'</font> parameter and their corresponding labels with the <font class="code">'labels'</font> parameter. The number of classes can be manually specified with the <font class="code">'number_of_classes'</font> parameter, and the maximum number of iterations of the L-BFGS optimizer can be specified with the <font class="code">'max_iterations'</font> parameter.  The L2 regularization constant can be specified with the <font class="code">'lambda_'</font> parameter and if an intercept term is not desired in the model, the <font class="code">'no_intercept'</font> parameter can be specified.</p>
+</p>
+<p>The trained model can be saved with the <font class="code">'output_model'</font> output parameter. If training is not desired, but only testing is, a model can be loaded with the <font class="code">'input_model'</font> parameter.  At the current time, a loaded model cannot be trained further, so specifying both <font class="code">'input_model'</font> and <font class="code">'training'</font> is not allowed.</p>
+</p>
+<p>The program is also able to evaluate a model on test data.  A test dataset can be specified with the <font class="code">'test'</font> parameter. Class predictions can be saved with the <font class="code">'predictions'</font> output parameter.  If labels are specified for the test data with the <font class="code">'test_labels'</font> parameter, then the program will print the accuracy of the predictions on the given test set and its corresponding labels.</p>
+</p>
+<p>For example, to train a softmax regression model on the data <font class="code">'dataset'</font> with labels <font class="code">'labels'</font> with a maximum of 1000 iterations for training, saving the trained model to <font class="code">'sr_model'</font>, the following command can be used: </p>
+</p>
+<p class="codeblock"><font class="code">&gt;&gt;&gt; softmax_regression(training=dataset, labels=labels)<br />
+&gt;&gt;&gt; sr_model = output['output_model']</font></p>
+</p>
+<p>Then, to use <font class="code">'sr_model'</font> to classify the test points in <font class="code">'test_points'</font>, saving the output predictions to <font class="code">'predictions'</font>, the following command can be used:</p>
+</p>
+<p class="codeblock"><font class="code">&gt;&gt;&gt; softmax_regression(input_model=sr_model, test=test_points)<br />
+&gt;&gt;&gt; predictions = output['predictions']</font></p><h2>input options</h2>
+<ul>
+<li><font class="code">copy_all_inputs</font> <font class="codetype">(bool)</font>: If specified, all input parameters will be deep copied before the method is run.  This is useful for debugging problems where the input parameters are being modified by the algorithm, but can slow down the code.</li><li><font class="code">input_model</font> <font class="codetype">(mlpack.SoftmaxRegressionType)</font>: File containing existing model (parameters).</li><li><font class="code">labels</font> <font class="codetype">(numpy vector or array, int/long dtype)</font>: A matrix containing labels (0 or 1) for the points in the training set (y). The labels must order as a row.</li><li><font class="code">lambda_</font> <font class="codetype">(float)</font>: L2-regularization constant  Default value 0.0001.</li><li><font class="code">max_iterations</font> <font class="codetype">(int)</font>: Maximum number of iterations before termination.  Default value 400.</li><li><font class="code">no_intercept</font> <font class="codetype">(bool)</font>: Do not add the intercept term to the model.</li><li><font class="code">number_of_classes</font> <font class="codetype">(int)</font>: Number of classes for classification; if unspecified (or 0), the number of classes found in the labels will be used.  Default value 0.</li><li><font class="code">test</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: Matrix containing test dataset.</li><li><font class="code">test_labels</font> <font class="codetype">(numpy vector or array, int/long dtype)</font>: Matrix containing test labels.</li><li><font class="code">training</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: A matrix containing the training set (the matrix of predictors, X).</li><li><font class="code">verbose</font> <font class="codetype">(bool)</font>: Display informational messages and the full list of parameters and timers at the end of execution.</li></ul>
+<h2>output options</h2>
+<p>The return value from the binding is a dict containing the following elements:</p>
+<ul><li><font class="code">output_model</font> <font class="codetype">(mlpack.SoftmaxRegressionType)</font>: File to save trained softmax regression model to.</li><li><font class="code">predictions</font> <font class="codetype">(numpy vector, int dtype)</font>: Matrix to save predictions for test dataset into.</li><ul>
+</ul>
+</div>
+</body>
+</html>

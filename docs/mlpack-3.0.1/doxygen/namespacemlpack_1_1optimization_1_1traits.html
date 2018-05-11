@@ -1,0 +1,1725 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">3.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1optimization.html">optimization</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html">traits</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle">
+<div class="title">mlpack::optimization::traits Namespace Reference</div>  </div>
+</div>
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlpack_1_1optimization_1_1traits_1_1CheckDecomposableEvaluate.html">CheckDecomposableEvaluate</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a suitable decomposable overload of Evaluate() is available.  <a href="structmlpack_1_1optimization_1_1traits_1_1CheckDecomposableEvaluate.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlpack_1_1optimization_1_1traits_1_1CheckDecomposableEvaluateWithGradient.html">CheckDecomposableEvaluateWithGradient</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a suitable decomposable overload of EvaluateWithGradient() is available.  <a href="structmlpack_1_1optimization_1_1traits_1_1CheckDecomposableEvaluateWithGradient.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlpack_1_1optimization_1_1traits_1_1CheckDecomposableGradient.html">CheckDecomposableGradient</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a suitable decomposable overload of Gradient() is available.  <a href="structmlpack_1_1optimization_1_1traits_1_1CheckDecomposableGradient.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlpack_1_1optimization_1_1traits_1_1CheckEvaluate.html">CheckEvaluate</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a suitable overload of Evaluate() is available.  <a href="structmlpack_1_1optimization_1_1traits_1_1CheckEvaluate.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlpack_1_1optimization_1_1traits_1_1CheckEvaluateConstraint.html">CheckEvaluateConstraint</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a suitable overload of EvaluateConstraint() is available.  <a href="structmlpack_1_1optimization_1_1traits_1_1CheckEvaluateConstraint.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlpack_1_1optimization_1_1traits_1_1CheckEvaluateWithGradient.html">CheckEvaluateWithGradient</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a suitable overload of EvaluateWithGradient() is available.  <a href="structmlpack_1_1optimization_1_1traits_1_1CheckEvaluateWithGradient.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlpack_1_1optimization_1_1traits_1_1CheckGradient.html">CheckGradient</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a suitable overload of Gradient() is available.  <a href="structmlpack_1_1optimization_1_1traits_1_1CheckGradient.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlpack_1_1optimization_1_1traits_1_1CheckGradientConstraint.html">CheckGradientConstraint</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a suitable overload of GradientConstraint() is available.  <a href="structmlpack_1_1optimization_1_1traits_1_1CheckGradientConstraint.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlpack_1_1optimization_1_1traits_1_1CheckNumConstraints.html">CheckNumConstraints</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a suitable overload of NumConstraints() is available.  <a href="structmlpack_1_1optimization_1_1traits_1_1CheckNumConstraints.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlpack_1_1optimization_1_1traits_1_1CheckNumFeatures.html">CheckNumFeatures</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a suitable overload of NumFeatures() is available.  <a href="structmlpack_1_1optimization_1_1traits_1_1CheckNumFeatures.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlpack_1_1optimization_1_1traits_1_1CheckNumFunctions.html">CheckNumFunctions</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a suitable overload of NumFunctions() is available.  <a href="structmlpack_1_1optimization_1_1traits_1_1CheckNumFunctions.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlpack_1_1optimization_1_1traits_1_1CheckPartialGradient.html">CheckPartialGradient</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a suitable overload of PartialGradient() is available.  <a href="structmlpack_1_1optimization_1_1traits_1_1CheckPartialGradient.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlpack_1_1optimization_1_1traits_1_1CheckShuffle.html">CheckShuffle</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a suitable overload of Shuffle() is available.  <a href="structmlpack_1_1optimization_1_1traits_1_1CheckShuffle.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlpack_1_1optimization_1_1traits_1_1CheckSparseGradient.html">CheckSparseGradient</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a suitable overload of Gradient() that supports sparse gradients is available.  <a href="structmlpack_1_1optimization_1_1traits_1_1CheckSparseGradient.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlpack_1_1optimization_1_1traits_1_1HasConstSignatures.html">HasConstSignatures</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility struct: sometimes we want to know if we have two functions available, and that at least one of them is const and both of them are not non-const and non-static.  <a href="structmlpack_1_1optimization_1_1traits_1_1HasConstSignatures.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlpack_1_1optimization_1_1traits_1_1HasNonConstSignatures.html">HasNonConstSignatures</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility struct: sometimes we want to know if we have two functions available, and that at least one of them is non-const and non-static.  <a href="structmlpack_1_1optimization_1_1traits_1_1HasNonConstSignatures.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlpack_1_1optimization_1_1traits_1_1UnconstructableType.html">UnconstructableType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a utility type used to provide unusable overloads from each of the mixin classes.  <a href="structmlpack_1_1optimization_1_1traits_1_1UnconstructableType.html#details">More...</a><br /></br></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a9b65bdcf87f10defff93b3480a301e75"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a9b65bdcf87f10defff93b3480a301e75"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a9b65bdcf87f10defff93b3480a301e75">DecomposableEvaluateConstForm</a> = double(FunctionType::*)(const arma::mat &amp;, const size_t, const size_t) const</td></tr>
+<tr class="memdesc:a9b65bdcf87f10defff93b3480a301e75"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a decomposable const Evaluate() method.  <a href="#a9b65bdcf87f10defff93b3480a301e75">More...</a><br /></br></td></tr>
+<tr class="separator:a9b65bdcf87f10defff93b3480a301e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaf2cac652397c892e0150994c2ed294"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:abaf2cac652397c892e0150994c2ed294"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#abaf2cac652397c892e0150994c2ed294">DecomposableEvaluateForm</a> = double(FunctionType::*)(const arma::mat &amp;, const size_t, const size_t)</td></tr>
+<tr class="memdesc:abaf2cac652397c892e0150994c2ed294"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a decomposable Evaluate() method.  <a href="#abaf2cac652397c892e0150994c2ed294">More...</a><br /></br></td></tr>
+<tr class="separator:abaf2cac652397c892e0150994c2ed294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcfefeef0f5f3fb92cb8fd11e04f6159"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:afcfefeef0f5f3fb92cb8fd11e04f6159"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#afcfefeef0f5f3fb92cb8fd11e04f6159">DecomposableEvaluateStaticForm</a> = double(*)(const arma::mat &amp;, const size_t, const size_t)</td></tr>
+<tr class="memdesc:afcfefeef0f5f3fb92cb8fd11e04f6159"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a decomposable static Evaluate() method.  <a href="#afcfefeef0f5f3fb92cb8fd11e04f6159">More...</a><br /></br></td></tr>
+<tr class="separator:afcfefeef0f5f3fb92cb8fd11e04f6159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0234e377fccd1349cdd26c450b511932"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a0234e377fccd1349cdd26c450b511932"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a0234e377fccd1349cdd26c450b511932">DecomposableEvaluateWithGradientConstForm</a> = double(FunctionType::*)(const arma::mat &amp;, const size_t, arma::mat &amp;, const size_t) const</td></tr>
+<tr class="memdesc:a0234e377fccd1349cdd26c450b511932"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a decomposable const EvaluateWithGradient() method.  <a href="#a0234e377fccd1349cdd26c450b511932">More...</a><br /></br></td></tr>
+<tr class="separator:a0234e377fccd1349cdd26c450b511932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeedad2b825a825e0daf5a8f3174b13c"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:abeedad2b825a825e0daf5a8f3174b13c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#abeedad2b825a825e0daf5a8f3174b13c">DecomposableEvaluateWithGradientForm</a> = double(FunctionType::*)(const arma::mat &amp;, const size_t, arma::mat &amp;, const size_t)</td></tr>
+<tr class="memdesc:abeedad2b825a825e0daf5a8f3174b13c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a decomposable non-const EvaluateWithGradient() method.  <a href="#abeedad2b825a825e0daf5a8f3174b13c">More...</a><br /></br></td></tr>
+<tr class="separator:abeedad2b825a825e0daf5a8f3174b13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ec0660531d84ce897ebc232d77abf2e"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a9ec0660531d84ce897ebc232d77abf2e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a9ec0660531d84ce897ebc232d77abf2e">DecomposableEvaluateWithGradientStaticForm</a> = double(*)(const arma::mat &amp;, const size_t, arma::mat &amp;, const size_t)</td></tr>
+<tr class="memdesc:a9ec0660531d84ce897ebc232d77abf2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a decomposable static EvaluateWithGradient() method.  <a href="#a9ec0660531d84ce897ebc232d77abf2e">More...</a><br /></br></td></tr>
+<tr class="separator:a9ec0660531d84ce897ebc232d77abf2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a028b8c68eee2c99d9c8aee332bb830ed"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a028b8c68eee2c99d9c8aee332bb830ed"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a028b8c68eee2c99d9c8aee332bb830ed">DecomposableGradientConstForm</a> = void(FunctionType::*)(const arma::mat &amp;, const size_t, arma::mat &amp;, const size_t) const</td></tr>
+<tr class="memdesc:a028b8c68eee2c99d9c8aee332bb830ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">This the form of a decomposable const Gradient() method.  <a href="#a028b8c68eee2c99d9c8aee332bb830ed">More...</a><br /></br></td></tr>
+<tr class="separator:a028b8c68eee2c99d9c8aee332bb830ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53ee9b07c83a2f925c06313dd7264062"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a53ee9b07c83a2f925c06313dd7264062"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a53ee9b07c83a2f925c06313dd7264062">DecomposableGradientForm</a> = void(FunctionType::*)(const arma::mat &amp;, const size_t, arma::mat &amp;, const size_t)</td></tr>
+<tr class="memdesc:a53ee9b07c83a2f925c06313dd7264062"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a decomposable non-const Gradient() method.  <a href="#a53ee9b07c83a2f925c06313dd7264062">More...</a><br /></br></td></tr>
+<tr class="separator:a53ee9b07c83a2f925c06313dd7264062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0290f3ffcae856329f58342425dbd0cd"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a0290f3ffcae856329f58342425dbd0cd"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a0290f3ffcae856329f58342425dbd0cd">DecomposableGradientStaticForm</a> = void(*)(const arma::mat &amp;, const size_t, arma::mat &amp;, const size_t)</td></tr>
+<tr class="memdesc:a0290f3ffcae856329f58342425dbd0cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a decomposable static Gradient() method.  <a href="#a0290f3ffcae856329f58342425dbd0cd">More...</a><br /></br></td></tr>
+<tr class="separator:a0290f3ffcae856329f58342425dbd0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a399d05004503e1234ca1308345edc93f"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a399d05004503e1234ca1308345edc93f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a399d05004503e1234ca1308345edc93f">EvaluateConstForm</a> = double(FunctionType::*)(const arma::mat &amp;) const</td></tr>
+<tr class="memdesc:a399d05004503e1234ca1308345edc93f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a const Evaluate() method.  <a href="#a399d05004503e1234ca1308345edc93f">More...</a><br /></br></td></tr>
+<tr class="separator:a399d05004503e1234ca1308345edc93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9df17b23a6169d983ae5d2db6cd98ba1"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a9df17b23a6169d983ae5d2db6cd98ba1"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a9df17b23a6169d983ae5d2db6cd98ba1">EvaluateConstraintConstForm</a> = double(FunctionType::*)(const size_t, const arma::mat &amp;) const</td></tr>
+<tr class="memdesc:a9df17b23a6169d983ae5d2db6cd98ba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a const EvaluateConstraint() method.  <a href="#a9df17b23a6169d983ae5d2db6cd98ba1">More...</a><br /></br></td></tr>
+<tr class="separator:a9df17b23a6169d983ae5d2db6cd98ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab834e649f7ab5223933219888e51c79c"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:ab834e649f7ab5223933219888e51c79c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#ab834e649f7ab5223933219888e51c79c">EvaluateConstraintForm</a> = double(FunctionType::*)(const size_t, const arma::mat &amp;)</td></tr>
+<tr class="memdesc:ab834e649f7ab5223933219888e51c79c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a non-const EvaluateConstraint() method.  <a href="#ab834e649f7ab5223933219888e51c79c">More...</a><br /></br></td></tr>
+<tr class="separator:ab834e649f7ab5223933219888e51c79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4bf5f1e8c22bfb02c309e679179dec"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a8b4bf5f1e8c22bfb02c309e679179dec"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a8b4bf5f1e8c22bfb02c309e679179dec">EvaluateConstraintStaticForm</a> = double(*)(const size_t, const arma::mat &amp;)</td></tr>
+<tr class="memdesc:a8b4bf5f1e8c22bfb02c309e679179dec"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a static EvaluateConstraint() method.  <a href="#a8b4bf5f1e8c22bfb02c309e679179dec">More...</a><br /></br></td></tr>
+<tr class="separator:a8b4bf5f1e8c22bfb02c309e679179dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a811589375d7e9ce103342365e66458c0"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a811589375d7e9ce103342365e66458c0"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a811589375d7e9ce103342365e66458c0">EvaluateForm</a> = double(FunctionType::*)(const arma::mat &amp;)</td></tr>
+<tr class="memdesc:a811589375d7e9ce103342365e66458c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a non-const Evaluate() method.  <a href="#a811589375d7e9ce103342365e66458c0">More...</a><br /></br></td></tr>
+<tr class="separator:a811589375d7e9ce103342365e66458c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fcfdb9da77148819402c7ac947a0d9b"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a6fcfdb9da77148819402c7ac947a0d9b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a6fcfdb9da77148819402c7ac947a0d9b">EvaluateStaticForm</a> = double(*)(const arma::mat &amp;)</td></tr>
+<tr class="memdesc:a6fcfdb9da77148819402c7ac947a0d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a static Evaluate() method.  <a href="#a6fcfdb9da77148819402c7ac947a0d9b">More...</a><br /></br></td></tr>
+<tr class="separator:a6fcfdb9da77148819402c7ac947a0d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac64f4b8abf51213c468913751550ad3d"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:ac64f4b8abf51213c468913751550ad3d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#ac64f4b8abf51213c468913751550ad3d">EvaluateWithGradientConstForm</a> = double(FunctionType::*)(const arma::mat &amp;, arma::mat &amp;) const</td></tr>
+<tr class="memdesc:ac64f4b8abf51213c468913751550ad3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a const EvaluateWithGradient() method.  <a href="#ac64f4b8abf51213c468913751550ad3d">More...</a><br /></br></td></tr>
+<tr class="separator:ac64f4b8abf51213c468913751550ad3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a18f99d197981f4b181188d453fe580"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a0a18f99d197981f4b181188d453fe580"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a0a18f99d197981f4b181188d453fe580">EvaluateWithGradientForm</a> = double(FunctionType::*)(const arma::mat &amp;, arma::mat &amp;)</td></tr>
+<tr class="memdesc:a0a18f99d197981f4b181188d453fe580"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a non-const EvaluateWithGradient() method.  <a href="#a0a18f99d197981f4b181188d453fe580">More...</a><br /></br></td></tr>
+<tr class="separator:a0a18f99d197981f4b181188d453fe580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b0a22f51b0af1be3e478df17302d1f2"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a5b0a22f51b0af1be3e478df17302d1f2"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a5b0a22f51b0af1be3e478df17302d1f2">EvaluateWithGradientStaticForm</a> = double(*)(const arma::mat &amp;, arma::mat &amp;)</td></tr>
+<tr class="memdesc:a5b0a22f51b0af1be3e478df17302d1f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a static EvaluateWithGradient() method.  <a href="#a5b0a22f51b0af1be3e478df17302d1f2">More...</a><br /></br></td></tr>
+<tr class="separator:a5b0a22f51b0af1be3e478df17302d1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a714a820053e5849a4b9aa4b356cdf4c2"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a714a820053e5849a4b9aa4b356cdf4c2"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a714a820053e5849a4b9aa4b356cdf4c2">GradientConstForm</a> = void(FunctionType::*)(const arma::mat &amp;, arma::mat &amp;) const</td></tr>
+<tr class="memdesc:a714a820053e5849a4b9aa4b356cdf4c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a const Gradient() method.  <a href="#a714a820053e5849a4b9aa4b356cdf4c2">More...</a><br /></br></td></tr>
+<tr class="separator:a714a820053e5849a4b9aa4b356cdf4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a923b47bd6056bd907f8d0b87f95c3f2d"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a923b47bd6056bd907f8d0b87f95c3f2d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a923b47bd6056bd907f8d0b87f95c3f2d">GradientConstraintConstForm</a> = void(FunctionType::*)(const size_t, const arma::mat &amp;, arma::mat &amp;) const</td></tr>
+<tr class="memdesc:a923b47bd6056bd907f8d0b87f95c3f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a const GradientConstraint() method.  <a href="#a923b47bd6056bd907f8d0b87f95c3f2d">More...</a><br /></br></td></tr>
+<tr class="separator:a923b47bd6056bd907f8d0b87f95c3f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a046de69ca559ae6e777fcb3d73b20c36"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a046de69ca559ae6e777fcb3d73b20c36"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a046de69ca559ae6e777fcb3d73b20c36">GradientConstraintForm</a> = void(FunctionType::*)(const size_t, const arma::mat &amp;, arma::mat &amp;)</td></tr>
+<tr class="memdesc:a046de69ca559ae6e777fcb3d73b20c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a non-const GradientConstraint() method.  <a href="#a046de69ca559ae6e777fcb3d73b20c36">More...</a><br /></br></td></tr>
+<tr class="separator:a046de69ca559ae6e777fcb3d73b20c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a842fbbb9361caaa7177c603f7dd8fac8"><td class="memTemplParams" colspan="2">template&lt;typename Class , typename... Ts&gt; </td></tr>
+<tr class="memitem:a842fbbb9361caaa7177c603f7dd8fac8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a842fbbb9361caaa7177c603f7dd8fac8">GradientConstraintStaticForm</a> = void(*)(const size_t, const arma::mat &amp;, arma::mat &amp;)</td></tr>
+<tr class="memdesc:a842fbbb9361caaa7177c603f7dd8fac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a static GradientConstraint() method.  <a href="#a842fbbb9361caaa7177c603f7dd8fac8">More...</a><br /></br></td></tr>
+<tr class="separator:a842fbbb9361caaa7177c603f7dd8fac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a23bf3dc6be9a6390ff0f05833ae66"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:ab4a23bf3dc6be9a6390ff0f05833ae66"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#ab4a23bf3dc6be9a6390ff0f05833ae66">GradientForm</a> = void(FunctionType::*)(const arma::mat &amp;, arma::mat &amp;)</td></tr>
+<tr class="memdesc:ab4a23bf3dc6be9a6390ff0f05833ae66"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a non-const Gradient() method.  <a href="#ab4a23bf3dc6be9a6390ff0f05833ae66">More...</a><br /></br></td></tr>
+<tr class="separator:ab4a23bf3dc6be9a6390ff0f05833ae66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4781b5dbb3e90477a8683d18a5a465e5"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a4781b5dbb3e90477a8683d18a5a465e5"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a4781b5dbb3e90477a8683d18a5a465e5">GradientStaticForm</a> = void(*)(const arma::mat &amp;, arma::mat &amp;)</td></tr>
+<tr class="memdesc:a4781b5dbb3e90477a8683d18a5a465e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a static Gradient() method.  <a href="#a4781b5dbb3e90477a8683d18a5a465e5">More...</a><br /></br></td></tr>
+<tr class="separator:a4781b5dbb3e90477a8683d18a5a465e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe5e41df6448c3c1939fc12fb3cb6fbf"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:afe5e41df6448c3c1939fc12fb3cb6fbf"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#afe5e41df6448c3c1939fc12fb3cb6fbf">NumConstraintsConstForm</a> = size_t(FunctionType::*)() const</td></tr>
+<tr class="memdesc:afe5e41df6448c3c1939fc12fb3cb6fbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a const NumConstraints() method.  <a href="#afe5e41df6448c3c1939fc12fb3cb6fbf">More...</a><br /></br></td></tr>
+<tr class="separator:afe5e41df6448c3c1939fc12fb3cb6fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad83c736642360d5446834c00648c9f8e"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:ad83c736642360d5446834c00648c9f8e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#ad83c736642360d5446834c00648c9f8e">NumConstraintsForm</a> = size_t(FunctionType::*)()</td></tr>
+<tr class="memdesc:ad83c736642360d5446834c00648c9f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a non-const NumConstraints() method.  <a href="#ad83c736642360d5446834c00648c9f8e">More...</a><br /></br></td></tr>
+<tr class="separator:ad83c736642360d5446834c00648c9f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79c83e5302ef20d178beae9f0c06582"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:ab79c83e5302ef20d178beae9f0c06582"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#ab79c83e5302ef20d178beae9f0c06582">NumConstraintsStaticForm</a> = size_t(*)()</td></tr>
+<tr class="memdesc:ab79c83e5302ef20d178beae9f0c06582"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a static NumConstraints() method.  <a href="#ab79c83e5302ef20d178beae9f0c06582">More...</a><br /></br></td></tr>
+<tr class="separator:ab79c83e5302ef20d178beae9f0c06582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32e416968fb068d25b7d6081b6a607c4"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a32e416968fb068d25b7d6081b6a607c4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a32e416968fb068d25b7d6081b6a607c4">NumFeaturesConstForm</a> = size_t(FunctionType::*)() const</td></tr>
+<tr class="memdesc:a32e416968fb068d25b7d6081b6a607c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a const NumFeatures() method.  <a href="#a32e416968fb068d25b7d6081b6a607c4">More...</a><br /></br></td></tr>
+<tr class="separator:a32e416968fb068d25b7d6081b6a607c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15846d78e1b1f4465a464facaf1534c7"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a15846d78e1b1f4465a464facaf1534c7"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a15846d78e1b1f4465a464facaf1534c7">NumFeaturesForm</a> = size_t(FunctionType::*)()</td></tr>
+<tr class="memdesc:a15846d78e1b1f4465a464facaf1534c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a non-const NumFeatures() method.  <a href="#a15846d78e1b1f4465a464facaf1534c7">More...</a><br /></br></td></tr>
+<tr class="separator:a15846d78e1b1f4465a464facaf1534c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee0b9652a88e241539b2e52aafbd779"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:aeee0b9652a88e241539b2e52aafbd779"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#aeee0b9652a88e241539b2e52aafbd779">NumFeaturesStaticForm</a> = size_t(*)()</td></tr>
+<tr class="memdesc:aeee0b9652a88e241539b2e52aafbd779"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a static NumFeatures() method.  <a href="#aeee0b9652a88e241539b2e52aafbd779">More...</a><br /></br></td></tr>
+<tr class="separator:aeee0b9652a88e241539b2e52aafbd779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a889cd64b1b099a8c4e60b2e4644c558c"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a889cd64b1b099a8c4e60b2e4644c558c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a889cd64b1b099a8c4e60b2e4644c558c">NumFunctionsConstForm</a> = size_t(FunctionType::*)() const</td></tr>
+<tr class="memdesc:a889cd64b1b099a8c4e60b2e4644c558c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a const NumFunctions() method.  <a href="#a889cd64b1b099a8c4e60b2e4644c558c">More...</a><br /></br></td></tr>
+<tr class="separator:a889cd64b1b099a8c4e60b2e4644c558c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646c48e4744797f98843cabd80e36e2e"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a646c48e4744797f98843cabd80e36e2e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a646c48e4744797f98843cabd80e36e2e">NumFunctionsForm</a> = size_t(FunctionType::*)()</td></tr>
+<tr class="memdesc:a646c48e4744797f98843cabd80e36e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a non-const NumFunctions() method.  <a href="#a646c48e4744797f98843cabd80e36e2e">More...</a><br /></br></td></tr>
+<tr class="separator:a646c48e4744797f98843cabd80e36e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d93fd332edf4b8d0097cd05303dab67"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a5d93fd332edf4b8d0097cd05303dab67"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a5d93fd332edf4b8d0097cd05303dab67">NumFunctionsStaticForm</a> = size_t(*)()</td></tr>
+<tr class="memdesc:a5d93fd332edf4b8d0097cd05303dab67"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a static NumFunctions() method.  <a href="#a5d93fd332edf4b8d0097cd05303dab67">More...</a><br /></br></td></tr>
+<tr class="separator:a5d93fd332edf4b8d0097cd05303dab67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeabcf15074fe0df3592df6afd5ea2634"><td class="memTemplParams" colspan="2">template&lt;typename FunctionType , typename... Ts&gt; </td></tr>
+<tr class="memitem:aeabcf15074fe0df3592df6afd5ea2634"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#aeabcf15074fe0df3592df6afd5ea2634">OtherConstForm</a> = double(FunctionType::*)(Ts...) const</td></tr>
+<tr class="memdesc:aeabcf15074fe0df3592df6afd5ea2634"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a utility struct that will match any const form.  <a href="#aeabcf15074fe0df3592df6afd5ea2634">More...</a><br /></br></td></tr>
+<tr class="separator:aeabcf15074fe0df3592df6afd5ea2634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e0e8bfcb633f75dac6c5c06e74e02d"><td class="memTemplParams" colspan="2">template&lt;typename FunctionType , typename... Ts&gt; </td></tr>
+<tr class="memitem:a42e0e8bfcb633f75dac6c5c06e74e02d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a42e0e8bfcb633f75dac6c5c06e74e02d">OtherForm</a> = double(FunctionType::*)(Ts...)</td></tr>
+<tr class="memdesc:a42e0e8bfcb633f75dac6c5c06e74e02d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a utility struct that will match any non-const form.  <a href="#a42e0e8bfcb633f75dac6c5c06e74e02d">More...</a><br /></br></td></tr>
+<tr class="separator:a42e0e8bfcb633f75dac6c5c06e74e02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ce84baf24ac2eb7e0556b7082d063b4"><td class="memTemplParams" colspan="2">template&lt;typename FunctionType , typename... Ts&gt; </td></tr>
+<tr class="memitem:a8ce84baf24ac2eb7e0556b7082d063b4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a8ce84baf24ac2eb7e0556b7082d063b4">OtherStaticForm</a> = double(*)(Ts...)</td></tr>
+<tr class="memdesc:a8ce84baf24ac2eb7e0556b7082d063b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a utility struct that will match any static form.  <a href="#a8ce84baf24ac2eb7e0556b7082d063b4">More...</a><br /></br></td></tr>
+<tr class="separator:a8ce84baf24ac2eb7e0556b7082d063b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92c5514d614c7fcaf4b8b8af878071ec"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a92c5514d614c7fcaf4b8b8af878071ec"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a92c5514d614c7fcaf4b8b8af878071ec">PartialGradientConstForm</a> = void(FunctionType::*)(const arma::mat &amp;, const size_t, arma::sp_mat &amp;) const</td></tr>
+<tr class="memdesc:a92c5514d614c7fcaf4b8b8af878071ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a const PartialGradient() method.  <a href="#a92c5514d614c7fcaf4b8b8af878071ec">More...</a><br /></br></td></tr>
+<tr class="separator:a92c5514d614c7fcaf4b8b8af878071ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab49670b3625058a5fd75be89c43ca9c8"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:ab49670b3625058a5fd75be89c43ca9c8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#ab49670b3625058a5fd75be89c43ca9c8">PartialGradientForm</a> = void(FunctionType::*)(const arma::mat &amp;, const size_t, arma::sp_mat &amp;)</td></tr>
+<tr class="memdesc:ab49670b3625058a5fd75be89c43ca9c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a non-const PartialGradient() method.  <a href="#ab49670b3625058a5fd75be89c43ca9c8">More...</a><br /></br></td></tr>
+<tr class="separator:ab49670b3625058a5fd75be89c43ca9c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b25acc1c301e63b7d58edb9dcb2f017"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a3b25acc1c301e63b7d58edb9dcb2f017"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a3b25acc1c301e63b7d58edb9dcb2f017">PartialGradientStaticForm</a> = void(*)(const arma::mat &amp;, const size_t, arma::sp_mat &amp;)</td></tr>
+<tr class="memdesc:a3b25acc1c301e63b7d58edb9dcb2f017"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a static PartialGradient() method.  <a href="#a3b25acc1c301e63b7d58edb9dcb2f017">More...</a><br /></br></td></tr>
+<tr class="separator:a3b25acc1c301e63b7d58edb9dcb2f017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05ac9ab5b22b313dfec8258dc820eeb5"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a05ac9ab5b22b313dfec8258dc820eeb5"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a05ac9ab5b22b313dfec8258dc820eeb5">ShuffleConstForm</a> = void(FunctionType::*)() const</td></tr>
+<tr class="memdesc:a05ac9ab5b22b313dfec8258dc820eeb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a const Shuffle() method.  <a href="#a05ac9ab5b22b313dfec8258dc820eeb5">More...</a><br /></br></td></tr>
+<tr class="separator:a05ac9ab5b22b313dfec8258dc820eeb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fe0c1f7645a2f6fddf0dafd3208a1a1"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a0fe0c1f7645a2f6fddf0dafd3208a1a1"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a0fe0c1f7645a2f6fddf0dafd3208a1a1">ShuffleForm</a> = void(FunctionType::*)()</td></tr>
+<tr class="memdesc:a0fe0c1f7645a2f6fddf0dafd3208a1a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a non-const Shuffle() method.  <a href="#a0fe0c1f7645a2f6fddf0dafd3208a1a1">More...</a><br /></br></td></tr>
+<tr class="separator:a0fe0c1f7645a2f6fddf0dafd3208a1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eaee17217959e9eb518013258e34e1c"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a0eaee17217959e9eb518013258e34e1c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a0eaee17217959e9eb518013258e34e1c">ShuffleStaticForm</a> = void(*)()</td></tr>
+<tr class="memdesc:a0eaee17217959e9eb518013258e34e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a static Shuffle() method.  <a href="#a0eaee17217959e9eb518013258e34e1c">More...</a><br /></br></td></tr>
+<tr class="separator:a0eaee17217959e9eb518013258e34e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a422f66e209d82767a14e97deb5fab8bb"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a422f66e209d82767a14e97deb5fab8bb"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a422f66e209d82767a14e97deb5fab8bb">SparseGradientConstForm</a> = void(FunctionType::*)(const arma::mat &amp;, const size_t, arma::sp_mat &amp;, const size_t) const</td></tr>
+<tr class="memdesc:a422f66e209d82767a14e97deb5fab8bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a const sparse Gradient() method.  <a href="#a422f66e209d82767a14e97deb5fab8bb">More...</a><br /></br></td></tr>
+<tr class="separator:a422f66e209d82767a14e97deb5fab8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adacf9c5e572b3338e22da1b9fbe7fe6b"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:adacf9c5e572b3338e22da1b9fbe7fe6b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#adacf9c5e572b3338e22da1b9fbe7fe6b">SparseGradientForm</a> = void(FunctionType::*)(const arma::mat &amp;, const size_t, arma::sp_mat &amp;, const size_t)</td></tr>
+<tr class="memdesc:adacf9c5e572b3338e22da1b9fbe7fe6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a non-const sparse Gradient() method.  <a href="#adacf9c5e572b3338e22da1b9fbe7fe6b">More...</a><br /></br></td></tr>
+<tr class="separator:adacf9c5e572b3338e22da1b9fbe7fe6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab88ffb66f072d8822578dcd2f98b5bed"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:ab88ffb66f072d8822578dcd2f98b5bed"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#ab88ffb66f072d8822578dcd2f98b5bed">SparseGradientStaticForm</a> = void(*)(const arma::mat &amp;, const size_t, arma::sp_mat &amp;, const size_t)</td></tr>
+<tr class="memdesc:ab88ffb66f072d8822578dcd2f98b5bed"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the form of a static sparse Gradient() method.  <a href="#ab88ffb66f072d8822578dcd2f98b5bed">More...</a><br /></br></td></tr>
+<tr class="separator:ab88ffb66f072d8822578dcd2f98b5bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:af6bd66bcf224107430fe0a737e339de3"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:af6bd66bcf224107430fe0a737e339de3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#af6bd66bcf224107430fe0a737e339de3">CheckConstrainedFunctionTypeAPI</a> ()</td></tr>
+<tr class="memdesc:af6bd66bcf224107430fe0a737e339de3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform checks for the ConstrainedFunctionType API.  <a href="#af6bd66bcf224107430fe0a737e339de3">More...</a><br /></br></td></tr>
+<tr class="separator:af6bd66bcf224107430fe0a737e339de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c9ee8af6a35fcc2d231874baf726dca"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a1c9ee8af6a35fcc2d231874baf726dca"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a1c9ee8af6a35fcc2d231874baf726dca">CheckDecomposableFunctionTypeAPI</a> ()</td></tr>
+<tr class="memdesc:a1c9ee8af6a35fcc2d231874baf726dca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform checks for the DecomposableFunctionType API.  <a href="#a1c9ee8af6a35fcc2d231874baf726dca">More...</a><br /></br></td></tr>
+<tr class="separator:a1c9ee8af6a35fcc2d231874baf726dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dd0af6f3015f270703eac7919101222"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a5dd0af6f3015f270703eac7919101222"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a5dd0af6f3015f270703eac7919101222">CheckFunctionTypeAPI</a> ()</td></tr>
+<tr class="memdesc:a5dd0af6f3015f270703eac7919101222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform checks for the regular FunctionType API.  <a href="#a5dd0af6f3015f270703eac7919101222">More...</a><br /></br></td></tr>
+<tr class="separator:a5dd0af6f3015f270703eac7919101222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7f7128cff8a584136beda077d49cb66"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:ae7f7128cff8a584136beda077d49cb66"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#ae7f7128cff8a584136beda077d49cb66">CheckNonDifferentiableDecomposableFunctionTypeAPI</a> ()</td></tr>
+<tr class="memdesc:ae7f7128cff8a584136beda077d49cb66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform checks for the NonDifferentiableDecomposableFunctionType API.  <a href="#ae7f7128cff8a584136beda077d49cb66">More...</a><br /></br></td></tr>
+<tr class="separator:ae7f7128cff8a584136beda077d49cb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de576d325c10e629f3a22603abe6897"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a6de576d325c10e629f3a22603abe6897"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a6de576d325c10e629f3a22603abe6897">CheckNonDifferentiableFunctionTypeAPI</a> ()</td></tr>
+<tr class="memdesc:a6de576d325c10e629f3a22603abe6897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform checks for the NonDifferentiableFunctionType API.  <a href="#a6de576d325c10e629f3a22603abe6897">More...</a><br /></br></td></tr>
+<tr class="separator:a6de576d325c10e629f3a22603abe6897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a127d5706aa2ff05f7fce9f8878450624"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a127d5706aa2ff05f7fce9f8878450624"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a127d5706aa2ff05f7fce9f8878450624">CheckResolvableFunctionTypeAPI</a> ()</td></tr>
+<tr class="memdesc:a127d5706aa2ff05f7fce9f8878450624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform checks for the ResolvableFunctionType API.  <a href="#a127d5706aa2ff05f7fce9f8878450624">More...</a><br /></br></td></tr>
+<tr class="separator:a127d5706aa2ff05f7fce9f8878450624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a141428964f776db1c6720d4628082006"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">FunctionType</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a141428964f776db1c6720d4628082006"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a141428964f776db1c6720d4628082006">CheckSparseFunctionTypeAPI</a> ()</td></tr>
+<tr class="memdesc:a141428964f776db1c6720d4628082006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform checks for the SparseFunctionType API.  <a href="#a141428964f776db1c6720d4628082006">More...</a><br /></br></td></tr>
+<tr class="separator:a141428964f776db1c6720d4628082006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6e042176a636faa57ac75fd4ef73246"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#ae6e042176a636faa57ac75fd4ef73246">HAS_EXACT_METHOD_FORM</a> (Evaluate, HasEvaluate)</td></tr>
+<tr class="memdesc:ae6e042176a636faa57ac75fd4ef73246"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detect an Evaluate() method.  <a href="#ae6e042176a636faa57ac75fd4ef73246">More...</a><br /></br></td></tr>
+<tr class="separator:ae6e042176a636faa57ac75fd4ef73246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8ebadfd26bc60d7d87efcd2cc330ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#adb8ebadfd26bc60d7d87efcd2cc330ba">HAS_EXACT_METHOD_FORM</a> (Gradient, HasGradient)</td></tr>
+<tr class="memdesc:adb8ebadfd26bc60d7d87efcd2cc330ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detect a Gradient() method.  <a href="#adb8ebadfd26bc60d7d87efcd2cc330ba">More...</a><br /></br></td></tr>
+<tr class="separator:adb8ebadfd26bc60d7d87efcd2cc330ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac30538364ac9fbce0cd1bb5a571d47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a2ac30538364ac9fbce0cd1bb5a571d47">HAS_EXACT_METHOD_FORM</a> (EvaluateWithGradient, HasEvaluateWithGradient)</td></tr>
+<tr class="memdesc:a2ac30538364ac9fbce0cd1bb5a571d47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detect an EvaluateWithGradient() method.  <a href="#a2ac30538364ac9fbce0cd1bb5a571d47">More...</a><br /></br></td></tr>
+<tr class="separator:a2ac30538364ac9fbce0cd1bb5a571d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f0c896bead36deb3693ca0e33f9b4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a54f0c896bead36deb3693ca0e33f9b4b">HAS_EXACT_METHOD_FORM</a> (NumFunctions, HasNumFunctions)</td></tr>
+<tr class="memdesc:a54f0c896bead36deb3693ca0e33f9b4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detect a NumFunctions() method.  <a href="#a54f0c896bead36deb3693ca0e33f9b4b">More...</a><br /></br></td></tr>
+<tr class="separator:a54f0c896bead36deb3693ca0e33f9b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c6553cd1ab989deae461644aa7e659"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a00c6553cd1ab989deae461644aa7e659">HAS_EXACT_METHOD_FORM</a> (Shuffle, HasShuffle)</td></tr>
+<tr class="memdesc:a00c6553cd1ab989deae461644aa7e659"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detect a Shuffle() method.  <a href="#a00c6553cd1ab989deae461644aa7e659">More...</a><br /></br></td></tr>
+<tr class="separator:a00c6553cd1ab989deae461644aa7e659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5610f9966d75385e79e7c91c7cfb10b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#ab5610f9966d75385e79e7c91c7cfb10b">HAS_EXACT_METHOD_FORM</a> (NumConstraints, HasNumConstraints)</td></tr>
+<tr class="memdesc:ab5610f9966d75385e79e7c91c7cfb10b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detect a NumConstraints() method.  <a href="#ab5610f9966d75385e79e7c91c7cfb10b">More...</a><br /></br></td></tr>
+<tr class="separator:ab5610f9966d75385e79e7c91c7cfb10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35a0adc8d91fbfc2bbb11e8a1e34d19e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a35a0adc8d91fbfc2bbb11e8a1e34d19e">HAS_EXACT_METHOD_FORM</a> (EvaluateConstraint, HasEvaluateConstraint)</td></tr>
+<tr class="memdesc:a35a0adc8d91fbfc2bbb11e8a1e34d19e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detect an EvaluateConstraint() method.  <a href="#a35a0adc8d91fbfc2bbb11e8a1e34d19e">More...</a><br /></br></td></tr>
+<tr class="separator:a35a0adc8d91fbfc2bbb11e8a1e34d19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88dba9ce5a37b1ebf79249f07779396"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#ad88dba9ce5a37b1ebf79249f07779396">HAS_EXACT_METHOD_FORM</a> (GradientConstraint, HasGradientConstraint)</td></tr>
+<tr class="memdesc:ad88dba9ce5a37b1ebf79249f07779396"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detect a GradientConstraint() method.  <a href="#ad88dba9ce5a37b1ebf79249f07779396">More...</a><br /></br></td></tr>
+<tr class="separator:ad88dba9ce5a37b1ebf79249f07779396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c1f89df492a4c5ee7acb0018844f26b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a0c1f89df492a4c5ee7acb0018844f26b">HAS_EXACT_METHOD_FORM</a> (NumFeatures, HasNumFeatures)</td></tr>
+<tr class="memdesc:a0c1f89df492a4c5ee7acb0018844f26b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detect a NumFeatures() method.  <a href="#a0c1f89df492a4c5ee7acb0018844f26b">More...</a><br /></br></td></tr>
+<tr class="separator:a0c1f89df492a4c5ee7acb0018844f26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab89a806a5af2a3df7e9de986086c18c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#ab89a806a5af2a3df7e9de986086c18c4">HAS_EXACT_METHOD_FORM</a> (PartialGradient, HasPartialGradient)</td></tr>
+<tr class="memdesc:ab89a806a5af2a3df7e9de986086c18c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detect a PartialGradient() method.  <a href="#ab89a806a5af2a3df7e9de986086c18c4">More...</a><br /></br></td></tr>
+<tr class="separator:ab89a806a5af2a3df7e9de986086c18c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a9b65bdcf87f10defff93b3480a301e75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b65bdcf87f10defff93b3480a301e75">&#9670;&nbsp;</a></span>DecomposableEvaluateConstForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a9b65bdcf87f10defff93b3480a301e75">DecomposableEvaluateConstForm</a> =  double(FunctionType::*)( const arma::mat&amp;, const size_t, const size_t) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a decomposable const Evaluate() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00117">117</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="abaf2cac652397c892e0150994c2ed294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaf2cac652397c892e0150994c2ed294">&#9670;&nbsp;</a></span>DecomposableEvaluateForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#abaf2cac652397c892e0150994c2ed294">DecomposableEvaluateForm</a> =  double(FunctionType::*)( const arma::mat&amp;, const size_t, const size_t)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a decomposable Evaluate() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00112">112</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="afcfefeef0f5f3fb92cb8fd11e04f6159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcfefeef0f5f3fb92cb8fd11e04f6159">&#9670;&nbsp;</a></span>DecomposableEvaluateStaticForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#afcfefeef0f5f3fb92cb8fd11e04f6159">DecomposableEvaluateStaticForm</a> =  double(*)( const arma::mat&amp;, const size_t, const size_t)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a decomposable static Evaluate() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00122">122</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0234e377fccd1349cdd26c450b511932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0234e377fccd1349cdd26c450b511932">&#9670;&nbsp;</a></span>DecomposableEvaluateWithGradientConstForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a0234e377fccd1349cdd26c450b511932">DecomposableEvaluateWithGradientConstForm</a> =  double(FunctionType::*)( const arma::mat&amp;, const size_t, arma::mat&amp;, const size_t) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a decomposable const EvaluateWithGradient() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00147">147</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="abeedad2b825a825e0daf5a8f3174b13c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeedad2b825a825e0daf5a8f3174b13c">&#9670;&nbsp;</a></span>DecomposableEvaluateWithGradientForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#abeedad2b825a825e0daf5a8f3174b13c">DecomposableEvaluateWithGradientForm</a> =  double(FunctionType::*)( const arma::mat&amp;, const size_t, arma::mat&amp;, const size_t)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a decomposable non-const EvaluateWithGradient() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00142">142</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a9ec0660531d84ce897ebc232d77abf2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ec0660531d84ce897ebc232d77abf2e">&#9670;&nbsp;</a></span>DecomposableEvaluateWithGradientStaticForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a9ec0660531d84ce897ebc232d77abf2e">DecomposableEvaluateWithGradientStaticForm</a> =  double(*)( const arma::mat&amp;, const size_t, arma::mat&amp;, const size_t)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a decomposable static EvaluateWithGradient() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00152">152</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a028b8c68eee2c99d9c8aee332bb830ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a028b8c68eee2c99d9c8aee332bb830ed">&#9670;&nbsp;</a></span>DecomposableGradientConstForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a028b8c68eee2c99d9c8aee332bb830ed">DecomposableGradientConstForm</a> =  void(FunctionType::*)( const arma::mat&amp;, const size_t, arma::mat&amp;, const size_t) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This the form of a decomposable const Gradient() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00132">132</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a53ee9b07c83a2f925c06313dd7264062"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53ee9b07c83a2f925c06313dd7264062">&#9670;&nbsp;</a></span>DecomposableGradientForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a53ee9b07c83a2f925c06313dd7264062">DecomposableGradientForm</a> =  void(FunctionType::*)( const arma::mat&amp;, const size_t, arma::mat&amp;, const size_t)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a decomposable non-const Gradient() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00127">127</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0290f3ffcae856329f58342425dbd0cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0290f3ffcae856329f58342425dbd0cd">&#9670;&nbsp;</a></span>DecomposableGradientStaticForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a0290f3ffcae856329f58342425dbd0cd">DecomposableGradientStaticForm</a> =  void(*)( const arma::mat&amp;, const size_t, arma::mat&amp;, const size_t)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a decomposable static Gradient() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00137">137</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a399d05004503e1234ca1308345edc93f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a399d05004503e1234ca1308345edc93f">&#9670;&nbsp;</a></span>EvaluateConstForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a399d05004503e1234ca1308345edc93f">EvaluateConstForm</a> =  double(FunctionType::*)(const arma::mat&amp;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a const Evaluate() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00051">51</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a9df17b23a6169d983ae5d2db6cd98ba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9df17b23a6169d983ae5d2db6cd98ba1">&#9670;&nbsp;</a></span>EvaluateConstraintConstForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a9df17b23a6169d983ae5d2db6cd98ba1">EvaluateConstraintConstForm</a> =  double(FunctionType::*)( const size_t, const arma::mat&amp;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a const EvaluateConstraint() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00174">174</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ab834e649f7ab5223933219888e51c79c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab834e649f7ab5223933219888e51c79c">&#9670;&nbsp;</a></span>EvaluateConstraintForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#ab834e649f7ab5223933219888e51c79c">EvaluateConstraintForm</a> =  double(FunctionType::*)( const size_t, const arma::mat&amp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a non-const EvaluateConstraint() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00169">169</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a8b4bf5f1e8c22bfb02c309e679179dec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b4bf5f1e8c22bfb02c309e679179dec">&#9670;&nbsp;</a></span>EvaluateConstraintStaticForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a8b4bf5f1e8c22bfb02c309e679179dec">EvaluateConstraintStaticForm</a> =  double(*)(const size_t, const arma::mat&amp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a static EvaluateConstraint() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00178">178</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a811589375d7e9ce103342365e66458c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a811589375d7e9ce103342365e66458c0">&#9670;&nbsp;</a></span>EvaluateForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a811589375d7e9ce103342365e66458c0">EvaluateForm</a> =  double(FunctionType::*)(const arma::mat&amp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a non-const Evaluate() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00046">46</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a6fcfdb9da77148819402c7ac947a0d9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fcfdb9da77148819402c7ac947a0d9b">&#9670;&nbsp;</a></span>EvaluateStaticForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a6fcfdb9da77148819402c7ac947a0d9b">EvaluateStaticForm</a> =  double(*)(const arma::mat&amp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a static Evaluate() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00055">55</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ac64f4b8abf51213c468913751550ad3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac64f4b8abf51213c468913751550ad3d">&#9670;&nbsp;</a></span>EvaluateWithGradientConstForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#ac64f4b8abf51213c468913751550ad3d">EvaluateWithGradientConstForm</a> =  double(FunctionType::*)(const arma::mat&amp;, arma::mat&amp;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a const EvaluateWithGradient() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00078">78</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0a18f99d197981f4b181188d453fe580"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a18f99d197981f4b181188d453fe580">&#9670;&nbsp;</a></span>EvaluateWithGradientForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a0a18f99d197981f4b181188d453fe580">EvaluateWithGradientForm</a> =  double(FunctionType::*)(const arma::mat&amp;, arma::mat&amp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a non-const EvaluateWithGradient() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00073">73</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a5b0a22f51b0af1be3e478df17302d1f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b0a22f51b0af1be3e478df17302d1f2">&#9670;&nbsp;</a></span>EvaluateWithGradientStaticForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a5b0a22f51b0af1be3e478df17302d1f2">EvaluateWithGradientStaticForm</a> =  double(*)(const arma::mat&amp;, arma::mat&amp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a static EvaluateWithGradient() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00083">83</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a714a820053e5849a4b9aa4b356cdf4c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a714a820053e5849a4b9aa4b356cdf4c2">&#9670;&nbsp;</a></span>GradientConstForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a714a820053e5849a4b9aa4b356cdf4c2">GradientConstForm</a> =  void(FunctionType::*)(const arma::mat&amp;, arma::mat&amp;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a const Gradient() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00064">64</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a923b47bd6056bd907f8d0b87f95c3f2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a923b47bd6056bd907f8d0b87f95c3f2d">&#9670;&nbsp;</a></span>GradientConstraintConstForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a923b47bd6056bd907f8d0b87f95c3f2d">GradientConstraintConstForm</a> =  void(FunctionType::*)( const size_t, const arma::mat&amp;, arma::mat&amp;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a const GradientConstraint() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00188">188</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a046de69ca559ae6e777fcb3d73b20c36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a046de69ca559ae6e777fcb3d73b20c36">&#9670;&nbsp;</a></span>GradientConstraintForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a046de69ca559ae6e777fcb3d73b20c36">GradientConstraintForm</a> =  void(FunctionType::*)( const size_t, const arma::mat&amp;, arma::mat&amp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a non-const GradientConstraint() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00183">183</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a842fbbb9361caaa7177c603f7dd8fac8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a842fbbb9361caaa7177c603f7dd8fac8">&#9670;&nbsp;</a></span>GradientConstraintStaticForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a842fbbb9361caaa7177c603f7dd8fac8">GradientConstraintStaticForm</a> =  void(*)( const size_t, const arma::mat&amp;, arma::mat&amp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a static GradientConstraint() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00193">193</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ab4a23bf3dc6be9a6390ff0f05833ae66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4a23bf3dc6be9a6390ff0f05833ae66">&#9670;&nbsp;</a></span>GradientForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#ab4a23bf3dc6be9a6390ff0f05833ae66">GradientForm</a> =  void(FunctionType::*)(const arma::mat&amp;, arma::mat&amp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a non-const Gradient() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00059">59</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a4781b5dbb3e90477a8683d18a5a465e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4781b5dbb3e90477a8683d18a5a465e5">&#9670;&nbsp;</a></span>GradientStaticForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a4781b5dbb3e90477a8683d18a5a465e5">GradientStaticForm</a> =  void(*)(const arma::mat&amp;, arma::mat&amp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a static Gradient() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00068">68</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="afe5e41df6448c3c1939fc12fb3cb6fbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe5e41df6448c3c1939fc12fb3cb6fbf">&#9670;&nbsp;</a></span>NumConstraintsConstForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#afe5e41df6448c3c1939fc12fb3cb6fbf">NumConstraintsConstForm</a> =  size_t(FunctionType::*)() const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a const NumConstraints() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00160">160</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad83c736642360d5446834c00648c9f8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad83c736642360d5446834c00648c9f8e">&#9670;&nbsp;</a></span>NumConstraintsForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#ad83c736642360d5446834c00648c9f8e">NumConstraintsForm</a> =  size_t(FunctionType::*)()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a non-const NumConstraints() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00156">156</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ab79c83e5302ef20d178beae9f0c06582"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab79c83e5302ef20d178beae9f0c06582">&#9670;&nbsp;</a></span>NumConstraintsStaticForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#ab79c83e5302ef20d178beae9f0c06582">NumConstraintsStaticForm</a> =  size_t(*)()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a static NumConstraints() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00164">164</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a32e416968fb068d25b7d6081b6a607c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32e416968fb068d25b7d6081b6a607c4">&#9670;&nbsp;</a></span>NumFeaturesConstForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a32e416968fb068d25b7d6081b6a607c4">NumFeaturesConstForm</a> =  size_t(FunctionType::*)() const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a const NumFeatures() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00216">216</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a15846d78e1b1f4465a464facaf1534c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15846d78e1b1f4465a464facaf1534c7">&#9670;&nbsp;</a></span>NumFeaturesForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a15846d78e1b1f4465a464facaf1534c7">NumFeaturesForm</a> =  size_t(FunctionType::*)()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a non-const NumFeatures() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00212">212</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aeee0b9652a88e241539b2e52aafbd779"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeee0b9652a88e241539b2e52aafbd779">&#9670;&nbsp;</a></span>NumFeaturesStaticForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#aeee0b9652a88e241539b2e52aafbd779">NumFeaturesStaticForm</a> =  size_t(*)()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a static NumFeatures() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00220">220</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a889cd64b1b099a8c4e60b2e4644c558c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a889cd64b1b099a8c4e60b2e4644c558c">&#9670;&nbsp;</a></span>NumFunctionsConstForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a889cd64b1b099a8c4e60b2e4644c558c">NumFunctionsConstForm</a> =  size_t(FunctionType::*)() const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a const NumFunctions() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00091">91</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a646c48e4744797f98843cabd80e36e2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a646c48e4744797f98843cabd80e36e2e">&#9670;&nbsp;</a></span>NumFunctionsForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a646c48e4744797f98843cabd80e36e2e">NumFunctionsForm</a> =  size_t(FunctionType::*)()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a non-const NumFunctions() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00087">87</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a5d93fd332edf4b8d0097cd05303dab67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d93fd332edf4b8d0097cd05303dab67">&#9670;&nbsp;</a></span>NumFunctionsStaticForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a5d93fd332edf4b8d0097cd05303dab67">NumFunctionsStaticForm</a> =  size_t(*)()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a static NumFunctions() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00095">95</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aeabcf15074fe0df3592df6afd5ea2634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeabcf15074fe0df3592df6afd5ea2634">&#9670;&nbsp;</a></span>OtherConstForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#aeabcf15074fe0df3592df6afd5ea2634">OtherConstForm</a> =  double(FunctionType::*)(Ts...) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is a utility struct that will match any const form. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00243">243</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a42e0e8bfcb633f75dac6c5c06e74e02d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42e0e8bfcb633f75dac6c5c06e74e02d">&#9670;&nbsp;</a></span>OtherForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a42e0e8bfcb633f75dac6c5c06e74e02d">OtherForm</a> =  double(FunctionType::*)(Ts...)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is a utility struct that will match any non-const form. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00239">239</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a8ce84baf24ac2eb7e0556b7082d063b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ce84baf24ac2eb7e0556b7082d063b4">&#9670;&nbsp;</a></span>OtherStaticForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a8ce84baf24ac2eb7e0556b7082d063b4">OtherStaticForm</a> =  double(*)(Ts...)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is a utility struct that will match any static form. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00247">247</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a92c5514d614c7fcaf4b8b8af878071ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92c5514d614c7fcaf4b8b8af878071ec">&#9670;&nbsp;</a></span>PartialGradientConstForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a92c5514d614c7fcaf4b8b8af878071ec">PartialGradientConstForm</a> =  void(FunctionType::*)( const arma::mat&amp;, const size_t, arma::sp_mat&amp;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a const PartialGradient() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00230">230</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ab49670b3625058a5fd75be89c43ca9c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab49670b3625058a5fd75be89c43ca9c8">&#9670;&nbsp;</a></span>PartialGradientForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#ab49670b3625058a5fd75be89c43ca9c8">PartialGradientForm</a> =  void(FunctionType::*)( const arma::mat&amp;, const size_t, arma::sp_mat&amp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a non-const PartialGradient() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00225">225</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a3b25acc1c301e63b7d58edb9dcb2f017"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b25acc1c301e63b7d58edb9dcb2f017">&#9670;&nbsp;</a></span>PartialGradientStaticForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a3b25acc1c301e63b7d58edb9dcb2f017">PartialGradientStaticForm</a> =  void(*)( const arma::mat&amp;, const size_t, arma::sp_mat&amp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a static PartialGradient() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00235">235</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a05ac9ab5b22b313dfec8258dc820eeb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05ac9ab5b22b313dfec8258dc820eeb5">&#9670;&nbsp;</a></span>ShuffleConstForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a05ac9ab5b22b313dfec8258dc820eeb5">ShuffleConstForm</a> =  void(FunctionType::*)() const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a const Shuffle() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00103">103</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0fe0c1f7645a2f6fddf0dafd3208a1a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fe0c1f7645a2f6fddf0dafd3208a1a1">&#9670;&nbsp;</a></span>ShuffleForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a0fe0c1f7645a2f6fddf0dafd3208a1a1">ShuffleForm</a> =  void(FunctionType::*)()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a non-const Shuffle() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00099">99</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0eaee17217959e9eb518013258e34e1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eaee17217959e9eb518013258e34e1c">&#9670;&nbsp;</a></span>ShuffleStaticForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a0eaee17217959e9eb518013258e34e1c">ShuffleStaticForm</a> =  void(*)()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a static Shuffle() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00107">107</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a422f66e209d82767a14e97deb5fab8bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a422f66e209d82767a14e97deb5fab8bb">&#9670;&nbsp;</a></span>SparseGradientConstForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#a422f66e209d82767a14e97deb5fab8bb">SparseGradientConstForm</a> =  void(FunctionType::*)( const arma::mat&amp;, const size_t, arma::sp_mat&amp;, const size_t) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a const sparse Gradient() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00203">203</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="adacf9c5e572b3338e22da1b9fbe7fe6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adacf9c5e572b3338e22da1b9fbe7fe6b">&#9670;&nbsp;</a></span>SparseGradientForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#adacf9c5e572b3338e22da1b9fbe7fe6b">SparseGradientForm</a> =  void(FunctionType::*)( const arma::mat&amp;, const size_t, arma::sp_mat&amp;, const size_t)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a non-const sparse Gradient() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00198">198</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ab88ffb66f072d8822578dcd2f98b5bed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab88ffb66f072d8822578dcd2f98b5bed">&#9670;&nbsp;</a></span>SparseGradientStaticForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">using <a class="el" href="namespacemlpack_1_1optimization_1_1traits.html#ab88ffb66f072d8822578dcd2f98b5bed">SparseGradientStaticForm</a> =  void(*)( const arma::mat&amp;, const size_t, arma::sp_mat&amp;, const size_t)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >This is the form of a static sparse Gradient() method. </p>
+
+<p class="definition">Definition at line <a class="el" href="optimizers_2function_2traits_8hpp_source.html#l00208">208</a> of file <a class="el" href="optimizers_2function_2traits_8hpp_source.html">traits.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="af6bd66bcf224107430fe0a737e339de3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6bd66bcf224107430fe0a737e339de3">&#9670;&nbsp;</a></span>CheckConstrainedFunctionTypeAPI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void mlpack::optimization::traits::CheckConstrainedFunctionTypeAPI </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Perform checks for the ConstrainedFunctionType API. </p>
+
+<p class="definition">Definition at line <a class="el" href="static__checks_8hpp_source.html#l00355">355</a> of file <a class="el" href="static__checks_8hpp_source.html">static_checks.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a1c9ee8af6a35fcc2d231874baf726dca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c9ee8af6a35fcc2d231874baf726dca">&#9670;&nbsp;</a></span>CheckDecomposableFunctionTypeAPI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void mlpack::optimization::traits::CheckDecomposableFunctionTypeAPI </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Perform checks for the DecomposableFunctionType API. </p>
+
+<p class="definition">Definition at line <a class="el" href="static__checks_8hpp_source.html#l00255">255</a> of file <a class="el" href="static__checks_8hpp_source.html">static_checks.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a5dd0af6f3015f270703eac7919101222"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dd0af6f3015f270703eac7919101222">&#9670;&nbsp;</a></span>CheckFunctionTypeAPI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void mlpack::optimization::traits::CheckFunctionTypeAPI </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Perform checks for the regular FunctionType API. </p>
+
+<p class="definition">Definition at line <a class="el" href="static__checks_8hpp_source.html#l00232">232</a> of file <a class="el" href="static__checks_8hpp_source.html">static_checks.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae7f7128cff8a584136beda077d49cb66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7f7128cff8a584136beda077d49cb66">&#9670;&nbsp;</a></span>CheckNonDifferentiableDecomposableFunctionTypeAPI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void mlpack::optimization::traits::CheckNonDifferentiableDecomposableFunctionTypeAPI </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Perform checks for the NonDifferentiableDecomposableFunctionType API. </p>
+<p >(I know, it is a long name...) </p>
+
+<p class="definition">Definition at line <a class="el" href="static__checks_8hpp_source.html#l00393">393</a> of file <a class="el" href="static__checks_8hpp_source.html">static_checks.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a6de576d325c10e629f3a22603abe6897"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de576d325c10e629f3a22603abe6897">&#9670;&nbsp;</a></span>CheckNonDifferentiableFunctionTypeAPI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void mlpack::optimization::traits::CheckNonDifferentiableFunctionTypeAPI </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Perform checks for the NonDifferentiableFunctionType API. </p>
+
+<p class="definition">Definition at line <a class="el" href="static__checks_8hpp_source.html#l00317">317</a> of file <a class="el" href="static__checks_8hpp_source.html">static_checks.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a127d5706aa2ff05f7fce9f8878450624"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a127d5706aa2ff05f7fce9f8878450624">&#9670;&nbsp;</a></span>CheckResolvableFunctionTypeAPI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void mlpack::optimization::traits::CheckResolvableFunctionTypeAPI </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Perform checks for the ResolvableFunctionType API. </p>
+
+<p class="definition">Definition at line <a class="el" href="static__checks_8hpp_source.html#l00330">330</a> of file <a class="el" href="static__checks_8hpp_source.html">static_checks.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a141428964f776db1c6720d4628082006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a141428964f776db1c6720d4628082006">&#9670;&nbsp;</a></span>CheckSparseFunctionTypeAPI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void mlpack::optimization::traits::CheckSparseFunctionTypeAPI </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Perform checks for the SparseFunctionType API. </p>
+
+<p class="definition">Definition at line <a class="el" href="static__checks_8hpp_source.html#l00292">292</a> of file <a class="el" href="static__checks_8hpp_source.html">static_checks.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae6e042176a636faa57ac75fd4ef73246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6e042176a636faa57ac75fd4ef73246">&#9670;&nbsp;</a></span>HAS_EXACT_METHOD_FORM() <span class="overload">[1/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">mlpack::optimization::traits::HAS_EXACT_METHOD_FORM </td>
+          <td >(</td>
+          <td class="paramtype">Evaluate&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">HasEvaluate&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Detect an Evaluate() method. </p>
+
+</div>
+</div>
+<a id="adb8ebadfd26bc60d7d87efcd2cc330ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb8ebadfd26bc60d7d87efcd2cc330ba">&#9670;&nbsp;</a></span>HAS_EXACT_METHOD_FORM() <span class="overload">[2/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">mlpack::optimization::traits::HAS_EXACT_METHOD_FORM </td>
+          <td >(</td>
+          <td class="paramtype">Gradient&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">HasGradient&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Detect a Gradient() method. </p>
+
+</div>
+</div>
+<a id="a2ac30538364ac9fbce0cd1bb5a571d47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ac30538364ac9fbce0cd1bb5a571d47">&#9670;&nbsp;</a></span>HAS_EXACT_METHOD_FORM() <span class="overload">[3/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">mlpack::optimization::traits::HAS_EXACT_METHOD_FORM </td>
+          <td >(</td>
+          <td class="paramtype">EvaluateWithGradient&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">HasEvaluateWithGradient&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Detect an EvaluateWithGradient() method. </p>
+
+</div>
+</div>
+<a id="a54f0c896bead36deb3693ca0e33f9b4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f0c896bead36deb3693ca0e33f9b4b">&#9670;&nbsp;</a></span>HAS_EXACT_METHOD_FORM() <span class="overload">[4/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">mlpack::optimization::traits::HAS_EXACT_METHOD_FORM </td>
+          <td >(</td>
+          <td class="paramtype">NumFunctions&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">HasNumFunctions&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Detect a NumFunctions() method. </p>
+
+</div>
+</div>
+<a id="a00c6553cd1ab989deae461644aa7e659"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00c6553cd1ab989deae461644aa7e659">&#9670;&nbsp;</a></span>HAS_EXACT_METHOD_FORM() <span class="overload">[5/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">mlpack::optimization::traits::HAS_EXACT_METHOD_FORM </td>
+          <td >(</td>
+          <td class="paramtype">Shuffle&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">HasShuffle&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Detect a Shuffle() method. </p>
+
+</div>
+</div>
+<a id="ab5610f9966d75385e79e7c91c7cfb10b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5610f9966d75385e79e7c91c7cfb10b">&#9670;&nbsp;</a></span>HAS_EXACT_METHOD_FORM() <span class="overload">[6/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">mlpack::optimization::traits::HAS_EXACT_METHOD_FORM </td>
+          <td >(</td>
+          <td class="paramtype">NumConstraints&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">HasNumConstraints&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Detect a NumConstraints() method. </p>
+
+</div>
+</div>
+<a id="a35a0adc8d91fbfc2bbb11e8a1e34d19e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35a0adc8d91fbfc2bbb11e8a1e34d19e">&#9670;&nbsp;</a></span>HAS_EXACT_METHOD_FORM() <span class="overload">[7/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">mlpack::optimization::traits::HAS_EXACT_METHOD_FORM </td>
+          <td >(</td>
+          <td class="paramtype">EvaluateConstraint&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">HasEvaluateConstraint&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Detect an EvaluateConstraint() method. </p>
+
+</div>
+</div>
+<a id="ad88dba9ce5a37b1ebf79249f07779396"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad88dba9ce5a37b1ebf79249f07779396">&#9670;&nbsp;</a></span>HAS_EXACT_METHOD_FORM() <span class="overload">[8/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">mlpack::optimization::traits::HAS_EXACT_METHOD_FORM </td>
+          <td >(</td>
+          <td class="paramtype">GradientConstraint&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">HasGradientConstraint&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Detect a GradientConstraint() method. </p>
+
+</div>
+</div>
+<a id="a0c1f89df492a4c5ee7acb0018844f26b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c1f89df492a4c5ee7acb0018844f26b">&#9670;&nbsp;</a></span>HAS_EXACT_METHOD_FORM() <span class="overload">[9/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">mlpack::optimization::traits::HAS_EXACT_METHOD_FORM </td>
+          <td >(</td>
+          <td class="paramtype">NumFeatures&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">HasNumFeatures&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Detect a NumFeatures() method. </p>
+
+</div>
+</div>
+<a id="ab89a806a5af2a3df7e9de986086c18c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab89a806a5af2a3df7e9de986086c18c4">&#9670;&nbsp;</a></span>HAS_EXACT_METHOD_FORM() <span class="overload">[10/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">mlpack::optimization::traits::HAS_EXACT_METHOD_FORM </td>
+          <td >(</td>
+          <td class="paramtype">PartialGradient&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">HasPartialGradient&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Detect a PartialGradient() method. </p>
+
+</div>
+</div>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

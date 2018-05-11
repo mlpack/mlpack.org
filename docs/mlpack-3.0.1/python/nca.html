@@ -1,0 +1,54 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a fast, flexible c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a fast, flexible c++ machine learning library</title>
+</head><link rel="stylesheet" href="../../../style.css" /></link><link rel="stylesheet" href="../../style-python.css" /></link><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" /></link>
+
+
+
+<body ><br /></br>
+
+
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext pythonpage">
+<h1><center>mlpack.nca</center></h1>
+<font class="titlecode">nca(...)</font><br />
+<font class="titlebold">Neighborhood Components Analysis (NCA)</font>
+<p class="importcode">&gt;&gt;&gt; from mlpack import nca</p><p>This program implements Neighborhood Components Analysis, both a linear dimensionality reduction technique and a distance learning technique.  The method seeks to improve k-nearest-neighbor classification on a dataset by scaling the dimensions.  The method is nonparametric, and does not require a value of k.  It works by using stochastic ("soft") neighbor assignments and using optimization techniques over the gradient of the accuracy of the neighbor assignments.</p>
+</p>
+<p>To work, this algorithm needs labeled data.  It can be given as the last row of the input dataset (specified with <font class="code">'input'</font>), or alternatively as a separate matrix (specified with <font class="code">'labels'</font>).</p>
+</p>
+<p>This implementation of NCA uses stochastic gradient descent, mini-batch stochastic gradient descent, or the L_BFGS optimizer.  These optimizers do not guarantee global convergence for a nonconvex objective function (NCA'</font>s objective function is nonconvex), so the final results could depend on the random seed or other optimizer parameters.</p>
+</p>
+<p>Stochastic gradient descent, specified by the value <font class="code">'sgd'</font> for the parameter <font class="code">'optimizer'</font>, depends primarily on three parameters: the step size (specified with <font class="code">'step_size'</font>), the batch size (specified with <font class="code">'batch_size'</font>), and the maximum number of iterations (specified with <font class="code">'max_iterations'</font>).  In addition, a normalized starting point can be used by specifying the <font class="code">'normalize'</font> parameter, which is necessary if many warnings of the form <font class="code">'Denominator of p_i is 0!'</font> are given.  Tuning the step size can be a tedious affair.  In general, the step size is too large if the objective is not mostly uniformly decreasing, or if zero-valued denominator warnings are being issued.  The step size is too small if the objective is changing very slowly.  Setting the termination condition can be done easily once a good step size parameter is found; either increase the maximum iterations to a large number and allow SGD to find a minimum, or set the maximum iterations to 0 (allowing infinite iterations) and set the tolerance (specified by <font class="code">'tolerance'</font>) to define the maximum allowed difference between objectives for SGD to terminate.  Be careful---setting the tolerance instead of the maximum iterations can take a very long time and may actually never converge due to the properties of the SGD optimizer. Note that a single iteration of SGD refers to a single point, so to take a single pass over the dataset, set the value of the <font class="code">'max_iterations'</font> parameter equal to the number of points in the dataset.</p>
+</p>
+<p>The L-BFGS optimizer, specified by the value <font class="code">'lbfgs'</font> for the parameter <font class="code">'optimizer'</font>, uses a back-tracking line search algorithm to minimize a function.  The following parameters are used by L-BFGS: <font class="code">'num_basis'</font> (specifies the number of memory points used by L-BFGS), <font class="code">'max_iterations'</font>, <font class="code">'armijo_constant'</font>, <font class="code">'wolfe'</font>, <font class="code">'tolerance'</font> (the optimization is terminated when the gradient norm is below this value), <font class="code">'max_line_search_trials'</font>, <font class="code">'min_step'</font>, and <font class="code">'max_step'</font> (which both refer to the line search routine).  For more details on the L-BFGS optimizer, consult either the mlpack L-BFGS documentation (in lbfgs.hpp) or the vast set of published literature on L-BFGS.</p>
+</p>
+<p>By default, the SGD optimizer is used.</p><h2>input options</h2>
+<ul>
+<li><font class="code">input</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: <font class="required">[required]</font> Input dataset to run NCA on.</li><li><font class="code">armijo_constant</font> <font class="codetype">(float)</font>: Armijo constant for L-BFGS.  Default value 0.0001.</li><li><font class="code">batch_size</font> <font class="codetype">(int)</font>: Batch size for mini-batch SGD.  Default value 50.</li><li><font class="code">copy_all_inputs</font> <font class="codetype">(bool)</font>: If specified, all input parameters will be deep copied before the method is run.  This is useful for debugging problems where the input parameters are being modified by the algorithm, but can slow down the code.</li><li><font class="code">labels</font> <font class="codetype">(numpy vector or array, int/long dtype)</font>: Labels for input dataset.</li><li><font class="code">linear_scan</font> <font class="codetype">(bool)</font>: Don't shuffle the order in which data points are visited for SGD or mini-batch SGD.</li><li><font class="code">max_iterations</font> <font class="codetype">(int)</font>: Maximum number of iterations for SGD or L-BFGS (0 indicates no limit).  Default value 500000.</li><li><font class="code">max_line_search_trials</font> <font class="codetype">(int)</font>: Maximum number of line search trials for L-BFGS.  Default value 50.</li><li><font class="code">max_step</font> <font class="codetype">(float)</font>: Maximum step of line search for L-BFGS.  Default value 1e+20.</li><li><font class="code">min_step</font> <font class="codetype">(float)</font>: Minimum step of line search for L-BFGS.  Default value 1e-20.</li><li><font class="code">normalize</font> <font class="codetype">(bool)</font>: Use a normalized starting point for optimization. This is useful for when points are far apart, or when SGD is returning NaN.</li><li><font class="code">num_basis</font> <font class="codetype">(int)</font>: Number of memory points to be stored for L-BFGS.  Default value 5.</li><li><font class="code">optimizer</font> <font class="codetype">(string)</font>: Optimizer to use; 'sgd' or 'lbfgs'.  Default value sgd.</li><li><font class="code">seed</font> <font class="codetype">(int)</font>: Random seed.  If 0, 'std::time(NULL)' is used.  Default value 0.</li><li><font class="code">step_size</font> <font class="codetype">(float)</font>: Step size for stochastic gradient descent (alpha).  Default value 0.01.</li><li><font class="code">tolerance</font> <font class="codetype">(float)</font>: Maximum tolerance for termination of SGD or L-BFGS.  Default value 1e-07.</li><li><font class="code">verbose</font> <font class="codetype">(bool)</font>: Display informational messages and the full list of parameters and timers at the end of execution.</li><li><font class="code">wolfe</font> <font class="codetype">(float)</font>: Wolfe condition parameter for L-BFGS.  Default value 0.9.</li></ul>
+<h2>output options</h2>
+<p>The return value from the binding is a dict containing the following elements:</p>
+<ul><li><font class="code">output</font> <font class="codetype">(numpy matrix, float dtype)</font>: Output matrix for learned distance matrix.</li><ul>
+</ul>
+</div>
+</body>
+</html>

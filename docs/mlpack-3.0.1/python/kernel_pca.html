@@ -1,0 +1,78 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a fast, flexible c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a fast, flexible c++ machine learning library</title>
+</head><link rel="stylesheet" href="../../../style.css" /></link><link rel="stylesheet" href="../../style-python.css" /></link><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" /></link>
+
+
+
+<body ><br /></br>
+
+
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext pythonpage">
+<h1><center>mlpack.kernel_pca</center></h1>
+<font class="titlecode">kernel_pca(...)</font><br />
+<font class="titlebold">Kernel Principal Components Analysis</font>
+<p class="importcode">&gt;&gt;&gt; from mlpack import kernel_pca</p><p>This program performs Kernel Principal Components Analysis (KPCA) on the specified dataset with the specified kernel.  This will transform the data onto the kernel principal components, and optionally reduce the dimensionality by ignoring the kernel principal components with the smallest eigenvalues.</p>
+</p>
+<p>For the case where a linear kernel is used, this reduces to regular PCA.</p>
+</p>
+<p>For example, the following command will perform KPCA on the dataset <font class="code">'input'</font> using the Gaussian kernel, and saving the transformed data to <font class="code">'transformed'</font>: </p>
+</p>
+<p class="codeblock"><font class="code">&gt;&gt;&gt; kernel_pca(input=input, kernel='gaussian')<br />
+&gt;&gt;&gt; transformed = output['output']</font></p>
+</p>
+<p>The kernels that are supported are listed below:</p>
+</p>
+<p> * <font class="code">'linear'</font>: the standard linear dot product (same as normal PCA):</p>
+<p>    K(x, y) = x^T y</p>
+</p>
+<p> * <font class="code">'gaussian'</font>: a Gaussian kernel; requires bandwidth:</p>
+<p>    K(x, y) = exp(-(|| x - y || ^ 2) / (2 * (bandwidth ^ 2)))</p>
+</p>
+<p> * <font class="code">'polynomial'</font>: polynomial kernel; requires offset and degree:</p>
+<p>    K(x, y) = (x^T y + offset) ^ degree</p>
+</p>
+<p> * <font class="code">'hyptan'</font>: hyperbolic tangent kernel; requires scale and offset:</p>
+<p>    K(x, y) = tanh(scale * (x^T y) + offset)</p>
+</p>
+<p> * <font class="code">'laplacian'</font>: Laplacian kernel; requires bandwidth:</p>
+<p>    K(x, y) = exp(-(|| x - y ||) / bandwidth)</p>
+</p>
+<p> * <font class="code">'epanechnikov'</font>: Epanechnikov kernel; requires bandwidth:</p>
+<p>    K(x, y) = max(0, 1 - || x - y ||^2 / bandwidth^2)</p>
+</p>
+<p> * <font class="code">'cosine'</font>: cosine distance:</p>
+<p>    K(x, y) = 1 - (x^T y) / (|| x || * || y ||)</p>
+</p>
+<p>The parameters for each of the kernels should be specified with the options <font class="code">'bandwidth'</font>, <font class="code">'kernel_scale'</font>, <font class="code">'offset'</font>, or <font class="code">'degree'</font> (or a combination of those parameters).</p>
+</p>
+<p>Optionally, the Nyström method ("Using the Nystroem method to speed up kernel machines", 2001) can be used to calculate the kernel matrix by specifying the <font class="code">'nystroem_method'</font> parameter. This approach works by using a subset of the data as basis to reconstruct the kernel matrix; to specify the sampling scheme, the <font class="code">'sampling'</font> parameter is used.  The sampling scheme for the Nyström method can be chosen from the following list: <font class="code">'kmeans'</font>, <font class="code">'random'</font>, <font class="code">'ordered'</font>.</p><h2>input options</h2>
+<ul>
+<li><font class="code">input</font> <font class="codetype">(numpy matrix or arraylike, float dtype)</font>: <font class="required">[required]</font> Input dataset to perform KPCA on.</li><li><font class="code">kernel</font> <font class="codetype">(string)</font>: <font class="required">[required]</font> The kernel to use; see the above documentation for the list of usable kernels.  Default value .</li><li><font class="code">bandwidth</font> <font class="codetype">(float)</font>: Bandwidth, for 'gaussian' and 'laplacian' kernels.  Default value 1.</li><li><font class="code">center</font> <font class="codetype">(bool)</font>: If set, the transformed data will be centered about the origin.</li><li><font class="code">copy_all_inputs</font> <font class="codetype">(bool)</font>: If specified, all input parameters will be deep copied before the method is run.  This is useful for debugging problems where the input parameters are being modified by the algorithm, but can slow down the code.</li><li><font class="code">degree</font> <font class="codetype">(float)</font>: Degree of polynomial, for 'polynomial' kernel.  Default value 1.</li><li><font class="code">kernel_scale</font> <font class="codetype">(float)</font>: Scale, for 'hyptan' kernel.  Default value 1.</li><li><font class="code">new_dimensionality</font> <font class="codetype">(int)</font>: If not 0, reduce the dimensionality of the output dataset by ignoring the dimensions with the smallest eigenvalues.  Default value 0.</li><li><font class="code">nystroem_method</font> <font class="codetype">(bool)</font>: If set, the nystroem method will be used.</li><li><font class="code">offset</font> <font class="codetype">(float)</font>: Offset, for 'hyptan' and 'polynomial' kernels.  Default value 0.</li><li><font class="code">sampling</font> <font class="codetype">(string)</font>: Sampling scheme to use for the nystroem method: 'kmeans', 'random', 'ordered'  Default value kmeans.</li><li><font class="code">verbose</font> <font class="codetype">(bool)</font>: Display informational messages and the full list of parameters and timers at the end of execution.</li></ul>
+<h2>output options</h2>
+<p>The return value from the binding is a dict containing the following elements:</p>
+<ul><li><font class="code">output</font> <font class="codetype">(numpy matrix, float dtype)</font>: Matrix to save modified dataset to.</li><ul>
+</ul>
+</div>
+</body>
+</html>

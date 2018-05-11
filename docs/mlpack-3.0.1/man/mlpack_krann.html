@@ -1,0 +1,266 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a fast, flexible c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a fast, flexible c++ machine learning library</title>
+</head><link rel="stylesheet" href="../../../style.css" /></link><link rel="stylesheet" href="../../style-man.css" /></link><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" /></link>
+
+
+
+<body ><br /></br>
+
+
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext manpage">
+
+
+<h1 align="center">mlpack_krann</h1>
+
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_krann</font>
+- k-rank-approximate-nearest-neighbors (krann)</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_krann</font>
+[<font class="code">-a</font> <font class="code2">double</font>] [<font class="code">-X</font> <font class="code2">bool</font>] [<font class="code">-m</font>
+<font class="code2">unknown</font>] [<font class="code">-k</font> <font class="code2">int</font>] [<font class="code">-l</font>
+<font class="code2">int</font>] [<font class="code">-N</font> <font class="code2">bool</font>] [<font class="code">-q</font>
+<font class="code2">string</font>] [<font class="code">-R</font> <font class="code2">bool</font>] [<font class="code">-r</font>
+<font class="code2">string</font>] [<font class="code">-L</font> <font class="code2">bool</font>] [<font class="code">-s</font>
+<font class="code2">int</font>] [<font class="code">-S</font> <font class="code2">bool</font>] [<font class="code">-z</font> <font class="code2">int</font>]
+[<font class="code">-T</font> <font class="code2">double</font>] [<font class="code">-t</font> <font class="code2">string</font>]
+[<font class="code">-V</font> <font class="code2">bool</font>] [<font class="code">-d</font> <font class="code2">string</font>] [<font class="code">-n</font>
+<font class="code2">string</font>] [<font class="code">-M</font> <font class="code2">unknown</font>] [<font class="code">-h -v</font>]</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p class="closemargin first">This program
+will calculate the k rank-approximate-nearest-neighbors of a
+set of points. You may specify a separate set of reference
+points and query points, or just a reference set which will
+be used as both the reference and query set. You must
+specify the rank approximation (in 
+) (and optionally the
+success probability).</p>
+
+<p class="closemargin first">For example,
+the following will return 5 neighbors from the top 0.1
+ of
+the data (with probability 0.95) for each point in
+&rsquo;input.csv&rsquo; and store the distances in
+&rsquo;distances.csv&rsquo; and the neighbors in the file
+&rsquo;neighbors.csv&rsquo;:</p>
+
+<p class="closemargin first">$ allkrann
+<font class="code">-k</font> 5 <font class="code">-r</font> input.csv <font class="code">-d</font> distances.csv
+<font class="code">-n</font> neighbors.csv <font class="code">--tau</font> 0.1</p>
+
+<p class="closemargin first">Note that tau
+must be set such that the number of points in the
+corresponding percentile of the data is greater than k.
+Thus, if we choose tau = 0.1 with a dataset of 1000 points
+and k = 5, then we are attempting to choose 5 nearest
+neighbors out of the closest 1 point -- this is invalid and
+the program will terminate with an error message.</p>
+
+<p class="closemargin first">The output
+files are organized such that row i and column j in the
+neighbors output file corresponds to the index of the point
+in the reference set which is the i&rsquo;th nearest
+neighbor from the point in the query set with index j. Row i
+and column j in the distances output file corresponds to the
+distance between those two points.</p>
+
+<h2>OPTIONAL INPUT OPTIONS
+<a name="OPTIONAL INPUT OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--alpha (-a)
+[</font><font class="code2">double</font><font class="code">]</font></p>
+
+<p class="farmargin">The desired success
+probability. Default value 0.95.</p>
+
+<p class="closemargin"><font class="code">--first_leaf_exact (-X)
+[</font><font class="code2">bool</font><font class="code">]</font></p>
+
+<p class="farmargin">The flag to trigger sampling
+only after exactly exploring the first leaf.</p>
+
+<p class="closemargin"><font class="code">--help (-h)
+[</font><font class="code2">bool</font><font class="code">]</font></p>
+
+<p class="farmargin">Default help info.</p>
+
+<p class="closemargin"><font class="code">--info
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Get help on a specific module
+or option. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--input_model_file (-m)
+[</font><font class="code2">unknown</font><font class="code">]</font></p>
+
+<p class="farmargin">Pre-trained kNN model. Default
+value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--k (-k)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Number of nearest neighbors to
+find. Default value 0.</p>
+
+<p class="closemargin"><font class="code">--leaf_size (-l)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Leaf size for tree building
+(used for kd-trees, UB trees, R trees, R* trees, X trees,
+Hilbert R trees, R+ trees, R++ trees, and octrees). Default
+value 20.</p>
+
+<p class="closemargin"><font class="code">--naive (-N)
+[</font><font class="code2">bool</font><font class="code">]</font></p>
+
+<p class="farmargin">If true, sampling will be done
+without using a tree.</p>
+
+<p class="closemargin"><font class="code">--query_file (-q)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Matrix containing query points
+(optional). Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--random_basis (-R)
+[</font><font class="code2">bool</font><font class="code">]</font></p>
+
+<p class="farmargin">Before tree-building, project
+the data onto a random orthogonal basis.</p>
+
+<p class="closemargin"><font class="code">--reference_file (-r)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Matrix containing the reference
+dataset. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--sample_at_leaves (-L)
+[</font><font class="code2">bool</font><font class="code">]</font></p>
+
+<p class="farmargin">The flag to trigger sampling at
+leaves.</p>
+
+<p class="closemargin"><font class="code">--seed (-s)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Random seed (if 0,
+<font class="code">std::time</font>(NULL) is used). Default value 0.</p>
+
+<p class="closemargin"><font class="code">--single_mode (-S)
+[</font><font class="code2">bool</font><font class="code">]</font></p>
+
+<p class="farmargin">If true, single-tree search is
+used (as opposed to dual-tree search.</p>
+
+<p class="closemargin"><font class="code">--single_sample_limit (-z)
+[</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">The limit on the maximum number
+of samples (and hence the largest node you can approximate).
+Default value 20.</p>
+
+<p class="closemargin"><font class="code">--tau (-T)
+[</font><font class="code2">double</font><font class="code">]</font></p>
+
+<p class="farmargin">The allowed rank-error in terms
+of the percentile of the data. Default value 5.</p>
+
+<p class="closemargin"><font class="code">--tree_type (-t)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Type of tree to use:
+&rsquo;kd&rsquo;, &rsquo;ub&rsquo;, &rsquo;cover&rsquo;,
+&rsquo;r&rsquo;, &rsquo;x&rsquo;, &rsquo;r-star&rsquo;,
+&rsquo;hilbert-r&rsquo;, &rsquo;r-plus&rsquo;,
+&rsquo;r-plus-plus&rsquo;, &rsquo;oct&rsquo;. Default value
+&rsquo;kd&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--verbose (-v)
+[</font><font class="code2">bool</font><font class="code">]</font></p>
+
+<p class="farmargin">Display informational messages
+and the full list of parameters and timers at the end of
+execution.</p>
+
+<p class="closemargin"><font class="code">--version (-V)
+[</font><font class="code2">bool</font><font class="code">]</font></p>
+
+<p class="farmargin">Display the version of
+mlpack.</p>
+
+<h2>OPTIONAL OUTPUT OPTIONS
+<a name="OPTIONAL OUTPUT OPTIONS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">--distances_file
+(-d) [</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Matrix to output distances
+into. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--neighbors_file (-n)
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Matrix to output neighbors
+into. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--output_model_file (-M)
+[</font><font class="code2">unknown</font><font class="code">]</font></p>
+
+<p class="farmargin">If specified, the kNN model
+will be output here. Default value &rsquo;&rsquo;.</p>
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<p class="closemargin first">For further
+information, including relevant papers, citations, and
+theory, consult the documentation found at
+http://www.mlpack.org or included with your distribution of
+mlpack.</p>
+</div></body></html>

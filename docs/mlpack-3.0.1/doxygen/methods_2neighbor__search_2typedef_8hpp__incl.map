@@ -1,0 +1,28 @@
+<map id="src/mlpack/methods/neighbor_search/typedef.hpp" name="src/mlpack/methods/neighbor_search/typedef.hpp">
+<area shape="rect" id="node2" href="$neighbor__search_8hpp.html" title="neighbor_search.hpp" alt="" coords="1957,102,2100,129"/>
+<area shape="rect" id="node30" href="$lmetric_8hpp.html" title="mlpack/core/metrics\l/lmetric.hpp" alt="" coords="441,363,581,404"/>
+<area shape="rect" id="node45" href="$nearest__neighbor__sort_8hpp.html" title="sort_policies/nearest\l_neighbor_sort.hpp" alt="" coords="2319,184,2461,225"/>
+<area shape="rect" id="node49" href="$furthest__neighbor__sort_8hpp.html" title="sort_policies/furthest\l_neighbor_sort.hpp" alt="" coords="2812,95,2955,136"/>
+<area shape="rect" id="node3" href="$prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo. " alt="" coords="1211,541,1347,568"/>
+<area shape="rect" id="node28" href="$binary__space__tree_8hpp.html" title="mlpack/core/tree/binary\l_space_tree.hpp" alt="" coords="1227,184,1385,225"/>
+<area shape="rect" id="node38" href="$binary__space__tree_2binary__space__tree_8hpp.html" title="binary_space_tree/binary\l_space_tree.hpp" alt="" coords="853,363,1020,404"/>
+<area shape="rect" id="node43" href="$rectangle__tree_8hpp.html" title="mlpack/core/tree/rectangle\l_tree.hpp" alt="" coords="705,184,881,225"/>
+<area shape="rect" id="node44" href="$neighbor__search__stat_8hpp.html" title="neighbor_search_stat.hpp" alt="" coords="2066,370,2237,397"/>
+<area shape="rect" id="node47" href="$neighbor__search__rules_8hpp.html" title="neighbor_search_rules.hpp" alt="" coords="2117,191,2295,218"/>
+<area shape="rect" id="node18" href="$has__serialize_8hpp.html" title="mlpack/core/data/has\l_serialize.hpp" alt="" coords="1206,616,1353,657"/>
+<area shape="rect" id="node19" href="$serialization__template__version_8hpp.html" title="mlpack/core/data/serialization\l_template_version.hpp" alt="" coords="1377,616,1571,657"/>
+<area shape="rect" id="node21" href="$arma__traits_8hpp.html" title="mlpack/core/util/arma\l_traits.hpp" alt="" coords="1793,616,1939,657"/>
+<area shape="rect" id="node22" href="$arma__config__check_8hpp.html" title="mlpack/core/util/arma\l_config_check.hpp" alt="" coords="1963,616,2110,657"/>
+<area shape="rect" id="node23" href="$log_8hpp.html" title="mlpack/core/util/log.hpp" alt="" coords="2449,623,2609,650"/>
+<area shape="rect" id="node25" href="$timers_8hpp.html" title="mlpack/core/util/timers.hpp" alt="" coords="2718,623,2897,650"/>
+<area shape="rect" id="node26" href="$deprecated_8hpp.html" title="mlpack/core/util/deprecated.hpp" alt="" coords="2135,623,2341,650"/>
+<area shape="rect" id="node29" href="$bounds_8hpp.html" title="Bounds that are useful for binary space partitioning trees. " alt="" coords="508,281,597,307"/>
+<area shape="rect" id="node32" href="$midpoint__split_8hpp.html" title="binary_space_tree/midpoint\l_split.hpp" alt="" coords="1101,452,1282,493"/>
+<area shape="rect" id="node33" href="$mean__split_8hpp.html" title="binary_space_tree/mean\l_split.hpp" alt="" coords="1405,452,1569,493"/>
+<area shape="rect" id="node34" href="$vantage__point__split_8hpp.html" title="binary_space_tree/vantage\l_point_split.hpp" alt="" coords="1813,363,1991,404"/>
+<area shape="rect" id="node35" href="$rp__tree__max__split_8hpp.html" title="binary_space_tree/rp\l_tree_max_split.hpp" alt="" coords="1645,363,1788,404"/>
+<area shape="rect" id="node36" href="$rp__tree__mean__split_8hpp.html" title="binary_space_tree/rp\l_tree_mean_split.hpp" alt="" coords="1705,273,1851,315"/>
+<area shape="rect" id="node37" href="$ub__tree__split_8hpp.html" title="binary_space_tree/ub\l_tree_split.hpp" alt="" coords="631,452,778,493"/>
+<area shape="rect" id="node39" href="$binary__space__tree_2single__tree__traverser_8hpp.html" title="binary_space_tree/single\l_tree_traverser.hpp" alt="" coords="980,273,1147,315"/>
+<area shape="rect" id="node41" href="$binary__space__tree_2dual__tree__traverser_8hpp.html" title="binary_space_tree/dual\l_tree_traverser.hpp" alt="" coords="724,273,880,315"/>
+</map>

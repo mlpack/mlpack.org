@@ -1,0 +1,873 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">3.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="namespacemlpack.html">mlpack</a></li><li class="navelem"><a class="el" href="namespacemlpack_1_1ann.html">ann</a></li><li class="navelem"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html">Glimpse</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classmlpack_1_1ann_1_1Glimpse-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">Glimpse&lt; InputDataType, OutputDataType &gt; Class Template Reference</div>  </div>
+</div>
+<div class="contents">
+
+<p >The glimpse layer returns a retina-like representation (down-scaled cropped images) of increasing scale around a given location in a given image.  
+ <a href="classmlpack_1_1ann_1_1Glimpse.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a19c2ef07809ce53bd8eef72ed2c6e1eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html#a19c2ef07809ce53bd8eef72ed2c6e1eb">Glimpse</a> (const size_t inSize=0, const size_t size=0, const size_t depth=3, const size_t scale=2, const size_t inputWidth=0, const size_t inputHeight=0)</td></tr>
+<tr class="memdesc:a19c2ef07809ce53bd8eef72ed2c6e1eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the GlimpseLayer object using the specified ratio and rescale parameter.  <a href="#a19c2ef07809ce53bd8eef72ed2c6e1eb">More...</a><br /></br></td></tr>
+<tr class="separator:a19c2ef07809ce53bd8eef72ed2c6e1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa067106dfb419f136eaa033a22fca39c"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">eT</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:aa067106dfb419f136eaa033a22fca39c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html#aa067106dfb419f136eaa033a22fca39c">Backward</a> (const arma::Mat&lt; eT &gt; &amp;&amp;, arma::Mat&lt; eT &gt; &amp;&amp;gy, arma::Mat&lt; eT &gt; &amp;&amp;g)</td></tr>
+<tr class="memdesc:aa067106dfb419f136eaa033a22fca39c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ordinary feed backward pass of the glimpse layer.  <a href="#aa067106dfb419f136eaa033a22fca39c">More...</a><br /></br></td></tr>
+<tr class="separator:aa067106dfb419f136eaa033a22fca39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7c8eba5764f021cd93e30efe638e63c"><td class="memItemLeft" align="right" valign="top">OutputDataType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html#ae7c8eba5764f021cd93e30efe638e63c">Delta</a> () const</td></tr>
+<tr class="memdesc:ae7c8eba5764f021cd93e30efe638e63c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the detla.  <a href="#ae7c8eba5764f021cd93e30efe638e63c">More...</a><br /></br></td></tr>
+<tr class="separator:ae7c8eba5764f021cd93e30efe638e63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6601342d560219ce951d554e69e5e87"><td class="memItemLeft" align="right" valign="top">OutputDataType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html#ad6601342d560219ce951d554e69e5e87">Delta</a> ()</td></tr>
+<tr class="memdesc:ad6601342d560219ce951d554e69e5e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the delta.  <a href="#ad6601342d560219ce951d554e69e5e87">More...</a><br /></br></td></tr>
+<tr class="separator:ad6601342d560219ce951d554e69e5e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f4103707f4d199ce5594d239b60443e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html#a9f4103707f4d199ce5594d239b60443e">Deterministic</a> () const</td></tr>
+<tr class="memdesc:a9f4103707f4d199ce5594d239b60443e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of the deterministic parameter.  <a href="#a9f4103707f4d199ce5594d239b60443e">More...</a><br /></br></td></tr>
+<tr class="separator:a9f4103707f4d199ce5594d239b60443e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42d4ee3da432cff20d3a41b8b1ec801c"><td class="memItemLeft" align="right" valign="top">bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html#a42d4ee3da432cff20d3a41b8b1ec801c">Deterministic</a> ()</td></tr>
+<tr class="memdesc:a42d4ee3da432cff20d3a41b8b1ec801c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the value of the deterministic parameter.  <a href="#a42d4ee3da432cff20d3a41b8b1ec801c">More...</a><br /></br></td></tr>
+<tr class="separator:a42d4ee3da432cff20d3a41b8b1ec801c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e39bfb65b49cc9615ca90adc75b2d4b"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">eT</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:a2e39bfb65b49cc9615ca90adc75b2d4b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html#a2e39bfb65b49cc9615ca90adc75b2d4b">Forward</a> (const arma::Mat&lt; eT &gt; &amp;&amp;input, arma::Mat&lt; eT &gt; &amp;&amp;output)</td></tr>
+<tr class="memdesc:a2e39bfb65b49cc9615ca90adc75b2d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ordinary feed forward pass of the glimpse layer.  <a href="#a2e39bfb65b49cc9615ca90adc75b2d4b">More...</a><br /></br></td></tr>
+<tr class="separator:a2e39bfb65b49cc9615ca90adc75b2d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb3fd4ed60dd057e7852221b89206f15"><td class="memItemLeft" align="right" valign="top">size_t const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html#afb3fd4ed60dd057e7852221b89206f15">InputHeight</a> () const</td></tr>
+<tr class="memdesc:afb3fd4ed60dd057e7852221b89206f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the input height.  <a href="#afb3fd4ed60dd057e7852221b89206f15">More...</a><br /></br></td></tr>
+<tr class="separator:afb3fd4ed60dd057e7852221b89206f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefbba724eec397a928d5460bb209a360"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html#aefbba724eec397a928d5460bb209a360">InputHeight</a> ()</td></tr>
+<tr class="memdesc:aefbba724eec397a928d5460bb209a360"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the input height.  <a href="#aefbba724eec397a928d5460bb209a360">More...</a><br /></br></td></tr>
+<tr class="separator:aefbba724eec397a928d5460bb209a360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1506936601ddae886088d2804623ca4b"><td class="memItemLeft" align="right" valign="top">InputDataType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html#a1506936601ddae886088d2804623ca4b">InputParameter</a> () const</td></tr>
+<tr class="memdesc:a1506936601ddae886088d2804623ca4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the input parameter.  <a href="#a1506936601ddae886088d2804623ca4b">More...</a><br /></br></td></tr>
+<tr class="separator:a1506936601ddae886088d2804623ca4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a063c3b1053c7979a7dd2e7bbd2bf1f8a"><td class="memItemLeft" align="right" valign="top">InputDataType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html#a063c3b1053c7979a7dd2e7bbd2bf1f8a">InputParameter</a> ()</td></tr>
+<tr class="memdesc:a063c3b1053c7979a7dd2e7bbd2bf1f8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the input parameter.  <a href="#a063c3b1053c7979a7dd2e7bbd2bf1f8a">More...</a><br /></br></td></tr>
+<tr class="separator:a063c3b1053c7979a7dd2e7bbd2bf1f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29346e3064da8f9e5f10596bedae0ba8"><td class="memItemLeft" align="right" valign="top">size_t const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html#a29346e3064da8f9e5f10596bedae0ba8">InputWidth</a> () const</td></tr>
+<tr class="memdesc:a29346e3064da8f9e5f10596bedae0ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the input width.  <a href="#a29346e3064da8f9e5f10596bedae0ba8">More...</a><br /></br></td></tr>
+<tr class="separator:a29346e3064da8f9e5f10596bedae0ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a238e9d308df611a9300a4ca6756fef4d"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html#a238e9d308df611a9300a4ca6756fef4d">InputWidth</a> ()</td></tr>
+<tr class="memdesc:a238e9d308df611a9300a4ca6756fef4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify input the width.  <a href="#a238e9d308df611a9300a4ca6756fef4d">More...</a><br /></br></td></tr>
+<tr class="separator:a238e9d308df611a9300a4ca6756fef4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f32d484de0d3abca25a1aa77a7ab855"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html#a8f32d484de0d3abca25a1aa77a7ab855">Location</a> (const arma::mat &amp;location)</td></tr>
+<tr class="memdesc:a8f32d484de0d3abca25a1aa77a7ab855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the locationthe x and y coordinate of the center of the output glimpse.  <a href="#a8f32d484de0d3abca25a1aa77a7ab855">More...</a><br /></br></td></tr>
+<tr class="separator:a8f32d484de0d3abca25a1aa77a7ab855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad7dbcaf1a622dafd897f79ab77890c"><td class="memItemLeft" align="right" valign="top">size_t const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html#a5ad7dbcaf1a622dafd897f79ab77890c">OutputHeight</a> () const</td></tr>
+<tr class="memdesc:a5ad7dbcaf1a622dafd897f79ab77890c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the output height.  <a href="#a5ad7dbcaf1a622dafd897f79ab77890c">More...</a><br /></br></td></tr>
+<tr class="separator:a5ad7dbcaf1a622dafd897f79ab77890c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5112abf9f5e1face13ed965a8755b1d"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html#ac5112abf9f5e1face13ed965a8755b1d">OutputHeight</a> ()</td></tr>
+<tr class="memdesc:ac5112abf9f5e1face13ed965a8755b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the output height.  <a href="#ac5112abf9f5e1face13ed965a8755b1d">More...</a><br /></br></td></tr>
+<tr class="separator:ac5112abf9f5e1face13ed965a8755b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bae962cc603d1cab8d80ec78f8d505d"><td class="memItemLeft" align="right" valign="top">OutputDataType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html#a8bae962cc603d1cab8d80ec78f8d505d">OutputParameter</a> () const</td></tr>
+<tr class="memdesc:a8bae962cc603d1cab8d80ec78f8d505d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the output parameter.  <a href="#a8bae962cc603d1cab8d80ec78f8d505d">More...</a><br /></br></td></tr>
+<tr class="separator:a8bae962cc603d1cab8d80ec78f8d505d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d5f745f02c709625a4ee0907f004a5"><td class="memItemLeft" align="right" valign="top">OutputDataType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html#a21d5f745f02c709625a4ee0907f004a5">OutputParameter</a> ()</td></tr>
+<tr class="memdesc:a21d5f745f02c709625a4ee0907f004a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the output parameter.  <a href="#a21d5f745f02c709625a4ee0907f004a5">More...</a><br /></br></td></tr>
+<tr class="separator:a21d5f745f02c709625a4ee0907f004a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b3e3fe787456847fc3b2c39586ecb1"><td class="memItemLeft" align="right" valign="top">size_t const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html#a32b3e3fe787456847fc3b2c39586ecb1">OutputWidth</a> () const</td></tr>
+<tr class="memdesc:a32b3e3fe787456847fc3b2c39586ecb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the output width.  <a href="#a32b3e3fe787456847fc3b2c39586ecb1">More...</a><br /></br></td></tr>
+<tr class="separator:a32b3e3fe787456847fc3b2c39586ecb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54579ec9924e2a4a5bc0a4fb822ce80c"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html#a54579ec9924e2a4a5bc0a4fb822ce80c">OutputWidth</a> ()</td></tr>
+<tr class="memdesc:a54579ec9924e2a4a5bc0a4fb822ce80c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the output width.  <a href="#a54579ec9924e2a4a5bc0a4fb822ce80c">More...</a><br /></br></td></tr>
+<tr class="separator:a54579ec9924e2a4a5bc0a4fb822ce80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0dd9205158ccf7bcfcd8ff81f79c927"><td class="memTemplParams" colspan="2"><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">Archive</div><div class="close_bracket">&gt;</div></div></div></div></td></tr>
+<tr class="memitem:af0dd9205158ccf7bcfcd8ff81f79c927"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html#af0dd9205158ccf7bcfcd8ff81f79c927">serialize</a> (Archive &amp;ar, const unsigned int)</td></tr>
+<tr class="memdesc:af0dd9205158ccf7bcfcd8ff81f79c927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the layer.  <a href="#af0dd9205158ccf7bcfcd8ff81f79c927">More...</a><br /></br></td></tr>
+<tr class="separator:af0dd9205158ccf7bcfcd8ff81f79c927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3 ><br /><div class="template_expr"><div class="template_decl">template</div><div class="open_bracket">&lt;</div><div class="template_param_list"><div class="template_param"><div class="type_decl">typename</div><div class="identifier">InputDataType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">arma::mat</div></div><div class="comma">,</div></div><div class="template_param"><div class="type_decl">typename</div><div class="identifier">OutputDataType</div><div class="default_argument"><div class="equals">=</div><div class="identifier">arma::mat</div></div><div class="close_bracket">&gt;</div></div></div></div></br>
+class mlpack::ann::Glimpse&lt; InputDataType, OutputDataType &gt;</h3>
+
+<p >The glimpse layer returns a retina-like representation (down-scaled cropped images) of increasing scale around a given location in a given image. </p>
+<dl class="tparams"><dt >Template Parameters</dt><dd >
+  <table class="tparams">
+    <tr ><td class="paramname">InputDataType</td><td >Type of the input data (arma::colvec, arma::mat, arma::sp_mat or arma::cube). </td></tr>
+    <tr ><td class="paramname">OutputDataType</td><td >Type of the output data (arma::colvec, arma::mat, arma::sp_mat or arma::cube). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="glimpse_8hpp_source.html#l00087">87</a> of file <a class="el" href="glimpse_8hpp_source.html">glimpse.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a19c2ef07809ce53bd8eef72ed2c6e1eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19c2ef07809ce53bd8eef72ed2c6e1eb">&#9670;&nbsp;</a></span>Glimpse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname"><a class="el" href="classmlpack_1_1ann_1_1Glimpse.html">Glimpse</a> </td>
+          <td >(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >inSize</em> = <code >0</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >size</em> = <code >0</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >depth</em> = <code >3</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >scale</em> = <code >2</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >inputWidth</em> = <code >0</code>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em >inputHeight</em> = <code >0</code>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Create the GlimpseLayer object using the specified ratio and rescale parameter. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">inSize</td><td >The size of the input units. </td></tr>
+    <tr ><td class="paramname">size</td><td >The used glimpse size (height = width). </td></tr>
+    <tr ><td class="paramname">depth</td><td >The number of patches to crop per glimpse. </td></tr>
+    <tr ><td class="paramname">scale</td><td >The scaling factor used to create the increasing retina-like representation. </td></tr>
+    <tr ><td class="paramname">inputWidth</td><td >The input width of the given input data. </td></tr>
+    <tr ><td class="paramname">inputHeight</td><td >The input height of the given input data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa067106dfb419f136eaa033a22fca39c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa067106dfb419f136eaa033a22fca39c">&#9670;&nbsp;</a></span>Backward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Backward </td>
+          <td >(</td>
+          <td class="paramtype">const arma::Mat&lt; eT &gt; &amp;&amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::Mat&lt; eT &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em >gy</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::Mat&lt; eT &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em >g</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Ordinary feed backward pass of the glimpse layer. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">input</td><td >The propagated input activation. </td></tr>
+    <tr ><td class="paramname">gy</td><td >The backpropagated error. </td></tr>
+    <tr ><td class="paramname">g</td><td >The calculated gradient. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae7c8eba5764f021cd93e30efe638e63c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7c8eba5764f021cd93e30efe638e63c">&#9670;&nbsp;</a></span>Delta() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">OutputDataType&amp; Delta </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the detla. </p>
+
+<p class="definition">Definition at line <a class="el" href="glimpse_8hpp_source.html#l00141">141</a> of file <a class="el" href="glimpse_8hpp_source.html">glimpse.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad6601342d560219ce951d554e69e5e87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6601342d560219ce951d554e69e5e87">&#9670;&nbsp;</a></span>Delta() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">OutputDataType&amp; Delta </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the delta. </p>
+
+<p class="definition">Definition at line <a class="el" href="glimpse_8hpp_source.html#l00143">143</a> of file <a class="el" href="glimpse_8hpp_source.html">glimpse.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a9f4103707f4d199ce5594d239b60443e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f4103707f4d199ce5594d239b60443e">&#9670;&nbsp;</a></span>Deterministic() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">bool Deterministic </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the value of the deterministic parameter. </p>
+
+<p class="definition">Definition at line <a class="el" href="glimpse_8hpp_source.html#l00173">173</a> of file <a class="el" href="glimpse_8hpp_source.html">glimpse.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a42d4ee3da432cff20d3a41b8b1ec801c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42d4ee3da432cff20d3a41b8b1ec801c">&#9670;&nbsp;</a></span>Deterministic() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">bool&amp; Deterministic </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the value of the deterministic parameter. </p>
+
+<p class="definition">Definition at line <a class="el" href="glimpse_8hpp_source.html#l00175">175</a> of file <a class="el" href="glimpse_8hpp_source.html">glimpse.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="glimpse_8hpp_source.html#l00051">MeanPoolingRule::Pooling()</a>, and <a class="el" href="glimpse_8hpp_source.html#l00064">MeanPoolingRule::Unpooling()</a>.</p>
+
+</div>
+</div>
+<a id="a2e39bfb65b49cc9615ca90adc75b2d4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e39bfb65b49cc9615ca90adc75b2d4b">&#9670;&nbsp;</a></span>Forward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Forward </td>
+          <td >(</td>
+          <td class="paramtype">const arma::Mat&lt; eT &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em >input</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">arma::Mat&lt; eT &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em >output</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Ordinary feed forward pass of the glimpse layer. </p>
+<dl class="params"><dt >Parameters</dt><dd >
+  <table class="params">
+    <tr ><td class="paramname">input</td><td >Input data used for evaluating the specified function. </td></tr>
+    <tr ><td class="paramname">output</td><td >Resulting output activation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afb3fd4ed60dd057e7852221b89206f15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb3fd4ed60dd057e7852221b89206f15">&#9670;&nbsp;</a></span>InputHeight() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t const&amp; InputHeight </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the input height. </p>
+
+<p class="definition">Definition at line <a class="el" href="glimpse_8hpp_source.html#l00158">158</a> of file <a class="el" href="glimpse_8hpp_source.html">glimpse.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aefbba724eec397a928d5460bb209a360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefbba724eec397a928d5460bb209a360">&#9670;&nbsp;</a></span>InputHeight() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; InputHeight </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the input height. </p>
+
+<p class="definition">Definition at line <a class="el" href="glimpse_8hpp_source.html#l00160">160</a> of file <a class="el" href="glimpse_8hpp_source.html">glimpse.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a1506936601ddae886088d2804623ca4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1506936601ddae886088d2804623ca4b">&#9670;&nbsp;</a></span>InputParameter() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">InputDataType&amp; InputParameter </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the input parameter. </p>
+
+<p class="definition">Definition at line <a class="el" href="glimpse_8hpp_source.html#l00131">131</a> of file <a class="el" href="glimpse_8hpp_source.html">glimpse.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a063c3b1053c7979a7dd2e7bbd2bf1f8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a063c3b1053c7979a7dd2e7bbd2bf1f8a">&#9670;&nbsp;</a></span>InputParameter() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">InputDataType&amp; InputParameter </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the input parameter. </p>
+
+<p class="definition">Definition at line <a class="el" href="glimpse_8hpp_source.html#l00133">133</a> of file <a class="el" href="glimpse_8hpp_source.html">glimpse.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a29346e3064da8f9e5f10596bedae0ba8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29346e3064da8f9e5f10596bedae0ba8">&#9670;&nbsp;</a></span>InputWidth() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t const&amp; InputWidth </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the input width. </p>
+
+<p class="definition">Definition at line <a class="el" href="glimpse_8hpp_source.html#l00153">153</a> of file <a class="el" href="glimpse_8hpp_source.html">glimpse.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a238e9d308df611a9300a4ca6756fef4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a238e9d308df611a9300a4ca6756fef4d">&#9670;&nbsp;</a></span>InputWidth() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; InputWidth </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify input the width. </p>
+
+<p class="definition">Definition at line <a class="el" href="glimpse_8hpp_source.html#l00155">155</a> of file <a class="el" href="glimpse_8hpp_source.html">glimpse.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a8f32d484de0d3abca25a1aa77a7ab855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f32d484de0d3abca25a1aa77a7ab855">&#9670;&nbsp;</a></span>Location()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">void Location </td>
+          <td >(</td>
+          <td class="paramtype">const arma::mat &amp;&#160;</td>
+          <td class="paramname"><em >location</em></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Set the locationthe x and y coordinate of the center of the output glimpse. </p>
+
+<p class="definition">Definition at line <a class="el" href="glimpse_8hpp_source.html#l00147">147</a> of file <a class="el" href="glimpse_8hpp_source.html">glimpse.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a5ad7dbcaf1a622dafd897f79ab77890c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ad7dbcaf1a622dafd897f79ab77890c">&#9670;&nbsp;</a></span>OutputHeight() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t const&amp; OutputHeight </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the output height. </p>
+
+<p class="definition">Definition at line <a class="el" href="glimpse_8hpp_source.html#l00168">168</a> of file <a class="el" href="glimpse_8hpp_source.html">glimpse.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ac5112abf9f5e1face13ed965a8755b1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5112abf9f5e1face13ed965a8755b1d">&#9670;&nbsp;</a></span>OutputHeight() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; OutputHeight </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the output height. </p>
+
+<p class="definition">Definition at line <a class="el" href="glimpse_8hpp_source.html#l00170">170</a> of file <a class="el" href="glimpse_8hpp_source.html">glimpse.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a8bae962cc603d1cab8d80ec78f8d505d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bae962cc603d1cab8d80ec78f8d505d">&#9670;&nbsp;</a></span>OutputParameter() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">OutputDataType&amp; OutputParameter </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the output parameter. </p>
+
+<p class="definition">Definition at line <a class="el" href="glimpse_8hpp_source.html#l00136">136</a> of file <a class="el" href="glimpse_8hpp_source.html">glimpse.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a21d5f745f02c709625a4ee0907f004a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21d5f745f02c709625a4ee0907f004a5">&#9670;&nbsp;</a></span>OutputParameter() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">OutputDataType&amp; OutputParameter </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the output parameter. </p>
+
+<p class="definition">Definition at line <a class="el" href="glimpse_8hpp_source.html#l00138">138</a> of file <a class="el" href="glimpse_8hpp_source.html">glimpse.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a32b3e3fe787456847fc3b2c39586ecb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32b3e3fe787456847fc3b2c39586ecb1">&#9670;&nbsp;</a></span>OutputWidth() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t const&amp; OutputWidth </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td > const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Get the output width. </p>
+
+<p class="definition">Definition at line <a class="el" href="glimpse_8hpp_source.html#l00163">163</a> of file <a class="el" href="glimpse_8hpp_source.html">glimpse.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a54579ec9924e2a4a5bc0a4fb822ce80c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54579ec9924e2a4a5bc0a4fb822ce80c">&#9670;&nbsp;</a></span>OutputWidth() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr >
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr >
+          <td class="memname">size_t&amp; OutputWidth </td>
+          <td >(</td>
+          <td class="paramname"></td><td >)</td>
+          <td ></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p >Modify the output width. </p>
+
+<p class="definition">Definition at line <a class="el" href="glimpse_8hpp_source.html#l00165">165</a> of file <a class="el" href="glimpse_8hpp_source.html">glimpse.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af0dd9205158ccf7bcfcd8ff81f79c927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0dd9205158ccf7bcfcd8ff81f79c927">&#9670;&nbsp;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr >
+          <td class="memname">void serialize </td>
+          <td >(</td>
+          <td class="paramtype">Archive &amp;&#160;</td>
+          <td class="paramname"><em >ar</em>, </td>
+        </tr>
+        <tr >
+          <td class="paramkey"></td>
+          <td ></td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em >int</em>&#160;</td>
+        </tr>
+        <tr >
+          <td ></td>
+          <td >)</td>
+          <td ></td><td ></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p >Serialize the layer. </p>
+
+</div>
+</div>
+<hr ></hr>The documentation for this class was generated from the following file:<ul >
+<li >src/mlpack/methods/ann/layer/<a class="el" href="glimpse_8hpp_source.html">glimpse.hpp</a></li>
+</ul>
+</div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

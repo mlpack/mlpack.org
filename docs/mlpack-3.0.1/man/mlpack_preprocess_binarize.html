@@ -1,0 +1,173 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine learning, data mining, classification, regression, tree-based methods, dual-tree algorithm">
+<meta name="description" content="mlpack: a fast, flexible c++ machine learning library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a fast, flexible c++ machine learning library</title>
+</head><link rel="stylesheet" href="../../../style.css" /></link><link rel="stylesheet" href="../../style-man.css" /></link><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" /></link>
+
+
+
+<body ><br /></br>
+
+
+<div class="titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext manpage">
+
+
+<h1 align="center">mlpack_preprocess_binarize</h1>
+
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_preprocess_binarize</font>
+- binarize data</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">mlpack_preprocess_binarize
+-i</font> <font class="code2">string</font> [<font class="code">-d</font> <font class="code2">int</font>] [<font class="code">-t</font>
+<font class="code2">double</font>] [<font class="code">-V</font> <font class="code2">bool</font>] [<font class="code">-o</font>
+<font class="code2">string</font>] [<font class="code">-h -v</font>]</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p class="closemargin first">This utility
+takes a dataset and binarizes the variables into either 0 or
+1 given threshold. User can apply binarization on a
+dimension or the whole dataset. The dimension to apply
+binarization to can be specified using the
+&rsquo;<font class="code">--dimension</font> (<font class="code">-d</font>)&rsquo; parameter; if
+left unspecified, every dimension will be binarized. The
+threshold for binarization can also be specified with the
+&rsquo;<font class="code">--threshold</font> (<font class="code">-t</font>)&rsquo; parameter; the
+default threshold is 0.0.</p>
+
+<p class="closemargin first">The binarized
+matrix may be saved with the &rsquo;<font class="code">--output_file</font>
+(<font class="code">-o</font>)&rsquo; output parameter.</p>
+
+<p class="closemargin first">For example, if
+we want to set all variables greater than 5 in the dataset
+&rsquo;X.csv&rsquo; to 1 and variables less than or equal to
+5.0 to 0, and save the result to &rsquo;Y.csv&rsquo;, we
+could run</p>
+
+<p class="closemargin first">$
+preprocess_binarize <font class="code">--input_file</font> X.csv
+<font class="code">--threshold</font> 5 <font class="code">--output_file</font> Y.csv</p>
+
+<p class="closemargin first">But if we want
+to apply this to only the first (0th) dimension of
+&rsquo;X.csv&rsquo;, we could instead run</p>
+
+<p class="closemargin first">$
+preprocess_binarize <font class="code">--input_file</font> X.csv
+<font class="code">--threshold</font> 5 <font class="code">--dimension</font> 0
+<font class="code">--output_file</font> Y.csv</p>
+
+<h2>REQUIRED INPUT OPTIONS
+<a name="REQUIRED INPUT OPTIONS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">--input_file
+(-i) [</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Input data matrix.</p>
+
+<h2>OPTIONAL INPUT OPTIONS
+<a name="OPTIONAL INPUT OPTIONS"></a>
+</h2>
+
+
+<p class="closemargin first"><font class="code">--dimension
+(-d) [</font><font class="code2">int</font><font class="code">]</font></p>
+
+<p class="farmargin">Dimension to apply the
+binarization. If not set, the program will binarize every
+dimension by default. Default value 0.</p>
+
+<p class="closemargin"><font class="code">--help (-h)
+[</font><font class="code2">bool</font><font class="code">]</font></p>
+
+<p class="farmargin">Default help info.</p>
+
+<p class="closemargin"><font class="code">--info
+[</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Get help on a specific module
+or option. Default value &rsquo;&rsquo;.</p>
+
+<p class="closemargin"><font class="code">--threshold (-t)
+[</font><font class="code2">double</font><font class="code">]</font></p>
+
+<p class="farmargin">Threshold to be applied for
+binarization. If not set, the threshold defaults to 0.0.
+Default value 0.</p>
+
+<p class="closemargin"><font class="code">--verbose (-v)
+[</font><font class="code2">bool</font><font class="code">]</font></p>
+
+<p class="farmargin">Display informational messages
+and the full list of parameters and timers at the end of
+execution.</p>
+
+<p class="closemargin"><font class="code">--version (-V)
+[</font><font class="code2">bool</font><font class="code">]</font></p>
+
+<p class="farmargin">Display the version of
+mlpack.</p>
+
+<h2>OPTIONAL OUTPUT OPTIONS
+<a name="OPTIONAL OUTPUT OPTIONS"></a>
+</h2>
+
+
+
+<p class="closemargin first"><font class="code">--output_file
+(-o) [</font><font class="code2">string</font><font class="code">]</font></p>
+
+<p class="farmargin">Matrix in which to save the
+output. Default value &rsquo;&rsquo;.</p>
+
+<h2>ADDITIONAL INFORMATION
+<a name="ADDITIONAL INFORMATION"></a>
+</h2>
+
+
+<p class="closemargin first">For further
+information, including relevant papers, citations, and
+theory, consult the documentation found at
+http://www.mlpack.org or included with your distribution of
+mlpack.</p>
+</div></body></html>

@@ -1,0 +1,9 @@
+<map id="SGD&lt; UpdatePolicyType, DecayPolicyType &gt;" name="SGD&lt; UpdatePolicyType, DecayPolicyType &gt;">
+<area shape="rect" id="node2" href="$classmlpack_1_1optimization_1_1SGD.html" title="SGD\&lt; mlpack::optimization\l::SMORMS3Update \&gt;" alt="" coords="365,13,548,54"/>
+<area shape="rect" id="node3" href="$classmlpack_1_1optimization_1_1SGD.html" title="SGD\&lt; UpdateRule \&gt;" alt="" coords="385,79,529,105"/>
+<area shape="rect" id="node4" href="$classmlpack_1_1optimization_1_1SGD.html" title="SGD\&lt; mlpack::optimization\l::RMSPropUpdate \&gt;" alt="" coords="365,130,548,171"/>
+<area shape="rect" id="node5" href="$classmlpack_1_1optimization_1_1SGD.html" title="SGD\&lt; mlpack::optimization\l::AdaGradUpdate \&gt;" alt="" coords="365,195,548,237"/>
+<area shape="rect" id="node6" href="$classmlpack_1_1optimization_1_1SGD.html" title="SGD\&lt; UpdatePolicyType,\l CyclicalDecay \&gt;" alt="" coords="369,261,544,302"/>
+<area shape="rect" id="node7" href="$classmlpack_1_1optimization_1_1SGD.html" title="SGD\&lt; UpdatePolicyType,\l SnapshotEnsembles \&gt;" alt="" coords="369,326,544,367"/>
+<area shape="rect" id="node8" href="$classmlpack_1_1optimization_1_1SGD.html" title="SGD\&lt; mlpack::optimization\l::AdaDeltaUpdate \&gt;" alt="" coords="365,391,548,433"/>
+</map>

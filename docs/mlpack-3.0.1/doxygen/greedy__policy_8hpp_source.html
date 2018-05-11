@@ -1,0 +1,116 @@
+<html >
+<head >
+
+<meta name="keywords" content="mlpack, libmlpack, c++, armadillo, machine
+learning, data mining, classification, regression, tree-based methods, dual-tree
+algorithm">
+<meta name="description" content="mlpack: a scalable c++ machine learning
+library">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title >mlpack: a scalable c++ machine learning library</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="dynamic_tables.js"></script>
+</head><link rel="stylesheet" href="style-doxygen.css" /><link rel="stylesheet" href="doxygen.css" /><link rel="stylesheet" href="tabs.css" /><link rel="stylesheet" href="search/search.css" /><link href="http://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<body ><br />
+
+
+<div class="mlpack_titlebar">
+   <a href="http://www.mlpack.org"><img src="../../../mlpack.png"></a>
+</div>
+<center >
+<div class="mlnavbar">
+  <div class="navcontainer">
+   <div class="mlnavitem" name="mlnavmain"><a href="../../../index.html">main</a></div>
+   <div class="mlnavitem" name="mlnavabout"><a href="../../../about.html">about</a></div>
+   <div class="mlnavitem" name="mlnavdoc"><a href="../../../docs.html">docs</a></div>
+   <div class="mlnavitem" name="mlnavhelp"><a href="../../../help.html">get help</a></div>
+   <div class="mlnavitem" name="mlnavbugs"><a href="https://github.com/mlpack/mlpack">github</a></div>
+  </div>
+</div>
+</center>
+<div class="separator"></div>
+<center >
+<div class="mainsection smallertext">
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody >
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mlpack
+   &#160;<span id="projectnumber">3.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul >
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_44a936ef30fc126706c6284a2fc0c990.html">mlpack</a></li><li class="navelem"><a class="el" href="dir_3cfbf900288ec2fe8dd2c2c8482f216e.html">methods</a></li><li class="navelem"><a class="el" href="dir_254f9df45df455918509dd3e8386cc26.html">reinforcement_learning</a></li><li class="navelem"><a class="el" href="dir_b1f2ea9042ebeee045a540d12f8d2768.html">policy</a></li>  </ul>
+</div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">greedy_policy.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="greedy__policy_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef MLPACK_METHODS_RL_POLICY_GREEDY_POLICY_HPP</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define MLPACK_METHODS_RL_POLICY_GREEDY_POLICY_HPP</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="prereqs_8hpp.html">mlpack/prereqs.hpp</a>&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemlpack.html">mlpack</a> {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>rl {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> EnvironmentType&gt;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classmlpack_1_1rl_1_1GreedyPolicy.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmlpack_1_1rl_1_1GreedyPolicy.html">GreedyPolicy</a></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; <span class="keyword">public</span>:</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classmlpack_1_1rl_1_1GreedyPolicy.html#aaf7b2dc5d49d01961601c7c16be76777">   34</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classmlpack_1_1rl_1_1GreedyPolicy.html#aaf7b2dc5d49d01961601c7c16be76777">ActionType</a> = <span class="keyword">typename</span> EnvironmentType::Action;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classmlpack_1_1rl_1_1GreedyPolicy.html#aa40c83fb6e1ea7ec6bd71fd14fe2d78a">   45</a></span>&#160;  <a class="code" href="classmlpack_1_1rl_1_1GreedyPolicy.html#aa40c83fb6e1ea7ec6bd71fd14fe2d78a">GreedyPolicy</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> initialEpsilon,</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;               <span class="keyword">const</span> <span class="keywordtype">size_t</span> annealInterval,</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;               <span class="keyword">const</span> <span class="keywordtype">double</span> minEpsilon) :</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      epsilon(initialEpsilon),</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      minEpsilon(minEpsilon),</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      delta((initialEpsilon - minEpsilon) / annealInterval)</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  { <span class="comment">/* Nothing to do here. */</span> }</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classmlpack_1_1rl_1_1GreedyPolicy.html#a631fe506e7d81fba96697ba11c6ace84">   60</a></span>&#160;  <a class="code" href="classmlpack_1_1rl_1_1GreedyPolicy.html#aaf7b2dc5d49d01961601c7c16be76777">ActionType</a> <a class="code" href="classmlpack_1_1rl_1_1GreedyPolicy.html#a631fe506e7d81fba96697ba11c6ace84">Sample</a>(<span class="keyword">const</span> arma::colvec&amp; actionValue, <span class="keywordtype">bool</span> deterministic = <span class="keyword">false</span>)</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  {</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">double</span> exploration = <a class="code" href="namespacemlpack_1_1math.html#a305db122ade561ba1fe874bd51e9797d">math::Random</a>();</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// Select the action randomly.</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (!deterministic &amp;&amp; exploration &lt; epsilon)</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code" href="classmlpack_1_1rl_1_1GreedyPolicy.html#aaf7b2dc5d49d01961601c7c16be76777">ActionType</a><span class="keyword">&gt;</span>(<a class="code" href="namespacemlpack_1_1math.html#aad090ac225728d74c1b66bcf52f3ab95">math::RandInt</a>(ActionType::size));</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// Select the action greedily.</span></div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code" href="classmlpack_1_1rl_1_1GreedyPolicy.html#aaf7b2dc5d49d01961601c7c16be76777">ActionType</a><span class="keyword">&gt;</span>(</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        arma::as_scalar(arma::find(actionValue == actionValue.max(), 1)));</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classmlpack_1_1rl_1_1GreedyPolicy.html#a280278726ff7d32f2b7eff5c92a1767a">   76</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmlpack_1_1rl_1_1GreedyPolicy.html#a280278726ff7d32f2b7eff5c92a1767a">Anneal</a>()</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  {</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    epsilon -= delta;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    epsilon = std::max(minEpsilon, epsilon);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classmlpack_1_1rl_1_1GreedyPolicy.html#a3ababd597760bb1f9782ad2c17aadb41">   85</a></span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; <a class="code" href="classmlpack_1_1rl_1_1GreedyPolicy.html#a3ababd597760bb1f9782ad2c17aadb41">Epsilon</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> epsilon; }</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; <span class="keyword">private</span>:</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">double</span> epsilon;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">double</span> minEpsilon;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">double</span> delta;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;} <span class="comment">// namespace rl</span></div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;} <span class="comment">// namespace mlpack</span></div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classmlpack_1_1rl_1_1GreedyPolicy_html_aaf7b2dc5d49d01961601c7c16be76777"><div class="ttname"><a href="classmlpack_1_1rl_1_1GreedyPolicy.html#aaf7b2dc5d49d01961601c7c16be76777">mlpack::rl::GreedyPolicy::ActionType</a></div><div class="ttdeci">typename EnvironmentType::Action ActionType</div><div class="ttdoc">Convenient typedef for action. </div><div class="ttdef"><b >Definition:</b> <a href="greedy__policy_8hpp_source.html#l00034">greedy_policy.hpp:34</a></div></div>
+<div class="ttc" id="namespacemlpack_html"><div class="ttname"><a href="namespacemlpack.html">mlpack</a></div><div class="ttdoc">.hpp </div><div class="ttdef"><b >Definition:</b> <a href="add__to__po_8hpp_source.html#l00021">add_to_po.hpp:21</a></div></div>
+<div class="ttc" id="classmlpack_1_1rl_1_1GreedyPolicy_html"><div class="ttname"><a href="classmlpack_1_1rl_1_1GreedyPolicy.html">mlpack::rl::GreedyPolicy</a></div><div class="ttdoc">Implementation for epsilon greedy policy. </div><div class="ttdef"><b >Definition:</b> <a href="greedy__policy_8hpp_source.html#l00030">greedy_policy.hpp:30</a></div></div>
+<div class="ttc" id="prereqs_8hpp_html"><div class="ttname"><a href="prereqs_8hpp.html">prereqs.hpp</a></div><div class="ttdoc">The core includes that mlpack expects; standard C++ includes and Armadillo. </div></div>
+<div class="ttc" id="classmlpack_1_1rl_1_1GreedyPolicy_html_a280278726ff7d32f2b7eff5c92a1767a"><div class="ttname"><a href="classmlpack_1_1rl_1_1GreedyPolicy.html#a280278726ff7d32f2b7eff5c92a1767a">mlpack::rl::GreedyPolicy::Anneal</a></div><div class="ttdeci">void Anneal()</div><div class="ttdoc">Exploration probability will anneal at each step. </div><div class="ttdef"><b >Definition:</b> <a href="greedy__policy_8hpp_source.html#l00076">greedy_policy.hpp:76</a></div></div>
+<div class="ttc" id="classmlpack_1_1rl_1_1GreedyPolicy_html_a3ababd597760bb1f9782ad2c17aadb41"><div class="ttname"><a href="classmlpack_1_1rl_1_1GreedyPolicy.html#a3ababd597760bb1f9782ad2c17aadb41">mlpack::rl::GreedyPolicy::Epsilon</a></div><div class="ttdeci">const double &amp; Epsilon() const</div><div class="ttdef"><b >Definition:</b> <a href="greedy__policy_8hpp_source.html#l00085">greedy_policy.hpp:85</a></div></div>
+<div class="ttc" id="namespacemlpack_1_1math_html_a305db122ade561ba1fe874bd51e9797d"><div class="ttname"><a href="namespacemlpack_1_1math.html#a305db122ade561ba1fe874bd51e9797d">mlpack::math::Random</a></div><div class="ttdeci">double Random()</div><div class="ttdoc">Generates a uniform random number between 0 and 1. </div><div class="ttdef"><b >Definition:</b> <a href="random_8hpp_source.html#l00071">random.hpp:71</a></div></div>
+<div class="ttc" id="classmlpack_1_1rl_1_1GreedyPolicy_html_aa40c83fb6e1ea7ec6bd71fd14fe2d78a"><div class="ttname"><a href="classmlpack_1_1rl_1_1GreedyPolicy.html#aa40c83fb6e1ea7ec6bd71fd14fe2d78a">mlpack::rl::GreedyPolicy::GreedyPolicy</a></div><div class="ttdeci">GreedyPolicy(const double initialEpsilon, const size_t annealInterval, const double minEpsilon)</div><div class="ttdoc">Constructor for epsilon greedy policy class. </div><div class="ttdef"><b >Definition:</b> <a href="greedy__policy_8hpp_source.html#l00045">greedy_policy.hpp:45</a></div></div>
+<div class="ttc" id="namespacemlpack_1_1math_html_aad090ac225728d74c1b66bcf52f3ab95"><div class="ttname"><a href="namespacemlpack_1_1math.html#aad090ac225728d74c1b66bcf52f3ab95">mlpack::math::RandInt</a></div><div class="ttdeci">int RandInt(const int hiExclusive)</div><div class="ttdoc">Generates a uniform random integer. </div><div class="ttdef"><b >Definition:</b> <a href="random_8hpp_source.html#l00087">random.hpp:87</a></div></div>
+<div class="ttc" id="classmlpack_1_1rl_1_1GreedyPolicy_html_a631fe506e7d81fba96697ba11c6ace84"><div class="ttname"><a href="classmlpack_1_1rl_1_1GreedyPolicy.html#a631fe506e7d81fba96697ba11c6ace84">mlpack::rl::GreedyPolicy::Sample</a></div><div class="ttdeci">ActionType Sample(const arma::colvec &amp;actionValue, bool deterministic=false)</div><div class="ttdoc">Sample an action based on given action values. </div><div class="ttdef"><b >Definition:</b> <a href="greedy__policy_8hpp_source.html#l00060">greedy_policy.hpp:60</a></div></div>
+</div></div>
+
+<hr class="footer"></hr><address class="footer"><small >
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"></img>
+</a> 1.8.13
+</small></address>
+</div>
+</body>
+<script type="text/javascript">
+var x = document.querySelectorAll("img.formulaDsp");
+var i;
+for (i = 0; i < x.length; i++)
+{
+  x[i].width = x[i].offsetWidth / 4;
+}
+</script>
+</html>

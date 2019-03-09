@@ -11,7 +11,7 @@ cat _src/mlpack-$1/doc/tutorials/tutorials.txt | \
     grep -v '^@' |\
     grep -v '^\/\*!$' |\
     grep -v '\*\/$' |\
-    sed -E 's/^[ ]*- \\ref ([^ ]*)/ - [\1](doc\/mlpack-'$1'\/doxygen\/\1.html)/' |\
+    sed -E 's/^[ ]*- \\ref ([^ ]*)/ - [\1](doxygen\/\1.html)/' |\
     sed '1,/^### Introductory Tutorials/ d' |\
     awk 'BEGIN { print "### Introductory Tutorials" } // { print $0; }' \
     > $2;

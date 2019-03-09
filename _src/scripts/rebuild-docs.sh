@@ -15,22 +15,22 @@ rm -f doc/mlpack-*/tutorials.md;
 rm -f doc/mlpack-*/quickstart.md;
 
 # Get most recent version.
-active_version=`ls _src/mlpack-*.tar.gz |\
+active_version=`ls files/mlpack-*.tar.gz |\
                 grep -v 'git' |\
                 sort -r |\
                 head -1 |\
-                sed 's|_src/mlpack-||' |\
+                sed 's|files/mlpack-||' |\
                 sed 's|.tar.gz||'`;
 
 # Get list of versions.
 doxygen_versions=();
-for i in `ls _src/mlpack-*.tar.gz | sort -r`;
+for i in `ls files/mlpack-*.tar.gz | sort -r`;
 do
   doxygen_versions+=("`basename $i .tar.gz | sed 's/mlpack-//'`");
 done
 
 doc_versions=();
-for i in `ls _src/mlpack-*.tar.gz | sort -r`;
+for i in `ls files/mlpack-*.tar.gz | sort -r`;
 do
   version=`basename $i .tar.gz | sed 's/mlpack-//'`;
 
@@ -116,7 +116,7 @@ do
 done
 
 # Now go through and assemble each version's documentation page.
-for i in `ls _src/mlpack-*.tar.gz | sort -r`;
+for i in `ls files/mlpack-*.tar.gz | sort -r`;
 do
   version=`basename $i .tar.gz | sed 's/mlpack-//'`;
   echo "Generating headers for version ${version}...";

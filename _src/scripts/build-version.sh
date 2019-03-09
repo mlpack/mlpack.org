@@ -43,7 +43,7 @@ then
   echo "Patch mlpack-$version-markdown.patch found; applying...";
   cd mlpack-$version/;
   patch -p1 < ../markdown-patches/mlpack-$version-markdown.patch;
-  cp ../markdown-patches/menu_bg.png _src/mlpack/bindings/markdown/res/;
+  cp ../markdown-patches/menu_bg.png src/mlpack/bindings/markdown/res/;
   cd ../;
 fi
 cd ../;

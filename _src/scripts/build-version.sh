@@ -19,7 +19,7 @@ doxygensrcdir="$PWD/_src/doxygen"
 
 # Get list of versions.
 doxygen_versions=();
-for i in `ls _src/mlpack-*.tar.gz | sort -r`;
+for i in `ls files/mlpack-*.tar.gz | sort -r`;
 do
   doxygen_versions+=("`basename $i .tar.gz | sed 's/mlpack-//'`");
 done
@@ -35,7 +35,7 @@ if [ "a$version" == "agit" ];
 then
   git clone https://github.com/mlpack/mlpack mlpack-git/;
 else
-  tar -xvzpf mlpack-$version.tar.gz;
+  tar -xvzpf ../files/mlpack-$version.tar.gz;
 fi
 
 if [ -f markdown-patches/mlpack-$version-markdown.patch ];

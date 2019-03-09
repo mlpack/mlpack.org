@@ -4,7 +4,7 @@
 
 # Workflow:
 #
-# - make sure all .tar.gzs are dropped in _src/.
+# - make sure all .tar.gzs are dropped in files/.
 # - run this script with $PWD=root of repository
 
 # We need a working copy of the site.
@@ -13,7 +13,7 @@ jekyll b;
 rm -f doc/*
 
 # Get most recent version.
-active_version=`ls _src/mlpack-*.tar.gz |\
+active_version=`ls files/mlpack-*.tar.gz |\
                 grep -v 'git' |\
                 sort -r |\
                 head -1 |\
@@ -22,13 +22,13 @@ active_version=`ls _src/mlpack-*.tar.gz |\
 
 # Get list of versions.
 doxygen_versions=();
-for i in `ls _src/mlpack-*.tar.gz | sort -r`;
+for i in `ls files/mlpack-*.tar.gz | sort -r`;
 do
   doxygen_versions+=("`basename $i .tar.gz | sed 's/mlpack-//'`");
 done
 
 doc_versions=();
-for i in `ls _src/mlpack-*.tar.gz | sort -r`;
+for i in `ls files/mlpack-*.tar.gz | sort -r`;
 do
   version=`basename $i .tar.gz | sed 's/mlpack-//'`;
 

@@ -22,13 +22,11 @@ license.
 
 **quickstart**
 
-<!-- maybe center this? -->
- * [command-line](quickstart_cli.html)
- * [python](quickstart_python.html)
+{% include_relative quickstart.md %}
 
 **download**
 
-  [mlpack-3.0.4.tar.gz](files/mlpack-3.0.4.tar.gz)
+  [mlpack-3.0.4.tar.gz](files/mlpack-3.0.4.tar.gz
 
 **citation**
 
@@ -38,7 +36,7 @@ license.
 
 **see also**
 
- * [documentation](documentation.html)
- * [tutorials](tutorials.html)
+ * [documentation](doc/mlpack-3.0.4/cli_documentation.html)
+ * [tutorials](doc/mlpack-3.0.4/cli_documentation.html#tutorials)
  * [list of developers](community.html#developers)
  * [bug reports](questions.html)

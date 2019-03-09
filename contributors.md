@@ -95,3 +95,11 @@
  - Shashank Shekhar
  - Yasmine Dumouchel
  - German Lancioni
+ - Arash Abghari
+ - Ayush Chamoli
+ - Tommi Laivamaa
+ - Kim SangYeon
+ - Niteya Shah
+ - Toshal Agrawal
+ - Dan Timson
+ - Miguel Canteras

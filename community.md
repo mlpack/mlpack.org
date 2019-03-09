@@ -85,7 +85,7 @@ Here are a couple ideas:
    [open an issue](https://github.com/mlpack/mlpack) for it---issue templates
    are provided to make reporting easier.
 
-## contributors
+## developers
 
 Below is a list of contributors to mlpack.  Without their hard work, this
 software would not be possible.

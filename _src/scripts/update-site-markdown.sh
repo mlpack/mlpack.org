@@ -19,3 +19,11 @@ sed -i 's/^ [*] \[documentation\]([^)]*)/ * [documentation](doc\/mlpack-'$active
 sed -i 's/^ [*] \[tutorials\]([^)]*)/ * [tutorials](doc\/mlpack-'$active_version'\/cli_documentation.html#tutorials)/' index.md; 
 
 grep '^ - ' doc/mlpack-$active_version/quickstart.md > quickstart.md;
+
+sed -i 's/\[build mlpack from source\](doc\/mlpack-[^\/]*\/doxygen\/build.html)/[build mlpack from source](doc\/mlpack-'$active_version'\/doxygen\/build.html)/' community.md;
+
+sed -i 's/\[Python bindings\]([^)]*)/[Python bindings](doc\/mlpack-'$active_version'\/python_documentation.html)/' community.md;
+
+sed -i 's/\[command-line programs\]([^)]*)/[command-line programs](doc\/mlpack-'$active_version'\/cli_documentation.html)/' community.md;
+
+sed -i 's/\[here\](doc\/mlpack-[^)]*)/[here](doc\/mlpack-'$active_version'\/doxygen\/sample.html)/' community.md;

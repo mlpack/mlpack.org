@@ -1,0 +1,50 @@
+/* lists 
+ul li
+{
+  color: #aaaaaa;
+  font-weight: normal;
+  list-style: none;
+}
+
+ul li::before {
+  content: "• ";
+  color: #eab72c;
+}
+
+li a
+{
+  color: #eab72c;
+  font-weight: normal;
+}
+
+li a.el
+{
+  font-weight: normal;
+}
+
+li a:hover
+{
+  color: #ffffff !important;
+  font-weight: normal;
+}*/
+
+p.footnote
+{
+  border-top: 15px solid #101010;
+  padding-top: 1em;
+}
+
+.code
+{
+  font-family: monospace, fixed;
+}
+
+li code a
+{
+  font-size: 85%;
+}
+
+div.title
+{
+  display: none;
+}

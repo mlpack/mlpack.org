@@ -1,7 +1,0 @@
-<map id="src/mlpack/core/util/log.hpp" name="src/mlpack/core/util/log.hpp">
-<area shape="rect" id="node3" href="$prefixedoutstream_8hpp.html" title="prefixedoutstream.hpp" alt="" coords="440,95,590,121"/>
-<area shape="rect" id="node24" href="$nulloutstream_8hpp.html" title="nulloutstream.hpp" alt="" coords="20,95,146,121"/>
-<area shape="rect" id="node10" href="$sfinae__utility_8hpp.html" title="mlpack/core/util/sfinae\l_utility.hpp" alt="" coords="1026,169,1180,211"/>
-<area shape="rect" id="node22" href="$string__util_8hpp.html" title="mlpack/core/util/string\l_util.hpp" alt="" coords="225,169,376,211"/>
-<area shape="rect" id="node11" href="$prereqs_8hpp.html" title="The core includes that mlpack expects; standard C++ includes and Armadillo. " alt="" coords="904,266,1040,293"/>
-</map>

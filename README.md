@@ -1,4 +1,5 @@
-mlpack
-==========
+## About
+Jekyll generated static website for mlpack.
 
-Sources to www.mlpack.org.
+## License
+Released under [MIT License](license.md).

@@ -1,8 +1,0 @@
-<map id="src/mlpack/methods/kmeans/sample_initialization.hpp" name="src/mlpack/methods/kmeans/sample_initialization.hpp">
-<area shape="rect" id="node2" href="$kmeans_8hpp.html" title="src/mlpack/methods\l/kmeans/kmeans.hpp" alt="" coords="94,95,241,136"/>
-<area shape="rect" id="node3" href="$em__fit_8hpp.html" title="src/mlpack/methods\l/gmm/em_fit.hpp" alt="" coords="5,191,145,233"/>
-<area shape="rect" id="node5" href="$kmeans__selection_8hpp.html" title="src/mlpack/methods\l/nystroem_method/kmeans\l_selection.hpp" alt="" coords="169,184,349,240"/>
-<area shape="rect" id="node4" href="$gmm_8hpp.html" title="src/mlpack/methods\l/gmm/gmm.hpp" alt="" coords="5,295,145,337"/>
-<area shape="rect" id="node6" href="$kernel__pca_2kernel__rules_2nystroem__method_8hpp.html" title="src/mlpack/methods\l/kernel_pca/kernel_rules\l/nystroem_method.hpp" alt="" coords="205,392,367,448"/>
-<area shape="rect" id="node7" href="$nystroem__method_2nystroem__method_8hpp.html" title="src/mlpack/methods\l/nystroem_method/nystroem\l_method.hpp" alt="" coords="259,288,447,344"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="mlpack::Log" name="mlpack::Log">
-<area shape="rect" id="node2" href="$classmlpack_1_1util_1_1PrefixedOutStream.html" title="Allows us to output to an ostream with a prefix at the beginning of each line, in the same way we wou..." alt="" coords="5,5,172,47"/>
-<area shape="rect" id="node3" href="$classmlpack_1_1util_1_1NullOutStream.html" title="Used for Log::Debug when not compiled with debugging symbols. " alt="" coords="196,13,379,39"/>
-</map>

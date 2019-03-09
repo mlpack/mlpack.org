@@ -42,9 +42,9 @@ project. A student should ideally be familiar with
 
  * *using the development toolchain on your computer*: you should be able to
    download and compile mlpack, make changes to the code, and recompile with the
-   new changes. There is [a tutorial](docs/mlpack-git/doxygen/build.html) for
+   new changes. There is [a tutorial](doc/mlpack-git/doxygen/build.html) for
    how to build mlpack and would be a great place to get started. If you're on
-   Windows, then [this guide](docs/mlpack-git/doxygen/build_windows.html) could
+   Windows, then [this guide](doc/mlpack-git/doxygen/build_windows.html) could
    be very useful.  See also the [Contributors](contributors.html) page for more
    information on getting started.
 

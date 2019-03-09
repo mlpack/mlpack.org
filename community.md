@@ -33,16 +33,16 @@ In addition to that, we use:
 
 Everyone is welcome to contribute to mlpack.  But before becoming a contributor,
 it's often useful to understand mlpack as a user.  So, a good place to start is
-to [download mlpack](index.html) and use the [Python
-bindings](documentation.html#python) or the [command-line
-programs](documentation.html#cli) to perform machine learning tasks.  You can
-also write C++ programs to perform machine learning tasks with mlpack;
-[here](todo) are some basic examples.
+to [download mlpack](index.html) and use the
+[Python bindings](doc/mlpack-3.0.4/python_documentation.html) or the
+[command-line programs](doc/mlpack-3.0.4/cli_documentation.html) to perform machine learning
+tasks.  You can also write C++ programs to perform machine learning tasks with
+mlpack; [here](doc/mlpack-3.0.4/doxygen/sample.html) are some basic examples.
 
 Once you have an idea of what's included in mlpack and how a user might use it,
 then a good next step would be to set up a development environment.  Once you
 have that set up, you can [build mlpack from
-source](docs/mlpack-3.0.4/doxygen/build.html) and [explore the
+source](doc/mlpack-3.0.4/doxygen/build.html) and [explore the
 codebase](https://github.com/mlpack/mlpack/) to see how it's organized.  It may
 even be useful to try and make small changes to the code, then rebuild the
 command-line programs and see what your changes did.

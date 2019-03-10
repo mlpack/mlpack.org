@@ -165,6 +165,6 @@ then
 fi
 
 cd ../../../;
-cat src/mlpack-${version}/HISTORY.md |\
+cat _src/mlpack-${version}/HISTORY.md |\
     sed -E 's|\(#([0-9]*)\)|[#\1](https://github.com/mlpack/mlpack/issues/\1)|g' >\
     doc/mlpack-${version}/changelog.md;

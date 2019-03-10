@@ -26,7 +26,7 @@ license.
 
 **download**
 
-  [mlpack-3.0.4.tar.gz](files/mlpack-3.0.4.tar.gz
+  [mlpack-3.0.4.tar.gz](files/mlpack-3.0.4.tar.gz)
 
 **citation**
 

@@ -12,7 +12,7 @@ active_version=`ls files/mlpack-*.tar.gz |\
                 sed 's|files/mlpack-||' |\
                 sed 's|.tar.gz||'`;
 
-sed -i 's/\[mlpack-[^t]*.tar.gz\](files\/mlpack-[^t]*.tar.gz)/[mlpack-'$active_version'.tar.gz](files\/mlpack-'$active_version'.tar.gz/' index.md;
+sed -i 's/\[mlpack-[^t]*.tar.gz\](files\/mlpack-[^t]*.tar.gz)/[mlpack-'$active_version'.tar.gz](files\/mlpack-'$active_version'.tar.gz)/' index.md;
 
 sed -i 's/^ [*] \[documentation\]([^)]*)/ * [documentation](doc\/mlpack-'$active_version'\/cli_documentation.html)/' index.md;
 

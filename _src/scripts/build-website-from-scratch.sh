@@ -36,7 +36,7 @@ do
   _src/scripts/build-version.sh ${version};
 done
 
-_src/scripts/rebuild-website.sh;
+_src/scripts/rebuild-docs.sh;
 _src/scripts/extract-contributors.sh;
 
 jekyll clean && jekyll b;

@@ -21,12 +21,6 @@ active_version=`ls files/mlpack-*.tar.gz |\
                 sed 's|.tar.gz||'`;
 
 # Get list of versions.
-doxygen_versions=();
-for i in `ls files/mlpack-*.tar.gz | sort -r`;
-do
-  doxygen_versions+=("`basename $i .tar.gz | sed 's/mlpack-//'`");
-done
-
 doc_versions=();
 for i in `ls files/mlpack-*.tar.gz | sort -r`;
 do

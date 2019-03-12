@@ -21,7 +21,7 @@ doxygensrcdir="$PWD/_src/doxygen"
 doxygen_versions=();
 for i in `ls files/mlpack-*.tar.gz | sort -r`;
 do
-  doxygen_versions+=("`basename $i .tar.gz | sed 's/mlpack-//'`");
+  doxygen_versions+=(mlpack-`basename $i .tar.gz | sed 's/mlpack-//'`);
 done
 
 # Unpack and patch the code if needed.  Remove any old code.

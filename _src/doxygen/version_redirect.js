@@ -6,5 +6,5 @@ function changeVersion()
   version = document.getElementById("version-select").value;
 
   window.location.href =
-      currentLocation.replace(/\/mlpack-[^\/]*/, '/mlpack-' + version);
+      currentLocation.replace(/\/mlpack-[^\/]*/, '/' + version);
 }

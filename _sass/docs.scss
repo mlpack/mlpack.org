@@ -1,6 +1,6 @@
 body
 {
-  padding-left: 220px;
+  padding-left: 250px;
 }
 
 /* Needs to be updated as we add more languages... */
@@ -41,7 +41,7 @@ div.language-detail-link#cli, div.language-types#cli, div.language-section#cli
 div#header
 {
   padding-top: 10px;
-  width: 210px;
+  width: 240px;
   background: #000000;
   border-right: 2px solid #333333;
   height: 100%;
@@ -62,7 +62,7 @@ div#header .version-select-div select
   border: none;
   height: 29px;
   padding: 5px;
-  width: 190px;
+  width: 220px;
 }
 
 div#header select option
@@ -78,7 +78,7 @@ div#header .language-select-div
   border: 2px solid #333333;
   background: url('../res/menu_bg.png') no-repeat 96% 0;
   height: 34px;
-  width: 180px;
+  width: 210px;
   overflow: hidden;
   margin-bottom: 20px;
 
@@ -93,7 +93,7 @@ div#header .version-select-div
   border: 2px solid #333333;
   background: url('../res/menu_bg.png') no-repeat 96% 0;
   height: 34px;
-  width: 180px;
+  width: 210px;
   overflow: hidden;
   margin-bottom: 2px;
 

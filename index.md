@@ -11,9 +11,9 @@ Python bindings, and C++ classes which can then be integrated into larger-scale
 machine learning solutions.
 
 mlpack is written in C++ and built on the
-[Armadillo](https://arma.sourceforge.net) linear algebra library, the
-[ensmallen](http://www.ensmallen.org) function optimization library, and parts
-of [Boost](http://boost.org).
+[Armadillo](http://arma.sourceforge.net) linear algebra library, the
+[ensmallen](https://www.ensmallen.org) function optimization library, and parts
+of [Boost](https://boost.org).
 
 **license**
 

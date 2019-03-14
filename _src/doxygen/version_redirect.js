@@ -8,3 +8,11 @@ function changeVersion()
   window.location.href =
       currentLocation.replace(/\/mlpack-[^\/]*/, '/' + version);
 }
+
+// Set to the correct version on load.
+window.onload = function()
+{
+  // Extract the version from the URL and select it.
+  lang = window.location.href.replace(/.*\/(mlpack-[^\/]*)\/.*/, "$1");
+  document.getElementById("version-select").value = lang;
+}

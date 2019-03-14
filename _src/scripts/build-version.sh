@@ -91,7 +91,7 @@ do
   if [ "a$dv" == "a$version" ]; then
     option_string="$option_string selected=\"\"";
   fi
-  option_string="$option_string>\"$dv\"</option>";
+  option_string="$option_string>$dv</option>";
 done
 msearchbox_string="`cat _src/doxygen/msearchbox.html | tr '\n' ' '`";
 

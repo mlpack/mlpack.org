@@ -20,4 +20,5 @@ awk '
 // {
   print $0;
 }
-' | sed 's|res/change_language.js|../../js/change_language.js|' > $2;
+' | sed 's|res/change_language.js|../../js/change_language.js|' |\
+    sed 's/| `\*\*--\*\*` |$/| ***required*** |/' > $2;

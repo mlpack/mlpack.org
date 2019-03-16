@@ -45,7 +45,7 @@ project. A student should ideally be familiar with
    new changes. There is [a tutorial](doc/mlpack-git/doxygen/build.html) for
    how to build mlpack and would be a great place to get started. If you're on
    Windows, then [this guide](doc/mlpack-git/doxygen/build_windows.html) could
-   be very useful.  See also the [Contributors](contributors.html) page for more
+   be very useful.  See also the [Community](community.html) page for more
    information on getting started.
 
  * *at least intermediate C++ knowledge*: mlpack uses lots of different C++

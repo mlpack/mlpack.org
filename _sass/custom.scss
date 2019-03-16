@@ -254,3 +254,20 @@ h3
   padding-bottom: 1px;
   margin-bottom: 1em;
 }
+
+select.doxygen-version-select
+{
+  color: #ddd;
+  background: transparent;
+  border: none;
+  height: 29px;
+  padding: 5px;
+  width: 220px;
+}
+
+select.doxygen-version-select option
+{
+  color: #ddd;
+  background: #000;
+  border: 2px solid #333333;
+}

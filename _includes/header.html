@@ -16,7 +16,11 @@ flexible C++ machine learning library</big></div>
           {% if node.title == "Documentation" %}
             <a href="{% if site.baseurl == "/" %}{{ node.url }}{% else %}{{ node.url | prepend: site.baseurl }}{% endif %}" class="active" title="{{ node.title }}">{{ node.title }}</a>
           {% else %}
-            <a href="{% if site.baseurl == "/" %}{{ node.url }}{% else %}{{ node.url | prepend: site.baseurl }}{% endif %}" title="{{ node.title }}">{{ node.title }}</a>
+            {% if node.title == "Github" %}
+              <a href="https://github.com/mlpack/mlpack/" title="{{ node.title }}">{{ node.title }}</a>
+            {% else %}
+              <a href="{% if site.baseurl == "/" %}{{ node.url }}{% else %}{{ node.url | prepend: site.baseurl }}{% endif %}" title="{{ node.title }}">{{ node.title }}</a>
+            {% endif %}
           {% endif %}
         {% endif %}
       {% endfor %}
@@ -26,7 +30,11 @@ flexible C++ machine learning library</big></div>
           {% if node.url == page.url %}
             <a href="{% if site.baseurl == "/" %}{{ node.url }}{% else %}{{ node.url | prepend: site.baseurl }}{% endif %}" class="active" title="{{ node.title }}">{{ node.title }}</a>
           {% else %}
-            <a href="{% if site.baseurl == "/" %}{{ node.url }}{% else %}{{ node.url | prepend: site.baseurl }}{% endif %}" title="{{ node.title }}">{{ node.title }}</a>
+            {% if node.title == "Github" %}
+              <a href="https://github.com/mlpack/mlpack/" title="{{ node.title }}">{{ node.title }}</a>
+            {% else %}
+              <a href="{% if site.baseurl == "/" %}{{ node.url }}{% else %}{{ node.url | prepend: site.baseurl }}{% endif %}" title="{{ node.title }}">{{ node.title }}</a>
+            {% endif %}
           {% endif %}
         {% endif %}
       {% endfor %}

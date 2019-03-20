@@ -1,0 +1,209 @@
+body
+{
+  padding-left: 250px;
+}
+
+/* Needs to be updated as we add more languages... */
+h2#mlpack-overview,
+h2#mlpack-overview-1,
+h2#mlpack-overview-2,
+h2#mlpack-overview-3,
+h2#mlpack-overview-4,
+h2#mlpack-overview-5
+{
+  display: none;
+}
+
+/* Don't display other languages by default. */
+div.language-title, div.language-header, div.language-decl,
+div.language-detail-link, div.language-types, div.language-section
+{
+  display: none;
+}
+
+/* Just display cli documentation. */
+div.language-title#cli, div.language-header#cli, div.language-decl#cli,
+div.language-detail-link#cli, div.language-types#cli, div.language-section#cli
+{
+  display: none;
+}
+  
+@media (max-width: 940px) {
+  div#header {
+    display: none;
+  }
+
+  body {
+    padding-left: 10px !important;
+  }
+}
+
+div#header
+{
+  padding-top: 10px;
+  width: 240px;
+  background: #000000;
+  border-right: 2px solid #333333;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-left: 5px;
+}
+
+div#header .language-select-div select,
+div#header .version-select-div select
+{
+  color: #ddd;
+  background: transparent;
+  border: none;
+  height: 29px;
+  padding: 5px;
+  width: 220px;
+}
+
+div#header select option
+{
+  color: #ddd;
+  background: #000;
+  border: 2px solid #333333;
+}
+
+div#header .language-select-div
+{
+  color: #ddd;
+  border: 2px solid #333333;
+  background: url('../res/menu_bg.png') no-repeat 96% 0;
+  height: 34px;
+  width: 210px;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+div#header .version-select-div
+{
+  color: #ddd;
+  border: 2px solid #333333;
+  background: url('../res/menu_bg.png') no-repeat 96% 0;
+  height: 34px;
+  width: 210px;
+  overflow: hidden;
+  margin-bottom: 2px;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+div#header ul
+{
+  padding-top: 5px;
+  margin-bottom: 5px;
+  color: #bb2000;
+  display: table;
+  text-align: left;
+  padding-left: 0px;
+  margin-left: 15px;
+  font-size: 75%;
+}
+
+div#header ul li
+{
+  line-height: 1.3em;
+}
+
+div#header ul li a
+{
+  color: #eab72c;
+  font-weight: none;
+}
+
+div#header ul li a:hover
+{
+  color: #ddd;
+  font-weight: none;
+}
+
+span.special
+{
+  font-size: 85%;
+  color: #eab72c;
+}
+
+div.category
+{
+  text-align: left;
+}
+
+div.category h5
+{
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #ddd;
+  font-size: 100%;
+  font-weight: normal;
+  padding: 0;
+}
+
+div.language-types li code
+{
+  font-weight: bold;
+  color: #eab72c;
+}
+
+div.language-types li
+{
+  padding-bottom: 1em;
+}
+
+div.language-section table td a code:hover
+{
+  color: #bb2000;
+}
+
+table {
+  padding-left: 30px;
+  padding-bottom: 30px;
+  max-width: calc(100% - 30px);
+}
+
+table th {
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow-wrap: break-word;
+  background: #404040;
+}
+
+table td {
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-wrap: break-word;
+}
+
+table tr:nth-child(even), table tr:nth-child(even) td, table tr:nth-child(even) th {
+  background: #101010;
+}
+
+table tr:nth-child(odd), table tr:nth-child(odd) td, table tr:nth-child(even) th {
+  background: #202020;
+}
+
+img.link_icon
+{
+  height: 0.5em;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+table tr td strong em {
+  color: #bb0000;
+}

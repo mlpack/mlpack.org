@@ -1,0 +1,42 @@
+<div id="ens_header">
+<div id="ens_header_row">
+  <div id="ens_header_cell_logo_img"><a href="{{ site.baseurl }}"><img
+id="ens_logo_img" src="{{ site.baseurl }}/img/mlpack_logo.png" alt="ensmallen" align="top" border="0"></a></div>
+    <div id="ens_header_spacer"></div>
+    <div id="ens_header_cell_logo_txt"><big><big><b>mlpack</b></big><br>fast,
+flexible C++ machine learning library</big></div>
+  </div>
+  </div>
+  <div id="nav-links">
+      <!-- Nav pages -->
+    {% assign sorted_pages = site.pages | sort:"order" %}
+    {% if page.layout == "docs" %}
+      {% for node in sorted_pages %}
+        {% if node.layout == "default-nav" or node.layout == "docs-nav" %}
+          {% if node.title == "Documentation" %}
+            <a href="{% if site.baseurl == "/" %}{{ node.url }}{% else %}{{ node.url | prepend: site.baseurl }}{% endif %}" class="active" title="{{ node.title }}">{{ node.title }}</a>
+          {% else %}
+            {% if node.title == "Github" %}
+              <a href="https://github.com/mlpack/mlpack/" title="{{ node.title }}">{{ node.title }}</a>
+            {% else %}
+              <a href="{% if site.baseurl == "/" %}{{ node.url }}{% else %}{{ node.url | prepend: site.baseurl }}{% endif %}" title="{{ node.title }}">{{ node.title }}</a>
+            {% endif %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      {% for node in sorted_pages %}
+        {% if node.layout == "default-nav" or node.layout == "docs-nav" %}
+          {% if node.url == page.url %}
+            <a href="{% if site.baseurl == "/" %}{{ node.url }}{% else %}{{ node.url | prepend: site.baseurl }}{% endif %}" class="active" title="{{ node.title }}">{{ node.title }}</a>
+          {% else %}
+            {% if node.title == "Github" %}
+              <a href="https://github.com/mlpack/mlpack/" title="{{ node.title }}">{{ node.title }}</a>
+            {% else %}
+              <a href="{% if site.baseurl == "/" %}{{ node.url }}{% else %}{{ node.url | prepend: site.baseurl }}{% endif %}" title="{{ node.title }}">{{ node.title }}</a>
+            {% endif %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </div>

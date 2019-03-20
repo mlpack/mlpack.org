@@ -1,7 +1,0 @@
-<map id="src/mlpack/methods/neighbor_search/ns_traversal_info.hpp" name="src/mlpack/methods/neighbor_search/ns_traversal_info.hpp">
-<area shape="rect" id="node2" href="$dtb__rules_8hpp.html" title="src/mlpack/methods\l/emst/dtb_rules.hpp" alt="" coords="5,117,145,158"/>
-<area shape="rect" id="node3" href="$fastmks__rules_8hpp.html" title="src/mlpack/methods\l/fastmks/fastmks_rules.hpp" alt="" coords="170,117,354,158"/>
-<area shape="rect" id="node4" href="$neighbor__search__rules_8hpp.html" title="src/mlpack/methods\l/neighbor_search/neighbor\l_search_rules.hpp" alt="" coords="379,109,553,165"/>
-<area shape="rect" id="node5" href="$range__search__rules_8hpp.html" title="src/mlpack/methods\l/range_search/range\l_search_rules.hpp" alt="" coords="577,109,717,165"/>
-<area shape="rect" id="node6" href="$ra__search__rules_8hpp.html" title="src/mlpack/methods\l/rann/ra_search_rules.hpp" alt="" coords="741,117,913,158"/>
-</map>

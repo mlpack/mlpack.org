@@ -1,5 +1,0 @@
-<map id="mlpack::neighbor::NeighborSearch&lt; SortPolicy, MetricType, MatType, TreeType, TraversalType &gt;" name="mlpack::neighbor::NeighborSearch&lt; SortPolicy, MetricType, MatType, TreeType, TraversalType &gt;">
-<area shape="rect" id="node2" href="$classmlpack_1_1neighbor_1_1NeighborSearch.html" title="mlpack::neighbor::Neighbor\lSearch\&lt; mlpack::tree::Rectangle\lTree \&gt;" alt="" coords="474,5,689,61"/>
-<area shape="rect" id="node3" href="$classmlpack_1_1neighbor_1_1NeighborSearch.html" title="mlpack::neighbor::Neighbor\lSearch\&lt; mlpack::tree::CoverTree \&gt;" alt="" coords="467,86,695,127"/>
-<area shape="rect" id="node4" href="$classmlpack_1_1neighbor_1_1NeighborSearch.html" title="mlpack::neighbor::Neighbor\lSearch\&lt; mlpack::tree::BinarySpace\lTree \&gt;" alt="" coords="467,152,696,208"/>
-</map>

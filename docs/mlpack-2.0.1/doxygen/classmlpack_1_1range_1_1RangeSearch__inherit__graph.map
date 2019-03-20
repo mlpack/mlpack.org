@@ -1,5 +1,0 @@
-<map id="mlpack::range::RangeSearch&lt; MetricType, MatType, TreeType &gt;" name="mlpack::range::RangeSearch&lt; MetricType, MatType, TreeType &gt;">
-<area shape="rect" id="node2" href="$classmlpack_1_1range_1_1RangeSearch.html" title="mlpack::range::RangeSearch\l\&lt; mlpack::tree::RectangleTree \&gt;" alt="" coords="465,5,676,47"/>
-<area shape="rect" id="node3" href="$classmlpack_1_1range_1_1RangeSearch.html" title="mlpack::range::RangeSearch\l\&lt; mlpack::tree::CoverTree \&gt;" alt="" coords="475,71,666,112"/>
-<area shape="rect" id="node4" href="$classmlpack_1_1range_1_1RangeSearch.html" title="mlpack::range::RangeSearch\l\&lt; mlpack::tree::BinarySpaceTree \&gt;" alt="" coords="457,136,684,177"/>
-</map>

@@ -1,10 +1,4 @@
-mlpack-1.0.*/
-mlpack-2.0.*/
-mlpack-2.1.*/
-mlpack-2.2.*/
-mlpack-git/
-docs/mlpack-git/*
+_site/
 php/config.ini
 *.sw*
-irc/
 gsocblog

@@ -2,3 +2,14 @@ _site/
 php/config.ini
 *.sw*
 gsocblog
+irc/mlpack.*.html
+_src/doxygen/header.*.html
+_src/mlpack-*/
+*.pyc
+irc/logs
+irc/logs.html
+irc/logs-all.html
+irc/mlpack.html
+irc/mlpack.log
+.sass-cache/
+doc/

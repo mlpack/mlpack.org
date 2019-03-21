@@ -22,6 +22,10 @@ active_version=`ls files/mlpack-*.tar.gz |\
                 sed 's|files/mlpack-||' |\
                 sed 's|.tar.gz||'`;
 
+# Update redirect if necessary.
+sed -i "s/doc\/mlpack-[^\/]*\/cli_documentation.html/doc\/mlpack-${active_version}\/cli_documentation.html/" \
+    _includes/doc_redirect.html;
+
 # Get list of versions.
 doc_versions=();
 for i in `ls files/mlpack-*.tar.gz | sort -r`;
@@ -77,26 +81,10 @@ do
         doc/mlpack-${version}/${l}_binding_header_mod.md;
 
     # Now, make a page for every language.
-    if [ "a$version" == "a$active_version" ];
-    then
-      if [ "a$l" == "acli" ];
-      then
-        cat _src/templates/documentation-active.md |\
-            sed 's/include_relative binding_documentation_mod.md/include_relative '$l'_binding_documentation_mod.md/' |\
-            sed 's/include_relative binding_header_mod.md/include_relative '$l'_binding_header_mod.md/' >\
-            doc/mlpack-${version}/${l}_documentation.md;
-      else
-        cat _src/templates/documentation.md |\
-            sed 's/include_relative binding_documentation_mod.md/include_relative '$l'_binding_documentation_mod.md/' |\
-            sed 's/include_relative binding_header_mod.md/include_relative '$l'_binding_header_mod.md/' >\
-            doc/mlpack-${version}/${l}_documentation.md;
-      fi
-    else
-      cat _src/templates/documentation.md |\
-          sed 's/include_relative binding_documentation_mod.md/include_relative '$l'_binding_documentation_mod.md/' |\
-          sed 's/include_relative binding_header_mod.md/include_relative '$l'_binding_header_mod.md/' >\
-          doc/mlpack-${version}/${l}_documentation.md;
-    fi
+    cat _src/templates/documentation.md |\
+        sed 's/include_relative binding_documentation_mod.md/include_relative '$l'_binding_documentation_mod.md/' |\
+        sed 's/include_relative binding_header_mod.md/include_relative '$l'_binding_header_mod.md/' >\
+        doc/mlpack-${version}/${l}_documentation.md;
   done
 
   # Get list of versions.

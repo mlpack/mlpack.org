@@ -34,3 +34,6 @@ _src/scripts/rebuild-docs.sh;
 _src/scripts/extract-contributors.sh;
 
 jekyll clean && jekyll b;
+
+# Hardcoded gsocblog path.  Change if needed.
+ln -s /home/jenkins-mlpack/workspace/blog/script/blog/doxygen _site/gsocblog;

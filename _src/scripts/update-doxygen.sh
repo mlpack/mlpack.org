@@ -17,11 +17,13 @@ cd ../../;
 
 _src/scripts/update-irc.sh;
 _src/scripts/build-version.sh git;
+_src/scripts/rebuild-docs.sh;
 
 jekyll clean && \
-    jekyll b -d tmp_site/ -b . && \
-    ln -s /home/ryan/irclogs/freenode/mlpack/ "tmp_site/"irc/logs && \
-    ln -s /home/jenkins-mlpack/workspace/blog/script/blog/doxygen "tmp_site/"gsocblog;
-#    mv "$1/"* old_site/ && \
-#    mv tmp_site/* "$1/" && \
-#    rm -rf tmp_site old_site && \
+    jekyll b -d tmp_site/ -b / && \
+    ln -s /home/ryan/irclogs/freenode/mlpack/ tmp_site/irc/logs && \
+    ln -s /home/jenkins-mlpack/workspace/blog/script/blog/doxygen tmp_site/gsocblog && \
+    mkdir old_site/ && \
+    mv "$1/"* old_site/ && \
+    mv tmp_site/* "$1/" && \
+    rm -rf tmp_site old_site;

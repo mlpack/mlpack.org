@@ -123,6 +123,10 @@ sed -i "s|TREEVIEW_WIDTH[ ]*=[ ]*.*$|TREEVIEW_WIDTH = 220|" ../Doxyfile;
 sed -i "s|DISABLE_INDEX[ ]*=[ ]*.*$|DISABLE_INDEX = YES|" ../Doxyfile;
 echo "LAYOUT_FILE = DoxygenLayout.xml" >> ../Doxyfile;
 
+# Fix incorrect links to mlpack-git.
+sed -i 's/mlpack-git/mlpack-'"$version"'/g' ../doc/guide/cli_quickstart.hpp
+sed -i 's/mlpack-git/mlpack-'"$version"'/g' ../doc/guide/python_quickstart.hpp
+
 # Generate layout file.
 doxygen -l;
 sed -i 's|  <tab type="pages" visible="yes" title="" intro=""/>|  <tab type="pages" visible="no" title="" intro=""/>|' DoxygenLayout.xml;
@@ -134,6 +138,14 @@ rm -rf doc/html/
 make -j4 doc; # Hopefully you have four cores... :)
 
 cd doc/html/;
+for i in *.html; do
+  sed -i 's|<a href="https://www.mlpack.org/docs/|<a href="https://www.mlpack.org/doc/|g' "$i";
+  sed -i 's|<a href="http://www.mlpack.org/docs/|<a href="http://www.mlpack.org/doc/|g' "$i";
+  sed -i 's|/man.html|/cli_documentation.html|g' "$i";
+  sed -i 's|/python.html|/python_documentation.html|g' "$i";
+  sed -i -E 's|/man/mlpack_([^.]*)\.html|/cli_documentation.html#\1|g' "$i";
+  sed -i -E 's|/python/([^.]*)\.html|/python_documentation.html#\1|g' "$i";
+done
 mogrify -negate *.png;
 # Move the extra CSS to the right place.
 cp $doxygensrcdir/tabs.css .;

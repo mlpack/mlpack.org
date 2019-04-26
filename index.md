@@ -26,7 +26,7 @@ license.
 
 **download**
 
-  [mlpack-3.0.4.tar.gz](files/mlpack-3.0.4.tar.gz)
+  [mlpack-3.1.0.tar.gz](files/mlpack-3.1.0.tar.gz)
 
 **citation**
 
@@ -36,7 +36,7 @@ license.
 
 **see also**
 
- * [documentation](doc/mlpack-3.0.4/cli_documentation.html)
- * [tutorials](doc/mlpack-3.0.4/cli_documentation.html#tutorials)
+ * [documentation](doc/mlpack-3.1.0/cli_documentation.html)
+ * [tutorials](doc/mlpack-3.1.0/cli_documentation.html#tutorials)
  * [list of developers](community.html#developers)
  * [bug reports](questions.html)

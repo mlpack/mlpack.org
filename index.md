@@ -36,7 +36,7 @@ license.
 
 **see also**
 
- * [documentation](doc/mlpack-3.1.0/cli_documentation.html)
- * [tutorials](doc/mlpack-3.1.0/cli_documentation.html#tutorials)
+ * [documentation](doc/stable/cli_documentation.html)
+ * [tutorials](doc/stable/cli_documentation.html#tutorials)
  * [list of developers](community.html#developers)
  * [bug reports](questions.html)

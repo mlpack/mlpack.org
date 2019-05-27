@@ -27,7 +27,7 @@ license.
 **download**
 
  - [mlpack-3.1.1.tar.gz](files/mlpack-3.1.1.tar.gz)
- - [mlpack-3.1.0.msi](files/mlpack-3.1.0.msi) (Windows installer)
+ - [mlpack-3.1.1.msi](files/mlpack-3.1.1.msi) (Windows installer)
 
 **citation**
 

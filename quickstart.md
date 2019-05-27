@@ -1,2 +1,2 @@
- - [mlpack in Python quickstart guide ](doc/mlpack-3.1.0/doxygen/python_quickstart.html)
- - [mlpack command-line quickstart guide ](doc/mlpack-3.1.0/doxygen/cli_quickstart.html)
+ - [mlpack in Python quickstart guide ](doxygen/python_quickstart.html)
+ - [mlpack command-line quickstart guide ](doxygen/cli_quickstart.html)

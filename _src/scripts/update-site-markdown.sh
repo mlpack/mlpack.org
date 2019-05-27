@@ -13,4 +13,4 @@ active_version=`ls files/mlpack-*.tar.gz |\
                 sed 's|.tar.gz||'`;
 
 grep '^ - ' doc/mlpack-$active_version/quickstart.md > quickstart.md;
-sed -i 's/mlpack-'$active_version'/stable/g' quickstart.md;
+sed -i 's/](doxygen/](doc\/stable\/doxygen/g' quickstart.md;

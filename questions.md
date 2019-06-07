@@ -1,9 +1,11 @@
 ---
 layout: default-nav
-title: Questions
+title: FAQ
 description: mlpack | fast, flexible C++ machine learning library
 order: 4
 ---
+
+<div class="page-title-header">FAQ</div>
 
  * **I found a bug in the code and/or documentation.  How do I report it?**
 
@@ -20,6 +22,7 @@ to help with the bug report process.
     * R.R. Curtin, M. Edel, M. Lozhnikov, Y. Mentekidis, S. Ghaisas, S. Zhang.
       "mlpack 3: a fast, flexible C++ machine learning library." Journal of Open
       Source Software 3(26): pp. 726, 2018.
+	<p/>
 
  * **What is the distribution license for mlpack?**
 
@@ -28,8 +31,8 @@ to help with the bug report process.
 
  * **Who are the developers?**
 
-    See the [community](community.html#developers) page for more details and a
-    list.  mlpack is a community-led effort.
+    mlpack is a community-led effort. See the [community](community.html#developers) page for more details and a
+    list.
 
  * **Where is the source code?**
 

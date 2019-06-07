@@ -3,13 +3,15 @@
 // Based on the typographic scale: 12, 14, 16, 18, 21, 24, 36, 48, 60, 72.
 //
 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body
 {
-  font-family : "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family : 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size   : 16px;
-  color: #aaa;
+  color: $text-color;
 }
 
 /*- Typography for medium and small screen, based on 16px font-size -*/
@@ -23,7 +25,7 @@ p, ul, ol {
 h1 {
 	font-size: 2.0em; /* 36px/16px */
 	line-height: 1.0em;
-  color: #ddd;
+  color: $text-color;
   border-bottom: 2px solid #eab72c;
   margin-bottom: 0.5em;
   margin-top: 0.5em;

@@ -5,7 +5,7 @@ description: mlpack | fast, flexible C++ machine learning library
 order: 3
 ---
 
-## community
+<div class="page-title-header">Community</div>
 
 mlpack is a community-led effort, and so the code is not possible without the
 community.  Since mlpack is an open-source project, anyone is welcome to beome a
@@ -24,59 +24,50 @@ In addition to that, there are a few channels of communication:
 
 Two mailing lists are used for mlpack discussion and development:
 
- * the [mlpack mailing list](http://lists.mlpack.org/mailman/listinfo/mlpack)
-   for **email discussion and announcements**,
-
- * the [mlpack-git mailing list](http://lists.mlpack.org/mailman/listinfo/mlpack-git),
-   which sends email for **all mlpack-related activity**.
-
-If you are participating in the community, it would be a good idea to at least
-be on the mlpack mailing list.
-
-### real-time chat
-
-The mlpack community stays in touch in real-time via several chat services that
-are all linked together thanks to the [Matrix project](http://www.matrix.org/).
-You can choose any of the services below and will be able to communicate with
-anyone who is using any of the other services (assuming that the inter-service
-bridges are correctly operating).
-
- * IRC via freenode: [#mlpack](http://webchat.freenode.net/?channels=mlpack);
-   you can use webchat (the link), or set up an account on freenode and use a
-   client of your choice.
-
- * Gitter: [mlpack/mlpack](https://gitter.im/mlpack/mlpack); you will need a
-   Github account
-
- * Matrix: [#mlpack:matrix.org](https://matrix.org/); you will need to set up a
-   matrix.org account and use a client such as [Riot](https://riot.im) or
-   others.
-
- * Slack: [mlpack.slack.org](https://mlpack.slack.org/); in order to create an
-   account, you'll need to use the auto-inviter to send yourself an invite:
-   [slack-inviter.mlpack.org](http://slack-inviter.mlpack.org:3000/).
-
-Discussions in the chat channel are [logged](https://www.mlpack.org/irc/).
-
-### blog
-
-The [mlpack blog](http://www.mlpack.org/blog/) contains **mlpack development
-updates and blog posts**.
+<ul class="flex-container">
+  <li class="flex-item">
+      <div class="card">
+	    <i class="far fa-envelope fa-lg card-icon"></i>
+	    <p><a href="http://lists.mlpack.org/mailman/listinfo/mlpack">mlpack mailing list</a></p><p>for email discussion and announcements</p>
+	  </div>
+  </li>
+  
+  <li class="flex-item">
+      <div class="card">
+	    <i class="far fa-comments fa-lg card-icon"></i>
+	    <p><a href="http://webchat.freenode.net/?channels=mlpack">#mlpack IRC channel</a></p><p>on freenode for real-time chat and discussion <a href="http://www.mlpack.org/irc/">(logs)</a></p>
+	  </div>
+  </li>
+  
+  <li class="flex-item">
+      <div class="card">
+	    <i class="fab fa-git-square fa-lg card-icon"></i>
+	    <p><a href="http://lists.mlpack.org/mailman/listinfo/mlpack-git">mlpack-git mailing list</a></p><p>which sends email for all mlpack-related activity</p>
+	  </div>
+  </li>
+  
+  <li class="flex-item">
+      <div class="card">
+	    <i class="far fa-newspaper fa-lg card-icon"></i>
+	    <p><a href="http://www.mlpack.org/blog/">Blog</a></p><p>for mlpack development updates and blog posts</p>
+	  </div>
+  </li>
+</ul>
 
 ## getting involved
 
 Everyone is welcome to contribute to mlpack.  But before becoming a contributor,
 it's often useful to understand mlpack as a user.  So, a good place to start is
 to [download mlpack](index.html) and use the
-[Python bindings](doc/stable/python_documentation.html) or the
-[command-line programs](doc/stable/cli_documentation.html) to perform machine learning
+[Python bindings](doc/mlpack-3.1.0/python_documentation.html) or the
+[command-line programs](doc/mlpack-3.1.0/cli_documentation.html) to perform machine learning
 tasks.  You can also write C++ programs to perform machine learning tasks with
-mlpack; [here](doc/stable/doxygen/sample.html) are some basic examples.
+mlpack; [here](doc/mlpack-3.1.0/doxygen/sample.html) are some basic examples.
 
 Once you have an idea of what's included in mlpack and how a user might use it,
 then a good next step would be to set up a development environment.  Once you
 have that set up, you can [build mlpack from
-source](doc/stable/doxygen/build.html) and [explore the
+source](doc/mlpack-3.1.0/doxygen/build.html) and [explore the
 codebase](https://github.com/mlpack/mlpack/) to see how it's organized.  It may
 even be useful to try and make small changes to the code, then rebuild the
 command-line programs and see what your changes did.

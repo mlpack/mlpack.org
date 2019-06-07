@@ -1,13 +1,13 @@
-<div id="ens_header">
-<div id="ens_header_row">
-  <div id="ens_header_cell_logo_img"><a href="{{ site.baseurl }}"><img
-id="ens_logo_img" src="{{ site.baseurl | prepend: site.baseurl | replace: '//', '/' }}img/mlpack_logo.png" alt="ensmallen" align="top" border="0"></a></div>
-    <div id="ens_header_spacer"></div>
-    <div id="ens_header_cell_logo_txt"><big><big><b>mlpack</b></big><br>fast,
-flexible C++ machine learning library</big></div>
+<div class="header-logo-menu">
+  <div class="header-logo-menu-left">
+    <a href="{{ site.baseurl }}">
+	  <img id="logo-img" src="{{ site.baseurl | prepend: site.baseurl | replace: '//', '/' }}img/mlpack-black.svg" alt="mlpack" align="top" border="0">
+    </a>
   </div>
-  </div>
-  <div id="nav-links">
+  <!--<div id="ens_header_spacer"></div>-->
+  <!--<div id="ens_header_cell_logo_txt"><big><big><b>mlpack</b></big></big></div>-->
+  
+  <div id="nav-links" class="header-logo-menu-right">
       <!-- Nav pages -->
     {% assign sorted_pages = site.pages | sort:"order" %}
     {% if page.layout == "docs" %}
@@ -40,3 +40,5 @@ flexible C++ machine learning library</big></div>
       {% endfor %}
     {% endif %}
   </div>
+  <div style="clear: both;"></div>
+</div>

@@ -1,6 +1,6 @@
 ---
 layout: default-nav
-title: Github
+title: GitHub
 description: mlpack | fast, flexible C++ machine learning library
 order: 5
 ---

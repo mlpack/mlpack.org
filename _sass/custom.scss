@@ -294,7 +294,7 @@ select.doxygen-version-select option
   margin-left: -30px; margin-right: -30px; /* compensate body margin */
   margin-bottom: 30px;
   
-  background: linear-gradient(45deg, rgba(255,175,189,.3), rgba(100,216,243,.3), rgba(234,236,198,.3), rgba(245,146,176,.3), rgba(52,219,216,.3)) 0 0 / 1000% no-repeat, url({{ site.baseurl }}/img/banner2.png) 0 0 / cover no-repeat;
+  background: linear-gradient(45deg, rgba(255,175,189,.3), rgba(100,216,243,.3), rgba(234,236,198,.3), rgba(245,146,176,.3), rgba(52,219,216,.3)) 0 0 / 1000% no-repeat, url('{{ site.baseurl }}/../../img/banner2.png') 0 0 / cover no-repeat;
   -webkit-animation: gradientAnimation 40s ease infinite;
   animation: gradientAnimation 40s ease infinite;
 }

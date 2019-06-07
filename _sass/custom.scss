@@ -504,7 +504,7 @@ footer
   /*background-color: #f5f6f7;*/
   /*color: #616161;*/
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/img/banner2.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('{{ site.baseurl }}/../../img/banner2.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

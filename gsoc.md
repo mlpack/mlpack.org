@@ -4,6 +4,7 @@ title: Google Summer of Code
 description: mlpack | fast, flexible C++ machine learning library
 order: 3
 ---
+<div class="page-title-header">Google Summer of Code</div>
 
 ## mlpack and Google Summer of Code
 

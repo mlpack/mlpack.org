@@ -1,0 +1,32 @@
+{
+  "header" : ["stable (3.1.0)", "nightly"],
+  "stable" : {
+    "mac" : [
+      {
+        "package" : "homebrew",
+        "language" : "python",
+        "cmd" : ["1", "2"]
+      },
+      {
+        "package" : "conda",
+        "language" : "python",
+        "cmd" : ["3", "4"]
+      },
+      {
+        "package" : "pip",
+        "language" : "python",
+        "cmd" : ["5", "6"]
+      },
+      {
+        "package" : "source",
+        "language" : "python",
+        "cmd" : ["7", "8"]
+      },
+      {
+        "package" : "macports",
+        "language" : "R",
+        "cmd" : ["9", "10"]
+      }
+    ]
+  }
+}

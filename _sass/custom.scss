@@ -203,8 +203,7 @@ div.MathJax_Display {
 
 body
 {
-  /*background: #ffffff;*/
-  background-image: linear-gradient(to right bottom, #ffffff, #fcfcfc, #f9f9f9, #f5f6f6, #f2f3f3);
+  background-image: linear-gradient(to right bottom, #ffffff, #fcfcfc, #ffffff, #fcfcfc, #ffffff); /*#ffffff, #fcfcfc, #f9f9f9, #f5f6f6, #f2f3f3*/
 }
 
 strong
@@ -285,7 +284,7 @@ select.doxygen-version-select option
 .hero-overlay
 {
   /*background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/img/banner2.png");*/
-  height: 25em;
+  height: 20em;
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;

@@ -8,7 +8,7 @@ order: 3
 <div class="page-title-header">Community</div>
 
 mlpack is a community-led effort, and so the code is not possible without the
-community.  Since mlpack is an open-source project, anyone is welcome to beome a
+community.  Since mlpack is an open-source project, anyone is welcome to become a
 part of the community and contribute.  There is no need to be a machine learning
 expert to participate---often, there are many tasks to be done that don't
 require in-depth knowledge.

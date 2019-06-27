@@ -17,19 +17,19 @@ body
 /*- Typography for medium and small screen, based on 16px font-size -*/
 
 p, ul, ol {
-	font-size: 1em; /* 16px */
-	line-height: 1.8em;
-	margin-bottom: 1.5em; /* 24px/16px */
+  font-size: 1em; /* 16px */
+  line-height: 1.8em;
+  margin-bottom: 1.5em; /* 24px/16px */
 }
 
 h1 {
-	font-size: 2.0em; /* 36px/16px */
-	line-height: 1.0em;
-  color: $text-color;
-  border-bottom: 2px solid #eab72c;
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
-  width: 100%;
+ font-size: 1.5em; /* 36px/16px */
+ line-height: 1.0em;
+ color: $text-color;
+ border-bottom: 2px solid #bb0000;
+ margin-bottom: 1em;
+ margin-top: 2em;
+ width: 100%;
 }
 
 h2 {
@@ -65,16 +65,6 @@ p, ul, ol {
 	font-size: 1em; /* 18px */
 	line-height: 1.8em;
 	margin-bottom: 1.3334em; /* 24px/18px */
-}
-
-h1 {
-	font-size: 2.0em; /* 36px/16px */
-	line-height: 1.0em;
-  color: #ddd;
-  border-bottom: 2px solid #eab72c;
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
-  width: 100%;
 }
 
 h2 {

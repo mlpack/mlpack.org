@@ -7,6 +7,15 @@
 # - make sure all .tar.gzs are dropped in files/.
 # - run this script with $PWD=root of repository
 
+# Download datasets.
+rm -rf datasets/;
+mkdir datasets/;
+cd datasets/;
+wget https://www.ratml.org/misc/datasets.tar.gz;
+tar -xvzpf datasets.tar.gz;
+rm datasets.tar.gz;
+cd ../
+
 # We need a working copy of the site.
 jekyll b;
 

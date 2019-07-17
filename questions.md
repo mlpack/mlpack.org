@@ -2,7 +2,7 @@
 layout: default-nav
 title: FAQ
 description: mlpack | fast, flexible C++ machine learning library
-order: 4
+order: 6
 ---
 
 <div class="page-title-header">FAQ</div>

@@ -2,7 +2,7 @@
 layout: default-nav
 title: Documentation
 description: mlpack | fast, flexible C++ machine learning library
-order: 2
+order: 3
 ---
 <div class="page-title-header">Documentation</div>
 

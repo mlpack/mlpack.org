@@ -2,7 +2,7 @@
 layout: default-nav
 title: Get Started
 description: mlpack | fast, flexible machine learning library in C++
-order: 1
+order: 2
 ---
 
 <div class="page-title-header">Get Started</div>

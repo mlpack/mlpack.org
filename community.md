@@ -2,7 +2,7 @@
 layout: default-nav
 title: Community
 description: mlpack | fast, flexible C++ machine learning library
-order: 3
+order: 4
 ---
 
 <div class="page-title-header">Community</div>

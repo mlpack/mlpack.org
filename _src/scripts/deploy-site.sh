@@ -11,6 +11,15 @@ fi
 # Find the newest version.
 newest_version=`ls doc/ | grep 'mlpack-[0-9]' | sort -r | head -1`;
 
+# Download datasets.
+rm -rf datasets/;
+mkdir datasets/;
+cd datasets/;
+wget https://www.ratml.org/misc/datasets.tar.gz;
+tar -xvzpf datasets.tar.gz;
+rm datasets.tar.gz;
+cd ../
+
 jekyll clean && \
     jekyll b -d tmp_site/ -b / && \
     ln -s /home/ryan/irclogs/freenode/mlpack/ tmp_site/irc/logs && \

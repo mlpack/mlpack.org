@@ -51,7 +51,7 @@
 
 #nav-tree .label a {
   padding:2px;
-  color: #eab72c;
+  color: #bb0000;
 }
 
 #nav-tree .label a:hover {
@@ -71,13 +71,6 @@
 #nav-tree .item {
   margin:0px;
   padding:0px;
-}
-
-#nav-tree {
-  padding: 0px 0px;
-  background-color: #FAFAFF; 
-  font-size:14px;
-  overflow:auto;
 }
 
 #doc-content {
@@ -127,8 +120,11 @@
 #nav-tree {
   background-image:url('nav_h.png');
   background-repeat:repeat-x;
-  background-color: #000000;
   -webkit-overflow-scrolling : touch; /* iOS 5+ */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+  padding: 0px 0px;
+  font-size:14px;
+  overflow:auto;
 }
 
 #nav-sync {

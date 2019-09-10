@@ -391,7 +391,7 @@ img.footer {
 /* @group Code Colorization */
 
 span.keyword {
-	color: #88ff88
+	color: black;
 }
 
 span.keywordtype {
@@ -403,7 +403,7 @@ span.keywordflow {
 }
 
 span.comment {
-	color: #bb2222
+	color: #006400
 }
 
 span.preprocessor {
@@ -567,8 +567,7 @@ table.memberdecls {
 }
 
 .memTemplParams {
-	color: #ddd;
-        white-space: nowrap;
+    white-space: nowrap;
 	font-family: monospace, fixed;
 }
 

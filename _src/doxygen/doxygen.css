@@ -720,7 +720,7 @@ dl.reflist dd {
 }
 
 .paramname {
-	color: #eab72c;
+	color: #ab8620;
 	white-space: nowrap;
 }
 .paramname em {
@@ -879,7 +879,7 @@ div.directory {
         cursor: pointer;
         padding-left: 2px;
         padding-right: 2px;
-	color: #eab72c;
+	color: #bb0000;
 }
 
 .arrow {

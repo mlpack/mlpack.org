@@ -19,15 +19,15 @@ Here is a summary of the currently available distribution options you can use de
 <h2>Python</h2>
 
 <h3> Get via pip or conda </h3>
-- <a href="https://www.mlpack.org/doc/mlpack-3.1.0/doxygen/python_quickstart.html"> mlpack in Python quickstart guide </a>
+- <a href="doc/mlpack-3.1.0/doxygen/python_quickstart.html"> mlpack in Python quickstart guide </a>
 
 <h2> Ubuntu, Debian, Fedora, Red Hat </h2>
 
 <h3> Install using a package manager </h3>
-- <a href="https://www.mlpack.org/doc/mlpack-3.1.0/doxygen/cli_quickstart.html"> mlpack command-line quickstart guide </a>
+- <a href="doc/mlpack-3.1.0/doxygen/cli_quickstart.html"> mlpack command-line quickstart guide </a>
 
 <h3> Build from source </h3>
-- <a href="https://www.mlpack.org/doc/mlpack-3.1.0/doxygen/build.html"> Linux build tutorial </a>
+- <a href="doc/mlpack-3.1.0/doxygen/build.html"> Linux build tutorial </a>
 
 <h2> Windows </h2>
 
@@ -36,8 +36,8 @@ Here is a summary of the currently available distribution options you can use de
 - <a href="/files/mlpack-3.1.0.zip"> Windows 64 bit - ZIP </a>
 
 <h3> Install using a package manager </h3>
-- <a href="https://www.mlpack.org/doc/mlpack-3.1.0/doxygen/build_windows.html"> Installation through vcpkg </a>
+- <a href="doc/mlpack-3.1.0/doxygen/build_windows.html"> Installation through vcpkg </a>
 
 <h3> Build from source </h3>
-- <a href="https://www.mlpack.org/doc/mlpack-3.1.0/doxygen/build_windows.html"> Windows build tutorial </a>
+- <a href="doc/mlpack-3.1.0/doxygen/build_windows.html"> Windows build tutorial </a>
 

@@ -18,16 +18,50 @@ Code](https://summerofcode.withgoogle.com).  For more information, see [this
 page](gsoc.html).
 
 All mlpack development is done on [GitHub](https://github.com/mlpack/mlpack).
-In addition to that, we use:
+In addition to that, there are a few channels of communication:
+
+### mlpack mailing lists
+
+Two mailing lists are used for mlpack discussion and development:
 
  * the [mlpack mailing list](http://lists.mlpack.org/mailman/listinfo/mlpack)
    for **email discussion and announcements**,
- * the [#mlpack](http://webchat.freenode.net/?channels=mlpack) IRC channel on
-   freenode for **real-time chat and discussion** ([logs](http://www.mlpack.org/irc/)),
+
  * the [mlpack-git mailing list](http://lists.mlpack.org/mailman/listinfo/mlpack-git),
    which sends email for **all mlpack-related activity**.
- * the [mlpack blog](http://www.mlpack.org/blog/) for **mlpack development
-   updates and blog posts**
+
+If you are participating in the community, it would be a good idea to at least
+be on the mlpack mailing list.
+
+### real-time chat
+
+The mlpack community stays in touch in real-time via several chat services that
+are all linked together thanks to the [Matrix project](http://www.matrix.org/).
+You can choose any of the services below and will be able to communicate with
+anyone who is using any of the other services (assuming that the inter-service
+bridges are correctly operating).
+
+ * IRC via freenode: [#mlpack](http://webchat.freenode.net/?channels=mlpack);
+   you can use webchat (the link), or set up an account on freenode and use a
+   client of your choice.
+
+ * Gitter: [mlpack/mlpack](https://gitter.im/mlpack/mlpack); you will need a
+   Github account
+
+ * Matrix: [#mlpack:matrix.org](https://matrix.org/); you will need to set up a
+   matrix.org account and use a client such as [Riot](https://riot.im) or
+   others.
+
+ * Slack: [mlpack.slack.org](https://mlpack.slack.org/); in order to create an
+   account, you'll need to use the auto-inviter to send yourself an invite:
+   [slack-inviter.mlpack.org](http://slack-inviter.mlpack.org:3000/).
+
+Discussions in the chat channel are [logged](https://www.mlpack.org/irc/).
+
+### blog
+
+The [mlpack blog](http://www.mlpack.org/blog/) contains **mlpack development
+updates and blog posts**.
 
 ## getting involved
 

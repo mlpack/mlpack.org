@@ -6,7 +6,7 @@ order: 3
 ---
 <div class="page-title-header">Documentation</div>
 
-<h2>Overview</h2>
+## Overview
 
 High-quality documentation is a development goal of mlpack. mlpack’s documentation is split into two parts: documentation for the bindings/CLI, and documentation for the C++ library. 
 Generally, working with the bindings is a good choice for simple machine learning and data science tasks, and writing C++ is a good idea when complex or custom functionality is desired.

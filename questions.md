@@ -7,7 +7,7 @@ order: 6
 
 <div class="page-title-header">FAQ</div>
 
- * **I found a bug in the code and/or documentation.  How do I report it?**
+ * **I found a bug in the code and/or documentation. How do I report it?**
 
     Please make a small and self-contained program that exposes the bug, and
 then open an issue at the [Github
@@ -31,8 +31,10 @@ to help with the bug report process.
 
  * **Who are the developers?**
 
-    mlpack is a community-led effort. See the [community](community.html#developers) page for more details and a
-    list.
+    mlpack is a community-led effort. mlpack uses an open governance model and is fiscally sponsored by NumFOCUS.
+	Consider making a tax-deductible donation to help the project pay for developer time, professional services, 
+	travel, workshops, and a variety of other needs. See the [community](community.html#developers) page for more 
+	details and a list of contributors.
 
  * **Where is the source code?**
 

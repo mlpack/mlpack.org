@@ -1,5 +1,7 @@
 /* mlpack CSS for doxygen */
 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body {
     background-image: linear-gradient(to right bottom, #ffffff, #fcfcfc, #ffffff, #fcfcfc, #ffffff);
 }
@@ -679,7 +681,7 @@ td.memItemLeft div.content, td.memTemplItemLeft div.content {
 }
 
 .overload {
-    font-family: "courier new",courier,monospace;
+    font-family: 'Roboto', 'courier new',courier,monospace;
 	font-size: 65%;
 }
 
@@ -1798,11 +1800,6 @@ td.memTemplItemLeft div.hover
 }
 
 /* @end */
-
-table.memname, table.memname tr, table.memname td, table.memname th
-{
-  
-}
 
 #nav-links
 {

@@ -35,7 +35,7 @@ Two mailing lists are used for mlpack discussion and development:
   <li class="flex-item">
       <div class="card">
 	    <i class="far fa-comments fa-lg card-icon"></i>
-	    <p><a href="http://webchat.freenode.net/?channels=mlpack">#mlpack IRC channel</a></p><p>on freenode for real-time chat and discussion <a href="http://www.mlpack.org/irc/">(logs)</a></p>
+	    <p><a href="#real-time-chat">mlpack real-time chat</a></p><p>available through multiple services</p>
 	  </div>
   </li>
   
@@ -109,6 +109,23 @@ Here are a couple ideas:
  * If you find a bug or have a problem,
    [open an issue](https://github.com/mlpack/mlpack) for it---issue templates
    are provided to make reporting easier.
+
+## real-time chat
+
+The mlpack community stays in touch in real-time via several chat services that are
+all linked together thanks to the [Matrix project](http://www.matrix.org/). You can choose
+any of the services below and will be able to communicate with anyone who is using any of
+the other services (assuming that the inter-service bridges are correctly operating).
+
+IRC via freenode: [#mlpack](http://webchat.freenode.net/?channels=mlpack); you can use webchat (the link), or set up an account on freenode and use a client of your choice.
+
+Gitter: [mlpack/mlpack](https://gitter.im/mlpack/mlpack); you will need a Github account
+
+Matrix: [#mlpack:matrix.org](https://matrix.org/); you will need to set up a matrix.org account and use a client such as [Riot](https://riot.im/) or others.
+
+Slack: [mlpack.slack.org](https://mlpack.slack.org/); in order to create an account, you’ll need to use the auto-inviter to send yourself an invite: [slack-inviter.mlpack.org](http://slack-inviter.mlpack.org:3000/).
+
+Discussions in the chat channel are [logged](https://www.mlpack.org/irc/).
 
 ## developers
 

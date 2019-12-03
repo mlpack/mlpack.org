@@ -7,7 +7,7 @@ order: 2
 
 <div class="page-title-header">Get Started</div>
 
-<h1>Overview</h1>
+# Overview
 
 There are multiple ways to get mlpack up and running. Python bindings can be installed using pip or conda, or built from source (see "Build from source" tutorials).
 For C++, if mlpack is not available via your preferred OS package manager, or if you need to build your own version (e.g. to apply optimizations, use a different 
@@ -16,28 +16,32 @@ For Windows, prebuilt binaries will help you get started without the need of bui
 
 Here is a summary of the currently available distribution options you can use depending on your needs:
 
-<h2>Python</h2>
+## Python
 
-<h3> Get via pip or conda </h3>
-- <a href="doc/mlpack-3.1.0/doxygen/python_quickstart.html"> mlpack in Python quickstart guide </a>
+### Get via pip or conda
 
-<h2> Ubuntu, Debian, Fedora, Red Hat </h2>
+<div class="quick-command">pip install mlpack</div>
+<div class="quick-command">conda install -c conda-forge mlpack</div>
 
-<h3> Install using a package manager </h3>
-- <a href="doc/mlpack-3.1.0/doxygen/cli_quickstart.html"> mlpack command-line quickstart guide </a>
+- [mlpack in Python quickstart guide](doc/mlpack-3.1.1/doxygen/python_quickstart.html)
 
-<h3> Build from source </h3>
-- <a href="doc/mlpack-3.1.0/doxygen/build.html"> Linux build tutorial </a>
+## Ubuntu, Debian, Fedora, Red Hat
 
-<h2> Windows </h2>
+### Install using a package manager
+- [mlpack command-line quickstart guide](doc/mlpack-3.1.1/doxygen/cli_quickstart.html)
 
-<h3> Download prebuilt binaries </h3>
-- <a href="/files/mlpack-3.1.0.msi"> Windows 64 bit - MSI Installer </a>
-- <a href="/files/mlpack-3.1.0.zip"> Windows 64 bit - ZIP </a>
+### Build from source
+- [Linux build tutorial](doc/mlpack-3.1.1/doxygen/build.html)
 
-<h3> Install using a package manager </h3>
-- <a href="doc/mlpack-3.1.0/doxygen/build_windows.html"> Installation through vcpkg </a>
+## Windows
 
-<h3> Build from source </h3>
-- <a href="doc/mlpack-3.1.0/doxygen/build_windows.html"> Windows build tutorial </a>
+### Download prebuilt binaries
+- [Windows 64 bit - MSI Installer](/files/mlpack-3.1.0.msi)
+- [Windows 64 bit - ZIP](/files/mlpack-3.1.0.zip)
+
+### Install using a package manager
+- [Installation through vcpkg](doc/mlpack-3.1.1/doxygen/build_windows.html)
+
+### Build from source
+- [Windows build tutorial](doc/mlpack-3.1.1/doxygen/build_windows.html)
 

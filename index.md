@@ -18,7 +18,6 @@ order: 1
 	</div>
 </div>
 
-<p class="intro-header"> Why mlpack </p>
 <p class="intro-text">
 mlpack is a fast, flexible machine learning library, written in C++, that aims
 to provide fast, extensible implementations of cutting-edge machine learning
@@ -42,7 +41,7 @@ machine learning solutions.
       <div class="card">
 	    <i class="fa fa-book fa-lg card-icon"></i>
 		  <h4>Documentation</h4>
-		  <p>Take a look at the API, python bindings and more</p>
+		  <p>Take a look at the API, bindings to other languages and more</p>
 	  </div>
     </a>
   </li>
@@ -60,7 +59,7 @@ machine learning solutions.
       <div class="card">
 	    <i class="fa fa-question-circle fa-lg card-icon"></i>
           <h4>FAQ</h4>
-          <p>For those questions you usually have...</p>
+          <p>Having questions or problems? Check here</p>
 	  </div>
 	</a>
   </li>

@@ -560,3 +560,15 @@ footer
 	top: 0; left: 0; 
 	height: 100%; width: 100%;
 }
+
+.quick-command {
+    background-color: #dedede;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: calc(100% - 60px);
+}

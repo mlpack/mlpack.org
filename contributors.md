@@ -104,3 +104,10 @@
  - Dan Timson
  - Miguel Canteras
  - Bishwa Karki
+ - Mehul Kumar Nirala
+ - Yashwant Singh Parihar
+ - Heet Sankesara
+ - Jeffin Sam
+ - Vikas S Shetty
+ - Tejasvi Tomar
+ - Jai Agarwal

@@ -9,8 +9,8 @@ order: 1
 	<!--<div class="hero-logo"></div>-->
     <div class="hero-text">    
         <p>A fast and flexible C++ machine learning library</p>
-		<a class="legend" href="https://github.com/mlpack/mlpack/releases/tag/mlpack-3.1.1">mlpack-3.1.1.tar.gz</a><br>
-        <a href="files/mlpack-3.1.1.tar.gz">
+		<a class="legend" href="https://github.com/mlpack/mlpack/releases/tag/mlpack-3.2.2">mlpack-3.2.2.tar.gz</a><br>
+        <a href="files/mlpack-3.2.2.tar.gz">
 			<button class="button-download">
 				<i class="fas fa-download"></i> Download
 			</button>
@@ -46,7 +46,7 @@ machine learning solutions.
     </a>
   </li>
   <li class="flex-item">
-    <a href="doc/mlpack-3.1.1/cli_documentation.html#tutorials">
+    <a href="doc/mlpack-3.2.2/cli_documentation.html#tutorials">
       <div class="card">
         <i class="fa fa-file-code fa-lg card-icon"></i>
 	      <h4>Tutorials</h4>

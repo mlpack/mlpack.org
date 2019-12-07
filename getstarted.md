@@ -23,25 +23,25 @@ Here is a summary of the currently available distribution options you can use de
 <div class="quick-command">pip install mlpack</div>
 <div class="quick-command">conda install -c conda-forge mlpack</div>
 
-- [mlpack in Python quickstart guide](doc/mlpack-3.1.1/doxygen/python_quickstart.html)
+- [mlpack in Python quickstart guide](doc/mlpack-3.2.2/doxygen/python_quickstart.html)
 
 ## Ubuntu, Debian, Fedora, Red Hat
 
 ### Install using a package manager
-- [mlpack command-line quickstart guide](doc/mlpack-3.1.1/doxygen/cli_quickstart.html)
+- [mlpack command-line quickstart guide](doc/mlpack-3.2.2/doxygen/cli_quickstart.html)
 
 ### Build from source
-- [Linux build tutorial](doc/mlpack-3.1.1/doxygen/build.html)
+- [Linux build tutorial](doc/mlpack-3.2.2/doxygen/build.html)
 
 ## Windows
 
 ### Download prebuilt binaries
-- [Windows 64 bit - MSI Installer](/files/mlpack-3.1.0.msi)
-- [Windows 64 bit - ZIP](/files/mlpack-3.1.0.zip)
+- [Windows 64 bit - MSI Installer](/files/mlpack-3.2.2.msi)
+- [Windows 64 bit - ZIP](/files/mlpack-3.2.2.zip)
 
 ### Install using a package manager
-- [Installation through vcpkg](doc/mlpack-3.1.1/doxygen/build_windows.html)
+- [Installation through vcpkg](doc/mlpack-3.2.2/doxygen/build_windows.html)
 
 ### Build from source
-- [Windows build tutorial](doc/mlpack-3.1.1/doxygen/build_windows.html)
+- [Windows build tutorial](doc/mlpack-3.2.2/doxygen/build_windows.html)
 

@@ -9,7 +9,7 @@ order: 5
 ## mlpack and Google Summer of Code
 
 mlpack is a proud participant in Google Summer of Code. We have been a part of
-the program in 2013, 2014, 2016, 2017, and 2018, with a total of 30 students
+the program in 2013, 2014, 2016, 2017, 2018 and 2019 with a total of 40 students
 accepted for mlpack (all of whom succeeded at the program). In the past, we have
 received very many applications and it is a competitive process, so this page
 exists to help you determine if you could be a strong candidate.

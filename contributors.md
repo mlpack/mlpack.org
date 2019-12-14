@@ -109,5 +109,6 @@
  - Heet Sankesara
  - Jeffin Sam
  - Vikas S Shetty
+ - Khizir Siddiqui
  - Tejasvi Tomar
  - Jai Agarwal

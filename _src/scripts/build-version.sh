@@ -102,7 +102,7 @@ cat _site/index.html |\
     awk '/[ \t]*<body>/{show=1;next} /[ \t]*<main>/{show=0} // {if(show == 1){print $0;}}' |\
     sed 's|learning library</big></div>|learning library</big></div><div id="ens_header_version_select"><select class="doxygen-version-select" id="version-select" onchange="changeVersion()">'"$option_string"'</select></div>|' |\
     sed 's/class="active" //' |\
-    sed 's|title="Github">Github</a>|title="Github">Github</a>'"$msearchbox_string"'|' >>\
+    sed 's|title="GitHub">GitHub</a>|title="GitHub">GitHub</a>'"$msearchbox_string"'|' >>\
     _src/doxygen/header.$version.html;
 
 cd _src/mlpack-${version}/build/;

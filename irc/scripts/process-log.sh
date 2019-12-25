@@ -18,10 +18,7 @@ nameslist=`cat $logfile | grep -E '^[0-9]{2}:[0-9]{2} < ' |
     sed -E 's/^[0-9]{2}:[0-9]{2} < ([^>]*)>.*$/\1/' | sort | uniq`;
 
 # Isn't this abomination of sed awesome?  We're taking the irssi logs and
-# forcing them to be HTML.  If irssi ever changes log format, we're super
-# fucked.  You'll know because the logs will display all funky and on one
-# line, then you'll find your way here and go "dear fucking Jesus what is this
-# shit?".  Haha!  Sucks!  Have fun!
+# forcing them to be HTML.  If irssi ever changes log format, we're screwed.
 cat $logfile | sed -E 's/</\&lt;/g' |
                sed -E 's/>/\&gt;/g' |
                sed -E 's/\[/\&#91;/g' |

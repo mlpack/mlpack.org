@@ -7,6 +7,7 @@ div.irclog
   line-height: 1em;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 div.separator
@@ -24,7 +25,7 @@ div.irccal
 {
   margin: auto;
   padding: 5px;
-  background-color: #101010;
+  background-color: #ddd;
   width: 430px;
   font-family: monospace, fixed;
   margin-bottom: 10px;
@@ -64,7 +65,7 @@ div.irccalactivecell
   float: left;
   width: 60px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   font-weight: bold;
   font-family: monospace, fixed;
 }
@@ -74,14 +75,14 @@ div.irccalfuturecell
   float: left;
   width: 60px;
   text-align: center;
-  color: #444444;
+  color: #444;
   font-family: monospace, fixed;
 }
 
 div.irccalmonth
 {
   text-align: center;
-  color: #eab72c;
+  color: #bb2222;
   width: 200px;
   margin-left: auto;
   margin-right: auto;
@@ -96,7 +97,7 @@ div.irccalnavleft
 div.irccalnavright
 {
   float: right;
-  color: #444444;
+  color: #444;
 }
 
 div.irccaltop
@@ -105,7 +106,7 @@ div.irccaltop
   font-family: 'Maven Pro', sans-serif;
   font-size: 1.5em;
   padding-bottom: 5px;
-  border-bottom: 8px solid #202020;
+  border-bottom: 8px solid #ccc;
   margin-bottom: 5px;
 }
 
@@ -131,18 +132,18 @@ font.irclotsoflines3
   font-weight: bold;
 }
 
-font.ircnick0 { color: #eab72c; }
-font.ircnick1 { color: #59a188; }
+font.ircnick0 { color: #7a672c; }
+font.ircnick1 { color: #296148; }
 font.ircnick2 { color: #a4a004; }
 font.ircnick3 { color: #5f47bd; }
 font.ircnick4 { color: #d7369b; }
-font.ircnick5 { color: #49e857; }
-font.ircnick6 { color: #d2e0b9; }
+font.ircnick5 { color: #299827; }
+font.ircnick6 { color: #728079; }
 font.ircnick7 { color: #2863da; }
 font.ircnick8 { color: #ca2bee; }
 font.ircnick9 { color: #0baf8d; }
 font.ircnick10 { color: #db0a24; }
-font.ircnick11 { color: #e67dfd; }
+font.ircnick11 { color: #a64dad; }
 font.ircnick12 { color: #646b2a; }
 font.ircnick13 { color: #c90209; }
 font.ircnick14 { color: #a68199; }

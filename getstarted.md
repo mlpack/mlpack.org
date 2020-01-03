@@ -45,3 +45,12 @@ Here is a summary of the currently available distribution options you can use de
 ### Build from source
 - [Windows build tutorial](doc/mlpack-3.2.2/doxygen/build_windows.html)
 
+## macOS
+
+### Install using homebrew
+<div class="quick-command">brew install mlpack</div>
+
+### Build from source 
+#### Follow the instruction given in linux build tutorial.
+- [Linux build tutorial](doc/mlpack-3.2.2/doxygen/build.html)
+

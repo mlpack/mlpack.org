@@ -51,6 +51,5 @@ Here is a summary of the currently available distribution options you can use de
 <div class="quick-command">brew install mlpack</div>
 
 ### Build from source 
-#### Follow the instruction given in linux build tutorial.
 - [Linux build tutorial](doc/mlpack-3.2.2/doxygen/build.html)
 

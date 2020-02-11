@@ -146,7 +146,6 @@ for i in *.html; do
   sed -i -E 's|/man/mlpack_([^.]*)\.html|/cli_documentation.html#\1|g' "$i";
   sed -i -E 's|/python/([^.]*)\.html|/python_documentation.html#\1|g' "$i";
 done
-mogrify -negate *.png;
 # Move the extra CSS to the right place.
 cp $doxygensrcdir/tabs.css .;
 cp $doxygensrcdir/navtree.css .;

@@ -1,6 +1,7 @@
 ---
 layout: default-nav
 title: FAQ
+displaytitle: FAQ
 description: mlpack | fast, flexible C++ machine learning library
 order: 6
 ---

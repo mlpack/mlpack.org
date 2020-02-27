@@ -1,6 +1,7 @@
 ---
 layout: default-nav
 title: Get Started
+displaytitle: Get Started
 description: mlpack | fast, flexible machine learning library in C++
 order: 2
 ---

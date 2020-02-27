@@ -5,9 +5,9 @@
     {% for node in sorted_pages %}
       {% if node.layout == "default-nav" or node.layout == "docs-nav" %}
         {% if node.url == page.url %}
-          <a href="{% if site.baseurl == "/" %}{{ node.url }}{% else %}{{ node.url | prepend: site.baseurl }}{% endif %}" class="active" title="{{ node.title }}">{{ node.title }}</a>
+          <a href="{% if site.baseurl == "/" %}{{ node.url }}{% else %}{{ node.url | prepend: site.baseurl }}{% endif %}" class="active" title="{{ node.displaytitle }}">{{ node.displaytitle }}</a>
         {% else %}
-          <a href="{% if site.baseurl == "/" %}{{ node.url }}{% else %}{{ node.url | prepend: site.baseurl }}{% endif %}" title="{{ node.title }}">{{ node.title }}</a>
+          <a href="{% if site.baseurl == "/" %}{{ node.url }}{% else %}{{ node.url | prepend: site.baseurl }}{% endif %}" title="{{ node.displaytitle }}">{{ node.displaytitle }}</a>
         {% endif %}
       {% endif %}
     {% endfor %}

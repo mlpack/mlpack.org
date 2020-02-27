@@ -1,6 +1,7 @@
 ---
 layout: default-nav
 title: Google Summer of Code
+displaytitle: Google Summer of Code
 description: mlpack | fast, flexible C++ machine learning library
 order: 5
 ---

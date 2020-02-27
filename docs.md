@@ -1,6 +1,7 @@
 ---
 layout: default-nav
 title: Documentation
+displaytitle: Documentation
 description: mlpack | fast, flexible C++ machine learning library
 order: 3
 ---

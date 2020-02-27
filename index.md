@@ -1,6 +1,7 @@
 ---
 layout: default-nav
-title: Home
+title: mlpack | fast, flexible machine learning library in C++
+displaytitle: Home
 description: mlpack | fast, flexible machine learning library in C++
 order: 1
 ---

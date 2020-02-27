@@ -1,6 +1,7 @@
 ---
 layout: default-nav
 title: Community
+displaytitle: Community
 description: mlpack | fast, flexible C++ machine learning library
 order: 4
 ---

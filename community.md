@@ -27,35 +27,35 @@ Two mailing lists are used for mlpack discussion and development:
 
 <ul class="flex-container">
   <li class="flex-item">
-      <div class="card">
-		<a href="http://lists.mlpack.org/mailman/listinfo/mlpack" class="card-global-link"/>
-	    <i class="far fa-envelope fa-lg card-icon"></i>
-	    <p><a>mlpack mailing list</a></p><p>for email discussion and announcements</p>
-	  </div>
+    <div class="card">
+      <a href="http://lists.mlpack.org/mailman/listinfo/mlpack" class="card-global-link"/>
+      <i class="far fa-envelope fa-lg card-icon"></i>
+      <p><a>mlpack mailing list</a></p><p>for email discussion and announcements</p>
+    </div>
   </li>
-  
+
   <li class="flex-item">
-      <div class="card">
-		<a href="#real-time-chat" class="card-global-link"/>
-	    <i class="far fa-comments fa-lg card-icon"></i>
-	    <p><a href="">mlpack real-time chat</a></p><p>available through multiple services</p>
-	  </div>
+    <div class="card">
+      <a href="#real-time-chat" class="card-global-link"/>
+      <i class="far fa-comments fa-lg card-icon"></i>
+      <p><a href="">mlpack real-time chat</a></p><p>available through multiple services</p>
+    </div>
   </li>
-  
+
   <li class="flex-item">
-      <div class="card">
-		<a href="http://lists.mlpack.org/mailman/listinfo/mlpack-git" class="card-global-link"/>
-	    <i class="fab fa-git-square fa-lg card-icon"></i>
-	    <p><a href="">mlpack-git mailing list</a></p><p>which sends email for all mlpack-related activity</p>
-	  </div>
+    <div class="card">
+      <a href="http://lists.mlpack.org/mailman/listinfo/mlpack-git" class="card-global-link"/>
+      <i class="fab fa-git-square fa-lg card-icon"></i>
+      <p><a href="">mlpack-git mailing list</a></p><p>which sends email for all mlpack-related activity</p>
+    </div>
   </li>
-  
+
   <li class="flex-item">
-      <div class="card">
-		<a href="http://www.mlpack.org/blog/" class="card-global-link"/>
-	    <i class="far fa-newspaper fa-lg card-icon"></i>
-	    <p><a href="">Blog</a></p><p>for mlpack development updates and blog posts</p>
-	  </div>
+    <div class="card">
+      <a href="http://www.mlpack.org/blog/" class="card-global-link"/>
+      <i class="far fa-newspaper fa-lg card-icon"></i>
+      <p><a href="">Blog</a></p><p>for mlpack development updates and blog posts</p>
+    </div>
   </li>
 </ul>
 
@@ -131,6 +131,14 @@ Matrix: [#mlpack:matrix.org](https://matrix.org/); you will need to set up a mat
 Slack: [mlpack.slack.org](https://mlpack.slack.org/); in order to create an account, you’ll need to use the auto-inviter to send yourself an invite: [slack-inviter.mlpack.org](http://slack-inviter.mlpack.org:3000/).
 
 Discussions in the chat channel are [logged](https://www.mlpack.org/irc/).
+
+### video meet-up
+
+On the first and third Thursday of every month, at *1800 UTC* on Thursdays, we
+have casual _video meetups_ with no particular agenda.  Feel free to join up!
+We often talk about code changes that we are working on, issues people are
+having with mlpack, general design direction, and whatever else might be on our
+mind.  We use [this Zoom room](https://zoom.us/j/3820896170).
 
 ## developers
 

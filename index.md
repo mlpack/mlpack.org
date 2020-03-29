@@ -72,7 +72,7 @@ machine learning solutions.
   <li class="flex-large-item-left">
     <h4>About</h4>
 	mlpack is built on the <a href="http://arma.sourceforge.net">Armadillo</a> linear algebra library,
-	the <a href="https://www.ensmallen.org">ensmallen</a> function optimization library, and parts
+	the <a href="https://www.ensmallen.org">ensmallen</a> numerical optimization library, and parts
 	of <a href="https://boost.org">Boost</a>.
 	
 	<h4>License</h4>

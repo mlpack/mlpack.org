@@ -9,10 +9,20 @@ order: 3
 
 ## Overview
 
-High-quality documentation is a development goal of mlpack. mlpack’s documentation is split into two parts: documentation for the bindings/CLI, and documentation for the C++ library. 
-Generally, working with the bindings is a good choice for simple machine learning and data science tasks, and writing C++ is a good idea when complex or custom functionality is desired.
+High-quality documentation is a development goal of mlpack. mlpack’s
+documentation is split into two parts: documentation for the bindings/CLI, and
+documentation for the C++ library.  Also useful is the [examples
+repository](https://github.com/mlpack/examples/), which demonstrates usage of
+mlpack's functionality in simple example programs.
 
-All interfaces are heavily documented, and if you find a documentation issue, please <a href="https://github.com/mlpack/mlpack/issues/new?assignees=&labels=t%3A+bug+report%2C+c%3A+documentation%2C+s%3A+unanswered&template=1-documentation.md&title=">report it</a>.
+Generally, working with the bindings is a good choice for simple machine
+learning and data science tasks, and writing C++ is a good idea when complex or
+custom functionality is desired.
+
+All interfaces are heavily documented, and if you find a documentation issue,
+please <a
+href="https://github.com/mlpack/mlpack/issues/new?assignees=&labels=t%3A+bug+report%2C+c%3A+documentation%2C+s%3A+unanswered&template=1-documentation.md&title=">report
+it</a>.
 
  * Build
 	* [Building mlpack From Source (Linux)](doc/mlpack-3.2.2/doxygen/build.html)

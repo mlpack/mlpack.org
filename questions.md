@@ -23,24 +23,38 @@ to help with the bug report process.
     * R.R. Curtin, M. Edel, M. Lozhnikov, Y. Mentekidis, S. Ghaisas, S. Zhang.
       "mlpack 3: a fast, flexible C++ machine learning library." Journal of Open
       Source Software 3(26): pp. 726, 2018.
-	<p/>
+    <p/>
 
  * **What is the distribution license for mlpack?**
 
-    mlpack is licensed under the permissive [3-clause BSD license](http://opensource.org/licenses/BSD-3-Clause).
-    See also a [Quick Summary](https://tldrlegal.com/license/bsd-3-clause-license-(revised)) of the license.
+    mlpack is licensed under the permissive [3-clause BSD
+    license](http://opensource.org/licenses/BSD-3-Clause).  See also a [Quick
+    Summary](https://tldrlegal.com/license/bsd-3-clause-license-(revised)) of
+    the license.
 
  * **Who are the developers?**
 
-    mlpack is a community-led effort. mlpack uses an open governance model and is fiscally sponsored by NumFOCUS.
-	Consider making a tax-deductible donation to help the project pay for developer time, professional services, 
-	travel, workshops, and a variety of other needs. See the [community](community.html#developers) page for more 
-	details and a list of contributors.
+    mlpack is a community-led effort. mlpack uses an open governance model and
+    is fiscally sponsored by NumFOCUS.  Consider making a [tax-deductible
+    donation](https://numfocus.org/donate-to-mlpack) to help the project pay for
+    developer time, professional services, travel, workshops, and a variety of
+    other needs. See the [community](community.html#developers) page for more
+    details and a list of contributors.
 
  * **Where is the source code?**
 
     mlpack development is done on [GitHub](https://github.com/mlpack/mlpack) and
-    the source code is available there.
+    the source code is available there.  There are a few related repositories
+    that might be worth checking out also:
+
+    - [ensmallen](https://github.com/mlpack/ensmallen/): numerical optimization
+      library
+
+    - [examples](https://github.com/mlpack/examples/): simple examples of mlpack
+      usage
+
+    - [models](https://github.com/mlpack/models/): additional implementations of
+      machine learning models
 
  * **Do you accept contributions?**
 

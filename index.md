@@ -10,8 +10,8 @@ order: 1
 	<!--<div class="hero-logo"></div>-->
     <div class="hero-text">    
         <p>A fast and flexible C++ machine learning library</p>
-		<a class="legend" href="https://github.com/mlpack/mlpack/releases/tag/mlpack-3.2.2">mlpack-3.2.2.tar.gz</a><br>
-        <a href="files/mlpack-3.2.2.tar.gz">
+		<a class="legend" href="https://github.com/mlpack/mlpack/releases/tag/mlpack-3.3.0">mlpack-3.3.0.tar.gz</a><br>
+        <a href="files/mlpack-3.3.0.tar.gz">
 			<button class="button-download">
 				<i class="fas fa-download"></i> Download
 			</button>
@@ -23,8 +23,8 @@ order: 1
 mlpack is a fast, flexible machine learning library, written in C++, that aims
 to provide fast, extensible implementations of cutting-edge machine learning
 algorithms. mlpack provides these algorithms as simple command-line programs,
-Python bindings, and C++ classes which can then be integrated into larger-scale
-machine learning solutions.
+Python bindings, Julia bindings, and C++ classes which can then be integrated
+into larger-scale machine learning solutions.
 </p>
 
 <ul class="flex-container">
@@ -47,7 +47,7 @@ machine learning solutions.
     </a>
   </li>
   <li class="flex-item">
-    <a href="doc/mlpack-3.2.2/cli_documentation.html#tutorials">
+    <a href="doc/mlpack-3.3.0/cli_documentation.html#tutorials">
       <div class="card">
         <i class="fa fa-file-code fa-lg card-icon"></i>
 	      <h4>Tutorials</h4>

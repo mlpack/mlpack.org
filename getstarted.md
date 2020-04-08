@@ -12,12 +12,14 @@ order: 2
 
 There are multiple ways to get mlpack up and running. Python bindings can be
 installed using pip or conda, or built from source (see "Build from source"
-tutorials).  For C++, if mlpack is not available via your preferred OS package
-manager, or if you need to build your own version (e.g. to apply optimizations,
-use a different set of BLAS/LAPACK, or build a different configuration), please
-refer to the "Build from source" tutorials.  For Windows, prebuilt binaries will
-help you get started without the need of building mlpack. These packages include
-both the C++ mlpack library as well as the CLI tools.
+tutorials).  Julia bindings can be installed via Julia's `Pkg` package manager.
+
+For C++, if mlpack is not available via your preferred OS package manager, or if
+you need to build your own version (e.g. to apply optimizations, use a different
+set of BLAS/LAPACK, or build a different configuration), please refer to the
+"Build from source" tutorials.  For Windows, prebuilt binaries will help you get
+started without the need of building mlpack. These packages include both the C++
+mlpack library as well as the CLI tools.
 
 Once you get mlpack running, check out the [documentation](docs.html) or the
 [examples repository](https://github.com/mlpack/examples/), which contains
@@ -34,6 +36,12 @@ depending on your needs:
 <div class="quick-command">conda install -c conda-forge mlpack</div>
 
 - [mlpack in Python quickstart guide](doc/mlpack-3.2.2/doxygen/python_quickstart.html)
+
+## Julia
+
+### Get via Pkg
+
+<div class="quick-command">import Pkg;<br />Pkg.add("mlpack")</div>
 
 ## Ubuntu, Debian, Fedora, Red Hat
 

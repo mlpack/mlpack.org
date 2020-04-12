@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" id="metaviewport" content="width=device-width">
+
+<link rel="stylesheet" href="static/css/style.css">
+
+<title>mlpack - GSoC</title>
+</head>
+
+<body>
+
+<!-- NAVIGATION START -->
+<div class="wrapperNavigation" style="list-style-type:none;background-color: #1f364d;">
+	<div class="box a"></div>
+
+	<div class="box a">
+		<header>
+			<a id="logo" href="index.html">
+				<img src="static/img/mlpack-logo.svg" alt="mlpack">
+			</a>
+
+			<a href="index.html" style="text-decoration: none;font-weight: 400;font-size:18px;color: #fff">mlpack</a>
+
+			<nav>
+				<a href="quickstart.html">Quick Start</a>
+				<a href="documentation.html">Documentation</a>
+				<a href="community.html">Community</a>
+				<a href="faq.html">FAQ</a>
+			</nav>
+	</header>
+	</div>
+
+	<div class="box a"></div>
+</div>
+<!-- NAVIGATION END -->
+
+<br>
+
+<!-- CONTENT START -->
+<center>
+	<div style="max-width:800px;text-align:left">
+	<h3>mlpack and Google Summer of Code</h3>
+	<p align="justify">
+		mlpack is a proud participant in Google Summer of Code. We have been a part of the program in 2013, 2014, 2016,
+		2017, 2018 and 2019 with a total of 40 students accepted for mlpack (all of whom succeeded at the program). In the
+		past, we have received very many applications and it is a competitive process, so this page exists to help you
+		determine if you could be a strong candidate.
+	</p>
+
+	<h3>How to be a good candidate</h3>
+	<p align="justify">
+		The two most important qualities that an mlpack GSoC candidate can possess is the ability to be self-sufficient
+		and the willingness to learn.
+	</p>
+
+	<p align="justify">
+		Self-sufficiency is key because mentors have limited time and can’t put in as much time helping the student as the
+		student is putting in. However, this of course does not mean that a student (or a prospective student) can never
+		ask any questions! mlpack is a complex library and can sometimes take help and explanation to understand.
+	</p>
+
+	<p align="justify">
+		A willingness to learn is also important because virtually every potential project will require the student to
+		become familiar with a new algorithm or C++ technique. mlpack is a complex library with many components and it is
+		likely during your project that you might have to use or interact with some other part of the codebase.
+	</p>
+
+	<h3>Things to be familiar with</h3>
+	<p style="align:justify">
+		Of course, these are not the only important ingredients for a successful GSoC project. A student should ideally be
+		familiar with
+	</p>
+
+	<p align="justif" style="padding-left:10px;">
+		<span style="color:#D0331F">&bull;</span> open source software development: opening pull requests, using git,
+		opening issues. mlpack uses Github, which has great documentation. You can learn about the workflow using <a
+		href="https://guides.github.com/">this
+		link</a>, if you are not already familiar.
+	</p>
+
+	<p align="justif" style="padding-left:10px;">
+		<span style="color:#D0331F">&bull;</span> using the development toolchain on your computer: you should be able to
+		download and compile mlpack, make changes to the code, and recompile with the new changes. There is <a
+		href="https://www.mlpack.org/doc/mlpack-git/doxygen/build.html">a tutorial</a> for
+		how to build mlpack and would be a great place to get started. If you’re on Windows, then <a
+		href="https://www.mlpack.org/doc/mlpack-git/doxygen/build_windows.html">this guide</a> could be very
+		useful. See also the <a href="community.html">Community page</a> for more information on getting started.
+	</p>
+
+	<p align="justif" style="padding-left:10px;">
+		<span style="color:#D0331F">&bull;</span> at least intermediate C++ knowledge: mlpack uses lots of different C++
+		paradigms including template metaprogramming, C++11 features like rvalue references, and different parts of the
+		Boost libraries, in order to make the code fast. You should be at least familiar with some of these language
+		features and what templates are, even if you have not used them in-depth, so that you can understand the mlpack
+		codebase. Some examples of patterns that are often used inside of mlpack are SFINAE (<a
+		href="https://github.com/mlpack/mlpack/blob/565cfd3aad22deec0656b86e801052593a937723/src/mlpack/methods/mean_shift/mean_shift.hpp#L123">example in mlpack</a>),
+		<a href="http://www.drdobbs.com/policy-based-design-in-the-real-world/184401861">policy-based design</a>, and <a href="https://accu.org/index.php/journals/442">compile-time class traits</a>. Here are some <a
+		href="https://www.codeproject.com/Articles/3743/A-gentle-introduction-to-Template-Metaprogramming">other useful resources</a> for learning template
+		metaprogramming, and some useful <a
+		href="https://www.amazon.com/gp/product/0201749629?ie=UTF8tag=aristeia.com-20linkCode=as2camp=1789creative=9325creativeASIN=0201749629">reference books</a>. If some of this sounds new to you, don’t feel overwhelmed—it’s
+		not a necessity, but it is helpful. You should at least be prepared to learn about it!
+	</p>
+
+	<p align="justif" style="padding-left:10px;">
+		<span style="color:#D0331F">&bull;</span> project-specific knowledge: you’ll need to have an in-depth
+		understanding of the specific project that you choose. If you’re not sure what project you want to work on, see
+		the <a href="https://github.com/mlpack/mlpack/wiki/SummerOfCodeIdeas">SummerOfCodeIdeas wiki page</a>, which has ideas for GSoC projects that you might find interesting. But you aren’t
+		required to do one of those projects—if you have another interesting idea, propose it and see if a mentor is
+		interested in supervising the project! If you have any questions about a project, be aware that it’s possible that
+		the question has already been answered on the mailing list. Take a look through the archives or search to see if
+		there’s already an answer to your question.
+	</p>
+
+	<h3>Get involved!</h3>
+	<p style="align:justify">
+		For a strong proposal, it’s important to be a part of the mlpack community—via contributions, code reviews,
+		helping others solve their issues, and so forth. There are some pointers on the <a href="community.html">community page</a> on how to start
+		contributing and get involved.
+	</p>
+
+	<p style="align:justify">
+		When it comes time to write your proposal, we do have a <a
+		href="https://github.com/mlpack/mlpack/wiki/Google-Summer-of-Code-Application-Guide">proposal guide</a> that you can take a look at to guide your
+		application.
+	</p>
+	</div>
+</center>
+<!-- CONTENT END -->
+
+<br>
+
+<!-- FOOTER START -->
+<center>
+	<br><br><br><br>
+
+	<div style="max-width:800px">
+		<p style="font-size:15px;">&copy; 2007 - 2020 mlpack developers (BSD License).<p>
+		<a href="quickstart.html">Quick Start</a>
+		&nbsp;&bull;&nbsp;<a href="documentation.html">Documentation</a>
+		&nbsp;&bull;&nbsp;<a href="community.html">Community</a>
+		&nbsp;&bull;&nbsp;<a href="faq.html">FAQ</a>
+	</div>
+</center>
+<!-- FOOTER END -->
+
+</body>
+
+</html>
+

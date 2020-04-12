@@ -110,7 +110,7 @@
 	<div id="f0"></div>
 
 	<div style="width:200px;color:black">Build</div>
-	<div id="build0" onclick="BuildSelect(0)" style="width:250px;background-color:rgba(208,51,31,0.9);color:white">Stable (3.2.2)</div>
+	<div id="build0" onclick="BuildSelect(0)" style="width:250px;background-color:rgba(208,51,31,0.9);color:white">Stable</div>
 	<div id="build1" onclick="BuildSelect(1)" style="width:250px;background-color:rgba(31,54,77,0.3);color:black">Nightly</div>
 
 	<div></div>
@@ -311,7 +311,19 @@ function CmdUpdate()
 	selectionInfo.language = GetSelectedElement("lang", 4);
 
 	var key = selectionInfo.build + " " + selectionInfo.os + " " + selectionInfo.package + " " + selectionInfo.language;
-	document.getElementById("cmd-run").innerHTML = installCmd[key.toLowerCase()];
+
+	var cmd = installCmd[key.toLowerCase()];
+	if (cmd)
+	{
+	  cmdSplit = cmd.split("!");
+          cmd = ""
+	  for (var i = 0; i < cmdSplit.length; i++)
+	  cmd += cmdSplit[i].trimStart() + "\n";
+
+	  document.getElementById("cmd-run").innerHTML = cmd;
+	}
+	else
+	  document.getElementById("cmd-run").innerHTML = "Unknown, see the other options."
 }
 
 function OSUpdate(name)
@@ -425,7 +437,7 @@ function LanguageSelect(id, run=true)
 window.onload = function(e)
 {
 	var installFile = new XMLHttpRequest();
-	installFile.open("GET", "config/install.md", false);
+	installFile.open("GET", "config/install.md" + "?id=" + Math.floor(Math.random() * 1000), false);
 	installFile.onreadystatechange = function () {
 		if(installFile.readyState === 4) {
 			var content = installFile.responseText;
@@ -438,7 +450,7 @@ window.onload = function(e)
 	installFile.send(null);
 
 	var packageFile = new XMLHttpRequest();
-	packageFile.open("GET", "config/package.md", false);
+	packageFile.open("GET", "config/package.md" + "?id=" + Math.floor(Math.random() * 1000), false);
 	packageFile.onreadystatechange = function () {
 		if(packageFile.readyState === 4) {
 			if(packageFile.status === 200 || packageFile.status == 0) {

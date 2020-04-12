@@ -1,0 +1,14 @@
+macOS
+Stable Nightly
+brew Pkg.jil source
+C++ Python Julia All
+
+Linux (Debian)
+Stable Nightly
+apt pip conda Pkg.jil source
+C++ Python Julia All
+
+Windows
+Stable Nightly
+MSI source
+C++

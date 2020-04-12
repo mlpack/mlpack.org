@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" id="metaviewport" content="width=device-width">
+
+<link rel="stylesheet" href="static/css/style.css">
+
+<title>mlpack - Community</title>
+</head>
+
+<body>
+
+<!-- NAVIGATION START -->
+<div class="wrapperNavigation" style="list-style-type:none;background-color:#1f364d;position:fixed;width:100%;">
+	<div class="box a"></div>
+
+	<div class="box a">
+		<header>
+			<a id="logo" href="index.html">
+				<img src="static/img/mlpack-logo.svg" alt="mlpack">
+			</a>
+
+			<a href="index.html" style="text-decoration: none;font-weight: 400;font-size:18px;color: #fff">mlpack</a>
+
+			<nav>
+				<a href="quickstart.html">Quick Start</a>
+				<a href="documentation.html">Documentation</a>
+				<a href="community.html">Community</a>
+				<a href="faq.html">FAQ</a>
+			</nav>
+		</header>
+	</div>
+
+	<div class="box a"></div>
+</div>
+<!-- NAVIGATION END -->
+
+<br>
+
+<!-- COMMUNITY START -->
+<center style="padding-top:40px">
+	<div style="max-width:800px;text-align:left">
+
+		<!-- SUB-NAVIGATION START -->
+		<div class="nav-element" id="sub-nav">
+			<p>
+				<span style="font-weight:600">Community</span><br>
+				<span class="nav-sub" onclick="ScrollTo('page-involved')">Getting Involved</span><br>
+				<span class="nav-sub" onclick="ScrollTo('page-mail')">Mailing List</span><br>
+				<span class="nav-sub" onclick="ScrollTo('page-chat')">Real-Time Chat</span><br>
+				<span class="nav-sub" onclick="ScrollTo('page-video')">Video Meetup</span><br>
+				<span class="nav-sub" onclick="ScrollTo('page-blog')">Blog</span><br>
+				<span class="nav-sub" onclick="ScrollTo('page-support')">Support</span><br>
+				<span class="nav-sub" onclick="ScrollTo('page-developer')">Developer</span>
+			</p>
+		</div>
+		<!-- SUB-NAVIGATION END -->
+
+		<div id="helper"></div>
+
+		<h3>Community</h3>
+		<p align="justify">
+		 mlpack is a community-led effort, and so the code is not possible without the
+		 community. Since mlpack is an open-source project, anyone is welcome to
+		 become a part of the community and contribute. There is no need to be a
+		 machine learning expert to participate—often, there are many tasks to be done
+		 that don’t require in-depth knowledge.
+		</p>
+
+		<p align="justify">
+			Over the past several years, mlpack has participated in <a href="https://summerofcode.withgoogle.com/">Google
+			Summer of Code</a>. For more information, see this <a href="gsoc.html">page &rarr;</a>.
+		</p>
+
+		<p align="justify">
+		 All mlpack development is done on <a href="https://github.com/mlpack/mlpack">GitHub</a>. In addition to that, there are a few channels of communication:
+		</p>
+
+		<h3 id="page-involved">Getting Involved</h3>
+		<p align="justif">
+			Everyone is welcome to contribute to mlpack. But before becoming a contributor, it’s often useful to understand
+			mlpack as a user. So, a good place to start is to <a href="https://www.mlpack.org/index.html">download mlpack</a>
+			and use the <a href="https://www.mlpack.org/doc/mlpack-3.1.0/python_documentation.html">Python bindings</a>,
+			<a href="https://www.mlpack.org/doc/mlpack-3.1.0/julia_documentation.html">Julia bindings</a> or the
+			<a href="https://www.mlpack.org/doc/mlpack-3.1.0/cli_documentation.html">command-line
+			programs</a> to perform machine learning tasks. You can also write C++ programs to perform machine learning tasks with
+			mlpack; <a href="https://www.mlpack.org/doc/mlpack-3.1.0/doxygen/sample.html">here</a> are some basic examples.
+		</p>
+
+		<p align="justif">
+			Once you have an idea of what’s included in mlpack and how a user might use it, then a good next step would be to
+			set up a development environment. Once you have that set up, you can
+			<a href="https://www.mlpack.org/doc/mlpack-3.1.0/doxygen/build.html">build mlpack from source</a>
+			and <a href="https://github.com/mlpack/mlpack/">explore the
+			codebase</a> to see how it’s organized. It may even be useful to try and make
+			small changes to the code, then rebuild the command-line programs and see
+			what your changes did.
+		</p>
+
+		<p align="justif">
+			Now you’re set up to contribute! There are lots of ways you can contribute. Here are a couple idea
+		</p>
+
+		<p align="justif" style="padding-left:10px;">
+			<span style="color:#D0331F">&bull;</span> Help others figure out their mlpack issues and questions.
+			<a href="https://github.com/mlpack/mlpack/issues?q=is%3Aopen+is%3Aissue+label%3A%22t%3A+question%22">Here</a> is a
+			list of Github issues tagged
+			<a style="text-decoration:none;color:black;" href="https://github.com/mlpack/mlpack/issues?q=is%3Aopen+is%3Aissue+label%3A%22t%3A+question%22"><span style="font-size:12px;background-color:#CCCCCC;box-shadow: 1px 1px 1px black;padding: 1px 2px 1px 2px;border-radius:2px"><b>question</b></span></a>.
+			Helping others figure out their problems is really one of the best ways to learn about the library.
+		</p>
+
+		<p align="justif" style="padding-left:10px;">
+			<span style="color:#D0331F">&bull;</span> Find an issue that needs implementation help; <a href="https://github.com/mlpack/mlpack/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22">here</a> is a list of Github$
+			issues tagged <a style="text-decoration:none;color:black;" href="https://github.com/mlpack/mlpack/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22"><span style="font-size:12px;background-color:#66FDFF;box-shadow: 1px 1px 1px black;padding: 1px 2px 1px 2px;border-radius:2px"><b>help wanted</b></span></a> ;
+			 and <a href="https://github.com/mlpack/mlpack/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22">here</a> is a
+			list of Github issues tagged
+			 <a style="text-decoration:none;" href="https://github.com/mlpack/mlpack/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22"><span style="color:white;font-size:12px;background-color:#6352FF;box-shadow: 1px 1px 1px black;padding: 1px 2px 1px 2px;border-radius:2px"><b>good first issue</b></span></a> . Once you open a PR that
+			passes all the continuous integration tests, the community will review it and get it merged into the codebase.
+		</p>
+
+		<p align="justif" style="padding-left:10px;">
+			<span style="color:#D0331F">&bull;</span> Find an abandoned pull request;
+			 <a href="https://github.com/mlpack/mlpack/pulls?q=is%3Aclosed+is%3Apr+label%3A%22s%3A+stale%22">here</a>
+			  is a list of pull requests that
+			were closed for inactivity. Often these have comments that need to be addressed, but the original author didn’t
+			have time to finish the work. So, you can pick up where they left off!
+		</p>
+
+		<p align="justif" style="padding-left:10px;">
+			<span style="color:#D0331F">&bull;</span> Implement a new machine learning algorithm that mlpack doesn’t currently
+			have.
+		</p>
+
+		<p align="justif" style="padding-left:10px;">
+			<span style="color:#D0331F">&bull;</span> Take a look at the ideas on the Google Summer of Code <a
+			href="https://github.com/mlpack/mlpack/wiki/SummerOfCodeIdeas">Ideas List</a> and see
+			if you find any of them interesting or exciting. Even if you’re not planning to do Summer of Code, it’s okay to
+			take these ideas and implement them separately.
+		</p>
+
+		<p align="justif" style="padding-left:10px;">
+			<span style="color:#D0331F">&bull;</span> Do some timing on an existing machine learning algorithm implemented by mlpack, and try to make it faster.
+		</p>
+
+		<p align="justif" style="padding-left:10px;">
+			<span style="color:#D0331F">&bull;</span> If you find a bug or have a problem, <a
+			href="https://github.com/mlpack/mlpack">open an issue</a> for it—issue
+			templates are provided to make reporting easier.
+		</p>
+
+		<h3 id="page-mail">Mailing Lists</h3>
+		<p align="justify">
+		 Two mailing lists are used for mlpack discussion and development:
+		</p>
+
+		<p align="justif">
+			<span style="color:#D0331F">&bull;</span> For email discussion and announcements: <a href="">mlpack mailing list &rarr;</a>
+		</p>
+
+		<p align="justif">
+			<span style="color:#D0331F">&bull;</span> Which sends emails for all mlpack-related activity: <a href="">mlpack-git mailing list &rarr;</a>
+		</p>
+
+		<h3 id="page-chat">Real-Time Chat</h3>
+		<p align="justify">
+			The mlpack community stays in touch in real-time via several chat services that are all linked together thanks to
+			the Matrix project. You can choose any of the services below and will be able to communicate with anyone who is
+			using any of the other services (assuming that the inter-service bridges are correctly operating).
+		</p>
+
+		<div class="grid-chat">
+			<div></div>
+
+			<div>
+				<span><b>IRC</b></span>
+				<br><br>
+				<img src="static/img/irc-logo.svg" width="50" alt="irc logo">
+				<p style="text-align:justify">
+					IRC via freenode: <a href="http://webchat.freenode.net/?channels=mlpack">#mlpack</a>; you can use webchat (the link), or set up an account on freenode and use a client of your choice.
+				</p>
+			</div>
+
+			<div></div>
+
+			<div>
+				<span><b>Matrix</b></span>
+				<br><br>
+				<img src="static/img/matrix-logo.svg" width="50" alt="matrix logo">
+				<p style="text-align:justify">
+					Matrix: <a href="https://matrix.org">#mlpack:matrix.org</a>; you will need to set up a matrix.org account and use a client such as <a href="https://riot.im/">Riot</a> or others.
+				</p>
+			</div>
+
+			<div></div>
+		</div>
+
+		<div class="grid-chat">
+			<div></div>
+
+			<div>
+				<span><b>Gitter</b></span>
+				<br><br>
+				<img src="static/img/gitter-logo.svg" width="50" alt="gitter logo">
+				<p style="text-align:justify">
+					<a href="https://gitter.im/mlpack/mlpack">mlpack/mlpack</a>; you will need a Github account to join.
+				</p>
+			</div>
+
+			<div></div>
+
+			<div>
+				<span><b>Slack</b></span>
+				<br><br>
+				<img src="static/img/slack-logo.svg" width="50" alt="slack logo">
+				<p style="text-align:justify">
+					<a href="https://mlpack.slack.org/">mlpack.slack.org</a>; in order to create an account, you’ll need to use the auto-inviter to send yourself an invite: <a href="http://slack-inviter.mlpack.org:3000/">slack-inviter.mlpack.org</a>.
+				</p>
+			</div>
+
+			<div></div>
+		</div>
+
+		<p style="text-align:justify">
+			Discussions in the chat channel are <a href="https://www.mlpack.org/irc/">logged &rarr;</a>.
+		</p>
+
+		<h3 id="page-video">Video Meetup</h3>
+		<p>
+			On the first and third Thursday of every month, at <b>1800 UTC</b> on Thursdays, we
+			have <b>casual video meetups</b> with no particular agenda. Feel free to join up!
+			We often talk about code changes that we are working on, issues people are
+			having with mlpack, general design direction, and whatever else might be on our
+			mind. We use <a href="https://zoom.us/j/3820896170">this Zoom room</a>.
+		</p>
+
+		<h3 id="page-blog">Blog</h3>
+		<p>
+			Blog for mlpack development and updates and blog posts. <a href="http://www.mlpack.org/blog/">Read More &rarr;</a>
+		</p>
+
+		<h3 id="page-support">Support</h3>
+		<p>
+			Organizations that have supported mlpack's development or currently support it.
+		</p>
+
+		<div class="grid-chat">
+			<div></div>
+
+			<div>
+				<img src="static/img/numfocus-logo.png" width="100" alt="numfocus logo">
+				<p style="text-align:justify">mlpack is fiscally sponsored by <a href="https://numfocus.org">NumFOCUS</a>.</p>
+			</div>
+
+			<div></div>
+
+			<div>
+				<img src="static/img/google-logo.png" width="100" alt="google logo">
+				<p style="text-align:justify">Over the past several years, mlpack has participated in <a href="https://summerofcode.withgoogle.com/">Google Summer of Code</a>.
+			</div>
+
+			<div></div>
+		</div>
+
+		<div class="grid-chat">
+			<div></div>
+			<div>
+				<img src="static/img/georgia-tech-logo.png" width="100" alt="georgia tech logo">
+				<p style="text-align:justify">Originally, mlpack was produced by the <a href="https://www.gatech.edu/">FASTLab at Georgia Tech</a>.</p>
+			</div>
+
+			<div></div>
+
+			<div>
+				<img src="static/img/symantec-logo.png" width="100" alt="symantec logo">
+				<p style="text-align:justify">
+					Developer Ryan Curtin received partial support to work on mlpack at <a href="https://www.symantec.com/">Symantec</a>.
+				</p>
+			</div>
+
+			<div></div>
+		</div>
+
+		<div class="grid-chat">
+			<div></div>
+			<div>
+				<img src="static/img/nsf-logo.png" width="80" alt="nsf logo">
+				<p style="text-align:justify">
+					Developer Ryan Curtin received partial support to work on mlpack in 2015 from the US National Science Foundation (NSF) under Award 1339745 (SI2-SSI: The XScala Project).
+				</p>
+			</div>
+
+			<div></div>
+
+			<div>
+				<img src="static/img/fuberlin-logo.png" width="80" alt="fu berlin logo">
+				<p style="text-align:justify">Developer Marcus Edel received partial support to work on mlpack at <a href="https://https://www.fu-berlin.de//">Free University of Berlin</a>.
+			</div>
+
+			<div></div>
+		</div>
+
+		<h3 id="page-developer">Developer</h3>
+		<p style="text-align:center">Below is a list of contributors to mlpack. Without their hard work, this software would not be possible.</p>
+		<div class="grid-dev">
+			<div></div>
+
+			<div>
+				<p><a href="https://ratml.org/">Ryan Curtin</a></p>
+				<p>Dongryeol Lee</p>
+				<p>James Cline</p>
+				<p>Neil Slagle</p>
+				<p>Noah Kauffman</p>
+				<p>Patrick Mason</p>
+				<p>Michael Fox</p>
+				<p>Saheb Motiani</p>
+				<p>Vahab Akbarzadeh</p>
+				<p><a href="https://uditsaxena.github.io/">Udit Saxena</a></p>
+				<p><a href="http://shangtongzhang.github.io/">Shangtong Zhang</a></p>
+				<p>QiaoAn Chen</p>
+				<p><a href="https://qtandopencv.blogspot.com/">Tham Ngap Wei</a></p>
+				<p>Pavel Zhigulin</p>
+				<p>Ivari Horm</p>
+				<p>Palash Ahuja</p>
+				<p>Mikhail Lozhnikov</p>
+				<p>Nilay Jain</p>
+				<p>Ivan Georgiev</p>
+				<p><a href="https://izbicki.me/">Mike Izbicki</a></p>
+				<p>Dinesh Raj</p>
+				<p>Lakshya Agrawal</p>
+				<p>Abhinav Moudgil</p>
+				<p>Nishanth Hegde</p>
+				<p>Franciszek Stokowacki</p>
+				<p>Kartik Nighania</p>
+				<p>Haritha Sreedharan Nair</p>
+				<p>Nikhil Goel</p>
+				<p>Atharva Khandait</p>
+				<p>Prabhat Sharma</p>
+				<p>Manthan-R-Sheth</p>
+				<p>Thanasis Mattas</p>
+				<p>German Lancioni</p>
+				<p>Tommi Laivamaa</p>
+				<p>Toshal Agrawal</p>
+				<p>Bishwa Karki</p>
+				<p>Heet Sankesara</p>
+				<p>Khizir Siddiqui</p>
+			</div>
+
+			<div></div>
+
+			<div>
+				<p><a href="https://kurg.org">Marcus Edel</a></p>
+				<p><a href="http://web.uvic.ca/~nmehta/">Nishant Mehta</a></p>
+				<p>Sterling Peet</p>
+				<p>Ajinkya Kale</p>
+				<p>Rajendran Mohan</p>
+				<p>Mudit Raj Gupta</p>
+				<p><a href="http://www.rbirm.us/">Ryan Birmingham</a></p>
+				<p>Yash Vadalia</p>
+				<p>Andrew Wells</p>
+				<p><a href="https://stephentu.github.io/">Stephen Tu</a></p>
+				<p>Hritik Jain</p>
+				<p>Janzen Brewer</p>
+				<p>Grzegorz Krajewski</p>
+				<p>Andy Fang</p>
+				<p>Dhawal Arora</p>
+				<p>Yannis Mentekidis</p>
+				<p>Marcos Pividori</p>
+				<p>Peter Lehner</p>
+				<p>Shikhar Bhardwaj</p>
+				<p>Sudhanshu Ranjan</p>
+				<p>Vivek Pal</p>
+				<p>Praveen Ch</p>
+				<p>Thyrix Yang</p>
+				<p>Parminder Singh</p>
+				<p>Samikshya Chand</p>
+				<p>Eugene Freyman</p>
+				<p>Sourabh Varshney</p>
+				<p>Shikhar Jaiswal</p>
+				<p>Wenhao Huang</p>
+				<p>Tan Jun An</p>
+				<p>Namrata Mukhija</p>
+				<p>Shashank Shekhar</p>
+				<p>Arash Abghari</p>
+				<p>Kim SangYeon</p>
+				<p>Dan Timson</p>
+				<p>Mehul Kumar Nirala</p>
+				<p>Jeffin Sam</p>
+				<p>Tejasvi Tomar</p>
+			</div>
+
+			<div></div>
+
+			<div>
+				<p>Bill March</p>
+				<p><a href="https://rithram.github.io/">Parikshit Ram</a></p>
+				<p>Matthew Amidon</p>
+				<p><a href="http://coweb.cc.gatech.edu/cs2340/6350">Vlad Grantcharov</a></p>
+				<p>Trironk Kiatkungwanglai</p>
+				<p>Sumedh Ghaisas</p>
+				<p>Siddharth Agrawal</p>
+				<p>Abhishek Laddha</p>
+				<p>Zhihao Lou</p>
+				<p>Jaskaran Singh</p>
+				<p>Vladimir Glazachev</p>
+				<p>Trung Dinh</p>
+				<p>Joseph Mariadassou</p>
+				<p>Barak Pearlmutter</p>
+				<p>Alexander Leinoff</p>
+				<p>Ranjan Mondal</p>
+				<p><a href="https://keon.github.io/">Keon Kim</a></p>
+				<p>Anuraj Kanodia</p>
+				<p>Yashu Seth</p>
+				<p>Piyush Jaiswal</p>
+				<p>Prasanna Patil</p>
+				<p>Kirill Mishchenko</p>
+				<p>Sagar B Hathwar</p>
+				<p><a href="http://www.qbitlogic.com/codeai">CodeAi</a></p>
+				<p>N Rajiv Vaidyanathan</p>
+				<p>Manish Kumar</p>
+				<p>Projyal Dev</p>
+				<p>B Kartheek Reddy</p>
+				<p><a href="https://robertohueso.xyz/">Roberto Hueso</a></p>
+				<p>Moksh Jain</p>
+				<p><a href="https://conradsanderson.id.au/">Conrad Sanderson</a></p>
+				<p>Yasmine Dumouchel</p>
+				<p>Ayush Chamoli</p>
+				<p>Niteya Shah</p>
+				<p>Miguel Canteras</p>
+				<p>Yashwant Singh Parihar</p>
+				<p>Vikas S Shetty</p>
+				<p>Jai Agarwal</p>
+			</div>
+
+			<div></div>
+		</div>
+
+	</div>
+</center>
+<!-- COMMUNITY END -->
+
+<br>
+
+<!-- FOOTER START -->
+<center>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div style="max-width:800px">
+		<p style="font-size:15px;">&copy; 2007 - 2020 mlpack developers (BSD License).<p>
+		<a href="quickstart.html">Quick Start</a>
+		&nbsp;&bull;&nbsp;<a href="documentation.html">Documentation</a>
+		&nbsp;&bull;&nbsp;<a href="community.html">Community</a>
+		&nbsp;&bull;&nbsp;<a href="faq.html">FAQ</a>
+	</div>
+</center>
+<!-- FOOTER END -->
+
+<script src="static/js/main.js"></script>
+</body>
+
+</html>
+

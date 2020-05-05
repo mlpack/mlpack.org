@@ -139,7 +139,9 @@ On the first and third Thursday of every month, at *1800 UTC* on Thursdays, we
 have casual _video meetups_ with no particular agenda.  Feel free to join up!
 We often talk about code changes that we are working on, issues people are
 having with mlpack, general design direction, and whatever else might be on our
-mind.  We use [this Zoom room](https://zoom.us/j/3820896170).
+mind.  We use [this Zoom room](https://zoom.us/j/3820896170).  For security, we
+use a password for the meeting to keep malicious bots out; the password is
+simple---it's just the name of the library (in all lowercase).
 
 ## developers
 

@@ -1,0 +1,11 @@
+<!--
+  This file contains vanity imports for the Go bindings, so that a user can
+  do `go get -u mlpack.org/v1/mlpack` instead of `go get -u
+  github.com/mlpack/mlpack-go`.
+-->
+
+<!-- go get imports -->
+<meta name="go-import" content="mlpack.org/v1/mlpack git https://github.com/mlpack/mlpack-go">
+
+<!-- redirection to godoc documentation -->
+<meta name="go-source" content="mlpack.org/v1/mlpack _ https://github.com/mlpack/mlpack-go/tree/master{/dir} https://github.com/mlpack/mlpack-go/blob/master{/dir}/{file}#L{line}">

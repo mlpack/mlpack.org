@@ -64,16 +64,16 @@ Two mailing lists are used for mlpack discussion and development:
 Everyone is welcome to contribute to mlpack.  But before becoming a contributor,
 it's often useful to understand mlpack as a user.  So, a good place to start is
 to [download mlpack](index.html) and use the
-[Python bindings](doc/mlpack-3.3.0/python_documentation.html),
-[Julia bindings](doc/mlpack-3.3.0/julia_documentation.html), or the
-[command-line programs](doc/mlpack-3.3.0/cli_documentation.html) to perform machine learning
+[Python bindings](doc/mlpack-3.3.2/python_documentation.html),
+[Julia bindings](doc/mlpack-3.3.2/julia_documentation.html), or the
+[command-line programs](doc/mlpack-3.3.2/cli_documentation.html) to perform machine learning
 tasks.  You can also write C++ programs to perform machine learning tasks with
-mlpack; [here](doc/mlpack-3.3.0/doxygen/sample.html) are some basic examples.
+mlpack; [here](doc/mlpack-3.3.2/doxygen/sample.html) are some basic examples.
 
 Once you have an idea of what's included in mlpack and how a user might use it,
 then a good next step would be to set up a development environment.  Once you
 have that set up, you can [build mlpack from
-source](doc/mlpack-3.3.0/doxygen/build.html) and [explore the
+source](doc/mlpack-3.3.2/doxygen/build.html) and [explore the
 codebase](https://github.com/mlpack/mlpack/) to see how it's organized.  It may
 even be useful to try and make small changes to the code, then rebuild the
 command-line programs and see what your changes did.
@@ -139,7 +139,9 @@ On the first and third Thursday of every month, at *1800 UTC* on Thursdays, we
 have casual _video meetups_ with no particular agenda.  Feel free to join up!
 We often talk about code changes that we are working on, issues people are
 having with mlpack, general design direction, and whatever else might be on our
-mind.  We use [this Zoom room](https://zoom.us/j/3820896170).
+mind.  We use [this Zoom room](https://zoom.us/j/3820896170).  For security, we
+use a password for the meeting to keep malicious bots out; the password is
+simple---it's just the name of the library (in all lowercase).
 
 ## developers
 

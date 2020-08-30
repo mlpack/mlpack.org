@@ -37,6 +37,10 @@ depending on your needs:
 
 - [mlpack in Python quickstart guide](doc/mlpack-3.2.2/doxygen/python_quickstart.html)
 
+### Databricks
+- From your workspace dropdown, select Create -> Library. Then specify PyPI and
+  use "mlpack" as the package name.
+
 ## Julia
 
 ### Get via Pkg

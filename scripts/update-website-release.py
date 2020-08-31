@@ -37,7 +37,7 @@ fileDate = datetime.datetime.fromtimestamp(fileDate).strftime('%B %d, %Y')
 print("File date: %s" % (fileDate))
 
 # Read the index.html file.
-with open("index.html") as f:
+with open("html/index.html") as f:
   indexContent = f.read()
 
 # Replace current version with the new version.
@@ -70,11 +70,11 @@ hashEnd = indexContent.find("</span>", hashStart)
 if hashStart > 0 and hashEnd > 0:
   indexContent = indexContent.replace(indexContent[hashStart + 22:hashEnd], fileHash)
 
-with open("index.html", "w") as f:
+with open("html/index.html", "w") as f:
   f.write(indexContent)
 
 # Read the quickstart.html file.
-with open("quickstart.html") as f:
+with open("html/getstarted.html") as f:
   quickstartContent = f.read()
 
 # Replace the built version.
@@ -83,11 +83,11 @@ builtEnd = quickstartContent.find("/doxygen/", builtStart)
 if builtStart > 0 and builtEnd > 0:
   quickstartContent = quickstartContent.replace(quickstartContent[builtStart + 61:builtEnd], fileVersion)
 
-with open("quickstart.html", "w") as f:
+with open("html/getstarted.html", "w") as f:
   f.write(quickstartContent)
 
 # Read the documentation.html file.
-with open("documentation.html") as f:
+with open("html/documentation.html") as f:
   content = f.read()
 
 # Replace the built version.
@@ -96,6 +96,6 @@ builtEnd = content.find("/doxygen/", builtStart)
 if builtStart > 0 and builtEnd > 0:
   content = content.replace(content[builtStart + 57:builtEnd], fileVersion)
 
-with open("documentation.html", "w") as f:
+with open("html/documentation.html", "w") as f:
   f.write(content)
 

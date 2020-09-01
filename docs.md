@@ -25,27 +25,27 @@ href="https://github.com/mlpack/mlpack/issues/new?assignees=&labels=t%3A+bug+rep
 it</a>.
 
  * Build
-	* [Building mlpack From Source (Linux)](doc/mlpack-3.3.2/doxygen/build.html)
-	* [Building mlpack From Source (Windows)](doc/mlpack-3.3.2/doxygen/build_windows.html)
+	* [Building mlpack From Source (Linux)](doc/mlpack-../doxygen/build.html)
+	* [Building mlpack From Source (Windows)](doc/mlpack-../doxygen/build_windows.html)
  * CLI
-	* [mlpack command-line quickstart guide](doc/mlpack-3.3.2/doxygen/cli_quickstart.html)
-	* [command-line documentation](doc/mlpack-3.3.2/cli_documentation.html)
+	* [mlpack command-line quickstart guide](doc/mlpack-../doxygen/cli_quickstart.html)
+	* [command-line documentation](doc/mlpack-../cli_documentation.html)
  * Python Bindings
-	* [mlpack in Python quickstart guide](doc/mlpack-3.3.2/doxygen/python_quickstart.html)
-	* [Binding documentation](doc/mlpack-3.3.2/python_documentation.html)	
+	* [mlpack in Python quickstart guide](doc/mlpack-../doxygen/python_quickstart.html)
+	* [Binding documentation](doc/mlpack-../python_documentation.html)	
  * Julia Bindings
-	* [mlpack in Julia quickstart guide](doc/mlpack-3.3.2/doxygen/julia_quickstart.html)
-	* [Binding documentation](doc/mlpack-3.3.2/julia_documentation.html)	
+	* [mlpack in Julia quickstart guide](doc/mlpack-../doxygen/julia_quickstart.html)
+	* [Binding documentation](doc/mlpack-../julia_documentation.html)	
  * C++
-	* [Simple Sample mlpack Programs](doc/mlpack-3.3.2/doxygen/sample.html)
-	* [Sample C++ ML App for Windows](doc/mlpack-3.3.2/doxygen/sample_ml_app.html)
-	* [File formats and loading data in mlpack](doc/mlpack-3.3.2/doxygen/formatdoc.html)
-	* [mlpack Timers](doc/mlpack-3.3.2/doxygen/timer.html)
-	* [Doxygen documentation](doc/mlpack-3.3.2/doxygen/index.html)
+	* [Simple Sample mlpack Programs](doc/mlpack-../doxygen/sample.html)
+	* [Sample C++ ML App for Windows](doc/mlpack-../doxygen/sample_ml_app.html)
+	* [File formats and loading data in mlpack](doc/mlpack-../doxygen/formatdoc.html)
+	* [mlpack Timers](doc/mlpack-../doxygen/timer.html)
+	* [Doxygen documentation](doc/mlpack-../doxygen/index.html)
  * General
-	* [Method-specific Tutorials](doc/mlpack-3.3.2/cli_documentation.html#method-specific-tutorials)
-	* [Advanced Tutorials](doc/mlpack-3.3.2/cli_documentation.html#advanced-tutorials)
-	* [Policy Class Documentation](doc/mlpack-3.3.2/cli_documentation.html#policy-class-documentation)
-	* [Writing an mlpack binding](doc/mlpack-3.3.2/doxygen/iodoc.html)
+	* [Method-specific Tutorials](doc/mlpack-../cli_documentation.html#method-specific-tutorials)
+	* [Advanced Tutorials](doc/mlpack-../cli_documentation.html#advanced-tutorials)
+	* [Policy Class Documentation](doc/mlpack-../cli_documentation.html#policy-class-documentation)
+	* [Writing an mlpack binding](doc/mlpack-../doxygen/iodoc.html)
  
  

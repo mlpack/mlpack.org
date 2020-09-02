@@ -22,6 +22,7 @@ cd ../
 
 jekyll clean && \
     jekyll b -d tmp_site/ -b / && \
+    cp -r html/* tmp_site/ && \
     ln -s /home/ryan/irclogs/freenode/mlpack/ tmp_site/irc/logs && \
     ln -s /home/jenkins-mlpack/workspace/blog/script/blog/doxygen tmp_site/gsocblog && \
     mkdir old_site/ && \

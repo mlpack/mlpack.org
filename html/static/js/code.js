@@ -1,5 +1,13 @@
 var cppCode = "";
-cppCode = "#include <mlpack/core.hpp>\r\n";
+cppCode =
+  "// This is an interactive demo, so feel free to change the code and click the 'Run' button.\r\n\r\n";
+cppCode +=
+  "// This simple program uses the mlpack::neighbor::NeighborSearch object\r\n";
+cppCode +=
+  "// to find the nearest neighbor of each point in a dataset using the L1 metric,\r\n";
+cppCode +=
+  "// and then print the index of the neighbor and the distance of it to stdout.\r\n\r\n";
+cppCode += "#include <mlpack/core.hpp>\r\n";
 cppCode +=
   "#include <mlpack/methods/neighbor_search/neighbor_search.hpp>\r\n\r\n";
 cppCode += "using namespace mlpack;\r\n";
@@ -39,7 +47,16 @@ cppCode += "  return 0;\r\n";
 cppCode += "}\r\n";
 
 var pythonCode = "";
-pythonCode = "import mlpack\r\n";
+pythonCode =
+  "# This is an interactive demo, so feel free to change the code and click the 'Run' button.\r\n\r\n";
+pythonCode +=
+  "# Simple classification on a subset of the standard machine learning covertype dataset.\r\n";
+pythonCode +=
+  "# We'll first split the dataset into a training set and a testing set, then we'll train\r\n";
+pythonCode +=
+  "# an mlpack Random Forest on the training data, and finally we'll print the accuracy of\r\n";
+pythonCode += "# the random forest on the test dataset.\r\n\r\n";
+pythonCode += "import mlpack\r\n";
 pythonCode += "import pandas as pd\r\n";
 pythonCode += "import numpy as np\r\n\r\n";
 pythonCode +=
@@ -82,7 +99,11 @@ pythonCode +=
   '    str(100 * float(correct) / float(len(test_labels))) + "%).")\r\n';
 
 juliaCode = "";
-juliaCode = "using mlpack\r\n\r\n";
+juliaCode =
+  "# This is an interactive demo, so feel free to change the code and click the 'Run' button.\r\n\r\n";
+juliaCode +=
+  "# This is a simple example of how to use the mlpack Principal Component Analysis method on a random dataset.\r\n\r\n";
+juliaCode += "using mlpack\r\n\r\n";
 juliaCode += "x = rand(5, 5);\r\n";
 juliaCode += 'print("Input data:\\n", x)\r\n\r\n';
 juliaCode += 'print("\\nPerforming PCA on dataset.")\r\n';
@@ -90,7 +111,16 @@ juliaCode += "y = mlpack.pca(x, new_dimensionality=5)\r\n\r\n";
 juliaCode += 'print("\\nPCA result:\\n", y)\r\n';
 
 goCode = "";
-goCode = "package main\r\n\r\n";
+goCode =
+  "// This is an interactive demo, so feel free to change the code and click the 'Run' button.\r\n\r\n";
+goCode +=
+  "// Simple classification on a subset of the standard machine learning covertype dataset.\r\n";
+goCode +=
+  "// We'll first split the dataset into a training set and a testing set, then we'll train\r\n";
+goCode +=
+  "// an mlpack Random Forest on the training data, and finally we'll print the accuracy of\r\n";
+goCode += "// the random forest on the test dataset.\r\n\r\n";
+goCode += "package main\r\n\r\n";
 goCode += "import (\r\n";
 goCode += '  "mlpack.org/v1/mlpack"\r\n';
 goCode += '  "fmt"\r\n';
@@ -143,7 +173,18 @@ goCode += '      (float64(sum) / float64(rows)) * 100, "%).")\r\n';
 goCode += "}\r\n";
 
 shCode = "";
-shCode = "# Get the dataset and unpack it.\r\n";
+shCode =
+  "# This is an interactive demo, so feel free to change the code and click the 'Run' button.\r\n\r\n";
+shCode +=
+  "# Simple example of how to use mlpack from the command-line, let's do some simple\r\n";
+shCode +=
+  "# classification on a subset of the standard machine learning covertype dataset.\r\n";
+shCode +=
+  "# We'll first split the dataset into a training set and a testing set, then we'll\r\n";
+shCode +=
+  "# train an mlpack random forest on the training data, and finally we'll print the accuracy\r\n";
+shCode += "# of the random forest on the test dataset.\r\n\r\n";
+shCode += "# Get the dataset and unpack it.\r\n";
 shCode +=
   "wget -q https://www.mlpack.org/datasets/covertype-small.data.csv.gz\r\n";
 shCode +=
@@ -190,4 +231,5 @@ shCode += "    --input_model_file rf-model.bin                     \\\r\n";
 shCode += "    --test_file covertype-small.test.csv                \\\r\n";
 shCode += "    --test_labels_file covertype-small.test.labels.csv  \\\r\n";
 shCode += "    --predictions_file predictions.csv                  \\\r\n";
-shCode += "    --verbose\r\n";
+shCode += "    --verbose\r\n\r\n";
+shCode += "cat predictions.csv\r\n";

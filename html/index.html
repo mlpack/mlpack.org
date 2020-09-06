@@ -98,7 +98,10 @@
 				<button id="btnlan1" onclick="changeLang(1)">Python</button>
 				<button id="btnlan2" onclick="changeLang(2)">Julia</button>
 				<button id="btnlan3" onclick="changeLang(3)">Go</button>
-				<button id="btnlan4" onclick="changeLang(4)" style="border-radius:0 4px 4px 0">CLI</button>
+				<button id="btnlan4" onclick="changeLang(4)" style="border-radius:0 4px 4px 0;border: 1px solid #9EB3C8;">CLI</button>
+				&nbsp;&nbsp;&nbsp;
+				<button id="btnselect" onclick="" style="float:right;margin-left:auto; margin-right:0;border-radius:4px
+				4px 4px 4px;pointer-events: none">Neighbor Search Example</button>
 			</div>
 
 			<div id="editorContainer" style="border-radius: 5px 5px 0 0;">
@@ -154,6 +157,10 @@
 			&nbsp;&nbsp;<a href="static/pub/2018mlpack.pdf"><img width="15" src="static/img/copy-regular.svg" alt="copy"></a>&nbsp;&nbsp;<a href="static/pub/2018mlpack.bib"><img width="15" src="static/img/info-circle-solid.svg" alt="info"></a>
 		</p>
 		<!-- PAPER-INFO END -->
+
+		<p style="text-align:center">
+			Below are some additional relevant publications about mlpack.
+		</p>
 
 		<!-- PAPER-INFO START -->
 		<p>
@@ -361,6 +368,7 @@ function changeLang(id)
 		lang = "c";
 		editor.getSession().setMode("ace/mode/c_cpp");
 		document.getElementById("btnlan0").style.backgroundColor="rgba(158,179,200,0.4)";
+		document.getElementById("btnselect").innerHTML = "Neighbor Search Example";
 	}
 	else if (id == 1)
 	{
@@ -368,6 +376,7 @@ function changeLang(id)
 		lang = "p";
 		editor.getSession().setMode("ace/mode/python");
 		document.getElementById("btnlan1").style.backgroundColor="rgba(158,179,200,0.4)";
+		document.getElementById("btnselect").innerHTML = "Random Forest Example";
 	}
 	else if (id == 2)
 	{
@@ -375,6 +384,7 @@ function changeLang(id)
 		lang = "j";
 		editor.getSession().setMode("ace/mode/julia");
 		document.getElementById("btnlan2").style.backgroundColor="rgba(158,179,200,0.4)";
+		document.getElementById("btnselect").innerHTML = "Principal Component Analysis Example";
 	}
 	else if (id == 3)
 	{
@@ -382,6 +392,7 @@ function changeLang(id)
 		lang = "g"
 		editor.getSession().setMode("ace/mode/golang");
 		document.getElementById("btnlan3").style.backgroundColor="rgba(158,179,200,0.4)";
+		document.getElementById("btnselect").innerHTML = "Random Forest Example";
 	}
 	else if (id == 4)
 	{
@@ -389,6 +400,7 @@ function changeLang(id)
 		lang = "s"
 		editor.getSession().setMode("ace/mode/sh");
 		document.getElementById("btnlan4").style.backgroundColor="rgba(158,179,200,0.4)";
+		document.getElementById("btnselect").innerHTML = "Random Forest Example";
 	}
 
 	run()

@@ -96,7 +96,8 @@
 			<div class="lang-btn-group">
 				<button id="btnlan0" onclick="changeLang(0)" style="border-radius:4px 0 0 4px;background-color:rgba(158,179,200,0.4)">C++</button>
 				<button id="btnlan1" onclick="changeLang(1)">Python</button>
-				<button id="btnlan2" onclick="changeLang(2)" style="border-radius:0 4px 4px 0">Julia</button>
+				<button id="btnlan2" onclick="changeLang(2)">Julia</button>
+				<button id="btnlan3" onclick="changeLang(3)" style="border-radius:0 4px 4px 0">Go</button>
 			</div>
 
 			<div id="editorContainer" style="border-radius: 5px 5px 0 0;">
@@ -350,6 +351,7 @@ function changeLang(id)
 	document.getElementById("btnlan0").style.backgroundColor = "transparent";
 	document.getElementById("btnlan1").style.backgroundColor = "transparent";
 	document.getElementById("btnlan2").style.backgroundColor = "transparent";
+	document.getElementById("btnlan3").style.backgroundColor = "transparent";
 
 	if (id == 0)
 	{
@@ -371,6 +373,13 @@ function changeLang(id)
 		lang = "j";
 		editor.getSession().setMode("ace/mode/julia");
 		document.getElementById("btnlan2").style.backgroundColor="rgba(158,179,200,0.4)";
+	}
+	else if (id == 3)
+	{
+		editor.setValue(goCode, -1)
+		lang = "g"
+		editor.getSession().setMode("ace/mode/go");
+		document.getElementById("btnlan3").style.backgroundColor="rgba(158,179,200,0.4)";
 	}
 
 	run()

@@ -141,3 +141,53 @@ goCode += "  }\r\n";
 goCode += '  fmt.Print(sum, " correct out of ", rows, " (",\r\n';
 goCode += '      (float64(sum) / float64(rows)) * 100, "%).")\r\n';
 goCode += "}\r\n";
+
+shCode = "";
+shCode = "# Get the dataset and unpack it.\r\n";
+shCode +=
+  "wget -q https://www.mlpack.org/datasets/covertype-small.data.csv.gz\r\n";
+shCode +=
+  "wget -q https://www.mlpack.org/datasets/covertype-small.labels.csv.gz\r\n";
+shCode +=
+  "gunzip -f covertype-small.data.csv.gz covertype-small.labels.csv.gz\r\n\r\n";
+shCode +=
+  "# Split the dataset; 70% into a training set and 30% into a test set.\r\n";
+shCode +=
+  "# Each of these options has a shorthand single-character option but here we type\r\n";
+shCode += "# it all out for clarity.\r\n";
+shCode +=
+  "mlpack_preprocess_split                                       \\\r\n";
+shCode +=
+  "    --input_file covertype-small.data.csv                     \\\r\n";
+shCode +=
+  "    --input_labels_file covertype-small.labels.csv            \\\r\n";
+shCode +=
+  "    --training_file covertype-small.train.csv                 \\\r\n";
+shCode +=
+  "    --training_labels_file covertype-small.train.labels.csv   \\\r\n";
+shCode +=
+  "    --test_file covertype-small.test.csv                      \\\r\n";
+shCode +=
+  "    --test_labels_file covertype-small.test.labels.csv        \\\r\n";
+shCode +=
+  "    --test_ratio 0.3                                          \\\r\n";
+shCode += "    --verbose\r\n\r\n";
+shCode += "# Train a random forest.\r\n";
+shCode += "mlpack_random_forest                                  \\\r\n";
+shCode += "    --training_file covertype-small.train.csv         \\\r\n";
+shCode += "    --labels_file covertype-small.train.labels.csv    \\\r\n";
+shCode += "    --num_trees 10                                    \\\r\n";
+shCode += "    --minimum_leaf_size 3                             \\\r\n";
+shCode += "    --print_training_accuracy                         \\\r\n";
+shCode += "    --output_model_file rf-model.bin                  \\\r\n";
+shCode += "    --verbose\r\n\r\n";
+shCode +=
+  "# Now predict the labels of the test points and print the accuracy.\r\n";
+shCode +=
+  "# Also, save the test set predictions to the file 'predictions.csv'.\r\n";
+shCode += "mlpack_random_forest                                    \\\r\n";
+shCode += "    --input_model_file rf-model.bin                     \\\r\n";
+shCode += "    --test_file covertype-small.test.csv                \\\r\n";
+shCode += "    --test_labels_file covertype-small.test.labels.csv  \\\r\n";
+shCode += "    --predictions_file predictions.csv                  \\\r\n";
+shCode += "    --verbose\r\n";

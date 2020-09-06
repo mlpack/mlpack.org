@@ -97,7 +97,8 @@
 				<button id="btnlan0" onclick="changeLang(0)" style="border-radius:4px 0 0 4px;background-color:rgba(158,179,200,0.4)">C++</button>
 				<button id="btnlan1" onclick="changeLang(1)">Python</button>
 				<button id="btnlan2" onclick="changeLang(2)">Julia</button>
-				<button id="btnlan3" onclick="changeLang(3)" style="border-radius:0 4px 4px 0">Go</button>
+				<button id="btnlan3" onclick="changeLang(3)">Go</button>
+				<button id="btnlan4" onclick="changeLang(4)" style="border-radius:0 4px 4px 0">CLI</button>
 			</div>
 
 			<div id="editorContainer" style="border-radius: 5px 5px 0 0;">
@@ -300,7 +301,7 @@
 		</p>
 
 		<center>
-			<img style="padding-top:22px;" width="18" src="static/img/numfocus-logo.png" alt="NumFOCUS">
+			<img style="padding-top:22px;" width="120" src="static/img/numfocus-logo.png" alt="NumFOCUS">
 		</center>
 
 		<p align="justify">
@@ -352,6 +353,7 @@ function changeLang(id)
 	document.getElementById("btnlan1").style.backgroundColor = "transparent";
 	document.getElementById("btnlan2").style.backgroundColor = "transparent";
 	document.getElementById("btnlan3").style.backgroundColor = "transparent";
+	document.getElementById("btnlan4").style.backgroundColor = "transparent";
 
 	if (id == 0)
 	{
@@ -381,6 +383,13 @@ function changeLang(id)
 		editor.getSession().setMode("ace/mode/golang");
 		document.getElementById("btnlan3").style.backgroundColor="rgba(158,179,200,0.4)";
 	}
+	else if (id == 4)
+	{
+		editor.setValue(shCode, -1)
+		lang = "s"
+		editor.getSession().setMode("ace/mode/sh");
+		document.getElementById("btnlan4").style.backgroundColor="rgba(158,179,200,0.4)";
+	}
 
 	run()
 }
@@ -407,7 +416,8 @@ function checkOutput()
 		if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
 			if (!this.responseText.includes(hash)) {
 				clearInterval(checkTimer);
-				editorOutput.innerHTML = this.responseText.substring(1, this.responseText.length - 1);
+				var out = this.responseText.substring(1, this.responseText.length - 1);
+				editorOutput.innerHTML = out.split('!!%').join('\n');
 			}
 		}
 	}
@@ -425,7 +435,8 @@ function run()
 				 editorOutput.innerHTML = "Running, wait for output..."
 				 checkTimer = setInterval(checkOutput, 1000);
 			} else {
-				editorOutput.innerHTML = this.responseText.substring(1, this.responseText.length - 1);
+				var out = this.responseText.substring(1, this.responseText.length - 1);
+				editorOutput.innerHTML = out.split('!!%').join('\n');
 			}
 		}
 	}

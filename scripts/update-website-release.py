@@ -87,7 +87,7 @@ with open("html/getstarted.html", "w") as f:
   f.write(quickstartContent)
 
 # Read the documentation.html file.
-with open("html/documentation.html") as f:
+with open("html/docs.html") as f:
   content = f.read()
 
 # Replace the built version.
@@ -96,6 +96,6 @@ builtEnd = content.find("/doxygen/", builtStart)
 if builtStart > 0 and builtEnd > 0:
   content = content.replace(content[builtStart + 57:builtEnd], fileVersion)
 
-with open("html/documentation.html", "w") as f:
+with open("html/docs.html", "w") as f:
   f.write(content)
 

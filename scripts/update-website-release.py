@@ -86,16 +86,3 @@ if builtStart > 0 and builtEnd > 0:
 with open("html/getstarted.html", "w") as f:
   f.write(quickstartContent)
 
-# Read the documentation.html file.
-with open("html/docs.html") as f:
-  content = f.read()
-
-# Replace the built version.
-builtStart = content.find('id="build-linux" href="https://www.mlpack.org/doc/mlpack-')
-builtEnd = content.find("/doxygen/", builtStart)
-if builtStart > 0 and builtEnd > 0:
-  content = content.replace(content[builtStart + 57:builtEnd], fileVersion)
-
-with open("html/docs.html", "w") as f:
-  f.write(content)
-

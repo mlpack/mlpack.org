@@ -114,7 +114,7 @@
 	<!-- EDITOR END -->
 </div>
 
-<!-- EDITOR-OUTPUT STARt -->
+<!-- EDITOR-OUTPUT START -->
 <div class="wrapperEditor" style="list-style-type:none;">
 	<div class="box a"></div>
 
@@ -131,6 +131,31 @@
 	<div class="box a"></div>
 </div>
 <!-- EDITOR-OUTPUT END -->
+
+<br><br>
+
+<!-- CARDS START -->
+<div class="wrapperCards" style="list-style-type:none;">
+	<div></div>
+	<div class="card" id="card-get-started" onclick="location.href='getstarted.html';">
+		<h4 class="card-title">Get Started</h4>
+		Download, install or build mlpack from source.
+	</div>
+	<div class="card" style="margin-left: 20px" id="card-documentation" onclick="location.href='docs.html';">
+		<h4 class="card-title">Documentation</h4>
+		Take a look at the API, bindings to other languages and more.
+	</div>
+	<div class="card" style="margin-left: 20px" id="card-tutorials" onclick="location.href='https://www.mlpack.org/doc/stable/cli_documentation.html#tutorials';">
+		<h4 class="card-title">Tutorials</h4>
+		Need some inspiration? Start with some tutorials.
+	</div>
+	<div class="card" style="margin-left: 20px" id="card-faq" onclick="location.href='faq.html';">
+		<h4 class="card-title">FAQ</h4>
+		Having questions or problems? Check here.
+	</div>
+	<div></div>
+</div>
+<!-- CARDS END -->
 
 <br><br>
 
@@ -338,7 +363,6 @@
 <script src="static/js/code.js"></script>
 <!-- EDITOR-SRIPTS END -->
 
-
 <script>
 var feContainer = document.getElementById('editorContainer');
 var editorOutput = document.getElementById('editorOutput');
@@ -467,12 +491,25 @@ function resize() {
 		document.getElementById("citationleft").style.width = (0.9 * introSize) / 2 + "px";
 		document.getElementById("citationright").style.width = (0.9 * introSize) / 2 + "px";
 
+		var cardSize = 0.9 * (introSize - 60) / 4;
+		document.getElementById("card-get-started").style.width = cardSize + "px";
+		document.getElementById("card-documentation").style.width = cardSize + "px";
+		document.getElementById("card-tutorials").style.width = cardSize + "px";
+		document.getElementById("card-faq").style.width = cardSize + "px";
+
 		feContainer.style.width = 0.9 * introSize + "px";
 	} else {
 		feContainer.style.width = 0.5 * document.documentElement.clientWidth + "px";
 		document.getElementById("editorOutput").style.width = 0.5 * document.documentElement.clientWidth + "px";
 		document.getElementById("citationleft").style.width = 0.26 * document.documentElement.clientWidth + "px";
 		document.getElementById("citationright").style.width = 0.24 * document.documentElement.clientWidth + "px";
+
+		var cardSize = 0.5 * (document.documentElement.clientWidth - 110) / 4;
+		document.getElementById("card-get-started").style.width = cardSize + "px";
+		document.getElementById("card-documentation").style.width = cardSize + "px";
+		document.getElementById("card-tutorials").style.width = cardSize + "px";
+		document.getElementById("card-faq").style.width = cardSize + "px";
+
 	}
 
 	editor.resize();

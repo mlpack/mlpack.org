@@ -286,6 +286,29 @@ font-variant-ligatures: none;
   grid-template-columns: auto auto auto;
 }
 
+.wrapperCards {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto auto 1fr;
+}
+
+.card-title {
+text-align: center;
+color: #667D99;
+}
+
+.card {
+  padding: 10px 10px 30px 10px;
+  background-color: #FFFFFF;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.card:hover {
+  border: 2px solid #C0412C;
+  cursor: pointer;
+}
+
 .wrapperTitle {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -423,6 +446,7 @@ margin-right: 10px;
 .build-btn:hover {
   background-color: rgba(31,54,77,0.8);
   color: white;
+  cursor: pointer;
 }
 
 .lang-btn-group button {

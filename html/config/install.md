@@ -53,7 +53,7 @@ stable windows msi c++
 # See https://www.mlpack.org/doc/mlpack-3.2.2/doxygen/build_windows.html
 
 stable windows source c++
-# See https://www.mlpack.org/doc/mlpack-3.2.2/doxygen/build_windows.html
+# See https://www.mlpack.org/doc/stable/doxygen/build_windows.html
 
 nightly linux (debian) source c++
 apt-get install libboost-math-dev libboost-program-options-dev libboost-test-dev libboost-serialization-dev libarmadillo-dev binutils-dev libensmallen-dev libstb-dev wget git !! git clone https://github.com/mlpack/mlpack.git ! cd mlpack ! mkdir build ! cmake .. ! make ! make install !! # Simple compiler command ! g++ code.cpp -larmadillo -lmlpack

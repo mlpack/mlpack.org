@@ -8,7 +8,7 @@ stable linux (debian) apt python
 apt install libmlpack-dev mlpack-bin !! # In Python ! import mlpack
 
 stable linux (debian) apt all
-apt install libmlpack-dev mlpack-bin libarmadillo-dev
+apt install libmlpack-dev mlpack-bin libarmadillo-dev python3-mlpack
 
 stable linux (debian) pip python
 pip install mlpack !! # In Python ! import mlpack

@@ -5,7 +5,7 @@ C++ Python Julia All
 
 Linux (Debian)
 Stable Nightly
-apt pip conda Pkg.jil source
+apt pip conda Pkg.jl source
 C++ Python Julia All
 
 Windows

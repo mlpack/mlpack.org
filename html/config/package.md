@@ -1,6 +1,6 @@
 macOS
 Stable Nightly
-brew Pkg.jil source
+brew Pkg.jl source
 C++ Python Julia All
 
 Linux (Debian)

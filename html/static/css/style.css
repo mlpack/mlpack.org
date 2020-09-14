@@ -112,7 +112,6 @@ border-radius: 16px;
 }
 
 .asset-wrapper {
-cursor: pointer;
 text-align: left;
 display: grid;
 grid-template-columns: 40% 20% 20% 20%;

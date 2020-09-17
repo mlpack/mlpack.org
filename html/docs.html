@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="static/css/style.css">
+
+<title>mlpack - Docummentation</title>
+</head>
+
+<body>
+
+<!-- NAVIGATION START -->
+<div class="wrapperNavigation" style="list-style-type:none;background-color: #1f364d;">
+	<div class="box a"></div>
+
+	<div class="box a">
+		<header>
+			<a id="logo" href="index.html">
+				<img src="static/img/mlpack-logo.svg" alt="mlpack">
+			</a>
+
+			<a href="index.html" style="text-decoration: none;font-weight: 400;font-size:18px;color: #fff">mlpack</a>
+
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="getstarted.html">Quick Start</a>
+				<a href="docs.html">Documentation</a>
+				<a href="community.html">Community</a>
+				<a href="questions.html">FAQ</a>
+				<a href="https://github.com/mlpack/mlpack">GitHub</a>
+			</nav>
+		</header>
+	</div>
+
+	<div class="box a"></div>
+</div>
+<!-- NAVIGATION END -->
+
+<br>
+
+<!-- DOCUMENTATION START -->
+<center>
+	<div style="max-width:800px;text-align:left">
+
+		<!-- SUB-NAVIGATION START -->
+		<div class="nav-element" id="sub-nav">
+			<p>
+				<span style="font-weight:600">Documentation</span><br>
+				<span class="nav-sub" onclick="ScrollTo('page-build')">Build</span><br>
+				<span class="nav-sub" onclick="ScrollTo('page-cli')">CLI</span><br>
+				<span class="nav-sub" onclick="ScrollTo('page-bindings-python')">Python Bindings</span><br>
+				<span class="nav-sub" onclick="ScrollTo('page-bindings-julia')">Julia Bindings</span><br>
+				<span class="nav-sub" onclick="ScrollTo('page-bindings-r')">R Bindings</span><br>
+				<span class="nav-sub" onclick="ScrollTo('page-bindings-go')">Go Bindings</span><br>
+				<span class="nav-sub" onclick="ScrollTo('page-cpp')">C++</span><br>
+				<span class="nav-sub" onclick="ScrollTo('page-general')">General</span><br>
+			</p>
+		</div>
+		<!-- SUB-NAVIGATION END -->
+
+		<div id="helper"></div>
+
+		<h3>Documentation</h3>
+		<p align="justify">
+			High-quality documentation is a development goal of mlpack. mlpack’s
+			documentation is split into two parts: documentation for the bindings/CLI,
+			and documentation for the C++ library. Also useful is the
+			<a href="https://github.com/mlpack/examples/">examples repository</a>, which
+			demonstrates usage of mlpack’s functionality in simple example programs.
+		</p>
+
+		<p>
+			Generally, working with the bindings is a good choice for simple machine
+			learning and data science tasks, and writing C++ is a good idea when complex
+			or custom functionality is desired.
+		</p>
+
+		<p align="justify">
+			All interfaces are heavily documented, and if you find a documentation issue, please <a href="https://github.com/mlpack/mlpack/issues/new?assignees=&labels=t%3A+bug+report%2C+c%3A+documentation%2C+s%3A+unanswered&template=1-documentation.md&title=">report it</a>.
+		</p>
+
+		<!-- BUILD SECTION START -->
+		<h3 id="page-build">Build</h3>
+		<p align="justif" style="padding-left:10px;">
+			<span style="color:#D0331F">&bull;</span> <a id="build-linux" href="https://www.mlpack.org/doc/stable/doxygen/build.html">Building mlpack From Source (Linux)</a>
+			<br>
+			<span style="color:#D0331F">&bull;</span> <a id="build-windows" href="https://www.mlpack.org/doc/stable/doxygen/build_windows.html">Building mlpack From Source (Windows)</a>
+		</p>
+		<!-- BUILD SECTION END -->
+
+		<!-- CLI SECTION START -->
+		<h3 id="page-cli">CLI</h3>
+		<p align="justif" style="padding-left:10px;">
+			<span style="color:#D0331F">&bull;</span> <a id="cli-quickstart" href="https://www.mlpack.org/doc/stable/doxygen/cli_quickstart.html">mlpack command-line quickstart guide</a>
+			<br>
+			<span style="color:#D0331F">&bull;</span> <a id="cli-documentation" href="https://www.mlpack.org/doc/stable/cli_documentation.html">command-line documentation</a>
+		</p>
+		<!-- CLI SECTION END -->
+
+		<!-- PYTHON BINDINGS SECTION START -->
+		<h3 id="page-bindings-python">Python Bindings</h3>
+		<p align="justif" style="padding-left:10px;">
+			<span style="color:#D0331F">&bull;</span> <a id="python-quickstart" href="https://www.mlpack.org/doc/stable/doxygen/python_quickstart.html">mlpack in Python quickstart guide</a>
+			<br>
+			<span style="color:#D0331F">&bull;</span> <a id="python-documentation" href="https://www.mlpack.org/doc/stable/python_documentation.html">Binding documentation</a>
+		</p>
+		<!-- PYTHON BINDINGS SECTION END -->
+
+		<!-- JULIA BINDINGS SECTION START -->
+		<h3 id="page-bindings-julia">Julia Bindings</h3>
+		<p align="justif" style="padding-left:10px;">
+			<span style="color:#D0331F">&bull;</span> <a id="julia-quickstart" href="https://www.mlpack.org/doc/stable/doxygen/julia_quickstart.html">mlpack in Julia quickstart guide</a>
+			<br>
+			<span style="color:#D0331F">&bull;</span> <a id="julia-documentation" href="https://www.mlpack.org/doc/stable/julia_documentation.html">Binding documentation</a>
+		</p>
+		<!-- JULIA BINDINGS SECTION END -->
+
+		<!-- R BINDINGS SECTION START -->
+		<h3 id="page-bindings-r">R Bindings</h3>
+		<p align="justif" style="padding-left:10px;">
+			<span style="color:#D0331F">&bull;</span> <a id="r-quickstart" href="https://www.mlpack.org/doc/stable/doxygen/r_quickstart.html">mlpack in R quickstart guide</a>
+			<br>
+			<span style="color:#D0331F">&bull;</span> <a id="r-documentation" href="https://www.mlpack.org/doc/stable/r_documentation.html">Binding documentation</a>
+		</p>
+		<!-- R BINDINGS SECTION END -->
+
+		<!-- GO BINDINGS SECTION START -->
+		<h3 id="page-bindings-go">Go Bindings</h3>
+		<p align="justif" style="padding-left:10px;">
+			<span style="color:#D0331F">&bull;</span> <a id="go-quickstart" href="https://www.mlpack.org/doc/stable/doxygen/go_quickstart.html">mlpack in Go quickstart guide</a>
+			<br>
+			<span style="color:#D0331F">&bull;</span> <a id="go-documentation" href="https://www.mlpack.org/doc/stable/go_documentation.html">Binding documentation</a>
+		</p>
+		<!-- GO BINDINGS SECTION END -->
+
+		<!-- C++ SECTION START -->
+		<h3 id="page-cpp">C++</h3>
+		<p align="justif" style="padding-left:10px;">
+			<span style="color:#D0331F">&bull;</span> <a id="sample-program" href="https://www.mlpack.org/doc/stable/doxygen/sample.html">Simple Sample mlpack Programs</a>
+			<br>
+			<span style="color:#D0331F">&bull;</span> <a id="sample-program-windows" href="https://www.mlpack.org/doc/stable/doxygen/sample_ml_app.html">Sample C++ ML App for Windows</a>
+			<br>
+			<span style="color:#D0331F">&bull;</span> <a id="file-formats" href="https://www.mlpack.org/doc/stable/doxygen/formatdoc.html">File formats and loading data in mlpack</a>
+			<br>
+			<span style="color:#D0331F">&bull;</span> <a id="mlpack-timer" href="https://www.mlpack.org/doc/stable/doxygen/timer.html">mlpack Timers</a>
+			<br>
+			<span style="color:#D0331F">&bull;</span> <a id="doxygen-documentation" href="https://www.mlpack.org/doc/stable/doxygen/index.html">Doxygen documentation</a>
+		</p>
+		<!-- C++ SECTION END -->
+
+		<!-- GENERAL SECTION START -->
+		<h3 id="page-general">General</h3>
+		<p align="justif" style="padding-left:10px;">
+			<span style="color:#D0331F">&bull;</span> <a id="method-tutorials" href="https://www.mlpack.org/doc/stable/cli_documentation.html#method-specific-tutorials">Method-specific
+			Tutorials</a>
+			<br>
+			<span style="color:#D0331F">&bull;</span> <a id="advanced-tutorials" href="https://www.mlpack.org/doc/stable/cli_documentation.html#advanced-tutorials">Advanced Tutorials</a>
+			<br>
+			<span style="color:#D0331F">&bull;</span> <a id="policy-class-documentation" href="https://www.mlpack.org/doc/stable/cli_documentation.html#policy-class-documentation">Policy Class Documentation</a>
+			<br>
+			<span style="color:#D0331F">&bull;</span> <a id="writing-binding" href="https://www.mlpack.org/doc/stable/doxygen/iodoc.html">Writing an mlpack binding</a>
+			<br>
+		</p>
+		<!-- GENERAL SECTION END -->
+
+	</div>
+</center>
+<!-- DOCUMENTATION END -->
+<br>
+
+<!-- FOOTER START -->
+<center>
+	<br><br><br><br>
+
+	<div style="max-width:800px">
+	<p style="font-size:15px;">&copy; 2007 - 2020 mlpack developers (BSD License).</p>
+		<a href="index.html">Home</a>
+		&nbsp;&bull;&nbsp;<a href="getstarted.html">Quick Start</a>
+		&nbsp;&bull;&nbsp;<a href="docs.html">Documentation</a>
+		&nbsp;&bull;&nbsp;<a href="community.html">Community</a>
+		&nbsp;&bull;&nbsp;<a href="questions.html">FAQ</a>
+		&nbsp;&bull;&nbsp;<a href="https://github.com/mlpack/mlpack">GitHub</a>
+	</div>
+</center>
+<!-- FOOTER END -->
+
+<script src="static/js/main.js"></script>
+</body>
+
+</html>
+

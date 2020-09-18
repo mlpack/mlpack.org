@@ -25,11 +25,11 @@ jekyll clean && \
     cp -r html/* tmp_site/ && \
     ln -s /home/ryan/irclogs/freenode/mlpack/ tmp_site/irc/logs && \
     ln -s /home/jenkins-mlpack/workspace/blog/script/blog/doxygen tmp_site/gsocblog && \
-    mkdir old_site/ && \
-    mv "$1/"* old_site/ && \
+    mkdir _old_site/ && \
+    mv "$1/"* _old_site/ && \
     mv tmp_site/* "$1/" && \
     ln -s "$1/doc/$newest_version" "$1/doc/stable" && \
-    rm -rf tmp_site old_site;
+    rm -rf tmp_site _old_site;
 
 # Allow others in the www-mlpack group to modify the site.
 chgrp -R www-mlpack $1/

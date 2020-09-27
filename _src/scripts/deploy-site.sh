@@ -15,7 +15,7 @@ newest_version=`ls doc/ | grep 'mlpack-[0-9]' | sort -r | head -1`;
 rm -rf datasets/;
 mkdir datasets/;
 cd datasets/;
-wget https://www.ratml.org/misc/datasets.tar.gz;
+wget https://zenodo.org/record/4042173/files/datasets.tar.gz;
 tar -xvzpf datasets.tar.gz;
 rm datasets.tar.gz;
 cd ../

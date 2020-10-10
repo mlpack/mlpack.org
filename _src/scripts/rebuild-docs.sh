@@ -76,7 +76,8 @@ do
              '"$awk_filter"'
              // { if(no_print != 1) { print $0; } }' |\
         sed 's/<div .*//' |\
-        sed 's/'"$l"'_//' > doc/mlpack-${version}/${l}_binding_documentation_mod.md;
+        sed 's/#'"$l"'_//' |\
+        sed 's/#doc_'"$l"'_//' > doc/mlpack-${version}/${l}_binding_documentation_mod.md;
     eval ${grep_filter} | sed 's/#'"$l"'_/#/' >\
         doc/mlpack-${version}/${l}_binding_header_mod.md;
 

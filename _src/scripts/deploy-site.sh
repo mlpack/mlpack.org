@@ -30,7 +30,3 @@ jekyll clean && \
     mv tmp_site/* "$1/" && \
     ln -s "$1/doc/$newest_version" "$1/doc/stable" && \
     rm -rf tmp_site _old_site;
-
-# Allow others in the www-mlpack group to modify the site.
-chgrp -R www-mlpack $1/
-chmod -R g+w $1/

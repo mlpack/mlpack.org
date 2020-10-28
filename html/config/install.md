@@ -50,7 +50,7 @@ stable macos source python
 brew install boost armadillo ! pip install numpy pandas cython ! wget -c http://mlpack.org/files/mlpack-latest.tar.gz -O - | tar -xz ! cd mlpack ! cd mlpack ! mkdir build ! cmake -DBUILD_PYTHON_BINDINGS=ON .. ! make ! make install !! # In Python ! import mlpack
 
 stable windows msi c++
-# See https://www.mlpack.org/doc/mlpack-../doxygen/build_windows.html
+# See https://www.mlpack.org/doc/mlpack-3.2.2/doxygen/build_windows.html
 
 stable windows source c++
 # See https://www.mlpack.org/doc/stable/doxygen/build_windows.html

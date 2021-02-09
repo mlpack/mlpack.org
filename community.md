@@ -127,7 +127,7 @@ IRC via freenode: [#mlpack](http://webchat.freenode.net/?channels=mlpack); you c
 
 Gitter: [mlpack/mlpack](https://gitter.im/mlpack/mlpack); you will need a Github account
 
-Matrix: [#mlpack:matrix.org](https://matrix.org/); you will need to set up a matrix.org account and use a client such as [Riot](https://riot.im/) or others.
+Matrix: [#mlpack:matrix.org](https://matrix.org/); you will need to set up a matrix.org account and use a client such as [Element](https://element.io) or others.
 
 Slack: [mlpack.slack.org](https://mlpack.slack.org/); in order to create an account, you’ll need to use the auto-inviter to send yourself an invite: [slack-inviter.mlpack.org](http://slack-inviter.mlpack.org:3000/).
 

@@ -63,7 +63,7 @@ pythonCode +=
   '# Load the dataset from an online URL.  Replace with "covertype.csv.gz" if you\r\n';
 pythonCode += "# want to use on the full dataset.\r\n";
 pythonCode +=
-  'df = pd.read_csv("https://lab.mlpack.org/data/covertype-small.csv.gz")\r\n\r\n';
+  'df = pd.read_csv("https://www.mlpack.org/datasets/covertype-small.csv.gz")\r\n\r\n';
 pythonCode += "# Split the labels.\r\n";
 pythonCode += 'labels = df["label"]\r\n';
 pythonCode += 'dataset = df.drop("label", 1)\r\n\r\n';

@@ -15,7 +15,11 @@ newest_version=`ls doc/ | grep 'mlpack-[0-9]' | sort -r | head -1`;
 rm -rf datasets/;
 mkdir datasets/;
 cd datasets/;
-wget https://zenodo.org/record/4064956/files/datasets.tar.gz;
+# Reproducible source is at:
+# https://zenodo.org/record/4064956/files/datasets.tar.gz;
+# We use the local mirror instead to avoid triggering 429s from Zenodo (and also
+# to reduce bandwidth usage).
+wget https://ratml.org/misc/datasets.tar.gz
 tar -xvzpf datasets.tar.gz;
 rm datasets.tar.gz;
 cd ../

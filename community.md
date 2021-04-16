@@ -65,6 +65,7 @@ Everyone is welcome to contribute to mlpack.  But before becoming a contributor,
 it's often useful to understand mlpack as a user.  So, a good place to start is
 to [download mlpack](index.html) and use the
 [Python bindings](doc/mlpack-3.4.2/python_documentation.html),
+[R bindings](doc/mlpack-3.4.2/r_documentation.html),
 [Julia bindings](doc/mlpack-3.4.2/julia_documentation.html), or the
 [command-line programs](doc/mlpack-3.4.2/cli_documentation.html) to perform machine learning
 tasks.  You can also write C++ programs to perform machine learning tasks with

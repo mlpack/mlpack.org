@@ -87,6 +87,10 @@ Here are a couple ideas:
    is a list of Github issues tagged `question`.  Helping others figure out
    their problems is really one of the best ways to learn about the library.
 
+ * Read through the [vision document](papers/vision.pdf) to learn about the
+   development goals of the mlpack community and see the high-level tasks that
+   need to be done to accomplish that vision.
+
  * Find an issue that needs implementation help;
    [here](https://github.com/mlpack/mlpack/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
    is a list of Github issues tagged `help wanted`; and

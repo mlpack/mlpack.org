@@ -41,6 +41,12 @@ to help with the bug report process.
     other needs. See the [community](community.html#developers) page for more
     details and a list of contributors.
 
+ * **What are the development goals?**
+
+    See the [vision document](papers/vision.pdf), which lays out a number of
+    development goals and directions for mlpack in the short- to medium-term
+    future.
+
  * **Where is the source code?**
 
     mlpack development is done on [GitHub](https://github.com/mlpack/mlpack) and

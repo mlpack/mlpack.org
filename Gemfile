@@ -15,3 +15,5 @@ gem "jekyll-redirect-from"
 gem "jekyll-watch", "~> 2.1"
 
 gem "ruby_dep", "~> 1.5"
+
+gem "kramdown-parser-gfm", "~> 1.1"

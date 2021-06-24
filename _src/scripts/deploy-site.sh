@@ -16,7 +16,7 @@ rm -rf datasets/;
 mkdir datasets/;
 cd datasets/;
 # Reproducible source is at:
-# https://zenodo.org/record/4904781/files/datasets.tar.gz
+# https://zenodo.org/record/5021503/files/datasets.tar.gz;
 # We use the local mirror instead to avoid triggering 429s from Zenodo (and also
 # to reduce bandwidth usage).
 wget https://ratml.org/misc/datasets.tar.gz

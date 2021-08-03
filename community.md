@@ -128,7 +128,9 @@ all linked together thanks to the [Matrix project](http://www.matrix.org/). You 
 any of the services below and will be able to communicate with anyone who is using any of
 the other services (assuming that the inter-service bridges are correctly operating).
 
-IRC via freenode: [#mlpack](http://webchat.freenode.net/?channels=mlpack); you can use webchat (the link), or set up an account on freenode and use a client of your choice.
+IRC via libera.chat: [#mlpack](http://web.libera.chat/); you can use webchat
+(the link) and specify the channel `#mlpack`, or set up an account on
+libera.chat and use a client of your choice.
 
 Gitter: [mlpack/mlpack](https://gitter.im/mlpack/mlpack); you will need a Github account
 

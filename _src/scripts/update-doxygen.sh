@@ -15,7 +15,6 @@
 cd "$(dirname "$0")";
 cd ../../;
 
-_src/scripts/update-irc.sh;
 _src/scripts/build-version.sh git;
 _src/scripts/rebuild-docs.sh;
 _src/scripts/deploy-site.sh "$1";

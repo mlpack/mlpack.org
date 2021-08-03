@@ -136,7 +136,9 @@ Matrix: [#mlpack:matrix.org](https://matrix.org/); you will need to set up a mat
 
 Slack: [mlpack.slack.org](https://mlpack.slack.org/); in order to create an account, you’ll need to use the auto-inviter to send yourself an invite: [slack-inviter.mlpack.org](http://slack-inviter.mlpack.org:3000/).
 
-Discussions in the chat channel are [logged](https://www.mlpack.org/irc/).
+Discussions in the chat channel are
+[logged](https://libera.irclog.whitequark.org/mlpack/) using [whitequark's
+graciously provided irc logger](https://github.com/whitequark/irclogger).
 
 ### video meet-up
 

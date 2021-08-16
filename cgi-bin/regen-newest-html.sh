@@ -1,1 +1,0 @@
-../irc/scripts/regen-newest-html.sh

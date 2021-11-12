@@ -60,7 +60,7 @@ echo "Generating documentation for version $version...";
 cd _src/mlpack-$version/;
 mkdir -p build/;
 cd build/;
-cmake -DBUILD_MARKDOWN_BINDINGS=ON ../;
+cmake -DDOWNLOAD_DEPENDENCIES=ON -DBUILD_MARKDOWN_BINDINGS=ON ../;
 make -j4 markdown;
 if [ "$?" -ne "0" ];
 then

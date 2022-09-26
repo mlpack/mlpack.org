@@ -28,7 +28,7 @@ Two mailing lists are used for mlpack discussion and development:
 <ul class="flex-container">
   <li class="flex-item">
     <div class="card">
-      <a href="http://lists.mlpack.org/mailman/listinfo/mlpack" class="card-global-link"/>
+      <a href="https://www.mlpack.org/mailman3/postorius/lists/mlpack.lists.mlpack.org/" class="card-global-link"/>
       <i class="far fa-envelope fa-lg card-icon"></i>
       <p><a>mlpack mailing list</a></p><p>for email discussion and announcements</p>
     </div>
@@ -44,7 +44,7 @@ Two mailing lists are used for mlpack discussion and development:
 
   <li class="flex-item">
     <div class="card">
-      <a href="http://lists.mlpack.org/mailman/listinfo/mlpack-git" class="card-global-link"/>
+      <a href="https://www.mlpack.org/mailman3/postorius/lists/mlpack-git.lists.mlpack.org" class="card-global-link"/>
       <i class="fab fa-git-square fa-lg card-icon"></i>
       <p><a href="">mlpack-git mailing list</a></p><p>which sends email for all mlpack-related activity</p>
     </div>

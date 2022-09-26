@@ -97,7 +97,7 @@ msearchbox_string="`cat _src/doxygen/msearchbox.html | tr '\n' ' '`";
 
 cp _src/doxygen/header.template.html _src/doxygen/header.$version.html;
 # Make sure this file exists...
-jekyll b -b /;
+bundle exec jekyll b -b /;
 cat _site/index.html |\
     awk '/[ \t]*<body>/{show=1;next} /[ \t]*<main>/{show=0} // {if(show == 1){print $0;}}' |\
     sed 's|learning library</big></div>|learning library</big></div><div id="ens_header_version_select"><select class="doxygen-version-select" id="version-select" onchange="changeVersion()">'"$option_string"'</select></div>|' |\

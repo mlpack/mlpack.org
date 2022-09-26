@@ -8,7 +8,7 @@
 # - run this script with $PWD=root of repository
 
 # We need a working copy of the site.
-#jekyll b;
+#bundle exec jekyll b;
 
 rm -f doc/mlpack-*/lang_list.md;
 rm -f doc/mlpack-*/tutorials.md;

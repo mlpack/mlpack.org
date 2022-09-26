@@ -11,8 +11,8 @@ fi
 # Find the newest version.
 newest_version=`ls doc/ | grep 'mlpack-[0-9]' | sort -r | head -1`;
 
-jekyll clean && \
-    jekyll b -d tmp_site/ -b / && \
+bundle exec jekyll clean && \
+    bundle exec jekyll b -d tmp_site/ -b / && \
     cp -r html/* tmp_site/ && \
     ln -s /home/jenkins-mlpack/workspace/blog/script/blog/doxygen tmp_site/gsocblog && \
     mkdir _old_site/ && \

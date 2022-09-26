@@ -8,7 +8,7 @@
 # - run this script with $PWD=root of repository
 
 # We need a working copy of the site.
-jekyll b;
+bundle exec jekyll b;
 
 rm -f doc/*
 
@@ -33,7 +33,7 @@ done
 _src/scripts/rebuild-docs.sh;
 _src/scripts/extract-contributors.sh;
 
-jekyll clean && jekyll b;
+bundle exec jekyll clean && bundle exec jekyll b;
 
 # Hardcoded gsocblog path.  Change if needed.
 ln -s /home/jenkins-mlpack/workspace/blog/script/blog/doxygen _site/gsocblog;

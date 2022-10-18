@@ -83,98 +83,102 @@ cat doc/mlpack.md |\
 
 cd ../../../;
 
-# Lastly, generate what we need to build the Doxygen documentation.
-option_string="";
-for dv in ${doxygen_versions[@]};
-do
-  option_string="$option_string<option value=\"$dv\"";
-  if [ "a$dv" == "a$version" ]; then
-    option_string="$option_string selected=\"\"";
-  fi
-  option_string="$option_string>$dv</option>";
-done
-msearchbox_string="`cat _src/doxygen/msearchbox.html | tr '\n' ' '`";
-
-cp _src/doxygen/header.template.html _src/doxygen/header.$version.html;
-# Make sure this file exists...
-bundle exec jekyll b -b /;
-cat _site/index.html |\
-    awk '/[ \t]*<body>/{show=1;next} /[ \t]*<main>/{show=0} // {if(show == 1){print $0;}}' |\
-    sed 's|learning library</big></div>|learning library</big></div><div id="ens_header_version_select"><select class="doxygen-version-select" id="version-select" onchange="changeVersion()">'"$option_string"'</select></div>|' |\
-    sed 's/class="active" //' |\
-    sed 's|title="GitHub">GitHub</a>|title="GitHub">GitHub</a>'"$msearchbox_string"'|' >>\
-    _src/doxygen/header.$version.html;
-
-cd _src/mlpack-${version}/build/;
-
-# Do we need to update the Doxygen stylesheet?
-modified_lines=`cat ../Doxyfile | grep 'doxygen-src/header.html' | wc -l`;
-if [ "a$modified_lines" == "a0" ]; then
-  # Modify the Doxyfile.
-  sed -i "s|HTML_HEADER[ ]*=[ ]*.*$|HTML_HEADER = \"${doxygensrcdir}/header.$1.html\"|" ../Doxyfile;
-  sed -i "s|HTML_FOOTER[ ]*=[ ]*.*$|HTML_FOOTER = \"${doxygensrcdir}/footer.html\"|" ../Doxyfile;
-  sed -i "s|HTML_STYLESHEET[ ]*=[ ]*.*$|HTML_STYLESHEET = \"${doxygensrcdir}/doxygen.css\"|" ../Doxyfile;
-  sed -i "s|HTML_EXTRA_STYLESHEET[ ]*=[ ]*.*$|HTML_EXTRA_STYLESHEET = \"${doxygensrcdir}/style-doxygen.css\"|" ../Doxyfile;
-fi
-
-# Modify other parts of the Doxyfile.
-sed -i "s|GENERATE_TREEVIEW[ ]*=[ ]*.*$|GENERATE_TREEVIEW = YES|" ../Doxyfile;
-sed -i "s|TREEVIEW_WIDTH[ ]*=[ ]*.*$|TREEVIEW_WIDTH = 220|" ../Doxyfile;
-sed -i "s|DISABLE_INDEX[ ]*=[ ]*.*$|DISABLE_INDEX = YES|" ../Doxyfile;
-echo "LAYOUT_FILE = DoxygenLayout.xml" >> ../Doxyfile;
-
-# Fix incorrect links to mlpack-git.
-sed -i 's/mlpack-git/mlpack-'"$version"'/g' ../doc/guide/cli_quickstart.hpp
-sed -i 's/mlpack-git/mlpack-'"$version"'/g' ../doc/guide/python_quickstart.hpp
-
-# Generate layout file.
-doxygen -l;
-sed -i 's|  <tab type="pages" visible="yes" title="" intro=""/>|  <tab type="pages" visible="no" title="" intro=""/>|' DoxygenLayout.xml;
-
-# Build documentation.
-cmake ../
-make clean;
-rm -rf doc/html/
-make -j4 doc; # Hopefully you have four cores... :)
-
-cd doc/html/;
-for i in *.html; do
-  sed -i 's|<a href="https://www.mlpack.org/docs/|<a href="https://www.mlpack.org/doc/|g' "$i";
-  sed -i 's|<a href="http://www.mlpack.org/docs/|<a href="http://www.mlpack.org/doc/|g' "$i";
-  sed -i 's|/man.html|/cli_documentation.html|g' "$i";
-  sed -i 's|/python.html|/python_documentation.html|g' "$i";
-  sed -i -E 's|/man/mlpack_([^.]*)\.html|/cli_documentation.html#\1|g' "$i";
-  sed -i -E 's|/python/([^.]*)\.html|/python_documentation.html#\1|g' "$i";
-done
-# Move the extra CSS to the right place.
-cp $doxygensrcdir/tabs.css .;
-cp $doxygensrcdir/navtree.css .;
-cp $doxygensrcdir/dynamic_tables.js .;
-cp $doxygensrcdir/resize.js .;
-cp $doxygensrcdir/navtree.js .;
-cp $doxygensrcdir/version_redirect.js .;
-
-cp $doxygensrcdir/htaccess.template .htaccess;
-cp $doxygensrcdir/404.html 404.html;
-
-# Now postprocess all of the HTML.
-for i in *.html; do
-  $doxygensrcdir/label_html_templates.py $i > tmp.html;
-  mv tmp.html $i;
-done
-cd ../../
-
-# Now move the HTML to the right place.
-rm -rf $docdir/doxygen;
-mv doc/html $docdir/doxygen;
-
-# Now add the author tags to the generated tutorials.
-python $doxygensrcdir/tutorial_author_annotator.py doc/tutorials/ $docdir/doxygen/
-
-# Now add the visualization to the optimizer tutorial.
-if [ -f "$docdir/doxygen/optimizertutorial.html" ];
+# Lastly, generate what we need to build the Doxygen documentation---if this
+# version has a Doxyfile.
+if [ -f ../Doxyfile ];
 then
-  python $doxygensrcdir/optimizer_visualization_annotator.py $docdir/doxygen/optimizertutorial.html
+  option_string="";
+  for dv in ${doxygen_versions[@]};
+  do
+    option_string="$option_string<option value=\"$dv\"";
+    if [ "a$dv" == "a$version" ]; then
+      option_string="$option_string selected=\"\"";
+    fi
+    option_string="$option_string>$dv</option>";
+  done
+  msearchbox_string="`cat _src/doxygen/msearchbox.html | tr '\n' ' '`";
+
+  cp _src/doxygen/header.template.html _src/doxygen/header.$version.html;
+  # Make sure this file exists...
+  bundle exec jekyll b -b /;
+  cat _site/index.html |\
+      awk '/[ \t]*<body>/{show=1;next} /[ \t]*<main>/{show=0} // {if(show == 1){print $0;}}' |\
+      sed 's|learning library</big></div>|learning library</big></div><div id="ens_header_version_select"><select class="doxygen-version-select" id="version-select" onchange="changeVersion()">'"$option_string"'</select></div>|' |\
+      sed 's/class="active" //' |\
+      sed 's|title="GitHub">GitHub</a>|title="GitHub">GitHub</a>'"$msearchbox_string"'|' >>\
+      _src/doxygen/header.$version.html;
+
+  cd _src/mlpack-${version}/build/;
+
+  # Do we need to update the Doxygen stylesheet?
+  modified_lines=`cat ../Doxyfile | grep 'doxygen-src/header.html' | wc -l`;
+  if [ "a$modified_lines" == "a0" ]; then
+    # Modify the Doxyfile.
+    sed -i "s|HTML_HEADER[ ]*=[ ]*.*$|HTML_HEADER = \"${doxygensrcdir}/header.$1.html\"|" ../Doxyfile;
+    sed -i "s|HTML_FOOTER[ ]*=[ ]*.*$|HTML_FOOTER = \"${doxygensrcdir}/footer.html\"|" ../Doxyfile;
+    sed -i "s|HTML_STYLESHEET[ ]*=[ ]*.*$|HTML_STYLESHEET = \"${doxygensrcdir}/doxygen.css\"|" ../Doxyfile;
+    sed -i "s|HTML_EXTRA_STYLESHEET[ ]*=[ ]*.*$|HTML_EXTRA_STYLESHEET = \"${doxygensrcdir}/style-doxygen.css\"|" ../Doxyfile;
+  fi
+
+  # Modify other parts of the Doxyfile.
+  sed -i "s|GENERATE_TREEVIEW[ ]*=[ ]*.*$|GENERATE_TREEVIEW = YES|" ../Doxyfile;
+  sed -i "s|TREEVIEW_WIDTH[ ]*=[ ]*.*$|TREEVIEW_WIDTH = 220|" ../Doxyfile;
+  sed -i "s|DISABLE_INDEX[ ]*=[ ]*.*$|DISABLE_INDEX = YES|" ../Doxyfile;
+  echo "LAYOUT_FILE = DoxygenLayout.xml" >> ../Doxyfile;
+
+  # Fix incorrect links to mlpack-git.
+  sed -i 's/mlpack-git/mlpack-'"$version"'/g' ../doc/guide/cli_quickstart.hpp
+  sed -i 's/mlpack-git/mlpack-'"$version"'/g' ../doc/guide/python_quickstart.hpp
+
+  # Generate layout file.
+  doxygen -l;
+  sed -i 's|  <tab type="pages" visible="yes" title="" intro=""/>|  <tab type="pages" visible="no" title="" intro=""/>|' DoxygenLayout.xml;
+
+  # Build documentation.
+  cmake ../
+  make clean;
+  rm -rf doc/html/
+  make -j4 doc; # Hopefully you have four cores... :)
+
+  cd doc/html/;
+  for i in *.html; do
+    sed -i 's|<a href="https://www.mlpack.org/docs/|<a href="https://www.mlpack.org/doc/|g' "$i";
+    sed -i 's|<a href="http://www.mlpack.org/docs/|<a href="http://www.mlpack.org/doc/|g' "$i";
+    sed -i 's|/man.html|/cli_documentation.html|g' "$i";
+    sed -i 's|/python.html|/python_documentation.html|g' "$i";
+    sed -i -E 's|/man/mlpack_([^.]*)\.html|/cli_documentation.html#\1|g' "$i";
+    sed -i -E 's|/python/([^.]*)\.html|/python_documentation.html#\1|g' "$i";
+  done
+  # Move the extra CSS to the right place.
+  cp $doxygensrcdir/tabs.css .;
+  cp $doxygensrcdir/navtree.css .;
+  cp $doxygensrcdir/dynamic_tables.js .;
+  cp $doxygensrcdir/resize.js .;
+  cp $doxygensrcdir/navtree.js .;
+  cp $doxygensrcdir/version_redirect.js .;
+
+  cp $doxygensrcdir/htaccess.template .htaccess;
+  cp $doxygensrcdir/404.html 404.html;
+
+  # Now postprocess all of the HTML.
+  for i in *.html; do
+    $doxygensrcdir/label_html_templates.py $i > tmp.html;
+    mv tmp.html $i;
+  done
+  cd ../../
+
+  # Now move the HTML to the right place.
+  rm -rf $docdir/doxygen;
+  mv doc/html $docdir/doxygen;
+
+  # Now add the author tags to the generated tutorials.
+  python $doxygensrcdir/tutorial_author_annotator.py doc/tutorials/ $docdir/doxygen/
+
+  # Now add the visualization to the optimizer tutorial.
+  if [ -f "$docdir/doxygen/optimizertutorial.html" ];
+  then
+    python $doxygensrcdir/optimizer_visualization_annotator.py $docdir/doxygen/optimizertutorial.html
+  fi
 fi
 
 cd ../../../;

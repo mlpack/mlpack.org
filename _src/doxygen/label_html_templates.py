@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 #
 # Process the given HTML file, outputting the labeled templates on stdout.
 import sys

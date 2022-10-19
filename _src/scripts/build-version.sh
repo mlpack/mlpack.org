@@ -85,7 +85,7 @@ cd ../../../;
 
 # Lastly, generate what we need to build the Doxygen documentation---if this
 # version has a Doxyfile.
-if [ -f ../Doxyfile ];
+if [ -f _src/mlpack-$version/Doxyfile ];
 then
   option_string="";
   for dv in ${doxygen_versions[@]};
@@ -179,9 +179,10 @@ then
   then
     python $doxygensrcdir/optimizer_visualization_annotator.py $docdir/doxygen/optimizertutorial.html
   fi
+
+  cd ../../../;
 fi
 
-cd ../../../;
 cat _src/mlpack-${version}/HISTORY.md |\
     sed -E 's|\(#([0-9]*)\)|[#\1](https://github.com/mlpack/mlpack/issues/\1)|g' >\
     doc/mlpack-${version}/changelog.md;

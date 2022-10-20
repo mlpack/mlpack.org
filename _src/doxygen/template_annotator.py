@@ -97,7 +97,7 @@ class TemplateAnnotator:
 
       return retstr.replace('\n', '')
 
-    except ParseException, err:
+    except ParseException:
 #      print err.line
 #      print " "*(err.column - 1) + "^"
 #      print err

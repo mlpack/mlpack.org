@@ -172,12 +172,12 @@ then
   mv doc/html $docdir/doxygen;
 
   # Now add the author tags to the generated tutorials.
-  python $doxygensrcdir/tutorial_author_annotator.py doc/tutorials/ $docdir/doxygen/
+  python3 $doxygensrcdir/tutorial_author_annotator.py doc/tutorials/ $docdir/doxygen/
 
   # Now add the visualization to the optimizer tutorial.
   if [ -f "$docdir/doxygen/optimizertutorial.html" ];
   then
-    python $doxygensrcdir/optimizer_visualization_annotator.py $docdir/doxygen/optimizertutorial.html
+    python3 $doxygensrcdir/optimizer_visualization_annotator.py $docdir/doxygen/optimizertutorial.html
   fi
 
   cd ../../../;

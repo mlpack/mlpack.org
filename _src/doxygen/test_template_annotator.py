@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 from template_annotator import TemplateAnnotator
 t = TemplateAnnotator()
 a = t.grammar.parseString('template &lt; typename A &gt;')

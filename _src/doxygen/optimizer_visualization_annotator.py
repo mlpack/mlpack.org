@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 #
 # Usage: python optimizer_visualization_annotator.py path/to/the/doxygen/optimizertutorial.html
 

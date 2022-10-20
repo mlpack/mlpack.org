@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 #
 # Usage: python tutorial-author_annotator.py path/to/raw/tutorials/folder/ path/to/doxygen/generated/html/files/
 

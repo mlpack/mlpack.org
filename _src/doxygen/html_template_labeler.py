@@ -1,5 +1,5 @@
 from __future__ import print_function
-from HTMLParser import HTMLParser
+from html.parser import HTMLParser
 from template_annotator import TemplateAnnotator
 from xml.sax.saxutils import escape
 

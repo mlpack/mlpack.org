@@ -7,13 +7,8 @@ cppCode +=
   "// to find the nearest neighbor of each point in a dataset using the L1 metric,\r\n";
 cppCode +=
   "// and then print the index of the neighbor and the distance of it to stdout.\r\n\r\n";
-cppCode += "#include <mlpack/core.hpp>\r\n";
-cppCode +=
-  "#include <mlpack/methods/neighbor_search/neighbor_search.hpp>\r\n\r\n";
-cppCode += "using namespace mlpack;\r\n";
-cppCode +=
-  "using namespace mlpack::neighbor; // NeighborSearch and NearestNeighborSort\r\n";
-cppCode += "using namespace mlpack::metric; // ManhattanDistance\r\n\r\n";
+cppCode += "#include <mlpack.hpp>\r\n\r\n";
+cppCode += "using namespace mlpack;\r\n\r\n";
 cppCode += "int main()\r\n";
 cppCode += "{\r\n";
 cppCode +=

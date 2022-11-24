@@ -481,6 +481,7 @@ function run()
 	var code = btoa(editor.getValue())
 	hash = lang + "" + code.hashCode();
 	xhr.send("hash=" + hash + "&code=" + code)
+	editorOutput.innerHTML = "Running, wait for output..."
 }
 
 function resize() {

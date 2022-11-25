@@ -61,11 +61,11 @@ pythonCode +=
   'df = pd.read_csv("https://www.mlpack.org/datasets/covertype-small.csv.gz")\r\n\r\n';
 pythonCode += "# Split the labels.\r\n";
 pythonCode += 'labels = df["label"]\r\n';
-pythonCode += 'dataset = df.drop("label", 1)\r\n\r\n';
+pythonCode += 'dataset = df.drop("label", axis=1)\r\n\r\n';
 pythonCode +=
   "# Split the dataset using mlpack.  The output comes back as a dictionary,\r\n";
 pythonCode += "# which we will unpack for clarity of code.\r\n";
-pythonCode += "output = mlpack.preprocess_split(input=dataset,\r\n";
+pythonCode += "output = mlpack.preprocess_split(input_=dataset,\r\n";
 pythonCode += "                                 input_labels=labels,\r\n";
 pythonCode += "                                 test_ratio=0.3)\r\n";
 pythonCode += 'training_set = output["training"]\r\n';

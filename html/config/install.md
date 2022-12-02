@@ -50,10 +50,10 @@ stable macos source python
 brew install cereal armadillo ! pip install numpy pandas cython ! wget -c http://mlpack.org/files/mlpack-4.0.0.tar.gz -O - | tar -xz ! cd mlpack ! cd mlpack ! mkdir build ! cd build ! cmake -DBUILD_PYTHON_BINDINGS=ON .. ! make ! make install !! # In Python ! import mlpack
 
 stable windows msi c++
-# See https://www.mlpack.org/doc/mlpack-4.0.0/doxygen/build_windows.html
+# See https://github.com/mlpack/mlpack/blob/4.0.0/doc/user/build_windows.md
 
 stable windows source c++
-# See https://www.mlpack.org/doc/stable/doxygen/build_windows.html
+# See https://github.com/mlpack/mlpack/blob/4.0.0/doc/user/build_windows.md
 
 nightly linux (debian) source c++
 apt-get install libarmadillo-dev libcereal-dev binutils-dev libensmallen-dev libstb-dev wget git !! git clone https://github.com/mlpack/mlpack.git ! cd mlpack ! mkdir build ! cd build ! cmake .. ! make ! make install !! # Simple compiler command ! g++ code.cpp -larmadillo

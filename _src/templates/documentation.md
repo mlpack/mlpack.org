@@ -33,18 +33,16 @@ are in the left sidebar.
 
  * [Binding documentation](#binding_documentation)
 
-The C++ interfaces of mlpack are carefully documented and doxygen is used to
-provide automatically-generated searchable documentation.
+The C++ interfaces of mlpack are carefully documented in the source code, which
+can be browsed for more details.
 
- * [Doxygen documentation](doxygen/index.html)
-
-# tutorials
+ * [Source code](https://github.com/mlpack/mlpack/tree/master/src)
 
 A number of tutorials are available covering individual algorithms
 and functionality inside of mlpack, both for bindings to other languages and for
 the C++ interface.
 
-{% include_relative tutorials.md %}
+ * [Tutorials](https://github.com/mlpack/mlpack/blob/master/doc/tutorials/README.md)
 
 <!-- The binding documentation includes headers for each language. -->
 <a name="binding_documentation"></a>

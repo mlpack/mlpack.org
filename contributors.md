@@ -74,6 +74,7 @@
  - Samikshya Chand
  - N Rajiv Vaidyanathan
  - Kartik Nighania
+ - Dirk Eddelbuettel
  - Eugene Freyman
  - Manish Kumar
  - Haritha Sreedharan Nair
@@ -112,3 +113,37 @@
  - Khizir Siddiqui
  - Tejasvi Tomar
  - Jai Agarwal
+ - Ziyang Jiang
+ - Rohit Kartik
+ - Aditya Viki
+ - Kartik Dutt
+ - Suryoday Basak
+ - Sriram S K
+ - Manoranjan Kumar Bharti ( Nakul Bharti )
+ - Saraansh Tandon
+ - Gaurav Singh
+ - Lakshya Ojha
+ - Bisakh Mondal
+ - Benson Muite
+ - Sarthak Bhardwaj
+ - Aakash Kaushik
+ - Anush Kini
+ - Nippun Sharma
+ - Rishabh Garg
+ - Sudhakar Brar
+ - Alex Nguyen
+ - Gaurav Ghati
+ - Anmolpreet Singh
+ - Anjishnu Mukherjee
+ - Omar Shrit
+ - Tru Hoang
+ - Mark Fischinger
+ - Muhammad Fawwaz Mayda
+ - Roshan Nrusing Swain
+ - Suvarsha Chennareddy
+ - Shubham Agrawal
+ - James Joseph Balamuta  
+ - Sri Madhan M
+ - Zhuojin Liu
+ - Richèl Bilderbeek
+ - Chetan Pandey

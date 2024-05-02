@@ -517,7 +517,8 @@ header a#logo img {
 	border: 0;
 	padding-right: 6px;
 	transition: opacity .15s ease-in-out;
-	-webkit-transition: opacity .15s ease-in-out
+	-webkit-transition: opacity .15s ease-in-out;
+	background: none;
 }
 
 header a#logo:hover img {
@@ -571,4 +572,29 @@ header nav span.vr {
 	background-color: rgba(255, 255, 255, 0.5);
 	height: 22px;
 	vertical-align: bottom
+}
+
+h1, h2, h3, h4, h5, h6 {
+  scroll-margin-top: 55px;
+}
+
+div.main_logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  margin-bottom: 1em;
+}
+
+div.wrapperContent h3 {
+  border-top: 2px solid #aaa;
+  padding-top: 1em;
+}
+
+div.table-left {
+  padding-right: 30px;
+  width: 250px;
+  min-width: 250px;
+  max-width: 250px;
+  display: inline-block;
 }

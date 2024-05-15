@@ -28,8 +28,7 @@
         <a href="LINKROOT../index.html">Home</a>
         <a href="LINKROOT../download.html">Download</a>
         <a href="LINKROOTindex.html">Documentation</a>
-        <a href="LINKROOT../community.html">Community</a>
-        <a href="LINKROOT../questions.html">FAQ</a>
+        <a href="LINKROOT../questions.html">Questions</a>
         <a href="https://github.com/mlpack/mlpack">GitHub</a>
       </nav>
     </header>

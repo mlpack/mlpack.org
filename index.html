@@ -28,8 +28,7 @@
           <a href="index.html">Home</a>
           <a href="download.html">Download</a>
           <a href="doc/index.html">Documentation</a>
-          <a href="community.html">Community</a>
-          <a href="questions.html">FAQ</a>
+          <a href="questions.html">Questions</a>
           <a href="https://github.com/mlpack/mlpack">GitHub</a>
         </nav>
       </header>
@@ -106,41 +105,14 @@ announcement.</a>
   <br />
 </div>
 
-<br /><br />
 <center>
-
-<!-- CARDS START -->
-<div class="wrapperCards" style="list-style-type:none;max-width:800px">
-  <div></div>
-  <div class="card" id="card-get-started" onclick="location.href='getstarted.html';">
-    <h4 class="card-title">Get Started</h4>
-    Download, install or build mlpack from source.
-  </div>
-  <div class="card" style="margin-left: 20px" id="card-documentation" onclick="location.href='doc/index.html';">
-    <h4 class="card-title">Documentation</h4>
-    Take a look at the API, bindings to other languages and more.
-  </div>
-  <div class="card" style="margin-left: 20px" id="card-tutorials" onclick="location.href='https://www.mlpack.org/doc/stable/cli_documentation.html#tutorials';">
-    <h4 class="card-title">Tutorials</h4>
-    Need some inspiration? Start with some tutorials.
-  </div>
-  <div class="card" style="margin-left: 20px" id="card-faq" onclick="location.href='questions.html';">
-    <h4 class="card-title">FAQ</h4>
-    Having questions or problems? Check here.
-  </div>
-  <div></div>
-</div>
-<!-- CARDS END -->
-
-<br><br>
 
 <!-- CONTENTN START -->
 <div class="wrapperContent" style="list-style-type:none;max-width:800px">
 
-  <div class="box a"></div>
   <!-- CITATION START -->
   <div class="content" id="citationleft" style="padding-right: 10px;">
-    <h3 style="text-align:center;">Citation</h3>
+    <h3 style="text-align:center;border-top:none">Citation</h3>
     <p>
       mlpack uses an open governance model and is fiscally sponsored by NumFOCUS. Please cite the following paper if you use mlpack in your work. Citations are useful for the continued development of the library.
     </p>
@@ -172,83 +144,6 @@ announcement.</a>
     <!-- LICENSE END -->
   </div>
 
-  <!-- BENCHMARK START -->
-  <div class="content" id="citationright">
-    <h3 style="text-align:center">Benchmarks</h3>
-    <p>
-      We developed a benchmarking system <a href="papers/2014automatic.pdf"> (An automatic benchmarking
-        system, M. Edel, A. Soni, R.R. Curtin)</a> that runs benchmarks for the various algorithms implemented
-      in mlpack. When applicable, timing results are also given for other libraries. mlpack is quite fast, with
-      benchmarks showing mlpack out- performing other libraries' implementations of the same methods.
-    </p>
-
-    <center>
-      <table class="benchmark-table">
-  <tr style="border-bottom: 2px solid #607E9C;">
-    <th style="font-size:17px;text-align:center;color:#607E9C;padding: 10px;">Dataset</th>
-    <th style="font-size:17px;text-align:center;color:#607E9C;padding: 10px;">mlpack</th>
-    <th style="font-size:17px;text-align:center;color:#607E9C;padding: 10px;">WEKA</th>
-    <th style="font-size:17px;text-align:center;color:#607E9C;padding: 10px;">Shogun</th>
-    <th style="font-size:17px;text-align:center;color:#607E9C;padding: 10px;">mlpy</th>
-    <th style="font-size:17px;text-align:center;color:#607E9C;padding: 10px;">sklearn</th>
-  </tr>
-  <tr>
-    <td style="padding: 2px;border-right: 1px solid #ddd;">1000x10</td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;"><b>0.078s</b></td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;">0.271s</td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;">0.132s</td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;">0.179s</td>
-    <td style="text-align:center;padding: 2px;">0.341s</td>
-  </tr>
-  <tr>
-    <td style="padding: 2px;border-right: 1px solid #ddd;">3162x10</td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;"><b>0.267s</b></td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;">1.065s</td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;">1.093s</td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;">0.974s</td>
-    <td style="text-align:center;padding: 2px;">0.916s</td>
-  </tr>
-  <tr>
-    <td style="padding: 2px;border-right: 1px solid #ddd;">10000x10</td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;"><b>1.332s</b></td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;">4.734s</td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;">11.890s</td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;">9.961s</td>
-    <td style="text-align:center;padding: 2px;">3.549s</td>
-  </tr>
-  <tr>
-    <td style="padding: 2px;border-right: 1px solid #ddd;">31622x10</td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;"><b>7.270s</b></td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;">27.890s</td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;">120.320s</td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;">116.965s</td>
-    <td style="text-align:center;padding: 2px;">15.213s</td>
-  </tr>
-  <tr>
-    <td style="padding: 2px;border-right: 1px solid #ddd;">100000x10</td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;"><b>47.350s</b></td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;">171.313s</td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;">1357.910s</td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;">1621.045s</td>
-    <td style="text-align:center;padding: 2px;">75.039s</td>
-  </tr>
-  <tr>
-    <td style="padding: 2px;border-right: 1px solid #ddd;">10000x100</td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;"><b>18.075s</b></td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;">192.548s</td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;">27.251s</td>
-    <td style="text-align:center;padding: 2px;border-right: 1px solid #ddd;">29.039s</td>
-    <td style="text-align:center;padding: 2px;">198.953s</td>
-  </tr>
-      </table>
-    </center>
-
-    <p>
-      Several randomly generated, uniformly distributed datasets of varying sizes were used for this benchmark. The computation time of k-NN with k=5 for each library and each dataset size is given in Table.
-    </p>
-  </div>
-  <!-- BENCHMARK END -->
-
   <h3>Support</h3>
 
   <div class="content" id="support" style="padding-right: 10px;">
@@ -266,6 +161,38 @@ announcement.</a>
       NumFOCUS is a nonprofit dedicated to supporting the open source scientific computing community. <a href="https://numfocus.org/">Read more</a>.
     </p>
 
+    <p align="justify">
+      mlpack has also received support from the following organizations.
+    </p>
+
+    <div class="sponsors">
+      <div class="sponsor-logo">
+        <a href="https://www.gatech.edu">
+          <img src="img/georgia-tech-logo.png" alt="Georgia Tech">
+        </a>
+      </div>
+      <div class="sponsor-logo">
+        <a href="https://www.fu-berlin.de">
+          <img src="img/fuberlin-logo.png" alt="Freie Universität Berlin">
+        </a>
+      </div>
+      <div class="sponsor-logo">
+        <a href="https://www.broadcom.com/products/cybersecurity">
+          <img src="img/symantec-logo.png" alt="Symantec">
+        </a>
+      </div>
+      <div class="sponsor-logo">
+        <a href="https://www.nsf.gov">
+          <img src="img/nsf-logo.png" alt="National Science Foundation">
+        </a>
+      </div>
+      <div class="sponsor-logo">
+        <a href="https://summerofcode.withgoogle.com">
+          <img src="img/google-logo.png" alt="Google">
+        </a>
+      </div>
+    </div>
+
     <br>
     <br>
 
@@ -274,8 +201,7 @@ announcement.</a>
         <a href="index.html">Home</a>
         &nbsp;&bull;&nbsp;<a href="download.html">Download</a>
         &nbsp;&bull;&nbsp;<a href="doc/index.html">Documentation</a>
-        &nbsp;&bull;&nbsp;<a href="community.html">Community</a>
-        &nbsp;&bull;&nbsp;<a href="questions.html">FAQ</a>
+        &nbsp;&bull;&nbsp;<a href="questions.html">Questions</a>
         &nbsp;&bull;&nbsp;<a href="https://github.com/mlpack/mlpack">GitHub</a>
     </p>
 

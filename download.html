@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="icon" href="img/mlpack-logo.svg" type="image/gif">
+
+<title>mlpack - Quickstart</title>
+</head>
+
+<body>
+
+<!-- NAVIGATION START -->
+<div class="wrapperNavigation" style="list-style-type:none;background-color:#1f364d;position:sticky;width:100%;font-family:'Source Sans Pro';top: 0;z-index: 1000;height: 55px">
+  <div class="box a"></div>
+
+  <div class="box a">
+    <header>
+      <a id="logo" href="index.html">
+        <img src="img/mlpack-logo.svg" alt="mlpack">
+      </a>
+
+      <a href="index.html" style="text-decoration: none;font-weight: 400;font-size:18px;color: #fff">mlpack</a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="download.html">Download</a>
+        <a href="doc/index.html">Documentation</a>
+        <a href="questions.html">Questions</a>
+        <a href="https://github.com/mlpack/mlpack">GitHub</a>
+      </nav>
+    </header>
+  </div>
+
+  <div class="box a"></div>
+</div>
+<!-- NAVIGATION END -->
+
+<br>
+
+<!-- QUICKSTART START -->
+<center>
+  <div class="wrapperContent" style="max-width:800px;padding-top:40px;text-align:left">
+
+    <h2 style="text-align:left">Downloading and Installing mlpack</h2>
+    <p align="justify">
+    Prebuilt mlpack packages are available for most operating systems;
+    these packages may not be the latest version,
+    so if you are encountering issues,
+    use the official source release.
+
+    <h4>Source download and build reference</h4>
+
+    <ul>
+      <li style="margin-bottom: 1em;"><b>Latest stable source release: <a href="files/mlpack-4.3.0.tar.gz">mlpack-4.3.0.tar.gz</a></b>; released Nov. 27, 2023</li>
+      <li><a href="doc/README.html#installing-and-using-mlpack-in-c">README build directions</a></li>
+      <li><a href="doc/quickstart/cpp.html#installing-mlpack">C++ quickstart installation guide</a></li>
+      <li><a href="doc/user/build_windows.html">Windows build guide</a></li>
+    </ul>
+
+    <h4>C++ system-wide package installation</h4>
+
+    <ul>
+      <li><div class="table-left">Debian/Ubuntu:</div> <code>sudo apt-get install libmlpack-dev</code></li>
+      <li><div class="table-left">Red Hat/Fedora:</div> <code>sudo dnf install mlpack-devel</code></li>
+      <li><div class="table-left">Arch Linux:</div> <code>sudo pacman -S mlpack</code></li>
+      <li><div class="table-left">macOS (Homebrew):</div> <code>brew install mlpack</code></li>
+      <li><div class="table-left">macOS (MacPorts):</div> <code>sudo port install mlpack</code></li>
+      <li><div class="table-left">Windows (vcpkg):</div> <code>vcpkg install mlpack</code></li>
+      <li><div class="table-left">Windows MSI installer:</div> <a href="files/mlpack-4.3.0.msi">mlpack-4.3.0.msi</a></li>
+    </ul>
+
+    <h4>Language-specific installation</h4>
+
+    <ul>
+      <li><div class="table-left">Python (pip):</div> <code>pip install mlpack</code></li>
+      <li><div class="table-left">Python (conda):</div> <code>conda install -c conda-forge mlpack</code></li>
+      <li><div class="table-left">Julia:</div> <code>import Pkg; Pkg.add("mlpack");</code></li>
+      <li><div class="table-left">R:</div> <code>install.packages("mlpack")</code></li>
+      <li><div class="table-left">Go:</div> <code>go get -u -d mlpack.org/v1/mlpack</code></li>
+    </ul>
+
+    <h4>Ready-to-use cloud images</h4>
+
+    <ul>
+      <li><div class="table-left">Jupyter Hub:</div> <a
+href="https://lab.mlpack.org/v2/gh/mlpack/examples/master?urlpath=lab">ready-to-use notebook environment</a> (try it out!)</li>
+      <li><div class="table-left">DockerHub:</div> <a href="https://hub.docker.com/r/mlpack/mlpack">ready-to-use mlpack Docker image</a></li>
+    </ul>
+
+    <h4>Command-line program installation</h4>
+
+    <ul>
+      <li><div class="table-left">Debian/Ubuntu:</div> <code>sudo apt-get install mlpack-bin</code></li>
+      <li><div class="table-left">Red Hat/Fedora:</div> <code>sudo dnf install mlpack-bin</code></li>
+      <li><div class="table-left">Arch Linux:</div> <code>sudo pacman -S mlpack</code></li>
+      <li><div class="table-left">macOS (Homebrew):</div> <code>brew install mlpack</code></li>
+      <li><div class="table-left">macOS (MacPorts):</div> <code>sudo port install mlpack</code></li>
+      <li><div class="table-left">Windows (vcpkg):</div> <code>vcpkg install mlpack</code></li>
+      <li><div class="table-left">Windows MSI installer:</div> <a href="files/mlpack-4.3.0.msi">mlpack-4.3.0.msi</a></li>
+    </ul>
+
+    <h2 style="text-align: left">Quickstart: Using mlpack</h2>
+
+    Once mlpack is installed, you can go through the quickstart tutorials:
+
+    <ul>
+      <li><a href="doc/quickstart/cpp.html">C++ quickstart</a></li>
+      <li><a href="doc/quickstart/python.html">Python quickstart</a></li>
+      <li><a href="doc/quickstart/julia.html">Julia quickstart</a></li>
+      <li><a href="doc/quickstart/r.html">R quickstart</a></li>
+      <li><a href="doc/quickstart/go.html">Go quickstart</a></li>
+      <li><a href="doc/quickstart/cli.html">Command-line programs quickstart</a></li>
+    </ul>
+
+    You can also look at the <a href="https://github.com/mlpack/examples">examples repository</a> for fully
+    working mlpack data science pipelines and applications.
+
+    <h2 style="text-align: left">Further documentation</h2>
+
+    Once mlpack is installed and working, the reference documentation links
+    below can be helpful for building mlpack applications:
+
+    <ul>
+      <li style="padding-bottom: 1em"><b><a href="doc/index.html">Documentation homepage</a></b></li>
+      <li><a href="doc/user/bindings/python.html">Python binding documentation</a></li>
+      <li><a href="doc/user/bindings/julia.html">Julia binding documentation</a></li>
+      <li><a href="doc/user/bindings/r.html">R binding documentation</a></li>
+      <li><a href="doc/user/bindings/go.html">Go binding documentation</a></li>
+      <li><a href="doc/user/bindings/cli.html">Command-line program documentation</a></li>
+    </ul>
+  </div>
+</center>
+<!-- QUICKSTART END -->
+
+<!-- FOOTER START -->
+<center>
+  <br><br><br><br>
+
+  <div style="max-width:800px">
+    <p style="font-size:15px;">&copy; 2007 - 2024 mlpack developers (BSD License).</p>
+    <a href="index.html">Home</a>
+    &nbsp;&bull;&nbsp;<a href="download.html">Download</a>
+    &nbsp;&bull;&nbsp;<a href="doc/index.html">Documentation</a>
+    &nbsp;&bull;&nbsp;<a href="questions.html">Questions</a>
+    &nbsp;&bull;&nbsp;<a href="https://github.com/mlpack/mlpack">GitHub</a>
+  </div>
+</center>
+<!-- FOOTER END -->
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="LINKROOTimg/mlpack-logo.svg" type="image/gif">
+  <link type="text/css" rel="stylesheet" href="LINKROOTgfm-mod.css">
+  <link type="text/css" rel="stylesheet" href="LINKROOTrouge-github-mod.css">
+  <link rel="stylesheet" href="LINKROOTstyle.css">
+  <title>mlpack documentation</title>
+</head>
+
+<body>
+
+<!-- NAVIGATION START -->
+<div class="wrapperNavigation" style="list-style-type:none;background-color: #1f364d;position: sticky;width: 100%;font-family: 'Source Sans Pro';top: 0;z-index: 1000;height: 55px">
+  <div class="box a"></div>
+
+  <div class="box a">
+    <header>
+      <a id="logo" href="https://www.mlpack.org/index.html">
+        <img src="LINKROOTimg/mlpack-logo.svg" alt="mlpack">
+      </a>
+
+      <a href="LINKROOT../index.html" style="text-decoration: none;font-weight: 400;font-size:18px;color: #fff">mlpack</a>
+
+      <nav>
+        <a href="LINKROOT../index.html">Home</a>
+        <a href="LINKROOT../download.html">Download</a>
+        <a href="LINKROOTindex.html">Documentation</a>
+        <a href="LINKROOT../questions.html">Questions</a>
+        <a href="https://github.com/mlpack/mlpack">GitHub</a>
+      </nav>
+    </header>
+  </div>
+
+  <div class="box a"></div>
+</div>
+<!-- NAVIGATION END -->

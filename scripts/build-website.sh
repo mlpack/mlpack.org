@@ -21,7 +21,7 @@ active_version=`ls files/mlpack-*.tar.gz |\
 # Unpack the code so that we can extract the Markdown documentation to build the
 # website.
 rm -rf src/mlpack-${active_version}/;
-tar -xvzpf ../files/mlpack-${active_version}.tar.gz;
+tar -xvzpf files/mlpack-${active_version}.tar.gz;
 
 # Copy necessary files for the website build.
 mkdir -p src/mlpack-${active_version}/doc/html/;

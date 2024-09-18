@@ -13,6 +13,7 @@
 # Get most recent version.
 active_version=`ls files/mlpack-*.tar.gz |\
                 grep -v 'git' |\
+                grep -v 'latest' |\
                 sort -r |\
                 head -1 |\
                 sed 's|files/mlpack-||' |\

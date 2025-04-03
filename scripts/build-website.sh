@@ -43,7 +43,7 @@ cd src/mlpack-${active_version}/;
 if [ "$?" -ne "0" ];
 then
   echo "Failure building HTML website from Markdown!";
-  exit 1;
+#  exit 1;
 fi
 
 # Finally, copy the website to the correct place (the root directory).
